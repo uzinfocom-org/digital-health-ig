@@ -79,6 +79,8 @@ def humanize(name):
     name = name.replace('[x]', '')
     words = re.sub(r'(?<=[a-z0-9])(?=[A-Z])', ' ', name).replace('-', ' ').split()
     text = ' '.join(words).capitalize() if words else name
+    if words:
+        text = ' '.join(w if len(w) > 1 and w.isupper() and w.isalpha() else t for w, t in zip(words, text.split(' ')))
     return ' '.join(w.upper() if (len(w) > 2 and w.isalpha() and not re.search('[aeiouyAEIOUY]', w)) or (w == 'id' and i) else w
                     for i, w in enumerate(text.split(' ')))
 
@@ -655,7 +657,10 @@ class Profile:
             return self.visible(par)
         # a datatype's mandatory parts show once the datatype itself is drawn as a group
         if (not is_slice(eid) and par is not None and par is not self.els[0] and self.visible(par)
-                and any(c is not e and (c['id'] in self.show or c.get('mustSupport') or c['id'] in self.ms_under) for c in self.children(par['id']))):
+                and (any(c is not e and (c['id'] in self.show or c.get('mustSupport') or c['id'] in self.ms_under
+                             or self.no_ms and any(d == c['id'] or d.startswith(c['id'] + '.') for d in self.diff))
+                         for c in self.children(par['id']))
+                     or any(is_slice(c['id']) and self.visible(c) for c in self.kids.get(par['id'], [])))):
             return True
         return parent_id(eid) in (root, root + '.extension', root + '.modifierExtension')
 
@@ -746,7 +751,9 @@ class Profile:
         elif slices:
             n = self.base(e, 'group')
             datatype = types and (types[0] in LEAF_TYPES or types[0][0].islower())
-            kids = [] if datatype else [self.node(c['id']) for c in self.children(eid) if self.visible(c)]
+            # a sliced datatype keeps its own parts, but not one shown only for a supported extension listed on its own
+            kids = [self.node(c['id']) for c in self.children(eid) if self.visible(c) and not (
+                datatype and (is_slice(c['id']) or c['id'] in self.ms_under and not c.get('mustSupport') and c['id'] not in self.show))]
             for s in slices:
                 sn = self.node(s['id'])
                 kids.append(sn)

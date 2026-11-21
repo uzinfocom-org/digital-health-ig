@@ -370,7 +370,14 @@ window.addEventListener('hashchange', () => { readHash(); render(); });
 // ---------- overview ----------
 function renderOverview(pane, m) {
   let total = 0, mand = 0, ms = 0;
-  walk(m.root, n => { if (!n.children && n !== m.root) { total++; if (occ(n.card).mand) mand++; if (n.ms) ms++; } });
+  // an element is mandatory only when every element above it is too; a required group with no such part counts once
+  const count = (n, req) => (n.children || []).reduce((any, c) => {
+    const r = req && (!c.card || occ(c.card).mand), before = mand;
+    if (!c.children || c.type === 'link') { total++; if (r && c.card) mand++; if (c.ms) ms++; }
+    if (c.children && !count(c, r) && r && c.card && c.type !== 'link') mand++;
+    return any || mand > before;
+  }, false);
+  count(m.root, true);
   const usesBlock = m.uses ? `<div><h3>Built from</h3><div class="uses v">${m.uses.map(([t, p]) => `<a href="${esc(IG + p)}" target="_blank" rel="noopener">${icon('link')} ${esc(t)}</a>`).join('')}</div></div>` : '';
   pane.innerHTML = `<div class="ov">
     <dl>
