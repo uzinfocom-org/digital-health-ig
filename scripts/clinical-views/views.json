@@ -111,16 +111,7 @@
             "Patient.extension:managingOrganizationAttachment": "Date the patient was attached to that organisation.",
             "Patient.name.text": "The name as it should be displayed."
           },
-          "types": {
-            "Patient.identifier.value.extension:data-absent-reason": "coded"
-          },
           "values": {
-            "Patient.identifier.value.extension:data-absent-reason": [
-              "unknown",
-              "asked but unknown",
-              "not asked",
-              "masked"
-            ],
             "Patient.identifier:nationalId": [
               "14 digits, last digit is a check digit"
             ]
@@ -326,7 +317,9 @@
         },
         "uz-core-medication": {
           "labels": {
-            "Medication.code": "Medicine",
+            "Medication.code": "Medicine name",
+            "Medication.ingredient": "Active ingredient",
+            "Medication.ingredient.item": "Substance",
             "Medication.ingredient.strength[x]": "Strength",
             "Medication.totalVolume": "Package size",
             "Medication.identifier:registrationCertificateID": "Registration certificate",
@@ -420,7 +413,7 @@
           "include": [
             "Medication.code",
             "Medication.doseForm",
-            "Medication.ingredient.strength[x]",
+            "Medication.ingredient",
             "Medication.totalVolume",
             "Medication.identifier:registrationCertificateID",
             "Medication.identifier:globalTradeItemID",

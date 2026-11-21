@@ -39,13 +39,15 @@ CONFORMANCE = {
     'CapabilityStatement', 'SearchParameter', 'OperationDefinition', 'StructureMap', 'package', 'expansions', 'qa',
 }
 PRIMITIVES = {'instant', 'markdown', 'canonical', 'uri', 'url', 'string', 'code', 'id', 'oid', 'uuid', 'base64Binary'}
-DESCRIBE_KEYS = ('code', 'vaccineCode', 'type', 'class', 'category', 'practitioner', 'organization', 'subject')
+DESCRIBE_KEYS = ('code', 'vaccineCode', 'medication', 'type', 'class', 'category', 'practitioner', 'organization', 'subject')
 CONTACT_SYSTEMS = {'phone', 'fax', 'email', 'pager', 'url', 'sms', 'other'}
 UNIT_WORDS = {'s': 'second', 'min': 'minute', 'h': 'hour', 'd': 'day', 'wk': 'week', 'mo': 'month', 'a': 'year'}
 PART_BINDING = {'Coding': 'code', 'Quantity': 'code', 'SimpleQuantity': 'code', 'Duration': 'code', 'Age': 'code',
                 'Distance': 'code', 'Count': 'code', 'Money': 'currency'}
 MAX_VALUES = 12
 MAX_OPTIONS = 60
+STRICT = ('required', 'extensible', 'preferred', 'example')
+CYRILLIC = re.compile('[\u0400-\u04ff]')
 
 
 def load(path):
@@ -64,14 +66,16 @@ def plain(md):
 
 
 def first_sentence(text):
-    m = re.match(r'(.+?[.!?])(\s|$)', text or '', re.S)
-    return (m.group(1) if m else text or '').strip()
+    line = (text or '').strip().split('\n')[0]
+    m = re.match(r'(.+?[.!?])(\s|$)', line)
+    return (m.group(1) if m else line).strip()
 
 
 def humanize(name):
     name = name.replace('[x]', '')
     words = re.sub(r'(?<=[a-z0-9])(?=[A-Z])', ' ', name).replace('-', ' ').split()
-    return ' '.join(words).capitalize() if words else name
+    text = ' '.join(words).capitalize() if words else name
+    return ' '.join(w.upper() if len(w) > 2 and w.isalpha() and not re.search('[aeiouyAEIOUY]', w) else w for w in text.split(' '))
 
 
 def acronyms(label, text):
@@ -171,7 +175,7 @@ class Build:
                     if vs['url'] not in self.expansions or lang == 'en':
                         self.expansions[vs['url']] = vs
         else:
-            print(f'warning: {exp} missing, coded values will show the value set name only', file=sys.stderr)
+            print(f'warning: {exp} missing, coded values will list codes only for value sets that are plain lists from HL7 packages', file=sys.stderr)
 
     def sd(self, pid):
         if pid not in self.sds:
@@ -231,12 +235,18 @@ class Build:
         if ref in self.cache:
             return self.cache[ref]
         f = self.out / f'{ref.replace("/", "-")}.json'
-        text = ref
+        text = self.cache[ref] = ref
         if '/' in ref and f.exists():
             r = load(f)
             codes = {c['code']: d for c in all_codings(r) for d in [self.display(c.get('system'), c['code'])] if d}
             name = r.get('name')
-            what = lambda keys: next(filter(None, (fmt(r.get(k), codes) for k in keys if isinstance(r.get(k), (dict, list)))), '')
+            def part(v):
+                ref = v.get('reference') if isinstance(v, dict) else None
+                if isinstance(ref, dict) and isinstance(ref.get('reference'), str):
+                    text = self.describe(ref['reference'])
+                    return text.partition(': ')[2] or text
+                return fmt(v, codes)
+            what = lambda keys: next(filter(None, (part(r.get(k)) for k in keys if isinstance(r.get(k), (dict, list)))), '')
             title = next((c['attachment']['title'] for c in as_list(r.get('content')) if isinstance(c, dict)
                           and isinstance(c.get('attachment'), dict) and c['attachment'].get('title')), None)
             if isinstance(name, str):
@@ -245,13 +255,13 @@ class Build:
                 text = fmt(name[0])
             elif isinstance(r.get('title'), str) or title:
                 text = r.get('title') if isinstance(r.get('title'), str) else title
-            elif what(DESCRIBE_KEYS[:5]):
-                text = f"{r['resourceType']}: {what(DESCRIBE_KEYS[:5])}"
+            elif what(DESCRIBE_KEYS[:6]):
+                text = f"{r['resourceType']}: {what(DESCRIBE_KEYS[:6])}"
             elif r.get('identifier'):
                 ident = as_list(r['identifier'])[0]
                 text = f"{r['resourceType']} {ident.get('value', '') if isinstance(ident, dict) else ''}".strip()
-            elif what(DESCRIBE_KEYS[5:]):
-                text = f"{r['resourceType']}: {what(DESCRIBE_KEYS[5:])}"
+            elif what(DESCRIBE_KEYS[6:]):
+                text = f"{r['resourceType']}: {what(DESCRIBE_KEYS[6:])}"
         self.cache[ref] = text
         return text
 
@@ -322,23 +332,39 @@ class Build:
         return [i['system'] for i in load(Path(f)).get('compose', {}).get('include', []) if 'system' in i]
 
     def filter_codes(self, inc):
-        """Codes picked by concept is-a / descendent-of / = filters on a package code system; None for any other filter."""
+        """Codes picked by concept is-a / descendent-of / = filters on a complete package code system; None when that cannot be worked out."""
         cs_file = self.packages().get(inc.get('system'))
         if not cs_file or any(f.get('property') != 'concept' or f.get('op') not in ('is-a', 'descendent-of', '=') for f in inc['filter']):
             return None
-        def find(concepts, code):
+        cs = load(cs_file)
+        if cs.get('content', 'complete') != 'complete':
+            return None
+        kids = {}
+        def nest(concepts, parent):
             for c in concepts:
-                if c.get('code') == code:
-                    return c
-                hit = find(c.get('concept', []), code)
-                if hit:
-                    return hit
-        out = []
+                if parent:
+                    kids.setdefault(parent, []).append(c['code'])
+                nest(c.get('concept', []), c['code'])
+        nest(cs.get('concept', []), None)
+        codes = {c['code'] for c in flatten_concepts(cs.get('concept', []))}
+        for c in flatten_concepts(cs.get('concept', [])):
+            for pr in c.get('property', []):
+                if pr.get('code') in ('subsumedBy', 'parent') and pr.get('valueCode'):
+                    kids.setdefault(pr['valueCode'], []).append(c['code'])
+        out = None
         for f in inc['filter']:
-            top = find(load(cs_file).get('concept', []), f.get('value'))
-            if top:
-                out += ([top['code']] if f['op'] != 'descendent-of' else []) + ([c['code'] for c in flatten_concepts(top.get('concept', []))] if f['op'] != '=' else [])
-        return out
+            top = f.get('value')
+            if top not in codes:
+                return None
+            below, todo = [], list(kids.get(top, []))
+            while todo:
+                c = todo.pop(0)
+                if c not in below:
+                    below.append(c)
+                    todo += kids.get(c, [])
+            picked = ([top] if f['op'] != 'descendent-of' else []) + (below if f['op'] != '=' else [])
+            out = picked if out is None else [c for c in out if c in picked]
+        return out or None
 
     def package_expansion(self, url):
         """Expand an HL7 value set that the publisher did not, when it only lists whole code systems or codes."""
@@ -360,10 +386,11 @@ class Build:
             cs = load(cs_file) if cs_file else {}
             concepts = {c['code']: c for c in flatten_concepts(cs.get('concept', []))}
             for c in inc.get('concept') or ([concepts[x] for x in picked if x in concepts] if picked is not None else concepts.values()):
-                full = concepts.get(c['code'], c)
+                full, key = concepts.get(c['code'], c), (inc['system'], c['code'])
                 abstract = any(pr.get('code') in ('notSelectable', 'abstract') and pr.get('valueBoolean') for pr in full.get('property', []))
                 contains.append({'code': c['code'], 'system': inc['system'], 'abstract': abstract,
-                                 'display': self.known.get((inc['system'], c['code'])) or en_display(c, vs) or en_display(full, cs)})
+                                 'display': (self.known_rank.get(key, 3) <= 1 and self.known[key]) or en_display(c, vs)
+                                 or en_display(full, cs) or self.known.get(key)})
         contains = [c for c in contains if (c['system'], c['code']) not in excluded]
         return {'title': vs.get('title'), 'name': vs.get('name'), 'expansion': {'total': len(contains), 'contains': contains}}
 
@@ -601,7 +628,8 @@ class Profile:
         short = e.get('short', '')
         label = self.labels.get(eid) or e.get('label') or acronyms(humanize(last.split(':')[1] if ':' in last else last), short)
         n = {'label': label, 'type': typ, 'card': f"{e.get('min', 0)}..{e.get('max', '*')}",
-             'path': eid, 'desc': self.descs.get(eid) or plain(first_sentence(e.get('definition')) if ' | ' in short and e.get('definition') else short)}
+             'path': eid, 'desc': self.descs.get(eid) or plain(first_sentence(e['definition']) if e.get('definition') and (
+                 ' | ' in short or (CYRILLIC.search(short) and not CYRILLIC.search(e['definition']))) else short)}
         if e.get('mustSupport'):
             n['ms'] = True
         if e.get('definition') and e['definition'] != short:
@@ -616,7 +644,10 @@ class Profile:
         eid = e['id']
         types = self.types(e)
         part = PART_BINDING.get(types[0]) if len(types) == 1 else None
-        binding = e.get('binding') or (self.by_id.get(f'{eid}.{part}', {}).get('binding') if part else None) or {}
+        binding = e.get('binding') or {}
+        part_b = self.by_id.get(f'{eid}.{part}', {}).get('binding') if part else None
+        if part_b and part_b.get('valueSet') and STRICT.index(part_b.get('strength', 'example')) <= STRICT.index(binding.get('strength', 'example')):
+            binding = part_b
         coding_slices = [c.get('binding') or self.by_id.get(c['id'] + '.code', {}).get('binding')
                          for c in self.kids.get(eid + '.coding', []) if is_slice(c['id']) and c.get('max') != '0']
         coding_slices = [x for x in coding_slices if x] or [self.by_id.get(eid + '.coding.code', {}).get('binding')]
@@ -637,7 +668,7 @@ class Profile:
         if code == 'CodeableReference':
             typ = 'coded' if binding.get('valueSet') else 'link'
         if typ in ('text', 'coded'):
-            typ = 'coded' if binding.get('valueSet') else 'text'
+            typ = 'coded' if binding.get('valueSet') and (len(types) == 1 or code in ('CodeableConcept', 'Coding', 'code')) else 'text'
         typ = self.cfg.get('types', {}).get(eid, typ)
         n = self.base(e, typ)
         if len(types) > 1:
@@ -722,7 +753,7 @@ class Profile:
         for c in self.kids.get(eid, []):
             vs = (c.get('binding') or {}).get('valueSet')
             name = c['path'].rpartition('.')[2]
-            if (vs and name in ('type', 'system', 'code', 'currency') and c.get('max') != '0' and (c.get('mustSupport') or c.get('min', 0) >= 1)
+            if (vs and name in ('type', 'system', 'code', 'currency') and c.get('max') != '0'
                     and vs.split('|')[0] != base_vs.get(f'{typ}.{name}')):
                 return c['binding']
         return None
@@ -788,6 +819,9 @@ class Profile:
         n['vs'] = {'title': title, 'strength': strength, 'url': url}
         if url in self.b.local_vs:
             n['vs']['page'] = f"ValueSet-{self.b.local_vs[url]}.html"
+        also = [self.additional_binding(a) for a in binding.get('additional', []) if a.get('valueSet')]
+        if also:
+            n['vs']['also'] = also
         contains = [dict(c, display=c.get('display') or self.b.display(c.get('system'), c['code'])) if 'code' in c else c
                     for c in flatten_contains((vs or {}).get('expansion', {}).get('contains', []))]
         total = (vs or {}).get('expansion', {}).get('total') or len(contains)
@@ -805,6 +839,31 @@ class Profile:
                 n['more'] = total - len(n['options'])
         return {c['code']: c.get('display') for c in contains if 'code' in c}
 
+    def additional_binding(self, a):
+        """An R5 binding.additional entry: its value set, purpose and the condition (usage) under which it applies."""
+        url = a['valueSet'].split('|')[0]
+        vs = self.b.expansions.get(url) or self.b.package_expansion(url) or {}
+        implicit = url[:-3] if url.endswith('/vs') else None
+        cs = load(self.b.packages()[implicit]) if implicit in self.b.packages() else {}
+        title = vs.get('title') or vs.get('name') or (f"Any code from {cs.get('title') or cs.get('name') or implicit}"
+                                                      if implicit else url.rstrip('/').split('/')[-1])
+        out = {'title': title, 'strength': a.get('purpose', '')}
+        if a.get('shortDoco'):
+            out['note'] = a['shortDoco']
+        if url in self.b.local_vs:
+            out['page'] = f"ValueSet-{self.b.local_vs[url]}.html"
+        when = []
+        for u in a.get('usage', []):
+            path = (u.get('code') or {}).get('code', '')
+            el = next((x for x in self.els if x['id'] == path), None)
+            label = self.labels.get(path) or (el and el.get('label')) or humanize(path.rpartition('.')[2] or path)
+            value = choice(u, 'value')
+            codes = {c['code']: c.get('display') or self.b.display(c.get('system'), c['code']) or c['code'] for c in all_codings(value) if 'code' in c}
+            when.append(f"{label} is {fmt(value, codes)}")
+        if when:
+            out['when'] = ' or '.join(when)
+        return out
+
     # ---------- example values ----------
     def example_value(self, eid, codes=None, systems=()):
         return ', '.join(self.example_values(eid, codes, systems)) or None
@@ -820,6 +879,8 @@ class Profile:
                     d = self.b.display(c.get('system'), c['code'])
                     if d:
                         codes[c['code']] = d
+            if isinstance(v, dict) and isinstance(v.get('type'), str) and 'amount' in v and not codes.get(v['type']):
+                codes[v['type']] = self.b.display('http://hl7.org/fhir/price-component-type', v['type'])
             if isinstance(v, dict) and 'url' in v:
                 v = next((v[k] for k in v if k.startswith('value')), v)
             if isinstance(v, str) and not codes.get(v):
@@ -1003,7 +1064,15 @@ def fmt(v, codes=None):
         if 'frequency' in r or 'period' in r:
             f, per = r.get('frequency', 1), r.get('period', 1)
             unit = UNIT_WORDS.get(r.get('periodUnit'), r.get('periodUnit', ''))
-            parts.append(f"{ {1: 'once', 2: 'twice'}.get(f, f'{f} times')} {f'a {unit}' if per == 1 else f'every {per} {unit}s'}".strip())
+            times = f"{f}-{r['frequencyMax']} times" if r.get('frequencyMax') else {1: 'once', 2: 'twice'}.get(f, f'{f} times')
+            every = (f"every {per}-{r['periodMax']} {unit}s" if r.get('periodMax') else
+                     f"{'an' if unit[:1] in ('a', 'e', 'i', 'o', 'u', 'h') else 'a'} {unit}" if per == 1 else f'every {per} {unit}s')
+            parts.append(f"{times} {every}".strip())
+        if r.get('duration'):
+            unit = UNIT_WORDS.get(r.get('durationUnit'), r.get('durationUnit', ''))
+            parts.append(f"for {r['duration']}{'-' + str(r['durationMax']) if r.get('durationMax') else ''} {unit}{'' if r['duration'] == 1 and not r.get('durationMax') else 's'}".strip())
+        if r.get('count'):
+            parts.append(f"{r['count']}{'-' + str(r['countMax']) if r.get('countMax') else ''} times in total")
         if r.get('timeOfDay'):
             parts.append('at ' + fmt(r['timeOfDay'], codes))
         if r.get('dayOfWeek'):
@@ -1025,7 +1094,7 @@ def fmt(v, codes=None):
     if 'currency' in v and 'value' in v:
         return f"{v['value']} {v['currency']}"
     if isinstance(v.get('type'), str) and 'amount' in v:
-        return f"{v['type']}: {fmt(v['amount'], codes)}"
+        return f"{(codes or {}).get(v['type']) or v['type']}: {fmt(v['amount'], codes)}"
     if 'contentType' in v or 'data' in v or ('url' in v and 'title' in v):
         return v.get('title') or v.get('url') or v.get('contentType', '')
     if 'telecom' in v and ('name' in v or 'purpose' in v or 'organization' in v):
@@ -1127,9 +1196,10 @@ def build_view(b, view, shared=None):
             sec['collapsed'] = True
         for sg in s.get('subgroups', []):
             pool = sec['children']
-            moved = [c for c in pool if c.get('path') in sg['ids']]
-            missing = [i for i in sg['ids'] if i not in {c.get('path') for c in moved}]
-            moved += [p.node(i) for i in missing]
+            moved = []
+            for i in sg['ids']:
+                own = [c for c in pool if c.get('path') == i] or [p.node(i)]
+                moved += own + [c for c in pool if (c.get('path') or '').startswith(i + '.')]
             first = next((k for k, c in enumerate(pool) if c in moved), len(pool))
             sec['children'] = [c for c in pool if c not in moved]
             group = {'label': sg['label'], 'type': 'group', 'card': None, 'desc': sg.get('desc', ''), 'children': moved}
