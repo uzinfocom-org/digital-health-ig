@@ -93,7 +93,7 @@ button { font: inherit; color: inherit; }
 .chip.opt { background: var(--bar); color: var(--muted); }
 .chip.ms { background: var(--ms-soft); color: var(--ms); }
 .chip.rep { background: var(--accent-soft); color: var(--accent); }
-.chip.ref { background: var(--link-soft); color: var(--link); }
+.chip.ref { background: var(--link-soft); color: var(--link); white-space: normal; overflow-wrap: anywhere; }
 
 /* overview */
 .ov { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 24px; }
@@ -170,7 +170,7 @@ table.data tr.grp.d1 td { background: color-mix(in srgb, var(--bar) 55%, var(--p
 /* form preview */
 .form { display: grid; gap: 10px; }
 .fs { border: 1px solid var(--line); }
-.fs > .fh { display: flex; align-items: center; gap: 8px; width: 100%; text-align: left; border: none; background: var(--bar); color: var(--bar-ink); padding: 7px 10px; cursor: pointer; font-weight: 600; }
+.fs > .fh { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; width: 100%; text-align: left; border: none; background: var(--bar); color: var(--bar-ink); padding: 7px 10px; cursor: pointer; font-weight: 600; }
 .fs.d1 > .fh { background: color-mix(in srgb, var(--bar) 55%, var(--panel)); font-weight: 600; }
 .fs > .fh .car { font: 12px var(--font-cond); color: var(--muted); font-weight: 400; }
 .fs > .fh .tw { width: 12px; color: var(--muted); transition: transform .15s; }
@@ -192,7 +192,7 @@ table.data tr.grp.d1 td { background: color-mix(in srgb, var(--bar) 55%, var(--p
 .fc select { max-width: 300px; }
 .fc .sep { color: var(--muted); font-size: 12px; }
 .fc .fv { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; width: 100%; min-width: 0; }
-.fc .refbox { border: 1px dashed var(--link); color: var(--link); background: var(--link-soft); padding: 3px 8px; border-radius: 3px; font-size: 13px; }
+.fc .refbox { overflow-wrap: anywhere; border: 1px dashed var(--link); color: var(--link); background: var(--link-soft); padding: 3px 8px; border-radius: 3px; font-size: 13px; }
 
 /* exchange */
 .flow { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 0; margin-bottom: 18px; }
@@ -299,7 +299,8 @@ const VIEWS = Object.fromEntries(MODELS.map(m => [m.id, ['overview', 'data', 'mi
 const VIEW_NAMES = { overview: 'Overview', data: 'Data', mindmap: 'Mind map', form: 'Form preview', exchange: 'Exchange' };
 
 function readHash() {
-  const h = location.hash.slice(1);
+  let h = location.hash.slice(1);
+  try { if (MODELS.some(x => x.id === decodeURIComponent(h))) h += '-overview'; } catch (e) { return; }
   const i = h.lastIndexOf('-');
   let m = i < 0 ? h : h.slice(0, i), v = i < 0 ? '' : h.slice(i + 1);
   try { m = decodeURIComponent(m); } catch (e) { return; }
@@ -572,8 +573,8 @@ function control(n, v, id) {
     case 'count': return `<input id="${id}" type="number" class="num" min="0" value="${esc(v)}">`;
     case 'decimal': return `<input id="${id}" type="number" class="num" step="any" value="${esc(v)}">`;
     case 'quantity': { const [a, ...b] = v.split(' '); return `<input id="${id}" type="text" class="num" inputmode="decimal" value="${esc(a || '')}" aria-label="${esc(n.label)} amount"><input id="${id}-u" type="text" class="unit" placeholder="unit" value="${esc(b.join(' '))}" aria-label="${esc(n.label)} unit">`; }
-    case 'ratio': { const mm = v.match(/^(\S+)\s+(\S+)\s*\/\s*(\S+)\s+(.+)$/) || []; return `<input id="${id}" class="num" value="${esc(mm[1] || '')}" aria-label="${esc(n.label)} numerator"><input id="${id}-a" class="unit" placeholder="unit" value="${esc(mm[2] || '')}" aria-label="${esc(n.label)} numerator unit"><span class="sep">per</span><input id="${id}-b" class="num" value="${esc(mm[3] || '')}" aria-label="${esc(n.label)} denominator"><input id="${id}-c" class="unit" placeholder="unit" value="${esc(mm[4] || '')}" aria-label="${esc(n.label)} denominator unit">`; }
-    case 'period': { const mm = v.match(/(\d{4}-\d\d-\d\d)(?:.*?(\d{4}-\d\d-\d\d))?/) || []; return `<input id="${id}" type="date" value="${esc(mm[1] || '')}" aria-label="${esc(n.label)} from"><span class="sep">to</span><input id="${id}-b" type="date" value="${esc(mm[2] || '')}" aria-label="${esc(n.label)} to">`; }
+    case 'ratio': { const mm = v.match(/^(\S+)(?:\s+([^\s/]+))?\s*\/\s*(\S+)(?:\s+(.+))?$/) || []; return `<input id="${id}" class="num" value="${esc(mm[1] || '')}" aria-label="${esc(n.label)} numerator"><input id="${id}-a" class="unit" placeholder="unit" value="${esc(mm[2] || '')}" aria-label="${esc(n.label)} numerator unit"><span class="sep">per</span><input id="${id}-b" class="num" value="${esc(mm[3] || '')}" aria-label="${esc(n.label)} denominator"><input id="${id}-c" class="unit" placeholder="unit" value="${esc(mm[4] || '')}" aria-label="${esc(n.label)} denominator unit">`; }
+    case 'period': { const mm = (/^until /.test(v) ? v.replace(/^until /, ' - ').match(/()(\d{4}-\d\d-\d\d)/) : v.match(/(\d{4}-\d\d-\d\d)(?:.*?(\d{4}-\d\d-\d\d))?/)) || []; return `<input id="${id}" type="date" value="${esc(mm[1] || '')}" aria-label="${esc(n.label)} from"><span class="sep">to</span><input id="${id}-b" type="date" value="${esc(mm[2] || '')}" aria-label="${esc(n.label)} to">`; }
     case 'link': return `<span class="refbox" id="${id}">${icon('link')} ${esc(v || 'Select ' + n.target)}</span>`;
     default: return `<input id="${id}" type="text" value="${esc(v)}" placeholder="${n.type === 'id' ? 'Number' : ''}">`;
   }

@@ -533,6 +533,10 @@
           "to": "SHIF",
           "sends": [
             "Prescription",
+            "Medicine",
+            "Dosage",
+            "Supply",
+            "Clinical context",
             "Dispensing record"
           ],
           "refs": [],
@@ -548,6 +552,10 @@
           "to": "Doctor / patient",
           "sends": [
             "Prescription",
+            "Medicine",
+            "Dosage",
+            "Supply",
+            "Clinical context",
             "Dispensing record"
           ],
           "refs": [],
