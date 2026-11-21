@@ -307,6 +307,15 @@ class Build:
         """The largest example instance that claims the profile in meta.profile, as the one most likely to fill every field."""
         if self._examples is None:
             self._examples, self._claims, self._bundled, self._bundle_of, self._bundle_page, self._full_page = {}, {}, {}, {}, {}, {}
+            best = {}
+
+            def claim(found):
+                for x, size in found:
+                    for prof in x.get('meta', {}).get('profile', []):
+                        prof = prof.split('|')[0]
+                        self._claims.setdefault(prof, []).append((size, f"{x['resourceType']}/{x['id']}"))
+                        if size > self._examples.get(prof, (0, None))[0]:
+                            self._examples[prof] = (size, f"{x['resourceType']}/{x['id']}")
             for f in sorted(self.out.glob('*-*.json')):
                 if f.name.split('-')[0] in CONFORMANCE:
                     continue
@@ -327,17 +336,15 @@ class Build:
                     x = e['resource']
                     ref = f"{x.get('resourceType')}/{x['id']}"
                     self._bundle_of.setdefault(ref, []).append((x, full))
-                    if not (self.out / f"{ref.replace('/', '-')}.json").exists() and ref not in self._bundled:
+                    # one copy per Type/id across Bundles: one that claims a profile, then the largest
+                    key = (bool(x.get('meta', {}).get('profile')), len(json.dumps(x, indent=2)))
+                    if not (self.out / f"{ref.replace('/', '-')}.json").exists() and key > best.get(ref, (False, 0)):
                         self._bundled[ref] = x
                         self._bundle_page[ref] = f.stem
-                        found.append((x, len(json.dumps(x, indent=2))))
+                        best[ref] = key
                     self._full_page[id(full)] = f.stem
-                for x, size in found:
-                    for prof in x.get('meta', {}).get('profile', []):
-                        prof = prof.split('|')[0]
-                        self._claims.setdefault(prof, []).append((size, f"{x['resourceType']}/{x['id']}"))
-                        if size > self._examples.get(prof, (0, None))[0]:
-                            self._examples[prof] = (size, f"{x['resourceType']}/{x['id']}")
+                claim(found)
+            claim([(self._bundled[ref], size) for ref, (_, size) in best.items()])
         return self._examples.get(url, (0, None))[1]
 
     def instances_of(self, url):
@@ -949,6 +956,12 @@ class Profile:
             code = binding['forType']
         if binding.get('forType') and code and code != binding['forType']:
             binding = {}
+        if ('Quantity' in types and binding.get('valueSet')
+                and set(self.b.vs_systems(binding['valueSet'].split('|')[0])) == {'http://unitsofmeasure.org'}):
+            # a units value set binds the Quantity choice only
+            code = code or 'Quantity'
+            if code != 'Quantity':
+                binding = {}
         if len(types) > 1 and not binding.get('valueSet'):
             typed = [x for x in self.els if x['id'].startswith(eid + ':') and '.' not in x['id'][len(eid):]
                      and x.get('max') != '0' and (x.get('binding') or {}).get('valueSet') and len(x.get('type', [])) == 1]
@@ -1726,15 +1739,15 @@ def fmt(v, codes=None):
     if 'display' in v or 'reference' in v:
         return v.get('display') or v.get('reference', '')
     if 'family' in v or 'given' in v:
-        return v.get('text') or ' '.join(v.get('given', []) + [v.get('family', '')]).strip()
-    if any(k in v for k in ('line', 'city', 'district', 'postalCode')) or set(v) <= ADDRESS_KEYS and ('country' in v or 'state' in v):
+        return v.get('text') or ' '.join(filter(None, v.get('prefix', []) + v.get('given', []) + [v.get('family', '')] + v.get('suffix', [])))
+    if any(k in v for k in ('line', 'city', 'district', 'postalCode')) or set(v) <= ADDRESS_KEYS and ('text' in v or 'country' in v or 'state' in v):
         return v.get('text') or ', '.join(filter(None, v.get('line', []) + [(codes or {}).get(v.get(k)) or v.get(k) for k in ('city', 'district', 'state', 'postalCode', 'country')
                                                                         if isinstance(v.get(k), str)]))
     if 'div' in v:
         return fmt(v['div'])
     if isinstance(v.get('resourceType'), str):
         return f"{v['resourceType']}/{v['id']}" if isinstance(v.get('id'), str) else v['resourceType']
-    if 'doseAndRate' in v or 'timing' in v and ('route' in v or 'sequence' in v or 'asNeeded' in v or 'asNeededBoolean' in v):
+    if 'doseAndRate' in v or 'timing' in v and ('route' in v or 'sequence' in v or any(k.startswith('asNeeded') for k in v)):
         # a Dosage: the sequence number and a false as-needed flag say nothing; a dose carries its own type
         v = {k: x for k, x in v.items() if k != 'sequence' and not (k in ('asNeeded', 'asNeededBoolean') and x is False)}
         for k in ('asNeeded', 'asNeededBoolean'):
@@ -1743,6 +1756,8 @@ def fmt(v, codes=None):
         if v.get('asNeededFor'):
             v.pop('asNeeded', None)
             v['asNeededFor'] = 'as needed for ' + ' or '.join(filter(None, (fmt(x, codes) for x in v['asNeededFor'])))
+        if v.get('asNeededCodeableConcept'):
+            v['asNeededCodeableConcept'] = 'as needed for ' + fmt(v['asNeededCodeableConcept'], codes)
         if v.get('doseAndRate'):
             v['doseAndRate'] = [', '.join(filter(None, (
                 f"{fmt(d[k], codes)} ({fmt(d['type'], codes)})" if d.get('type') else fmt(d[k], codes)
@@ -1825,7 +1840,9 @@ def build_view(b, view, shared=None):
         anchor = s.get('element') or (s['include'][0] if s.get('hoist') and len(s.get('include', [])) == 1 else None)
         if anchor:
             ap = main if s.get('element') else p
-            e = ap.by_id[anchor]
+            e = ap.by_id.get(anchor)
+            if e is None:
+                sys.exit(f'error: {anchor} is not an element of {ap.pid}')
             ap.used.add(anchor)
             sec = {'label': s['label'], 'type': 'link' if s.get('link') else 'group', 'card': f"{e['min']}..{e['max']}",
                    'path': anchor, 'desc': s.get('desc') or ap.descs.get(anchor) or plain(e.get('short', ''))}
