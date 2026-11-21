@@ -8,7 +8,7 @@ scripts/clinical-views/generate.py --output-dir output --config scripts/clinical
 
 `--config` is optional; leave it out for another IG to get the default view of every profile. Pass `--packages DIR` (repeatable) when the dependency packages are not in `~/.fhir/packages`, e.g. a private package cache.
 
-It reads only the IG publisher's `output/` folder (snapshots, `expansions.json`, examples, `ImplementationGuide-*.json`) plus the dependency packages in `~/.fhir/packages`, so it works on any IG. Python 3 standard library only.
+It reads only the IG publisher's `output/` folder (snapshots, `expansions.json`, examples, `ImplementationGuide-*.json`) plus the dependency packages in `~/.fhir/packages`, so it works on any FHIR STU3 or later IG. Python 3 standard library only.
 
 Every resource profile gets a view with no configuration. Elements shown are the Must Support ones (extensions included) plus mandatory top-level elements, never prohibited (`0..0`) ones; for a profile with no Must Support at all, the constrained (differential) elements. Example values come from the largest instance whose `meta.profile` names the profile.
 

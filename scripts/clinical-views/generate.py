@@ -45,6 +45,21 @@ MAX_VALUES = 12
 MAX_OPTIONS = 60
 
 
+def load(path):
+    return json.loads(Path(path).read_text(encoding='utf-8-sig'))
+
+
+def plain(md):
+    """Markdown from the IG as readable plain text: link text kept, emphasis and code marks dropped."""
+    if not isinstance(md, str):
+        return md
+    md = re.sub(r'!\[[^\]]*\]\([^)]*\)', '', md)
+    md = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', md)
+    md = re.sub(r'(\*\*|__)(.+?)\1', r'\2', md)
+    md = re.sub(r'`([^`]+)`', r'\1', md)
+    return re.sub(r'(?m)^#+\s+', '', md)
+
+
 def humanize(name):
     name = name.replace('[x]', '')
     words = re.sub(r'(?<=[a-z0-9])(?=[A-Z])', ' ', name).replace('-', ' ').split()
@@ -93,21 +108,25 @@ class Build:
         self.package_dirs = [Path(d).expanduser() for d in package_dirs or ['~/.fhir/packages']]
         self.prefix = prefix
         self.sds, self.by_url, self.cache, self._pkg, self._examples = {}, {}, {}, None, None
-        self.ig = next((json.loads(f.read_text()) for f in sorted(self.out.glob('ImplementationGuide-*.json'))), {})
+        self.ig = next((load(f) for f in sorted(self.out.glob('ImplementationGuide-*.json'))), {})
         for f in self.out.glob('StructureDefinition-*.json'):
-            sd = json.loads(f.read_text())
-            if sd.get('resourceType') == 'StructureDefinition':
-                self.sds[sd['id']] = sd
-                self.by_url[sd['url']] = sd
+            sd = load(f)
+            if sd.get('resourceType') != 'StructureDefinition':
+                continue
+            if any('id' not in e for e in sd.get('snapshot', {}).get('element', [])):
+                print(f"warning: skipped {f.name}: its elements have no ids (FHIR DSTU2 or older)", file=sys.stderr)
+                continue
+            self.sds[sd['id']] = sd
+            self.by_url[sd['url']] = sd
         self.local_vs = {}
         for f in self.out.glob('ValueSet-*.json'):
-            vs = json.loads(f.read_text())
+            vs = load(f)
             self.local_vs[vs.get('url')] = vs['id']
         self._local_cs = None
         self.expansions, self.known = {}, {}
         exp = self.out / 'expansions.json'
         if exp.exists():
-            for entry in json.loads(exp.read_text()).get('entry', []):
+            for entry in load(exp).get('entry', []):
                 vs = entry['resource']
                 lang = next((p.get('valueCode') or p.get('valueString') for p in vs.get('expansion', {}).get('parameter', [])
                              if p['name'] == 'displayLanguage'), None)
@@ -130,7 +149,7 @@ class Build:
         if not f.exists():
             print(f'warning: example {ref} not found', file=sys.stderr)
             return None
-        return json.loads(f.read_text())
+        return load(f)
 
     def title_for(self, url):
         url = url.split('|')[0]
@@ -150,7 +169,7 @@ class Build:
                 if f.name.split('-')[0] in CONFORMANCE:
                     continue
                 try:
-                    r = json.loads(f.read_text())
+                    r = load(f)
                 except (ValueError, UnicodeDecodeError):
                     continue
                 if not isinstance(r, dict) or 'id' not in r:
@@ -168,7 +187,7 @@ class Build:
         f = self.out / f'{ref.replace("/", "-")}.json'
         text = ref
         if '/' in ref and f.exists():
-            r = json.loads(f.read_text())
+            r = load(f)
             name = r.get('name')
             if isinstance(name, str):
                 text = name
@@ -198,12 +217,12 @@ class Build:
                     continue
                 idx = pkg / '.index.json'
                 if idx.exists():
-                    files = [(e.get('resourceType'), e.get('url'), e.get('filename')) for e in json.loads(idx.read_text()).get('files', [])]
+                    files = [(e.get('resourceType'), e.get('url'), e.get('filename')) for e in load(idx).get('files', [])]
                 else:
                     files = []
                     for f in pkg.glob('*.json'):
                         try:
-                            r = json.loads(f.read_text())
+                            r = load(f)
                         except ValueError:
                             continue
                         files.append((r.get('resourceType'), r.get('url'), f.name))
@@ -220,11 +239,11 @@ class Build:
             if self._local_cs is None:
                 self._local_cs = {}
                 for f in self.out.glob('CodeSystem-*.json'):
-                    cs = json.loads(f.read_text())
+                    cs = load(f)
                     self._local_cs[cs.get('url')] = f
             f = self._local_cs.get(system) or self.packages().get(system)
             if f:
-                cs = json.loads(Path(f).read_text())
+                cs = load(Path(f))
                 self.cache[key] = {c['code']: c.get('display') for c in flatten_concepts(cs.get('concept', [])) if 'code' in c}
         return self.cache[key].get(code) or self.known.get((system, code))
 
@@ -233,20 +252,20 @@ class Build:
         f = self.out / f"ValueSet-{self.local_vs[url]}.json" if url in self.local_vs else self.packages().get(url)
         if not f or not Path(f).exists():
             return []
-        return [i['system'] for i in json.loads(Path(f).read_text()).get('compose', {}).get('include', []) if 'system' in i]
+        return [i['system'] for i in load(Path(f)).get('compose', {}).get('include', []) if 'system' in i]
 
     def package_expansion(self, url):
         """Expand an HL7 value set that the publisher did not, when it only lists whole code systems or codes."""
         f = self.packages().get(url)
         if not f:
             return None
-        vs = json.loads(f.read_text())
+        vs = load(f)
         contains = []
         for inc in vs.get('compose', {}).get('include', []):
             if inc.get('filter') or inc.get('valueSet') or 'system' not in inc:
                 return {'title': vs.get('title'), 'name': vs.get('name')}
             cs_file = self.packages().get(inc['system'])
-            cs = json.loads(cs_file.read_text()) if cs_file else {}
+            cs = load(cs_file) if cs_file else {}
             concepts = {c['code']: c for c in flatten_concepts(cs.get('concept', []))}
             for c in inc.get('concept') or concepts.values():
                 full = concepts.get(c['code'], c)
@@ -391,11 +410,11 @@ class Profile:
         label = self.labels.get(eid) or e.get('label') or humanize(last.split(':')[1] if ':' in last else last)
         short = e.get('short', '')
         n = {'label': label, 'type': typ, 'card': f"{e.get('min', 0)}..{e.get('max', '*')}",
-             'path': eid, 'desc': self.descs.get(eid) or short}
+             'path': eid, 'desc': self.descs.get(eid) or plain(short)}
         if e.get('mustSupport'):
             n['ms'] = True
         if e.get('definition') and e['definition'] != short:
-            n['def'] = e['definition']
+            n['def'] = plain(e['definition'])
         if typ == 'group':
             ex = self.example_value(eid)
             if ex:
@@ -703,7 +722,7 @@ def build_view(b, view, shared=None):
             e = ap.by_id[anchor]
             ap.used.add(anchor)
             sec = {'label': s['label'], 'type': 'link' if s.get('link') else 'group', 'card': f"{e['min']}..{e['max']}",
-                   'path': anchor, 'desc': s.get('desc') or ap.descs.get(anchor) or e.get('short', '')}
+                   'path': anchor, 'desc': s.get('desc') or ap.descs.get(anchor) or plain(e.get('short', ''))}
             if e.get('mustSupport'):
                 sec['ms'] = True
             if s.get('link'):
@@ -743,9 +762,9 @@ def build_view(b, view, shared=None):
     sd = main.sd
     model = {k: view[k] for k in ('id', 'title', 'sub', 'icon', 'kind', 'concept', 'purpose', 'use', 'misuse', 'keywords', 'featured') if k in view}
     model.update({
-        'description': view.get('description') or sd.get('description', ''),
-        'purpose': view.get('purpose') or sd.get('purpose', ''),
-        'resource': view.get('resource') or sd['type'],
+        'description': view.get('description') or plain(sd.get('description', '')),
+        'purpose': view.get('purpose') or plain(sd.get('purpose', '')),
+        'resource': view.get('resource') or sd.get('type') or main.els[0]['path'],
         'profile': sd['url'],
         'version': sd.get('version', ''),
         'status': sd.get('status', ''),
@@ -770,7 +789,7 @@ def build_view(b, view, shared=None):
 
 
 def auto_view(b, sd):
-    typ = sd['type']
+    typ = sd.get('type') or sd['snapshot']['element'][0]['path'].split('.')[0]
     return {'id': sd['id'], 'title': b.short(sd.get('title') or sd['name']), 'sub': typ, 'kind': 'archetype',
             'icon': ''.join(c for c in typ if c.isupper())[:2] if sum(c.isupper() for c in typ) > 1 else typ[:2],
             'profile': sd['id'], 'concept': b.short(sd.get('title') or sd['name'])}
@@ -788,12 +807,12 @@ def main():
     ap.add_argument('--fragment', action='store_true', help='omit the html/head/body skeleton (for hosts that add their own)')
     args = ap.parse_args()
 
-    cfg = json.loads(Path(args.config).read_text()) if args.config else {}
+    cfg = load(Path(args.config)) if args.config else {}
     b = Build(args.output_dir, cfg.get('titlePrefix', ''), args.packages)
     views = [dict(v, featured=True) for v in cfg.get('views', [])]
     if not args.no_auto and cfg.get('autoProfiles', True):
         curated = {v['id'] for v in views} | {v['profile'] for v in views if v.get('kind') != 'template'}
-        for sd in sorted(b.sds.values(), key=lambda x: (x['type'], x.get('title') or x['name'])):
+        for sd in sorted(b.sds.values(), key=lambda x: (x.get('type', ''), x.get('title') or x.get('name', ''))):
             if (sd.get('derivation') == 'constraint' and sd.get('kind') == 'resource' and not sd.get('abstract')
                     and sd['id'] not in curated and 'snapshot' in sd):
                 views.append(auto_view(b, sd))
@@ -801,11 +820,11 @@ def main():
         keep = set(args.only.split(','))
         views = [v for v in views if v['id'] in keep or v['profile'] in keep]
     if not views:
-        sys.exit('error: no views to generate')
+        sys.exit(f'error: no resource profiles with snapshots in {args.output_dir}' + (f' match --only {args.only}' if args.only else ''))
     models = [build_view(b, v, cfg.get('profiles')) for v in views]
 
     manifest = Path(args.output_dir) / 'package.manifest.json'
-    pkg = json.loads(manifest.read_text()) if manifest.exists() else {}
+    pkg = load(manifest) if manifest.exists() else {}
     guide = cfg.get('guideName') or b.ig.get('title') or b.ig.get('name', 'this guide')
     meta = {
         'title': cfg.get('title') or f'{guide} clinical views',
