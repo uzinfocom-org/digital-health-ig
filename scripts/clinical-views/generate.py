@@ -39,9 +39,9 @@ CONFORMANCE = {
     'CapabilityStatement', 'SearchParameter', 'OperationDefinition', 'StructureMap', 'package', 'expansions', 'qa',
 }
 PRIMITIVES = {'instant', 'markdown', 'canonical', 'uri', 'url', 'string', 'code', 'id', 'oid', 'uuid', 'base64Binary'}
-DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medication', 'suppliedItem.item', 'item.concept', 'itemCodeableConcept', 'relationship', 'type', 'class', 'category',
+DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medication', 'suppliedItem.item', 'item.concept', 'itemCodeableConcept', 'device', 'relationship', 'type', 'class', 'category',
                  'practitioner', 'organization', 'agent.who', 'subject')
-WHAT_KEYS = 11
+WHAT_KEYS = 12
 CONTACT_SYSTEMS = {'phone', 'fax', 'email', 'pager', 'url', 'sms', 'other'}
 UNIT_WORDS = {'s': 'second', 'min': 'minute', 'h': 'hour', 'd': 'day', 'wk': 'week', 'mo': 'month', 'a': 'year'}
 PART_BINDING = {'Coding': 'code', 'Ratio': 'numerator.code', 'Quantity': 'code', 'SimpleQuantity': 'code', 'Duration': 'code', 'Age': 'code',
@@ -335,7 +335,8 @@ class Build:
         if isinstance(name, str):
             return name
         if isinstance(name, list) and name:
-            return fmt(name[0])
+            label = next((name[0][k] for k in ('productName', 'name') if isinstance(name[0], dict) and isinstance(name[0].get(k), str)), None)
+            return label or fmt(name[0])
         if title:
             return title
         if what(DESCRIBE_KEYS[:WHAT_KEYS]):
@@ -682,7 +683,7 @@ class Profile:
         # split when the codings differ in binding, two or more must be given without a fixed code, or a supported fixed code is optional
         if not sub and types[:1] in (['CodeableConcept'], ['CodeableReference']) and len(cslices) > 1 and eid not in self.expand and (
                 len(bound) > 1 or len(required) > 1 and open_codes or optional_codes):
-            sub = [self.node(c['id']) for c in cslices if self.visible(c)]
+            sub = [self.node(c['id']) for c in cslices if self.visible(c) or c.get('min', 0) >= 1]
         if sub:
             n = self.base(e, 'group')
             n['children'] = sub
@@ -755,7 +756,8 @@ class Profile:
                 for c in kids:
                     first = (c.get('exs') or [c.get('ex')])[0]
                     if first and c.get('type') == 'bool':
-                        first = f"{humanize(c['path'].rpartition('.')[2].split(':')[0])}: {first}"
+                        base = c['path'].rpartition('.')[2].split(':')[0]
+                        first = f"{c['label'] if base in ('extension', 'modifierExtension') else humanize(base)}: {first}"
                     if first and not all(x in seen for x in first.split(', ')):
                         parts.append(first)
                         seen.update(first.split(', '))
@@ -1163,7 +1165,7 @@ class Profile:
             res = v if isinstance(v, dict) and isinstance(v.get('resourceType'), str) else (
                 v.get('resource') if isinstance(v, dict) and isinstance(v.get('resource'), dict) and isinstance(v['resource'].get('resourceType'), str) else None)
             if res is not None:
-                s = self.b.summarize(res, self.example) or fmt(res)
+                s = self.b.summarize(res) or fmt(res)
             elif eid.rpartition('.')[2] != 'url' and self.b.canonical(v):
                 s = self.b.describe(self.b.canonical(v))
             elif isinstance(v, dict) and isinstance(v.get('reference'), str) and not v.get('display'):
@@ -1241,41 +1243,85 @@ class Profile:
                 return False
         return True
 
-    def type_matches(self, v, slice_id, d):
-        """A type or profile discriminator: the resource type or choice type, or the profile the value claims or whose fixed parts it carries."""
-        path = [] if d['path'] == '$this' else d['path'].replace('[x]', '').split('.')
-        el = self.by_id.get(slice_id) if not path else (self.by_id.get(f"{slice_id}.{d['path']}") or self.by_id.get(f"{slice_id}.{d['path']}[x]"))
+    def slice_kinds(self, slice_id, d):
+        """Resource or data types and profiles a type/profile discriminator asks of a slice: (types, profiles, segments)."""
+        segs = [x for x in d['path'].replace('[x]', '').split('.') if x != '$this']
+        rel = '.'.join(x for x in segs if x != 'resolve()')
+        el = self.by_id.get(slice_id) if not rel else (self.by_id.get(f"{slice_id}.{rel}") or self.by_id.get(f"{slice_id}.{rel}[x]"))
         kinds = (el or {}).get('type', [])
+        if 'resolve()' in segs:
+            urls = [u.split('|')[0] for t in kinds for u in t.get('targetProfile', [])]
+            types = {(self.b.sd_by_url(u) or {}).get('type') or u.rstrip('/').split('/')[-1] for u in urls}
+        else:
+            urls = [u.split('|')[0] for t in kinds for u in t.get('profile', [])]
+            types = {t.get('code') for t in kinds}
+        profiles = {u for u in urls if (self.b.sd_by_url(u) or {}).get('derivation') == 'constraint'}
+        return types, profiles, segs
+
+    def required_fixed(self, url):
+        """(path, value) of every fixed or pattern element a profile requires, at any depth."""
+        key = ('reqfixed', url)
+        if key not in self.b.cache:
+            els = (self.b.sd_by_url(url) or {}).get('snapshot', {}).get('element', [])
+            mins = {x['id']: x.get('min', 0) for x in els}
+            out = []
+            for x in els:
+                parts = x['id'].split('.')
+                if len(parts) > 1 and fixed_value(x) is not None and all(
+                        mins.get('.'.join(parts[:i]), 1) >= 1 for i in range(2, len(parts) + 1)):
+                    out.append((x['path'].replace('[x]', '').split('.')[1:], fixed_value(x)))
+            self.b.cache[key] = out
+        return self.b.cache[key]
+
+    def conforms(self, g, url):
+        fixed = self.required_fixed(url)
+        def at(path):
+            vals = [g]
+            for seg in path:
+                vals = [x for y in vals if isinstance(y, dict) for x in as_list(choice(y, seg))]
+            return vals
+        return bool(fixed) and all(any(contains(y, want) for y in at(path)) for path, want in fixed)
+
+    def type_matches(self, v, slice_id, d):
+        """A type or profile discriminator: the resource or choice type, or the profile the value claims or whose required fixed parts it carries."""
+        types, profiles, segs = self.slice_kinds(slice_id, d)
         parents, got = [v], [v]
-        for key in path:
+        for key in segs:
             parents = got
-            got = [x for g in got if isinstance(g, dict) for x in as_list(choice(g, key))]
-        if d['type'] == 'type':
-            codes = {t.get('code') for t in kinds}
-            if any(isinstance(g, dict) and 'resourceType' in g for g in got):
-                return any(isinstance(g, dict) and g.get('resourceType') in codes for g in got)
-            if path:
-                return any(isinstance(p, dict) and path[-1] + c[:1].upper() + c[1:] in p for p in parents for c in codes if c)
-            return False
-        profiles = {u.split('|')[0] for t in kinds for u in t.get('profile', [])}
-        for g in got:
-            if not isinstance(g, dict):
-                continue
+            if key == 'resolve()':
+                got = [self.resolve_ref(g) for g in got]
+                got = [g for g in got if g]
+            else:
+                got = [x for g in got if isinstance(g, dict) for x in as_list(choice(g, key))]
+        res = [g for g in got if isinstance(g, dict) and 'resourceType' in g]
+        if not res:
+            return bool(segs) and d['type'] == 'type' and any(
+                isinstance(p, dict) and segs[-1] + c[:1].upper() + c[1:] in p for p in parents for c in types if c)
+        res = [g for g in res if g['resourceType'] in types]
+        if d['type'] == 'type' or not profiles:
+            return bool(res)
+        for g in res:
             claimed = {u.split('|')[0] for u in as_list((g.get('meta') or {}).get('profile'))}
             if claimed:
                 if claimed & profiles:
                     return True
                 continue
-            for url in profiles:
-                sd = self.b.sd_by_url(url)
-                fixed = [(x['path'].split('.', 1)[1], x) for x in (sd or {}).get('snapshot', {}).get('element', [])
-                         if x['path'].count('.') == 1 and fixed_value(x) is not None]
-                if 'resourceType' in g and (sd or {}).get('type') == g['resourceType'] and not fixed:
-                    return True
-                if fixed and all(any(contains(y, fixed_value(x)) for y in as_list(choice(g, p.replace('[x]', '')))) for p, x in fixed):
-                    return True
+            if any(self.conforms(g, u) for u in profiles):
+                return True
+            # nothing to check against: take it only when no other slice could hold this resource type
+            others = [c for c in self.kids.get(parent_id(slice_id), []) if is_slice(c['id']) and c['id'] != slice_id]
+            if not any(g['resourceType'] in self.slice_kinds(c['id'], d)[0] for c in others) and not any(
+                    self.required_fixed(u) for u in profiles):
+                return True
         return False
 
+    def resolve_ref(self, g):
+        ref = g.get('reference') if isinstance(g, dict) else None
+        if not isinstance(ref, str):
+            return None
+        if ref.startswith('#'):
+            return next((c for c in as_list((self.example or {}).get('contained')) if isinstance(c, dict) and c.get('id') == ref[1:]), None)
+        return self.b.find_instance(ref, self.example)
 
 def en_display(c, res):
     """English display of a concept: the base display when the resource is English, else an English designation."""
@@ -1300,7 +1346,7 @@ def references(v):
     if isinstance(v, list):
         return {r for x in v for r in references(x)}
     if isinstance(v, dict):
-        return ({v['reference']} if isinstance(v.get('reference'), str) else set()) | {r for x in v.values() for r in references(x)}
+        return ({re.sub(r'/_history/[^/]+$', '', v['reference'])} if isinstance(v.get('reference'), str) else set()) | {r for x in v.values() for r in references(x)}
     return set()
 
 
