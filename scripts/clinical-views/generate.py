@@ -75,6 +75,12 @@ def first_sentence(text):
     return (m.group(1) if m else line).strip()
 
 
+PART_ORDER = ('type', 'system', 'code', 'value', 'contentType', 'currency', 'use')
+FIXED_PARTS = {'Identifier': ('type', 'use'), 'ContactPoint': ('system', 'use'), 'Attachment': ('contentType',)}
+CODE_SYSTEMS = {('Identifier', 'use'): 'http://hl7.org/fhir/identifier-use', ('ContactPoint', 'system'): 'http://hl7.org/fhir/contact-point-system',
+                ('ContactPoint', 'use'): 'http://hl7.org/fhir/contact-point-use'}
+
+
 def humanize(name):
     name = name.replace('[x]', '')
     words = re.sub(r'(?<=[a-z0-9])(?=[A-Z])', ' ', name).replace('-', ' ').split()
@@ -753,7 +759,7 @@ class Profile:
             datatype = types and (types[0] in LEAF_TYPES or types[0][0].islower())
             # a sliced datatype keeps its own parts, but not one shown only for a supported extension listed on its own
             kids = [self.node(c['id']) for c in self.children(eid) if self.visible(c) and not (
-                datatype and (is_slice(c['id']) or c['id'] in self.ms_under and not c.get('mustSupport') and c['id'] not in self.show))]
+                datatype and (is_slice(c['id']) or self.ext_only_ms(c)))]
             for s in slices:
                 sn = self.node(s['id'])
                 kids.append(sn)
@@ -838,6 +844,13 @@ class Profile:
             n['collapsed'] = True
         return n
 
+    def ext_only_ms(self, c):
+        """True when a part is shown only for the supported extensions under it, which are listed on their own."""
+        if c.get('mustSupport') or c['id'] in self.show or c.get('min', 0) >= 1 or c['id'] not in self.ms_under:
+            return False
+        under = [d['id'][len(c['id']) + 1:] for d in self.els if d['id'].startswith(c['id'] + '.') and d.get('mustSupport')]
+        return all(any(':' in seg and seg.split(':')[0] in ('extension', 'modifierExtension') for seg in rel.split('.')) for rel in under)
+
     def leaf_extensions(self, eid):
         """Shown extensions inside an element drawn as one field, e.g. gender.extension:gender-other."""
         out = []
@@ -848,6 +861,9 @@ class Profile:
                     and not any(is_slice(a) and a.rpartition('.')[2].split(':')[0] in ('extension', 'modifierExtension')
                                 for a in self.ancestors(x['id'], eid)[1:])):
                 n = self.node(x['id'])
+                # drawn beside its owner, it is optional when anything from it up to the owner is
+                if n.get('card') and self.effective_card(x['id'], stop=parent_id(eid)).startswith('0..'):
+                    n['card'] = '0..' + n['card'].split('..')[1]
                 owner_id = parent_id(parent_id(x['id']))
                 if owner_id.rpartition('.')[2] == 'value':
                     owner_id = parent_id(owner_id)
@@ -1022,11 +1038,11 @@ class Profile:
                 n.pop('exs', None)
             else:
                 n.setdefault('values', []).insert(0, 'Fixed: ' + shown)
-        if code == 'Identifier':
-            for part in ('type', 'use'):
+        if code in FIXED_PARTS:
+            for part in FIXED_PARTS[code]:
                 fv = fixed_value(self.by_id.get(f'{eid}.{part}'))
                 c = next(iter(fv.get('coding', [])), None) if isinstance(fv, dict) else None
-                shown = (c.get('display') or self.b.display(c.get('system'), c.get('code')) or c.get('code')) if c else (self.b.display('http://hl7.org/fhir/identifier-use', fv) or humanize(fv)) if isinstance(fv, str) else None
+                shown = (c.get('display') or self.b.display(c.get('system'), c.get('code')) or c.get('code')) if c else ((self.b.display(CODE_SYSTEMS[(code, part)], fv) or humanize(fv)) if (code, part) in CODE_SYSTEMS else fv) if isinstance(fv, str) else None
                 if shown:
                     n['values'] = [x for x in n.get('values', []) if not x.startswith(humanize(part) + ':')] + [f'{humanize(part)}: {shown}']
         if eid in self.cfg.get('values', {}):
@@ -1059,12 +1075,11 @@ class Profile:
             name = c['path'].rpartition('.')[2]
             for x in [c] + [k for k in self.kids.get(c['id'], []) if is_slice(k['id']) and k.get('min', 0) >= 1]:
                 vs = (x.get('binding') or {}).get('valueSet')
-                if (vs and name in ('type', 'system', 'code', 'currency', 'use') and x.get('max') != '0'
+                if (vs and name in PART_ORDER and x.get('max') != '0'
                         and (vs.split('|')[0] != base_vs.get(f'{typ}.{name}') if base_vs is not None else vs.split('|')[0] in self.b.local_vs)
                         and name not in [o[1] for o in out]):
                     out.append((x['binding'], name))
-        order = ('type', 'system', 'code', 'currency', 'use')
-        return sorted(out, key=lambda o: order.index(o[1]))
+        return sorted(out, key=lambda o: PART_ORDER.index(o[1]))
 
     @staticmethod
     def ext_value(els, base):
@@ -1850,6 +1865,8 @@ def main():
     ap.add_argument('--only', help='comma-separated view or profile ids to include')
     ap.add_argument('--no-auto', action='store_true', help='only the curated views, no view per profile')
     ap.add_argument('--fragment', action='store_true', help='omit the html/head/body skeleton (for hosts that add their own)')
+    ap.add_argument('--external-script', action='store_true',
+                    help='write the script to a .js file beside the page (the IG publisher rejects inline scripts)')
     args = ap.parse_args()
 
     cfg = load(Path(args.config)) if args.config else {}
@@ -1890,6 +1907,11 @@ def main():
                 f'{head}{sep}\n</head>\n<body>{body}</body>\n</html>\n')
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
+    if args.external_script:
+        before, _, rest = html.rpartition('<script>')
+        script, _, after = rest.partition('</script>')
+        out.with_suffix('.js').write_text(script.lstrip('\n'))
+        html = f'{before}<script src="{out.with_suffix(".js").name}"></script>{after}'
     out.write_text(html)
     featured = ', '.join(f"{m['id']}: {sum(1 for _ in iter_leaves(m['root']))} elements" for m in models if m.get('featured'))
     print(f"wrote {out}: {len(models)} views ({featured or 'none curated'}), {len(html) // 1024} KB")

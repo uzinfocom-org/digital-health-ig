@@ -251,11 +251,11 @@ table.data tr.grp.d1 td { background: color-mix(in srgb, var(--bar) 55%, var(--p
   </header>
 
   <nav class="models" role="tablist" aria-label="Clinical model" id="models"></nav>
-  <section class="sheet">
+  <div class="sheet">
     <div class="titlebar" id="titlebar"></div>
     <nav class="views" role="tablist" aria-label="View" id="views"></nav>
     <div class="pane" id="pane"></div>
-  </section>
+  </div>
   <p class="foot" id="foot">Generated from this guide's FHIR profiles. Element names are written for clinicians; the FHIR path under each name is available with "Show FHIR paths". Only elements that systems must support are listed, plus a few optional ones clinicians expect to see. Allowed values come from the guide's value sets and example values from its example resources.</p>
 </div>
 
@@ -291,7 +291,7 @@ const icon = t => `<span class="ti ${t}" title="${esc(TYPES[t][1])}" aria-label=
 function occ(card) {
   if (!card) return { mand: false, rep: false };
   const [min, max] = card.split('..');
-  return { mand: min !== '0', rep: max === '*' };
+  return { mand: min !== '0', rep: max === '*' || +max > 1 };
 }
 function tags(n, withRef = true) {
   if (!n.card) return '<span class="chip opt">Grouping for readability</span>';
