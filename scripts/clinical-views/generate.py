@@ -29,7 +29,7 @@ TYPE_MAP = {
     'Identifier': 'id', 'oid': 'id', 'uuid': 'id', 'id': 'id',
     'Quantity': 'quantity', 'SimpleQuantity': 'quantity', 'Duration': 'quantity', 'Age': 'quantity',
     'Distance': 'quantity', 'Count': 'quantity', 'Money': 'quantity', 'Range': 'text',
-    'integer': 'count', 'positiveInt': 'count', 'unsignedInt': 'count', 'integer64': 'count', 'decimal': 'count',
+    'integer': 'count', 'positiveInt': 'count', 'unsignedInt': 'count', 'integer64': 'count', 'decimal': 'decimal',
     'Ratio': 'ratio', 'RatioRange': 'ratio',
     'date': 'date', 'dateTime': 'datetime', 'instant': 'datetime', 'time': 'time', 'Period': 'period',
     'boolean': 'bool', 'Reference': 'link',
@@ -109,6 +109,21 @@ def fixed_value(e):
     return next((v for k, v in (e or {}).items() if k.startswith(('fixed', 'pattern'))), None)
 
 
+def normalize(sd):
+    """Bring STU3 shapes (string profile/targetProfile, valueSetReference) to the R4+ form."""
+    for e in sd.get('snapshot', {}).get('element', []) + sd.get('differential', {}).get('element', []):
+        for t in e.get('type', []):
+            for k in ('profile', 'targetProfile'):
+                if isinstance(t.get(k), str):
+                    t[k] = [t[k]]
+        b = e.get('binding')
+        if b and 'valueSet' not in b:
+            ref = (b.get('valueSetReference') or {}).get('reference') or b.get('valueSetUri')
+            if ref:
+                b['valueSet'] = ref
+    return sd
+
+
 class Build:
     def __init__(self, out_dir, prefix='', package_dirs=None):
         self.out = Path(out_dir)
@@ -120,6 +135,7 @@ class Build:
             sd = load(f)
             if sd.get('resourceType') != 'StructureDefinition':
                 continue
+            normalize(sd)
             if any('id' not in e for e in sd.get('snapshot', {}).get('element', [])):
                 print(f"warning: skipped {f.name}: its elements have no ids (FHIR DSTU2 or older)", file=sys.stderr)
                 continue
@@ -167,7 +183,7 @@ class Build:
         f = self.packages().get(url)
         if f and ('sd', url) not in self.cache:
             sd = load(f)
-            self.cache[('sd', url)] = sd if sd.get('resourceType') == 'StructureDefinition' else None
+            self.cache[('sd', url)] = normalize(sd) if sd.get('resourceType') == 'StructureDefinition' else None
         return self.cache.get(('sd', url))
 
     def title_for(self, url):
@@ -215,7 +231,8 @@ class Build:
             elif isinstance(name, list) and name:
                 text = fmt(name[0])
             elif r.get('identifier'):
-                text = f"{r['resourceType']} {r['identifier'][0].get('value', '')}".strip()
+                ident = as_list(r['identifier'])[0]
+                text = f"{r['resourceType']} {ident.get('value', '') if isinstance(ident, dict) else ''}".strip()
             else:
                 what = next(filter(None, (fmt(r.get(k)) for k in DESCRIBE_KEYS if isinstance(r.get(k), (dict, list)))), '')
                 if what:
@@ -226,8 +243,15 @@ class Build:
     def packages(self):
         if self._pkg is None:
             self._pkg = {}
-            fv = (self.ig.get('fhirVersion') or ['5.0.0'])[0]
-            core = {'4.0': 'r4', '4.3': 'r4b', '5.0': 'r5', '6.0': 'r6'}.get(fv[:3], 'r5')
+            fv = as_list(self.ig.get('fhirVersion') or '5.0.0')[0]
+            core = {'3.0': 'r3', '4.0': 'r4', '4.3': 'r4b', '5.0': 'r5', '6.0': 'r6'}.get(fv[:3], 'r5')
+            for f in list(self.out.glob('ValueSet-*.json')) + list(self.out.glob('CodeSystem-*.json')):
+                try:
+                    r = load(f)
+                except ValueError:
+                    continue
+                if r.get('url'):
+                    self._pkg.setdefault(r['url'], f)
             deps = [f'hl7.fhir.{core}.core#{fv}']
             deps += [f"{d['packageId']}#{d['version']}" for d in self.ig.get('dependsOn', []) if 'packageId' in d]
             for dep in deps:
@@ -266,6 +290,9 @@ class Build:
             if f:
                 cs = load(Path(f))
                 self.cache[key] = {c['code']: en_display(c, cs) for c in flatten_concepts(cs.get('concept', [])) if 'code' in c}
+            elif system == 'urn:ietf:bcp:47' and self.packages().get('http://hl7.org/fhir/ValueSet/languages'):
+                vs = load(Path(self.packages()['http://hl7.org/fhir/ValueSet/languages']))
+                self.cache[key] = {c['code']: en_display(c, vs) for i in vs.get('compose', {}).get('include', []) for c in i.get('concept', [])}
         if self._examples is None:
             self.example_for('')
         return self.known.get((system, code)) or self.cache[key].get(code) or self.seen.get((system, code))
@@ -353,10 +380,10 @@ class Profile:
             return False
         if eid in self.show:
             return True
+        if (e.get('mustSupport') or eid in self.ms_under) and eid.rpartition('.')[2] not in ('extension', 'modifierExtension'):
+            return True
         if is_tech(e):
             return False
-        if e.get('mustSupport') or eid in self.ms_under:
-            return True
         if self.no_ms and any(d == eid or d.startswith(eid + '.') or d.startswith(eid + ':') for d in self.diff):
             return True
         root = self.els[0]['id']
@@ -404,11 +431,20 @@ class Profile:
             self.used.add(anc)
             anc = parent_id(anc)
         slices = [c for c in self.kids.get(eid, []) if is_slice(c['id']) and self.visible(c)]
-        if eid.endswith('[x]') and len(slices) == 1:
+        if eid.endswith('[x]') and len(slices) == 1 and len(e.get('type', [])) <= 1:
             n = self.node(slices[0]['id'])
             n['card'] = f"{e['min']}..{e['max']}"
             if eid in self.labels:
                 n['label'] = self.labels[eid]
+            return n
+        if e.get('contentReference'):
+            n = self.base(e, 'text')
+            target = e['contentReference'].split('#')[-1]
+            n['typeText'] = f"Same structure as {self.labels.get(target) or humanize(target.rpartition('.')[2])} ({target})"
+            vals = self.resolve([self.example], eid.split('.')[1:], eid.split('.')[0]) if self.example else []
+            ex = [next((v[k] for k in ('text', 'name', 'title', 'display') if isinstance(v.get(k), str)), None) or fmt(v) if isinstance(v, dict) else fmt(v) for v in vals]
+            if any(ex):
+                n['ex'] = ', '.join(list(dict.fromkeys(filter(None, ex)))[:4])
             return n
         types = self.types(e)
         sub = self.complex_extension(e) if types == ['Extension'] and not slices else None
@@ -434,12 +470,14 @@ class Profile:
             built = []
             for c in kids:
                 cn = self.node(c['id'])
+                extra = self.leaf_extensions(c['id']) if not cn.get('children') else []
                 if c['id'] in self.flatten and cn.get('children'):
                     for g in cn['children']:
                         g['card'] = combine(g['card'], cn['card'])
                     built.extend(cn['children'])
                 else:
                     built.append(cn)
+                built.extend(extra)
             if not built:
                 return self.leaf(e)
             n = self.base(e, 'group')
@@ -458,6 +496,29 @@ class Profile:
         if eid in self.collapsed:
             n['collapsed'] = True
         return n
+
+    def leaf_extensions(self, eid):
+        """Shown extensions inside an element drawn as one field, e.g. gender.extension:gender-other."""
+        out = []
+        for x in self.els:
+            if (x['id'].startswith(eid + '.') and is_slice(x['id']) and x['path'].endswith(('.extension', '.modifierExtension'))
+                    and x['id'] not in self.used and self.visible(x)
+                    and all(self.by_id.get(a, {}).get('max') != '0' for a in self.ancestors(x['id'], eid))
+                    and not any(is_slice(a) and a.rpartition('.')[2].split(':')[0] in ('extension', 'modifierExtension')
+                                for a in self.ancestors(x['id'], eid)[1:])):
+                n = self.node(x['id'])
+                owner = humanize(parent_id(parent_id(x['id'])).rpartition('.')[2].split(':')[-1])
+                if x['id'] not in self.labels and owner.lower() not in n['label'].lower():
+                    n['label'] = f"{owner} {n['label'][0].lower()}{n['label'][1:]}"
+                out.append(n)
+        return out
+
+    def ancestors(self, eid, stop):
+        chain, cur = [], eid
+        while cur and cur != stop:
+            chain.append(cur)
+            cur = parent_id(cur)
+        return chain
 
     def base(self, e, typ):
         eid = e['id']
@@ -554,6 +615,8 @@ class Profile:
     def ext_value(els, base):
         """Types, binding and reference targets of an extension's value; None if it has no value (a complex extension)."""
         vx = next((x for x in els if x['id'] == base + '.value[x]'), None)
+        if vx is None:  # STU3 snapshots may name the typed value, e.g. valueCoding
+            vx = next((x for x in els if re.fullmatch(re.escape(base) + r'\.value[A-Z]\w*', x['id']) and x.get('type')), None)
         if vx is None or vx.get('max') == '0':
             return None
         parts = [x for x in els if x['id'].startswith(base + '.value[x]:') and '.' not in x['id'][len(base) + 9:]
@@ -568,7 +631,8 @@ class Profile:
 
     def extension_info(self, e):
         eid = e['id']
-        info = self.ext_value(self.els, eid) if eid + '.value[x]' in self.by_id and self.by_id[eid + '.value[x]'].get('type') else None
+        info = self.ext_value(self.els, eid)
+        info = info if info and info[0] else None
         ext = None if info else self.ext_sd(e)
         if ext and not info:
             info = self.ext_value(ext['snapshot']['element'], ext['snapshot']['element'][0]['id'])
@@ -636,6 +700,8 @@ class Profile:
                     d = self.b.display(c.get('system'), c['code'])
                     if d:
                         codes[c['code']] = d
+            if isinstance(v, dict) and 'url' in v:
+                v = next((v[k] for k in v if k.startswith('value')), v)
             if isinstance(v, str) and not codes.get(v):
                 d = next(filter(None, (self.b.display(sys_, v) for sys_ in systems)), None)
                 if d:
@@ -655,8 +721,9 @@ class Profile:
         return out[:4]
 
     def resolve(self, objs, segs, prefix):
-        for seg in segs:
+        for i, seg in enumerate(segs):
             name, _, slc = seg.partition(':')
+            ext_next = i + 1 < len(segs) and segs[i + 1].split(':')[0] in ('extension', 'modifierExtension')
             prefix = f'{prefix}.{seg}'
             nxt = []
             for o in objs:
@@ -670,6 +737,8 @@ class Profile:
                     vals = [o[k] for k in keys]
                 else:
                     v = o.get(name)
+                    if ext_next and '_' + name in o and not isinstance(v, dict) and not (isinstance(v, list) and v and isinstance(v[0], dict)):
+                        v = o['_' + name]
                     vals = v if isinstance(v, list) else ([v] if v is not None else [])
                 if slc and not name.endswith('[x]'):
                     vals = [v for v in vals if self.matches(v, prefix)]
@@ -736,7 +805,9 @@ def truncated(vs):
     """True when an expansion may not list every code (the publisher stops at its count limit)."""
     e = (vs or {}).get('expansion', {})
     unclosed = any(x.get('url', '').endswith('valueset-unclosed') and x.get('valueBoolean') for x in e.get('extension', []))
-    return unclosed or (e.get('total') or 0) > len(flatten_contains(e.get('contains', [])))
+    n = len(flatten_contains(e.get('contains', [])))
+    count = next((p.get('valueInteger') for p in e.get('parameter', []) if p.get('name') == 'count'), None)
+    return unclosed or (e.get('total') or 0) > n or (not e.get('total') and count is not None and n >= count)
 
 
 def as_list(v):
@@ -849,11 +920,11 @@ def fmt(v, codes=None):
     if isinstance(v.get('code'), dict) and 'value' in v:
         return f"{fmt(v['code'], codes)}: {fmt(v['value'], codes)}".strip(': ')
     if 'value' in v and ('unit' in v or isinstance(v.get('code'), str)):
-        return f"{v['value']} {v.get('unit') or v.get('code', '')}".strip()
+        return f"{v.get('comparator', '')}{v['value']} {v.get('unit') or v.get('code', '')}".strip()
     if 'numerator' in v:
         return f"{fmt(v['numerator'])} / {fmt(v.get('denominator'))}"
     if 'start' in v or 'end' in v:
-        return f"{v.get('start', '')} to {v.get('end', '')}".strip(' to') if v.get('end') else f"since {v['start']}"
+        return (f"{fmt(v['start'])} to {fmt(v['end'])}" if v.get('start') else f"until {fmt(v['end'])}") if v.get('end') else f"since {fmt(v['start'])}"
     if 'value' in v:
         return fmt(v['value'])
     if 'display' in v or 'reference' in v:
@@ -889,7 +960,12 @@ def build_view(b, view, shared=None):
     sections = []
     if not view.get('sections'):
         root = main.els[0]['id']
-        sections = [main.node(e['id']) for e in main.children(root) if main.visible(e)]
+        for e in main.children(root):
+            if main.visible(e):
+                n = main.node(e['id'])
+                sections.append(n)
+                if not n.get('children'):
+                    sections.extend(main.leaf_extensions(e['id']))
     for s in view.get('sections', []):
         p = prof(s.get('from', view['profile']))
         if s.get('from') and s.get('element') and main.example and not p.cfg.get('example'):
@@ -1000,7 +1076,7 @@ def main():
 
     cfg = load(Path(args.config)) if args.config else {}
     b = Build(args.output_dir, cfg.get('titlePrefix', ''), args.packages)
-    views = [dict(v, featured=True) for v in cfg.get('views', [])]
+    views = [dict(v, featured=True, kind=v.get('kind', 'archetype')) for v in cfg.get('views', [])]
     if not args.no_auto and cfg.get('autoProfiles', True):
         curated = {v['id'] for v in views} | {v['profile'] for v in views if v.get('kind') != 'template'}
         for sd in sorted(b.sds.values(), key=lambda x: (x.get('type', ''), x.get('title') or x.get('name', ''))):
@@ -1022,7 +1098,7 @@ def main():
         'intro': cfg.get('intro', ''),
         'guideName': guide,
         'languages': cfg.get('languages', []),
-        'igUrl': cfg.get('igUrl', ''),
+        'igUrl': cfg['igUrl'].rstrip('/') + '/' if cfg.get('igUrl') else '',
         'igVersion': pkg.get('version') or b.ig.get('version', ''),
         'built': re.sub(r'^(\d{4})(\d\d)(\d\d).*', r'\1-\2-\3', pkg.get('date', '')),
     }

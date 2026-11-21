@@ -69,7 +69,7 @@ button { font: inherit; color: inherit; }
 
 .sheet { background: var(--panel); border: 1px solid var(--line); border-top: none; box-shadow: var(--shadow); }
 .titlebar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 14px 18px 10px; border-bottom: 1px solid var(--line); }
-.titlebar h2 { font-size: 18px; display: flex; align-items: center; gap: 10px; }
+.titlebar h2 { font-size: 18px; display: flex; align-items: center; gap: 10px; overflow-wrap: anywhere; min-width: 0; }
 .titlebar .meta { color: var(--muted); font-size: 13px; }
 .status { font-family: var(--font-cond); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; background: var(--ms-soft); color: var(--ms); padding: 2px 8px; border-radius: 3px; margin-left: auto; }
 
@@ -82,7 +82,7 @@ button { font: inherit; color: inherit; }
 .ti { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 18px; border-radius: 3px; font: 600 11px/1 var(--font-cond); flex: none; border: 1px solid currentColor; }
 .ti.text { color: var(--t-text); }
 .ti.coded { color: var(--t-coded); }
-.ti.quantity, .ti.count, .ti.ratio { color: var(--t-qty); }
+.ti.quantity, .ti.count, .ti.decimal, .ti.ratio { color: var(--t-qty); }
 .ti.date, .ti.datetime, .ti.time, .ti.period { color: var(--t-date); }
 .ti.id { color: var(--t-id); }
 .ti.bool { color: var(--t-bool); }
@@ -265,7 +265,7 @@ const DATA = /*__DATA__*/null;
 const MODELS = DATA.models;
 const IG = DATA.meta.igUrl;
 const TYPES = {
-  text: ['T', 'Text'], coded: ['≡', 'Coded text (chosen from a list)'], quantity: ['Q', 'Quantity with unit'], count: ['#', 'Count'], ratio: ['½', 'Ratio'],
+  text: ['T', 'Text'], coded: ['≡', 'Coded text (chosen from a list)'], quantity: ['Q', 'Quantity with unit'], count: ['#', 'Count'], decimal: ['#', 'Number'], ratio: ['½', 'Ratio'],
   date: ['D', 'Date'], datetime: ['DT', 'Date and time'], time: ['⏲', 'Time'], period: ['↔', 'Period (from - to)'],
   id: ['ID', 'Identifier'], bool: ['✓', 'Yes / no'], link: ['→', 'Link to another record'], group: ['▤', 'Group of elements']
 };
@@ -349,8 +349,8 @@ window.addEventListener('hashchange', () => { readHash(); render(); });
 // ---------- overview ----------
 function renderOverview(pane, m) {
   let total = 0, mand = 0, ms = 0;
-  walk(m.root, n => { if (n.type !== 'group' && n !== m.root) { total++; if (occ(n.card).mand) mand++; if (n.ms) ms++; } });
-  const usesBlock = m.uses ? `<div><h3>Built from</h3><div class="uses v">${m.uses.map(([t, p]) => `<a href="${IG + p}" target="_blank" rel="noopener">${icon('link')} ${esc(t)}</a>`).join('')}</div></div>` : '';
+  walk(m.root, n => { if (!n.children && n !== m.root) { total++; if (occ(n.card).mand) mand++; if (n.ms) ms++; } });
+  const usesBlock = m.uses ? `<div><h3>Built from</h3><div class="uses v">${m.uses.map(([t, p]) => `<a href="${esc(IG + p)}" target="_blank" rel="noopener">${icon('link')} ${esc(t)}</a>`).join('')}</div></div>` : '';
   pane.innerHTML = `<div class="ov">
     <dl>
       <dt>Concept</dt><dd><p><b>${esc(m.concept)}</b></p></dd>
@@ -379,7 +379,7 @@ function consHtml(n) {
   let h = '';
   if (n.values && n.values.length) h += `<ul>${n.values.map(v => `<li>${esc(v)}</li>`).join('')}</ul>`;
   if (n.target) h += `<div>Refers to: ${esc(n.target)}</div>`;
-  if (n.vs) h += `<div>${esc(STRENGTH[n.vs.strength] || 'List')}: ${n.vs.page ? `<a href="${IG + n.vs.page}" target="_blank" rel="noopener">${esc(n.vs.title)}</a>` : esc(n.vs.title)}</div>`;
+  if (n.vs) h += `<div>${esc(STRENGTH[n.vs.strength] || 'List')}: ${n.vs.page ? `<a href="${esc(IG + n.vs.page)}" target="_blank" rel="noopener">${esc(n.vs.title)}</a>` : esc(n.vs.title)}</div>`;
   if (n.ex) h += `<div class="ex">Example: <b>${esc(n.ex)}</b></div>`;
   return h;
 }
@@ -512,7 +512,7 @@ function drawMindmap(box, m, detail) {
     g += `<rect class="box" x="${p.x}" y="${p.y}" width="${p.w}" height="${p.h}" rx="4"/>`;
     let tx = p.x + 12;
     if (n.type !== 'group') {
-      const col = getComputedStyle(document.documentElement).getPropertyValue(`--${n.type === 'link' ? 'link' : 't-' + ({ count: 'qty', ratio: 'qty', quantity: 'qty', datetime: 'date', time: 'date', period: 'date' }[n.type] || n.type)}`);
+      const col = getComputedStyle(document.documentElement).getPropertyValue(`--${n.type === 'link' ? 'link' : 't-' + ({ count: 'qty', decimal: 'qty', ratio: 'qty', quantity: 'qty', datetime: 'date', time: 'date', period: 'date' }[n.type] || n.type)}`);
       g += `<g class="ico" style="color:${col.trim()}"><rect x="${p.x + 8}" y="${p.y + 5}" width="20" height="16" rx="3" ${n.type === 'link' ? 'stroke-dasharray="3 2"' : ''}/><text x="${p.x + 18}" y="${p.y + 17}" text-anchor="middle">${esc(TYPES[n.type][0])}</text></g>`;
       tx = p.x + 34;
     }
@@ -532,9 +532,9 @@ function drawMindmap(box, m, detail) {
   const svg = box.querySelector('svg');
   const act = e => {
     const t = e.target.closest('[data-tog]');
-    if (t) { const id = t.dataset.tog; mmCollapsed[id] ? delete mmCollapsed[id] : (mmCollapsed[id] = true); drawMindmap(box, m, detail); return; }
+    if (t) { const id = t.dataset.tog; mmCollapsed[id] ? delete mmCollapsed[id] : (mmCollapsed[id] = true); drawMindmap(box, m, detail); box.querySelector(`[data-tog="${id}"]`)?.focus(); return; }
     const g = e.target.closest('.mm-node');
-    if (g) { mmSel = g.dataset.uid; drawMindmap(box, m, detail); showDetail(detail, findNode(m, mmSel)); }
+    if (g) { mmSel = g.dataset.uid; drawMindmap(box, m, detail); showDetail(detail, findNode(m, mmSel)); box.querySelector(`.mm-node[data-uid="${mmSel}"]`)?.focus(); }
   };
   svg.addEventListener('click', act);
   svg.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); act(e); } });
@@ -570,10 +570,11 @@ function control(n, v, id) {
     case 'time': return `<input id="${id}" type="text" class="unit" placeholder="hh:mm" value="${esc(v.slice(0, 5))}">`;
     case 'bool': return `<input id="${id}" type="checkbox" ${v === 'true' ? 'checked' : ''}>`;
     case 'count': return `<input id="${id}" type="number" class="num" min="0" value="${esc(v)}">`;
-    case 'quantity': { const [a, ...b] = v.split(' '); return `<input id="${id}" type="text" class="num" inputmode="decimal" value="${esc(a || '')}" aria-label="Amount"><input id="${id}-u" type="text" class="unit" placeholder="unit" value="${esc(b.join(' '))}" aria-label="Unit">`; }
-    case 'ratio': { const mm = v.match(/^(\S+)\s+(\S+)\s*\/\s*(\S+)\s+(.+)$/) || []; return `<input id="${id}" class="num" value="${esc(mm[1] || '')}" aria-label="Numerator"><input id="${id}-a" class="unit" placeholder="unit" value="${esc(mm[2] || '')}" aria-label="Numerator unit"><span class="sep">per</span><input id="${id}-b" class="num" value="${esc(mm[3] || '')}" aria-label="Denominator"><input id="${id}-c" class="unit" placeholder="unit" value="${esc(mm[4] || '')}" aria-label="Denominator unit">`; }
-    case 'period': { const mm = v.match(/(\d{4}-\d\d-\d\d)(?:.*?(\d{4}-\d\d-\d\d))?/) || []; return `<input id="${id}" type="date" value="${esc(mm[1] || '')}" aria-label="From"><span class="sep">to</span><input id="${id}-b" type="date" value="${esc(mm[2] || '')}" aria-label="To">`; }
-    case 'link': return `<span class="refbox">${icon('link')} ${esc(v || 'Select ' + n.target)}</span>`;
+    case 'decimal': return `<input id="${id}" type="number" class="num" step="any" value="${esc(v)}">`;
+    case 'quantity': { const [a, ...b] = v.split(' '); return `<input id="${id}" type="text" class="num" inputmode="decimal" value="${esc(a || '')}" aria-label="${esc(n.label)} amount"><input id="${id}-u" type="text" class="unit" placeholder="unit" value="${esc(b.join(' '))}" aria-label="${esc(n.label)} unit">`; }
+    case 'ratio': { const mm = v.match(/^(\S+)\s+(\S+)\s*\/\s*(\S+)\s+(.+)$/) || []; return `<input id="${id}" class="num" value="${esc(mm[1] || '')}" aria-label="${esc(n.label)} numerator"><input id="${id}-a" class="unit" placeholder="unit" value="${esc(mm[2] || '')}" aria-label="${esc(n.label)} numerator unit"><span class="sep">per</span><input id="${id}-b" class="num" value="${esc(mm[3] || '')}" aria-label="${esc(n.label)} denominator"><input id="${id}-c" class="unit" placeholder="unit" value="${esc(mm[4] || '')}" aria-label="${esc(n.label)} denominator unit">`; }
+    case 'period': { const mm = v.match(/(\d{4}-\d\d-\d\d)(?:.*?(\d{4}-\d\d-\d\d))?/) || []; return `<input id="${id}" type="date" value="${esc(mm[1] || '')}" aria-label="${esc(n.label)} from"><span class="sep">to</span><input id="${id}-b" type="date" value="${esc(mm[2] || '')}" aria-label="${esc(n.label)} to">`; }
+    case 'link': return `<span class="refbox" id="${id}">${icon('link')} ${esc(v || 'Select ' + n.target)}</span>`;
     default: return `<input id="${id}" type="text" value="${esc(v)}" placeholder="${n.type === 'id' ? 'Number' : ''}">`;
   }
 }
