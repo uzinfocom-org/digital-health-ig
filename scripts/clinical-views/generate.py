@@ -165,7 +165,49 @@ def normalize(sd):
             ref = (b.get('valueSetReference') or {}).get('reference') or b.get('valueSetUri')
             if ref:
                 b['valueSet'] = ref
+    fold_orphan_slices(sd)
     return sd
+
+
+def fold_orphan_slices(sd):
+    """Older snapshots hold a lone slice with no base element (FamilyMemberHistory.relationship:Relationship,
+    STU3 Observation.valueQuantity:valueQuantity beside Observation.value[x]:valueQuantity.value): read it as the element."""
+    els = sd.get('snapshot', {}).get('element', [])
+    by_id = {e.get('id'): e for e in els}
+
+    def choice(prefix, seg, eid):
+        name, _, sl = seg.partition(':')
+        e = by_id.get(eid) or {}
+        codes = [t.get('code', '') for t in e.get('type', [])]
+        if sl and len(codes) == 1 and codes[0] and name.endswith(codes[0][0].upper() + codes[0][1:]) and name != codes[0]:
+            x = f"{name[:-len(codes[0])]}[x]"
+            if e.get('path', '').endswith('[x]') or any(i.startswith(f"{prefix}.{x}:") for i in by_id if isinstance(i, str)):
+                return f"{x}:{sl}"
+        return seg
+
+    def rename(eid):
+        segs, out = eid.split('.'), []
+        for i, seg in enumerate(segs):
+            out.append(choice('.'.join(out), seg, '.'.join(segs[:i + 1])) if ':' in seg else seg)
+        return out
+
+    first = [rename(e['id']) for e in els if isinstance(e.get('id'), str)]
+    ids = {'.'.join(x) for x in first}
+    slices = {}
+    for x in first:
+        for i, seg in enumerate(x):
+            if ':' in seg:
+                slices.setdefault('.'.join(x[:i] + [seg.split(':')[0]]), set()).add(seg.split(':')[1])
+    orphan = {b for b, names in slices.items() if b not in ids and len(names) == 1}
+    if not orphan:
+        return
+    for e, x in zip([e for e in els if isinstance(e.get('id'), str)], first):
+        for i, seg in enumerate(x):
+            if ':' in seg and '.'.join(x[:i] + [seg.split(':')[0]]) in orphan:
+                x[i] = seg.split(':')[0]
+                if i == len(x) - 1:
+                    e.pop('sliceName', None)
+        e['id'] = '.'.join(x)
 
 
 class Build:
@@ -697,7 +739,7 @@ class Profile:
             cur = par
 
     def types(self, e):
-        return [t['code'] for t in e.get('type', [])]
+        return list(dict.fromkeys(t['code'] for t in e.get('type', [])))
 
     def example_type(self, eid):
         """The datatype a choice element has in the example, e.g. valueString -> string."""
@@ -1705,6 +1747,11 @@ def fmt(v, codes=None):
         return f"{v['value']} {v['currency']}"
     if isinstance(v.get('type'), str) and 'amount' in v:
         return f"{(codes or {}).get(v['type']) or v['type']}: {fmt(v['amount'], codes)}"
+    if 'dimensions' in v and ('origin' in v or 'data' in v):
+        n = len(str(v.get('data', '')).split())
+        step = f"{v['period']} ms" if 'period' in v else f"{v['interval']} {v.get('intervalUnit', 'ms')}" if 'interval' in v else ''
+        return ', '.join(filter(None, [f"{n} samples" if n else 'samples', f"every {step}" if step else '',
+                                       f"{v['dimensions']} channels" if v.get('dimensions', 1) > 1 else '']))
     if 'contentType' in v or 'data' in v or ('url' in v and ('title' in v or set(v) <= {'url', 'size', 'hash', 'creation', 'language', 'height', 'width', 'frames', 'duration', 'pages'})):
         return v.get('title') or v.get('url') or v.get('contentType', '')
     if 'telecom' in v and ('name' in v or 'purpose' in v or 'organization' in v):
@@ -1723,6 +1770,9 @@ def fmt(v, codes=None):
     if isinstance(v.get('code'), dict) and 'value' in v:
         return f"{fmt(v['code'], codes)}: {fmt(v['value'], codes)}".strip(': ')
     if 'value' in v and ('unit' in v or isinstance(v.get('code'), str)):
+        word = not v.get('unit') and v.get('system') == 'http://unitsofmeasure.org' and UNIT_WORDS.get(v.get('code'))
+        if word:
+            return f"{v.get('comparator', '')}{v['value']} {word}{'' if v['value'] == 1 else 's'}"
         return f"{v.get('comparator', '')}{v['value']} {v.get('unit') or v.get('code', '')}".strip()
     if 'lowNumerator' in v or 'highNumerator' in v:
         lo, hi = fmt(v.get('lowNumerator')), fmt(v.get('highNumerator'))
@@ -1740,14 +1790,14 @@ def fmt(v, codes=None):
         return v.get('display') or v.get('reference', '')
     if 'family' in v or 'given' in v:
         return v.get('text') or ' '.join(filter(None, v.get('prefix', []) + v.get('given', []) + [v.get('family', '')] + v.get('suffix', [])))
-    if any(k in v for k in ('line', 'city', 'district', 'postalCode')) or set(v) <= ADDRESS_KEYS and ('text' in v or 'country' in v or 'state' in v):
+    if any(k in v for k in ('line', 'city', 'district', 'postalCode')) or set(v) <= ADDRESS_KEYS and (isinstance(v.get('text'), str) or 'country' in v or 'state' in v):
         return v.get('text') or ', '.join(filter(None, v.get('line', []) + [(codes or {}).get(v.get(k)) or v.get(k) for k in ('city', 'district', 'state', 'postalCode', 'country')
                                                                         if isinstance(v.get(k), str)]))
     if 'div' in v:
         return fmt(v['div'])
     if isinstance(v.get('resourceType'), str):
         return f"{v['resourceType']}/{v['id']}" if isinstance(v.get('id'), str) else v['resourceType']
-    if 'doseAndRate' in v or 'timing' in v and ('route' in v or 'sequence' in v or any(k.startswith('asNeeded') for k in v)):
+    if 'doseAndRate' in v or any(k.startswith('asNeeded') for k in v) or 'timing' in v and ('route' in v or 'sequence' in v):
         # a Dosage: the sequence number and a false as-needed flag say nothing; a dose carries its own type
         v = {k: x for k, x in v.items() if k != 'sequence' and not (k in ('asNeeded', 'asNeededBoolean') and x is False)}
         for k in ('asNeeded', 'asNeededBoolean'):
