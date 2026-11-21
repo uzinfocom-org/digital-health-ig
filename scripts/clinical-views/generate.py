@@ -42,7 +42,7 @@ PRIMITIVES = {'instant', 'markdown', 'canonical', 'uri', 'url', 'string', 'code'
 DESCRIBE_KEYS = ('code', 'vaccineCode', 'medication', 'type', 'class', 'category', 'practitioner', 'organization', 'subject')
 CONTACT_SYSTEMS = {'phone', 'fax', 'email', 'pager', 'url', 'sms', 'other'}
 UNIT_WORDS = {'s': 'second', 'min': 'minute', 'h': 'hour', 'd': 'day', 'wk': 'week', 'mo': 'month', 'a': 'year'}
-PART_BINDING = {'Coding': 'code', 'Quantity': 'code', 'SimpleQuantity': 'code', 'Duration': 'code', 'Age': 'code',
+PART_BINDING = {'Coding': 'code', 'Ratio': 'numerator.code', 'Quantity': 'code', 'SimpleQuantity': 'code', 'Duration': 'code', 'Age': 'code',
                 'Distance': 'code', 'Count': 'code', 'Money': 'currency'}
 MAX_VALUES = 12
 MAX_OPTIONS = 60
@@ -227,7 +227,7 @@ class Build:
     def example_for(self, url):
         """The largest example instance that claims the profile in meta.profile, as the one most likely to fill every field."""
         if self._examples is None:
-            self._examples = {}
+            self._examples, self._claims = {}, {}
             for f in sorted(self.out.glob('*-*.json')):
                 if f.name.split('-')[0] in CONFORMANCE:
                     continue
@@ -243,9 +243,15 @@ class Build:
                         self.seen.setdefault((c['system'], c['code']), c['display'])
                 for prof in r.get('meta', {}).get('profile', []):
                     prof = prof.split('|')[0]
+                    self._claims.setdefault(prof, []).append((size, f"{r['resourceType']}/{r['id']}"))
                     if size > self._examples.get(prof, (0, None))[0]:
                         self._examples[prof] = (size, f"{r['resourceType']}/{r['id']}")
         return self._examples.get(url, (0, None))[1]
+
+    def instances_of(self, url):
+        """Refs of every instance claiming the profile, largest first."""
+        self.example_for(url)
+        return [ref for _, ref in sorted(self._claims.get(url, []), key=lambda x: -x[0])]
 
     def describe(self, ref, within=None):
         """A short human summary of a referenced resource; "#id" refers to a resource contained in `within`."""
@@ -327,6 +333,11 @@ class Build:
             deps += [f"{d['packageId']}#{d['version']}" for d in self.ig.get('dependsOn', []) if 'packageId' in d]
             for dep in deps:
                 pkg = next((d / dep / 'package' for d in self.package_dirs if (d / dep / 'package').is_dir()), None)
+                if not pkg and dep == deps[0]:
+                    # the exact core release may not be published (STU3 profiles say 3.0.1, the package is 3.0.2)
+                    near = sorted((x for d in self.package_dirs for x in d.glob(f'hl7.fhir.{core}.core#{fv[:3]}.*') if (x / 'package').is_dir()),
+                                  key=lambda x: [int(n) if n.isdigit() else 0 for n in x.name.split('#')[1].split('.')])
+                    pkg = near[-1] / 'package' if near else None
                 if not pkg:
                     print(f"warning: package {dep} not found in {', '.join(map(str, self.package_dirs))}; "
                           'its value sets show by name only (add --packages)', file=sys.stderr)
@@ -597,7 +608,7 @@ class Profile:
             if eid in self.labels:
                 n['label'] = self.labels[eid]
             return n
-        if e.get('contentReference'):
+        if e.get('contentReference') and not slices:
             n = self.base(e, 'text')
             target = e['contentReference'].split('#')[-1]
             n['typeText'] = f"Same structure as {self.labels.get(target) or humanize(target.rpartition('.')[2])}"
@@ -663,6 +674,8 @@ class Profile:
         elif n.get('children'):
             parts, seen = [], set()
             for c in n['children']:
+                if c.get('path', '').endswith('extension:translation'):
+                    continue
                 first = (c.get('exs') or [c.get('ex')])[0]
                 new = [x for x in (first or '').split(', ') if x and x not in seen]
                 if new:
@@ -747,6 +760,8 @@ class Profile:
         code = types[0] if types else 'string'
         if len({TYPE_MAP.get(t, 'text') for t in types}) > 1:
             code = self.example_type(eid)
+        if binding.get('forType') in types and not self.example_type(eid):
+            code = binding['forType']
         if binding.get('forType') and code and code != binding['forType']:
             binding = {}
         if len(types) > 1 and not binding.get('valueSet'):
@@ -758,6 +773,8 @@ class Profile:
                 binding = pick['binding']
         if not code:
             coded = [t for t in types if TYPE_MAP.get(t) == 'coded'] if binding.get('valueSet') else []
+            if len(types) > 10 and not coded:
+                coded = ['string']
             code = next(iter(coded), None) or next((t for t in types if TYPE_MAP.get(t, 'text') not in ('text', 'coded')), types[0])
         typ = TYPE_MAP.get(code, 'text')
         if code == 'CodeableReference':
@@ -863,7 +880,9 @@ class Profile:
 
     def part_binding(self, eid, typ):
         """A binding the profile puts on a part of a datatype shown as one field, e.g. Identifier.type."""
-        base = self.b.sd_by_url('http://hl7.org/fhir/StructureDefinition/' + typ) or {}
+        base = self.b.sd_by_url('http://hl7.org/fhir/StructureDefinition/' + typ)
+        if not base:
+            return []
         base_vs = {x['path']: (x.get('binding') or {}).get('valueSet', '').split('|')[0]
                    for x in base.get('snapshot', {}).get('element', [])}
         out = []
@@ -894,7 +913,8 @@ class Profile:
         part = next((x for x in parts if x.get('binding')), None)
         binding = (vx.get('binding') or (dict(part['binding'], forType=part['type'][0]['code']) if part else None)
                    or next((x['binding'] for x in els if x['id'] in within and x.get('binding')), {}))
-        targets = [p for x in used for t in x.get('type', []) for p in t.get('targetProfile', [])]
+        by_type = {x['type'][0]['code']: x for x in parts if len(x.get('type', [])) == 1}
+        targets = [p for x in used for t in x.get('type', []) for p in (by_type.get(t['code'], {}).get('type', [t])[0] if used is not parts else t).get('targetProfile', [])]
         return types, binding, targets
 
     def ext_sd(self, e):
@@ -905,8 +925,9 @@ class Profile:
         info = self.ext_value(self.els, eid)
         info = info if info and info[0] else None
         ext = None if info else self.ext_sd(e)
-        if ext and not info:
-            info = self.ext_value(ext['snapshot']['element'], ext['snapshot']['element'][0]['id'])
+        els = (ext or {}).get('snapshot', {}).get('element')
+        if els and not info:
+            info = self.ext_value(els, els[0]['id'])
         return info or (['string'], {}, [])
 
     def complex_extension(self, e):
@@ -1005,6 +1026,11 @@ class Profile:
         if not self.example:
             return []
         vals = self.resolve([self.example], eid.split('.')[1:], eid.split('.')[0])
+        head, _, key = eid.rpartition('.')
+        if vals and all(isinstance(v, str) for v in vals) and head and ':' not in key and not key.endswith('[x]'):
+            parents = self.resolve([self.example], head.split('.')[1:], head.split('.')[0]) if '.' in head else [self.example]
+            if len(parents) == len(vals) and all(isinstance(x, dict) and isinstance(x.get(key), str) for x in parents):
+                vals = [en_text(x, key) for x in parents]
         codes = dict(codes or {})
         for v in vals:
             for c in codings_in(v):
@@ -1124,6 +1150,15 @@ def en_text(r, key):
         if ext.get('url', '').endswith('/translation') and (parts.get('lang') or {}).get('valueCode', '').startswith('en'):
             return (parts.get('content') or {}).get('valueString') or r.get(key)
     return r.get(key)
+
+
+def references(v):
+    """Every Reference.reference string inside a resource."""
+    if isinstance(v, list):
+        return {r for x in v for r in references(x)}
+    if isinstance(v, dict):
+        return ({v['reference']} if isinstance(v.get('reference'), str) else set()) | {r for x in v.values() for r in references(x)}
+    return set()
 
 
 def addresses(v):
@@ -1279,7 +1314,7 @@ def fmt(v, codes=None):
         return fmt(v.get('concept'), codes) or fmt(v.get('reference'), codes)
     if 'coding' in v or ('text' in v and len(v) <= 2 and 'div' not in v):
         if v.get('text'):
-            return v['text']
+            return en_text(v, 'text')
         c = next((c for c in v.get('coding', []) if c.get('code') in codes), (v.get('coding') or [{}])[0])
         return codes.get(c.get('code')) or c.get('display') or c.get('code', '')
     if 'code' in v and 'system' in v and 'value' not in v:
@@ -1349,6 +1384,12 @@ def build_view(b, view, shared=None):
                     sections.extend(main.leaf_extensions(e['id']))
     for s in view.get('sections', []):
         p = prof(s.get('from', view['profile']))
+        if s.get('from') and not s.get('element') and not p.cfg.get('example'):
+            # no linking element: an instance that references the main example, or none
+            target = main.example_ref
+            ref = next((r for r in b.instances_of(p.sd.get('url')) if target and target in references(b.instance(r))), None)
+            p.example = b.instance(ref) if ref else None
+            p.example_ref = ref
         if s.get('from') and s.get('element') and main.example and not p.cfg.get('example'):
             # the instance the main example points to, so every section shows one consistent record
             vals = main.resolve([main.example], s['element'].split('.')[1:], s['element'].split('.')[0])
