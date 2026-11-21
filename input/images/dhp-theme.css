@@ -550,6 +550,32 @@ div.highlight, .highlighter-rouge { background: transparent !important; border: 
 .highlight pre, pre[class*="language-"] { background-color: var(--dhp-bg) !important; font-size: 13px; margin: 12px 0 20px; }
 code[class*="language-"], pre[class*="language-"] { font-family: var(--dhp-font-mono) !important; text-shadow: none; }
 
+/* Copy buttons on code blocks (dhp-copy.js) */
+.dhp-code { position: relative; }
+.dhp-code > pre { margin-top: 0; }
+.highlight > .dhp-code { margin-top: 12px; }
+.dhp-copy {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  color: var(--dhp-muted-fg);
+  background: var(--dhp-bg);
+  border: 1px solid var(--dhp-border);
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.15s, color 0.15s, border-color 0.15s;
+}
+.dhp-code:hover .dhp-copy, .dhp-copy:focus-visible { opacity: 1; }
+.dhp-copy:hover { color: var(--dhp-fg); border-color: var(--dhp-input-border); }
+.dhp-copy.done { color: var(--dhp-link); border-color: var(--dhp-link); opacity: 1; }
+
 /* Content images */
 #segment-content figure img, #segment-content p > img { max-width: 100%; height: auto; }
 
@@ -585,5 +611,5 @@ table.codes td a { overflow-wrap: anywhere; }
   #segment-content :not(pre) > code { white-space: normal; }
 }
 @media print {
-  #dhp-search, #segment-navbar .navbar-toggle { display: none; }
+  #dhp-search, #segment-navbar .navbar-toggle, .dhp-copy { display: none; }
 }
