@@ -611,7 +611,7 @@ class Profile:
         self.no_ms = not any(e.get('mustSupport') for e in self.els)
         self.ms_under = set()
         for e in self.els:
-            if not e.get('mustSupport'):
+            if not (e.get('mustSupport') or e['id'] in self.show):
                 continue
             chain, cur = [], e['id']
             while cur:
@@ -758,8 +758,13 @@ class Profile:
             n = self.base(e, 'group')
             datatype = types and (types[0] in LEAF_TYPES or types[0][0].islower())
             # a sliced datatype keeps its own parts, but not one shown only for a supported extension listed on its own
-            kids = [self.node(c['id']) for c in self.children(eid) if self.visible(c) and not (
-                datatype and (is_slice(c['id']) or self.ext_only_ms(c)))]
+            kids = []
+            for c in self.children(eid):
+                if self.visible(c) and not (datatype and (is_slice(c['id']) or self.ext_only_ms(c))):
+                    cn = self.node(c['id'])
+                    kids.append(cn)
+                    if not datatype and not cn.get('children'):
+                        kids.extend(self.leaf_extensions(c['id']))
             for s in slices:
                 sn = self.node(s['id'])
                 kids.append(sn)
@@ -848,7 +853,8 @@ class Profile:
         """True when a part is shown only for the supported extensions under it, which are listed on their own."""
         if c.get('mustSupport') or c['id'] in self.show or c.get('min', 0) >= 1 or c['id'] not in self.ms_under:
             return False
-        under = [d['id'][len(c['id']) + 1:] for d in self.els if d['id'].startswith(c['id'] + '.') and d.get('mustSupport')]
+        under = [d['id'][len(c['id']) + 1:] for d in self.els
+                 if d['id'].startswith((c['id'] + '.', c['id'] + ':')) and (d.get('mustSupport') or d['id'] in self.show)]
         return bool(under) and all(any(':' in seg and seg.split(':')[0] in ('extension', 'modifierExtension') for seg in rel.split('.')) for rel in under)
 
     def leaf_extensions(self, eid, inside=False):
@@ -865,7 +871,7 @@ class Profile:
                 if n.get('card') and self.effective_card(x['id'], stop=eid if inside else parent_id(eid)).startswith('0..'):
                     n['card'] = '0..' + n['card'].split('..')[1]
                 owner_id = parent_id(parent_id(x['id']))
-                if owner_id.rpartition('.')[2] == 'value':
+                if owner_id.rpartition('.')[2] in ('value', 'value[x]'):
                     owner_id = parent_id(owner_id)
                 owner = self.labels.get(owner_id) or humanize(owner_id.rpartition('.')[2].split(':')[-1])
                 if x['id'] not in self.labels and owner.lower() not in n['label'].lower():
@@ -917,6 +923,12 @@ class Profile:
             targets += t.get('targetProfile', [])
         if types == ['Extension']:
             types, binding, targets = self.extension_info(e)
+        # a resource held inline (Bundle entry, contained, parameter) points at the resource or profile it must be
+        held_resource = (len(types) == 1 and types[0] not in TYPE_MAP
+                         and (self.b.sd_by_url(f'http://hl7.org/fhir/StructureDefinition/{types[0]}') or {}).get('kind') == 'resource')
+        if held_resource:
+            targets = [p for t in e.get('type', []) for p in t.get('profile', [])] or (
+                [] if types[0] in ('Resource', 'DomainResource') else [f'http://hl7.org/fhir/StructureDefinition/{types[0]}'])
         on_part = None
         if types != ['Extension'] and not binding.get('valueSet') and len(types) == 1 and types[0][0].isupper() and types[0] not in ('Reference', 'CodeableConcept'):
             on_part = self.part_binding(eid, types[0])
@@ -939,7 +951,7 @@ class Profile:
             if len(types) > 10 and not coded:
                 coded = ['string']
             code = next(iter(coded), None) or next((t for t in types if TYPE_MAP.get(t, 'text') not in ('text', 'coded')), types[0])
-        typ = TYPE_MAP.get(code, 'text')
+        typ = 'link' if held_resource else TYPE_MAP.get(code, 'text')
         if code == 'CodeableReference':
             typ = 'coded' if binding.get('valueSet') else 'link'
         conditional = not binding.get('valueSet') and any(a.get('valueSet') for a in binding.get('additional', []))
@@ -1308,14 +1320,18 @@ class Profile:
             objs = nxt
         return objs
 
-    def type_profile_element(self, e, rel):
-        """A part of a slice whose children are not in the snapshot, read from the slice's datatype profile."""
-        for t in e.get('type', []):
-            sd = self.b.sd_by_url((t.get('profile') or [''])[0])
-            els = {x['id']: x for x in (sd or {}).get('snapshot', {}).get('element', [])}
-            hit = els.get(f"{t['code']}.{rel}") or els.get(f"{t['code']}.{rel}[x]")
-            if hit:
-                return hit
+    def type_profile_element(self, slice_id, rel):
+        """A part of a slice that is not in the snapshot, read from the datatype profile of its nearest listed ancestor."""
+        parts = rel.split('.')
+        for k in range(len(parts) - 1, -1, -1):
+            owner = self.by_id.get('.'.join([slice_id] + parts[:k])) or {}
+            rest = '.'.join(parts[k:])
+            for t in owner.get('type', []):
+                sd = self.b.sd_by_url((t.get('profile') or [''])[0])
+                els = {x['id']: x for x in (sd or {}).get('snapshot', {}).get('element', [])}
+                hit = els.get(f"{t['code']}.{rest}") or els.get(f"{t['code']}.{rest}[x]")
+                if hit:
+                    return hit
         return None
 
     def matches(self, v, slice_id):
@@ -1345,7 +1361,7 @@ class Profile:
             segs = [x for x in d['path'].split('.') if x != '$this']
             cut = segs.index('resolve()') if 'resolve()' in segs else len(segs)
             rel = '.'.join(segs[:cut])
-            el = e if not rel else (self.by_id.get(f"{slice_id}.{rel}") or self.by_id.get(f"{slice_id}.{rel}[x]") or self.type_profile_element(e, rel))
+            el = e if not rel else (self.by_id.get(f"{slice_id}.{rel}") or self.by_id.get(f"{slice_id}.{rel}[x]") or self.type_profile_element(slice_id, rel))
             got = [v]
             for key in segs:
                 if key == 'resolve()':
@@ -1906,7 +1922,7 @@ def main():
         'igVersion': pkg.get('version') or b.ig.get('version', ''),
         'built': re.sub(r'^(\d{4})(\d\d)(\d\d).*', r'\1-\2-\3', pkg.get('date', '')),
     }
-    html = (HERE / 'template.html').read_text()
+    html = (HERE / 'template.html').read_text(encoding='utf-8')
     html = html.replace('<title>Clinical views</title>', f"<title>{escape(meta['title'])}</title>")
     data = json.dumps({'models': models, 'meta': meta}, ensure_ascii=False).replace('<', '\\u003c')
     html = html.replace('/*__DATA__*/null', data)
@@ -1921,9 +1937,9 @@ def main():
         before, _, rest = html.rpartition('<script>')
         script, _, after = rest.partition('</script>')
         script = script.lstrip('\n')
-        out.with_suffix('.js').write_text(script)
+        out.with_suffix('.js').write_text(script, encoding='utf-8')
         html = f'{before}<script src="{out.with_suffix(".js").name}"></script>{after}'
-    out.write_text(html)
+    out.write_text(html, encoding='utf-8')
     featured = ', '.join(f"{m['id']}: {sum(1 for _ in iter_leaves(m['root']))} elements" for m in models if m.get('featured'))
     size = f"{len(html) // 1024} KB" + (f" + {out.with_suffix('.js').name} {len(script) // 1024} KB" if args.external_script else '')
     print(f"wrote {out}: {len(models)} views ({featured or 'none curated'}), {size}")
