@@ -198,12 +198,21 @@ class Build:
             sys.exit(f'error: StructureDefinition-{pid}.json not found in {self.out}')
         return self.sds[pid]
 
-    def instance(self, ref):
+    def find_instance(self, ref, within=None):
+        """An example instance by Type/id: its own file, or else an entry of an example Bundle;
+        a fullUrl (urn:uuid:...) resolves only in the Bundle that holds `within`."""
+        self.example_for('')
+        if ref.startswith('urn:'):
+            home = within and f"{within.get('resourceType')}/{within.get('id')}"
+            return self._bundle_of.get(home, {}).get(ref)
         f = self.out / f'{ref.replace("/", "-")}.json'
-        if not f.exists():
+        return load(f) if f.exists() else self._bundled.get(ref)
+
+    def instance(self, ref):
+        r = self.find_instance(ref)
+        if r is None:
             print(f'warning: example {ref} not found', file=sys.stderr)
-            return None
-        return load(f)
+        return r
 
     def sd_by_url(self, url):
         url = (url or '').split('|')[0]
@@ -227,7 +236,7 @@ class Build:
     def example_for(self, url):
         """The largest example instance that claims the profile in meta.profile, as the one most likely to fill every field."""
         if self._examples is None:
-            self._examples, self._claims = {}, {}
+            self._examples, self._claims, self._bundled, self._bundle_of = {}, {}, {}, {}
             for f in sorted(self.out.glob('*-*.json')):
                 if f.name.split('-')[0] in CONFORMANCE:
                     continue
@@ -237,15 +246,25 @@ class Build:
                     continue
                 if not isinstance(r, dict) or 'id' not in r:
                     continue
-                size = f.stat().st_size
                 for c in all_codings(r):
                     if c.get('display'):
                         self.seen.setdefault((c['system'], c['code']), c['display'])
-                for prof in r.get('meta', {}).get('profile', []):
-                    prof = prof.split('|')[0]
-                    self._claims.setdefault(prof, []).append((size, f"{r['resourceType']}/{r['id']}"))
-                    if size > self._examples.get(prof, (0, None))[0]:
-                        self._examples[prof] = (size, f"{r['resourceType']}/{r['id']}")
+                found = [(r, f.stat().st_size)]
+                entries = [e for e in r.get('entry', []) if r.get('resourceType') == 'Bundle' and isinstance(e, dict)
+                           and isinstance(e.get('resource'), dict) and 'id' in e['resource']]
+                full = {e['fullUrl']: e['resource'] for e in entries if isinstance(e.get('fullUrl'), str)}
+                for e in entries:
+                    x = e['resource']
+                    ref = f"{x.get('resourceType')}/{x['id']}"
+                    if not (self.out / f"{ref.replace('/', '-')}.json").exists() and ref not in self._bundled:
+                        self._bundled[ref], self._bundle_of[ref] = x, full
+                        found.append((x, len(json.dumps(x, indent=2))))
+                for x, size in found:
+                    for prof in x.get('meta', {}).get('profile', []):
+                        prof = prof.split('|')[0]
+                        self._claims.setdefault(prof, []).append((size, f"{x['resourceType']}/{x['id']}"))
+                        if size > self._examples.get(prof, (0, None))[0]:
+                            self._examples[prof] = (size, f"{x['resourceType']}/{x['id']}")
         return self._examples.get(url, (0, None))[1]
 
     def instances_of(self, url):
@@ -264,12 +283,13 @@ class Build:
                 return self.summarize(r, within) or ref
             finally:
                 self._describing.discard(id(r))
-        if ref in self.cache:
-            return self.cache[ref]
-        f = self.out / f'{ref.replace("/", "-")}.json'
-        self.cache[ref] = ref
-        text = (self.summarize(load(f)) if '/' in ref and f.exists() else None) or ref
-        self.cache[ref] = text
+        key = (ref, within and within.get('resourceType'), within and within.get('id')) if ref.startswith('urn:') else ref
+        if key in self.cache:
+            return self.cache[key]
+        self.cache[key] = ref
+        r = self.find_instance(ref, within) if '/' in ref or ref.startswith('urn:') else None
+        text = (self.summarize(r) if r else None) or ref
+        self.cache[key] = text
         return text
 
     def summarize(self, r, within=None):
@@ -498,6 +518,9 @@ class Profile:
         self.show = set(cfg.get('show', []))
         self.hide = set(cfg.get('hide', []))
         self.expand = set(cfg.get('expand', []))
+        for k, v in cfg.get('types', {}).items():
+            if v not in TYPE_MAP.values():
+                print(f"warning: {pid}: types {k} = {v!r} ignored; use one of {', '.join(sorted(set(TYPE_MAP.values())))}", file=sys.stderr)
         self.flatten = set(cfg.get('flatten', []))
         self.collapsed = set(cfg.get('collapsed', []))
         self.used = set()
@@ -609,11 +632,14 @@ class Profile:
                 n['label'] = self.labels[eid]
             return n
         if e.get('contentReference') and not slices:
+            # a shown element with no shown parts lists all of them; a contentReference's own parts are its slices
+            slices = [c for c in self.kids.get(eid, []) if is_slice(c['id']) and c.get('max') != '0' and c['id'] not in self.hide]
+        if e.get('contentReference') and not slices and not any(self.visible(c) for c in self.children(eid)):
             n = self.base(e, 'text')
             target = e['contentReference'].split('#')[-1]
             n['typeText'] = f"Same structure as {self.labels.get(target) or humanize(target.rpartition('.')[2])}"
             vals = self.resolve([self.example], eid.split('.')[1:], eid.split('.')[0]) if self.example else []
-            ex = [next((v[k] for k in ('text', 'name', 'title', 'display') if isinstance(v.get(k), str)), None) or fmt(v) if isinstance(v, dict) else fmt(v) for v in vals]
+            ex = [next((en_text(v, k) for k in ('text', 'name', 'title', 'display') if isinstance(v.get(k), str)), None) or fmt(v) if isinstance(v, dict) else fmt(v) for v in vals]
             if any(ex):
                 n['ex'] = ', '.join(list(dict.fromkeys(filter(None, ex)))[:4])
             return n
@@ -672,17 +698,32 @@ class Profile:
         if whole:
             n['ex'] = whole
         elif n.get('children'):
-            parts, seen = [], set()
-            for c in n['children']:
-                if c.get('path', '').endswith('extension:translation'):
-                    continue
-                first = (c.get('exs') or [c.get('ex')])[0]
-                new = [x for x in (first or '').split(', ') if x and x not in seen]
-                if new:
-                    parts.append(', '.join(new))
-                    seen.update(new)
-            if not parts and slices:
-                parts = self.example_values(eid)
+            reps = self.resolve([self.example], eid.split('.')[1:], eid.split('.')[0]) if self.example and '.' in eid else []
+            drop = {id(r) for r in reps[1:] if r is not reps[0]} if not slices else set()
+
+            def prune(o):
+                if isinstance(o, dict):
+                    return {k: prune(v) for k, v in o.items()}
+                return [prune(v) for v in o if id(v) not in drop] if isinstance(o, list) else o
+            one = prune(self.example) if drop else None
+            if one and len(self.resolve([one], eid.split('.')[1:], eid.split('.')[0])) < len(reps):
+                # summarize the first repetition alone, so values of different ones are not combined
+                full, self.example = self.example, one
+                one = self.node(eid)
+                self.example = full
+                parts = [one['ex']] if one.get('ex') else []
+            else:
+                parts, seen = [], set()
+                for c in n['children']:
+                    if c.get('path', '').endswith('extension:translation'):
+                        continue
+                    first = (c.get('exs') or [c.get('ex')])[0]
+                    new = [x for x in (first or '').split(', ') if x and x not in seen]
+                    if new:
+                        parts.append(', '.join(new))
+                        seen.update(new)
+                if not parts and slices:
+                    parts = self.example_values(eid)
             if parts:
                 n['ex'] = ', '.join(parts[:4])
             else:
@@ -758,8 +799,8 @@ class Profile:
         if types != ['Extension'] and not binding.get('valueSet') and len(types) == 1 and types[0][0].isupper() and types[0] not in ('Reference', 'CodeableConcept'):
             on_part = self.part_binding(eid, types[0])
         code = types[0] if types else 'string'
-        if len({TYPE_MAP.get(t, 'text') for t in types}) > 1:
-            code = self.example_type(eid)
+        if len(types) > 1:
+            code = self.example_type(eid) or (code if len({TYPE_MAP.get(t, 'text') for t in types}) == 1 else None)
         if binding.get('forType') in types and not self.example_type(eid):
             code = binding['forType']
         if binding.get('forType') and code and code != binding['forType']:
@@ -779,10 +820,11 @@ class Profile:
         typ = TYPE_MAP.get(code, 'text')
         if code == 'CodeableReference':
             typ = 'coded' if binding.get('valueSet') else 'link'
+        conditional = not binding.get('valueSet') and any(a.get('valueSet') for a in binding.get('additional', []))
         if typ in ('text', 'coded'):
-            coded_fixed = isinstance(fixed_value(e), dict) and any('code' in c for c in fixed_value(e).get('coding', [fixed_value(e)]))
+            coded_fixed = conditional or isinstance(fixed_value(e), dict) and any('code' in c for c in fixed_value(e).get('coding', [fixed_value(e)]))
             typ = 'coded' if (binding.get('valueSet') or coded_fixed) and (len(types) == 1 or code in ('CodeableConcept', 'Coding', 'code')) else 'text'
-        typ = self.cfg.get('types', {}).get(eid, typ)
+        typ = next((t for t in [self.cfg.get('types', {}).get(eid)] if t in TYPE_MAP.values()), typ)
         n = self.base(e, typ)
         if len(types) > 1:
             n['typeText'] = ' or '.join(types)
@@ -803,6 +845,11 @@ class Profile:
             (binding, on), extra_parts = on_part[0], on_part[1:]
         pinned = next((v for k in (('.system',) if types == ['Coding'] else ()) + ('.coding.system', '.concept.coding.system') for v in [fixed_value(self.by_id.get(eid + k))] if isinstance(v, str)), None)
         codes = self.add_binding(n, binding, on, pinned) if binding.get('valueSet') else {}
+        if conditional:
+            # no value set of its own: one per condition, from R5 additional bindings
+            also = [self.additional_binding(a) for a in binding['additional'] if a.get('valueSet')]
+            n['vs'] = dict(also[0], total='', **({'also': also[1:]} if also[1:] else {}))
+            n['values'] = [f"When {a['when']}: {a['title']}" if a.get('when') else a['title'] for a in also]
         for b2, on2 in extra_parts:
             t = {}
             codes = {**self.add_binding(t, b2, on2), **codes}
@@ -881,17 +928,17 @@ class Profile:
     def part_binding(self, eid, typ):
         """A binding the profile puts on a part of a datatype shown as one field, e.g. Identifier.type."""
         base = self.b.sd_by_url('http://hl7.org/fhir/StructureDefinition/' + typ)
-        if not base:
-            return []
+        # without the base datatype, only the IG's own value sets are known not to be the default binding
         base_vs = {x['path']: (x.get('binding') or {}).get('valueSet', '').split('|')[0]
-                   for x in base.get('snapshot', {}).get('element', [])}
+                   for x in base.get('snapshot', {}).get('element', [])} if base else None
         out = []
         for c in self.kids.get(eid, []):
             name = c['path'].rpartition('.')[2]
             for x in [c] + [k for k in self.kids.get(c['id'], []) if is_slice(k['id']) and k.get('min', 0) >= 1]:
                 vs = (x.get('binding') or {}).get('valueSet')
                 if (vs and name in ('type', 'system', 'code', 'currency', 'use') and x.get('max') != '0'
-                        and vs.split('|')[0] != base_vs.get(f'{typ}.{name}') and name not in [o[1] for o in out]):
+                        and (vs.split('|')[0] != base_vs.get(f'{typ}.{name}') if base_vs is not None else vs.split('|')[0] in self.b.local_vs)
+                        and name not in [o[1] for o in out]):
                     out.append((x['binding'], name))
         order = ('type', 'system', 'code', 'currency', 'use')
         return sorted(out, key=lambda o: order.index(o[1]))
@@ -933,9 +980,9 @@ class Profile:
     def complex_extension(self, e):
         """Sub-extension nodes of an extension that has parts instead of a value."""
         ext = self.ext_sd(e)
-        if not ext or 'snapshot' not in ext or ext.get('url') in self.ext_stack:
+        els = (ext or {}).get('snapshot', {}).get('element')
+        if not els or ext.get('url') in self.ext_stack:
             return None
-        els = ext['snapshot']['element']
         root = els[0]['id']
         if self.ext_value(els, root) is not None:
             return None
@@ -1384,24 +1431,27 @@ def build_view(b, view, shared=None):
                     sections.extend(main.leaf_extensions(e['id']))
     for s in view.get('sections', []):
         p = prof(s.get('from', view['profile']))
-        if s.get('from') and not s.get('element') and not p.cfg.get('example'):
+        if p is not main and not s.get('element') and not p.cfg.get('example'):
             # no linking element: an instance that references the main example, or none
             target = main.example_ref
             ref = next((r for r in b.instances_of(p.sd.get('url')) if target and target in references(b.instance(r))), None)
             p.example = b.instance(ref) if ref else None
             p.example_ref = ref
-        if s.get('from') and s.get('element') and main.example and not p.cfg.get('example'):
+        if p is not main and s.get('element') and main.example and not p.cfg.get('example'):
             # the instance the main example points to, so every section shows one consistent record
             vals = main.resolve([main.example], s['element'].split('.')[1:], s['element'].split('.')[0])
             refs = [r.get('reference') if isinstance(r, dict) else r for v in vals if isinstance(v, dict) for r in [v.get('reference')]]
-            ref = next((r for r in refs if isinstance(r, str) and (r.startswith('#') or (b.out / f"{r.replace('/', '-')}.json").exists())), None)
+            rtype = p.sd.get('type')
+            ref = next((r for r in refs if isinstance(r, str) and (
+                any(isinstance(c, dict) and c.get('id') == r[1:] and c.get('resourceType') == rtype for c in as_list(main.example.get('contained')))
+                if r.startswith('#') else (b.find_instance(r, main.example) or {}).get('resourceType') == rtype)), None)
             if ref and ref.startswith('#'):
                 p.example = next((dict(c, contained=main.example.get('contained', []), language=c.get('language') or main.example.get('language'))
                                   for c in as_list(main.example.get('contained')) if isinstance(c, dict) and c.get('id') == ref[1:]), None)
                 p.example_ref = main.example_ref if p.example else None
             else:
-                p.example = b.instance(ref) if ref else None
-                p.example_ref = ref
+                p.example = b.find_instance(ref, main.example) if ref else None
+                p.example_ref = p.example and f"{p.example['resourceType']}/{p.example['id']}"
         nodes = []
         for i in s.get('include', []):
             n = p.node(i)
