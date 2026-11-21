@@ -157,6 +157,7 @@ class Build:
         self.package_dirs = [Path(d).expanduser() for d in package_dirs or ['~/.fhir/packages']]
         self.prefix = prefix
         self.sds, self.by_url, self.cache, self._pkg, self._examples, self._canon = {}, {}, {}, None, None, None
+        self._describing = set()
         self.ig = next((load(f) for f in sorted(self.out.glob('ImplementationGuide-*.json'))), {})
         for f in self.out.glob('StructureDefinition-*.json'):
             sd = load(f)
@@ -250,7 +251,13 @@ class Build:
         """A short human summary of a referenced resource; "#id" refers to a resource contained in `within`."""
         if ref.startswith('#'):
             r = next((c for c in as_list((within or {}).get('contained')) if isinstance(c, dict) and c.get('id') == ref[1:]), None)
-            return (self.summarize(r, within) if r else None) or ref
+            if r is None or id(r) in self._describing:
+                return ref
+            self._describing.add(id(r))
+            try:
+                return self.summarize(r, within) or ref
+            finally:
+                self._describing.discard(id(r))
         if ref in self.cache:
             return self.cache[ref]
         f = self.out / f'{ref.replace("/", "-")}.json'
@@ -347,7 +354,7 @@ class Build:
             self.cache[key] = {}
             if self._local_cs is None:
                 self._local_cs, self._supplements = {}, {}
-                for f in self.out.glob('CodeSystem-*.json'):
+                for f in sorted(self.out.glob('CodeSystem-*.json')):
                     cs = load(f)
                     if cs.get('content') == 'supplement' and isinstance(cs.get('supplements'), str):
                         if cs.get('language', 'en').startswith('en'):
@@ -358,6 +365,9 @@ class Build:
             if f:
                 cs = load(Path(f))
                 self.cache[key] = {c['code']: en_display(c, cs) for c in flatten_concepts(cs.get('concept', [])) if 'code' in c}
+                if (cs.get('language') or 'en')[:2] != 'en':
+                    self.cache[('en', system)] = {c['code'] for c in flatten_concepts(cs.get('concept', [])) if 'code' in c
+                                                  and en_display(c, cs) != c.get('display')}
             elif system == 'urn:ietf:bcp:47' and self.packages().get('http://hl7.org/fhir/ValueSet/languages'):
                 vs = load(Path(self.packages()['http://hl7.org/fhir/ValueSet/languages']))
                 self.cache[key] = {c['code']: en_display(c, vs) for i in vs.get('compose', {}).get('include', []) for c in i.get('concept', [])}
@@ -367,9 +377,13 @@ class Build:
                         self.cache[key][c['code']] = c['display']
         if self._examples is None:
             self.example_for('')
-        if self.known_rank.get((system, code), 3) <= 1:
+        if self.known_rank.get((system, code), 3) <= 1 and not self.has_en(system, code):
             return self.known[(system, code)]
         return self.cache[key].get(code) or self.known.get((system, code)) or self.seen.get((system, code))
+
+    def has_en(self, system, code):
+        """Whether a non-English code system gives this code an explicit English designation."""
+        return code in self.cache.get(('en', system), ())
 
     def address_vs(self, part):
         if not hasattr(self, '_address_vs'):
@@ -733,6 +747,8 @@ class Profile:
         code = types[0] if types else 'string'
         if len({TYPE_MAP.get(t, 'text') for t in types}) > 1:
             code = self.example_type(eid)
+        if binding.get('forType') and code and code != binding['forType']:
+            binding = {}
         if len(types) > 1 and not binding.get('valueSet'):
             typed = [x for x in self.els if x['id'].startswith(eid + ':') and '.' not in x['id'][len(eid):]
                      and x.get('max') != '0' and (x.get('binding') or {}).get('valueSet') and len(x.get('type', [])) == 1]
@@ -741,13 +757,14 @@ class Profile:
             if pick:
                 binding = pick['binding']
         if not code:
-            coded = [t for t in types if t in ('CodeableConcept', 'Coding', 'code')]
-            code = coded[0] if coded and binding.get('valueSet') else types[0]
+            coded = [t for t in types if TYPE_MAP.get(t) == 'coded'] if binding.get('valueSet') else []
+            code = next(iter(coded), None) or next((t for t in types if TYPE_MAP.get(t, 'text') not in ('text', 'coded')), types[0])
         typ = TYPE_MAP.get(code, 'text')
         if code == 'CodeableReference':
             typ = 'coded' if binding.get('valueSet') else 'link'
         if typ in ('text', 'coded'):
-            typ = 'coded' if binding.get('valueSet') and (len(types) == 1 or code in ('CodeableConcept', 'Coding', 'code')) else 'text'
+            coded_fixed = isinstance(fixed_value(e), dict) and any('code' in c for c in fixed_value(e).get('coding', [fixed_value(e)]))
+            typ = 'coded' if (binding.get('valueSet') or coded_fixed) and (len(types) == 1 or code in ('CodeableConcept', 'Coding', 'code')) else 'text'
         typ = self.cfg.get('types', {}).get(eid, typ)
         n = self.base(e, typ)
         if len(types) > 1:
@@ -764,10 +781,16 @@ class Profile:
         elif typ == 'link':
             n['target'] = 'Any resource'
         on = None
+        extra_parts = []
         if not binding.get('valueSet') and on_part:
-            binding, on = on_part
+            (binding, on), extra_parts = on_part[0], on_part[1:]
         pinned = next((v for k in (('.system',) if types == ['Coding'] else ()) + ('.coding.system', '.concept.coding.system') for v in [fixed_value(self.by_id.get(eid + k))] if isinstance(v, str)), None)
         codes = self.add_binding(n, binding, on, pinned) if binding.get('valueSet') else {}
+        for b2, on2 in extra_parts:
+            t = {}
+            codes = {**self.add_binding(t, b2, on2), **codes}
+            n['values'] = n.get('values', []) + t['values']
+            n['vs'].setdefault('also', []).append({k: t['vs'][k] for k in ('title', 'strength', 'page', 'on') if k in t['vs']})
         systems = self.b.vs_systems(binding['valueSet'].split('|')[0]) if binding.get('valueSet') else []
         exs = self.example_values(eid, codes, systems)
         if exs:
@@ -843,13 +866,16 @@ class Profile:
         base = self.b.sd_by_url('http://hl7.org/fhir/StructureDefinition/' + typ) or {}
         base_vs = {x['path']: (x.get('binding') or {}).get('valueSet', '').split('|')[0]
                    for x in base.get('snapshot', {}).get('element', [])}
+        out = []
         for c in self.kids.get(eid, []):
-            vs = (c.get('binding') or {}).get('valueSet')
             name = c['path'].rpartition('.')[2]
-            if (vs and name in ('type', 'system', 'code', 'currency') and c.get('max') != '0'
-                    and vs.split('|')[0] != base_vs.get(f'{typ}.{name}')):
-                return c['binding'], name
-        return None
+            for x in [c] + [k for k in self.kids.get(c['id'], []) if is_slice(k['id']) and k.get('min', 0) >= 1]:
+                vs = (x.get('binding') or {}).get('valueSet')
+                if (vs and name in ('type', 'system', 'code', 'currency', 'use') and x.get('max') != '0'
+                        and vs.split('|')[0] != base_vs.get(f'{typ}.{name}') and name not in [o[1] for o in out]):
+                    out.append((x['binding'], name))
+        order = ('type', 'system', 'code', 'currency', 'use')
+        return sorted(out, key=lambda o: order.index(o[1]))
 
     @staticmethod
     def ext_value(els, base):
@@ -861,11 +887,14 @@ class Profile:
             return None
         parts = [x for x in els if x['id'].startswith(base + '.value[x]:') and '.' not in x['id'][len(base) + 9:]
                  and x.get('max') != '0' and x.get('type')]
-        types = [t['code'] for x in (parts or [vx]) for t in x.get('type', [])]
+        # an unconstrained value[x] lists every datatype; its type slices then say which ones are used
+        used = [vx] if vx.get('type') and (len(vx['type']) <= 10 or not parts) else parts
+        types = [t['code'] for x in used for t in x.get('type', [])]
         within = {x['id'] + s for x in [vx] + parts for s in ('.coding', '.coding.code', '.code')}
-        binding = (vx.get('binding') or next((x['binding'] for x in parts if x.get('binding')), None)
+        part = next((x for x in parts if x.get('binding')), None)
+        binding = (vx.get('binding') or (dict(part['binding'], forType=part['type'][0]['code']) if part else None)
                    or next((x['binding'] for x in els if x['id'] in within and x.get('binding')), {}))
-        targets = [p for x in (parts or [vx]) for t in x.get('type', []) for p in t.get('targetProfile', [])]
+        targets = [p for x in used for t in x.get('type', []) for p in t.get('targetProfile', [])]
         return types, binding, targets
 
     def ext_sd(self, e):
@@ -918,7 +947,8 @@ class Profile:
             n['vs']['also'] = also
         if on:
             n['vs']['on'] = humanize(on)
-        contains = [dict(c, display=c.get('display') or self.b.display(c.get('system'), c['code'])) if 'code' in c else c
+        contains = [dict(c, display=(self.b.display(c.get('system'), c['code']) if c.get('display') is None or self.b.display(c.get('system'), c['code'])
+                                     and self.b.has_en(c.get('system'), c['code']) else c['display'])) if 'code' in c else c
                     for c in flatten_contains((vs or {}).get('expansion', {}).get('contains', []))]
         total = (vs or {}).get('expansion', {}).get('total') or len(contains)
         if not truncated(vs):
@@ -978,7 +1008,9 @@ class Profile:
         codes = dict(codes or {})
         for v in vals:
             for c in codings_in(v):
-                if not codes.get(c['code']) and not own_display(c, self.example.get('language')):
+                if own_display(c, self.example.get('language')):
+                    codes[c['code']] = own_display(c, self.example.get('language'))
+                elif not codes.get(c['code']):
                     d = self.b.display(c.get('system'), c['code'])
                     if d:
                         codes[c['code']] = d
@@ -1264,7 +1296,8 @@ def fmt(v, codes=None):
         den = fmt(v.get('denominator'))
         return f"{num} / {den}" if den else num
     if 'numerator' in v:
-        return f"{fmt(v['numerator'])} / {fmt(v.get('denominator'))}"
+        den = fmt(v.get('denominator'))
+        return f"{fmt(v['numerator'])} / {den}" if den else fmt(v['numerator'])
     if 'start' in v or 'end' in v:
         return (f"{fmt(v['start'])} to {fmt(v['end'])}" if v.get('start') else f"until {fmt(v['end'])}") if v.get('end') else f"since {fmt(v['start'])}"
     if 'value' in v:
@@ -1322,7 +1355,8 @@ def build_view(b, view, shared=None):
             refs = [r.get('reference') if isinstance(r, dict) else r for v in vals if isinstance(v, dict) for r in [v.get('reference')]]
             ref = next((r for r in refs if isinstance(r, str) and (r.startswith('#') or (b.out / f"{r.replace('/', '-')}.json").exists())), None)
             if ref and ref.startswith('#'):
-                p.example = next((c for c in as_list(main.example.get('contained')) if isinstance(c, dict) and c.get('id') == ref[1:]), None)
+                p.example = next((dict(c, contained=main.example.get('contained', []), language=c.get('language') or main.example.get('language'))
+                                  for c in as_list(main.example.get('contained')) if isinstance(c, dict) and c.get('id') == ref[1:]), None)
                 p.example_ref = main.example_ref if p.example else None
             else:
                 p.example = b.instance(ref) if ref else None
