@@ -39,9 +39,9 @@ CONFORMANCE = {
     'CapabilityStatement', 'SearchParameter', 'OperationDefinition', 'StructureMap', 'package', 'expansions', 'qa',
 }
 PRIMITIVES = {'instant', 'markdown', 'canonical', 'uri', 'url', 'string', 'code', 'id', 'oid', 'uuid', 'base64Binary'}
-DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medication', 'suppliedItem.item', 'relationship', 'type', 'class', 'category',
+DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medication', 'suppliedItem.item', 'item.concept', 'relationship', 'type', 'class', 'category',
                  'practitioner', 'organization', 'agent.who', 'subject')
-WHAT_KEYS = 9
+WHAT_KEYS = 10
 CONTACT_SYSTEMS = {'phone', 'fax', 'email', 'pager', 'url', 'sms', 'other'}
 UNIT_WORDS = {'s': 'second', 'min': 'minute', 'h': 'hour', 'd': 'day', 'wk': 'week', 'mo': 'month', 'a': 'year'}
 PART_BINDING = {'Coding': 'code', 'Ratio': 'numerator.code', 'Quantity': 'code', 'SimpleQuantity': 'code', 'Duration': 'code', 'Age': 'code',
@@ -159,6 +159,7 @@ class Build:
         self.package_dirs = [Path(d).expanduser() for d in package_dirs or ['~/.fhir/packages']]
         self.prefix = prefix
         self.sds, self.by_url, self.cache, self._pkg, self._examples, self._canon = {}, {}, {}, None, None, None
+        self.copies = {}  # id of a working copy of an example -> the example, for Bundle lookups
         self._describing = set()
         self.ig = next((load(f) for f in sorted(self.out.glob('ImplementationGuide-*.json'))), {})
         for f in self.out.glob('StructureDefinition-*.json'):
@@ -212,6 +213,8 @@ class Build:
     def bundle_for(self, r):
         """fullUrl -> entry of the example Bundle holding `r`; the one holding this very copy when several hold its Type/id."""
         self.example_for('')
+        while id(r) in self.copies:
+            r = self.copies[id(r)]
         homes = self._bundle_of.get(f"{r.get('resourceType')}/{r.get('id')}", []) if isinstance(r, dict) else []
         return (next((full for x, full in homes if x is r), None) or next((full for x, full in homes if x == r), None)
                 or next((full for _, full in homes), {}))
@@ -669,8 +672,11 @@ class Profile:
             sub = [self.node(x['id']) for x in inline]
         cslices = [c for c in self.kids.get(eid + '.coding', []) if is_slice(c['id']) and c.get('max') != '0']
         bound = {(c.get('binding') or self.by_id.get(c['id'] + '.code', {}).get('binding') or {}).get('valueSet') for c in cslices}
+        required = [c for c in cslices if c.get('min', 0) >= 1]
+        open_codes = [c for c in required if not isinstance((fixed_value(c) or {}).get('code') if isinstance(fixed_value(c), dict) else fixed_value(self.by_id.get(c['id'] + '.code')), str)]
+        # split when the codings differ in binding, or two or more must be given without a fixed code
         if not sub and types[:1] in (['CodeableConcept'], ['CodeableReference']) and len(cslices) > 1 and eid not in self.expand and (
-                len(bound) > 1 or sum(c.get('min', 0) >= 1 for c in cslices) > 1):
+                len(bound) > 1 or len(required) > 1 and open_codes):
             sub = [self.node(c['id']) for c in cslices]
         if sub:
             n = self.base(e, 'group')
@@ -731,7 +737,9 @@ class Profile:
                 # parts are placed again, so forget they were (leaf extensions skip placed ids)
                 full, used, self.example = self.example, self.used, one
                 self.used = {u for u in used if not u.startswith((eid + '.', eid + ':'))}
+                self.b.copies[id(one)] = full
                 one = self.node(eid)
+                self.b.copies.pop(id(self.example))
                 self.example, self.used = full, used
                 parts = [one['ex']] if one.get('ex') else []
             else:
@@ -866,6 +874,10 @@ class Profile:
         if not binding.get('valueSet') and on_part:
             (binding, on), extra_parts = on_part[0], on_part[1:]
         pinned = next((v for k in (('.system',) if types == ['Coding'] else ()) + ('.coding.system', '.concept.coding.system') for v in [fixed_value(self.by_id.get(eid + k))] if isinstance(v, str)), None)
+        held = (self.by_id.get(eid.rpartition('.coding:')[0]) or {}).get('binding') or {} if '.coding:' in eid else {}
+        if not binding.get('valueSet') and pinned and held.get('valueSet') and pinned in self.b.vs_systems(held['valueSet'].split('|')[0]):
+            # a coding slice of the system the whole concept is bound to: that binding applies to it
+            binding = held
         codes = self.add_binding(n, binding, on, pinned) if binding.get('valueSet') else {}
         if typ == 'coded' and not binding.get('valueSet') and not conditional and pinned:
             n['values'] = [f"Any code from {self.b.system_title(pinned)}"]
@@ -892,6 +904,8 @@ class Profile:
             fixed = ('pattern', fixed_value(self.by_id[eid + '.concept']))
         if not fixed and typ == 'coded' and self.child_fixed(eid + ('.concept' if code == 'CodeableReference' else '')):
             fixed = ('pattern', {'coding': self.child_fixed(eid + ('.concept' if code == 'CodeableReference' else ''))})
+        if not fixed and types == ['Coding'] and isinstance(fixed_value(self.by_id.get(eid + '.code')), str):
+            fixed = ('pattern', {k: v for k in ('system', 'code', 'display') for v in [fixed_value(self.by_id.get(f'{eid}.{k}'))] if isinstance(v, str)})
         unit = fixed_value(self.by_id.get(eid + '.unit')) or fixed_value(self.by_id.get(eid + '.code'))
         if not fixed and typ == 'quantity' and isinstance(unit, str):
             n['values'] = ['Unit: ' + unit]
@@ -1017,6 +1031,8 @@ class Profile:
         objs = self.resolve([self.example], e['id'].split('.')[1:], e['id'].split('.')[0]) if self.example else []
         sub.example = {'extension': [x for o in objs if isinstance(o, dict) for x in o.get('extension', [])],
                        'contained': self.example.get('contained', []), 'language': self.example.get('language')} if objs else None
+        if sub.example:
+            self.b.copies[id(sub.example)] = self.example
         out = []
         for c in sub.children(root):
             if not is_slice(c['id']) or c.get('max') == '0':
@@ -1024,6 +1040,7 @@ class Profile:
             n = sub.node(c['id'])
             walk(n, lambda x: x.update(path=e['id'] + x['path'][len(root):]) if x.get('path') else None)
             out.append(n)
+        self.b.copies.pop(id(sub.example), None)
         return out
 
     def add_binding(self, n, binding, on=None, system=None):
@@ -1128,7 +1145,7 @@ class Profile:
                     codes[v] = d
         out = []
         for v in vals:
-            if isinstance(v, dict) and 'url' in v and isinstance(choice(v, 'value'), str):
+            if isinstance(v, dict) and 'url' in v and (isinstance(choice(v, 'value'), str) or isinstance(v.get('valueReference'), dict)):
                 v = choice(v, 'value')
             if eid.rpartition('.')[2] != 'url' and self.b.canonical(v):
                 s = self.b.describe(self.b.canonical(v))
@@ -1371,7 +1388,7 @@ def fmt(v, codes=None):
                                                 '-'.join(fmt(t[k]) for k in ('availableStartTime', 'availableEndTime') if k in t)]))
                          for t in v.get('availableTime', []))
     if 'who' in v and 'when' in v:
-        return f"{fmt(v['who'], codes)}, {fmt(v['when'])}"
+        return ', '.join(filter(None, (fmt(v.get('type'), codes), fmt(v['who'], codes), fmt(v['when']))))
     if 'currency' in v and 'value' in v:
         return f"{v['value']} {v['currency']}"
     if isinstance(v.get('type'), str) and 'amount' in v:
@@ -1382,7 +1399,7 @@ def fmt(v, codes=None):
         return ', '.join(filter(None, [fmt(v.get('name'), codes) or fmt(v.get('purpose'), codes), fmt(v.get('telecom'), codes)]))
     if 'concept' in v or 'reference' in v and isinstance(v.get('reference'), dict):
         return fmt(v.get('concept'), codes) or fmt(v.get('reference'), codes)
-    if 'coding' in v or ('text' in v and len(v) <= 2 and 'div' not in v):
+    if 'coding' in v or (isinstance(v.get('text'), str) and len(v) <= 2):
         if v.get('text'):
             return en_text(v, 'text')
         c = next((c for c in v.get('coding', []) if c.get('code') in codes), (v.get('coding') or [{}])[0])
