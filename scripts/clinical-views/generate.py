@@ -39,9 +39,10 @@ CONFORMANCE = {
     'CapabilityStatement', 'SearchParameter', 'OperationDefinition', 'StructureMap', 'package', 'expansions', 'qa',
 }
 PRIMITIVES = {'instant', 'markdown', 'canonical', 'uri', 'url', 'string', 'code', 'id', 'oid', 'uuid', 'base64Binary'}
-DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medication', 'suppliedItem.item', 'item.concept', 'itemCodeableConcept', 'device', 'relationship', 'type', 'class', 'category',
+DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medication', 'suppliedItem.item', 'item.concept', 'itemCodeableConcept', 'relationship', 'type', 'class', 'category',
                  'practitioner', 'organization', 'agent.who', 'subject')
-WHAT_KEYS = 12
+WHAT_KEYS = 11
+NO_BUNDLE = {}
 CONTACT_SYSTEMS = {'phone', 'fax', 'email', 'pager', 'url', 'sms', 'other'}
 UNIT_WORDS = {'s': 'second', 'min': 'minute', 'h': 'hour', 'd': 'day', 'wk': 'week', 'mo': 'month', 'a': 'year'}
 PART_BINDING = {'Coding': 'code', 'Ratio': 'numerator.code', 'Quantity': 'code', 'SimpleQuantity': 'code', 'Duration': 'code', 'Age': 'code',
@@ -202,12 +203,16 @@ class Build:
         return self.sds[pid]
 
     def find_instance(self, ref, within=None):
-        """An example instance by Type/id: its own file, or else an entry of an example Bundle;
+        """An example instance by Type/id: the entry of the Bundle holding `within`, its own file, or else an entry of any example Bundle;
         a fullUrl (urn:uuid:...) resolves only in the Bundle that holds `within`."""
         if ref.startswith('urn:'):
             return self.bundle_for(within).get(ref)
         self.example_for('')
         ref = re.sub(r'/_history/[^/]+$', '', ref)
+        home = self.bundle_for(within) if within is not None else NO_BUNDLE
+        hit = home.get(ref) or next((x for u, x in home.items() if u.endswith('/' + ref)), None)
+        if hit is not None:
+            return hit
         f = self.out / f'{ref.replace("/", "-")}.json'
         return load(f) if re.fullmatch(r'[A-Za-z]+/[A-Za-z0-9.-]{1,64}', ref) and f.exists() else self._bundled.get(ref)
 
@@ -218,7 +223,7 @@ class Build:
             r = self.copies[id(r)]
         homes = self._bundle_of.get(f"{r.get('resourceType')}/{r.get('id')}", []) if isinstance(r, dict) else []
         return (next((full for x, full in homes if x is r), None) or next((full for x, full in homes if x == r), None)
-                or next((full for _, full in homes), {}))
+                or next((full for _, full in homes), NO_BUNDLE))
 
     def instance(self, ref):
         r = self.find_instance(ref)
@@ -300,7 +305,7 @@ class Build:
                 return self.summarize(r, within) or ref
             finally:
                 self._describing.discard(id(r))
-        key = (ref, id(self.bundle_for(within))) if ref.startswith('urn:') else ref
+        key = (ref, id(self.bundle_for(within)))
         if key in self.cache:
             return self.cache[key]
         self.cache[key] = ref
@@ -339,8 +344,9 @@ class Build:
             return label or fmt(name[0])
         if title:
             return title
-        if what(DESCRIBE_KEYS[:WHAT_KEYS]):
-            return f"{r.get('resourceType')}: {what(DESCRIBE_KEYS[:WHAT_KEYS])}"
+        keys = (('device',) if r.get('resourceType') in ('DeviceUseStatement', 'DeviceUsage') else ()) + DESCRIBE_KEYS[:WHAT_KEYS]
+        if what(keys):
+            return f"{r.get('resourceType')}: {what(keys)}"
         if r.get('identifier'):
             ident = as_list(r['identifier'])[0]
             return f"{r.get('resourceType')} {ident.get('value', '') if isinstance(ident, dict) else ''}".strip()
@@ -683,7 +689,7 @@ class Profile:
         # split when the codings differ in binding, two or more must be given without a fixed code, or a supported fixed code is optional
         if not sub and types[:1] in (['CodeableConcept'], ['CodeableReference']) and len(cslices) > 1 and eid not in self.expand and (
                 len(bound) > 1 or len(required) > 1 and open_codes or optional_codes):
-            sub = [self.node(c['id']) for c in cslices if self.visible(c) or c.get('min', 0) >= 1]
+            sub = [self.node(c['id']) for c in cslices if self.visible(c) or c.get('min', 0) >= 1 and c['id'] not in self.hide]
         if sub:
             n = self.base(e, 'group')
             n['children'] = sub
@@ -1165,7 +1171,9 @@ class Profile:
             res = v if isinstance(v, dict) and isinstance(v.get('resourceType'), str) else (
                 v.get('resource') if isinstance(v, dict) and isinstance(v.get('resource'), dict) and isinstance(v['resource'].get('resourceType'), str) else None)
             if res is not None:
-                s = self.b.summarize(res) or fmt(res)
+                # a contained resource reads its #refs and language from the container; a Bundle entry stands alone
+                inside = res is v and any(c is res or c == res for c in as_list((self.example or {}).get('contained')))
+                s = self.b.summarize(res, self.example if inside else None) or fmt(res)
             elif eid.rpartition('.')[2] != 'url' and self.b.canonical(v):
                 s = self.b.describe(self.b.canonical(v))
             elif isinstance(v, dict) and isinstance(v.get('reference'), str) and not v.get('display'):
@@ -1217,6 +1225,13 @@ class Profile:
         if not disc:
             return False
         for d in disc:
+            if d['type'] == 'exists':
+                path = [x for x in d['path'].split('.') if x != '$this']
+                el = self.by_id.get(f"{slice_id}.{'.'.join(path)}")
+                present = bool(self.at(v, [x.replace('[x]', '') for x in path]) if path else [v])
+                if el and (el.get('max') == '0' and present or el.get('min', 0) >= 1 and not present):
+                    return False
+                continue
             if d['type'] in ('type', 'profile'):
                 if not self.type_matches(v, slice_id, d):
                     return False
@@ -1273,14 +1288,27 @@ class Profile:
             self.b.cache[key] = out
         return self.b.cache[key]
 
+    @staticmethod
+    def at(g, path):
+        vals = [g]
+        for seg in path:
+            vals = [x for y in vals if isinstance(y, dict) for x in as_list(choice(y, seg))]
+        return vals
+
     def conforms(self, g, url):
         fixed = self.required_fixed(url)
-        def at(path):
-            vals = [g]
-            for seg in path:
-                vals = [x for y in vals if isinstance(y, dict) for x in as_list(choice(y, seg))]
-            return vals
-        return bool(fixed) and all(any(contains(y, want) for y in at(path)) for path, want in fixed)
+        return bool(fixed) and all(any(contains(y, want) for y in self.at(g, path)) for path, want in fixed)
+
+    def lineage(self, url):
+        """A profile and the constraint profiles it derives from."""
+        out = []
+        while url and url not in out and len(out) < 20:
+            sd = self.b.sd_by_url(url)
+            if not sd or sd.get('derivation') != 'constraint':
+                break
+            out.append(url)
+            url = (sd.get('baseDefinition') or '').split('|')[0]
+        return out
 
     def type_matches(self, v, slice_id, d):
         """A type or profile discriminator: the resource or choice type, or the profile the value claims or whose required fixed parts it carries."""
@@ -1294,8 +1322,10 @@ class Profile:
             else:
                 got = [x for g in got if isinstance(g, dict) for x in as_list(choice(g, key))]
         res = [g for g in got if isinstance(g, dict) and 'resourceType' in g]
+        if not res and d['type'] == 'profile':
+            return any(isinstance(g, dict) and any(self.conforms(g, u) for u in profiles) for g in got)
         if not res:
-            return bool(segs) and d['type'] == 'type' and any(
+            return bool(segs) and any(
                 isinstance(p, dict) and segs[-1] + c[:1].upper() + c[1:] in p for p in parents for c in types if c)
         res = [g for g in res if g['resourceType'] in types]
         if d['type'] == 'type' or not profiles:
@@ -1303,7 +1333,10 @@ class Profile:
         for g in res:
             claimed = {u.split('|')[0] for u in as_list((g.get('meta') or {}).get('profile'))}
             if claimed:
-                if claimed & profiles:
+                # a profile derived from the slice's, or a base of it whose required fixed values the resource carries
+                if any(set(self.lineage(u)) & profiles for u in claimed) or any(
+                        claimed & set(self.lineage(u)) and all(any(contains(y, want) for y in self.at(g, path)) for path, want in self.required_fixed(u))
+                        for u in profiles):
                     return True
                 continue
             if any(self.conforms(g, u) for u in profiles):
