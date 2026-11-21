@@ -276,18 +276,23 @@ class Build:
     def short(self, title):
         return title[len(self.prefix):] if self.prefix and title.startswith(self.prefix) else title
 
-    def example_page(self, ref):
-        """The guide page showing an example: its own, or the Bundle's that holds it."""
+    def example_page(self, ref, within=None):
+        """The guide page showing an example: its own, or that of the Bundle holding it (the one holding `within` first)."""
         if not ref:
             return None
         self.example_for('')
         name = ref.replace('/', '-')
-        return name if (self.out / f'{name}.json').exists() else self._bundle_page.get(ref)
+        if (self.out / f'{name}.json').exists():
+            return name
+        home = self.bundle_for(within) if within is not None else NO_BUNDLE
+        if any(isinstance(x, dict) and f"{x.get('resourceType')}/{x.get('id')}" == ref for x in home.values()):
+            return self._full_page.get(id(home))
+        return self._bundle_page.get(ref)
 
     def example_for(self, url):
         """The largest example instance that claims the profile in meta.profile, as the one most likely to fill every field."""
         if self._examples is None:
-            self._examples, self._claims, self._bundled, self._bundle_of, self._bundle_page = {}, {}, {}, {}, {}
+            self._examples, self._claims, self._bundled, self._bundle_of, self._bundle_page, self._full_page = {}, {}, {}, {}, {}, {}
             for f in sorted(self.out.glob('*-*.json')):
                 if f.name.split('-')[0] in CONFORMANCE:
                     continue
@@ -312,6 +317,7 @@ class Build:
                         self._bundled[ref] = x
                         self._bundle_page[ref] = f.stem
                         found.append((x, len(json.dumps(x, indent=2))))
+                    self._full_page[id(full)] = f.stem
                 for x, size in found:
                     for prof in x.get('meta', {}).get('profile', []):
                         prof = prof.split('|')[0]
@@ -1233,6 +1239,17 @@ class Profile:
                 out.append(s)
         return out[:4]
 
+    def prune_fx(self, n, shown=frozenset()):
+        """Keep a leaf's first-repetition form values only when each repeating parent shows as a group above it."""
+        if n.get('children'):
+            for c in n['children']:
+                self.prune_fx(c, shown | {n.get('path')})
+        elif 'fx' in n:
+            parts = n['path'].split('.')
+            if any(a not in shown and (self.by_id.get(a) or {}).get('max', '1') not in ('0', '1')
+                   for a in ('.'.join(parts[:i]) for i in range(2, len(parts)))):
+                n.pop('fx')
+
     def resolve(self, objs, segs, prefix, first=False):
         for i, seg in enumerate(segs):
             if first:
@@ -1680,6 +1697,7 @@ def build_view(b, view, shared=None):
         for e in main.children(root):
             if main.visible(e):
                 n = main.node(e['id'])
+                main.prune_fx(n)
                 sections.append(n)
                 if not n.get('children'):
                     sections.extend(main.leaf_extensions(e['id']))
@@ -1713,10 +1731,7 @@ def build_view(b, view, shared=None):
         nodes = []
         for i in s.get('include', []):
             n = p.node(i)
-            own, n['card'] = n.get('card'), p.effective_card(i, stop=s.get('element') if not s.get('from') else None)
-            if n['card'] != own and not n.get('children'):
-                # the leaf stands for every repetition of its hidden parents
-                n.pop('fx', None)
+            n['card'] = p.effective_card(i, stop=s.get('element') if not s.get('from') else None)
             if s.get('hoist') and n['type'] == 'group' and n.get('children'):
                 nodes.extend(n['children'])
             else:
@@ -1751,6 +1766,7 @@ def build_view(b, view, shared=None):
             if sg.get('collapsed'):
                 group['collapsed'] = True
             sec['children'].insert(min(first, len(sec['children'])), group)
+        p.prune_fx(sec)
         sections.append(sec)
 
     # anything Must Support or mandatory at the top level that no section placed
@@ -1761,6 +1777,7 @@ def build_view(b, view, shared=None):
         for e in p.children(root):
             if p.visible(e) and e['id'] not in p.used:
                 leftovers.append(p.node(e['id']))
+                p.prune_fx(leftovers[-1])
                 print(f"warning: {view['id']}: {e['id']} is not placed in any section; added to 'Other'", file=sys.stderr)
     if leftovers:
         sections.append({'label': 'Other', 'type': 'group', 'card': None,
@@ -1788,7 +1805,7 @@ def build_view(b, view, shared=None):
         model['uses'] = [[b.short(profiles[pid].sd.get('title', pid)), f'StructureDefinition-{pid}.html'] for pid in profiles]
         refs = list(dict.fromkeys(r for r in [main.example_ref] + [p.example_ref for p in profiles.values()] if r))
         if len(refs) > 1:
-            model['examples'] = [[r, b.example_page(r)] for r in refs]
+            model['examples'] = [[r, b.example_page(r, main.example)] for r in refs]
     uid = 0
 
     def assign(n):

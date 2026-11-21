@@ -586,7 +586,7 @@ function control(n, v, id) {
     case 'decimal': return `<input id="${id}" type="number" class="num" step="any" value="${esc(v)}">`;
     case 'quantity': { const [a, ...b] = v.split(' '); return `<input id="${id}" type="text" class="num" inputmode="decimal" value="${esc(a || '')}" aria-label="${esc(n.label)} amount"><input id="${id}-u" type="text" class="unit" placeholder="unit" value="${esc(b.join(' '))}" aria-label="${esc(n.label)} unit">`; }
     case 'ratio': { const cut = v.lastIndexOf(' / '), halves = cut >= 0 ? [v.slice(0, cut), v.slice(cut + 3)] : [v.split('/')[0], v.split('/').slice(1).join('/')], side = h => (h || '').trim().match(/^(\S+)(?:\s+(.+))?$/) || []; const [a, b] = halves.map(side); return `<input id="${id}" class="num" value="${esc(a[1] || '')}" aria-label="${esc(n.label)} numerator"><input id="${id}-a" class="unit" placeholder="unit" value="${esc(a[2] || '')}" aria-label="${esc(n.label)} numerator unit"><span class="sep">per</span><input id="${id}-b" class="num" value="${esc(b[1] || '')}" aria-label="${esc(n.label)} denominator"><input id="${id}-c" class="unit" placeholder="unit" value="${esc(b[2] || '')}" aria-label="${esc(n.label)} denominator unit">`; }
-    case 'period': { const p = v.split(', ')[0], [from, to] = /^until /.test(p) ? ['', p.slice(6)] : /^since /.test(p) ? [p.slice(6), ''] : [p.split(' to ')[0], p.split(' to ')[1] || '']; return `${dateInput(id, from, n.label + ' from', true)}<span class="sep">to</span>${dateInput(id + '-b', to, n.label + ' to', true)}`; }
+    case 'period': { const p = v.split(', ')[0], [from, to] = /^until /.test(p) ? ['', p.slice(6)] : /^since /.test(p) ? [p.slice(6), ''] : [p.split(' to ')[0], p.split(' to ')[1] || '']; const time = ![from, to].some(x => /^\d{4}-\d\d-\d\d$/.test(x)); return `${dateInput(id, from, n.label + ' from', time)}<span class="sep">to</span>${dateInput(id + '-b', to, n.label + ' to', time)}`; }
     case 'link': return `<span class="refbox" id="${id}">${icon('link')} ${esc(v || 'Select ' + n.target)}</span>`;
     default: return `<input id="${id}" type="text" value="${esc(v)}" placeholder="${n.type === 'id' ? 'Number' : ''}">`;
   }
@@ -601,9 +601,10 @@ function formNode(n, d) {
   }
   const o = occ(n.card);
   const ex = state.example ? n.fx || n.exs || (n.ex ? [n.ex] : []) : [];
-  const fixed = (n.values || []).find(x => x.startsWith('Fixed: '));
+  const fixed = (n.values || []).find(x => x.startsWith('Fixed: ') || n.type === 'quantity' && x.startsWith('Unit: '));
   const vals = /\.\.1$/.test(n.card || '') ? [ex[0] || ''] : ex.length ? ex : [''];
-  if (fixed && !vals[0] && n.type !== 'link') vals[0] = fixed.slice(7);
+  // a quantity fixed to a unit alone fills the unit box, not the amount
+  if (fixed && !vals[0] && n.type !== 'link') vals[0] = n.type === 'quantity' && !/^[-+.\d]/.test(fixed.split(': ')[1]) ? ' ' + fixed.split(': ')[1] : fixed.slice(fixed.indexOf(': ') + 2);
   const ctl = (v, i) => {
     const cid = 'f-' + n.uid + (i ? '-' + i : '');
     const h = control(n, v, cid);
