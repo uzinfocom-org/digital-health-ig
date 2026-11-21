@@ -39,7 +39,9 @@ CONFORMANCE = {
     'CapabilityStatement', 'SearchParameter', 'OperationDefinition', 'StructureMap', 'package', 'expansions', 'qa',
 }
 PRIMITIVES = {'instant', 'markdown', 'canonical', 'uri', 'url', 'string', 'code', 'id', 'oid', 'uuid', 'base64Binary'}
-DESCRIBE_KEYS = ('code', 'vaccineCode', 'medication', 'type', 'class', 'category', 'practitioner', 'organization', 'subject')
+DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medication', 'suppliedItem.item', 'relationship', 'type', 'class', 'category',
+                 'practitioner', 'organization', 'agent.who', 'subject')
+WHAT_KEYS = 9
 CONTACT_SYSTEMS = {'phone', 'fax', 'email', 'pager', 'url', 'sms', 'other'}
 UNIT_WORDS = {'s': 'second', 'min': 'minute', 'h': 'hour', 'd': 'day', 'wk': 'week', 'mo': 'month', 'a': 'year'}
 PART_BINDING = {'Coding': 'code', 'Ratio': 'numerator.code', 'Quantity': 'code', 'SimpleQuantity': 'code', 'Duration': 'code', 'Age': 'code',
@@ -201,12 +203,18 @@ class Build:
     def find_instance(self, ref, within=None):
         """An example instance by Type/id: its own file, or else an entry of an example Bundle;
         a fullUrl (urn:uuid:...) resolves only in the Bundle that holds `within`."""
-        self.example_for('')
         if ref.startswith('urn:'):
-            home = within and f"{within.get('resourceType')}/{within.get('id')}"
-            return self._bundle_of.get(home, {}).get(ref)
+            return self.bundle_for(within).get(ref)
+        self.example_for('')
         f = self.out / f'{ref.replace("/", "-")}.json'
-        return load(f) if f.exists() else self._bundled.get(ref)
+        return load(f) if re.fullmatch(r'[A-Za-z]+/[A-Za-z0-9.-]{1,64}', ref) and f.exists() else self._bundled.get(ref)
+
+    def bundle_for(self, r):
+        """fullUrl -> entry of the example Bundle holding `r`; the one holding this very copy when several hold its Type/id."""
+        self.example_for('')
+        homes = self._bundle_of.get(f"{r.get('resourceType')}/{r.get('id')}", []) if isinstance(r, dict) else []
+        return (next((full for x, full in homes if x is r), None) or next((full for x, full in homes if x == r), None)
+                or next((full for _, full in homes), {}))
 
     def instance(self, ref):
         r = self.find_instance(ref)
@@ -223,6 +231,10 @@ class Build:
             sd = load(f)
             self.cache[('sd', url)] = normalize(sd) if sd.get('resourceType') == 'StructureDefinition' else None
         return self.cache.get(('sd', url))
+
+    def system_title(self, url):
+        cs = load(self.packages()[url]) if url in self.packages() else {}
+        return cs.get('title') or cs.get('name') or SYSTEM_NAMES.get(url, url)
 
     def title_for(self, url):
         sd = self.sd_by_url(url)
@@ -256,8 +268,9 @@ class Build:
                 for e in entries:
                     x = e['resource']
                     ref = f"{x.get('resourceType')}/{x['id']}"
+                    self._bundle_of.setdefault(ref, []).append((x, full))
                     if not (self.out / f"{ref.replace('/', '-')}.json").exists() and ref not in self._bundled:
-                        self._bundled[ref], self._bundle_of[ref] = x, full
+                        self._bundled[ref] = x
                         found.append((x, len(json.dumps(x, indent=2))))
                 for x, size in found:
                     for prof in x.get('meta', {}).get('profile', []):
@@ -283,12 +296,12 @@ class Build:
                 return self.summarize(r, within) or ref
             finally:
                 self._describing.discard(id(r))
-        key = (ref, within and within.get('resourceType'), within and within.get('id')) if ref.startswith('urn:') else ref
+        key = (ref, id(self.bundle_for(within))) if ref.startswith('urn:') else ref
         if key in self.cache:
             return self.cache[key]
         self.cache[key] = ref
         r = self.find_instance(ref, within) if '/' in ref or ref.startswith('urn:') else None
-        text = (self.summarize(r) if r else None) or ref
+        text = (self.summarize(r) if r else None) or (f"{r.get('resourceType')}/{r.get('id')}" if r and ref.startswith('urn:') else ref)
         self.cache[key] = text
         return text
 
@@ -304,7 +317,13 @@ class Build:
                 text = v.get('display') if isinstance(v.get('display'), str) else self.describe(ref, container)
                 return text.partition(': ')[2] or text
             return fmt(v, codes)
-        what = lambda keys: next(filter(None, (part(choice(r, k)) for k in keys if isinstance(choice(r, k), (dict, list)))), '')
+        def first(k):
+            v = r
+            for seg in k.split('.'):
+                v = choice(v, seg) if isinstance(v, dict) else None
+                v = v[0] if isinstance(v, list) and v and '.' in k else v
+            return v
+        what = lambda keys: next(filter(None, (part(first(k)) for k in keys if isinstance(first(k), (dict, list)))), '')
         title = next((c['attachment']['title'] for c in as_list(r.get('content')) if isinstance(c, dict)
                       and isinstance(c.get('attachment'), dict) and c['attachment'].get('title')), None)
         if isinstance(r.get('title'), str):
@@ -315,13 +334,13 @@ class Build:
             return fmt(name[0])
         if title:
             return title
-        if what(DESCRIBE_KEYS[:6]):
-            return f"{r.get('resourceType')}: {what(DESCRIBE_KEYS[:6])}"
+        if what(DESCRIBE_KEYS[:WHAT_KEYS]):
+            return f"{r.get('resourceType')}: {what(DESCRIBE_KEYS[:WHAT_KEYS])}"
         if r.get('identifier'):
             ident = as_list(r['identifier'])[0]
             return f"{r.get('resourceType')} {ident.get('value', '') if isinstance(ident, dict) else ''}".strip()
-        if what(DESCRIBE_KEYS[6:]):
-            return f"{r.get('resourceType')}: {what(DESCRIBE_KEYS[6:])}"
+        if what(DESCRIBE_KEYS[WHAT_KEYS:]):
+            return f"{r.get('resourceType')}: {what(DESCRIBE_KEYS[WHAT_KEYS:])}"
         return None
 
     def canonical(self, url):
@@ -650,7 +669,8 @@ class Profile:
             sub = [self.node(x['id']) for x in inline]
         cslices = [c for c in self.kids.get(eid + '.coding', []) if is_slice(c['id']) and c.get('max') != '0']
         bound = {(c.get('binding') or self.by_id.get(c['id'] + '.code', {}).get('binding') or {}).get('valueSet') for c in cslices}
-        if not sub and types[:1] in (['CodeableConcept'], ['CodeableReference']) and len(cslices) > 1 and len(bound) > 1 and eid not in self.expand:
+        if not sub and types[:1] in (['CodeableConcept'], ['CodeableReference']) and len(cslices) > 1 and eid not in self.expand and (
+                len(bound) > 1 or sum(c.get('min', 0) >= 1 for c in cslices) > 1):
             sub = [self.node(c['id']) for c in cslices]
         if sub:
             n = self.base(e, 'group')
@@ -694,7 +714,7 @@ class Profile:
         whole = None
         if n.get('children') and self.example and (types[:1] in (['Timing'], ['Dosage']) or eid.endswith('.repeat')):
             vals = self.resolve([self.example], eid.split('.')[1:], eid.split('.')[0])
-            whole = ', '.join(dict.fromkeys(filter(None, (fmt({'repeat': v} if eid.endswith('.repeat') else v) for v in vals[:2]))))
+            whole = ', '.join(dict.fromkeys(filter(None, (fmt({'repeat': v} if eid.endswith('.repeat') else v) for v in vals[:1]))))
         if whole:
             n['ex'] = whole
         elif n.get('children'):
@@ -708,20 +728,22 @@ class Profile:
             one = prune(self.example) if drop else None
             if one and len(self.resolve([one], eid.split('.')[1:], eid.split('.')[0])) < len(reps):
                 # summarize the first repetition alone, so values of different ones are not combined
-                full, self.example = self.example, one
+                # parts are placed again, so forget they were (leaf extensions skip placed ids)
+                full, used, self.example = self.example, self.used, one
+                self.used = {u for u in used if not u.startswith((eid + '.', eid + ':'))}
                 one = self.node(eid)
-                self.example = full
+                self.example, self.used = full, used
                 parts = [one['ex']] if one.get('ex') else []
             else:
                 parts, seen = [], set()
-                for c in n['children']:
-                    if c.get('path', '').endswith('extension:translation'):
-                        continue
+                kids = [c for c in n['children'] if not c.get('path', '').endswith('extension:translation')]
+                # a sliced element: one value per slice
+                kids = [c for c in kids if c.get('path', '').startswith(eid + ':') and c.get('ex')] or kids
+                for c in kids:
                     first = (c.get('exs') or [c.get('ex')])[0]
-                    new = [x for x in (first or '').split(', ') if x and x not in seen]
-                    if new:
-                        parts.append(', '.join(new))
-                        seen.update(new)
+                    if first and not all(x in seen for x in first.split(', ')):
+                        parts.append(first)
+                        seen.update(first.split(', '))
                 if not parts and slices:
                     parts = self.example_values(eid)
             if parts:
@@ -822,7 +844,7 @@ class Profile:
             typ = 'coded' if binding.get('valueSet') else 'link'
         conditional = not binding.get('valueSet') and any(a.get('valueSet') for a in binding.get('additional', []))
         if typ in ('text', 'coded'):
-            coded_fixed = conditional or isinstance(fixed_value(e), dict) and any('code' in c for c in fixed_value(e).get('coding', [fixed_value(e)]))
+            coded_fixed = conditional or types == ['Coding'] and isinstance(fixed_value(self.by_id.get(eid + '.system')), str) or isinstance(fixed_value(e), dict) and any('code' in c for c in fixed_value(e).get('coding', [fixed_value(e)]))
             typ = 'coded' if (binding.get('valueSet') or coded_fixed) and (len(types) == 1 or code in ('CodeableConcept', 'Coding', 'code')) else 'text'
         typ = next((t for t in [self.cfg.get('types', {}).get(eid)] if t in TYPE_MAP.values()), typ)
         n = self.base(e, typ)
@@ -845,6 +867,8 @@ class Profile:
             (binding, on), extra_parts = on_part[0], on_part[1:]
         pinned = next((v for k in (('.system',) if types == ['Coding'] else ()) + ('.coding.system', '.concept.coding.system') for v in [fixed_value(self.by_id.get(eid + k))] if isinstance(v, str)), None)
         codes = self.add_binding(n, binding, on, pinned) if binding.get('valueSet') else {}
+        if typ == 'coded' and not binding.get('valueSet') and not conditional and pinned:
+            n['values'] = [f"Any code from {self.b.system_title(pinned)}"]
         if conditional:
             # no value set of its own: one per condition, from R5 additional bindings
             also = [self.additional_binding(a) for a in binding['additional'] if a.get('valueSet')]
@@ -1045,8 +1069,7 @@ class Profile:
         url = a['valueSet'].split('|')[0]
         vs = self.b.expansions.get(url) or self.b.package_expansion(url) or {}
         implicit = url[:-3] if url.endswith('/vs') else None
-        cs = load(self.b.packages()[implicit]) if implicit in self.b.packages() else {}
-        title = vs.get('title') or vs.get('name') or (f"Any code from {cs.get('title') or cs.get('name') or SYSTEM_NAMES.get(implicit, implicit)}"
+        title = vs.get('title') or vs.get('name') or (f"Any code from {self.b.system_title(implicit)}"
                                                       if implicit else url.rstrip('/').split('/')[-1])
         out = {'title': title, 'strength': a.get('purpose', '')}
         if a.get('shortDoco'):
@@ -1392,7 +1415,7 @@ def fmt(v, codes=None):
         return v.get('text') or ', '.join(filter(None, v.get('line', []) + [(codes or {}).get(v.get(k)) or v.get(k) for k in ('city', 'district', 'state', 'country')
                                                                         if isinstance(v.get(k), str)]))
     if 'div' in v:
-        return ''
+        return fmt(v['div'])
     parts = [fmt(x, codes) for k, x in v.items() if k not in ('id', 'extension', 'modifierExtension', 'url', 'resourceType')]
     out = ', '.join(filter(None, parts))
     return out if len(out) <= 200 else out[:200].rsplit(' ', 1)[0] + ' ...'
@@ -1437,10 +1460,10 @@ def build_view(b, view, shared=None):
             ref = next((r for r in b.instances_of(p.sd.get('url')) if target and target in references(b.instance(r))), None)
             p.example = b.instance(ref) if ref else None
             p.example_ref = ref
-        if p is not main and s.get('element') and main.example and not p.cfg.get('example'):
+        if p is not main and s.get('element') and not p.cfg.get('example'):
             # the instance the main example points to, so every section shows one consistent record
-            vals = main.resolve([main.example], s['element'].split('.')[1:], s['element'].split('.')[0])
-            refs = [r.get('reference') if isinstance(r, dict) else r for v in vals if isinstance(v, dict) for r in [v.get('reference')]]
+            vals = main.resolve([main.example], s['element'].split('.')[1:], s['element'].split('.')[0]) if main.example else []
+            refs = [r.get('reference') if isinstance(r, dict) else r for v in vals if isinstance(v, dict) for r in [v.get('reference', v.get('valueReference'))]]
             rtype = p.sd.get('type')
             ref = next((r for r in refs if isinstance(r, str) and (
                 any(isinstance(c, dict) and c.get('id') == r[1:] and c.get('resourceType') == rtype for c in as_list(main.example.get('contained')))
