@@ -3,7 +3,7 @@
 Clinician-facing views of an IG's profiles, styled on the openEHR CKM: overview, data table, mind map, form preview and, for use cases, the exchange steps.
 
 ```bash
-scripts/clinical-views/generate.py --output-dir output --config scripts/clinical-views/views.json -o temp/clinical-views/clinical-views.html
+scripts/clinical-views/generate.py --output-dir output --config scripts/clinical-views/views.json -o input/images/clinical-views.html
 ```
 
 `--config` is optional; leave it out for another IG to get the default view of every profile. Pass `--packages DIR` (repeatable) when the dependency packages are not in `~/.fhir/packages`, e.g. a private package cache.
