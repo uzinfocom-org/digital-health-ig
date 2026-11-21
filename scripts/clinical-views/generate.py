@@ -207,6 +207,7 @@ class Build:
         if ref.startswith('urn:'):
             return self.bundle_for(within).get(ref)
         self.example_for('')
+        ref = re.sub(r'/_history/[^/]+$', '', ref)
         f = self.out / f'{ref.replace("/", "-")}.json'
         return load(f) if re.fullmatch(r'[A-Za-z]+/[A-Za-z0-9.-]{1,64}', ref) and f.exists() else self._bundled.get(ref)
 
@@ -681,7 +682,7 @@ class Profile:
         # split when the codings differ in binding, two or more must be given without a fixed code, or a supported fixed code is optional
         if not sub and types[:1] in (['CodeableConcept'], ['CodeableReference']) and len(cslices) > 1 and eid not in self.expand and (
                 len(bound) > 1 or len(required) > 1 and open_codes or optional_codes):
-            sub = [self.node(c['id']) for c in cslices]
+            sub = [self.node(c['id']) for c in cslices if self.visible(c)]
         if sub:
             n = self.base(e, 'group')
             n['children'] = sub
@@ -753,6 +754,8 @@ class Profile:
                 kids = [c for c in kids if c.get('path', '').startswith(eid + ':') and c.get('ex')] or kids
                 for c in kids:
                     first = (c.get('exs') or [c.get('ex')])[0]
+                    if first and c.get('type') == 'bool':
+                        first = f"{humanize(c['path'].rpartition('.')[2].split(':')[0])}: {first}"
                     if first and not all(x in seen for x in first.split(', ')):
                         parts.append(first)
                         seen.update(first.split(', '))
@@ -910,6 +913,9 @@ class Profile:
             fixed = ('pattern', {'coding': self.child_fixed(eid + ('.concept' if code == 'CodeableReference' else ''))})
         if not fixed and types == ['Coding'] and isinstance(fixed_value(self.by_id.get(eid + '.code')), str):
             fixed = ('pattern', {k: v for k in ('system', 'code', 'display') for v in [fixed_value(self.by_id.get(f'{eid}.{k}'))] if isinstance(v, str)})
+        if (types == ['Coding'] and fixed and isinstance(fixed[1], dict) and 'code' in fixed[1] and not fixed[1].get('display')
+                and isinstance(fixed_value(self.by_id.get(eid + '.display')), str)):
+            fixed = (fixed[0], dict(fixed[1], display=fixed_value(self.by_id[eid + '.display'])))
         unit = fixed_value(self.by_id.get(eid + '.unit')) or fixed_value(self.by_id.get(eid + '.code'))
         if not fixed and typ == 'quantity' and isinstance(unit, str):
             n['values'] = ['Unit: ' + unit]
@@ -964,7 +970,7 @@ class Profile:
             code = fv.get('code') if isinstance(fv, dict) else fixed_value(self.by_id.get(cid + '.code'))
             if isinstance(code, str):
                 system = fv.get('system') if isinstance(fv, dict) else fixed_value(self.by_id.get(cid + '.system'))
-                display = fv.get('display') if isinstance(fv, dict) else fixed_value(self.by_id.get(cid + '.display'))
+                display = (fv.get('display') if isinstance(fv, dict) else None) or fixed_value(self.by_id.get(cid + '.display'))
                 out.append({'system': system, 'code': code, **({'display': display} if isinstance(display, str) and display else {})})
         return out
 
@@ -1154,7 +1160,11 @@ class Profile:
         for v in vals:
             if isinstance(v, dict) and 'url' in v and (isinstance(choice(v, 'value'), str) or isinstance(v.get('valueReference'), dict)):
                 v = choice(v, 'value')
-            if eid.rpartition('.')[2] != 'url' and self.b.canonical(v):
+            res = v if isinstance(v, dict) and isinstance(v.get('resourceType'), str) else (
+                v.get('resource') if isinstance(v, dict) and isinstance(v.get('resource'), dict) and isinstance(v['resource'].get('resourceType'), str) else None)
+            if res is not None:
+                s = self.b.summarize(res, self.example) or fmt(res)
+            elif eid.rpartition('.')[2] != 'url' and self.b.canonical(v):
                 s = self.b.describe(self.b.canonical(v))
             elif isinstance(v, dict) and isinstance(v.get('reference'), str) and not v.get('display'):
                 s = self.b.describe(v['reference'], self.example)
@@ -1163,7 +1173,7 @@ class Profile:
                 if v.get('concept'):
                     s = f"{fmt(v['concept'], codes)} ({s})"
             else:
-                s = re.sub(r'(?<![\w/.:#-])(?:[A-Z][A-Za-z]+/|#)[A-Za-z0-9.-]{1,64}(?![\w/.-])', lambda m: self.b.describe(m.group(0), self.example), fmt(v, codes))
+                s = re.sub(r'(?<![\w/.:#-])(?:[A-Z][A-Za-z]+/|#)[A-Za-z0-9.-]{1,64}(?:/_history/[A-Za-z0-9.-]{1,64})?(?![\w/.-])', lambda m: self.b.describe(m.group(0), self.example), fmt(v, codes))
             if s and s not in out:
                 out.append(s)
         return out[:4]
@@ -1205,6 +1215,10 @@ class Profile:
         if not disc:
             return False
         for d in disc:
+            if d['type'] in ('type', 'profile'):
+                if not self.type_matches(v, slice_id, d):
+                    return False
+                continue
             if d['type'] not in ('value', 'pattern'):
                 return False
             el = e if d['path'] == '$this' else (self.by_id.get(f"{slice_id}.{d['path']}") or self.by_id.get(f"{slice_id}.{d['path']}[x]"))
@@ -1226,6 +1240,41 @@ class Profile:
             if not any(contains(g, want) for g in got):
                 return False
         return True
+
+    def type_matches(self, v, slice_id, d):
+        """A type or profile discriminator: the resource type or choice type, or the profile the value claims or whose fixed parts it carries."""
+        path = [] if d['path'] == '$this' else d['path'].replace('[x]', '').split('.')
+        el = self.by_id.get(slice_id) if not path else (self.by_id.get(f"{slice_id}.{d['path']}") or self.by_id.get(f"{slice_id}.{d['path']}[x]"))
+        kinds = (el or {}).get('type', [])
+        parents, got = [v], [v]
+        for key in path:
+            parents = got
+            got = [x for g in got if isinstance(g, dict) for x in as_list(choice(g, key))]
+        if d['type'] == 'type':
+            codes = {t.get('code') for t in kinds}
+            if any(isinstance(g, dict) and 'resourceType' in g for g in got):
+                return any(isinstance(g, dict) and g.get('resourceType') in codes for g in got)
+            if path:
+                return any(isinstance(p, dict) and path[-1] + c[:1].upper() + c[1:] in p for p in parents for c in codes if c)
+            return False
+        profiles = {u.split('|')[0] for t in kinds for u in t.get('profile', [])}
+        for g in got:
+            if not isinstance(g, dict):
+                continue
+            claimed = {u.split('|')[0] for u in as_list((g.get('meta') or {}).get('profile'))}
+            if claimed:
+                if claimed & profiles:
+                    return True
+                continue
+            for url in profiles:
+                sd = self.b.sd_by_url(url)
+                fixed = [(x['path'].split('.', 1)[1], x) for x in (sd or {}).get('snapshot', {}).get('element', [])
+                         if x['path'].count('.') == 1 and fixed_value(x) is not None]
+                if 'resourceType' in g and (sd or {}).get('type') == g['resourceType'] and not fixed:
+                    return True
+                if fixed and all(any(contains(y, fixed_value(x)) for y in as_list(choice(g, p.replace('[x]', '')))) for p, x in fixed):
+                    return True
+        return False
 
 
 def en_display(c, res):
@@ -1400,7 +1449,7 @@ def fmt(v, codes=None):
         return f"{v['value']} {v['currency']}"
     if isinstance(v.get('type'), str) and 'amount' in v:
         return f"{(codes or {}).get(v['type']) or v['type']}: {fmt(v['amount'], codes)}"
-    if 'contentType' in v or 'data' in v or ('url' in v and ('title' in v or set(v) <= {'url', 'size', 'hash', 'creation', 'language'})):
+    if 'contentType' in v or 'data' in v or ('url' in v and ('title' in v or set(v) <= {'url', 'size', 'hash', 'creation', 'language', 'height', 'width', 'frames', 'duration', 'pages'})):
         return v.get('title') or v.get('url') or v.get('contentType', '')
     if 'telecom' in v and ('name' in v or 'purpose' in v or 'organization' in v):
         return ', '.join(filter(None, [fmt(v.get('name'), codes) or fmt(v.get('purpose'), codes), fmt(v.get('telecom'), codes)]))
@@ -1440,7 +1489,10 @@ def fmt(v, codes=None):
                                                                         if isinstance(v.get(k), str)]))
     if 'div' in v:
         return fmt(v['div'])
-    parts = [fmt(x, codes) for k, x in v.items() if k not in ('id', 'extension', 'modifierExtension', 'url', 'resourceType')]
+    if isinstance(v.get('resourceType'), str):
+        return f"{v['resourceType']}/{v['id']}" if isinstance(v.get('id'), str) else v['resourceType']
+    parts = [f"{humanize(re.sub('Boolean$', '', k))}: {fmt(x)}" if isinstance(x, bool) else fmt(x, codes)
+             for k, x in v.items() if k not in ('id', 'extension', 'modifierExtension', 'url', 'resourceType')]
     out = ', '.join(filter(None, parts))
     return out if len(out) <= 200 else out[:200].rsplit(' ', 1)[0] + ' ...'
 
