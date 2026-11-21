@@ -172,17 +172,21 @@ def normalize(sd):
 def fold_orphan_slices(sd):
     """Older snapshots hold a lone slice with no base element (FamilyMemberHistory.relationship:Relationship,
     STU3 Observation.valueQuantity:valueQuantity beside Observation.value[x]:valueQuantity.value): read it as the element."""
-    els = sd.get('snapshot', {}).get('element', [])
-    by_id = {e.get('id'): e for e in els}
+    els = [e for e in sd.get('snapshot', {}).get('element', []) if isinstance(e.get('id'), str)]
+    by_id = {e['id']: e for e in els}
 
     def choice(prefix, seg, eid):
+        # STU3 names a type slice after its type (valueQuantity:valueQuantity) where others use value[x]:valueQuantity
         name, _, sl = seg.partition(':')
-        e = by_id.get(eid) or {}
-        codes = [t.get('code', '') for t in e.get('type', [])]
-        if sl and len(codes) == 1 and codes[0] and name.endswith(codes[0][0].upper() + codes[0][1:]) and name != codes[0]:
-            x = f"{name[:-len(codes[0])]}[x]"
-            if e.get('path', '').endswith('[x]') or any(i.startswith(f"{prefix}.{x}:") for i in by_id if isinstance(i, str)):
-                return f"{x}:{sl}"
+        m = re.match(r'[a-z]+(?=[A-Z])', name)
+        if not sl or not m:
+            return seg
+        x = m.group() + '[x]'
+        codes = [t.get('code', '') for t in (by_id.get(eid) or {}).get('type', [])]
+        typed = len(codes) == 1 and name == m.group() + codes[0][:1].upper() + codes[0][1:]
+        if typed and eid.rpartition(':')[0] not in by_id or (by_id.get(eid) or {}).get('path', '').endswith('[x]') or any(
+                i == f"{prefix}.{x}" or i.startswith((f"{prefix}.{x}:", f"{prefix}.{x}.")) for i in by_id):
+            return f"{x}:{sl}"
         return seg
 
     def rename(eid):
@@ -191,7 +195,7 @@ def fold_orphan_slices(sd):
             out.append(choice('.'.join(out), seg, '.'.join(segs[:i + 1])) if ':' in seg else seg)
         return out
 
-    first = [rename(e['id']) for e in els if isinstance(e.get('id'), str)]
+    first = [rename(e['id']) for e in els]
     ids = {'.'.join(x) for x in first}
     slices = {}
     for x in first:
@@ -199,15 +203,19 @@ def fold_orphan_slices(sd):
             if ':' in seg:
                 slices.setdefault('.'.join(x[:i] + [seg.split(':')[0]]), set()).add(seg.split(':')[1])
     orphan = {b for b, names in slices.items() if b not in ids and len(names) == 1}
-    if not orphan:
-        return
-    for e, x in zip([e for e in els if isinstance(e.get('id'), str)], first):
-        for i, seg in enumerate(x):
-            if ':' in seg and '.'.join(x[:i] + [seg.split(':')[0]]) in orphan:
-                x[i] = seg.split(':')[0]
-                if i == len(x) - 1:
-                    e.pop('sliceName', None)
-        e['id'] = '.'.join(x)
+
+    def fold(x):
+        return [seg.split(':')[0] if ':' in seg and '.'.join(x[:i] + [seg.split(':')[0]]) in orphan else seg
+                for i, seg in enumerate(x)]
+
+    for e, x in zip(els, first):
+        y = fold(x)
+        if ':' not in y[-1]:
+            e.pop('sliceName', None)
+        e['id'] = '.'.join(y)
+    for d in sd.get('differential', {}).get('element', []):
+        if isinstance(d.get('id'), str):
+            d['id'] = '.'.join(fold(rename(d['id'])))
 
 
 class Build:
@@ -1071,7 +1079,8 @@ class Profile:
             if fx != exs:
                 n['fx'] = fx
         fixed = next(((k, v) for k, v in e.items() if k.startswith(('fixed', 'pattern'))), None)
-        if fixed and isinstance(fixed[1], dict) and not any('code' in c for c in fixed[1].get('coding', [fixed[1]])):
+        if (fixed and isinstance(fixed[1], dict) and not any('code' in c for c in fixed[1].get('coding', [fixed[1]]))
+                and not (isinstance(fixed[1].get('text'), str) and not fixed[1].get('coding'))):
             fixed = None
         if not fixed and code == 'CodeableReference' and isinstance(fixed_value(self.by_id.get(eid + '.concept')), dict):
             fixed = ('pattern', fixed_value(self.by_id[eid + '.concept']))
@@ -1170,7 +1179,7 @@ class Profile:
                  and x.get('max') != '0' and x.get('type')]
         # an unconstrained value[x] lists every datatype; its type slices then say which ones are used
         used = [vx] if vx.get('type') and (len(vx['type']) <= 10 or not parts) else parts
-        types = [t['code'] for x in used for t in x.get('type', [])]
+        types = list(dict.fromkeys(t['code'] for x in used for t in x.get('type', [])))
         within = {x['id'] + s for x in [vx] + parts for s in ('.coding', '.coding.code', '.code')}
         part = next((x for x in parts if x.get('binding')), None)
         binding = (vx.get('binding') or (dict(part['binding'], forType=part['type'][0]['code']) if part else None)
@@ -1758,7 +1767,7 @@ def fmt(v, codes=None):
         return ', '.join(filter(None, [fmt(v.get('name'), codes) or fmt(v.get('purpose'), codes), fmt(v.get('telecom'), codes)]))
     if 'concept' in v or 'reference' in v and isinstance(v.get('reference'), dict):
         return fmt(v.get('concept'), codes) or fmt(v.get('reference'), codes)
-    if 'coding' in v or (isinstance(v.get('text'), str) and len(v) <= 2):
+    if 'coding' in v or (isinstance(v.get('text'), str) and len(v) <= 2 and not any(k.startswith('asNeeded') for k in v)):
         if v.get('text'):
             return en_text(v, 'text')
         c = next((c for c in v.get('coding', []) if c.get('code') in codes), (v.get('coding') or [{}])[0])
