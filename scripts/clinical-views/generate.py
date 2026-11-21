@@ -66,6 +66,13 @@ def humanize(name):
     return ' '.join(words).capitalize() if words else name
 
 
+def acronyms(label, text):
+    """Take the casing of acronyms such as ABO or ICD-10 from the element's short text."""
+    key = lambda w: re.sub(r'[^0-9a-z]', '', w.lower())
+    found = {key(w): w for w in re.findall(r"[\w-]+", text or '') if sum(ch.isupper() for ch in w) >= 2}
+    return ' '.join(found.get(key(w), w) for w in label.split())
+
+
 def parent_id(eid):
     head, _, last = eid.rpartition('.')
     if ':' in last:
@@ -123,16 +130,18 @@ class Build:
             vs = load(f)
             self.local_vs[vs.get('url')] = vs['id']
         self._local_cs = None
-        self.expansions, self.known = {}, {}
+        self.expansions, self.known, known_rank, self.seen = {}, {}, {}, {}
         exp = self.out / 'expansions.json'
         if exp.exists():
             for entry in load(exp).get('entry', []):
                 vs = entry['resource']
                 lang = next((p.get('valueCode') or p.get('valueString') for p in vs.get('expansion', {}).get('parameter', [])
                              if p['name'] == 'displayLanguage'), None)
+                rank = {'en': 0, None: 1}.get(lang, 2)
                 for c in flatten_contains(vs.get('expansion', {}).get('contains', [])):
-                    if c.get('display') and (lang in (None, 'en') or (c.get('system'), c.get('code')) not in self.known):
-                        self.known[(c.get('system'), c.get('code'))] = c['display']
+                    key = (c.get('system'), c.get('code'))
+                    if c.get('display') and rank < known_rank.get(key, 3):
+                        self.known[key], known_rank[key] = c['display'], rank
                 if vs['url'] not in self.expansions or lang in (None, 'en'):
                     if vs['url'] not in self.expansions or lang == 'en':
                         self.expansions[vs['url']] = vs
@@ -184,6 +193,9 @@ class Build:
                 if not isinstance(r, dict) or 'id' not in r:
                     continue
                 size = f.stat().st_size
+                for c in all_codings(r):
+                    if c.get('display'):
+                        self.seen.setdefault((c['system'], c['code']), c['display'])
                 for prof in r.get('meta', {}).get('profile', []):
                     prof = prof.split('|')[0]
                     if size > self._examples.get(prof, (0, None))[0]:
@@ -253,8 +265,10 @@ class Build:
             f = self._local_cs.get(system) or self.packages().get(system)
             if f:
                 cs = load(Path(f))
-                self.cache[key] = {c['code']: c.get('display') for c in flatten_concepts(cs.get('concept', [])) if 'code' in c}
-        return self.cache[key].get(code) or self.known.get((system, code))
+                self.cache[key] = {c['code']: en_display(c, cs) for c in flatten_concepts(cs.get('concept', [])) if 'code' in c}
+        if self._examples is None:
+            self.example_for('')
+        return self.known.get((system, code)) or self.cache[key].get(code) or self.seen.get((system, code))
 
     def vs_systems(self, url):
         """Code systems a value set draws from, for codes its (possibly truncated) expansion lacks."""
@@ -280,7 +294,7 @@ class Build:
                 full = concepts.get(c['code'], c)
                 abstract = any(pr.get('code') in ('notSelectable', 'abstract') and pr.get('valueBoolean') for pr in full.get('property', []))
                 contains.append({'code': c['code'], 'system': inc['system'], 'abstract': abstract,
-                                 'display': c.get('display') or full.get('display')})
+                                 'display': self.known.get((inc['system'], c['code'])) or en_display(c, vs) or en_display(full, cs)})
         return {'title': vs.get('title'), 'name': vs.get('name'), 'expansion': {'total': len(contains), 'contains': contains}}
 
 
@@ -398,6 +412,10 @@ class Profile:
             return n
         types = self.types(e)
         sub = self.complex_extension(e) if types == ['Extension'] and not slices else None
+        cslices = [c for c in self.kids.get(eid + '.coding', []) if is_slice(c['id']) and c.get('max') != '0']
+        bound = {(c.get('binding') or self.by_id.get(c['id'] + '.code', {}).get('binding') or {}).get('valueSet') for c in cslices}
+        if not sub and types[:1] in (['CodeableConcept'], ['CodeableReference']) and len(cslices) > 1 and len(bound) > 1 and eid not in self.expand:
+            sub = [self.node(c['id']) for c in cslices]
         if sub:
             n = self.base(e, 'group')
             n['children'] = sub
@@ -428,6 +446,15 @@ class Profile:
             n['children'] = built
         for extra in self.cfg.get('attach', {}).get(eid, []):
             n.setdefault('children', []).append(self.node(extra))
+        if n.get('children'):
+            parts = []
+            for c in n['children']:
+                if c.get('ex') and c['ex'] not in parts:
+                    parts.append(c['ex'])
+            if parts:
+                n['ex'] = ', '.join(parts[:4])
+            else:
+                n.pop('ex', None)
         if eid in self.collapsed:
             n['collapsed'] = True
         return n
@@ -435,8 +462,8 @@ class Profile:
     def base(self, e, typ):
         eid = e['id']
         last = eid.rpartition('.')[2]
-        label = self.labels.get(eid) or e.get('label') or humanize(last.split(':')[1] if ':' in last else last)
         short = e.get('short', '')
+        label = self.labels.get(eid) or e.get('label') or acronyms(humanize(last.split(':')[1] if ':' in last else last), short)
         n = {'label': label, 'type': typ, 'card': f"{e.get('min', 0)}..{e.get('max', '*')}",
              'path': eid, 'desc': self.descs.get(eid) or plain(short)}
         if e.get('mustSupport'):
@@ -452,7 +479,7 @@ class Profile:
     def leaf(self, e):
         eid = e['id']
         types = self.types(e)
-        binding = e.get('binding') or {}
+        binding = e.get('binding') or (self.by_id.get(eid + '.code', {}).get('binding') if self.types(e) == ['Coding'] else None) or {}
         coding_slices = [c.get('binding') or self.by_id.get(c['id'] + '.code', {}).get('binding')
                          for c in self.kids.get(eid + '.coding', []) if is_slice(c['id']) and c.get('max') != '0']
         coding_slices = [x for x in coding_slices if x] or [self.by_id.get(eid + '.coding.code', {}).get('binding')]
@@ -490,6 +517,8 @@ class Profile:
         if len(exs) > 1:
             n['exs'] = exs
         fixed = next(((k, v) for k, v in e.items() if k.startswith(('fixed', 'pattern'))), None)
+        if fixed and isinstance(fixed[1], dict) and not any('code' in c for c in fixed[1].get('coding', [fixed[1]])):
+            fixed = None
         if fixed:
             fv = fixed[1]
             codings = fv.get('coding', []) if isinstance(fv, dict) else []
@@ -508,12 +537,12 @@ class Profile:
                 n['options'] = [shown]
                 n.pop('more', None)
                 n.pop('exs', None)
-                n['ex'] = ex or shown
+                if ex:
+                    n['ex'] = ex
             elif isinstance(fv, str) and n['type'] == 'coded':
                 n['values'] = ['Fixed: ' + shown]
                 n['options'] = [shown]
                 n.pop('more', None)
-                n['ex'] = n.get('ex') or shown
                 n.pop('exs', None)
             else:
                 n.setdefault('values', []).insert(0, 'Fixed: ' + shown)
@@ -554,7 +583,9 @@ class Profile:
         root = els[0]['id']
         if self.ext_value(els, root) is not None:
             return None
-        sub = Profile(self.b, ext['id'], {}, sd=ext)
+        merged = [dict(self.by_id[e['id'] + x['id'][len(root):]], id=x['id'], path=x['path'])
+                  if e['id'] + x['id'][len(root):] in self.by_id else x for x in els]
+        sub = Profile(self.b, ext['id'], {}, sd=dict(ext, snapshot={'element': merged}))
         objs = self.resolve([self.example], e['id'].split('.')[1:], e['id'].split('.')[0]) if self.example else []
         sub.example = {'extension': [x for o in objs if isinstance(o, dict) for x in o.get('extension', [])]} if objs else None
         out = []
@@ -678,6 +709,27 @@ class Profile:
             if not any(contains(g, want) for g in got):
                 return False
         return True
+
+
+def en_display(c, res):
+    """English display of a concept: the base display when the resource is English, else an English designation."""
+    if (res.get('language') or 'en')[:2] != 'en':
+        d = next((x['value'] for x in c.get('designation', []) if (x.get('language') or '')[:2] == 'en' and x.get('value')), None)
+        if d:
+            return d
+    return c.get('display')
+
+
+def all_codings(v):
+    if isinstance(v, list):
+        for x in v:
+            yield from all_codings(x)
+    elif isinstance(v, dict):
+        if isinstance(v.get('code'), str) and isinstance(v.get('system'), str):
+            yield v
+        for x in v.values():
+            if isinstance(x, (dict, list)):
+                yield from all_codings(x)
 
 
 def truncated(vs):
@@ -813,7 +865,8 @@ def fmt(v, codes=None):
     if 'div' in v:
         return ''
     parts = [fmt(x, codes) for k, x in v.items() if k not in ('id', 'extension', 'modifierExtension', 'url', 'resourceType')]
-    return ', '.join(filter(None, parts))[:200]
+    out = ', '.join(filter(None, parts))
+    return out if len(out) <= 200 else out[:200].rsplit(' ', 1)[0] + ' ...'
 
 
 def walk(n, fn):
