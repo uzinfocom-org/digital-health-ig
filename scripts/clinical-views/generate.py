@@ -765,7 +765,7 @@ class Profile:
                 kids.append(sn)
                 if not sn.get('children'):
                     kids.extend(self.leaf_extensions(s['id']))
-            n['children'] = kids + (self.leaf_extensions(eid) if datatype else [])
+            n['children'] = kids + (self.leaf_extensions(eid, inside=True) if datatype else [])
         elif (types and types[0] in LEAF_TYPES or (types and types[0][0].islower())) and eid not in self.expand:
             n = self.leaf(e)
         else:
@@ -849,9 +849,9 @@ class Profile:
         if c.get('mustSupport') or c['id'] in self.show or c.get('min', 0) >= 1 or c['id'] not in self.ms_under:
             return False
         under = [d['id'][len(c['id']) + 1:] for d in self.els if d['id'].startswith(c['id'] + '.') and d.get('mustSupport')]
-        return all(any(':' in seg and seg.split(':')[0] in ('extension', 'modifierExtension') for seg in rel.split('.')) for rel in under)
+        return bool(under) and all(any(':' in seg and seg.split(':')[0] in ('extension', 'modifierExtension') for seg in rel.split('.')) for rel in under)
 
-    def leaf_extensions(self, eid):
+    def leaf_extensions(self, eid, inside=False):
         """Shown extensions inside an element drawn as one field, e.g. gender.extension:gender-other."""
         out = []
         for x in self.els:
@@ -861,8 +861,8 @@ class Profile:
                     and not any(is_slice(a) and a.rpartition('.')[2].split(':')[0] in ('extension', 'modifierExtension')
                                 for a in self.ancestors(x['id'], eid)[1:])):
                 n = self.node(x['id'])
-                # drawn beside its owner, it is optional when anything from it up to the owner is
-                if n.get('card') and self.effective_card(x['id'], stop=parent_id(eid)).startswith('0..'):
+                # optional when anything from it up to where it is drawn is: inside eid's group, or beside eid
+                if n.get('card') and self.effective_card(x['id'], stop=eid if inside else parent_id(eid)).startswith('0..'):
                     n['card'] = '0..' + n['card'].split('..')[1]
                 owner_id = parent_id(parent_id(x['id']))
                 if owner_id.rpartition('.')[2] == 'value':
@@ -1308,6 +1308,16 @@ class Profile:
             objs = nxt
         return objs
 
+    def type_profile_element(self, e, rel):
+        """A part of a slice whose children are not in the snapshot, read from the slice's datatype profile."""
+        for t in e.get('type', []):
+            sd = self.b.sd_by_url((t.get('profile') or [''])[0])
+            els = {x['id']: x for x in (sd or {}).get('snapshot', {}).get('element', [])}
+            hit = els.get(f"{t['code']}.{rel}") or els.get(f"{t['code']}.{rel}[x]")
+            if hit:
+                return hit
+        return None
+
     def matches(self, v, slice_id):
         e = self.by_id.get(slice_id)
         if e is None or not isinstance(v, dict):
@@ -1335,7 +1345,7 @@ class Profile:
             segs = [x for x in d['path'].split('.') if x != '$this']
             cut = segs.index('resolve()') if 'resolve()' in segs else len(segs)
             rel = '.'.join(segs[:cut])
-            el = e if not rel else (self.by_id.get(f"{slice_id}.{rel}") or self.by_id.get(f"{slice_id}.{rel}[x]"))
+            el = e if not rel else (self.by_id.get(f"{slice_id}.{rel}") or self.by_id.get(f"{slice_id}.{rel}[x]") or self.type_profile_element(e, rel))
             got = [v]
             for key in segs:
                 if key == 'resolve()':
@@ -1902,19 +1912,21 @@ def main():
     html = html.replace('/*__DATA__*/null', data)
     if not args.fragment:
         head, sep, body = html.partition('</style>')
-        html = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
-                '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        html = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8" />\n'
+                '<meta name="viewport" content="width=device-width, initial-scale=1" />\n'
                 f'{head}{sep}\n</head>\n<body>{body}</body>\n</html>\n')
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     if args.external_script:
         before, _, rest = html.rpartition('<script>')
         script, _, after = rest.partition('</script>')
-        out.with_suffix('.js').write_text(script.lstrip('\n'))
+        script = script.lstrip('\n')
+        out.with_suffix('.js').write_text(script)
         html = f'{before}<script src="{out.with_suffix(".js").name}"></script>{after}'
     out.write_text(html)
     featured = ', '.join(f"{m['id']}: {sum(1 for _ in iter_leaves(m['root']))} elements" for m in models if m.get('featured'))
-    print(f"wrote {out}: {len(models)} views ({featured or 'none curated'}), {len(html) // 1024} KB")
+    size = f"{len(html) // 1024} KB" + (f" + {out.with_suffix('.js').name} {len(script) // 1024} KB" if args.external_script else '')
+    print(f"wrote {out}: {len(models)} views ({featured or 'none curated'}), {size}")
 
 
 def iter_leaves(n):
