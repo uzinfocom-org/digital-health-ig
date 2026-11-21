@@ -39,9 +39,9 @@ CONFORMANCE = {
     'CapabilityStatement', 'SearchParameter', 'OperationDefinition', 'StructureMap', 'package', 'expansions', 'qa',
 }
 PRIMITIVES = {'instant', 'markdown', 'canonical', 'uri', 'url', 'string', 'code', 'id', 'oid', 'uuid', 'base64Binary'}
-DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medication', 'suppliedItem.item', 'item.concept', 'relationship', 'type', 'class', 'category',
+DESCRIBE_KEYS = ('code', 'vaccineCode', 'recommendation.vaccineCode', 'medication', 'suppliedItem.item', 'item.concept', 'itemCodeableConcept', 'relationship', 'type', 'class', 'category',
                  'practitioner', 'organization', 'agent.who', 'subject')
-WHAT_KEYS = 10
+WHAT_KEYS = 11
 CONTACT_SYSTEMS = {'phone', 'fax', 'email', 'pager', 'url', 'sms', 'other'}
 UNIT_WORDS = {'s': 'second', 'min': 'minute', 'h': 'hour', 'd': 'day', 'wk': 'week', 'mo': 'month', 'a': 'year'}
 PART_BINDING = {'Coding': 'code', 'Ratio': 'numerator.code', 'Quantity': 'code', 'SimpleQuantity': 'code', 'Duration': 'code', 'Age': 'code',
@@ -418,6 +418,8 @@ class Build:
             if f:
                 cs = load(Path(f))
                 self.cache[key] = {c['code']: en_display(c, cs) for c in flatten_concepts(cs.get('concept', [])) if 'code' in c}
+                if cs.get('content') == 'complete':
+                    self.cache[('complete', system)] = len(self.cache[key])
                 if (cs.get('language') or 'en')[:2] != 'en':
                     self.cache[('en', system)] = {c['code'] for c in flatten_concepts(cs.get('concept', [])) if 'code' in c
                                                   and en_display(c, cs) != c.get('display')}
@@ -673,10 +675,12 @@ class Profile:
         cslices = [c for c in self.kids.get(eid + '.coding', []) if is_slice(c['id']) and c.get('max') != '0']
         bound = {(c.get('binding') or self.by_id.get(c['id'] + '.code', {}).get('binding') or {}).get('valueSet') for c in cslices}
         required = [c for c in cslices if c.get('min', 0) >= 1]
-        open_codes = [c for c in required if not isinstance((fixed_value(c) or {}).get('code') if isinstance(fixed_value(c), dict) else fixed_value(self.by_id.get(c['id'] + '.code')), str)]
-        # split when the codings differ in binding, or two or more must be given without a fixed code
+        coded = {c['id'] for c in cslices if isinstance((fixed_value(c) or {}).get('code') if isinstance(fixed_value(c), dict) else fixed_value(self.by_id.get(c['id'] + '.code')), str)}
+        open_codes = [c for c in required if c['id'] not in coded]
+        optional_codes = [c for c in cslices if c['id'] in coded and c.get('mustSupport') and c.get('min', 0) < 1]
+        # split when the codings differ in binding, two or more must be given without a fixed code, or a supported fixed code is optional
         if not sub and types[:1] in (['CodeableConcept'], ['CodeableReference']) and len(cslices) > 1 and eid not in self.expand and (
-                len(bound) > 1 or len(required) > 1 and open_codes):
+                len(bound) > 1 or len(required) > 1 and open_codes or optional_codes):
             sub = [self.node(c['id']) for c in cslices]
         if sub:
             n = self.base(e, 'group')
@@ -960,7 +964,8 @@ class Profile:
             code = fv.get('code') if isinstance(fv, dict) else fixed_value(self.by_id.get(cid + '.code'))
             if isinstance(code, str):
                 system = fv.get('system') if isinstance(fv, dict) else fixed_value(self.by_id.get(cid + '.system'))
-                out.append({'system': system, 'code': code, **({'display': fv['display']} if isinstance(fv, dict) and fv.get('display') else {})})
+                display = fv.get('display') if isinstance(fv, dict) else fixed_value(self.by_id.get(cid + '.display'))
+                out.append({'system': system, 'code': code, **({'display': display} if isinstance(display, str) and display else {})})
         return out
 
     def part_binding(self, eid, typ):
@@ -1065,7 +1070,9 @@ class Profile:
         if system and any(c.get('system') != system for c in contains if 'code' in c):
             contains = [c for c in contains if c.get('system') == system]
             total = len(contains)
-        count = (f'{total}+' if total else '') if truncated(vs) and total <= len(contains) else total
+            self.b.display(system, '')
+        complete = system and self.b.cache.get(('complete', system)) == total
+        count = (f'{total}+' if total else '') if truncated(vs) and total <= len(contains) and not complete else total
         n['vs']['total'] = count
         shown = [c.get('display') or c['code'] for c in contains if not c.get('abstract')]
         vals = n.setdefault('values', [])
@@ -1393,7 +1400,7 @@ def fmt(v, codes=None):
         return f"{v['value']} {v['currency']}"
     if isinstance(v.get('type'), str) and 'amount' in v:
         return f"{(codes or {}).get(v['type']) or v['type']}: {fmt(v['amount'], codes)}"
-    if 'contentType' in v or 'data' in v or ('url' in v and 'title' in v):
+    if 'contentType' in v or 'data' in v or ('url' in v and ('title' in v or set(v) <= {'url', 'size', 'hash', 'creation', 'language'})):
         return v.get('title') or v.get('url') or v.get('contentType', '')
     if 'telecom' in v and ('name' in v or 'purpose' in v or 'organization' in v):
         return ', '.join(filter(None, [fmt(v.get('name'), codes) or fmt(v.get('purpose'), codes), fmt(v.get('telecom'), codes)]))
@@ -1488,6 +1495,8 @@ def build_view(b, view, shared=None):
             if ref and ref.startswith('#'):
                 p.example = next((dict(c, contained=main.example.get('contained', []), language=c.get('language') or main.example.get('language'))
                                   for c in as_list(main.example.get('contained')) if isinstance(c, dict) and c.get('id') == ref[1:]), None)
+                if p.example:
+                    b.copies[id(p.example)] = main.example
                 p.example_ref = main.example_ref if p.example else None
             else:
                 p.example = b.find_instance(ref, main.example) if ref else None
