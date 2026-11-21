@@ -127,6 +127,11 @@ def is_tech(e):
     return not is_slice(e['id']) and (last in ANY_TECH or (last in ROOT_TECH and e['path'].count('.') == 1))
 
 
+def is_type_marker(by_id, eid):
+    """The cross-version _datatype sub-extension, which only names the datatype the extension stands for."""
+    return fixed_value(by_id.get(eid + '.url')) == 'http://hl7.org/fhir/StructureDefinition/_datatype'
+
+
 def combine(inner, outer):
     lo, hi = inner.split('..')
     olo, ohi = outer.split('..')
@@ -643,7 +648,7 @@ class Profile:
         eid = e['id']
         if e.get('max') == '0':
             return False
-        if eid in self.hide:
+        if eid in self.hide or is_type_marker(self.by_id, eid):
             return False
         if eid in self.show:
             return True
@@ -740,7 +745,7 @@ class Profile:
         open_value = (vx is not None and len(vx.get('type', [])) > 10 and not any(x['id'].startswith(eid + '.value[x]:') for x in self.els)
                       and any(x.get('min', 0) >= 1 for x in inline))
         if types == ['Extension'] and not sub and inline and (open_value or self.ext_value(self.els, eid) is None):
-            sub = [self.node(x['id']) for x in inline]
+            sub = [self.node(x['id']) for x in inline if not is_type_marker(self.by_id, x['id'])]
         cslices = [c for c in self.kids.get(eid + '.coding', []) if is_slice(c['id']) and c.get('max') != '0']
         bound = {(c.get('binding') or self.by_id.get(c['id'] + '.code', {}).get('binding') or {}).get('valueSet') for c in cslices}
         required = [c for c in cslices if c.get('min', 0) >= 1]
@@ -839,7 +844,8 @@ class Profile:
                     if first and not all(x in seen for x in first.split(', ')):
                         parts.append(first)
                         seen.update(first.split(', '))
-                if not parts and slices:
+                listed = {t['code'] for s in slices for t in s.get('type', [])}
+                if not parts and slices and not (eid.endswith('[x]') and self.example_type(eid) not in listed):
                     parts = self.example_values(eid)
             if parts:
                 n['ex'] = ', '.join(parts[:4])
@@ -1149,7 +1155,7 @@ class Profile:
             self.b.copies[id(sub.example)] = self.example
         out = []
         for c in sub.children(root):
-            if not is_slice(c['id']) or c.get('max') == '0':
+            if not is_slice(c['id']) or c.get('max') == '0' or is_type_marker(sub.by_id, c['id']):
                 continue
             n = sub.node(c['id'])
             walk(n, lambda x: x.update(path=e['id'] + x['path'][len(root):]) if x.get('path') else None)
@@ -1663,7 +1669,12 @@ def fmt(v, codes=None):
             parts.append('on ' + ', '.join(r['dayOfWeek']))
         if r.get('when'):
             parts.append(fmt(r['when'], codes))
-        for k in ('boundsPeriod', 'boundsDuration', 'boundsRange'):
+        b = r.get('boundsDuration') or {}
+        if b.get('value') is not None and UNIT_WORDS.get(b.get('code')):
+            parts.append(f"for {b['value']} {UNIT_WORDS[b['code']]}{'' if b['value'] == 1 else 's'}")
+        elif b:
+            parts.append(f"for {fmt(b, codes)}")
+        for k in ('boundsPeriod', 'boundsRange'):
             if r.get(k):
                 parts.append(fmt(r[k], codes))
         if v.get('event'):
@@ -1721,6 +1732,15 @@ def fmt(v, codes=None):
         return fmt(v['div'])
     if isinstance(v.get('resourceType'), str):
         return f"{v['resourceType']}/{v['id']}" if isinstance(v.get('id'), str) else v['resourceType']
+    if 'doseAndRate' in v or 'timing' in v and ('route' in v or 'asNeededBoolean' in v or 'sequence' in v):
+        # a Dosage: the sequence number and a false as-needed flag say nothing; a dose carries its own type
+        v = {k: x for k, x in v.items() if k != 'sequence' and not (k == 'asNeededBoolean' and x is False)}
+        if v.get('asNeededBoolean'):
+            v['asNeededBoolean'] = 'as needed'
+        if v.get('doseAndRate'):
+            v['doseAndRate'] = [', '.join(filter(None, (
+                f"{fmt(d[k], codes)} ({fmt(d['type'], codes)})" if d.get('type') else fmt(d[k], codes)
+                for k in d if k.startswith(('dose', 'rate'))))) for d in v['doseAndRate']]
     parts = [f"{humanize(re.sub('Boolean$', '', k))}: {fmt(x)}" if isinstance(x, bool) else fmt(x, codes)
              for k, x in v.items() if k not in ('id', 'extension', 'modifierExtension', 'url', 'resourceType')]
     out = ', '.join(filter(None, parts))
