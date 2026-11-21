@@ -279,7 +279,8 @@ const dateInput = (id, v, label) => {
 };
 const bindingLead = v => {
   const lead = STRENGTH[v.strength] || ADDITIONAL[v.strength] || 'Also from';
-  return v.when ? `When ${v.when}, ${lead.charAt(0).toLowerCase()}${lead.slice(1)}` : lead;
+  const low = lead.charAt(0).toLowerCase() + lead.slice(1);
+  return v.when ? `When ${v.when}, ${low}` : v.on ? `${v.on} ${low}` : lead;
 };
 const ADDITIONAL = { maximum: 'Never outside', minimum: 'Must at least support', current: 'New records from', ui: 'Offered to users from', starter: 'Commonly from', component: 'Partly from' };
 const STRENGTH = { required: 'Must be from', extensible: 'From this list where it has a fitting code', preferred: 'Preferably from', example: 'For example from' };
@@ -576,7 +577,7 @@ function control(n, v, id) {
       const listNote = n.vs && (!opts.length || n.more) ? `${n.vs.title}${n.vs.total ? ` (${n.vs.total} codes)` : ''}` : '';
       return `<select id="${id}"><option value="">${esc(listNote ? 'Choose - ' + listNote : 'Choose...')}</option>${hasV ? `<option selected>${esc(v)}</option>` : ''}${opts.map(o => `<option ${o === v ? 'selected' : ''}>${esc(o)}</option>`).join('')}</select>`;
     }
-    case 'date': return `<input id="${id}" type="date" value="${esc(/^\d{4}-\d\d-\d\d/.test(v) ? v.slice(0, 10) : '')}">`;
+    case 'date': return dateInput(id, /^\d{4}-\d\d-\d\d/.test(v) ? v.slice(0, 10) : v);
     case 'datetime': return dateInput(id, v);
     case 'time': return `<input id="${id}" type="text" class="unit" placeholder="hh:mm" value="${esc(v.slice(0, 5))}">`;
     case 'bool': return `<input id="${id}" type="checkbox" ${v === 'true' ? 'checked' : ''}>`;

@@ -46,6 +46,7 @@ PART_BINDING = {'Coding': 'code', 'Quantity': 'code', 'SimpleQuantity': 'code', 
                 'Distance': 'code', 'Count': 'code', 'Money': 'currency'}
 MAX_VALUES = 12
 MAX_OPTIONS = 60
+SYSTEM_NAMES = {'http://loinc.org': 'LOINC', 'http://snomed.info/sct': 'SNOMED CT', 'http://unitsofmeasure.org': 'UCUM'}
 STRICT = ('required', 'extensible', 'preferred', 'example')
 CYRILLIC = re.compile('[\u0400-\u04ff]')
 
@@ -75,7 +76,8 @@ def humanize(name):
     name = name.replace('[x]', '')
     words = re.sub(r'(?<=[a-z0-9])(?=[A-Z])', ' ', name).replace('-', ' ').split()
     text = ' '.join(words).capitalize() if words else name
-    return ' '.join(w.upper() if len(w) > 2 and w.isalpha() and not re.search('[aeiouyAEIOUY]', w) else w for w in text.split(' '))
+    return ' '.join(w.upper() if (len(w) > 2 and w.isalpha() and not re.search('[aeiouyAEIOUY]', w)) or (w == 'id' and i) else w
+                    for i, w in enumerate(text.split(' ')))
 
 
 def acronyms(label, text):
@@ -141,7 +143,7 @@ class Build:
         self.out = Path(out_dir)
         self.package_dirs = [Path(d).expanduser() for d in package_dirs or ['~/.fhir/packages']]
         self.prefix = prefix
-        self.sds, self.by_url, self.cache, self._pkg, self._examples = {}, {}, {}, None, None
+        self.sds, self.by_url, self.cache, self._pkg, self._examples, self._canon = {}, {}, {}, None, None, None
         self.ig = next((load(f) for f in sorted(self.out.glob('ImplementationGuide-*.json'))), {})
         for f in self.out.glob('StructureDefinition-*.json'):
             sd = load(f)
@@ -231,39 +233,62 @@ class Build:
                         self._examples[prof] = (size, f"{r['resourceType']}/{r['id']}")
         return self._examples.get(url, (0, None))[1]
 
-    def describe(self, ref):
+    def describe(self, ref, within=None):
+        """A short human summary of a referenced resource; "#id" refers to a resource contained in `within`."""
+        if ref.startswith('#'):
+            r = next((c for c in as_list((within or {}).get('contained')) if isinstance(c, dict) and c.get('id') == ref[1:]), None)
+            return (self.summarize(r, within) if r else None) or ref
         if ref in self.cache:
             return self.cache[ref]
         f = self.out / f'{ref.replace("/", "-")}.json'
-        text = self.cache[ref] = ref
-        if '/' in ref and f.exists():
-            r = load(f)
-            codes = {c['code']: d for c in all_codings(r) for d in [self.display(c.get('system'), c['code'])] if d}
-            name = r.get('name')
-            def part(v):
-                ref = v.get('reference') if isinstance(v, dict) else None
-                if isinstance(ref, dict) and isinstance(ref.get('reference'), str):
-                    text = self.describe(ref['reference'])
-                    return text.partition(': ')[2] or text
-                return fmt(v, codes)
-            what = lambda keys: next(filter(None, (part(r.get(k)) for k in keys if isinstance(r.get(k), (dict, list)))), '')
-            title = next((c['attachment']['title'] for c in as_list(r.get('content')) if isinstance(c, dict)
-                          and isinstance(c.get('attachment'), dict) and c['attachment'].get('title')), None)
-            if isinstance(name, str):
-                text = name
-            elif isinstance(name, list) and name:
-                text = fmt(name[0])
-            elif isinstance(r.get('title'), str) or title:
-                text = r.get('title') if isinstance(r.get('title'), str) else title
-            elif what(DESCRIBE_KEYS[:6]):
-                text = f"{r['resourceType']}: {what(DESCRIBE_KEYS[:6])}"
-            elif r.get('identifier'):
-                ident = as_list(r['identifier'])[0]
-                text = f"{r['resourceType']} {ident.get('value', '') if isinstance(ident, dict) else ''}".strip()
-            elif what(DESCRIBE_KEYS[6:]):
-                text = f"{r['resourceType']}: {what(DESCRIBE_KEYS[6:])}"
+        self.cache[ref] = ref
+        text = (self.summarize(load(f)) if '/' in ref and f.exists() else None) or ref
         self.cache[ref] = text
         return text
+
+    def summarize(self, r, within=None):
+        container = within or r
+        codes = {c['code']: d for c in all_codings(r) for d in [self.display(c.get('system'), c['code'])] if d}
+        name = en_text(r, 'name')
+        def part(v):
+            ref = v.get('reference') if isinstance(v, dict) else None
+            ref = ref.get('reference') if isinstance(ref, dict) else ref
+            if isinstance(ref, str):
+                text = v.get('display') if isinstance(v.get('display'), str) else self.describe(ref, container)
+                return text.partition(': ')[2] or text
+            return fmt(v, codes)
+        what = lambda keys: next(filter(None, (part(choice(r, k)) for k in keys if isinstance(choice(r, k), (dict, list)))), '')
+        title = next((c['attachment']['title'] for c in as_list(r.get('content')) if isinstance(c, dict)
+                      and isinstance(c.get('attachment'), dict) and c['attachment'].get('title')), None)
+        if isinstance(r.get('title'), str):
+            return en_text(r, 'title')
+        if isinstance(name, str):
+            return name
+        if isinstance(name, list) and name:
+            return fmt(name[0])
+        if title:
+            return title
+        if what(DESCRIBE_KEYS[:6]):
+            return f"{r.get('resourceType')}: {what(DESCRIBE_KEYS[:6])}"
+        if r.get('identifier'):
+            ident = as_list(r['identifier'])[0]
+            return f"{r.get('resourceType')} {ident.get('value', '') if isinstance(ident, dict) else ''}".strip()
+        if what(DESCRIBE_KEYS[6:]):
+            return f"{r.get('resourceType')}: {what(DESCRIBE_KEYS[6:])}"
+        return None
+
+    def canonical(self, url):
+        """The local "Type/id" of a canonical URL, ignoring any |version."""
+        if self._canon is None:
+            self._canon = {}
+            for f in self.out.glob('*-*.json'):
+                try:
+                    r = load(f)
+                except (ValueError, UnicodeDecodeError):
+                    continue
+                if isinstance(r, dict) and isinstance(r.get('url'), str) and 'id' in r and 'resourceType' in r:
+                    self._canon.setdefault(r['url'], f"{r['resourceType']}/{r['id']}")
+        return self._canon.get(url.split('|')[0]) if isinstance(url, str) else None
 
     def packages(self):
         if self._pkg is None:
@@ -334,7 +359,7 @@ class Build:
     def filter_codes(self, inc):
         """Codes picked by concept is-a / descendent-of / = filters on a complete package code system; None when that cannot be worked out."""
         cs_file = self.packages().get(inc.get('system'))
-        if not cs_file or any(f.get('property') != 'concept' or f.get('op') not in ('is-a', 'descendent-of', '=') for f in inc['filter']):
+        if not cs_file or any(f.get('property') != 'concept' or f.get('op') not in ('is-a', 'descendent-of', 'is-not-a', '=') for f in inc['filter']):
             return None
         cs = load(cs_file)
         if cs.get('content', 'complete') != 'complete':
@@ -363,6 +388,8 @@ class Build:
                     below.append(c)
                     todo += kids.get(c, [])
             picked = ([top] if f['op'] != 'descendent-of' else []) + (below if f['op'] != '=' else [])
+            if f['op'] == 'is-not-a':
+                picked = [c['code'] for c in flatten_concepts(cs.get('concept', [])) if c['code'] != top and c['code'] not in below]
             out = picked if out is None else [c for c in out if c in picked]
         return out or None
 
@@ -651,7 +678,8 @@ class Profile:
         coding_slices = [c.get('binding') or self.by_id.get(c['id'] + '.code', {}).get('binding')
                          for c in self.kids.get(eid + '.coding', []) if is_slice(c['id']) and c.get('max') != '0']
         coding_slices = [x for x in coding_slices if x] or [self.by_id.get(eid + '.coding.code', {}).get('binding')]
-        if coding_slices[0]:
+        if coding_slices[0] and (not binding.get('valueSet') or STRICT.index(coding_slices[0].get('strength', 'example'))
+                                 <= STRICT.index(binding.get('strength', 'example'))):
             binding = coding_slices[0]
         targets = []
         for t in e.get('type', []):
@@ -664,6 +692,14 @@ class Profile:
         code = types[0] if types else 'string'
         if len({TYPE_MAP.get(t, 'text') for t in types}) > 1:
             code = self.example_type(eid) or 'string'
+        if len(types) > 1 and not binding.get('valueSet'):
+            typed = [x for x in self.els if x['id'].startswith(eid + ':') and '.' not in x['id'][len(eid):]
+                     and x.get('max') != '0' and (x.get('binding') or {}).get('valueSet')]
+            pick = next((x for x in typed if [t['code'] for t in x.get('type', [])] == [code]), typed[0] if typed else None)
+            if pick:
+                binding = pick['binding']
+                if code not in ('CodeableConcept', 'Coding', 'code') and not self.example_type(eid):
+                    code = pick['type'][0]['code']
         typ = TYPE_MAP.get(code, 'text')
         if code == 'CodeableReference':
             typ = 'coded' if binding.get('valueSet') else 'link'
@@ -682,8 +718,11 @@ class Profile:
             n['target'] = ' / '.join(names)
         elif typ == 'link':
             n['target'] = 'Any resource'
-        binding = binding if binding.get('valueSet') else on_part or {}
-        codes = self.add_binding(n, binding) if binding.get('valueSet') else {}
+        on = None
+        if not binding.get('valueSet') and on_part:
+            binding, on = on_part
+        pinned = next((v for k in ('.coding.system', '.concept.coding.system') for v in [fixed_value(self.by_id.get(eid + k))] if isinstance(v, str)), None)
+        codes = self.add_binding(n, binding, on, pinned) if binding.get('valueSet') else {}
         systems = self.b.vs_systems(binding['valueSet'].split('|')[0]) if binding.get('valueSet') else []
         exs = self.example_values(eid, codes, systems)
         if exs:
@@ -755,7 +794,7 @@ class Profile:
             name = c['path'].rpartition('.')[2]
             if (vs and name in ('type', 'system', 'code', 'currency') and c.get('max') != '0'
                     and vs.split('|')[0] != base_vs.get(f'{typ}.{name}')):
-                return c['binding']
+                return c['binding'], name
         return None
 
     @staticmethod
@@ -811,25 +850,34 @@ class Profile:
             out.append(n)
         return out
 
-    def add_binding(self, n, binding):
+    def add_binding(self, n, binding, on=None, system=None):
         url = binding['valueSet'].split('|')[0]
         vs = self.b.expansions.get(url) or self.b.package_expansion(url)
         strength = binding.get('strength', '')
-        title = (vs or {}).get('title') or (vs or {}).get('name') or url.rstrip('/').split('/')[-1]
+        title = ((vs or {}).get('title') or (vs or {}).get('name') or url.rstrip('/').split('/')[-1]).strip()
         n['vs'] = {'title': title, 'strength': strength, 'url': url}
         if url in self.b.local_vs:
             n['vs']['page'] = f"ValueSet-{self.b.local_vs[url]}.html"
         also = [self.additional_binding(a) for a in binding.get('additional', []) if a.get('valueSet')]
         if also:
             n['vs']['also'] = also
+        if on:
+            n['vs']['on'] = humanize(on)
         contains = [dict(c, display=c.get('display') or self.b.display(c.get('system'), c['code'])) if 'code' in c else c
                     for c in flatten_contains((vs or {}).get('expansion', {}).get('contains', []))]
         total = (vs or {}).get('expansion', {}).get('total') or len(contains)
-        count = f'{total}+' if truncated(vs) and total <= len(contains) else total
+        if not truncated(vs):
+            total -= sum(1 for c in contains if c.get('abstract'))
+        if system and any(c.get('system') != system for c in contains if 'code' in c):
+            contains = [c for c in contains if c.get('system') == system]
+            total = len(contains)
+        count = (f'{total}+' if total else '') if truncated(vs) and total <= len(contains) else total
         n['vs']['total'] = count
         shown = [c.get('display') or c['code'] for c in contains if not c.get('abstract')]
         vals = n.setdefault('values', [])
-        if shown and total <= MAX_VALUES:
+        if on:
+            vals.append(f"{humanize(on)}: {', '.join(shown) if shown and total <= MAX_VALUES else title + (f' ({count} codes)' if total else '')}")
+        elif shown and total <= MAX_VALUES:
             vals.extend(shown)
         else:
             vals.append(f'{title}{f" ({count} codes)" if total else ""}')
@@ -845,7 +893,7 @@ class Profile:
         vs = self.b.expansions.get(url) or self.b.package_expansion(url) or {}
         implicit = url[:-3] if url.endswith('/vs') else None
         cs = load(self.b.packages()[implicit]) if implicit in self.b.packages() else {}
-        title = vs.get('title') or vs.get('name') or (f"Any code from {cs.get('title') or cs.get('name') or implicit}"
+        title = vs.get('title') or vs.get('name') or (f"Any code from {cs.get('title') or cs.get('name') or SYSTEM_NAMES.get(implicit, implicit)}"
                                                       if implicit else url.rstrip('/').split('/')[-1])
         out = {'title': title, 'strength': a.get('purpose', '')}
         if a.get('shortDoco'):
@@ -889,10 +937,14 @@ class Profile:
                     codes[v] = d
         out = []
         for v in vals:
-            if isinstance(v, dict) and isinstance(v.get('reference'), str) and not v.get('display'):
-                s = self.b.describe(v['reference'])
+            if isinstance(v, dict) and 'url' in v and isinstance(choice(v, 'value'), str):
+                v = choice(v, 'value')
+            if eid.rpartition('.')[2] != 'url' and self.b.canonical(v):
+                s = self.b.describe(self.b.canonical(v))
+            elif isinstance(v, dict) and isinstance(v.get('reference'), str) and not v.get('display'):
+                s = self.b.describe(v['reference'], self.example)
             elif isinstance(v, dict) and isinstance(v.get('reference'), dict) and not v['reference'].get('display') and 'reference' in v['reference']:
-                s = self.b.describe(v['reference']['reference'])
+                s = self.b.describe(v['reference']['reference'], self.example)
                 if v.get('concept'):
                     s = f"{fmt(v['concept'], codes)} ({s})"
             else:
@@ -968,6 +1020,15 @@ def en_display(c, res):
         if d:
             return d
     return c.get('display')
+
+
+def en_text(r, key):
+    """r[key], or its English translation when the resource is written in another language."""
+    for ext in (r.get('_' + key) or {}).get('extension', []) if isinstance(r.get('_' + key), dict) else []:
+        parts = {x.get('url'): x for x in ext.get('extension', [])}
+        if ext.get('url', '').endswith('/translation') and (parts.get('lang') or {}).get('valueCode', '').startswith('en'):
+            return (parts.get('content') or {}).get('valueString') or r.get(key)
+    return r.get(key)
 
 
 def all_codings(v):
@@ -1064,15 +1125,17 @@ def fmt(v, codes=None):
         if 'frequency' in r or 'period' in r:
             f, per = r.get('frequency', 1), r.get('period', 1)
             unit = UNIT_WORDS.get(r.get('periodUnit'), r.get('periodUnit', ''))
-            times = f"{f}-{r['frequencyMax']} times" if r.get('frequencyMax') else {1: 'once', 2: 'twice'}.get(f, f'{f} times')
-            every = (f"every {per}-{r['periodMax']} {unit}s" if r.get('periodMax') else
+            times = (f"{f}-{r['frequencyMax']} times" if r.get('frequencyMax') and r['frequencyMax'] != f
+                     else {1: 'once', 2: 'twice'}.get(f, f'{f} times'))
+            every = ('' if not unit else f"every {per}-{r['periodMax']} {unit}s" if r.get('periodMax') and r['periodMax'] != per else
                      f"{'an' if unit[:1] in ('a', 'e', 'i', 'o', 'u', 'h') else 'a'} {unit}" if per == 1 else f'every {per} {unit}s')
             parts.append(f"{times} {every}".strip())
         if r.get('duration'):
             unit = UNIT_WORDS.get(r.get('durationUnit'), r.get('durationUnit', ''))
             parts.append(f"for {r['duration']}{'-' + str(r['durationMax']) if r.get('durationMax') else ''} {unit}{'' if r['duration'] == 1 and not r.get('durationMax') else 's'}".strip())
         if r.get('count'):
-            parts.append(f"{r['count']}{'-' + str(r['countMax']) if r.get('countMax') else ''} times in total")
+            parts.append(f"{r['count']}-{r['countMax']} times in total" if r.get('countMax') and r['countMax'] != r['count']
+                         else 'once in total' if r['count'] == 1 else f"{r['count']} times in total")
         if r.get('timeOfDay'):
             parts.append('at ' + fmt(r['timeOfDay'], codes))
         if r.get('dayOfWeek'):
@@ -1114,6 +1177,10 @@ def fmt(v, codes=None):
         return f"{fmt(v['code'], codes)}: {fmt(v['value'], codes)}".strip(': ')
     if 'value' in v and ('unit' in v or isinstance(v.get('code'), str)):
         return f"{v.get('comparator', '')}{v['value']} {v.get('unit') or v.get('code', '')}".strip()
+    if 'lowNumerator' in v or 'highNumerator' in v:
+        lo, hi = fmt(v.get('lowNumerator')), fmt(v.get('highNumerator'))
+        num = f"{lo.rsplit(' ', 1)[0]}-{hi}" if lo and hi and lo.partition(' ')[2] == hi.partition(' ')[2] else f"{lo}-{hi}" if lo and hi else f"{lo} or more" if lo else f"up to {hi}"
+        return f"{num} / {fmt(v.get('denominator'))}"
     if 'numerator' in v:
         return f"{fmt(v['numerator'])} / {fmt(v.get('denominator'))}"
     if 'start' in v or 'end' in v:
@@ -1195,7 +1262,7 @@ def build_view(b, view, shared=None):
         if s.get('collapsed'):
             sec['collapsed'] = True
         for sg in s.get('subgroups', []):
-            pool = sec['children']
+            pool = sec.setdefault('children', [])
             moved = []
             for i in sg['ids']:
                 own = [c for c in pool if c.get('path') == i] or [p.node(i)]

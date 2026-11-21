@@ -9,6 +9,51 @@
     "English"
   ],
   "igUrl": "https://ig.dhp.uz/",
+  "profiles": {
+    "uz-core-organization": {
+      "labels": {
+        "Organization.identifier:mohId": "Ministry of Health ID",
+        "Organization.identifier:taxId": "Tax ID (Soliq)",
+        "Organization.identifier:argosId": "ARGOS ID"
+      }
+    },
+    "uz-core-practitioner": {
+      "labels": {
+        "Practitioner.address:uzAddress": "Uzbek address",
+        "Practitioner.address:i18nAddress": "International address",
+        "Practitioner.identifier:nationalId": "PINFL"
+      }
+    },
+    "uz-core-relatedperson": {
+      "labels": {
+        "RelatedPerson.address:uzAddress": "Uzbek address",
+        "RelatedPerson.address:i18nAddress": "International address",
+        "RelatedPerson.identifier:nationalId": "PINFL",
+        "RelatedPerson.identifier:passportLocal": "Passport / ID card",
+        "RelatedPerson.identifier:driversLicense": "Driver's licence",
+        "RelatedPerson.gender.extension:gender-other-2": "Gender other"
+      }
+    },
+    "uz-core-medication": {
+      "labels": {
+        "Medication.code": "Medicine name",
+        "Medication.ingredient": "Active ingredient",
+        "Medication.ingredient.item": "Substance",
+        "Medication.ingredient.strength[x]": "Strength",
+        "Medication.totalVolume": "Package size",
+        "Medication.identifier:registrationCertificateID": "Registration certificate",
+        "Medication.identifier:globalTradeItemID": "GTIN",
+        "Medication.identifier:markingID": "Asl Belgisi marking code",
+        "Medication.identifier:uzpharmBoxGroupID": "Pharmaceutical registry ID",
+        "Medication.identifier:productServiceID": "Product and service code"
+      },
+      "descriptions": {
+        "Medication.ingredient.strength[x]": "Amount of active ingredient per unit.",
+        "Medication.identifier:globalTradeItemID": "Global trade item number on the package barcode.",
+        "Medication.identifier:markingID": "National track-and-trace marking."
+      }
+    }
+  },
   "views": [
     {
       "id": "patient",
@@ -313,23 +358,6 @@
             "PractitionerRole.practitioner": "Doctor",
             "PractitionerRole.organization": "Clinic",
             "PractitionerRole.code": "Role"
-          }
-        },
-        "uz-core-medication": {
-          "labels": {
-            "Medication.code": "Medicine name",
-            "Medication.ingredient": "Active ingredient",
-            "Medication.ingredient.item": "Substance",
-            "Medication.ingredient.strength[x]": "Strength",
-            "Medication.totalVolume": "Package size",
-            "Medication.identifier:registrationCertificateID": "Registration certificate",
-            "Medication.identifier:globalTradeItemID": "GTIN",
-            "Medication.identifier:markingID": "Asl Belgisi marking code"
-          },
-          "descriptions": {
-            "Medication.ingredient.strength[x]": "Amount of active ingredient per unit.",
-            "Medication.identifier:globalTradeItemID": "Global trade item number on the package barcode.",
-            "Medication.identifier:markingID": "National track-and-trace marking."
           }
         },
         "uz-core-medication-dispense": {
