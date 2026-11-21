@@ -871,7 +871,9 @@ class Profile:
                 if n.get('card') and self.effective_card(x['id'], stop=eid if inside else parent_id(eid)).startswith('0..'):
                     n['card'] = '0..' + n['card'].split('..')[1]
                 owner_id = parent_id(parent_id(x['id']))
-                if owner_id.rpartition('.')[2] in ('value', 'value[x]'):
+                # an extension on a datatype's value part, or on another extension's value, belongs to that datatype or extension
+                last = owner_id.rpartition('.')[2]
+                if last == 'value' or last == 'value[x]' and parent_id(owner_id).rpartition('.')[2].split(':')[0] in ('extension', 'modifierExtension'):
                     owner_id = parent_id(owner_id)
                 owner = self.labels.get(owner_id) or humanize(owner_id.rpartition('.')[2].split(':')[-1])
                 if x['id'] not in self.labels and owner.lower() not in n['label'].lower():
