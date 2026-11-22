@@ -650,21 +650,22 @@ class Build:
         return out or None
 
     def core_keys(self):
-        """Invariant keys the base specification defines on its resources, datatypes and datatype profiles."""
+        """(key, expression) of the invariants the base specification defines on its resources, datatypes and datatype profiles."""
         if getattr(self, '_core_keys', None) is None:
             self.packages()
-            self._core_keys = {'ele-1', 'ext-1'}
+            self._core_keys = set()
             for f in sorted(getattr(self, '_core_pkg', None).glob('StructureDefinition-*.json')) if getattr(self, '_core_pkg', None) else []:
                 try:
                     sd = load(f)
                 except ValueError:
                     continue
                 if sd.get('derivation') != 'constraint' or sd.get('kind') != 'resource':
-                    self._core_keys |= {c.get('key') for x in sd.get('snapshot', sd.get('differential', {})).get('element', []) for c in x.get('constraint', [])}
+                    self._core_keys |= {(c.get('key'), ' '.join(str(c.get('expression') or '').split()))
+                                        for x in sd.get('snapshot', sd.get('differential', {})).get('element', []) for c in x.get('constraint', [])}
         return self._core_keys
 
     def release_keys(self, rtype):
-        """Invariant keys every core release in the package cache defines on a resource type, since IGs restate later releases' rules."""
+        """(key, expression, severity) of the invariants every core release in the package cache defines on a resource type, since IGs restate later releases' rules."""
         cache = self.__dict__.setdefault('_release_keys', {})
         if rtype not in cache:
             cache[rtype] = set()
@@ -676,7 +677,8 @@ class Build:
                         sd = load(found[-1] / 'package' / f'StructureDefinition-{rtype}.json')
                     except ValueError:
                         continue
-                    cache[rtype] |= {c.get('key') for x in sd.get('snapshot', {}).get('element', []) for c in x.get('constraint', [])}
+                    cache[rtype] |= {(c.get('key'), ' '.join(str(c.get('expression') or '').split()), c.get('severity'))
+                                     for x in sd.get('snapshot', {}).get('element', []) for c in x.get('constraint', [])}
         return cache[rtype]
 
     def package_expansion(self, url):
@@ -1259,8 +1261,8 @@ class Profile:
     def rules(self):
         """Invariants the profile (or a profile it derives from) adds, as (element id, text) pairs."""
         core = self.b.sd_by_url('http://hl7.org/fhir/StructureDefinition/' + str(self.sd.get('type', ''))) or {}
-        known = ({c.get('key') for x in core.get('snapshot', {}).get('element', []) for c in x.get('constraint', [])}
-                 | self.b.core_keys() | self.b.release_keys(str(self.sd.get('type', ''))))
+        own = {c.get('key') for x in core.get('snapshot', {}).get('element', []) for c in x.get('constraint', [])}
+        restated = self.b.release_keys(str(self.sd.get('type', '')))
         out, seen = [], set()
         for x in self.els:
             parts = x['id'].split('.')
@@ -1270,15 +1272,19 @@ class Profile:
                 continue
             cons = list(x.get('constraint', []))
             if [t.get('code') for t in x.get('type', [])] == ['Extension'] and x['type'][0].get('profile'):
-                cons += [c for y in (self.ext_sd(x) or {}).get('snapshot', {}).get('element', [])[1:] if y.get('max') != '0' for c in y.get('constraint', [])]
+                cons += [c for y in (self.ext_sd(x) or {}).get('snapshot', {}).get('element', []) if y.get('max') != '0' for c in y.get('constraint', [])]
             for c in cons:
                 src = str(c.get('source') or '').split('|')[0]
                 base = self.b.sd_by_url(src) if src else None
-                if (c.get('key') in known or c.get('key') in seen or not isinstance(c.get('human'), str)
+                if (c.get('key') in own or c.get('key') in ('ele-1', 'ext-1') or (c.get('key'), ' '.join(str(c.get('expression') or '').split()), c.get('severity')) in restated
+                        or re.sub(r':[^.]*', '', x['id']) != x['id'] and c.get('key') in {k.get('key') for k in (self.by_id.get(re.sub(r':[^.]*', '', x['id'])) or {}).get('constraint', [])}
+                        or (c.get('key'), ' '.join(str(c.get('expression') or '').split())) in self.b.core_keys() or (x['id'], c.get('key')) in seen
+                        or not isinstance(c.get('human'), str)
                         or len(parts) == 1 and re.match(r'(%s)\b' % '|'.join(ROOT_TECH), str(c.get('expression') or ''))
-                        or src.startswith('http://hl7.org/fhir/StructureDefinition/') and (base or {}).get('kind') != 'resource'):
+                        or src.startswith('http://hl7.org/fhir/StructureDefinition/') and (base or {}).get('kind') != 'resource'
+                        and (not base or c.get('key') in {k.get('key') for y in base.get('snapshot', {}).get('element', []) for k in y.get('constraint', [])})):
                     continue
-                seen.add(c.get('key'))
+                seen.add((x['id'], c.get('key')))
                 out.append((x['id'], ' '.join(c['human'].split()) + (' (recommended)' if c.get('severity') == 'warning' else '')))
         return out
 
@@ -2003,7 +2009,7 @@ def build_view(b, view, shared=None):
     owner = {}
 
     def own(n, p):
-        walk(n, lambda x: owner.setdefault(id(x), p))
+        walk(n, lambda x: owner.setdefault(id(x), (p, x)))
     if not view.get('sections'):
         root = main.els[0]['id']
         for e in main.children(root):
@@ -2088,7 +2094,7 @@ def build_view(b, view, shared=None):
                 group['collapsed'] = True
             sec['children'].insert(min(first, len(sec['children'])), group)
         p.prune_fx(sec)
-        owner.setdefault(id(sec), ap if anchor else p)
+        owner.setdefault(id(sec), (ap if anchor else p, sec))
         sections.append(sec)
 
     # anything Must Support or mandatory at the top level that no section placed
@@ -2130,7 +2136,7 @@ def build_view(b, view, shared=None):
         if len(refs) > 1:
             model['examples'] = [[r, b.example_page(r, main.example)] for r in refs]
     shown = {}
-    walk(model['root'], lambda n: n.get('path') and shown.setdefault((id(owner.get(id(n))), n['path']), []).append(n))
+    walk(model['root'], lambda n: n.get('path') and shown.setdefault((id(owner.get(id(n), (None,))[0]), n['path']), []).append(n))
     rules = []
     for p in [main] + [p for p in profiles.values() if p is not main]:
         head = '' if p is main else b.short(p.sd.get('title') or p.pid) + ': '
@@ -2140,7 +2146,10 @@ def build_view(b, view, shared=None):
                 last = cur.rpartition('.')[2]
                 hit = shown.get((id(p), cur)) or (shown.get((id(p), cur.rpartition(':')[0])) if ':' in last else None) or []
                 cur = cur.rpartition('.')[0]
-            at = '' if eid == p.els[0]['id'] else (hit[0]['label'] if hit else p.labels.get(eid) or humanize(eid.rpartition('.')[2].split(':')[-1])) + ': '
+            named = eid
+            while not hit and named.count('.') > 1 and [t.get('code') for t in (p.by_id.get(named.rpartition('.')[0]) or {}).get('type', [])] not in ([], ['BackboneElement'], ['Element']):
+                named = named.rpartition('.')[0]
+            at = '' if eid == p.els[0]['id'] else (hit[0]['label'] if hit else p.labels.get(named) or humanize(named.rpartition('.')[2].split(':')[-1])) + ': '
             if head + at + text not in rules:
                 rules.append(head + at + text)
             for n in hit:
