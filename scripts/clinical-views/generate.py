@@ -663,6 +663,22 @@ class Build:
                     self._core_keys |= {c.get('key') for x in sd.get('snapshot', sd.get('differential', {})).get('element', []) for c in x.get('constraint', [])}
         return self._core_keys
 
+    def release_keys(self, rtype):
+        """Invariant keys every core release in the package cache defines on a resource type, since IGs restate later releases' rules."""
+        cache = self.__dict__.setdefault('_release_keys', {})
+        if rtype not in cache:
+            cache[rtype] = set()
+            for rel in ('r3', 'r4', 'r4b', 'r5', 'r6'):
+                found = sorted((x for d in self.package_dirs for x in d.glob(f'hl7.fhir.{rel}.core#*') if (x / 'package' / f'StructureDefinition-{rtype}.json').is_file()),
+                               key=lambda x: [int(n) if n.isdigit() else 0 for n in x.name.split('#')[1].replace('-', '.').split('.')])
+                if found:
+                    try:
+                        sd = load(found[-1] / 'package' / f'StructureDefinition-{rtype}.json')
+                    except ValueError:
+                        continue
+                    cache[rtype] |= {c.get('key') for x in sd.get('snapshot', {}).get('element', []) for c in x.get('constraint', [])}
+        return cache[rtype]
+
     def package_expansion(self, url):
         """Expand an HL7 value set that the publisher did not, when it only lists whole code systems or codes."""
         f = self.packages().get(url)
@@ -1213,7 +1229,12 @@ class Profile:
                 n.setdefault('values', []).insert(0, 'Fixed: ' + shown)
         src = [e] + ([self.by_id[eid + '.value']] if typ == 'quantity' and eid + '.value' in self.by_id else [])
         if [t.get('code') for t in e.get('type', [])] == ['Extension']:
-            src += [x for x in [self.by_id.get(eid + '.value[x]')] + [x for x in self.kids.get(eid + '.value[x]', []) if is_slice(x['id'])] if x]
+            if eid + '.value[x]' in self.by_id:
+                src += [self.by_id[eid + '.value[x]']] + [x for x in self.kids.get(eid + '.value[x]', []) if is_slice(x['id'])]
+            else:
+                xels = (self.ext_sd(e) or {}).get('snapshot', {}).get('element') or [{'id': ''}]
+                vid = xels[0]['id'] + '.value[x]'
+                src += [x for x in xels if x['id'] == vid or x['id'].startswith(vid + ':') and '.' not in x['id'][len(vid):]]
         lo, hi = ([v for x in src for k, v in x.items() if k.startswith(m)][:1] for m in ('minValue', 'maxValue'))
         if lo or hi:
             lo_s, hi_s = (fmt(x[0]) if x else '' for x in (lo, hi))
@@ -1238,14 +1259,23 @@ class Profile:
     def rules(self):
         """Invariants the profile (or a profile it derives from) adds, as (element id, text) pairs."""
         core = self.b.sd_by_url('http://hl7.org/fhir/StructureDefinition/' + str(self.sd.get('type', ''))) or {}
-        known = {c.get('key') for x in core.get('snapshot', {}).get('element', []) for c in x.get('constraint', [])} | self.b.core_keys()
+        known = ({c.get('key') for x in core.get('snapshot', {}).get('element', []) for c in x.get('constraint', [])}
+                 | self.b.core_keys() | self.b.release_keys(str(self.sd.get('type', ''))))
         out, seen = [], set()
         for x in self.els:
-            for c in x.get('constraint', []):
+            parts = x['id'].split('.')
+            if len(parts) > 1 and parts[1].split(':')[0] in ROOT_TECH or any(
+                    (self.by_id.get(pre) or {}).get('max') == '0' for i in range(2, len(parts) + 1)
+                    for pre in {'.'.join(parts[:i]), re.sub(r':[^.]*$', '', '.'.join(parts[:i]))}):
+                continue
+            cons = list(x.get('constraint', []))
+            if [t.get('code') for t in x.get('type', [])] == ['Extension'] and x['type'][0].get('profile'):
+                cons += [c for y in (self.ext_sd(x) or {}).get('snapshot', {}).get('element', [])[1:] if y.get('max') != '0' for c in y.get('constraint', [])]
+            for c in cons:
                 src = str(c.get('source') or '').split('|')[0]
                 base = self.b.sd_by_url(src) if src else None
                 if (c.get('key') in known or c.get('key') in seen or not isinstance(c.get('human'), str)
-                        or (base or {}).get('derivation') == 'specialization'
+                        or len(parts) == 1 and re.match(r'(%s)\b' % '|'.join(ROOT_TECH), str(c.get('expression') or ''))
                         or src.startswith('http://hl7.org/fhir/StructureDefinition/') and (base or {}).get('kind') != 'resource'):
                     continue
                 seen.add(c.get('key'))
@@ -1379,6 +1409,8 @@ class Profile:
         elif shown and total <= MAX_VALUES:
             scores = [c.get('ordinal') if 'ordinal' in c else ordinal(c) for c in contains if not c.get('abstract')]
             vals.extend(f"{x} ({o:g})" if o is not None else x for x, o in zip(shown, scores))
+            if any(o is not None for o in scores):
+                n['scores'] = {x: o for x, o in zip(shown, scores) if o is not None}
         else:
             vals.append(f'{title}{f" ({count} codes)" if total else ""}')
         if shown:
@@ -1968,6 +2000,10 @@ def build_view(b, view, shared=None):
 
     main = prof(view['profile'])
     sections = []
+    owner = {}
+
+    def own(n, p):
+        walk(n, lambda x: owner.setdefault(id(x), p))
     if not view.get('sections'):
         root = main.els[0]['id']
         for e in main.children(root):
@@ -1975,10 +2011,12 @@ def build_view(b, view, shared=None):
                 n = main.node(e['id'])
                 main.prune_fx(n)
                 sections.append(n)
+                own(n, main)
                 if not n.get('children'):
                     for x in main.leaf_extensions(e['id']):
                         main.prune_fx(x)
                         sections.append(x)
+                        own(x, main)
     for s in view.get('sections', []):
         p = prof(s.get('from', view['profile']))
         if p is not main and not s.get('element') and not p.cfg.get('example'):
@@ -2009,6 +2047,7 @@ def build_view(b, view, shared=None):
         nodes = []
         for i in s.get('include', []):
             n = p.node(i)
+            own(n, p)
             n['card'] = p.effective_card(i, stop=s.get('element') if not s.get('from') else None)
             if s.get('hoist') and n['type'] == 'group' and n.get('children'):
                 nodes.extend(n['children'])
@@ -2038,8 +2077,10 @@ def build_view(b, view, shared=None):
             pool = sec.setdefault('children', [])
             moved = []
             for i in sg['ids']:
-                own = [c for c in pool if c.get('path') == i] or [p.node(i)]
-                moved += own + [c for c in pool if (c.get('path') or '').startswith(i + '.')]
+                mine = [c for c in pool if c.get('path') == i] or [p.node(i)]
+                for c in mine:
+                    own(c, p)
+                moved += mine + [c for c in pool if (c.get('path') or '').startswith(i + '.')]
             first = next((k for k, c in enumerate(pool) if c in moved), len(pool))
             sec['children'] = [c for c in pool if c not in moved]
             group = {'label': sg['label'], 'type': 'group', 'card': None, 'desc': sg.get('desc', ''), 'children': moved}
@@ -2047,6 +2088,7 @@ def build_view(b, view, shared=None):
                 group['collapsed'] = True
             sec['children'].insert(min(first, len(sec['children'])), group)
         p.prune_fx(sec)
+        owner.setdefault(id(sec), ap if anchor else p)
         sections.append(sec)
 
     # anything Must Support or mandatory at the top level that no section placed
@@ -2058,6 +2100,7 @@ def build_view(b, view, shared=None):
             if p.visible(e) and e['id'] not in p.used:
                 leftovers.append(p.node(e['id']))
                 p.prune_fx(leftovers[-1])
+                own(leftovers[-1], p)
                 print(f"warning: {view['id']}: {e['id']} is not placed in any section; added to 'Other'", file=sys.stderr)
     if leftovers:
         sections.append({'label': 'Other', 'type': 'group', 'card': None,
@@ -2086,23 +2129,25 @@ def build_view(b, view, shared=None):
         refs = list(dict.fromkeys(r for r in [main.example_ref] + [p.example_ref for p in profiles.values()] if r))
         if len(refs) > 1:
             model['examples'] = [[r, b.example_page(r, main.example)] for r in refs]
-    rules, by_path = [], {}
+    shown = {}
+    walk(model['root'], lambda n: n.get('path') and shown.setdefault((id(owner.get(id(n))), n['path']), []).append(n))
+    rules = []
     for p in [main] + [p for p in profiles.values() if p is not main]:
         head = '' if p is main else b.short(p.sd.get('title') or p.pid) + ': '
         for eid, text in p.rules():
-            at = '' if eid == p.els[0]['id'] else (p.labels.get(eid) or humanize(eid.rpartition('.')[2].split(':')[-1])) + ': '
+            hit, cur = [], eid
+            while not hit and '.' in cur:
+                last = cur.rpartition('.')[2]
+                hit = shown.get((id(p), cur)) or (shown.get((id(p), cur.rpartition(':')[0])) if ':' in last else None) or []
+                cur = cur.rpartition('.')[0]
+            at = '' if eid == p.els[0]['id'] else (hit[0]['label'] if hit else p.labels.get(eid) or humanize(eid.rpartition('.')[2].split(':')[-1])) + ': '
             if head + at + text not in rules:
                 rules.append(head + at + text)
-            if at:
-                by_path.setdefault(eid, []).append(text)
+            for n in hit:
+                if 'Rule: ' + text not in n.get('values', []):
+                    n.setdefault('values', []).append('Rule: ' + text)
     if rules:
         model['rules'] = rules
-
-    def attach_rules(n):
-        for text in by_path.get(n.get('path'), []):
-            if 'Rule: ' + text not in n.get('values', []):
-                n.setdefault('values', []).append('Rule: ' + text)
-    walk(model['root'], attach_rules)
     uid = 0
 
     def assign(n):

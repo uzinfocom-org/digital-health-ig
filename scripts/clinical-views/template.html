@@ -586,7 +586,7 @@ function control(n, v, id) {
       const opts = n.options || [];
       const hasV = v && !opts.includes(v);
       const listNote = n.vs && (!opts.length || n.more) ? `${n.vs.title}${n.vs.total ? ` (${n.vs.total} codes)` : ''}` : '';
-      return `<select id="${id}"><option value="">${esc(listNote ? 'Choose - ' + listNote : 'Choose...')}</option>${hasV ? `<option selected>${esc(v)}</option>` : ''}${opts.map(o => `<option ${o === v ? 'selected' : ''}>${esc(o)}</option>`).join('')}</select>`;
+      return `<select id="${id}"><option value="">${esc(listNote ? 'Choose - ' + listNote : 'Choose...')}</option>${hasV ? `<option selected>${esc(v)}</option>` : ''}${opts.map(o => `<option ${o === v ? 'selected' : ''}${n.scores?.[o] != null ? ` value="${esc(o)}"` : ''}>${esc(n.scores?.[o] != null ? `${o} (${n.scores[o]})` : o)}</option>`).join('')}</select>`;
     }
     case 'date': return dateInput(id, /^\d{4}-\d\d-\d\d/.test(v) ? v.slice(0, 10) : v);
     case 'datetime': return dateInput(id, v, '', true);
