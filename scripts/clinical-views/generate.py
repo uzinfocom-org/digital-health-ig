@@ -722,7 +722,7 @@ class Build:
                 return {'title': vs.get('title'), 'name': vs.get('name')}
             cs_file = self.cs_file(inc, f)
             cs = load(cs_file) if cs_file else {}
-            if not inc.get('concept') and not inc.get('filter') and not cs:
+            if not inc.get('concept') and not inc.get('filter') and (not cs or cs.get('content') == 'not-present'):
                 # the whole of a code system the packages do not hold
                 return {'title': vs.get('title'), 'name': vs.get('name')}
             concepts = {c['code']: c for c in flatten_concepts(cs.get('concept', []))}
@@ -889,7 +889,9 @@ class Profile:
             target = e['contentReference'].split('#')[-1]
             n['typeText'] = f"Same structure as {self.labels.get(target) or humanize(target.rpartition('.')[2])}"
             vals = self.resolve([self.example], eid.split('.')[1:], eid.split('.')[0]) if self.example else []
-            ex = [next((en_text(v, k) for k in ('text', 'name', 'title', 'display') if isinstance(v.get(k), str)), None) or fmt(v) if isinstance(v, dict) else fmt(v) for v in vals]
+            # a part without its own text is summarised only when that stays short, not as a dump of its whole subtree
+            ex = [next((en_text(v, k) for k in ('text', 'name', 'title', 'display') if isinstance(v.get(k), str)), None) or (fmt(v) if len(fmt(v)) <= 60 else None)
+                  if isinstance(v, dict) else fmt(v) for v in vals]
             if any(ex):
                 n['ex'] = ', '.join(list(dict.fromkeys(filter(None, ex)))[:4])
             return n
@@ -1362,17 +1364,21 @@ class Profile:
             vx = next((x for x in els if re.fullmatch(re.escape(base) + r'\.value[A-Z]\w*', x['id']) and x.get('type')), None)
         if vx is None or vx.get('max') == '0':
             return None
-        parts = [x for x in els if x['id'].startswith(base + '.value[x]:') and '.' not in x['id'][len(base) + 9:]
-                 and x.get('max') != '0' and x.get('type')]
+        slices = [x for x in els if x['id'].startswith(base + '.value[x]:') and '.' not in x['id'][len(base) + 9:] and x.get('type')]
+        parts = [x for x in slices if x.get('max') != '0']
+        barred = {x['type'][0]['code'] for x in slices if x.get('max') == '0'}
         # an unconstrained value[x] lists every datatype; its type slices then say which ones are used
         used = [vx] if vx.get('type') and (len(vx['type']) <= 10 or not parts) else parts
-        types = list(dict.fromkeys(t['code'] for x in used for t in x.get('type', [])))
+        types = [t for t in dict.fromkeys(t['code'] for x in used for t in x.get('type', [])) if t not in barred]
+        if not types and vx.get('type'):
+            return None
         within = {x['id'] + s for x in [vx] + parts for s in ('.coding', '.coding.code', '.code')}
         part = next((x for x in parts if x.get('binding')), None)
         binding = (vx.get('binding') or (dict(part['binding'], forType=part['type'][0]['code']) if part else None)
                    or next((x['binding'] for x in els if x['id'] in within and x.get('binding')), {}))
         by_type = {x['type'][0]['code']: x for x in parts if len(x.get('type', [])) == 1}
-        targets = [p for x in used for t in x.get('type', []) for p in (by_type.get(t['code'], {}).get('type', [t])[0] if used is not parts else t).get('targetProfile', [])]
+        targets = [p for x in used for t in x.get('type', []) if t['code'] not in barred
+                   for p in (by_type.get(t['code'], {}).get('type', [t])[0] if used is not parts else t).get('targetProfile', [])]
         return types, binding, targets
 
     def ext_sd(self, e):
