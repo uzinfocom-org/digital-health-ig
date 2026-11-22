@@ -528,12 +528,13 @@ class Build:
             self._own = dict(self._pkg)
             deps = [f'hl7.fhir.{core}.core#{fv}']
             for d in self.ig.get('dependsOn', []):
-                if d.get('version'):
-                    deps.append(f"{d['packageId']}#{d['version']}")
-                elif d.get('packageId'):
-                    cached = sorted((x.name for pd in self.package_dirs for x in pd.glob(f"{d['packageId']}#*") if (x / 'package').is_dir()),
-                                    key=lambda n: [int(v) if v.isdigit() else 0 for v in n.split('#')[1].replace('-', '.').split('.')])
-                    deps += cached[-1:]
+                pid = d.get('packageId')
+                if pid and d.get('version'):
+                    deps.append(f"{pid}#{d['version']}")
+                elif pid:
+                    cached = sorted((x.name for pd in self.package_dirs for x in pd.glob(f'{pid}#*') if (x / 'package').is_dir()),
+                                    key=lambda n: semver_key(n.split('#', 1)[1]))
+                    deps.append(cached[-1] if cached else f'{pid} (any version)')
             for dep in deps:
                 pkg = next((d / dep / 'package' for d in self.package_dirs if (d / dep / 'package').is_dir()), None)
                 if not pkg and dep == deps[0]:
@@ -816,7 +817,7 @@ class Profile:
             return True
         if (e.get('mustSupport') or eid in self.ms_under) and eid.rpartition('.')[2] not in ('extension', 'modifierExtension'):
             return True
-        if is_tech(e):
+        if is_tech(e) and not (e.get('min', 0) >= 1 and e['path'].count('.') == 1 and e['path'].split('.')[-1] in ROOT_TECH):
             return False
         if self.no_ms and any(d == eid or d.startswith(eid + '.') or d.startswith(eid + ':') for d in self.diff):
             return True
@@ -1453,24 +1454,29 @@ class Profile:
                                      and self.b.has_en(c.get('system'), c['code']) else c['display'])) if 'code' in c else c
                     for c in flatten_contains((vs or {}).get('expansion', {}).get('contains', []))]
         total = (vs or {}).get('expansion', {}).get('total') or len(contains)
-        if not truncated(vs):
+        trunc = truncated(vs)
+        if not trunc:
             total -= sum(1 for c in contains if unusable(c))
         if system and any(c.get('system') != system for c in contains if 'code' in c):
             contains = [c for c in contains if c.get('system') == system]
             total = sum(1 for c in contains if not unusable(c))
             self.b.display(system, '')
+        elif trunc and total <= len(contains):
+            total = sum(1 for c in contains if not unusable(c))
         complete = system and self.b.cache.get(('complete', system)) == total
-        count = (f'{total}+' if total else '') if truncated(vs) and total <= len(contains) and not complete else total
         dropped = sum(1 for c in contains if unusable(c))
-        if truncated(vs) and dropped and not complete and total > len(contains):
+        upto = trunc and dropped and not complete and total > len(contains)
+        if upto:
             total -= dropped
-            count = f'up to {total}'
+        count = (f'up to {total}' if upto else (f'{total}+' if total else '') if trunc and total <= len(contains) and not complete
+                 else total)
+        listable = isinstance(count, int) and total <= MAX_VALUES
         n['vs']['total'] = count
         shown = [c.get('display') or c['code'] for c in contains if not unusable(c)]
         vals = n.setdefault('values', [])
         if on:
-            vals.append(f"{humanize(on)}: {', '.join(shown) if shown and total <= MAX_VALUES else title + (f' ({count} codes)' if total else '')}")
-        elif shown and total <= MAX_VALUES:
+            vals.append(f"{humanize(on)}: {', '.join(shown) if shown and listable else title + (f' ({count} codes)' if total else '')}")
+        elif shown and listable:
             scores = [c.get('ordinal') if 'ordinal' in c else ordinal(c) for c in contains if not unusable(c)]
             vals.extend(f"{x} ({o:g})" if o is not None else x for x, o in zip(shown, scores))
             if any(o is not None for o in scores):
@@ -1849,6 +1855,13 @@ def all_codings(v):
         for x in v.values():
             if isinstance(x, (dict, list)):
                 yield from all_codings(x)
+
+
+def semver_key(v):
+    """Sort key for a package version: numeric parts, then a pre-release (5.3.0-ballot) before its release (5.3.0)."""
+    main, _, pre = v.partition('-')
+    return ([int(x) if x.isdigit() else 0 for x in main.split('.')], not pre,
+            [(0, int(x), '') if x.isdigit() else (1, 0, x) for x in pre.replace('-', '.').split('.')] if pre else [])
 
 
 def truncated(vs):
