@@ -515,7 +515,7 @@ class Build:
 
     def packages(self):
         if self._pkg is None:
-            self._pkg = {}
+            self._pkg, self._in_pkg, self._copies = {}, {}, {}
             fv = as_list(self.ig.get('fhirVersion') or self.pkg.get('fhirVersions') or self.pkg.get('fhirVersion') or '5.0.0')[0]
             core = {'3.0': 'r3', '4.0': 'r4', '4.3': 'r4b', '5.0': 'r5', '6.0': 'r6'}.get(fv[:3], 'r5')
             for f in list(self.out.glob('ValueSet-*.json')) + list(self.out.glob('CodeSystem-*.json')):
@@ -525,6 +525,7 @@ class Build:
                     continue
                 if r.get('url'):
                     self._pkg.setdefault(r['url'], f)
+            self._own = dict(self._pkg)
             deps = [f'hl7.fhir.{core}.core#{fv}']
             deps += [f"{d['packageId']}#{d['version']}" for d in self.ig.get('dependsOn', []) if 'packageId' in d]
             for dep in deps:
@@ -556,6 +557,8 @@ class Build:
                 for rtype, url, name, ver in files:
                     if rtype in ('ValueSet', 'CodeSystem', 'StructureDefinition') and url:
                         self._pkg.setdefault(url, pkg / name)
+                        self._in_pkg.setdefault(pkg, {}).setdefault(url, pkg / name)
+                        self._copies.setdefault(url, []).append(pkg / name)
                         if ver:
                             self._pkg.setdefault(f'{url}|{ver}', pkg / name)
         return self._pkg
@@ -583,6 +586,13 @@ class Build:
                 if (cs.get('language') or 'en')[:2] != 'en':
                     self.cache[('en', system)] = {c['code'] for c in flatten_concepts(cs.get('concept', [])) if 'code' in c
                                                   and en_display(c, cs) != c.get('display')}
+                for other in self._copies.get(system, []) if system not in self._local_cs else []:
+                    if other != f:
+                        oc = load(other)
+                        if (oc.get('language') or 'en')[:2] == 'en':
+                            for c in flatten_concepts(oc.get('concept', [])):
+                                if 'code' in c:
+                                    self.cache[key].setdefault(c['code'], en_display(c, oc))
             elif system == 'urn:ietf:bcp:47' and self.packages().get('http://hl7.org/fhir/ValueSet/languages'):
                 vs = load(Path(self.packages()['http://hl7.org/fhir/ValueSet/languages']))
                 self.cache[key] = {c['code']: en_display(c, vs) for i in vs.get('compose', {}).get('include', []) for c in i.get('concept', [])}
@@ -618,9 +628,16 @@ class Build:
             return []
         return [i['system'] for i in load(Path(f)).get('compose', {}).get('include', []) if 'system' in i]
 
-    def filter_codes(self, inc):
+    def cs_file(self, inc, near=None):
+        """A value set include's code system: the pinned version, else the IG's own, else the copy beside the value set, else the first one found."""
+        system, _, ver = str(inc.get('system') or '').partition('|')
+        ver = inc.get('version') or ver
+        pkgs = self.packages()
+        return (ver and pkgs.get(f'{system}|{ver}')) or self._own.get(system) or (near and self._in_pkg.get(Path(near).parent, {}).get(system)) or pkgs.get(system)
+
+    def filter_codes(self, inc, near=None):
         """Codes picked by concept is-a / descendent-of / = filters on a complete package code system; None when that cannot be worked out."""
-        cs_file = self.packages().get(inc.get('system'))
+        cs_file = self.cs_file(inc, near)
         if not cs_file or any(f.get('property') != 'concept' or f.get('op') not in ('is-a', 'descendent-of', 'is-not-a', '=') for f in inc['filter']):
             return None
         cs = load(cs_file)
@@ -695,15 +712,15 @@ class Build:
         vs = load(f)
         contains, excluded = [], set()
         for exc in vs.get('compose', {}).get('exclude', []):
-            codes = self.filter_codes(exc) if exc.get('filter') and not exc.get('concept') else [c['code'] for c in exc.get('concept', [])]
+            codes = self.filter_codes(exc, f) if exc.get('filter') and not exc.get('concept') else [c['code'] for c in exc.get('concept', [])]
             if codes is None or exc.get('valueSet') or 'system' not in exc or not codes:
                 return {'title': vs.get('title'), 'name': vs.get('name')}
             excluded.update((exc['system'], c) for c in codes)
         for inc in vs.get('compose', {}).get('include', []):
-            picked = self.filter_codes(inc) if inc.get('filter') and not inc.get('concept') else None
+            picked = self.filter_codes(inc, f) if inc.get('filter') and not inc.get('concept') else None
             if (inc.get('filter') and picked is None) or inc.get('valueSet') or 'system' not in inc:
                 return {'title': vs.get('title'), 'name': vs.get('name')}
-            cs_file = self.packages().get(inc['system'])
+            cs_file = self.cs_file(inc, f)
             cs = load(cs_file) if cs_file else {}
             concepts = {c['code']: c for c in flatten_concepts(cs.get('concept', []))}
             for c in inc.get('concept') or ([concepts[x] for x in picked if x in concepts] if picked is not None else concepts.values()):
@@ -777,6 +794,10 @@ class Profile:
         eid = e['id']
         if e.get('max') == '0':
             return False
+        if eid.endswith('[x]') and e.get('type'):
+            barred = {(k.get('type') or [{}])[0].get('code') for k in self.kids.get(eid, []) if is_slice(k['id']) and k.get('max') == '0'}
+            if not {t.get('code') for t in e['type']} - barred:
+                return False
         if eid in self.hide or is_type_marker(self.by_id, eid):
             return False
         if eid in self.show:
@@ -1390,7 +1411,7 @@ class Profile:
 
     def add_binding(self, n, binding, on=None, system=None):
         url = binding['valueSet'].split('|')[0]
-        vs = self.b.expansions.get(url) or self.b.package_expansion(url)
+        vs = self.b.expansions.get(url) or self.b.package_expansion(binding['valueSet'] if binding['valueSet'] in self.b.packages() else url)
         strength = binding.get('strength', '')
         title = ((vs or {}).get('title') or (vs or {}).get('name') or url.rstrip('/').split('/')[-1]).strip()
         n['vs'] = {'title': title, 'strength': strength, 'url': url}
@@ -1434,7 +1455,7 @@ class Profile:
     def additional_binding(self, a):
         """An R5 binding.additional entry: its value set, purpose and the condition (usage) under which it applies."""
         url = a['valueSet'].split('|')[0]
-        vs = self.b.expansions.get(url) or self.b.package_expansion(url) or {}
+        vs = self.b.expansions.get(url) or self.b.package_expansion(a['valueSet'] if a['valueSet'] in self.b.packages() else url) or {}
         implicit = url[:-3] if url.endswith('/vs') else None
         title = vs.get('title') or vs.get('name') or (f"Any code from {self.b.system_title(implicit)}"
                                                       if implicit else url.rstrip('/').split('/')[-1])
