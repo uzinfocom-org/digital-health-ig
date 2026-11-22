@@ -728,7 +728,7 @@ class Build:
             concepts = {c['code']: c for c in flatten_concepts(cs.get('concept', []))}
             for c in inc.get('concept') or ([concepts[x] for x in picked if x in concepts] if picked is not None else concepts.values()):
                 full, key = concepts.get(c['code'], c), (inc['system'], c['code'])
-                abstract = any(pr.get('code') in ('notSelectable', 'abstract') and pr.get('valueBoolean') for pr in full.get('property', []))
+                abstract = unusable(full)
                 contains.append({'code': c['code'], 'system': inc['system'], 'abstract': abstract, 'ordinal': ordinal(c) if ordinal(c) is not None else ordinal(full),
                                  'display': (self.known_rank.get(key, 3) <= 1 and self.known[key]) or en_display(c, vs)
                                  or en_display(full, cs) or self.known.get(key)})
@@ -1127,9 +1127,11 @@ class Profile:
             code = code or 'Quantity'
             if code != 'Quantity':
                 binding = {}
-        if len(types) > 1 and not binding.get('valueSet'):
+        if (len(types) > 1 or types and eid.endswith('[x]')) and not binding.get('valueSet'):
+            # a choice whose binding sits on its (possibly hidden) type slice
             typed = [x for x in self.els if x['id'].startswith(eid + ':') and '.' not in x['id'][len(eid):]
-                     and x.get('max') != '0' and (x.get('binding') or {}).get('valueSet') and len(x.get('type', [])) == 1]
+                     and x.get('max') != '0' and (x.get('binding') or {}).get('valueSet') and len(x.get('type', [])) == 1
+                     and x['type'][0]['code'] in types]
             code = code or (typed[0]['type'][0]['code'] if typed else None)
             pick = next((x for x in typed if x['type'][0]['code'] == code), None)
             if pick:
@@ -1440,7 +1442,7 @@ class Profile:
                     for c in flatten_contains((vs or {}).get('expansion', {}).get('contains', []))]
         total = (vs or {}).get('expansion', {}).get('total') or len(contains)
         if not truncated(vs):
-            total -= sum(1 for c in contains if c.get('abstract'))
+            total -= sum(1 for c in contains if unusable(c))
         if system and any(c.get('system') != system for c in contains if 'code' in c):
             contains = [c for c in contains if c.get('system') == system]
             total = len(contains)
@@ -1448,12 +1450,12 @@ class Profile:
         complete = system and self.b.cache.get(('complete', system)) == total
         count = (f'{total}+' if total else '') if truncated(vs) and total <= len(contains) and not complete else total
         n['vs']['total'] = count
-        shown = [c.get('display') or c['code'] for c in contains if not c.get('abstract')]
+        shown = [c.get('display') or c['code'] for c in contains if not unusable(c)]
         vals = n.setdefault('values', [])
         if on:
             vals.append(f"{humanize(on)}: {', '.join(shown) if shown and total <= MAX_VALUES else title + (f' ({count} codes)' if total else '')}")
         elif shown and total <= MAX_VALUES:
-            scores = [c.get('ordinal') if 'ordinal' in c else ordinal(c) for c in contains if not c.get('abstract')]
+            scores = [c.get('ordinal') if 'ordinal' in c else ordinal(c) for c in contains if not unusable(c)]
             vals.extend(f"{x} ({o:g})" if o is not None else x for x, o in zip(shown, scores))
             if any(o is not None for o in scores):
                 n['scores'] = {x: o for x, o in zip(shown, scores) if o is not None}
@@ -1892,6 +1894,14 @@ def flatten_concepts(cs):
         out.append(c)
         out.extend(flatten_concepts(c.get('concept', [])))
     return out
+
+
+def unusable(c):
+    """An expansion entry or code system concept that cannot be picked for new data: abstract, or inactive, deprecated or retired."""
+    return bool(c.get('abstract') or c.get('inactive') or any(
+        p.get('code') in ('notSelectable', 'abstract', 'inactive') and p.get('valueBoolean')
+        or p.get('code') == 'status' and str(p.get('valueCode') or p.get('valueString') or '').lower() in ('deprecated', 'retired', 'inactive')
+        for p in c.get('property', [])))
 
 
 def flatten_contains(cs):
