@@ -629,11 +629,16 @@ class Build:
         return [i['system'] for i in load(Path(f)).get('compose', {}).get('include', []) if 'system' in i]
 
     def cs_file(self, inc, near=None):
-        """A value set include's code system: the pinned version, else the IG's own, else the copy beside the value set, else the first one found."""
+        """A value set include's code system: the pinned version, else the IG's own, else the copy beside the value set,
+        else a dependency's copy. The core package's copy of a code system that core does not define (THO, DICOM) is
+        an old snapshot, so it comes last; for core's own code systems it comes first."""
         system, _, ver = str(inc.get('system') or '').partition('|')
         ver = inc.get('version') or ver
         pkgs = self.packages()
-        return (ver and pkgs.get(f'{system}|{ver}')) or self._own.get(system) or (near and self._in_pkg.get(Path(near).parent, {}).get(system)) or pkgs.get(system)
+        core = None if system.startswith('http://hl7.org/fhir/') else getattr(self, '_core_pkg', None)
+        beside = near and Path(near).parent != core and self._in_pkg.get(Path(near).parent, {}).get(system)
+        dep = next((c for c in self._copies.get(system, []) if c.parent != core), None) if core else None
+        return (ver and pkgs.get(f'{system}|{ver}')) or self._own.get(system) or beside or dep or pkgs.get(system)
 
     def filter_codes(self, inc, near=None):
         """Codes picked by concept is-a / descendent-of / = filters on a complete package code system; None when that cannot be worked out."""
@@ -1445,7 +1450,7 @@ class Profile:
             total -= sum(1 for c in contains if unusable(c))
         if system and any(c.get('system') != system for c in contains if 'code' in c):
             contains = [c for c in contains if c.get('system') == system]
-            total = len(contains)
+            total = sum(1 for c in contains if not unusable(c))
             self.b.display(system, '')
         complete = system and self.b.cache.get(('complete', system)) == total
         count = (f'{total}+' if total else '') if truncated(vs) and total <= len(contains) and not complete else total
@@ -1900,6 +1905,7 @@ def unusable(c):
     """An expansion entry or code system concept that cannot be picked for new data: abstract, or inactive, deprecated or retired."""
     return bool(c.get('abstract') or c.get('inactive') or any(
         p.get('code') in ('notSelectable', 'abstract', 'inactive') and p.get('valueBoolean')
+        or p.get('code') == 'deprecated' and (p.get('valueDateTime') or p.get('valueBoolean'))
         or p.get('code') == 'status' and str(p.get('valueCode') or p.get('valueString') or '').lower() in ('deprecated', 'retired', 'inactive')
         for p in c.get('property', [])))
 
