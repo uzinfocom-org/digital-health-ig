@@ -349,8 +349,12 @@ class Build:
         return r
 
     def sd_by_url(self, url):
-        url = (url or '').split('|')[0]
-        if url in self.by_url:
+        url, _, ver = (url or '').partition('|')
+        if url in self.by_url and (not ver or self.by_url[url].get('version') == ver):
+            return self.by_url[url]
+        if ver and f'{url}|{ver}' in self.packages():
+            url = f'{url}|{ver}'
+        elif url in self.by_url:
             return self.by_url[url]
         f = self.packages().get(url)
         if f and ('sd', url) not in self.cache:
@@ -540,7 +544,7 @@ class Build:
                     self._core_pkg = pkg
                 idx = pkg / '.index.json'
                 if idx.exists():
-                    files = [(e.get('resourceType'), e.get('url'), e.get('filename')) for e in load(idx).get('files', [])]
+                    files = [(e.get('resourceType'), e.get('url'), e.get('filename'), e.get('version')) for e in load(idx).get('files', [])]
                 else:
                     files = []
                     for f in pkg.glob('*.json'):
@@ -548,10 +552,12 @@ class Build:
                             r = load(f)
                         except ValueError:
                             continue
-                        files.append((r.get('resourceType'), r.get('url'), f.name))
-                for rtype, url, name in files:
+                        files.append((r.get('resourceType'), r.get('url'), f.name, r.get('version')))
+                for rtype, url, name, ver in files:
                     if rtype in ('ValueSet', 'CodeSystem', 'StructureDefinition') and url:
                         self._pkg.setdefault(url, pkg / name)
+                        if ver:
+                            self._pkg.setdefault(f'{url}|{ver}', pkg / name)
         return self._pkg
 
     def display(self, system, code):
