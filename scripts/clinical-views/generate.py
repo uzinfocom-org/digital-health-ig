@@ -528,19 +528,19 @@ class Build:
             self._own = dict(self._pkg)
             deps = [f'hl7.fhir.{core}.core#{fv}']
             for d in self.ig.get('dependsOn', []):
-                pid = d.get('packageId')
-                if pid and d.get('version'):
-                    deps.append(f"{pid}#{d['version']}")
+                pid, ver = d.get('packageId'), d.get('version') or ''
+                if pid and ver and not ver.endswith('.x'):
+                    deps.append(f'{pid}#{ver}')
                 elif pid:
-                    cached = sorted((x.name for pd in self.package_dirs for x in pd.glob(f'{pid}#*') if (x / 'package').is_dir()),
+                    cached = sorted((x.name for pd in self.package_dirs for x in pd.glob(f'{pid}#{ver[:-1]}*') if (x / 'package').is_dir()),
                                     key=lambda n: semver_key(n.split('#', 1)[1]))
-                    deps.append(cached[-1] if cached else f'{pid} (any version)')
+                    deps.append(cached[-1] if cached else f'{pid}#{ver}' if ver else f'{pid} (any version)')
             for dep in deps:
                 pkg = next((d / dep / 'package' for d in self.package_dirs if (d / dep / 'package').is_dir()), None)
                 if not pkg and dep == deps[0]:
                     # the exact core release may not be published (STU3 profiles say 3.0.1, the package is 3.0.2)
                     near = sorted((x for d in self.package_dirs for x in d.glob(f'hl7.fhir.{core}.core#{fv[:3]}.*') if (x / 'package').is_dir()),
-                                  key=lambda x: [int(n) if n.isdigit() else 0 for n in x.name.split('#')[1].split('.')])
+                                  key=lambda x: semver_key(x.name.split('#')[1]))
                     pkg = near[-1] / 'package' if near else None
                 if not pkg:
                     print(f"warning: package {dep} not found in {', '.join(map(str, self.package_dirs))}; "
@@ -707,7 +707,7 @@ class Build:
             cache[rtype] = set()
             for rel in ('r3', 'r4', 'r4b', 'r5', 'r6'):
                 found = sorted((x for d in self.package_dirs for x in d.glob(f'hl7.fhir.{rel}.core#*') if (x / 'package' / f'StructureDefinition-{rtype}.json').is_file()),
-                               key=lambda x: [int(n) if n.isdigit() else 0 for n in x.name.split('#')[1].replace('-', '.').split('.')])
+                               key=lambda x: semver_key(x.name.split('#')[1]))
                 if found:
                     try:
                         sd = load(found[-1] / 'package' / f'StructureDefinition-{rtype}.json')
@@ -1331,7 +1331,6 @@ class Profile:
                         or re.sub(r':[^.]*', '', x['id']) != x['id'] and c.get('key') in {k.get('key') for k in (self.by_id.get(re.sub(r':[^.]*', '', x['id'])) or {}).get('constraint', [])}
                         or (c.get('key'), ' '.join(str(c.get('expression') or '').split())) in self.b.core_keys() or (x['id'], c.get('key')) in seen
                         or not isinstance(c.get('human'), str)
-                        or len(parts) == 1 and re.match(r'(%s)\b' % '|'.join(ROOT_TECH), str(c.get('expression') or ''))
                         or src.startswith('http://hl7.org/fhir/StructureDefinition/') and (base or {}).get('kind') != 'resource'
                         and (not base or c.get('key') in {k.get('key') for y in base.get('snapshot', {}).get('element', []) for k in y.get('constraint', [])})):
                     continue
@@ -1870,7 +1869,7 @@ def truncated(vs):
     unclosed = any(x.get('url', '').endswith('valueset-unclosed') and x.get('valueBoolean') for x in e.get('extension', []))
     n = len(flatten_contains(e.get('contains', [])))
     count = next((p.get('valueInteger') for p in e.get('parameter', []) if p.get('name') == 'count'), None)
-    return unclosed or (e.get('total') or 0) > n or (not e.get('total') and count is not None and n >= count)
+    return unclosed and e.get('total') != n or (e.get('total') or 0) > n or (not e.get('total') and count is not None and n >= count)
 
 
 def as_list(v):
@@ -1956,7 +1955,7 @@ def fmt(v, codes=None):
         if re.match(r'^\d\d:\d\d:\d\d$', v):
             return v[:5]
         if v.startswith('<div'):
-            return unescape(re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', v))).strip()
+            return re.sub(r'\s+', ' ', unescape(re.sub(r'<[^>]+>', ' ', v))).strip()
         return codes.get(v) or v
     if isinstance(v, list):
         return ', '.join(filter(None, (fmt(x, codes) for x in v)))
