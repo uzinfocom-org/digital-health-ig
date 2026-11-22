@@ -180,7 +180,7 @@ table.data tr.grp.d1 td { background: color-mix(in srgb, var(--bar) 55%, var(--p
 .fs > .fb { padding: 10px 12px 12px 22px; display: grid; gap: 8px; }
 .fs.link { border-style: dashed; border-color: var(--link); }
 .fs.link > .fh { background: var(--link-soft); }
-.fs .note { font-size: 12px; color: var(--muted); }
+.fs .note, .fc .note { font-size: 12px; color: var(--muted); }
 .fr { display: grid; grid-template-columns: minmax(150px, 240px) minmax(0, 1fr); gap: 8px 12px; align-items: center; }
 .fr .fl { display: flex; align-items: center; gap: 6px; font-size: 13px; }
 .fr .fl .car { font: 11px var(--font-cond); color: var(--muted); }
@@ -381,6 +381,7 @@ function renderOverview(pane, m) {
       <dt>Purpose</dt><dd><p>${esc(m.purpose)}</p></dd>
       <dt>Use</dt><dd>${(m.use || []).map(p => `<p>${esc(p)}</p>`).join('')}</dd>
       <dt>Misuse</dt><dd>${(m.misuse || []).map(p => `<p>${esc(p)}</p>`).join('')}</dd>
+      ${m.rules ? `<dt>Rules</dt><dd>${m.rules.map(r => `<p>${esc(r)}</p>`).join('')}</dd>` : ''}
       <dt>Keywords</dt><dd><div class="kw">${(m.keywords || []).map(k => `<span>${esc(k)}</span>`).join('')}</div></dd>
     </dl>
     <aside class="side">
@@ -610,16 +611,17 @@ function formNode(n, d) {
   }
   const o = occ(n.card);
   const ex = state.example ? n.fx || n.exs || (n.ex ? [n.ex] : []) : [];
+  const notes = (n.values || []).filter(x => /^(Range|Minimum|Maximum|Rule): /.test(x));
   const fixed = (n.values || []).find(x => x.startsWith('Fixed: ') || n.type === 'quantity' && x.startsWith('Unit: '));
   const vals = /\.\.1$/.test(n.card || '') ? [ex[0] || ''] : ex.length ? ex : [''];
   // a quantity fixed to a unit alone fills the unit box, not the amount
-  if (fixed && !vals[0] && n.type !== 'link') vals[0] = n.type === 'quantity' && (fixed.startsWith('Unit: ') || !/^[-+.\d]/.test(fixed.split(': ')[1])) ? ' ' + fixed.split(': ')[1] : fixed.slice(fixed.indexOf(': ') + 2);
+  if (fixed && !vals[0] && n.type !== 'link') vals[0] = n.type === 'quantity' && (fixed.startsWith('Unit: ') || !/^(?:[<>]=?)?[-+.\d]/.test(fixed.split(': ')[1])) ? ' ' + fixed.split(': ')[1] : fixed.slice(fixed.indexOf(': ') + 2);
   const ctl = (v, i) => {
     const cid = 'f-' + n.uid + (i ? '-' + i : '');
     const h = control(n, v, cid);
     return i ? h.replace(new RegExp(`id="${cid}"(?![^>]*aria-label)`), `id="${cid}" aria-label="${esc(n.label)} ${i + 1}"`) : h;
   };
-  return `<div class="fr"><label class="fl" for="f-${n.uid}">${icon(n.type)} ${esc(n.label)}${o.mand ? ' <span class="req" title="Mandatory">*</span>' : ''} <span class="car">[${esc(n.card)}]</span></label><div class="fc">${vals.map((v, i) => `<div class="fv">${ctl(v, i)}</div>`).join('')}</div></div>`;
+  return `<div class="fr"><label class="fl" for="f-${n.uid}">${icon(n.type)} ${esc(n.label)}${o.mand ? ' <span class="req" title="Mandatory">*</span>' : ''} <span class="car">[${esc(n.card)}]</span></label><div class="fc">${vals.map((v, i) => `<div class="fv">${ctl(v, i)}</div>`).join('')}${notes.map(x => `<div class="note">${esc(x)}</div>`).join('')}</div></div>`;
 }
 function renderForm(pane, m) {
   pane.innerHTML = `<div class="toolbar">

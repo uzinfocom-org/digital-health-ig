@@ -151,6 +151,17 @@ def contains(actual, pattern):
     return actual == pattern
 
 
+def ordinal(c):
+    """The score a value set or code system gives a concept (R4 ordinalValue, R5 itemWeight)."""
+    for x in (c or {}).get('extension', []):
+        if isinstance(x, dict) and str(x.get('url', '')).endswith(('ordinalValue', 'itemWeight')) and isinstance(x.get('valueDecimal'), (int, float)):
+            return x['valueDecimal']
+    for p in (c or {}).get('property', []):
+        if isinstance(p, dict) and p.get('code') in ('itemWeight', 'ordinalValue', 'weight') and isinstance(p.get('valueDecimal'), (int, float)):
+            return p['valueDecimal']
+    return None
+
+
 def fixed_value(e):
     return next((v for k, v in (e or {}).items() if k.startswith(('fixed', 'pattern'))), None)
 
@@ -525,6 +536,8 @@ class Build:
                     continue
                 if dep != deps[0]:
                     self._dep_pkgs.append(pkg)
+                else:
+                    self._core_pkg = pkg
                 idx = pkg / '.index.json'
                 if idx.exists():
                     files = [(e.get('resourceType'), e.get('url'), e.get('filename')) for e in load(idx).get('files', [])]
@@ -636,6 +649,20 @@ class Build:
             out = picked if out is None else [c for c in out if c in picked]
         return out or None
 
+    def core_keys(self):
+        """Invariant keys the base specification defines on its resources, datatypes and datatype profiles."""
+        if getattr(self, '_core_keys', None) is None:
+            self.packages()
+            self._core_keys = {'ele-1', 'ext-1'}
+            for f in sorted(getattr(self, '_core_pkg', None).glob('StructureDefinition-*.json')) if getattr(self, '_core_pkg', None) else []:
+                try:
+                    sd = load(f)
+                except ValueError:
+                    continue
+                if sd.get('derivation') != 'constraint' or sd.get('kind') != 'resource':
+                    self._core_keys |= {c.get('key') for x in sd.get('snapshot', sd.get('differential', {})).get('element', []) for c in x.get('constraint', [])}
+        return self._core_keys
+
     def package_expansion(self, url):
         """Expand an HL7 value set that the publisher did not, when it only lists whole code systems or codes."""
         f = self.packages().get(url)
@@ -658,7 +685,7 @@ class Build:
             for c in inc.get('concept') or ([concepts[x] for x in picked if x in concepts] if picked is not None else concepts.values()):
                 full, key = concepts.get(c['code'], c), (inc['system'], c['code'])
                 abstract = any(pr.get('code') in ('notSelectable', 'abstract') and pr.get('valueBoolean') for pr in full.get('property', []))
-                contains.append({'code': c['code'], 'system': inc['system'], 'abstract': abstract,
+                contains.append({'code': c['code'], 'system': inc['system'], 'abstract': abstract, 'ordinal': ordinal(c) if ordinal(c) is not None else ordinal(full),
                                  'display': (self.known_rank.get(key, 3) <= 1 and self.known[key]) or en_display(c, vs)
                                  or en_display(full, cs) or self.known.get(key)})
         contains = [c for c in contains if (c['system'], c['code']) not in excluded]
@@ -882,7 +909,13 @@ class Profile:
         if n.get('children') and n['type'] == 'group' and types[:1] == ['CodeableConcept'] and isinstance(fv, dict):
             cs = [c for c in fv.get('coding', []) if isinstance(c, dict) and isinstance(c.get('code'), str)]
             if cs:
-                n['values'] = ['Fixed: ' + ', '.join(c.get('display') or self.b.display(c.get('system'), c['code']) or c['code'] for c in cs)]
+                shown = ', '.join(c.get('display') or self.b.display(c.get('system'), c['code']) or c['code'] for c in cs)
+                n['values'] = ['Fixed: ' + shown]
+                # the pattern binds every repetition, slices included
+                for k in n['children']:
+                    if k.get('path', '').startswith(eid + ':') and k.get('type') == 'coded' and not any(v.startswith('Fixed: ') for v in k.get('values', [])):
+                        k['values'], k['options'] = ['Fixed: ' + shown], [shown]
+                        k.pop('more', None)
         for extra in self.cfg.get('attach', {}).get(eid, []):
             n.setdefault('children', []).append(self.node(extra))
         whole = None
@@ -967,7 +1000,8 @@ class Profile:
                     owner_id = head
                 owner = self.labels.get(owner_id) or humanize(owner_id.rpartition('.')[2].split(':')[-1])
                 if x['id'] not in self.labels and owner.lower() == n['label'].lower():
-                    n['label'] = f"{owner} {KIND_WORDS.get(n['type'], 'detail')}"
+                    kind = KIND_WORDS.get(n['type'], 'detail')
+                    n['label'] = f"{owner} {'extension' if owner.lower().split()[-1] == kind else kind}"
                 elif x['id'] not in self.labels and owner.lower() not in n['label'].lower():
                     n['label'] = f"{owner} {n['label'][0].lower()}{n['label'][1:]}"
                 out.append(n)
@@ -1114,6 +1148,14 @@ class Profile:
             fx = self.example_values(eid, codes, systems, first=True)
             if fx != exs:
                 n['fx'] = fx
+        suggested = self.child_fixed(eid, optional=True) if typ == 'coded' and code == 'CodeableConcept' and binding.get('valueSet') else []
+        if suggested and not self.child_fixed(eid):
+            for c in suggested:
+                c['display'] = c.get('display') or self.b.display(c.get('system'), c['code']) or c['code']
+                codes.setdefault(c['code'], c['display'])
+            names = list(dict.fromkeys(c['display'] for c in suggested))
+            n['values'] = names + [x for x in n.get('values', []) if x not in names]
+            n['options'] = names + [x for x in n.get('options', []) if x not in names]
         fixed = next(((k, v) for k, v in e.items() if k.startswith(('fixed', 'pattern'))), None)
         if not fixed and [t.get('code') for t in e.get('type', [])] == ['Extension']:
             for x in [self.by_id.get(eid + '.value[x]')] + [x for x in self.kids.get(eid + '.value[x]', []) if is_slice(x['id'])]:
@@ -1121,7 +1163,7 @@ class Profile:
         whole = fixed[1] if fixed else None
         if (fixed and isinstance(fixed[1], dict) and not any('code' in c for c in fixed[1].get('coding', [fixed[1]]))
                 and not (isinstance(fixed[1].get('text'), str) and not fixed[1].get('coding'))
-                and not isinstance(fixed[1].get('value'), (int, float))):
+                and not isinstance(fixed[1].get('value'), (int, float)) and not isinstance(fixed[1].get('unit'), str)):
             fixed = None
         if not fixed and code == 'CodeableReference' and isinstance(fixed_value(self.by_id.get(eid + '.concept')), dict):
             fixed = ('pattern', fixed_value(self.by_id[eid + '.concept']))
@@ -1170,6 +1212,8 @@ class Profile:
             else:
                 n.setdefault('values', []).insert(0, 'Fixed: ' + shown)
         src = [e] + ([self.by_id[eid + '.value']] if typ == 'quantity' and eid + '.value' in self.by_id else [])
+        if [t.get('code') for t in e.get('type', [])] == ['Extension']:
+            src += [x for x in [self.by_id.get(eid + '.value[x]')] + [x for x in self.kids.get(eid + '.value[x]', []) if is_slice(x['id'])] if x]
         lo, hi = ([v for x in src for k, v in x.items() if k.startswith(m)][:1] for m in ('minValue', 'maxValue'))
         if lo or hi:
             lo_s, hi_s = (fmt(x[0]) if x else '' for x in (lo, hi))
@@ -1191,12 +1235,29 @@ class Profile:
             n['values'] = self.cfg['values'][eid] + n.get('values', [])
         return n
 
-    def child_fixed(self, eid):
+    def rules(self):
+        """Invariants the profile (or a profile it derives from) adds, as (element id, text) pairs."""
+        core = self.b.sd_by_url('http://hl7.org/fhir/StructureDefinition/' + str(self.sd.get('type', ''))) or {}
+        known = {c.get('key') for x in core.get('snapshot', {}).get('element', []) for c in x.get('constraint', [])} | self.b.core_keys()
+        out, seen = [], set()
+        for x in self.els:
+            for c in x.get('constraint', []):
+                src = str(c.get('source') or '').split('|')[0]
+                base = self.b.sd_by_url(src) if src else None
+                if (c.get('key') in known or c.get('key') in seen or not isinstance(c.get('human'), str)
+                        or (base or {}).get('derivation') == 'specialization'
+                        or src.startswith('http://hl7.org/fhir/StructureDefinition/') and (base or {}).get('kind') != 'resource'):
+                    continue
+                seen.add(c.get('key'))
+                out.append((x['id'], ' '.join(c['human'].split()) + (' (recommended)' if c.get('severity') == 'warning' else '')))
+        return out
+
+    def child_fixed(self, eid, optional=False):
         """Codings fixed on an element's parts: coding.code, or the required coding slices of a CodeableConcept."""
         out = []
         for cid in [eid + '.coding'] + [c['id'] for c in self.kids.get(eid + '.coding', []) if is_slice(c['id'])]:
             ce = self.by_id.get(cid)
-            if not ce or ce.get('max') == '0' or (cid != eid + '.coding' and ce.get('min', 0) < 1):
+            if not ce or ce.get('max') == '0' or (cid != eid + '.coding' and (ce.get('min', 0) < 1) != optional) or optional and cid == eid + '.coding':
                 continue
             fv = fixed_value(ce)
             code = fv.get('code') if isinstance(fv, dict) else fixed_value(self.by_id.get(cid + '.code'))
@@ -1316,7 +1377,8 @@ class Profile:
         if on:
             vals.append(f"{humanize(on)}: {', '.join(shown) if shown and total <= MAX_VALUES else title + (f' ({count} codes)' if total else '')}")
         elif shown and total <= MAX_VALUES:
-            vals.extend(shown)
+            scores = [c.get('ordinal') if 'ordinal' in c else ordinal(c) for c in contains if not c.get('abstract')]
+            vals.extend(f"{x} ({o:g})" if o is not None else x for x, o in zip(shown, scores))
         else:
             vals.append(f'{title}{f" ({count} codes)" if total else ""}')
         if shown:
@@ -2024,6 +2086,23 @@ def build_view(b, view, shared=None):
         refs = list(dict.fromkeys(r for r in [main.example_ref] + [p.example_ref for p in profiles.values()] if r))
         if len(refs) > 1:
             model['examples'] = [[r, b.example_page(r, main.example)] for r in refs]
+    rules, by_path = [], {}
+    for p in [main] + [p for p in profiles.values() if p is not main]:
+        head = '' if p is main else b.short(p.sd.get('title') or p.pid) + ': '
+        for eid, text in p.rules():
+            at = '' if eid == p.els[0]['id'] else (p.labels.get(eid) or humanize(eid.rpartition('.')[2].split(':')[-1])) + ': '
+            if head + at + text not in rules:
+                rules.append(head + at + text)
+            if at:
+                by_path.setdefault(eid, []).append(text)
+    if rules:
+        model['rules'] = rules
+
+    def attach_rules(n):
+        for text in by_path.get(n.get('path'), []):
+            if 'Rule: ' + text not in n.get('values', []):
+                n.setdefault('values', []).append('Rule: ' + text)
+    walk(model['root'], attach_rules)
     uid = 0
 
     def assign(n):
