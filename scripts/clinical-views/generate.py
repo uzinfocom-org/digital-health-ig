@@ -732,7 +732,8 @@ class Build:
                 contains.append({'code': c['code'], 'system': inc['system'], 'abstract': abstract, 'ordinal': ordinal(c) if ordinal(c) is not None else ordinal(full),
                                  'display': (self.known_rank.get(key, 3) <= 1 and self.known[key]) or en_display(c, vs)
                                  or en_display(full, cs) or self.known.get(key)})
-        contains = [c for c in contains if (c['system'], c['code']) not in excluded]
+        seen = set(excluded)
+        contains = [c for c in contains if (c['system'], c['code']) not in seen and not seen.add((c['system'], c['code']))]
         return {'title': vs.get('title'), 'name': vs.get('name'), 'expansion': {'total': len(contains), 'contains': contains}}
 
 
@@ -874,7 +875,7 @@ class Profile:
             self.used.add(anc)
             anc = parent_id(anc)
         slices = [c for c in self.kids.get(eid, []) if is_slice(c['id']) and self.visible(c)]
-        if eid.endswith('[x]') and len(slices) == 1 and len(e.get('type', [])) <= 1:
+        if eid.endswith('[x]') and len(slices) == 1 and len(self.types(e)) <= 1:
             n = self.node(slices[0]['id'])
             n['card'] = f"{e['min']}..{e['max']}"
             if eid in self.labels:
@@ -1098,7 +1099,8 @@ class Profile:
             binding = coding_slices[0]
         targets = []
         for t in e.get('type', []):
-            targets += t.get('targetProfile', [])
+            if t['code'] in types:
+                targets += t.get('targetProfile', [])
         if types == ['Extension']:
             types, binding, targets = self.extension_info(e)
         # a resource held inline (Bundle entry, contained, parameter) points at the resource or profile it must be
@@ -1844,7 +1846,7 @@ def additional_bindings(binding):
     for x in binding.get('extension', []):
         u = x.get('url', '')
         if u.endswith('/elementdefinition-maxValueSet') or u.endswith('/elementdefinition-minValueSet'):
-            vs = x.get('valueCanonical') or x.get('valueUri')
+            vs = x.get('valueCanonical') or x.get('valueUri') or (x.get('valueReference') or {}).get('reference')
             if vs:
                 out.append({'purpose': 'maximum' if 'max' in u.rpartition('-')[2] else 'minimum', 'valueSet': vs})
         elif u == 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding':
