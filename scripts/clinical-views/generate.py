@@ -45,6 +45,8 @@ WHAT_KEYS = 13
 NO_BUNDLE = {}
 CONTACT_SYSTEMS = {'phone', 'fax', 'email', 'pager', 'url', 'sms', 'other'}
 ADDRESS_KEYS = {'id', 'extension', 'use', 'type', 'text', 'line', 'city', 'district', 'state', 'postalCode', 'country', 'period'}
+KIND_WORDS = {'link': 'reference', 'coded': 'code', 'text': 'text', 'date': 'date', 'datetime': 'date and time', 'quantity': 'amount',
+              'count': 'number', 'decimal': 'number', 'bool': 'flag', 'id': 'identifier'}
 UNIT_WORDS = {'s': 'second', 'min': 'minute', 'h': 'hour', 'd': 'day', 'wk': 'week', 'mo': 'month', 'a': 'year'}
 PART_BINDING = {'Coding': 'code', 'Ratio': 'numerator.code', 'Quantity': 'code', 'SimpleQuantity': 'code', 'Duration': 'code', 'Age': 'code',
                 'Distance': 'code', 'Count': 'code', 'Money': 'currency'}
@@ -216,9 +218,24 @@ def fold_orphan_slices(sd):
         if ':' not in y[-1]:
             e.pop('sliceName', None)
         e['id'] = '.'.join(y)
+    final = {e['id'] for e in els}
+
+    def expand(x):
+        # a differential may write a choice type in short form (Observation.valueQuantity for value[x]:valueQuantity)
+        out = []
+        for seg in x:
+            if ':' not in seg and '.'.join(out + [seg]) not in final and seg[:1].islower():
+                for stem in [seg[:i] for i in range(len(seg) - 1, 0, -1) if seg[i].isupper()]:
+                    alt = next((a for a in (f"{stem}[x]:{seg}", f"{stem}[x]") if '.'.join(out + [a]) in final), None)
+                    if alt:
+                        seg = alt
+                        break
+            out.append(seg)
+        return out
+
     for d in sd.get('differential', {}).get('element', []):
         if isinstance(d.get('id'), str):
-            d['id'] = '.'.join(fold(rename(d['id'])))
+            d['id'] = '.'.join(expand(fold(rename(d['id']))))
 
 
 class Build:
@@ -861,6 +878,11 @@ class Profile:
                 return self.leaf(e)
             n = self.base(e, 'group')
             n['children'] = built
+        fv = fixed_value(e)
+        if n.get('children') and n['type'] == 'group' and types[:1] == ['CodeableConcept'] and isinstance(fv, dict):
+            cs = [c for c in fv.get('coding', []) if isinstance(c, dict) and isinstance(c.get('code'), str)]
+            if cs:
+                n['values'] = ['Fixed: ' + ', '.join(c.get('display') or self.b.display(c.get('system'), c['code']) or c['code'] for c in cs)]
         for extra in self.cfg.get('attach', {}).get(eid, []):
             n.setdefault('children', []).append(self.node(extra))
         whole = None
@@ -944,7 +966,9 @@ class Profile:
                 if last == 'value' or last == 'value[x]' and head.rpartition('.')[2].split(':')[0] in ('extension', 'modifierExtension'):
                     owner_id = head
                 owner = self.labels.get(owner_id) or humanize(owner_id.rpartition('.')[2].split(':')[-1])
-                if x['id'] not in self.labels and owner.lower() not in n['label'].lower():
+                if x['id'] not in self.labels and owner.lower() == n['label'].lower():
+                    n['label'] = f"{owner} {KIND_WORDS.get(n['type'], 'detail')}"
+                elif x['id'] not in self.labels and owner.lower() not in n['label'].lower():
                     n['label'] = f"{owner} {n['label'][0].lower()}{n['label'][1:]}"
                 out.append(n)
         return out
@@ -1031,8 +1055,15 @@ class Profile:
         if code == 'CodeableReference':
             typ = 'coded' if binding.get('valueSet') else 'link'
         conditional = not binding.get('valueSet') and any(a.get('valueSet') for a in binding.get('additional', []))
+        slice_systems = []
+        if not binding.get('valueSet') and types[:1] == ['CodeableConcept']:
+            for c in self.kids.get(eid + '.coding', []):
+                cf = fixed_value(c)
+                sy = cf.get('system') if isinstance(cf, dict) else fixed_value(self.by_id.get(c['id'] + '.system'))
+                if is_slice(c['id']) and c.get('max') != '0' and isinstance(sy, str) and sy not in slice_systems:
+                    slice_systems.append(sy)
         if typ in ('text', 'coded'):
-            coded_fixed = conditional or types == ['Coding'] and isinstance(fixed_value(self.by_id.get(eid + '.system')), str) or isinstance(fixed_value(e), dict) and any('code' in c for c in fixed_value(e).get('coding', [fixed_value(e)]))
+            coded_fixed = bool(slice_systems) or conditional or types == ['Coding'] and isinstance(fixed_value(self.by_id.get(eid + '.system')), str) or isinstance(fixed_value(e), dict) and any('code' in c for c in fixed_value(e).get('coding', [fixed_value(e)]))
             typ = 'coded' if (binding.get('valueSet') or coded_fixed) and (len(types) == 1 or code in ('CodeableConcept', 'Coding', 'code')) else 'text'
         typ = next((t for t in [self.cfg.get('types', {}).get(eid)] if t in TYPE_MAP.values()), typ)
         n = self.base(e, typ)
@@ -1061,6 +1092,8 @@ class Profile:
         codes = self.add_binding(n, binding, on, pinned) if binding.get('valueSet') else {}
         if typ == 'coded' and not binding.get('valueSet') and not conditional and pinned:
             n['values'] = [f"Any code from {self.b.system_title(pinned)}"]
+        elif typ == 'coded' and not binding.get('valueSet') and not conditional and slice_systems:
+            n['values'] = [f"Any code from {self.b.system_title(sy)}" for sy in slice_systems]
         if conditional:
             # no value set of its own: one per condition, from R5 additional bindings
             also = [self.additional_binding(a) for a in binding['additional'] if a.get('valueSet')]
@@ -1082,6 +1115,10 @@ class Profile:
             if fx != exs:
                 n['fx'] = fx
         fixed = next(((k, v) for k, v in e.items() if k.startswith(('fixed', 'pattern'))), None)
+        if not fixed and [t.get('code') for t in e.get('type', [])] == ['Extension']:
+            for x in [self.by_id.get(eid + '.value[x]')] + [x for x in self.kids.get(eid + '.value[x]', []) if is_slice(x['id'])]:
+                fixed = fixed or next(((k, v) for k, v in (x or {}).items() if k.startswith(('fixed', 'pattern'))), None)
+        whole = fixed[1] if fixed else None
         if (fixed and isinstance(fixed[1], dict) and not any('code' in c for c in fixed[1].get('coding', [fixed[1]]))
                 and not (isinstance(fixed[1].get('text'), str) and not fixed[1].get('coding'))
                 and not isinstance(fixed[1].get('value'), (int, float))):
@@ -1096,6 +1133,10 @@ class Profile:
                 and isinstance(fixed_value(self.by_id.get(eid + '.display')), str)):
             fixed = (fixed[0], dict(fixed[1], display=fixed_value(self.by_id[eid + '.display'])))
         unit = fixed_value(self.by_id.get(eid + '.unit')) or fixed_value(self.by_id.get(eid + '.code'))
+        if fixed and typ == 'quantity' and isinstance(fixed[1], dict) and 'value' not in fixed[1]:
+            # a pattern that pins the unit only
+            unit = unit if isinstance(unit, str) else fixed[1].get('unit') or fixed[1].get('code')
+            fixed = None
         if not fixed and typ == 'quantity' and isinstance(unit, str):
             n['values'] = ['Unit: ' + unit]
             n['options'] = [unit]
@@ -1128,9 +1169,20 @@ class Profile:
                 n.pop('exs', None)
             else:
                 n.setdefault('values', []).insert(0, 'Fixed: ' + shown)
+        src = [e] + ([self.by_id[eid + '.value']] if typ == 'quantity' and eid + '.value' in self.by_id else [])
+        lo, hi = ([v for x in src for k, v in x.items() if k.startswith(m)][:1] for m in ('minValue', 'maxValue'))
+        if lo or hi:
+            lo_s, hi_s = (fmt(x[0]) if x else '' for x in (lo, hi))
+            n.setdefault('values', []).append(f'Range: {lo_s} to {hi_s}' if lo and hi else f'Minimum: {lo_s}' if lo else f'Maximum: {hi_s}')
+            if typ in ('count', 'decimal'):
+                n['range'] = [x[0] if x and isinstance(x[0], (int, float)) else None for x in (lo, hi)]
         if code in FIXED_PARTS:
             for part in FIXED_PARTS[code]:
                 fv = fixed_value(self.by_id.get(f'{eid}.{part}'))
+                if fv is None and isinstance(whole, dict):
+                    fv = whole.get(part)
+                if fv is None and self.child_fixed(f'{eid}.{part}'):
+                    fv = {'coding': self.child_fixed(f'{eid}.{part}')}
                 c = next(iter(fv.get('coding', [])), None) if isinstance(fv, dict) else None
                 shown = (c.get('display') or self.b.display(c.get('system'), c.get('code')) or c.get('code')) if c else ((self.b.display(CODE_SYSTEMS[(code, part)], fv) or humanize(fv)) if (code, part) in CODE_SYSTEMS else fv) if isinstance(fv, str) else None
                 if shown:
@@ -1798,7 +1850,7 @@ def fmt(v, codes=None):
     if 'start' in v or 'end' in v:
         return (f"{fmt(v['start'])} to {fmt(v['end'])}" if v.get('start') else f"until {fmt(v['end'])}") if v.get('end') else f"since {fmt(v['start'])}"
     if 'value' in v:
-        return fmt(v['value'])
+        return (v['comparator'] if isinstance(v.get('comparator'), str) else '') + fmt(v['value'])
     if 'display' in v or 'reference' in v:
         return v.get('display') or v.get('reference', '')
     if 'family' in v or 'given' in v:

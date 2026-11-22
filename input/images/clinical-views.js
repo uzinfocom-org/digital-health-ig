@@ -150,7 +150,7 @@ function renderData(pane, m) {
     if (n.type === 'group' || (n.type === 'link' && n.children)) {
       rows += `<tr class="grp d${d > 1 ? 1 : 0}"><td colspan="3" style="padding-left:${12 + (d - 1) * 22}px">
         <div class="el"><div class="nm">${icon(n.type)}<span class="gname">${esc(n.label)}</span> <span style="font-weight:400">${tags(n)}</span></div>
-        ${n.desc ? `<div class="typ" style="font-size:13px">${esc(n.desc)}</div>` : ''}${path}</div></td></tr>`;
+        ${n.desc ? `<div class="typ" style="font-size:13px">${esc(n.desc)}</div>` : ''}${n.values ? `<div class="typ" style="font-size:13px">${n.values.map(esc).join(' · ')}</div>` : ''}${path}</div></td></tr>`;
       return;
     }
     rows += `<tr><td style="padding-left:${12 + (d - 1) * 22}px"><div class="el">
@@ -327,8 +327,8 @@ function control(n, v, id) {
     case 'datetime': return dateInput(id, v, '', true);
     case 'time': return `<input id="${id}" type="text" class="unit" placeholder="hh:mm" value="${esc(v.slice(0, 5))}">`;
     case 'bool': return `<input id="${id}" type="checkbox" ${v === 'true' ? 'checked' : ''}>`;
-    case 'count': return `<input id="${id}" type="number" class="num" min="0" value="${esc(v)}">`;
-    case 'decimal': return `<input id="${id}" type="number" class="num" step="any" value="${esc(v)}">`;
+    case 'count': return `<input id="${id}" type="number" class="num" min="${n.range?.[0] ?? 0}"${n.range?.[1] != null ? ` max="${n.range[1]}"` : ''} value="${esc(v)}">`;
+    case 'decimal': return `<input id="${id}" type="number" class="num" step="any"${n.range?.[0] != null ? ` min="${n.range[0]}"` : ''}${n.range?.[1] != null ? ` max="${n.range[1]}"` : ''} value="${esc(v)}">`;
     case 'quantity': { const [a, ...b] = v.split(' '); return `<input id="${id}" type="text" class="num" inputmode="decimal" value="${esc(a || '')}" aria-label="${esc(n.label)} amount"><input id="${id}-u" type="text" class="unit" placeholder="unit" value="${esc(b.join(' '))}" aria-label="${esc(n.label)} unit">`; }
     case 'ratio': { const cut = v.lastIndexOf(' / '), halves = cut >= 0 ? [v.slice(0, cut), v.slice(cut + 3)] : [v.split('/')[0], v.split('/').slice(1).join('/')], side = h => (h || '').trim().match(/^(\S+)(?:\s+(.+))?$/) || []; const [a, b] = halves.map(side); return `<input id="${id}" class="num" value="${esc(a[1] || '')}" aria-label="${esc(n.label)} numerator"><input id="${id}-a" class="unit" placeholder="unit" value="${esc(a[2] || '')}" aria-label="${esc(n.label)} numerator unit"><span class="sep">per</span><input id="${id}-b" class="num" value="${esc(b[1] || '')}" aria-label="${esc(n.label)} denominator"><input id="${id}-c" class="unit" placeholder="unit" value="${esc(b[2] || '')}" aria-label="${esc(n.label)} denominator unit">`; }
     case 'period': { const p = v.split(', ')[0], [from, to] = /^until /.test(p) ? ['', p.slice(6)] : /^since /.test(p) ? [p.slice(6), ''] : [p.split(' to ')[0], p.split(' to ')[1] || '']; const time = ![from, to].some(x => /^\d{4}-\d\d-\d\d$/.test(x)); return `${dateInput(id, from, n.label + ' from', time)}<span class="sep">to</span>${dateInput(id + '-b', to, n.label + ' to', time)}`; }
@@ -342,7 +342,7 @@ function formNode(n, d) {
     const lk = n.type === 'link';
     return `<div class="fs ${lk ? 'link' : ''} d${d > 1 ? 1 : 0} ${closed ? 'closed' : ''}" data-fs="${n.uid}">
       <button class="fh" aria-expanded="${!closed}"><span class="tw">▾</span>${icon(n.type)} ${esc(n.label)} ${n.card ? `<span class="car">[${esc(n.card)}]</span>` : ''}${lk ? `<span class="chip ref">${esc(n.target)}</span>` : ''}</button>
-      <div class="fb">${n.desc ? `<div class="note">${esc(n.desc)}</div>` : ''}${n.children.map(c => formNode(c, d + 1)).join('')}</div></div>`;
+      <div class="fb">${n.desc ? `<div class="note">${esc(n.desc)}</div>` : ''}${n.values ? `<div class="note">${n.values.map(esc).join(' · ')}</div>` : ''}${n.children.map(c => formNode(c, d + 1)).join('')}</div></div>`;
   }
   const o = occ(n.card);
   const ex = state.example ? n.fx || n.exs || (n.ex ? [n.ex] : []) : [];
