@@ -722,6 +722,9 @@ class Build:
                 return {'title': vs.get('title'), 'name': vs.get('name')}
             cs_file = self.cs_file(inc, f)
             cs = load(cs_file) if cs_file else {}
+            if not inc.get('concept') and not inc.get('filter') and not cs:
+                # the whole of a code system the packages do not hold
+                return {'title': vs.get('title'), 'name': vs.get('name')}
             concepts = {c['code']: c for c in flatten_concepts(cs.get('concept', []))}
             for c in inc.get('concept') or ([concepts[x] for x in picked if x in concepts] if picked is not None else concepts.values()):
                 full, key = concepts.get(c['code'], c), (inc['system'], c['code'])
@@ -792,12 +795,8 @@ class Profile:
 
     def _is_visible(self, e):
         eid = e['id']
-        if e.get('max') == '0':
+        if self.prohibited(e):
             return False
-        if eid.endswith('[x]') and e.get('type'):
-            barred = {(k.get('type') or [{}])[0].get('code') for k in self.kids.get(eid, []) if is_slice(k['id']) and k.get('max') == '0'}
-            if not {t.get('code') for t in e['type']} - barred:
-                return False
         if eid in self.hide or is_type_marker(self.by_id, eid):
             return False
         if eid in self.show:
@@ -839,7 +838,13 @@ class Profile:
             cur = par
 
     def types(self, e):
-        return list(dict.fromkeys(t['code'] for t in e.get('type', [])))
+        """The element's datatypes, less those a choice bars with a max-0 type slice."""
+        barred = {(k.get('type') or [{}])[0].get('code') for k in self.kids.get(e.get('id'), [])
+                  if is_slice(k['id']) and k.get('max') == '0'} if str(e.get('id', '')).endswith('[x]') else set()
+        return [t for t in dict.fromkeys(t['code'] for t in e.get('type', [])) if t not in barred]
+
+    def prohibited(self, e):
+        return e.get('max') == '0' or bool(e.get('type')) and not self.types(e)
 
     def example_type(self, eid):
         """The datatype a choice element has in the example, e.g. valueString -> string."""
@@ -930,7 +935,7 @@ class Profile:
             n = self.leaf(e)
         else:
             kids = [c for c in self.children(eid) if self.visible(c)]
-            plain_kids = [c for c in self.children(eid) if c.get('max') != '0' and not is_tech(c) and not is_slice(c['id'])
+            plain_kids = [c for c in self.children(eid) if not self.prohibited(c) and not is_tech(c) and not is_slice(c['id'])
                           and c['id'] not in self.hide]
             if not kids:
                 # an element shown without visible parts: show what it must contain, or else everything it can
@@ -1133,7 +1138,7 @@ class Profile:
         typ = 'link' if held_resource else TYPE_MAP.get(code, 'text')
         if code == 'CodeableReference':
             typ = 'coded' if binding.get('valueSet') else 'link'
-        conditional = not binding.get('valueSet') and any(a.get('valueSet') for a in binding.get('additional', []))
+        conditional = not binding.get('valueSet') and any(a.get('valueSet') for a in additional_bindings(binding))
         slice_systems = []
         if not binding.get('valueSet') and types[:1] == ['CodeableConcept']:
             for c in self.kids.get(eid + '.coding', []):
@@ -1175,7 +1180,7 @@ class Profile:
             n['values'] = [f"Any code from {self.b.system_title(sy)}" for sy in slice_systems]
         if conditional:
             # no value set of its own: one per condition, from R5 additional bindings
-            also = [self.additional_binding(a) for a in binding['additional'] if a.get('valueSet')]
+            also = [self.additional_binding(a) for a in additional_bindings(binding) if a.get('valueSet')]
             n['vs'] = dict(also[0], total='', **({'also': also[1:]} if also[1:] else {}))
             n['values'] = [f"When {a['when']}: {a['title']}" if a.get('when') else a['title'] for a in also]
         for b2, on2 in extra_parts:
@@ -1294,7 +1299,7 @@ class Profile:
         for x in self.els:
             parts = x['id'].split('.')
             if len(parts) > 1 and parts[1].split(':')[0] in ROOT_TECH or any(
-                    (self.by_id.get(pre) or {}).get('max') == '0' for i in range(2, len(parts) + 1)
+                    self.prohibited(self.by_id.get(pre) or {}) for i in range(2, len(parts) + 1)
                     for pre in {'.'.join(parts[:i]), re.sub(r':[^.]*$', '', '.'.join(parts[:i]))}):
                 continue
             cons = list(x.get('constraint', []))
@@ -1417,7 +1422,7 @@ class Profile:
         n['vs'] = {'title': title, 'strength': strength, 'url': url}
         if url in self.b.local_vs:
             n['vs']['page'] = f"ValueSet-{self.b.local_vs[url]}.html"
-        also = [self.additional_binding(a) for a in binding.get('additional', []) if a.get('valueSet')]
+        also = [self.additional_binding(a) for a in additional_bindings(binding) if a.get('valueSet')]
         if also:
             n['vs']['also'] = also
         if on:
@@ -1460,8 +1465,9 @@ class Profile:
         title = vs.get('title') or vs.get('name') or (f"Any code from {self.b.system_title(implicit)}"
                                                       if implicit else url.rstrip('/').split('/')[-1])
         out = {'title': title, 'strength': a.get('purpose', '')}
-        if a.get('shortDoco'):
-            out['note'] = a['shortDoco']
+        note = a.get('shortDoco') or (a.get('documentation') if len(a.get('documentation') or '') <= 120 else '')
+        if note:
+            out['note'] = note
         if url in self.b.local_vs:
             out['page'] = f"ValueSet-{self.b.local_vs[url]}.html"
         when = []
@@ -1832,6 +1838,27 @@ def as_list(v):
     return v if isinstance(v, list) else [] if v is None else [v]
 
 
+def additional_bindings(binding):
+    """R5 binding.additional, plus the R4 additional-binding, maxValueSet and minValueSet extensions in the same shape."""
+    out = list(binding.get('additional', []))
+    for x in binding.get('extension', []):
+        u = x.get('url', '')
+        if u.endswith('/elementdefinition-maxValueSet') or u.endswith('/elementdefinition-minValueSet'):
+            vs = x.get('valueCanonical') or x.get('valueUri')
+            if vs:
+                out.append({'purpose': 'maximum' if 'max' in u.rpartition('-')[2] else 'minimum', 'valueSet': vs})
+        elif u == 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding':
+            a = {}
+            for p in x.get('extension', []):
+                k, v = p.get('url'), choice(p, 'value')
+                if k == 'usage':
+                    a.setdefault('usage', []).append(v)
+                elif k in ('purpose', 'valueSet', 'documentation', 'shortDoco', 'any'):
+                    a[k] = v
+            out.append(a)
+    return out
+
+
 def choice(o, key):
     """o[key], or for a choice element (value -> valueQuantity) the typed key."""
     if key in o:
@@ -1846,8 +1873,8 @@ def codings_in(v):
     elif isinstance(v, dict):
         if isinstance(v.get('code'), str) and isinstance(v.get('system'), str):
             yield v
-        for k in ('coding', 'concept', 'valueCodeableConcept', 'valueCoding'):
-            if k in v:
+        for k in ('coding', 'concept', 'valueCodeableConcept', 'valueCoding', 'code'):
+            if isinstance(v.get(k), (dict, list)):
                 yield from codings_in(v[k])
 
 
