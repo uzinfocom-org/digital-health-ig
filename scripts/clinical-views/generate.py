@@ -527,7 +527,13 @@ class Build:
                     self._pkg.setdefault(r['url'], f)
             self._own = dict(self._pkg)
             deps = [f'hl7.fhir.{core}.core#{fv}']
-            deps += [f"{d['packageId']}#{d['version']}" for d in self.ig.get('dependsOn', []) if 'packageId' in d]
+            for d in self.ig.get('dependsOn', []):
+                if d.get('version'):
+                    deps.append(f"{d['packageId']}#{d['version']}")
+                elif d.get('packageId'):
+                    cached = sorted((x.name for pd in self.package_dirs for x in pd.glob(f"{d['packageId']}#*") if (x / 'package').is_dir()),
+                                    key=lambda n: [int(v) if v.isdigit() else 0 for v in n.split('#')[1].replace('-', '.').split('.')])
+                    deps += cached[-1:]
             for dep in deps:
                 pkg = next((d / dep / 'package' for d in self.package_dirs if (d / dep / 'package').is_dir()), None)
                 if not pkg and dep == deps[0]:
@@ -577,13 +583,12 @@ class Build:
                             self._supplements.setdefault(cs['supplements'].split('|')[0], []).append(cs)
                     else:
                         self._local_cs[cs.get('url')] = f
-            f = self._local_cs.get(system) or self.packages().get(system)
+            f = self._local_cs.get(system) or self.cs_file({'system': system}) or self.packages().get(system)
             if f:
                 cs = load(Path(f))
                 self.cache[key] = {c['code']: en_display(c, cs) for c in flatten_concepts(cs.get('concept', [])) if 'code' in c}
-                pick = load(Path(self.cs_file({'system': system}) or f)) if system not in self._local_cs else cs
-                if pick.get('content') == 'complete':
-                    self.cache[('complete', system)] = sum(1 for c in flatten_concepts(pick.get('concept', []))
+                if cs.get('content') == 'complete':
+                    self.cache[('complete', system)] = sum(1 for c in flatten_concepts(cs.get('concept', []))
                                                            if 'code' in c and not unusable(c))
                 if (cs.get('language') or 'en')[:2] != 'en':
                     self.cache[('en', system)] = {c['code'] for c in flatten_concepts(cs.get('concept', [])) if 'code' in c
@@ -1456,6 +1461,10 @@ class Profile:
             self.b.display(system, '')
         complete = system and self.b.cache.get(('complete', system)) == total
         count = (f'{total}+' if total else '') if truncated(vs) and total <= len(contains) and not complete else total
+        dropped = sum(1 for c in contains if unusable(c))
+        if truncated(vs) and dropped and not complete and total > len(contains):
+            total -= dropped
+            count = f'up to {total}'
         n['vs']['total'] = count
         shown = [c.get('display') or c['code'] for c in contains if not unusable(c)]
         vals = n.setdefault('values', [])
