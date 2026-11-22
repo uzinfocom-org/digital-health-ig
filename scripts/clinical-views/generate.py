@@ -581,8 +581,10 @@ class Build:
             if f:
                 cs = load(Path(f))
                 self.cache[key] = {c['code']: en_display(c, cs) for c in flatten_concepts(cs.get('concept', [])) if 'code' in c}
-                if cs.get('content') == 'complete':
-                    self.cache[('complete', system)] = len(self.cache[key])
+                pick = load(Path(self.cs_file({'system': system}) or f)) if system not in self._local_cs else cs
+                if pick.get('content') == 'complete':
+                    self.cache[('complete', system)] = sum(1 for c in flatten_concepts(pick.get('concept', []))
+                                                           if 'code' in c and not unusable(c))
                 if (cs.get('language') or 'en')[:2] != 'en':
                     self.cache[('en', system)] = {c['code'] for c in flatten_concepts(cs.get('concept', [])) if 'code' in c
                                                   and en_display(c, cs) != c.get('display')}
