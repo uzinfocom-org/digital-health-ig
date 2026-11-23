@@ -697,6 +697,25 @@ td pre { border-radius: 8px; box-shadow: none; margin: 4px 0; padding: 8px 10px;
 :root[data-theme="dark"] #form-status, :root[data-theme="dark"] #ig-status-line, :root[data-theme="dark"] .ig-type, :root[data-theme="dark"] .ig-details span, :root[data-theme="dark"] #segment-content #ig-types button span { color: var(--dhp-muted-fg); }
 :root[data-theme="dark"] .ig-table mark { color: var(--dhp-fg); background: rgba(255, 171, 0, 0.32); }
 
+/* PlantUML diagrams: inline SVGs with a fixed light palette, mapped onto dark tokens */
+:root[data-theme="dark"] svg[contentStyleType] { background: transparent !important; }
+:root[data-theme="dark"] svg[contentStyleType] text { fill: var(--dhp-fg-body); }
+:root[data-theme="dark"] svg[contentStyleType] text[fill="#00F" i], :root[data-theme="dark"] svg[contentStyleType] text[fill="#0000FF" i] { fill: var(--dhp-link); }
+:root[data-theme="dark"] svg[contentStyleType] [style*="stroke:#"] { stroke: var(--dhp-muted-fg) !important; }
+:root[data-theme="dark"] svg[contentStyleType] polygon[fill="#181818"], :root[data-theme="dark"] svg[contentStyleType] ellipse[fill="#222" i],
+:root[data-theme="dark"] svg[contentStyleType] ellipse[fill="#222222" i] { fill: var(--dhp-muted-fg); }
+:root[data-theme="dark"] svg[contentStyleType] [fill="#E2E2F0" i] { fill: #212b36; }
+:root[data-theme="dark"] svg[contentStyleType] [fill="#FFF" i], :root[data-theme="dark"] svg[contentStyleType] [fill="#FFFFFF" i] { fill: var(--dhp-bg); }
+:root[data-theme="dark"] svg[contentStyleType] [fill="#EEE" i], :root[data-theme="dark"] svg[contentStyleType] [fill="#EEEEEE" i],
+:root[data-theme="dark"] svg[contentStyleType] [fill="#F1F1F1" i], :root[data-theme="dark"] svg[contentStyleType] [fill="#ECEFF1" i],
+:root[data-theme="dark"] svg[contentStyleType] [fill="#DDD" i], :root[data-theme="dark"] svg[contentStyleType] [fill="#DDDDDD" i] { fill: rgba(145, 158, 171, 0.16); }
+:root[data-theme="dark"] svg[contentStyleType] [fill="#FEFFDD" i], :root[data-theme="dark"] svg[contentStyleType] [fill="#FEF7E0" i],
+:root[data-theme="dark"] svg[contentStyleType] [fill="#FFF3E0" i] { fill: rgba(255, 171, 0, 0.16); }
+:root[data-theme="dark"] svg[contentStyleType] [fill="#E8F0FE" i] { fill: rgba(0, 184, 217, 0.16); }
+:root[data-theme="dark"] svg[contentStyleType] [fill="#E6F4EA" i] { fill: rgba(34, 197, 94, 0.16); }
+:root[data-theme="dark"] svg[contentStyleType] [fill="#F3E8FD" i] { fill: rgba(142, 51, 255, 0.2); }
+:root[data-theme="dark"] svg[contentStyleType] [fill="#FCE8E6" i] { fill: rgba(255, 86, 48, 0.16); }
+
 /* Document Bundle narratives */
 :root[data-theme="dark"] #segment-content div[style*="solid maroon"][style*="#f2faf9"] { background-color: var(--dhp-surface) !important; border-color: var(--dhp-border) !important; border-radius: 8px; }
 :root[data-theme="dark"] #segment-content div[style*="#661aff"][style*="#e6e6ff"] { background-color: var(--dhp-accent) !important; border-color: var(--dhp-primary-40) !important; border-radius: 8px; }
