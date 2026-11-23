@@ -8,6 +8,10 @@
 
 Все ссылки на Substance и SubstanceDefinition в профилях UZ Core теперь указывают на [UZ Core Substance](StructureDefinition-uz-core-substance.html) или [UZ Core SubstanceDefinition](StructureDefinition-uz-core-substancedefinition.html): Specimen, SupplyDelivery, AdverseEvent и PlanDefinition.
 
+#### Несовместимые изменения
+
+[Номер регистрационного удостоверения](NamingSystem-registration-certificate-id.html) и [ID групповой упаковки UzPharm](NamingSystem-uz-pharm-box-id.html) меняют URI на `https://uzpharminfo.uz/registrationNumber` и `https://uzpharminfo.uz/boxGroupId` — те, что уже передаёт загрузчик реестра Фармкомитета. Идентификатор [UZ Core Medication](StructureDefinition-uz-core-medication.html) со старым URI `registration_number` или `box_group_id` больше не попадает в свой срез, а поиск по идентификатору должен использовать новые URI.
+
 ### Версия 0.13.0
 
 #### Добавлено

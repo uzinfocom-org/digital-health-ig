@@ -29,7 +29,7 @@ Medication yozuvlari bemorga tegishli yozuvlar emas, balki umumiy katalog yozuvl
 
 ```
 # by national identifier - the reliable match
-GET [base]/Medication?identifier=https://uzpharminfo.uz/registration_number|UZ/MED/2024/00123
+GET [base]/Medication?identifier=https://uzpharminfo.uz/registrationNumber|UZ/MED/2024/00123
 GET [base]/Medication?identifier=https://mobile-api.aslbelgisi.uz/gtin|04780123456789
 GET [base]/Medication?identifier=https://mobile-api.aslbelgisi.uz/marking|010478012345678921AbC9xQ
 
@@ -81,7 +81,7 @@ Ro'yxatdan o'tgan mahsulot bunga qo'shimcha ravishda kamida bitta `identifier` b
   "identifier": [
     {
       "use": "official",
-      "system": "https://uzpharminfo.uz/registration_number",
+      "system": "https://uzpharminfo.uz/registrationNumber",
       "value": "UZ/MED/2024/00123"
     }
   ],
@@ -98,7 +98,7 @@ Ro'yxatdan o'tgan mahsulot bunga qo'shimcha ravishda kamida bitta `identifier` b
 }
 ```
 
-Ushbu identifikatorni ro'yxatga olish guvohnomasi raqamiga aylantiradigan narsa - uning `system` URI si, ya'ni `registration_number` bilan tugaydigani. `use` har bir slaysda `official` sifatida qat'iy belgilangan. `code` [dori vositalari tasnifi qiymatlar to'plamiga](ValueSet-medication-classification-vs.html) `required` sifatida bog'langan: INN kodi faol moddani nomlaydi, ATC kodi (`http://www.whocc.no/atc`) mahsulotni JSST tasnifiga joylashtiradi, va ikkalasini alohida coding sifatida yuborishingiz mumkin. `status` - `active` / `inactive` / `entered-in-error`.
+Ushbu identifikatorni ro'yxatga olish guvohnomasi raqamiga aylantiradigan narsa - uning `system` URI si, ya'ni `registrationNumber` bilan tugaydigani. `use` har bir slaysda `official` sifatida qat'iy belgilangan. `code` [dori vositalari tasnifi qiymatlar to'plamiga](ValueSet-medication-classification-vs.html) `required` sifatida bog'langan: INN kodi faol moddani nomlaydi, ATC kodi (`http://www.whocc.no/atc`) mahsulotni JSST tasnifiga joylashtiradi, va ikkalasini alohida coding sifatida yuborishingiz mumkin. `status` - `active` / `inactive` / `entered-in-error`.
 
 #### Ro'yxatdan o'tgan mahsulot
 
@@ -112,7 +112,7 @@ Amalda siz mahsulotni reyestr qanday tavsiflasa, shunday tavsiflaysiz: uning `do
   "identifier": [
     {
       "use": "official",
-      "system": "https://uzpharminfo.uz/registration_number",
+      "system": "https://uzpharminfo.uz/registrationNumber",
       "value": "UZ/MED/2024/00123"
     },
     {
@@ -162,11 +162,11 @@ Mahsulot beshtagacha identifikatorga ega bo'lishi mumkin; faqat o'zingizda borla
 
 | Identifikator | `system` | Kim beradi |
 |---|---|---|
-| [Ro'yxatga olish guvohnomasi raqami](NamingSystem-registration-certificate-id.html) | `https://uzpharminfo.uz/registration_number` | Sog'liqni saqlash vazirligi, dorini ro'yxatdan o'tkazishda |
+| [Ro'yxatga olish guvohnomasi raqami](NamingSystem-registration-certificate-id.html) | `https://uzpharminfo.uz/registrationNumber` | Sog'liqni saqlash vazirligi, dorini ro'yxatdan o'tkazishda |
 | [GTIN](NamingSystem-global-trade-item-id.html) | `https://mobile-api.aslbelgisi.uz/gtin` | GS1, qadoqdagi global savdo birligi raqami |
 | [Asl Belgisi markirovka identifikatori](NamingSystem-uz-marking-id.html) | `https://mobile-api.aslbelgisi.uz/marking` | Milliy kuzatuv tizimi, har bir seriyalashtirilgan qadoq uchun |
 | [IKPU mahsulot/xizmat kodi](NamingSystem-product-service-id.html) | `https://uzpharminfo.uz/icps` | Milliy mahsulot va xizmatlar tasniflagichi |
-| [UzPharm guruh qadog'i identifikatori](NamingSystem-uz-pharm-box-id.html) | `https://uzpharminfo.uz/box_group_id` | Kuzatuv tizimi, seriyalashtirilgan qadoqlarni karton qutiga birlashtiradi |
+| [UzPharm guruh qadog'i identifikatori](NamingSystem-uz-pharm-box-id.html) | `https://uzpharminfo.uz/boxGroupId` | Kuzatuv tizimi, seriyalashtirilgan qadoqlarni karton qutiga birlashtiradi |
 
 Ro'yxatga olish guvohnomasi, GTIN va IKPU kodi *mahsulotni* tavsiflaydi va har bir qadoqda bir xil; markirovka identifikatori va guruh qadog'i identifikatori *jismoniy qadoq yoki qutini* tavsiflaydi va har bir birlik uchun farq qiladi. Sizga faqat katalog yozuvi kerak bo'lsa, mahsulot darajasidagi identifikatorlarni yuboring.
 
@@ -182,7 +182,7 @@ Tarkib muhim bo'lganda - kombinatsiyalangan mahsulot yoki dozaga mos kelishi sha
   "identifier": [
     {
       "use": "official",
-      "system": "https://uzpharminfo.uz/registration_number",
+      "system": "https://uzpharminfo.uz/registrationNumber",
       "value": "UZ/MED/2024/00123"
     }
   ],

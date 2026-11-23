@@ -28,7 +28,7 @@ GET [base]/MedicationKnowledge?identifier=https://dhp.uz/fhir/core/sid/doc/uz/me
 
 # by product - the entry for a Medication you already have, or for its registration number
 GET [base]/MedicationKnowledge?associated-medication=Medication/example-medication
-GET [base]/MedicationKnowledge?associated-medication.identifier=https://uzpharminfo.uz/registration_number|UZ/MED/2024/00123
+GET [base]/MedicationKnowledge?associated-medication.identifier=https://uzpharminfo.uz/registrationNumber|UZ/MED/2024/00123
 
 # active entries, or entries with a price from a given source
 GET [base]/MedicationKnowledge?status=active

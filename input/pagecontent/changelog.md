@@ -8,6 +8,10 @@
 
 Every reference to a Substance or SubstanceDefinition in UZ Core profiles now targets [UZ Core Substance](StructureDefinition-uz-core-substance.html) or [UZ Core SubstanceDefinition](StructureDefinition-uz-core-substancedefinition.html): Specimen, SupplyDelivery, AdverseEvent and PlanDefinition.
 
+#### Breaking changes
+
+[Registration certificate number](NamingSystem-registration-certificate-id.html) and [UzPharm box group ID](NamingSystem-uz-pharm-box-id.html) change their URIs to `https://uzpharminfo.uz/registrationNumber` and `https://uzpharminfo.uz/boxGroupId`, the ones the Pharmaceutical Committee registry loader already sends. A [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifier with the old `registration_number` or `box_group_id` URI no longer falls into its slice, and searches by identifier must use the new URIs.
+
 ### Version 0.13.0
 
 #### Added
