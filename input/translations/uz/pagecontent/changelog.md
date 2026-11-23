@@ -1,3 +1,13 @@
+### Ishlab chiqilmoqda
+
+#### Qo'shildi
+
+[UZ Core Substance](StructureDefinition-uz-core-substance.html) sanitariya-epidemiologik tekshiruv uchun olingan modda qismini - oziq-ovqat mahsuloti, suv yoki sirtdan olingan surtmani - [namuna raqami](NamingSystem-uzb-substance-sample-number.html) va [partiya raqami](NamingSystem-uzb-substance-lot-number.html), yaroqlilik muddati, olingan miqdori va e'lon qilingan tarkibi bilan ifodalaydi. U [UZ Core SubstanceDefinition](StructureDefinition-uz-core-substancedefinition.html) ga havola qiladi - bu SNOMED CT yoki milliy kodi, o'zbekcha va ruscha nomlari, toifasi va ishlab chiqaruvchisi bilan moddalar va namuna olish obyektlari ma'lumotnomasining yozuvi bo'lib, yangi [modda ta'rifi identifikatori](NamingSystem-uzb-substance-definition-number.html) bilan aniqlanadi. [Modda nomlari](ValueSet-substance-names-vs.html) qiymatlar to'plami LIS SES namuna nomlari ro'yxatini o'zbekcha va ruscha nomlari yangi [SNOMED CT qo'shimchasida](CodeSystem-substance-names-snomed-cs.html) berilgan 542 ta SNOMED CT konsepti hamda SNOMED CT konsepti bo'lmagan nomlar uchun yangi [modda nomlari](CodeSystem-substance-names-cs.html) kod tizimidagi LIS SES namuna toifalari bo'yicha guruhlangan, o'zbekcha, ruscha va inglizcha nomli 477 ta milliy kod bilan kodlaydi. Ular bilan birga HL7 [modda holati](ValueSet-substance-status-vs.html) kodlarining o'zbekcha va ruscha tarjimalari qo'shildi, [modda namunasi toifalari](ValueSet-substance-sample-category-vs.html) qiymatlar to'plami esa namuna turini - suv, havo, tuproq yoki oziq-ovqat mahsulotlari - o'zbekcha va ruscha nomlari yangi [SNOMED CT qo'shimchasida](CodeSystem-substance-sample-category-cs.html) berilgan SNOMED CT konseptlari bilan kodlaydi. Ikkala profil sahifasida ham kirish qismi va Tez boshlash bo'limi mavjud.
+
+#### O'zgartirildi
+
+UZ Core profillaridagi Substance va SubstanceDefinition ga barcha havolalar endi [UZ Core Substance](StructureDefinition-uz-core-substance.html) yoki [UZ Core SubstanceDefinition](StructureDefinition-uz-core-substancedefinition.html) ga yo'naltirilgan: Specimen, SupplyDelivery, AdverseEvent va PlanDefinition.
+
 ### Versiya 0.13.0
 
 #### Qo'shildi

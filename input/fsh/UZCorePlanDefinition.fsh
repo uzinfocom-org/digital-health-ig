@@ -40,7 +40,7 @@ Description: "Uzbekistan Core PlanDefinition profile, used to represent national
 * subjectReference only Reference(
     Group or
     MedicinalProductDefinition or
-    SubstanceDefinition or
+    UZCoreSubstanceDefinition or
     AdministrableProductDefinition or
     ManufacturedItemDefinition or
     PackagedProductDefinition

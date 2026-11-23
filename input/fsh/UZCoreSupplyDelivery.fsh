@@ -52,7 +52,7 @@ Description: "Uzbekistan Core SupplyDelivery profile, used to record the deliver
 * suppliedItem MS
 * suppliedItem.quantity MS
 * suppliedItem.item[x] MS
-* suppliedItem.item[x] only CodeableConcept or Reference(UZCoreMedication or Substance or UZCoreDevice or UZCoreBiologicallyDerivedProduct or NutritionProduct or InventoryItem)
+* suppliedItem.item[x] only CodeableConcept or Reference(UZCoreMedication or UZCoreSubstance or UZCoreDevice or UZCoreBiologicallyDerivedProduct or NutritionProduct or InventoryItem)
 
 
 Instance: example-blood-product-supply-delivery

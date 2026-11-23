@@ -843,3 +843,57 @@ Usage: #definition
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $charge-item-identifier
 * uniqueId[=].preferred = true
+
+Instance: uzb-substance-sample-number
+InstanceOf: NamingSystem
+Description: "Identifiers of substance samples taken for sanitary and epidemiological examination in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-substance-sample-number"
+* name = "UzbekistanSubstanceSampleNumber"
+* status = #active
+* kind = #identifier
+* date = "2026-11-18"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for the identifiers that the sanitary and epidemiological laboratory information system (LIS SES) assigns to a sample of a substance when the sample is added to a sampling act."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in Substance.identifier.system for the sample identifier, to track, match and reference the sampled portion of a substance across systems."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $substance-sample-number
+* uniqueId[=].preferred = true
+
+Instance: uzb-substance-lot-number
+InstanceOf: NamingSystem
+Description: "Batch (lot) numbers of sampled substances and products in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-substance-lot-number"
+* name = "UzbekistanSubstanceLotNumber"
+* status = #active
+* kind = #identifier
+* date = "2026-11-18"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for the batch (lot or series) number of a product or substance from which a sample is taken for sanitary and epidemiological examination, as printed by the manufacturer."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in Substance.identifier.system for the batch number of the sampled product. A batch number is unique only within its manufacturer: identify the manufacturer through the SubstanceDefinition the Substance points to."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $substance-lot-number
+* uniqueId[=].preferred = true
+
+Instance: uzb-substance-definition-number
+InstanceOf: NamingSystem
+Description: "Identifiers of entries in the reference list of substance and sample names in Uzbekistan"
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-substance-definition-number"
+* name = "UzbekistanSubstanceDefinitionIdentifier"
+* status = #active
+* kind = #identifier
+* date = "2026-11-18"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan"
+* description = "Naming system for the numbers of entries in the reference list of sample names kept by the sanitary and epidemiological laboratory information system (LIS SES)."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Used in SubstanceDefinition.identifier.system for the number of the reference list entry the definition represents."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $substance-definition-number
+* uniqueId[=].preferred = true

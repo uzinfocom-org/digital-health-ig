@@ -1,3 +1,13 @@
+### In development
+
+#### Added
+
+[UZ Core Substance](StructureDefinition-uz-core-substance.html) represents a portion of a substance sampled for sanitary and epidemiological examination - a food product, water or a swabbed surface - with its [sample number](NamingSystem-uzb-substance-sample-number.html) and [batch number](NamingSystem-uzb-substance-lot-number.html), expiry date, the amount taken and the declared composition. It points to a [UZ Core SubstanceDefinition](StructureDefinition-uz-core-substancedefinition.html), an entry of the reference list of substances and sampling objects with its SNOMED CT or national code, Uzbek and Russian names, category and manufacturer, identified by a new [substance definition identifier](NamingSystem-uzb-substance-definition-number.html). The [substance name](ValueSet-substance-names-vs.html) value set codes the LIS SES list of sample names with 542 SNOMED CT concepts, which have Uzbek and Russian names in a new [SNOMED CT supplement](CodeSystem-substance-names-snomed-cs.html), and with 477 national codes, grouped by LIS SES sample category and with Uzbek, Russian and English names, in the new [substance names](CodeSystem-substance-names-cs.html) code system for the names that have no SNOMED CT concept. Uzbek and Russian translations of the HL7 [substance status](ValueSet-substance-status-vs.html) codes come with them, and the [substance sample category](ValueSet-substance-sample-category-vs.html) value set codes the kind of sample - water, air, soil or food products - with SNOMED CT concepts that have Uzbek and Russian names in a new [SNOMED CT supplement](CodeSystem-substance-sample-category-cs.html). Both profile pages have the narrative intro and Quick Start.
+
+#### Changed
+
+Every reference to a Substance or SubstanceDefinition in UZ Core profiles now targets [UZ Core Substance](StructureDefinition-uz-core-substance.html) or [UZ Core SubstanceDefinition](StructureDefinition-uz-core-substancedefinition.html): Specimen, SupplyDelivery, AdverseEvent and PlanDefinition.
+
 ### Version 0.13.0
 
 #### Added
@@ -509,6 +519,7 @@ A new term has been added to [DisabilityCS](CodeSystem-disability-cs.html):
 - `#regis0011.00005` "Disability not established"
 
 For [UZ Core Encounter](StructureDefinition-uz-core-encounter.html), a new [AdmitSourceLocalCS](CodeSystem-admit-source-local-cs.html) code system has been created with the following codes:
+
 - `#mserv-0006-00001` "Without referral / Self-referred"
 - `#mserv-0006-00002` "Dispensary"
 - `#mserv-0006-00003` "District psychiatry service"
@@ -523,12 +534,14 @@ For [UZ Core Encounter](StructureDefinition-uz-core-encounter.html), [EncounterP
 For [UZ Core Encounter](StructureDefinition-uz-core-encounter.html), a new [ReAdmissionLocalCS](CodeSystem-re-admission-local-cs.html) code system has been created for readmission cases (e.g., `#first-time`, `#repeat-current-year`).
 
 For [UZ Core Encounter](StructureDefinition-uz-core-encounter.html), [EncounterDischargeDispositionHomeCS](CodeSystem-encounter-discharge-disposition-home-cs.html) has been expanded with new codes:
+
 - `#mserv-0004-00004` "Discharged"
 - `#mserv-0004-00002` "Died"
 - `#mserv-0004-00005` "Transferred to Ministry of Internal Affairs facility"
 - `#mserv-0004-00006` "Moved to a charity home (residential care facility)"
 
 For [UZ Core Encounter](StructureDefinition-uz-core-encounter.html), a new [EncounterLocalSubjectStatusCS](CodeSystem-encounter-local-subject-status-cs.html) code system has been created to represent patient status:
+
 - `#loc-cs-001` "Recovered"
 - `#loc-cs-002` "Improved"
 - `#loc-cs-003` "Unchanged"

@@ -1,0 +1,6695 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SubstanceNamesCS",
+  "id": "substance-names-cs",
+  "title": "Substance name",
+  "description": "National codes for the substances and sampling objects that samples are taken from for sanitary and epidemiological laboratory examination and that have no SNOMED CT concept, from the LIS SES reference list of sample names. The first number part of each code is the LIS SES sample category, the second is the number of the name within that category",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs",
+  "concept": [
+    {
+      "code": "subname_0001_0002",
+      "display": "Vinoli kokteyllar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Винные коктейли"
+        },
+        {
+          "language": "en",
+          "value": "Wine cocktails"
+        }
+      ]
+    },
+    {
+      "code": "subname_0001_0007",
+      "display": "Meva-rezavor vinosi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вино плодово-ягодное (фруктовое)"
+        },
+        {
+          "language": "en",
+          "value": "Fruit and berry wine"
+        }
+      ]
+    },
+    {
+      "code": "subname_0001_0008",
+      "display": "Vinomateriallar va susle",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Виноматериалы и сусло"
+        },
+        {
+          "language": "en",
+          "value": "Wine materials and must"
+        }
+      ]
+    },
+    {
+      "code": "subname_0001_0013",
+      "display": "Djin ichimliklari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Джиновые напитки"
+        },
+        {
+          "language": "en",
+          "value": "Gin-based drinks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0001_0019",
+      "display": "Grappa",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Граппа"
+        },
+        {
+          "language": "en",
+          "value": "Grappa"
+        }
+      ]
+    },
+    {
+      "code": "subname_0001_0023",
+      "display": "Nalivkalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Наливки"
+        },
+        {
+          "language": "en",
+          "value": "Fruit liqueurs (nalivka)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0001_0024",
+      "display": "Shirin nastoykalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Настойки сладкие"
+        },
+        {
+          "language": "en",
+          "value": "Sweet tinctures"
+        }
+      ]
+    },
+    {
+      "code": "subname_0001_0025",
+      "display": "Achchiq nastoykalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Настойки горькие"
+        },
+        {
+          "language": "en",
+          "value": "Bitter tinctures"
+        }
+      ]
+    },
+    {
+      "code": "subname_0001_0026",
+      "display": "Balzamlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бальзамы"
+        },
+        {
+          "language": "en",
+          "value": "Balsams"
+        }
+      ]
+    },
+    {
+      "code": "subname_0001_0027",
+      "display": "Perri (nokli)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Перри (грушевый)"
+        },
+        {
+          "language": "en",
+          "value": "Perry (pear)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0001_0046",
+      "display": "Uzum sharbati, vino, sidr, perri va mevali vino",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Виноградный сок, вино, сидр, перри и фруктовое вино"
+        },
+        {
+          "language": "en",
+          "value": "Grape juice, wine, cider, perry and fruit wine"
+        }
+      ]
+    },
+    {
+      "code": "subname_0002_0010",
+      "display": "Kvas",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Квас"
+        },
+        {
+          "language": "en",
+          "value": "Kvass"
+        }
+      ]
+    },
+    {
+      "code": "subname_0002_0011",
+      "display": "Kisellar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кисели"
+        },
+        {
+          "language": "en",
+          "value": "Kissels"
+        }
+      ]
+    },
+    {
+      "code": "subname_0002_0012",
+      "display": "Ichimlik tayyorlash uchun konsentratlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Концентраты для приготовления напитков"
+        },
+        {
+          "language": "en",
+          "value": "Concentrates for making drinks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0002_0013",
+      "display": "Ichimlik tayyorlash uchun ekstraktlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Экстракты для приготовления напитков"
+        },
+        {
+          "language": "en",
+          "value": "Extracts for making drinks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0002_0014",
+      "display": "Iste'mol muz",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лёд пищевой"
+        },
+        {
+          "language": "en",
+          "value": "Food ice"
+        }
+      ]
+    },
+    {
+      "code": "subname_0002_0019",
+      "display": "O'tlar va ziravorlardan alkogolsiz ichimliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Напитки безалкогольные на травах и пряностях"
+        },
+        {
+          "language": "en",
+          "value": "Herbal and spice soft drinks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0002_0022",
+      "display": "O'simlik suti (Suli)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Растительное молоко (Овсяное)"
+        },
+        {
+          "language": "en",
+          "value": "Plant-based milk (oat)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0002_0023",
+      "display": "O'simlik suti (Bodom)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Растительное молоко (Миндальное)"
+        },
+        {
+          "language": "en",
+          "value": "Plant-based milk (almond)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0002_0027",
+      "display": "Quruq (kukunsimon) ichimlik aralashmalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухие смеси для напитков (порошкообразные)"
+        },
+        {
+          "language": "en",
+          "value": "Dry drink mixes (powdered)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0002_0030",
+      "display": "Alkogolsiz energetik ichimliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Энергетические напитки безалкогольные"
+        },
+        {
+          "language": "en",
+          "value": "Non-alcoholic energy drinks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0011",
+      "display": "Tayyor ikkinchi taomlar (Shashlik)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Готовые вторые блюда (Шашлык)"
+        },
+        {
+          "language": "en",
+          "value": "Ready main courses (shashlik)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0012",
+      "display": "Tayyor ikkinchi taomlar (Kotlet)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Готовые вторые блюда (Котлеты)"
+        },
+        {
+          "language": "en",
+          "value": "Ready main courses (cutlets)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0013",
+      "display": "Tayyor ikkinchi taomlar (Garnir)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Готовые вторые блюда (Гарниры)"
+        },
+        {
+          "language": "en",
+          "value": "Ready main courses (side dishes)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0016",
+      "display": "Tayyor birinchi taomlar (Lag'mon)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Готовые первые блюда (Лагман)"
+        },
+        {
+          "language": "en",
+          "value": "Ready first courses (lagman)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0025",
+      "display": "To'ldirgichli xamirli mahsulotlar (Piroshki)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Изделия из теста с начинкой (Пирожки)"
+        },
+        {
+          "language": "en",
+          "value": "Filled dough products (pirozhki)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0027",
+      "display": "To'ldirgichli xamirli mahsulotlar (Cheburek)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Изделия из теста с начинкой (Чебуреки)"
+        },
+        {
+          "language": "en",
+          "value": "Filled dough products (chebureki)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0028",
+      "display": "To'ldirgichli xamirli mahsulotlar (Balish)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Изделия из теста с начинкой (Бэлиш)"
+        },
+        {
+          "language": "en",
+          "value": "Filled dough products (belish)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0037",
+      "display": "Hamirdan tayyorlangan kulinariya mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кулинарные изделия из теста"
+        },
+        {
+          "language": "en",
+          "value": "Culinary dough products"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0046",
+      "display": "Xamir yarim tayyor mahsulotlari (Xamir)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полуфабрикаты тестовые (Тесто)"
+        },
+        {
+          "language": "en",
+          "value": "Semi-finished dough products (dough)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0047",
+      "display": "Xamir yarim tayyor mahsulotlari (Xom non)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полуфабрикаты тестовые (Лепёшки сырые)"
+        },
+        {
+          "language": "en",
+          "value": "Semi-finished dough products (raw flatbreads)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0048",
+      "display": "Xamir yarim tayyor mahsulotlari (Pitssa zagotovkalari)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полуфабрикаты тестовые (Заготовки для пиццы)"
+        },
+        {
+          "language": "en",
+          "value": "Semi-finished dough products (pizza bases)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0054",
+      "display": "Shavurma",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шаурма"
+        },
+        {
+          "language": "en",
+          "value": "Shawarma"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0056",
+      "display": "To'ldirgichli non mahsulotlari (Shirin)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хлебобулочные изделия с начинкой (Сладкие)"
+        },
+        {
+          "language": "en",
+          "value": "Filled bakery products (sweet)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0057",
+      "display": "To'ldirgichli non mahsulotlari (Go'shtli)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хлебобулочные изделия с начинкой (Мясные)"
+        },
+        {
+          "language": "en",
+          "value": "Filled bakery products (meat)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0058",
+      "display": "Sovuq gazaklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Холодные закуски"
+        },
+        {
+          "language": "en",
+          "value": "Cold appetisers"
+        }
+      ]
+    },
+    {
+      "code": "subname_0003_0059",
+      "display": "Tayyor tilimlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нарезки готовые"
+        },
+        {
+          "language": "en",
+          "value": "Ready sliced foods"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0002",
+      "display": "Kichik yoshdagi bolalar uchun tayyor taomlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Готовые блюда для детей раннего возраста"
+        },
+        {
+          "language": "en",
+          "value": "Ready meals for young children"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0005",
+      "display": "Bolalar uchun maxsus mahsulotlar (davo-profilaktika)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детские специализированные продукты (лечебно-профилактические)"
+        },
+        {
+          "language": "en",
+          "value": "Specialised children's products (therapeutic and preventive)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0014",
+      "display": "Bolalar uchun qatiq mahsulotlari (Biolakt)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кисломолочные продукты детские (Биолакт)"
+        },
+        {
+          "language": "en",
+          "value": "Children's fermented milk products (biolact)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0015",
+      "display": "Bolalar uchun qatiq mahsulotlari (Atsidofilin)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кисломолочные продукты детские (Ацидофилин)"
+        },
+        {
+          "language": "en",
+          "value": "Children's fermented milk products (acidophilin)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0017",
+      "display": "Bolalar morslari va kompotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морсы и компоты детские"
+        },
+        {
+          "language": "en",
+          "value": "Children's morses and compotes"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0018",
+      "display": "Bolalar uchun nektarlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нектары детские"
+        },
+        {
+          "language": "en",
+          "value": "Children's nectars"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0019",
+      "display": "Bolalar pechenyesi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Печенье детское"
+        },
+        {
+          "language": "en",
+          "value": "Children's biscuits"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0021",
+      "display": "Go'sht",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Продукты прикорма на мясной"
+        },
+        {
+          "language": "en",
+          "value": "Meat-based complementary foods"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0022",
+      "display": "Baliq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Продукты прикорма на рыбной"
+        },
+        {
+          "language": "en",
+          "value": "Fish-based complementary foods"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0023",
+      "display": "Sabzavot va meva asosidagi qo'shimcha ovqatlanish mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Продукты прикорма на овощной и фруктовой основе"
+        },
+        {
+          "language": "en",
+          "value": "Vegetable- and fruit-based complementary foods"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0024",
+      "display": "Bolalar uchun go'sht pyuresi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пюре мясное детское"
+        },
+        {
+          "language": "en",
+          "value": "Children's meat puree"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0025",
+      "display": "Bolalar uchun aralash go'sht-sabzavot pyuresi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пюре мясо-овощное (комбинированное) детское"
+        },
+        {
+          "language": "en",
+          "value": "Children's meat and vegetable puree (combined)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0026",
+      "display": "Banka ko'rinishidagi bolalar sabzavot pyuresi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пюре овощное детское (в банках)"
+        },
+        {
+          "language": "en",
+          "value": "Children's vegetable puree (in jars)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0027",
+      "display": "Bolalar uchun baliq pyuresi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пюре рыбное детское"
+        },
+        {
+          "language": "en",
+          "value": "Children's fish puree"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0028",
+      "display": "Banka ko'rinishidagi bolalar meva pyuresi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пюре фруктовое детское (в банках)"
+        },
+        {
+          "language": "en",
+          "value": "Children's fruit puree (in jars)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0035",
+      "display": "Homilador va emizikli ayollar uchun maxsus oziq-ovqat mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Специализированные продукты для питания беременных и кормящих женщин"
+        },
+        {
+          "language": "en",
+          "value": "Specialised foods for pregnant and breastfeeding women"
+        }
+      ]
+    },
+    {
+      "code": "subname_0004_0037",
+      "display": "Bolalar sushki va galetlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сушки и галеты детские"
+        },
+        {
+          "language": "en",
+          "value": "Children's sushki and galettes"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0005",
+      "display": "Tovuq yog'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жир куриный"
+        },
+        {
+          "language": "en",
+          "value": "Chicken fat"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0006",
+      "display": "G'oz yog'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жир гусиный"
+        },
+        {
+          "language": "en",
+          "value": "Goose fat"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0007",
+      "display": "O'rdak yog'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жир утиный"
+        },
+        {
+          "language": "en",
+          "value": "Duck fat"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0011",
+      "display": "Baliq yog'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жир рыбий (Прочих морских животных)"
+        },
+        {
+          "language": "en",
+          "value": "Fish oil (from other marine animals)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0013",
+      "display": "Frityur yog'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жир фритюрный"
+        },
+        {
+          "language": "en",
+          "value": "Deep-frying fat"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0014",
+      "display": "Sutdan tashqari quruqlikdagi sut emizuvchilar yog'lari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жиры из других сухопутных млекопитающих (кроме молочных)"
+        },
+        {
+          "language": "en",
+          "value": "Fats from other land mammals (except milk fats)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0015",
+      "display": "Trans-yog'-kislotali yog'lar (yog'-moy mahsulotlarida trans izomerlar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жиры с трансизомерами жирных кислот"
+        },
+        {
+          "language": "en",
+          "value": "Fats containing trans fatty acid isomers"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0025",
+      "display": "Xantal moyi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло горчичное"
+        },
+        {
+          "language": "en",
+          "value": "Mustard oil"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0029",
+      "display": "Danak moyi (O'rik)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло косточковое (Абрикосовое)"
+        },
+        {
+          "language": "en",
+          "value": "Kernel oil (apricot)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0034",
+      "display": "Zig'ir moyi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло льняное"
+        },
+        {
+          "language": "en",
+          "value": "Linseed oil"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0041",
+      "display": "Palma yadrosi moyi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло пальмоядровое"
+        },
+        {
+          "language": "en",
+          "value": "Palm kernel oil"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0048",
+      "display": "Qovoq moyi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло тыквенное"
+        },
+        {
+          "language": "en",
+          "value": "Pumpkin seed oil"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0051",
+      "display": "Shi moyi (karite)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло ши (карите)"
+        },
+        {
+          "language": "en",
+          "value": "Shea butter (karite)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0057",
+      "display": "Kanop urug'i moyi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло семян конопли"
+        },
+        {
+          "language": "en",
+          "value": "Hemp seed oil"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0059",
+      "display": "Kamelina yog'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Камелиновое масло"
+        },
+        {
+          "language": "en",
+          "value": "Camelina oil"
+        }
+      ]
+    },
+    {
+      "code": "subname_0005_0060",
+      "display": "Xantal yog'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Горчичное масло"
+        },
+        {
+          "language": "en",
+          "value": "Mustard seed oil"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0001",
+      "display": "Boranka va suxari mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бараночные и сухарные изделия"
+        },
+        {
+          "language": "en",
+          "value": "Ring-shaped bakery products and rusks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0004",
+      "display": "Sumbul loviya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сумбульная фасоль"
+        },
+        {
+          "language": "en",
+          "value": "Sumbul beans"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0011",
+      "display": "Bulochka mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Булочные изделия"
+        },
+        {
+          "language": "en",
+          "value": "Bun products"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0013",
+      "display": "Havo guruchi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Воздушный рис"
+        },
+        {
+          "language": "en",
+          "value": "Puffed rice"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0015",
+      "display": "Ekstruziya yengil gazaklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Экструзионные снеки"
+        },
+        {
+          "language": "en",
+          "value": "Extruded snacks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0019",
+      "display": "O'sgan don (kurtaklar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зерно проращённое (проростки)"
+        },
+        {
+          "language": "en",
+          "value": "Sprouted grain (sprouts)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0022",
+      "display": "Galetalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Галеты"
+        },
+        {
+          "language": "en",
+          "value": "Galettes"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0032",
+      "display": "Tariq yormasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крупа пшённая"
+        },
+        {
+          "language": "en",
+          "value": "Millet groats"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0048",
+      "display": "Dukkakli un (no'xat)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мука гороховая"
+        },
+        {
+          "language": "en",
+          "value": "Pea flour"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0050",
+      "display": "Dukkakli un (yasmiq)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мука Чечевичная (бобовая)"
+        },
+        {
+          "language": "en",
+          "value": "Lentil flour (legume)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0051",
+      "display": "Grechka uni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мука гречневая"
+        },
+        {
+          "language": "en",
+          "value": "Buckwheat flour"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0053",
+      "display": "Suli uni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мука овсяная"
+        },
+        {
+          "language": "en",
+          "value": "Oat flour"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0061",
+      "display": "Guruch uni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мука рисовая"
+        },
+        {
+          "language": "en",
+          "value": "Rice flour"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0063",
+      "display": "Arpa uni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мука ячменная"
+        },
+        {
+          "language": "en",
+          "value": "Barley flour"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0064",
+      "display": "To'ldirgichli un qandolat mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мучные кондитерские изделия с начинкой"
+        },
+        {
+          "language": "en",
+          "value": "Filled flour confectionery"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0073",
+      "display": "Shakar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сдобное"
+        },
+        {
+          "language": "en",
+          "value": "Rich biscuits"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0074",
+      "display": "Polba",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полба"
+        },
+        {
+          "language": "en",
+          "value": "Farro"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0075",
+      "display": "Spelta",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спельта"
+        },
+        {
+          "language": "en",
+          "value": "Spelt"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0076",
+      "display": "Emmer",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эммер"
+        },
+        {
+          "language": "en",
+          "value": "Emmer"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0077",
+      "display": "Tariq (don)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Просо (зерно)"
+        },
+        {
+          "language": "en",
+          "value": "Millet (grain)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0081",
+      "display": "Soxta donlar: kannixua",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Псевдозлаки: каниуа"
+        },
+        {
+          "language": "en",
+          "value": "Pseudocereals: canihua"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0090",
+      "display": "Shirin bulochkalar (Pushki)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сдобные булочные изделия (Плюшки)"
+        },
+        {
+          "language": "en",
+          "value": "Rich buns (plyushki)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0092",
+      "display": "Tayyor pirogi va sloyka",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Слойки и пироги (готовые)"
+        },
+        {
+          "language": "en",
+          "value": "Puff pastries and pies (ready)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0093",
+      "display": "Tayoqcha non mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хлебные палочки (Соломка)"
+        },
+        {
+          "language": "en",
+          "value": "Breadsticks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0094",
+      "display": "Jo'xori (don)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сорго (зерно)"
+        },
+        {
+          "language": "en",
+          "value": "Sorghum (grain)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0097",
+      "display": "Tritikale",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тритикале"
+        },
+        {
+          "language": "en",
+          "value": "Triticale"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0111",
+      "display": "Ekstrudirovkalangan non",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хлеб экструдированные"
+        },
+        {
+          "language": "en",
+          "value": "Extruded bread"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0118",
+      "display": "Makkajo'xori shrot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кукурузный шрот"
+        },
+        {
+          "language": "en",
+          "value": "Corn meal"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0123",
+      "display": "Makkajo'xori asosida oziq-ovqat mahsuloti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Продукты питания на основе кукурузы"
+        },
+        {
+          "language": "en",
+          "value": "Corn-based foods"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0126",
+      "display": "Faqat makkajo'xoridan tayyorlangan qo'shimcha oziq-ovqat mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дополнительные продукты питания только из кукурузы"
+        },
+        {
+          "language": "en",
+          "value": "Complementary foods made only from corn"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0132",
+      "display": "Guruchli vaflilar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рисовые вафли"
+        },
+        {
+          "language": "en",
+          "value": "Rice wafers"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0133",
+      "display": "Guruchli krekerlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рисовые крекеры"
+        },
+        {
+          "language": "en",
+          "value": "Rice crackers"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0134",
+      "display": "Guruchli nonlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рисовый хлеб"
+        },
+        {
+          "language": "en",
+          "value": "Rice bread"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0135",
+      "display": "Guruchli pag'alar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рисовые палочки"
+        },
+        {
+          "language": "en",
+          "value": "Rice sticks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0006_0136",
+      "display": "Nonushta uchun guruch",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рис для завтрака"
+        },
+        {
+          "language": "en",
+          "value": "Breakfast rice"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0002",
+      "display": "Iste'mol uchun po'stloq (Dub)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кора (Дуб) пищевого назначения"
+        },
+        {
+          "language": "en",
+          "value": "Bark for food use (oak)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0003",
+      "display": "Iste'mol uchun po'stloq (Krushina)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кора (Крушина) пищевого назначения"
+        },
+        {
+          "language": "en",
+          "value": "Bark for food use (buckthorn)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0005",
+      "display": "Ildiz va ildizpoyalari (Shirinmiya)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Корни и корневища (Солодка)"
+        },
+        {
+          "language": "en",
+          "value": "Roots and rhizomes (liquorice)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0006",
+      "display": "Ildiz va ildizpoyalari (Valeriana)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Корни и корневища (Валериана)"
+        },
+        {
+          "language": "en",
+          "value": "Roots and rhizomes (valerian)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0007",
+      "display": "Ildiz va ildizpoyalari (Jenshen)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Корни и корневища (Женьшень)"
+        },
+        {
+          "language": "en",
+          "value": "Roots and rhizomes (ginseng)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0008",
+      "display": "Ildiz va ildizpoyalari (Eleuterokokk)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Корни и корневища (Элеутерококк)"
+        },
+        {
+          "language": "en",
+          "value": "Roots and rhizomes (eleutherococcus)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0011",
+      "display": "Dorivor barglar (Melissa)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Листья лекарственные (Мелисса)"
+        },
+        {
+          "language": "en",
+          "value": "Medicinal leaves (lemon balm)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0012",
+      "display": "Dorivor barglar (Malina bargi)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Листья лекарственные (Лист малины)"
+        },
+        {
+          "language": "en",
+          "value": "Medicinal leaves (raspberry leaf)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0013",
+      "display": "Dorivor barglar (Krapiva bargi)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Листья лекарственные (Лист крапивы)"
+        },
+        {
+          "language": "en",
+          "value": "Medicinal leaves (nettle leaf)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0018",
+      "display": "BAQ ishlab chiqarish uchun o'simlik xom ashyosi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сырьё для производства БАД (растительное)"
+        },
+        {
+          "language": "en",
+          "value": "Raw materials for the production of dietary supplements (plant)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0019",
+      "display": "Quruq dorivor o'tlar (Zveroboy)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Травы лекарственные сухие (Зверобой)"
+        },
+        {
+          "language": "en",
+          "value": "Dried medicinal herbs (St John's wort)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0020",
+      "display": "Quruq dorivor o'tlar (Dushitsa)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Травы лекарственные сухие (Душица)"
+        },
+        {
+          "language": "en",
+          "value": "Dried medicinal herbs (oregano)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0021",
+      "display": "Quruq dorivor o'tlar (Tysyacheletnik)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Травы лекарственные сухие (Тысячелистник)"
+        },
+        {
+          "language": "en",
+          "value": "Dried medicinal herbs (yarrow)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0023",
+      "display": "Dorivor gullar (Romashka)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цветки лекарственные (Ромашка)"
+        },
+        {
+          "language": "en",
+          "value": "Medicinal flowers (chamomile)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0025",
+      "display": "Dorivor gullar (Buzina)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цветки лекарственные (Бузина)"
+        },
+        {
+          "language": "en",
+          "value": "Medicinal flowers (elder)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0007_0026",
+      "display": "Dorivor gullar (Kalendula)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цветки лекарственные (Календула)"
+        },
+        {
+          "language": "en",
+          "value": "Medicinal flowers (calendula)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0006",
+      "display": "Kazeinatlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Казеинаты"
+        },
+        {
+          "language": "en",
+          "value": "Caseinates"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0008",
+      "display": "Qatiq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Катык"
+        },
+        {
+          "language": "en",
+          "value": "Katyk"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0009",
+      "display": "Tan",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тан"
+        },
+        {
+          "language": "en",
+          "value": "Tan"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0010",
+      "display": "Ayron",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Айран"
+        },
+        {
+          "language": "en",
+          "value": "Ayran"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0011",
+      "display": "Kefir",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кефир"
+        },
+        {
+          "language": "en",
+          "value": "Kefir"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0012",
+      "display": "Sut va zardob oqsillari konsentratlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Концентраты молочных белков и сывороточных белков"
+        },
+        {
+          "language": "en",
+          "value": "Milk protein and whey protein concentrates"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0013",
+      "display": "Qimiz",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кумыс"
+        },
+        {
+          "language": "en",
+          "value": "Koumiss"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0014",
+      "display": "Shubat",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шубат"
+        },
+        {
+          "language": "en",
+          "value": "Shubat"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0017",
+      "display": "Shokolad sariyog'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло шоколадное"
+        },
+        {
+          "language": "en",
+          "value": "Chocolate butter"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0021",
+      "display": "Pishirilgan ichimlik sut",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молоко питьевое топлёное"
+        },
+        {
+          "language": "en",
+          "value": "Baked drinking milk"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0027",
+      "display": "Tuya xom suti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молоко сырое верблюжье"
+        },
+        {
+          "language": "en",
+          "value": "Raw camel milk"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0028",
+      "display": "Biya xom suti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молоко сырое кобылье"
+        },
+        {
+          "language": "en",
+          "value": "Raw mare's milk"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0038",
+      "display": "Mevali muz / sorbet",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мороженое фруктовый лёд / сорбет"
+        },
+        {
+          "language": "en",
+          "value": "Fruit ice / sorbet"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0039",
+      "display": "Qatiq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Простокваша"
+        },
+        {
+          "language": "en",
+          "value": "Prostokvasha (soured milk)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0040",
+      "display": "Atsidofilin",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ацидофилин"
+        },
+        {
+          "language": "en",
+          "value": "Acidophilin"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0041",
+      "display": "Ryajenka",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ряженка"
+        },
+        {
+          "language": "en",
+          "value": "Ryazhenka"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0042",
+      "display": "Varenets",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Варенец"
+        },
+        {
+          "language": "en",
+          "value": "Varenets"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0045",
+      "display": "Quruq qaymoq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сливки сухие"
+        },
+        {
+          "language": "en",
+          "value": "Dry cream"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0049",
+      "display": "Bolalar uchun maxsus tibbiy maqsadlarda quruq parhez aralashmalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухие диетические смеси для специального медицинского питания детей"
+        },
+        {
+          "language": "en",
+          "value": "Dry dietary formulas for special medical purposes for children"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0051",
+      "display": "Zardobli ichimliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сывороточные напитки"
+        },
+        {
+          "language": "en",
+          "value": "Whey drinks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0008_0067",
+      "display": "Tvorog massasi va sirniklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Творожная масса и сырки глазированные"
+        },
+        {
+          "language": "en",
+          "value": "Curd mass and glazed curd snacks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0001",
+      "display": "Baliklar (go'sht)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Балыки"
+        },
+        {
+          "language": "en",
+          "value": "Cured loins (balyk)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0002",
+      "display": "Korejka",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Корейки"
+        },
+        {
+          "language": "en",
+          "value": "Cured pork loin (koreyka)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0003",
+      "display": "Bo'yin go'sht mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шейки"
+        },
+        {
+          "language": "en",
+          "value": "Cured neck (sheyka)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0009",
+      "display": "Tuya go'shti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Верблюжатина"
+        },
+        {
+          "language": "en",
+          "value": "Camel meat"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0016",
+      "display": "Iste'mol uchun xom hayvon yog'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жир-сырец животный (пищевой)"
+        },
+        {
+          "language": "en",
+          "value": "Raw animal fat (edible)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0022",
+      "display": "Go'shtli jele",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Студень"
+        },
+        {
+          "language": "en",
+          "value": "Meat jelly (studen)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0023",
+      "display": "Go'shtli jele (xolodets)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Холодец"
+        },
+        {
+          "language": "en",
+          "value": "Meat aspic (kholodets)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0024",
+      "display": "Kolbasa qobig'i uchun tabiiy ichaklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кишки натуральные для колбасных оболочек"
+        },
+        {
+          "language": "en",
+          "value": "Natural casings for sausages"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0025",
+      "display": "Parranda terisi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кожа птицы"
+        },
+        {
+          "language": "en",
+          "value": "Poultry skin"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0026",
+      "display": "Echki go'shti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Козлятина"
+        },
+        {
+          "language": "en",
+          "value": "Goat meat"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0033",
+      "display": "Go'sht konservalari (tushyonka)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Консервы мясные (тушёнка)"
+        },
+        {
+          "language": "en",
+          "value": "Canned meat (stewed meat)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0034",
+      "display": "Pashtet ko'rinishidagi go'sht konservalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Консервы мясные паштетные"
+        },
+        {
+          "language": "en",
+          "value": "Canned meat pates"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0035",
+      "display": "Go'sht-o'simlik konservalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Консервы мясорастительные"
+        },
+        {
+          "language": "en",
+          "value": "Canned meat and vegetable products"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0037",
+      "display": "Go'sht qiymasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мясной фарш"
+        },
+        {
+          "language": "en",
+          "value": "Minced meat"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0040",
+      "display": "Bolalar oziq-ovqati uchun go'sht va go'sht mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мясо и мясопродукты для детского питания"
+        },
+        {
+          "language": "en",
+          "value": "Meat and meat products for infant food"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0045",
+      "display": "Parranda go'shti (bedana)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мясо птицы (перепел)"
+        },
+        {
+          "language": "en",
+          "value": "Poultry meat (quail)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0050",
+      "display": "Go'shtli pashtetlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Паштеты мясные"
+        },
+        {
+          "language": "en",
+          "value": "Meat pates"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0054",
+      "display": "Tabiiy go'sht yarimtayyor mahsulotlari (Steyklar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полуфабрикаты мясные натуральные (Стейки)"
+        },
+        {
+          "language": "en",
+          "value": "Natural semi-finished meat products (steaks)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0055",
+      "display": "Tabiiy go'sht yarimtayyor mahsulotlari (Eskaloplar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полуфабрикаты мясные натуральные (Эскалопы)"
+        },
+        {
+          "language": "en",
+          "value": "Natural semi-finished meat products (escalopes)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0056",
+      "display": "Maydalangan go'sht yarimtayyor mahsulotlari (Kotletlar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полуфабрикаты мясные рубленые (Котлеты)"
+        },
+        {
+          "language": "en",
+          "value": "Minced semi-finished meat products (cutlets)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0057",
+      "display": "Maydalangan go'sht yarimtayyor mahsulotlari (Teftellar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полуфабрикаты мясные рубленые (Тефтели)"
+        },
+        {
+          "language": "en",
+          "value": "Minced semi-finished meat products (meatballs)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0058",
+      "display": "Maydalangan go'sht yarimtayyor mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полуфабрикаты мясные рубленые (Биточки)"
+        },
+        {
+          "language": "en",
+          "value": "Minced semi-finished meat products (bitochki)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0065",
+      "display": "Mol o'pkasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Субпродукты говяжьи (Лёгкое)"
+        },
+        {
+          "language": "en",
+          "value": "Beef offal (lungs)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0066",
+      "display": "Mol miyasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Субпродукты говяжьи (Мозги)"
+        },
+        {
+          "language": "en",
+          "value": "Beef offal (brains)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0073",
+      "display": "Parranda subhmahsulotlari (Oshqozon)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Субпродукты птицы (Желудки)"
+        },
+        {
+          "language": "en",
+          "value": "Poultry offal (gizzards)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0076",
+      "display": "Quruq go'sht mahsulotlari (Quruq bulon)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухие мясные продукты (Сухой бульон)"
+        },
+        {
+          "language": "en",
+          "value": "Dried meat products (dry broth)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0077",
+      "display": "Quruq go'sht mahsulotlari (Sublimirovkalangan go'sht)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухие мясные продукты (Сублимированное мясо)"
+        },
+        {
+          "language": "en",
+          "value": "Dried meat products (freeze-dried meat)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0081",
+      "display": "Marinovkalangan shashlik (yarim tayyor mahsulot)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шашлык маринованный (полуфабрикат)"
+        },
+        {
+          "language": "en",
+          "value": "Marinated shashlik (semi-finished)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0098",
+      "display": "Qo'y yog'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бараний жир"
+        },
+        {
+          "language": "en",
+          "value": "Mutton fat"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0100",
+      "display": "Parranda yog'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Птичий жир"
+        },
+        {
+          "language": "en",
+          "value": "Poultry fat"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0101",
+      "display": "Ot yog'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Конский жир"
+        },
+        {
+          "language": "en",
+          "value": "Horse fat"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0102",
+      "display": "Aralash hayvon yog'lari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Смешанный животный жир"
+        },
+        {
+          "language": "en",
+          "value": "Mixed animal fat"
+        }
+      ]
+    },
+    {
+      "code": "subname_0009_0104",
+      "display": "Ovlanadigan hayvonlarning submahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Субпродукты диких животных"
+        },
+        {
+          "language": "en",
+          "value": "Wild game offal"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0001",
+      "display": "Ajika",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аджика"
+        },
+        {
+          "language": "en",
+          "value": "Adjika"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0007",
+      "display": "Yetilmagan loviya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бобы недозрелые"
+        },
+        {
+          "language": "en",
+          "value": "Immature beans"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0016",
+      "display": "Madaniylashtirilgan shiitake",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грибы шиитаке культивируемые"
+        },
+        {
+          "language": "en",
+          "value": "Cultivated shiitake mushrooms"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0025",
+      "display": "Melissa",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мелисса"
+        },
+        {
+          "language": "en",
+          "value": "Lemon balm"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0027",
+      "display": "Ko'kat: rukkola (himoyalangan tuproq)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зелень: руккола (защищённый грунт)"
+        },
+        {
+          "language": "en",
+          "value": "Greens: rocket (greenhouse)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0028",
+      "display": "Ko'kat: rukkola (ochiq tuproq)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зелень: руккола (открытый грунт)"
+        },
+        {
+          "language": "en",
+          "value": "Greens: rocket (open field)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0032",
+      "display": "Ko'kat: otquloq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зелень: щавель"
+        },
+        {
+          "language": "en",
+          "value": "Greens: sorrel"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0042",
+      "display": "Tuzlangan karam",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Капуста квашеная"
+        },
+        {
+          "language": "en",
+          "value": "Sauerkraut"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0046",
+      "display": "Bargli karam",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Капуста листовая"
+        },
+        {
+          "language": "en",
+          "value": "Leaf cabbage"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0054",
+      "display": "Pomidor ketchupi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кетчуп томатный"
+        },
+        {
+          "language": "en",
+          "value": "Tomato ketchup"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0055",
+      "display": "Tabiiy sabzavot konservalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Консервы овощные натуральные"
+        },
+        {
+          "language": "en",
+          "value": "Natural canned vegetables"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0059",
+      "display": "Lecho",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лечо"
+        },
+        {
+          "language": "en",
+          "value": "Lecho"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0060",
+      "display": "Sabzavot ikrasi (qovoqchali)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Икра овощная (кабачковая)"
+        },
+        {
+          "language": "en",
+          "value": "Vegetable caviar (courgette)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0061",
+      "display": "Sabzavot ikrasi (baqlajonli)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Икра овощная (баклажанная)"
+        },
+        {
+          "language": "en",
+          "value": "Vegetable caviar (aubergine)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0067",
+      "display": "Shalot piyozi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лук-шалот"
+        },
+        {
+          "language": "en",
+          "value": "Shallots"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0070",
+      "display": "Marinovkalangan sabzavotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маринады овощные"
+        },
+        {
+          "language": "en",
+          "value": "Vegetable marinades"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0072",
+      "display": "Yashil dukkak holatidagi mosh va adzuki",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маш и адзуки в стадии зелёных стручков"
+        },
+        {
+          "language": "en",
+          "value": "Mung and adzuki beans at the green pod stage"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0074",
+      "display": "Muzlatilgan sabzavotlar (sochma)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овощи замороженные (россыпью)"
+        },
+        {
+          "language": "en",
+          "value": "Frozen vegetables (loose)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0075",
+      "display": "Quyma bilan konservalangan sabzavotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овощи консервированные с заливкой"
+        },
+        {
+          "language": "en",
+          "value": "Canned vegetables in brine"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0076",
+      "display": "Quritilgan sabzavotlar (Sabzi)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овощи сушёные (Морковь)"
+        },
+        {
+          "language": "en",
+          "value": "Dried vegetables (carrots)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0077",
+      "display": "Quritilgan sabzavotlar (Piyoz)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овощи сушёные (Лук)"
+        },
+        {
+          "language": "en",
+          "value": "Dried vegetables (onions)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0078",
+      "display": "Quritilgan sabzavotlar (Qalampir)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овощи сушёные (Перец)"
+        },
+        {
+          "language": "en",
+          "value": "Dried vegetables (peppers)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0079",
+      "display": "Quritilgan sabzavotlar (Sarimsoq va boshq.)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овощи сушёные (Чеснок и др.)"
+        },
+        {
+          "language": "en",
+          "value": "Dried vegetables (garlic and other)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0080",
+      "display": "Iste'molga tayyor sabzavot tilimlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овощная нарезка готовая к употреблению"
+        },
+        {
+          "language": "en",
+          "value": "Ready-to-eat sliced vegetables"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0081",
+      "display": "Muzlatilgan sabzavot aralashmalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овощные смеси замороженные"
+        },
+        {
+          "language": "en",
+          "value": "Frozen vegetable mixes"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0094",
+      "display": "Iste'mol kurtaklar va mikroko'kat",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Проростки и микрозелень съедобные"
+        },
+        {
+          "language": "en",
+          "value": "Edible sprouts and microgreens"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0095",
+      "display": "Bolalar oziq-ovqati uchun sabzavot pyuresi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пюре овощное для детского питания"
+        },
+        {
+          "language": "en",
+          "value": "Vegetable puree for infant food"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0096",
+      "display": "Umumiy iste'mol uchun sabzavot pyuresi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пюре овощное для общего употребления"
+        },
+        {
+          "language": "en",
+          "value": "Vegetable puree for general consumption"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0108",
+      "display": "Qand lavlagi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Свёкла сахарная"
+        },
+        {
+          "language": "en",
+          "value": "Sugar beet"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0139",
+      "display": "Bargli sabzavotlar (Himoyalangan tuproq)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Листовые овощи (закрытый грунт)"
+        },
+        {
+          "language": "en",
+          "value": "Leafy vegetables (greenhouse)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0140",
+      "display": "Bargli sabzavotlar (Ochiq tuproq)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Листовые овощи (открытый грунт)"
+        },
+        {
+          "language": "en",
+          "value": "Leafy vegetables (open field)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0143",
+      "display": "Dukkaklilardan olingan oqsillar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Белки из бобовых"
+        },
+        {
+          "language": "en",
+          "value": "Legume proteins"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0146",
+      "display": "Poyali sabzavotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стеблевые овощи"
+        },
+        {
+          "language": "en",
+          "value": "Stem vegetables"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0147",
+      "display": "Bargli sabzavotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Листовые овощи"
+        },
+        {
+          "language": "en",
+          "value": "Leafy vegetables"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0148",
+      "display": "Mevali sabzavotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плодовые овощи"
+        },
+        {
+          "language": "en",
+          "value": "Fruiting vegetables"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0150",
+      "display": "Piyozli sabzavotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Луковые овощи"
+        },
+        {
+          "language": "en",
+          "value": "Bulb vegetables"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0151",
+      "display": "Tropik ildiz",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тропические корнеплоды"
+        },
+        {
+          "language": "en",
+          "value": "Tropical root vegetables"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0152",
+      "display": "Tuganaklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клубни"
+        },
+        {
+          "language": "en",
+          "value": "Tubers"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0155",
+      "display": "Konservalangan sabzavotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Консервированные овощи"
+        },
+        {
+          "language": "en",
+          "value": "Canned vegetables"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0157",
+      "display": "Kamelina barglari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Листья камелины"
+        },
+        {
+          "language": "en",
+          "value": "Camelina leaves"
+        }
+      ]
+    },
+    {
+      "code": "subname_0010_0159",
+      "display": "Manioki uni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мука из маниоки"
+        },
+        {
+          "language": "en",
+          "value": "Cassava flour"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0009",
+      "display": "Iste'mol uchun jmix",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жмых"
+        },
+        {
+          "language": "en",
+          "value": "Oilseed cake"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0010",
+      "display": "Shrot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шрот пищевой (для пищевого применения)"
+        },
+        {
+          "language": "en",
+          "value": "Food-grade oilseed meal"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0013",
+      "display": "Iste'mol uchun o'rik danagi (mag'iz)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Косточки абрикоса (ядро) используемые в пищу"
+        },
+        {
+          "language": "en",
+          "value": "Apricot kernels used as food"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0014",
+      "display": "Iste'mol uchun shaftoli",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Косточки персика"
+        },
+        {
+          "language": "en",
+          "value": "Peach kernels"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0015",
+      "display": "Olxo'ri danagi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сливы (ядро, пищевое использование)"
+        },
+        {
+          "language": "en",
+          "value": "Plum kernels (for food use)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0019",
+      "display": "Qovurilgan yong'oqlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Орехи жареные"
+        },
+        {
+          "language": "en",
+          "value": "Roasted nuts"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0020",
+      "display": "Tuzlangan yong'oqlar aralashmasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Солёные (смеси)"
+        },
+        {
+          "language": "en",
+          "value": "Salted nut mixes"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0021",
+      "display": "Shokoladli yong'oqlar va quritilgan mevalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Орехи и сухофрукты в шоколаде"
+        },
+        {
+          "language": "en",
+          "value": "Chocolate-coated nuts and dried fruit"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0022",
+      "display": "Glazur bilan qoplangan yong'oqlar va quritilgan mevalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Орехи и сухофрукты в глазури"
+        },
+        {
+          "language": "en",
+          "value": "Glazed nuts and dried fruit"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0027",
+      "display": "Kamelina (sariq) urug'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена камелины (рыжика)"
+        },
+        {
+          "language": "en",
+          "value": "Camelina seeds"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0028",
+      "display": "Iste'mol kanop urug'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена конопли пищевые"
+        },
+        {
+          "language": "en",
+          "value": "Edible hemp seeds"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0034",
+      "display": "Saflor urug'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена сафлора"
+        },
+        {
+          "language": "en",
+          "value": "Safflower seeds"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0036",
+      "display": "Chia urug'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена чиа"
+        },
+        {
+          "language": "en",
+          "value": "Chia seeds"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0043",
+      "display": "Maydalangan kanop urug'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Измельчённые семена конопли"
+        },
+        {
+          "language": "en",
+          "value": "Ground hemp seeds"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0044",
+      "display": "Qisman yog'sizlantirilgan kanop urug'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Частично обезжиренные семена конопли"
+        },
+        {
+          "language": "en",
+          "value": "Partially defatted hemp seeds"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0045",
+      "display": "Kanop urug'larini qayta ishlashning boshqa mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Другие продукты переработки семян конопли"
+        },
+        {
+          "language": "en",
+          "value": "Other processed hemp seed products"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0046",
+      "display": "Boshqa moyli o'simliklarning urug'lari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Другие масличные семена"
+        },
+        {
+          "language": "en",
+          "value": "Other oilseeds"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0047",
+      "display": "Daraxt yong'oqlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Орехи деревьев"
+        },
+        {
+          "language": "en",
+          "value": "Tree nuts"
+        }
+      ]
+    },
+    {
+      "code": "subname_0011_0048",
+      "display": "Daraxt yong'oqlaridan qayta ishlash orqali olinadigan mahsulotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Продукты из орехов деревьев"
+        },
+        {
+          "language": "en",
+          "value": "Tree nut products"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0006",
+      "display": "Quyqalashga qarshi vositalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Антислёживатели"
+        },
+        {
+          "language": "en",
+          "value": "Anti-caking agents"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0007",
+      "display": "Tabiiyga identik aromatlashtirgichlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ароматизаторы идентичные натуральным"
+        },
+        {
+          "language": "en",
+          "value": "Nature-identical flavourings"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0008",
+      "display": "sintetik aromatlashtirgichlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ароматизаторы Синтетические"
+        },
+        {
+          "language": "en",
+          "value": "Synthetic flavourings"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0009",
+      "display": "Tabiiy aromatlashtirgichlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ароматизаторы натуральные"
+        },
+        {
+          "language": "en",
+          "value": "Natural flavourings"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0010",
+      "display": "Yaltiratuvchi vositalar (Vosk)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Глазирующие агенты (Воска)"
+        },
+        {
+          "language": "en",
+          "value": "Glazing agents (waxes)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0021",
+      "display": "Sutli va qatiq mahsulotlari uchun zakvaskalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Закваски молочные и кисломолочные"
+        },
+        {
+          "language": "en",
+          "value": "Dairy and fermented milk starter cultures"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0031",
+      "display": "Modifikatsiyalangan kraxmal",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Модифицированные крахмалы"
+        },
+        {
+          "language": "en",
+          "value": "Modified starches"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0034",
+      "display": "Ko'pikga qarshi vositalar va ko'pik stabilizatorlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пеногасители и пеностабилизаторы"
+        },
+        {
+          "language": "en",
+          "value": "Antifoaming agents and foam stabilisers"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0036",
+      "display": "Tabiiy oziq-ovqat bo'yog'i (Annato)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевые красители натуральные (Аннато)"
+        },
+        {
+          "language": "en",
+          "value": "Natural food colours (annatto)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0038",
+      "display": "Tabiiy oziq-ovqat bo'yog'i (Betanin)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевые красители натуральные (Бетанин)"
+        },
+        {
+          "language": "en",
+          "value": "Natural food colours (betanin)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0040",
+      "display": "Sintetik oziq-ovqat bo'yog'i (Ponso)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевые красители синтетические (Понсо)"
+        },
+        {
+          "language": "en",
+          "value": "Synthetic food colours (Ponceau)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0047",
+      "display": "Go'sht sanoati uchun nitritli tuz",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соль нитритная для мясной промышленности"
+        },
+        {
+          "language": "en",
+          "value": "Nitrite curing salt for the meat industry"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0048",
+      "display": "Ta'm va xushbo'ylik kuchaytirgichlari (E600-E699)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Усилители вкуса и аромата (E600-E699)"
+        },
+        {
+          "language": "en",
+          "value": "Flavour and aroma enhancers (E600-E699)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0053",
+      "display": "Emulgatorlar (Mono- va digliseridlar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эмульгаторы (Моно- и диглицериды)"
+        },
+        {
+          "language": "en",
+          "value": "Emulsifiers (mono- and diglycerides)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0054",
+      "display": "Qizil xamirturush bilan fermentlangan guruchga asoslangan parhez qo'shimchalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Диетические добавки на основе ферментированного риса с красными дрожжами"
+        },
+        {
+          "language": "en",
+          "value": "Dietary supplements based on red yeast rice"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0055",
+      "display": "Kukun shaklidagi oziq-ovqat mahsuloti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевой продукт в порошкообразной форме"
+        },
+        {
+          "language": "en",
+          "value": "Food in powder form"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0056",
+      "display": "Suyuq shakldagi oziq-ovqat mahsuloti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевой продукт в жидкой форме"
+        },
+        {
+          "language": "en",
+          "value": "Food in liquid form"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0057",
+      "display": "Kukun shaklidagi oziq-ovqat mahsuloti sotuvga qo'yilganda",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевой продукт в порошкообразной форме при продаже"
+        },
+        {
+          "language": "en",
+          "value": "Food in powder form as sold"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0058",
+      "display": "Suyuq shakldagi oziq-ovqat mahsuloti sotuvga qo'yilganda",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевой продукт в жидкой форме при продаже"
+        },
+        {
+          "language": "en",
+          "value": "Food in liquid form as sold"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0060",
+      "display": "Tunuka idishda oziq-ovqat mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевые продукты в жестяной банке"
+        },
+        {
+          "language": "en",
+          "value": "Food in tin cans"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0061",
+      "display": "Tunuka idishdagi qo'shimcha oziq-ovqat mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дополнительные пищевые продукты в жестяной банке"
+        },
+        {
+          "language": "en",
+          "value": "Complementary foods in tin cans"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0062",
+      "display": "Tarkibida o'simlik komponentlari va ularning preparatlari, shuningdek tarkibida propolis, ona suti, spirulina yoki ularning preparatlari bo'lgan oziq-ovqat qo'shimchalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевые добавки, содержащие растительные компоненты и их препараты, а также прополис, материнское молоко, спирулину или их препараты"
+        },
+        {
+          "language": "en",
+          "value": "Food supplements containing botanicals and their preparations, and propolis, royal jelly, spirulina or their preparations"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0063",
+      "display": "Ichimliklar tayyorlash uchun o'simlik kelib chiqishiga ega bo'lgan oziq-ovqat kukunlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевые порошки растительного происхождения для приготовления напитков"
+        },
+        {
+          "language": "en",
+          "value": "Plant-derived food powders for making drinks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0012_0064",
+      "display": "Don tarkibli ingrediyentlarni o'z ichiga olmagan qo'shimcha ovqatlanish mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дополнительные пищевые продукты, не содержащие зерновые ингредиенты"
+        },
+        {
+          "language": "en",
+          "value": "Complementary foods without cereal ingredients"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0002",
+      "display": "Yulduzli arpabodiyon (bad'yan)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бадьян (звёздчатый анис)"
+        },
+        {
+          "language": "en",
+          "value": "Star anise"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0003",
+      "display": "Bulonli kubiklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бульонные кубики"
+        },
+        {
+          "language": "en",
+          "value": "Stock cubes"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0004",
+      "display": "Bulon konsentratlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Концентраты бульонов"
+        },
+        {
+          "language": "en",
+          "value": "Broth concentrates"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0007",
+      "display": "Vanil shakar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ванильный сахар"
+        },
+        {
+          "language": "en",
+          "value": "Vanilla sugar"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0011",
+      "display": "Achitqi ekstraktlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дрожжевые экстракты"
+        },
+        {
+          "language": "en",
+          "value": "Yeast extracts"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0012",
+      "display": "O'simlik oqsili gidrolizatlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гидролизаты растительного белка"
+        },
+        {
+          "language": "en",
+          "value": "Hydrolysed vegetable proteins"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0022",
+      "display": "Tayyor marinad (go'sht uchun)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маринад готовый (Для мяса)"
+        },
+        {
+          "language": "en",
+          "value": "Ready marinade (for meat)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0023",
+      "display": "Tayyor marinad (baliq uchun)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маринад готовый (Рыбы)"
+        },
+        {
+          "language": "en",
+          "value": "Ready marinade (for fish)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0040",
+      "display": "Qo'shimchali tuz (O'tlar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соль с добавками (С травами)"
+        },
+        {
+          "language": "en",
+          "value": "Salt with additives (with herbs)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0041",
+      "display": "Qo'shimchali tuz (Ziravorlar bilan)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соль с добавками (Специями)"
+        },
+        {
+          "language": "en",
+          "value": "Salt with additives (with spices)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0042",
+      "display": "Tkemali souslari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соус ткемали"
+        },
+        {
+          "language": "en",
+          "value": "Tkemali sauce"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0043",
+      "display": "Satsebeli souslari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соус Сацебели"
+        },
+        {
+          "language": "en",
+          "value": "Satsebeli sauce"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0044",
+      "display": "Ustritsa souslari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соус устричный"
+        },
+        {
+          "language": "en",
+          "value": "Oyster sauce"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0045",
+      "display": "Baliq (tay) souslari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыбный (тайский)"
+        },
+        {
+          "language": "en",
+          "value": "Fish sauce (Thai)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0056",
+      "display": "Ziravor sifatida quritilgan rezavor va mevalar (Mojjevelnik)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сушёные ягоды и фрукты как пряности (Можжевельник)"
+        },
+        {
+          "language": "en",
+          "value": "Dried berries and fruits as spices (juniper)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0057",
+      "display": "Ziravor sifatida quritilgan rezavor va mevalar (Zirk)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сушёные ягоды и фрукты как пряности (Барбарис)"
+        },
+        {
+          "language": "en",
+          "value": "Dried berries and fruits as spices (barberry)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0058",
+      "display": "Ziravor sifatida quritilgan rezavor va mevalar (Sumax)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сушёные ягоды и фрукты как пряности (Сумах)"
+        },
+        {
+          "language": "en",
+          "value": "Dried berries and fruits as spices (sumac)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0061",
+      "display": "Olma uksusi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Уксус яблочный"
+        },
+        {
+          "language": "en",
+          "value": "Apple cider vinegar"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0067",
+      "display": "Xmeli-suneli",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хмели-сунели"
+        },
+        {
+          "language": "en",
+          "value": "Khmeli-suneli"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0068",
+      "display": "Quruq ajika",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аджика сухая"
+        },
+        {
+          "language": "en",
+          "value": "Dry adjika"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0069",
+      "display": "Chimichurri",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чимичурри"
+        },
+        {
+          "language": "en",
+          "value": "Chimichurri"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0072",
+      "display": "ziravorlar urug'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "семена специй"
+        },
+        {
+          "language": "en",
+          "value": "Spice seeds"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0073",
+      "display": "mevali ziravorlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "плодовые специи"
+        },
+        {
+          "language": "en",
+          "value": "Fruit spices"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0074",
+      "display": "Burachnik",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бурачник"
+        },
+        {
+          "language": "en",
+          "value": "Borage"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0076",
+      "display": "Po'stloqdan tayyorlangan ziravorlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пряности из коры"
+        },
+        {
+          "language": "en",
+          "value": "Bark spices"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0077",
+      "display": "Ildiz va ildizpoyadan tayyorlangan ziravorlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пряности из корней и корневищ"
+        },
+        {
+          "language": "en",
+          "value": "Root and rhizome spices"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0078",
+      "display": "Shonali ziravorlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зерновые пряности"
+        },
+        {
+          "language": "en",
+          "value": "Grain spices"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0079",
+      "display": "Gul urug'idan tayyorlangan ziravorlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пряности из семян цветов"
+        },
+        {
+          "language": "en",
+          "value": "Flower seed spices"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0080",
+      "display": "Oziq-ovqat qo'shimchalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевые добавки"
+        },
+        {
+          "language": "en",
+          "value": "Food additives"
+        }
+      ]
+    },
+    {
+      "code": "subname_0013_0083",
+      "display": "Kislota yordamida gidrolizlangan o'simlik oqsillarini o'z ichiga olgan suyuq ziravorlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкие пряности, содержащие растительные белки, гидролизованные кислотой"
+        },
+        {
+          "language": "en",
+          "value": "Liquid seasonings containing acid-hydrolysed vegetable protein"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0001",
+      "display": "Baliq balig'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Балык рыбный"
+        },
+        {
+          "language": "en",
+          "value": "Cured fish (balyk)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0002",
+      "display": "Qorin oyoqli mollyuskalar (chig'anoqlar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Брюхоногие моллюски (улитки)"
+        },
+        {
+          "language": "en",
+          "value": "Gastropod molluscs (snails)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0027",
+      "display": "Dengiz tipratikani va trepanglar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морские ежи и трепанги"
+        },
+        {
+          "language": "en",
+          "value": "Sea urchins and sea cucumbers"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0028",
+      "display": "Baliq jigari (treska va boshq.) va undan tayyorlangan mahsulotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Печень рыбная (треска и др.) и продукты из неё"
+        },
+        {
+          "language": "en",
+          "value": "Fish liver (cod and other) and its products"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0031",
+      "display": "Baliq preserylari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пресервы рыбные"
+        },
+        {
+          "language": "en",
+          "value": "Fish preserves"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0034",
+      "display": "Quritilgan baliq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба вяленая"
+        },
+        {
+          "language": "en",
+          "value": "Dried-cured fish"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0035",
+      "display": "Bolalar oziq-ovqati uchun baliq va dengiz mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба и морепродукты для детского питания"
+        },
+        {
+          "language": "en",
+          "value": "Fish and seafood for infant food"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0036",
+      "display": "Issiq dudlangan baliq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба копчёная горячего копчения"
+        },
+        {
+          "language": "en",
+          "value": "Hot-smoked fish"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0037",
+      "display": "Sovuq dudlangan baliq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба копчёная холодного копчения"
+        },
+        {
+          "language": "en",
+          "value": "Cold-smoked fish"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0044",
+      "display": "Bekrabaliq turlari (Bekra)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба осетровых пород (Осётр)"
+        },
+        {
+          "language": "en",
+          "value": "Sturgeon fish (sturgeon)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0045",
+      "display": "Bekrabaliq turlari (Beluga)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба осетровых пород (Белуга)"
+        },
+        {
+          "language": "en",
+          "value": "Sturgeon fish (beluga)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0046",
+      "display": "Bekrabaliq turlari (Sterlyad)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба осетровых пород (Стерлядь)"
+        },
+        {
+          "language": "en",
+          "value": "Sturgeon fish (sterlet)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0054",
+      "display": "Tuzlangan baliq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба солёная"
+        },
+        {
+          "language": "en",
+          "value": "Salted fish"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0055",
+      "display": "Quritilgan (suvsiz) baliq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба сушёная"
+        },
+        {
+          "language": "en",
+          "value": "Dried fish"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0058",
+      "display": "Tunyets turlari (Bonito)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба тунцовая (Бонито)"
+        },
+        {
+          "language": "en",
+          "value": "Tuna fish (bonito)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0059",
+      "display": "Yirtqich baliq (Cho'rtan)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба хищная (Щука)"
+        },
+        {
+          "language": "en",
+          "value": "Predatory fish (pike)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0060",
+      "display": "Yirtqich baliq (Oqcha)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба хищная (Судак)"
+        },
+        {
+          "language": "en",
+          "value": "Predatory fish (zander)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0061",
+      "display": "Yirtqich baliq (Olabug'a)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба хищная (Окунь)"
+        },
+        {
+          "language": "en",
+          "value": "Predatory fish (perch)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0063",
+      "display": "Baliqli pelmen va xinkali",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыбные пельмени и хинкали"
+        },
+        {
+          "language": "en",
+          "value": "Fish pelmeni and khinkali"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0064",
+      "display": "Baliq qiymasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыбный фарш"
+        },
+        {
+          "language": "en",
+          "value": "Minced fish"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0065",
+      "display": "Baliqli yengil gazaklar (Chips)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Снеки рыбные (Стружка)"
+        },
+        {
+          "language": "en",
+          "value": "Fish snacks (shavings)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0014_0066",
+      "display": "Baliqli yengil gazaklar (Qirilgan)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Снеки рыбные (Чипсы)"
+        },
+        {
+          "language": "en",
+          "value": "Fish snacks (chips)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0002",
+      "display": "Sharqona shirinliklar (Navvot)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Восточные сладости (Нават)"
+        },
+        {
+          "language": "en",
+          "value": "Oriental sweets (navat)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0003",
+      "display": "Sharqona shirinliklar (Parvarda)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Восточные сладости (Парварда)"
+        },
+        {
+          "language": "en",
+          "value": "Oriental sweets (parvarda)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0005",
+      "display": "Sharqona shirinliklar (Kozinak)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Восточные сладости (Козинаки)"
+        },
+        {
+          "language": "en",
+          "value": "Oriental sweets (kozinaki)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0007",
+      "display": "Shokolad glazurlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Глазури шоколадные"
+        },
+        {
+          "language": "en",
+          "value": "Chocolate glazes"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0010",
+      "display": "Draje",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Драже"
+        },
+        {
+          "language": "en",
+          "value": "Dragees"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0011",
+      "display": "Marmelad",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мармелад"
+        },
+        {
+          "language": "en",
+          "value": "Marmalade"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0012",
+      "display": "Saqich",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жевательная резинка"
+        },
+        {
+          "language": "en",
+          "value": "Chewing gum"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0013",
+      "display": "Qovurilgan tsikoriy va undan tayyorlangan mahsulotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зерно цикория обжаренное и продукты из него"
+        },
+        {
+          "language": "en",
+          "value": "Roasted chicory and its products"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0016",
+      "display": "Maydalangan kakao",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Какао тёртое"
+        },
+        {
+          "language": "en",
+          "value": "Cocoa liquor"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0017",
+      "display": "Kakao donalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Какао-бобы"
+        },
+        {
+          "language": "en",
+          "value": "Cocoa beans"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0019",
+      "display": "Kakao kukuni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Какао-порошок"
+        },
+        {
+          "language": "en",
+          "value": "Cocoa powder"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0020",
+      "display": "Kakao qobig'i",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Какаовелла"
+        },
+        {
+          "language": "en",
+          "value": "Cocoa shells"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0031",
+      "display": "Pastila",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пастила"
+        },
+        {
+          "language": "en",
+          "value": "Pastila"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0034",
+      "display": "Perga",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Перга"
+        },
+        {
+          "language": "en",
+          "value": "Bee bread"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0036",
+      "display": "Tabiiy shirinlashtirgichlar (Steviya)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подсластители натуральные (Стевия)"
+        },
+        {
+          "language": "en",
+          "value": "Natural sweeteners (stevia)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0037",
+      "display": "Tabiiy shirinlashtirgichlar (Eritrit)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подсластители натуральные (Эритрит)"
+        },
+        {
+          "language": "en",
+          "value": "Natural sweeteners (erythritol)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0042",
+      "display": "Sintetik shirinlashtirgichlar (Tsiklamat)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подсластители синтетические (Цикламат)"
+        },
+        {
+          "language": "en",
+          "value": "Synthetic sweeteners (cyclamate)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0043",
+      "display": "Pomadkalar va to'ldirgichlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Помадные массы и начинки"
+        },
+        {
+          "language": "en",
+          "value": "Fondant masses and fillings"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0057",
+      "display": "Sukatlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цукаты"
+        },
+        {
+          "language": "en",
+          "value": "Candied fruit peel (sukaty)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0015_0066",
+      "display": "Kakao tolasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Какао волокно"
+        },
+        {
+          "language": "en",
+          "value": "Cocoa fibre"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0001",
+      "display": "Aminokislotali kompleksli BAQ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАД к пище аминокислотные комплексы"
+        },
+        {
+          "language": "en",
+          "value": "Amino acid complex dietary supplements"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0002",
+      "display": "Vitamin-mineral kompleksli BAQ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАД к пище витаминно-минеральные комплексы"
+        },
+        {
+          "language": "en",
+          "value": "Vitamin and mineral complex dietary supplements"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0004",
+      "display": "Suvo'tlar asosidagi BAQ (Xlorella)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАД к пище на основе водорослей (Хлорелла)"
+        },
+        {
+          "language": "en",
+          "value": "Algae-based dietary supplements (chlorella)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0005",
+      "display": "Suvo'tlar asosidagi BAQ (Laminariya)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАД к пище на основе водорослей (Ламинария)"
+        },
+        {
+          "language": "en",
+          "value": "Algae-based dietary supplements (kelp)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0011",
+      "display": "O'simlik asosidagi oziq-ovqat qo'shimchalari (Fitopreparatlar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАД к пище на растительной основе (Фитопрепараты)"
+        },
+        {
+          "language": "en",
+          "value": "Plant-based dietary supplements (herbal preparations)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0012",
+      "display": "O'simlik asosidagi oziq-ovqat qo'shimchalari (Ekstraktlar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАД к пище на растительной основе (Экстракты)"
+        },
+        {
+          "language": "en",
+          "value": "Plant-based dietary supplements (extracts)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0013",
+      "display": "Probiotik asosidagi oziq-ovqat qo'shimchalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "БАД к пище пробиотики"
+        },
+        {
+          "language": "en",
+          "value": "Probiotic dietary supplements"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0014",
+      "display": "Prebiotik BAQ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пребиотики БАД"
+        },
+        {
+          "language": "en",
+          "value": "Prebiotic dietary supplements"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0015",
+      "display": "Simbiotik BAQ",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Симбиотики БАД"
+        },
+        {
+          "language": "en",
+          "value": "Synbiotic dietary supplements"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0016",
+      "display": "Kattalar uchun parhez (davo-profilaktik) ovqatlanish",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Диетическое (лечебное и профилактическое) питание для взрослых"
+        },
+        {
+          "language": "en",
+          "value": "Dietary (therapeutic and preventive) nutrition for adults"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0018",
+      "display": "Oziq-ovqat o'rnini bosuvchilar (mil-shake)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Заменители пищи (мил-шейки)"
+        },
+        {
+          "language": "en",
+          "value": "Meal replacements (meal shakes)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0019",
+      "display": "Boyitilgan (funksional) oziq-ovqat mahsulotlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Обогащённые (функциональные) пищевые продукты"
+        },
+        {
+          "language": "en",
+          "value": "Fortified (functional) foods"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0020",
+      "display": "Fenilketonuriya va boshqa irsiy buzilishlarli odamlar uchun oziqlanish",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Питание для людей с фенилкетонурией и др. наследственными нарушениями"
+        },
+        {
+          "language": "en",
+          "value": "Foods for people with phenylketonuria and other inherited disorders"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0021",
+      "display": "Glyutensiz maxsus mahsulotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Продукты безглютеновые специализированные"
+        },
+        {
+          "language": "en",
+          "value": "Specialised gluten-free products"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0022",
+      "display": "Laktozasiz maxsus mahsulotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Продукты безлактозные специализированные"
+        },
+        {
+          "language": "en",
+          "value": "Specialised lactose-free products"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0023",
+      "display": "Diabet bilan kasallanganlar uchun (shakar o'rnini bosuvchilar bilan) mahsulotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Продукты для питания людей с диабетом (с сахарозаменителями)"
+        },
+        {
+          "language": "en",
+          "value": "Foods for people with diabetes (with sugar substitutes)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0024",
+      "display": "Sport ovqatlanishi: BCAA",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спортивное питание: BCAA"
+        },
+        {
+          "language": "en",
+          "value": "Sports nutrition: BCAA"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0025",
+      "display": "Aminokislota aralashmalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Аминокислотные смеси"
+        },
+        {
+          "language": "en",
+          "value": "Amino acid mixes"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0026",
+      "display": "Sport ovqatlanishi: energetik batonchiklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спортивное питание: батончики энергетические"
+        },
+        {
+          "language": "en",
+          "value": "Sports nutrition: energy bars"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0027",
+      "display": "Sport ovqatlanishi: oqsilli batonchiklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спортивное питание: Протеиновые батончики"
+        },
+        {
+          "language": "en",
+          "value": "Sports nutrition: protein bars"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0028",
+      "display": "Sport ovqatlanishi: geyner",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спортивное питание: гейнеры"
+        },
+        {
+          "language": "en",
+          "value": "Sports nutrition: gainers"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0029",
+      "display": "Uglevod-oqsil aralashmalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Углеводно-белковые смеси"
+        },
+        {
+          "language": "en",
+          "value": "Carbohydrate-protein mixes"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0033",
+      "display": "Sport ovqatlanishi: oqsillar (Konsentrat)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спортивное питание: протеины (Концентраты)"
+        },
+        {
+          "language": "en",
+          "value": "Sports nutrition: proteins (concentrates)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0034",
+      "display": "Sport ovqatlanishi: oqsillar (Izolyat)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спортивное питание: протеины (Изоляты)"
+        },
+        {
+          "language": "en",
+          "value": "Sports nutrition: proteins (isolates)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0035",
+      "display": "Sport ovqatlanishi: oqsillar (Gidrolizat)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спортивное питание: протеины (Гидролизаты)"
+        },
+        {
+          "language": "en",
+          "value": "Sports nutrition: proteins (hydrolysates)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0036",
+      "display": "Maxsus tibbiy maqsadlardagi quruq aralashmalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухие смеси для специальных медицинских целей"
+        },
+        {
+          "language": "en",
+          "value": "Dry formulas for special medical purposes"
+        }
+      ]
+    },
+    {
+      "code": "subname_0016_0037",
+      "display": "Enteral ovqatlanish (maxsus tibbiy mahsulotlar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Энтеральное питание (специализированные мед. продукты)"
+        },
+        {
+          "language": "en",
+          "value": "Enteral nutrition (specialised medical products)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0009",
+      "display": "Banan chiplari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чипсы"
+        },
+        {
+          "language": "en",
+          "value": "Banana chips"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0010",
+      "display": "Zirk (barbaris)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Барбарис"
+        },
+        {
+          "language": "en",
+          "value": "Barberry"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0011",
+      "display": "Bergamot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бергамот"
+        },
+        {
+          "language": "en",
+          "value": "Bergamot"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0012",
+      "display": "Kafir-laym mevalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кафир-лайм (плоды)"
+        },
+        {
+          "language": "en",
+          "value": "Kaffir lime (fruit)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0014",
+      "display": "Brusnika",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Брусника"
+        },
+        {
+          "language": "en",
+          "value": "Lingonberry"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0020",
+      "display": "Meva marmeladi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мармелад фруктовый"
+        },
+        {
+          "language": "en",
+          "value": "Fruit marmalade"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0024",
+      "display": "Godji",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Годжи"
+        },
+        {
+          "language": "en",
+          "value": "Goji"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0031",
+      "display": "Drakon mevasi (pitaxaya)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Драконий фрукт (питахайя)"
+        },
+        {
+          "language": "en",
+          "value": "Dragon fruit (pitahaya)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0032",
+      "display": "Duriyan",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дуриан"
+        },
+        {
+          "language": "en",
+          "value": "Durian"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0035",
+      "display": "Meva jelesi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Желе фруктовое"
+        },
+        {
+          "language": "en",
+          "value": "Fruit jelly"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0036",
+      "display": "Muzlatilgan meva va rezavorlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Замороженные фрукты и ягоды"
+        },
+        {
+          "language": "en",
+          "value": "Frozen fruit and berries"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0038",
+      "display": "Irga",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ирга"
+        },
+        {
+          "language": "en",
+          "value": "Serviceberry (irga)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0039",
+      "display": "Saskatun",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Саскатун"
+        },
+        {
+          "language": "en",
+          "value": "Saskatoon berry"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0040",
+      "display": "Kalina mevalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Калина"
+        },
+        {
+          "language": "en",
+          "value": "Viburnum berries"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0049",
+      "display": "Kompot",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Компоты"
+        },
+        {
+          "language": "en",
+          "value": "Compotes"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0050",
+      "display": "Meva konservalari (Kompot)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Консервы фруктовые (Компоты)"
+        },
+        {
+          "language": "en",
+          "value": "Canned fruit (compotes)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0052",
+      "display": "Meva sharbatlari konsentratlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Концентраты фруктовых соков"
+        },
+        {
+          "language": "en",
+          "value": "Fruit juice concentrates"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0055",
+      "display": "Laym",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лаймы"
+        },
+        {
+          "language": "en",
+          "value": "Limes"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0058",
+      "display": "Longan",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лонган"
+        },
+        {
+          "language": "en",
+          "value": "Longan"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0061",
+      "display": "Mangostan",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мангостан"
+        },
+        {
+          "language": "en",
+          "value": "Mangosteen"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0066",
+      "display": "Meva nektarlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нектары фруктовые"
+        },
+        {
+          "language": "en",
+          "value": "Fruit nectars"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0067",
+      "display": "Chakanda (oblepixa)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Облепиха"
+        },
+        {
+          "language": "en",
+          "value": "Sea buckthorn"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0071",
+      "display": "Bolalar oziq-ovqati uchun meva pyuresi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пюре фруктовое для детского питания"
+        },
+        {
+          "language": "en",
+          "value": "Fruit puree for infant food"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0072",
+      "display": "Umumiy iste'mol uchun meva pyuresi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пюре фруктовое для общего употребления"
+        },
+        {
+          "language": "en",
+          "value": "Fruit puree for general consumption"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0073",
+      "display": "Rambutan",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рамбутан"
+        },
+        {
+          "language": "en",
+          "value": "Rambutan"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0078",
+      "display": "Meva sharbati bo'lgan ichimliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сокосодержащие фруктовые напитки"
+        },
+        {
+          "language": "en",
+          "value": "Juice-containing fruit drinks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0079",
+      "display": "Sublimirovkalangan rezavorlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сублимированные ягоды"
+        },
+        {
+          "language": "en",
+          "value": "Freeze-dried berries"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0091",
+      "display": "Olcha (alycha)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Алыча"
+        },
+        {
+          "language": "en",
+          "value": "Cherry plum (alycha)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0095",
+      "display": "Iste'molga tayyor meva tilimlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фруктовая нарезка готовая к употреблению"
+        },
+        {
+          "language": "en",
+          "value": "Ready-to-eat sliced fruit"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0096",
+      "display": "Meva tayoqchalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фруктовые батончики"
+        },
+        {
+          "language": "en",
+          "value": "Fruit bars"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0097",
+      "display": "Tabiiy pastila",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пастила натуральная"
+        },
+        {
+          "language": "en",
+          "value": "Natural pastila"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0098",
+      "display": "Sublimirovkalangan quritilgan mevalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фрукты сушёные сублимированные"
+        },
+        {
+          "language": "en",
+          "value": "Freeze-dried fruit"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0101",
+      "display": "Sukatlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цукаты"
+        },
+        {
+          "language": "en",
+          "value": "Candied fruit peel (sukaty)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0102",
+      "display": "Shakarlangan mevalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Засахаренные фрукты"
+        },
+        {
+          "language": "en",
+          "value": "Candied fruit"
+        }
+      ]
+    },
+    {
+      "code": "subname_0017_0117",
+      "display": "Tunuka idishdagi ichimliklar, shu jumladan meva va sabzavot sharbatlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Напитки в жестяной банке, включая фруктовые и овощные соки"
+        },
+        {
+          "language": "en",
+          "value": "Drinks in tin cans, including fruit and vegetable juices"
+        }
+      ]
+    },
+    {
+      "code": "subname_0018_0011",
+      "display": "Kofeli ichimliklar (Tsikoriy)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кофейные напитки (С цикорием)"
+        },
+        {
+          "language": "en",
+          "value": "Coffee drinks (with chicory)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0018_0025",
+      "display": "Erish (instant) meva-o'simlik choyli ichimliklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чайные напитки фруктово-травяные растворимые (инстант)"
+        },
+        {
+          "language": "en",
+          "value": "Instant fruit and herbal tea drinks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0020_0001",
+      "display": "QandLavlagi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "САХАРНАЯ СВЕКЛА"
+        },
+        {
+          "language": "en",
+          "value": "Sugar beet (raw crop)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0048_0002",
+      "display": "Ish sirtlari / Stollar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рабочие поверхности / Столы"
+        },
+        {
+          "language": "en",
+          "value": "Work surfaces / tables"
+        }
+      ]
+    },
+    {
+      "code": "subname_0048_0006",
+      "display": "DPM oshxonasidagi sirtlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Поверхности в пищеблоке ЛПУ"
+        },
+        {
+          "language": "en",
+          "value": "Surfaces in a healthcare facility kitchen"
+        }
+      ]
+    },
+    {
+      "code": "subname_0049_0001",
+      "display": "Kesish anjomlari (taxtalar, pichoqlar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Разделочный инвентарь (доски, ножи)"
+        },
+        {
+          "language": "en",
+          "value": "Cutting equipment (boards, knives)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0049_0002",
+      "display": "Texnologik uskunalar (go'sht maydalagich, mikser)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Технологическое оборудование (мясорубки, миксеры)"
+        },
+        {
+          "language": "en",
+          "value": "Processing equipment (meat grinders, mixers)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0049_0003",
+      "display": "Oshxona idish-tovoqlari va asboblari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Столовая посуда и приборы"
+        },
+        {
+          "language": "en",
+          "value": "Tableware and cutlery"
+        }
+      ]
+    },
+    {
+      "code": "subname_0050_0002",
+      "display": "Mebel (partalar, stollar)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мебель (парты, столы)"
+        },
+        {
+          "language": "en",
+          "value": "Furniture (desks, tables)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0050_0003",
+      "display": "Yotoq jihozlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Постельные принадлежности"
+        },
+        {
+          "language": "en",
+          "value": "Bedding"
+        }
+      ]
+    },
+    {
+      "code": "subname_0050_0004",
+      "display": "Oshxonadagi sirtlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Поверхности в пищеблоке"
+        },
+        {
+          "language": "en",
+          "value": "Kitchen surfaces"
+        }
+      ]
+    },
+    {
+      "code": "subname_0051_0001",
+      "display": "Sartaroshlik / manikyur asboblari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Парикмахерский / Маникюрный инструментарий"
+        },
+        {
+          "language": "en",
+          "value": "Hairdressing / manicure instruments"
+        }
+      ]
+    },
+    {
+      "code": "subname_0051_0002",
+      "display": "Mehmonxona / hammom / havzalardagi sirtlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Поверхности в гостиницах / банях / бассейнах"
+        },
+        {
+          "language": "en",
+          "value": "Surfaces in hotels / bathhouses / swimming pools"
+        }
+      ]
+    },
+    {
+      "code": "subname_0052_0001",
+      "display": "Non uchun pichoq",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нож для хлеба"
+        },
+        {
+          "language": "en",
+          "value": "Bread knife"
+        }
+      ]
+    },
+    {
+      "code": "subname_0052_0002",
+      "display": "Meva kesish taxtasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Разделочная доска для фруктов"
+        },
+        {
+          "language": "en",
+          "value": "Fruit cutting board"
+        }
+      ]
+    },
+    {
+      "code": "subname_0052_0003",
+      "display": "Tarqatish stoli",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Раздаточный стол"
+        },
+        {
+          "language": "en",
+          "value": "Serving table"
+        }
+      ]
+    },
+    {
+      "code": "subname_0052_0004",
+      "display": "Tayyor mahsulotlar uchin idish",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Посуда для готовой продукции"
+        },
+        {
+          "language": "en",
+          "value": "Containers for finished products"
+        }
+      ]
+    },
+    {
+      "code": "subname_0052_0006",
+      "display": "Oshpaz ish kiyimi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рабочая одежда повара"
+        },
+        {
+          "language": "en",
+          "value": "Cook's workwear"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0001",
+      "display": "1-ovqat idishi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Посуда для 1-го блюда"
+        },
+        {
+          "language": "en",
+          "value": "Dishes for the first course"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0002",
+      "display": "2-ovqat idishi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Посуда для 2-го блюда"
+        },
+        {
+          "language": "en",
+          "value": "Dishes for the second course"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0004",
+      "display": "Stollar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Столы"
+        },
+        {
+          "language": "en",
+          "value": "Tables"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0006",
+      "display": "Oynalar tokchasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подоконники"
+        },
+        {
+          "language": "en",
+          "value": "Window sills"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0007",
+      "display": "Eshiklar tutqichi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ручки дверей"
+        },
+        {
+          "language": "en",
+          "value": "Door handles"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0009",
+      "display": "O'yinchoqlar javoni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шкаф для игрушек"
+        },
+        {
+          "language": "en",
+          "value": "Toy cabinet"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0010",
+      "display": "Gilamlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ковры"
+        },
+        {
+          "language": "en",
+          "value": "Carpets"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0011",
+      "display": "Kiyim javoni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шкаф для одежды"
+        },
+        {
+          "language": "en",
+          "value": "Wardrobe"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0012",
+      "display": "O'rin oqliklari-1 (F.I.Sh.)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Постельное бельё-1 (Ф.И.О.)"
+        },
+        {
+          "language": "en",
+          "value": "Bed linen 1 (full name)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0013",
+      "display": "O'rin oqliklari-2 (F.I.Sh.)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Постельное бельё-2 (Ф.И.О.)"
+        },
+        {
+          "language": "en",
+          "value": "Bed linen 2 (full name)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0014",
+      "display": "Yuvinish xonasi devori",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стены моечной комнаты"
+        },
+        {
+          "language": "en",
+          "value": "Washroom walls"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0016",
+      "display": "Sochiqlar javoni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шкаф для полотенец"
+        },
+        {
+          "language": "en",
+          "value": "Towel cabinet"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0017",
+      "display": "Suv krani jo'mragi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Водопроводный кран"
+        },
+        {
+          "language": "en",
+          "value": "Water tap"
+        }
+      ]
+    },
+    {
+      "code": "subname_0053_0018",
+      "display": "Tuvak (unitaz)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Горшок (унитаз)"
+        },
+        {
+          "language": "en",
+          "value": "Potty (toilet)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0001",
+      "display": "1-ovqat idishi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Посуда для 1-го блюда"
+        },
+        {
+          "language": "en",
+          "value": "Dishes for the first course"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0002",
+      "display": "2-ovqat idishi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Посуда для 2-го блюда"
+        },
+        {
+          "language": "en",
+          "value": "Dishes for the second course"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0004",
+      "display": "Stollar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Столы"
+        },
+        {
+          "language": "en",
+          "value": "Tables"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0006",
+      "display": "Oynalar tokchasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подоконники"
+        },
+        {
+          "language": "en",
+          "value": "Window sills"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0007",
+      "display": "Eshiklar tutqichi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ручки дверей"
+        },
+        {
+          "language": "en",
+          "value": "Door handles"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0009",
+      "display": "O'yinchoqlar javoni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шкаф для игрушек"
+        },
+        {
+          "language": "en",
+          "value": "Toy cabinet"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0010",
+      "display": "Gilamlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ковры"
+        },
+        {
+          "language": "en",
+          "value": "Carpets"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0011",
+      "display": "Kiyim javoni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шкаф для одежды"
+        },
+        {
+          "language": "en",
+          "value": "Wardrobe"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0012",
+      "display": "O'rin oqliklari-1 (F.I.Sh.)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Постельное бельё-1 (Ф.И.О.)"
+        },
+        {
+          "language": "en",
+          "value": "Bed linen 1 (full name)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0013",
+      "display": "O'rin oqliklari-2 (F.I.Sh.)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Постельное бельё-2 (Ф.И.О.)"
+        },
+        {
+          "language": "en",
+          "value": "Bed linen 2 (full name)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0014",
+      "display": "Yuvinish xonasi devori",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стены моечной комнаты"
+        },
+        {
+          "language": "en",
+          "value": "Washroom walls"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0016",
+      "display": "Sochiqlar javoni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шкаф для полотенец"
+        },
+        {
+          "language": "en",
+          "value": "Towel cabinet"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0017",
+      "display": "Suv krani jo'mragi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Водопроводный кран"
+        },
+        {
+          "language": "en",
+          "value": "Water tap"
+        }
+      ]
+    },
+    {
+      "code": "subname_0054_0018",
+      "display": "Tuvak (unitaz)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Горошок (унитаз)"
+        },
+        {
+          "language": "en",
+          "value": "Potty (toilet)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0001",
+      "display": "1-ovqat idishi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Посуда для 1-го блюда"
+        },
+        {
+          "language": "en",
+          "value": "Dishes for the first course"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0002",
+      "display": "2-ovqat idishi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Посуда для 2-го блюда"
+        },
+        {
+          "language": "en",
+          "value": "Dishes for the second course"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0004",
+      "display": "Stollar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Столы"
+        },
+        {
+          "language": "en",
+          "value": "Tables"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0006",
+      "display": "Oynalar tokchasi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подоконники"
+        },
+        {
+          "language": "en",
+          "value": "Window sills"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0007",
+      "display": "Eshiklar tutqichi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ручки дверей"
+        },
+        {
+          "language": "en",
+          "value": "Door handles"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0009",
+      "display": "O'yinchoqlar javoni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шкаф для игрушек"
+        },
+        {
+          "language": "en",
+          "value": "Toy cabinet"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0010",
+      "display": "Gilamlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ковры"
+        },
+        {
+          "language": "en",
+          "value": "Carpets"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0011",
+      "display": "Kiyim javoni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шкаф для одежды"
+        },
+        {
+          "language": "en",
+          "value": "Wardrobe"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0012",
+      "display": "O'rin oqliklari-1 (F.I.Sh.)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Постельное бельё-1 (Ф.И.О.)"
+        },
+        {
+          "language": "en",
+          "value": "Bed linen 1 (full name)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0013",
+      "display": "O'rin oqliklari-1 (F.I.Sh.)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Постельное бельё-2 (Ф.И.О.)"
+        },
+        {
+          "language": "en",
+          "value": "Bed linen 2 (full name)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0014",
+      "display": "Yuvinish xonasi devori",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стены моечной комнаты"
+        },
+        {
+          "language": "en",
+          "value": "Washroom walls"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0016",
+      "display": "Sochiqlar javoni",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шкаф для полотенец"
+        },
+        {
+          "language": "en",
+          "value": "Towel cabinet"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0017",
+      "display": "Suv krani jo'mragi",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Водопроводный кран"
+        },
+        {
+          "language": "en",
+          "value": "Water tap"
+        }
+      ]
+    },
+    {
+      "code": "subname_0055_0018",
+      "display": "Tuvak (unitaz)",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Горшок (унитаз)"
+        },
+        {
+          "language": "en",
+          "value": "Potty (toilet)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0061_0001",
+      "display": "Turar joy obyektlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Объекты жилого назначения"
+        },
+        {
+          "language": "en",
+          "value": "Residential facilities"
+        }
+      ]
+    },
+    {
+      "code": "subname_0062_0004",
+      "display": "Qog'oz, karton, pergament, podpergament",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бумага, картон, пергамент, подпергамент"
+        },
+        {
+          "language": "en",
+          "value": "Paper, cardboard, parchment, greaseproof paper"
+        }
+      ]
+    },
+    {
+      "code": "subname_0062_0009",
+      "display": "Po'latdan tayyorlangan emallangan idishlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "стальная эмалированная посуда"
+        },
+        {
+          "language": "en",
+          "value": "Enamelled steel cookware"
+        }
+      ]
+    },
+    {
+      "code": "subname_0062_0010",
+      "display": "Yopishmaydigan qoplamali idishlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "посуда с антипригарным покрытием"
+        },
+        {
+          "language": "en",
+          "value": "Non-stick cookware"
+        }
+      ]
+    },
+    {
+      "code": "subname_0062_0011",
+      "display": "Laklangan konserva idishlari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лакированная консервная тара"
+        },
+        {
+          "language": "en",
+          "value": "Lacquered cans"
+        }
+      ]
+    },
+    {
+      "code": "subname_0063_0001",
+      "display": "Yuz va tana terisini parvarish qilish vositalari: kremlar, emulsiyalar, qaymoqlar, sutlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Средство для ухода за кожей лица и тела: кремы, эмульсии, сливки, молочко"
+        },
+        {
+          "language": "en",
+          "value": "Face and body skin care products: creams, emulsions, creams, lotions (milks)"
+        }
+      ]
+    },
+    {
+      "code": "subname_0063_0002",
+      "display": "Yuz va tana terisini parvarish qilish vositalari: Gellar, jelelar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Средство для ухода за кожей лица и тела: Гели,желе"
+        },
+        {
+          "language": "en",
+          "value": "Face and body skin care products: gels, jellies"
+        }
+      ]
+    },
+    {
+      "code": "subname_0063_0003",
+      "display": "Yuz va tana terisini parvarish qilish vositalari: Losyonlar, toniklar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Средство для ухода за кожей лица и тела: Лосьон, тоники"
+        },
+        {
+          "language": "en",
+          "value": "Face and body skin care products: lotions, toners"
+        }
+      ]
+    },
+    {
+      "code": "subname_0063_0004",
+      "display": "Yuz va tana terisini parvarish qilish vositalari: Kosmetik moylar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Средство для ухода за кожей лица и тела: Масло косметические"
+        },
+        {
+          "language": "en",
+          "value": "Face and body skin care products: cosmetic oils"
+        }
+      ]
+    },
+    {
+      "code": "subname_0063_0006",
+      "display": "Yuz va tana terisini parvarish qilish vositalari: oziqlantiruvchi, namlantiruvchi, tozalovchi va boshqa niqoblar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Средство для ухода за кожей лица и тела: маски питательные, очищающие и т. д"
+        },
+        {
+          "language": "en",
+          "value": "Face and body skin care products: nourishing, cleansing and other masks"
+        }
+      ]
+    },
+    {
+      "code": "subname_0063_0007",
+      "display": "Vanna va dush qabul qilish vositalari (tuzlar, ko'piklar, moylar, gellar va boshqalar): Vanna tuzi..",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "средства для принятия ванн и душа (соли, пена, масла,гели и т.д): Соль для купания"
+        },
+        {
+          "language": "en",
+          "value": "Bath and shower products (salts, foams, oils, gels and other): bath salt"
+        }
+      ]
+    },
+    {
+      "code": "subname_0063_0008",
+      "display": "Vanna va dush qabul qilish vositalari (tuzlar, ko'piklar, moylar, gellar va boshqalar): Ko'pik hosil qiluvchi yuvish vositalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "средства для принятия ванн и душа (соли, пена, масла,гели и т.д): Средство пеномоющие"
+        },
+        {
+          "language": "en",
+          "value": "Bath and shower products (salts, foams, oils, gels and other): foaming cleansers"
+        }
+      ]
+    },
+    {
+      "code": "subname_0063_0011",
+      "display": "Dezodorantlar va terlashga qarshi vositalar: dezodorant qalam",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дезодаранты и средства от пота: дезодарант карандаш"
+        },
+        {
+          "language": "en",
+          "value": "Deodorants and antiperspirants: deodorant stick"
+        }
+      ]
+    },
+    {
+      "code": "subname_0063_0012",
+      "display": "Dezodorantlar va terlashga qarshi vositalar: Aerozol qadoqdagi dezodorant",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дезодаранты и средства от пота: дезодаранты в аэрозольной упаковке"
+        },
+        {
+          "language": "en",
+          "value": "Deodorants and antiperspirants: aerosol deodorants"
+        }
+      ]
+    },
+    {
+      "code": "subname_0063_0013",
+      "display": "Dezodorantlar va terlashga qarshi vositalar: Gelsimon, kremsimon va boshqa dezodorantlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дезодаранты и средства от пота: дезодаранты гелеобразные, кремообразные и другие"
+        },
+        {
+          "language": "en",
+          "value": "Deodorants and antiperspirants: gel, cream and other deodorants"
+        }
+      ]
+    },
+    {
+      "code": "subname_0065_0001",
+      "display": "Statsionar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стационар"
+        },
+        {
+          "language": "en",
+          "value": "Inpatient facility"
+        }
+      ]
+    },
+    {
+      "code": "subname_0065_0002",
+      "display": "Ambulatoriya",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Амбулатория"
+        },
+        {
+          "language": "en",
+          "value": "Outpatient clinic"
+        }
+      ]
+    },
+    {
+      "code": "subname_0066_0001",
+      "display": "Maktab",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Школа"
+        },
+        {
+          "language": "en",
+          "value": "School"
+        }
+      ]
+    },
+    {
+      "code": "subname_0066_0002",
+      "display": "Maktabgacha ta'lim tashkiloti",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детский сад"
+        },
+        {
+          "language": "en",
+          "value": "Kindergarten"
+        }
+      ]
+    },
+    {
+      "code": "subname_0066_0003",
+      "display": "Oliy va o'rta maxsus ta'lim muassasalari",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Учреждения высшего и среднего специального образования"
+        },
+        {
+          "language": "en",
+          "value": "Higher and secondary specialised education institutions"
+        }
+      ]
+    },
+    {
+      "code": "subname_0067_0001",
+      "display": "Oziq-ovqat mahsulotlarini ishlab chiqarish va savdosi bilan shug'ullanuvchi tashkilotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Организации, занимающиеся производством и торговлей пищевыми продуктами"
+        },
+        {
+          "language": "en",
+          "value": "Organisations producing and trading in food products"
+        }
+      ]
+    },
+    {
+      "code": "subname_0067_0002",
+      "display": "Aholiga maishiy xizmat ko'rsatuvchi tashkilotlar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Организации, оказывающие бытовые услуги населению"
+        },
+        {
+          "language": "en",
+          "value": "Organisations providing consumer services to the public"
+        }
+      ]
+    },
+    {
+      "code": "subname_0067_0003",
+      "display": "Boshqalar",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Другие"
+        },
+        {
+          "language": "en",
+          "value": "Other"
+        }
+      ]
+    },
+    {
+      "code": "subname_0068_0001",
+      "display": "10.5. Sof moddalar (vitaminlar, mineral moddalar, organik moddalar va boshqalar) yoki konsentratlar (o'simlik ekstraktlari va boshqalar) asosida turli to'ldiruvchilar qo'shilgan holda tayyorlangan biologik faol qo'shimchalar, shu jumladan ichimliklar uchun quruq konsentratlar.",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "10.5. БАД на основе чистых субстанций (витамины, минеральные вещества, органические и др.) или концентратов (экстракты растений и др.) с использованием различных наполнителей, в т.ч. сухие концентраты для напитков."
+        },
+        {
+          "language": "en",
+          "value": "10.5. Dietary supplements based on pure substances (vitamins, minerals, organic and other substances) or concentrates (plant extracts and other) with various fillers, including dry concentrates for drinks"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "language": "uz",
+  "experimental": true,
+  "count": 477
+}

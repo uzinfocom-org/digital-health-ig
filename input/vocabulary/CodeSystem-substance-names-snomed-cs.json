@@ -1,0 +1,7062 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "supplement",
+  "name": "SubstanceNamesSnomedCS",
+  "id": "substance-names-snomed-cs",
+  "title": "Substance name SNOMED CT translations",
+  "description": "Supplement to SNOMED CT with Russian and Uzbek names for the SNOMED CT concepts used for the substances and sampling objects that samples are taken from for sanitary and epidemiological laboratory examination",
+  "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-snomed-cs",
+  "concept": [
+    {
+      "code": "608773004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вермут и ароматизированные вина"
+        },
+        {
+          "language": "uz",
+          "value": "Vermut va xushbo'y vinolar"
+        }
+      ]
+    },
+    {
+      "code": "226519000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Игристое белое вино"
+        },
+        {
+          "language": "uz",
+          "value": "Oq ko'pikli vino"
+        }
+      ]
+    },
+    {
+      "code": "35748005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вино из всех видов сырья"
+        },
+        {
+          "language": "uz",
+          "value": "Xom ashyoning barcha turlari uchun vino"
+        }
+      ]
+    },
+    {
+      "code": "228982004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ликёрное вино из винограда"
+        },
+        {
+          "language": "uz",
+          "value": "Uzumdan tayyorlangan likyor vinosi"
+        }
+      ]
+    },
+    {
+      "code": "226064009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Водка"
+        },
+        {
+          "language": "uz",
+          "value": "Aroq (vodka)"
+        }
+      ]
+    },
+    {
+      "code": "226031009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Джин"
+        },
+        {
+          "language": "uz",
+          "value": "Djin"
+        }
+      ]
+    },
+    {
+      "code": "226019007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дистилляты винные (Бренди)"
+        },
+        {
+          "language": "uz",
+          "value": "Vinoli distillyatlar (Brendi)"
+        }
+      ]
+    },
+    {
+      "code": "226528004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дистилляты зерновые (Виски)"
+        },
+        {
+          "language": "uz",
+          "value": "Donli distillyatlar (Viski)"
+        }
+      ]
+    },
+    {
+      "code": "226018004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дистилляты зерновые (Бурбон)"
+        },
+        {
+          "language": "uz",
+          "value": "Donli distillyatlar (Burbon)"
+        }
+      ]
+    },
+    {
+      "code": "6524003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дистиллированные спиртные напитки"
+        },
+        {
+          "language": "uz",
+          "value": "Distillangan spirtli ichimliklar"
+        }
+      ]
+    },
+    {
+      "code": "608772009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коктейль"
+        },
+        {
+          "language": "uz",
+          "value": "Kokteyl"
+        }
+      ]
+    },
+    {
+      "code": "226038003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ликёры"
+        },
+        {
+          "language": "uz",
+          "value": "Likyorlar"
+        }
+      ]
+    },
+    {
+      "code": "226502002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Слабоалкогольное пиво"
+        },
+        {
+          "language": "uz",
+          "value": "Kam alkogolli pivo"
+        }
+      ]
+    },
+    {
+      "code": "53410008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пиво"
+        },
+        {
+          "language": "uz",
+          "value": "Pivo"
+        }
+      ]
+    },
+    {
+      "code": "226036004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пиво светлое"
+        },
+        {
+          "language": "uz",
+          "value": "Och rangli pivo"
+        }
+      ]
+    },
+    {
+      "code": "226054000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ром"
+        },
+        {
+          "language": "uz",
+          "value": "Rom"
+        }
+      ]
+    },
+    {
+      "code": "311455009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Абсент"
+        },
+        {
+          "language": "uz",
+          "value": "Absent"
+        }
+      ]
+    },
+    {
+      "code": "226025006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сидр (яблочный)"
+        },
+        {
+          "language": "uz",
+          "value": "Sidr (olmali)"
+        }
+      ]
+    },
+    {
+      "code": "710180001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Солод"
+        },
+        {
+          "language": "uz",
+          "value": "Solod"
+        }
+      ]
+    },
+    {
+      "code": "419442005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Этанол"
+        },
+        {
+          "language": "uz",
+          "value": "Etanol"
+        }
+      ]
+    },
+    {
+      "code": "1296974009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Газированная вода"
+        },
+        {
+          "language": "uz",
+          "value": "Gazlangan suv"
+        }
+      ]
+    },
+    {
+      "code": "890302005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Питьевая вода"
+        },
+        {
+          "language": "uz",
+          "value": "Ichimlik suvi"
+        }
+      ]
+    },
+    {
+      "code": "444695006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Минеральная вода"
+        },
+        {
+          "language": "uz",
+          "value": "Mineral suv"
+        }
+      ]
+    },
+    {
+      "code": "444923006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Водопроводная вода"
+        },
+        {
+          "language": "uz",
+          "value": "Vodoprovod suvi"
+        }
+      ]
+    },
+    {
+      "code": "1335777002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морсы плодово-ягодные"
+        },
+        {
+          "language": "uz",
+          "value": "Meva-rezavor morslari"
+        }
+      ]
+    },
+    {
+      "code": "226483007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Газированный напиток со вкусом лимона"
+        },
+        {
+          "language": "uz",
+          "value": "Limon ta'mli gazli ichimlik"
+        }
+      ]
+    },
+    {
+      "code": "226486004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Напитки безалкогольные газированные сладкие (Тоники)"
+        },
+        {
+          "language": "uz",
+          "value": "Shirin gazli alkogolsiz ichimliklar (Tonik)"
+        }
+      ]
+    },
+    {
+      "code": "226481009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Напитки безалкогольные газированные сладкие (Колы)"
+        },
+        {
+          "language": "uz",
+          "value": "Shirin gazli alkogolsiz ichimliklar (Kola)"
+        }
+      ]
+    },
+    {
+      "code": "769352003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Напитки безалкогольные негазированные"
+        },
+        {
+          "language": "uz",
+          "value": "Gazsiz alkogolsiz ichimliklar"
+        }
+      ]
+    },
+    {
+      "code": "226793001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Растительное молоко (Соевое)"
+        },
+        {
+          "language": "uz",
+          "value": "O'simlik suti (Soya)"
+        }
+      ]
+    },
+    {
+      "code": "227500000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кокосовое молоко"
+        },
+        {
+          "language": "uz",
+          "value": "Kokos suti"
+        }
+      ]
+    },
+    {
+      "code": "229862008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сироп"
+        },
+        {
+          "language": "uz",
+          "value": "Qiyom"
+        }
+      ]
+    },
+    {
+      "code": "226499001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спортивные напитки (изотонические)"
+        },
+        {
+          "language": "uz",
+          "value": "Sport ichimliklari (izotonik)"
+        }
+      ]
+    },
+    {
+      "code": "29263009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кофе"
+        },
+        {
+          "language": "uz",
+          "value": "Kofe"
+        }
+      ]
+    },
+    {
+      "code": "16313001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чай"
+        },
+        {
+          "language": "uz",
+          "value": "Choy"
+        }
+      ]
+    },
+    {
+      "code": "227279001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гарниры готовые (Картофель отварной)"
+        },
+        {
+          "language": "uz",
+          "value": "Tayyor garnirlar (Qaynatilgan kartoshka)"
+        }
+      ]
+    },
+    {
+      "code": "227294002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гарниры готовые (Пюре)"
+        },
+        {
+          "language": "uz",
+          "value": "Tayyor garnirlar (Pyure)"
+        }
+      ]
+    },
+    {
+      "code": "67324005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рис"
+        },
+        {
+          "language": "uz",
+          "value": "Guruch"
+        }
+      ]
+    },
+    {
+      "code": "226723006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гречиха (зерно)"
+        },
+        {
+          "language": "uz",
+          "value": "Grechka (don)"
+        }
+      ]
+    },
+    {
+      "code": "819011003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Готовая пища"
+        },
+        {
+          "language": "uz",
+          "value": "Tayyor ovqat"
+        }
+      ]
+    },
+    {
+      "code": "227907009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Готовые вторые блюда (Плов)"
+        },
+        {
+          "language": "uz",
+          "value": "Tayyor ikkinchi taomlar (Osh)"
+        }
+      ]
+    },
+    {
+      "code": "227755004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пельмени (изделия из теста с начинкой)"
+        },
+        {
+          "language": "uz",
+          "value": "Chuchvara (to'ldirgichli xamir mahsulotlari)"
+        }
+      ]
+    },
+    {
+      "code": "227566009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Суп"
+        },
+        {
+          "language": "uz",
+          "value": "Sho'rva"
+        }
+      ]
+    },
+    {
+      "code": "227927005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Салат"
+        },
+        {
+          "language": "uz",
+          "value": "Salat"
+        }
+      ]
+    },
+    {
+      "code": "226023004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Десерты готовые (Чизкейк)"
+        },
+        {
+          "language": "uz",
+          "value": "Tayyor desertlar (Chizkeyk)"
+        }
+      ]
+    },
+    {
+      "code": "227682004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Десерт"
+        },
+        {
+          "language": "uz",
+          "value": "Desert"
+        }
+      ]
+    },
+    {
+      "code": "227734001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Десерты готовые (Муссы)"
+        },
+        {
+          "language": "uz",
+          "value": "Tayyor desertlar (Mussa)"
+        }
+      ]
+    },
+    {
+      "code": "227666000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Самса с мясом"
+        },
+        {
+          "language": "uz",
+          "value": "Go'shtli somsa"
+        }
+      ]
+    },
+    {
+      "code": "227650002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кулинарные изделия из мяса"
+        },
+        {
+          "language": "uz",
+          "value": "Go'shtli kulinariya mahsulotlari."
+        }
+      ]
+    },
+    {
+      "code": "227170009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кулинарные изделия из рыбы"
+        },
+        {
+          "language": "uz",
+          "value": "Baliqli kulinariya mahsulotlari."
+        }
+      ]
+    },
+    {
+      "code": "227765005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кулинарные изделия из овощей"
+        },
+        {
+          "language": "uz",
+          "value": "Sabzavot va xamirdan tayyorlangan pazandachilik mahsulotlari"
+        }
+      ]
+    },
+    {
+      "code": "226675007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пирожные"
+        },
+        {
+          "language": "uz",
+          "value": "Pirojnoe"
+        }
+      ]
+    },
+    {
+      "code": "226639005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Торты"
+        },
+        {
+          "language": "uz",
+          "value": "Tort"
+        }
+      ]
+    },
+    {
+      "code": "226704004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кексы"
+        },
+        {
+          "language": "uz",
+          "value": "Keks"
+        }
+      ]
+    },
+    {
+      "code": "227757007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пицца"
+        },
+        {
+          "language": "uz",
+          "value": "Pitsa"
+        }
+      ]
+    },
+    {
+      "code": "226748009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вермишель"
+        },
+        {
+          "language": "uz",
+          "value": "Vermishel"
+        }
+      ]
+    },
+    {
+      "code": "226739004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полуфабрикаты быстрого приготовления (Лапша инстант)"
+        },
+        {
+          "language": "uz",
+          "value": "Tezda tayyor yarim tayyor mahsulotlar (Lag'mon)"
+        }
+      ]
+    },
+    {
+      "code": "227519005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соус"
+        },
+        {
+          "language": "uz",
+          "value": "Sous"
+        }
+      ]
+    },
+    {
+      "code": "735008002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сэндвичи"
+        },
+        {
+          "language": "uz",
+          "value": "Sendvich"
+        }
+      ]
+    },
+    {
+      "code": "227004004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бургеры"
+        },
+        {
+          "language": "uz",
+          "value": "Burger"
+        }
+      ]
+    },
+    {
+      "code": "386127005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молочная смесь"
+        },
+        {
+          "language": "uz",
+          "value": "Sut aralashmasi"
+        }
+      ]
+    },
+    {
+      "code": "226862009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Творог"
+        },
+        {
+          "language": "uz",
+          "value": "Tvorog (suzma)"
+        }
+      ]
+    },
+    {
+      "code": "226863004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Йогурт"
+        },
+        {
+          "language": "uz",
+          "value": "Yogurt"
+        }
+      ]
+    },
+    {
+      "code": "226478004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лекарственные сборы и фиточаи"
+        },
+        {
+          "language": "uz",
+          "value": "Dorivor yig'malar va fitochaylar"
+        }
+      ]
+    },
+    {
+      "code": "226536008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Каши без глютена (Рисовая) для детей"
+        },
+        {
+          "language": "uz",
+          "value": "Glyutensiz bolalar yormalari (Guruch)"
+        }
+      ]
+    },
+    {
+      "code": "226530002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Детская каша"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar bo'tqasi"
+        }
+      ]
+    },
+    {
+      "code": "226795008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Последующие молочные смеси (для детей 6-12 мес.)"
+        },
+        {
+          "language": "uz",
+          "value": "6-12 oylik bolalar uchun keyingi sut aralashmalari"
+        }
+      ]
+    },
+    {
+      "code": "412552006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Растительное масло"
+        },
+        {
+          "language": "uz",
+          "value": "O'simlik moyi"
+        }
+      ]
+    },
+    {
+      "code": "284460001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Смеси на основе соевого белка для детского питания"
+        },
+        {
+          "language": "uz",
+          "value": "Bolalar oziq-ovqati uchun soya oqsili asosidagi aralashmalar"
+        }
+      ]
+    },
+    {
+      "code": "129560007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фруктовый сок"
+        },
+        {
+          "language": "uz",
+          "value": "Meva sharbati"
+        }
+      ]
+    },
+    {
+      "code": "226531003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухари"
+        },
+        {
+          "language": "uz",
+          "value": "Suxari"
+        }
+      ]
+    },
+    {
+      "code": "226898001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Топлёный жир"
+        },
+        {
+          "language": "uz",
+          "value": "Eritilgan yog'"
+        }
+      ]
+    },
+    {
+      "code": "229852001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жир говяжий топлёный"
+        },
+        {
+          "language": "uz",
+          "value": "Eritilgan mol yog'i"
+        }
+      ]
+    },
+    {
+      "code": "229850009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жир молочный (молочный жир)"
+        },
+        {
+          "language": "uz",
+          "value": "Sut yog'i"
+        }
+      ]
+    },
+    {
+      "code": "735341005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жир рыбий (Рыбий)"
+        },
+        {
+          "language": "uz",
+          "value": "Baliq yog'i (Baliq)"
+        }
+      ]
+    },
+    {
+      "code": "126076005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жир рыбий (Из печени рыб)"
+        },
+        {
+          "language": "uz",
+          "value": "Baliq yog'i (Jigar va boshqa dengiz hayvonlari)"
+        }
+      ]
+    },
+    {
+      "code": "226899009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жир свиной топлёный (смалец)"
+        },
+        {
+          "language": "uz",
+          "value": "Eritilgan cho'chqa yog'i (smalets)"
+        }
+      ]
+    },
+    {
+      "code": "229854000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кулинарный жир"
+        },
+        {
+          "language": "uz",
+          "value": "Pazandachilik yog'i"
+        }
+      ]
+    },
+    {
+      "code": "227549007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Майонез"
+        },
+        {
+          "language": "uz",
+          "value": "Mayonez"
+        }
+      ]
+    },
+    {
+      "code": "226890008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маргарин"
+        },
+        {
+          "language": "uz",
+          "value": "Margarin"
+        }
+      ]
+    },
+    {
+      "code": "417889008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло арахисовое пищевое"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol uchun yeryong'oq moyi"
+        }
+      ]
+    },
+    {
+      "code": "229932003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло виноградных косточек"
+        },
+        {
+          "language": "uz",
+          "value": "Uzum danagi moyi"
+        }
+      ]
+    },
+    {
+      "code": "229929001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло грецкого ореха"
+        },
+        {
+          "language": "uz",
+          "value": "Yong'oq moyi"
+        }
+      ]
+    },
+    {
+      "code": "80237000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло какао пищевое"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol kakao moyi"
+        }
+      ]
+    },
+    {
+      "code": "28942008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло кокосовое"
+        },
+        {
+          "language": "uz",
+          "value": "Kokos moyi"
+        }
+      ]
+    },
+    {
+      "code": "735247006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кукурузное масло"
+        },
+        {
+          "language": "uz",
+          "value": "Makkajo'xori moyi"
+        }
+      ]
+    },
+    {
+      "code": "89707004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло кунжутное"
+        },
+        {
+          "language": "uz",
+          "value": "Kunjut moyi"
+        }
+      ]
+    },
+    {
+      "code": "391737006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло миндальное пищевое"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol bodom yog'i"
+        }
+      ]
+    },
+    {
+      "code": "41834005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Оливковое масло"
+        },
+        {
+          "language": "uz",
+          "value": "Zaytun moyi"
+        }
+      ]
+    },
+    {
+      "code": "713336009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло оливковое рафинированное"
+        },
+        {
+          "language": "uz",
+          "value": "Rafinatlangan zaytun moyi"
+        }
+      ]
+    },
+    {
+      "code": "226907001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пальмовое масло"
+        },
+        {
+          "language": "uz",
+          "value": "Palma moyi"
+        }
+      ]
+    },
+    {
+      "code": "226912000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подсолнечное масло"
+        },
+        {
+          "language": "uz",
+          "value": "Kungaboqar moyi"
+        }
+      ]
+    },
+    {
+      "code": "226908006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рапсовое масло"
+        },
+        {
+          "language": "uz",
+          "value": "Raps moyi"
+        }
+      ]
+    },
+    {
+      "code": "226911007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соевое масло"
+        },
+        {
+          "language": "uz",
+          "value": "Soya moyi"
+        }
+      ]
+    },
+    {
+      "code": "713311003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло соевое рафинированное"
+        },
+        {
+          "language": "uz",
+          "value": "Rafinatlangan soya moyi"
+        }
+      ]
+    },
+    {
+      "code": "82450006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хлопковое масло"
+        },
+        {
+          "language": "uz",
+          "value": "Paxta moyi"
+        }
+      ]
+    },
+    {
+      "code": "226913005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Растительно-жировые смеси (купажные)"
+        },
+        {
+          "language": "uz",
+          "value": "O'simlik-yog' aralashmalari (kupaj)"
+        }
+      ]
+    },
+    {
+      "code": "226889004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Смешанный спред"
+        },
+        {
+          "language": "uz",
+          "value": "Aralash spred"
+        }
+      ]
+    },
+    {
+      "code": "420053004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Масло бурачника"
+        },
+        {
+          "language": "uz",
+          "value": "Borago yog'i"
+        }
+      ]
+    },
+    {
+      "code": "260184002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Горох"
+        },
+        {
+          "language": "uz",
+          "value": "No'xat"
+        }
+      ]
+    },
+    {
+      "code": "412056003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бобовые продовольственные: лимская фасоль"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol dukkaklilari: lima loviyasi"
+        }
+      ]
+    },
+    {
+      "code": "710179004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бобовые продовольственные: люпин (пищевой)"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol dukkaklilari: lyupin"
+        }
+      ]
+    },
+    {
+      "code": "227355001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бобовые продовольственные: маш"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol dukkaklilari: mosh"
+        }
+      ]
+    },
+    {
+      "code": "227346004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бобовые продовольственные: нут"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol dukkaklilari: noxat (nut)"
+        }
+      ]
+    },
+    {
+      "code": "256355007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бобовые продовольственные: соя (зерно)"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol dukkaklilari: soya (don)"
+        }
+      ]
+    },
+    {
+      "code": "256354006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фасол"
+        },
+        {
+          "language": "uz",
+          "value": "Loviya"
+        }
+      ]
+    },
+    {
+      "code": "227350006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бобовые продовольственные: чечевица"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol dukkaklilari: yasmiq"
+        }
+      ]
+    },
+    {
+      "code": "226726003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Попкорн"
+        },
+        {
+          "language": "uz",
+          "value": "Popkorn"
+        }
+      ]
+    },
+    {
+      "code": "226598007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Готовые сухие завтраки на зерновой основе"
+        },
+        {
+          "language": "uz",
+          "value": "Don asosidagi quruq tayyor nonushtalar"
+        }
+      ]
+    },
+    {
+      "code": "226734009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зародыши пшеницы"
+        },
+        {
+          "language": "uz",
+          "value": "Bug'doy kurtagi"
+        }
+      ]
+    },
+    {
+      "code": "226753004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Изделия слоёные (слойка)"
+        },
+        {
+          "language": "uz",
+          "value": "Qatlamali xamir mahsulotlari (sloyka)"
+        }
+      ]
+    },
+    {
+      "code": "226543002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крекеры"
+        },
+        {
+          "language": "uz",
+          "value": "Krekerlar"
+        }
+      ]
+    },
+    {
+      "code": "229948002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мука кукурузная"
+        },
+        {
+          "language": "uz",
+          "value": "Makkajo'xori uni"
+        }
+      ]
+    },
+    {
+      "code": "227754000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крупа кускус"
+        },
+        {
+          "language": "uz",
+          "value": "Kuskus yormasi"
+        }
+      ]
+    },
+    {
+      "code": "418504009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овёс продовольственный"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol sulisi"
+        }
+      ]
+    },
+    {
+      "code": "226725004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овсяные хлопья (геркулес)"
+        },
+        {
+          "language": "uz",
+          "value": "Suli xlopyalari (gerkules)"
+        }
+      ]
+    },
+    {
+      "code": "412071004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пшеница"
+        },
+        {
+          "language": "uz",
+          "value": "Bug'doy"
+        }
+      ]
+    },
+    {
+      "code": "226724000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крупа пшеничная (Булгур)"
+        },
+        {
+          "language": "uz",
+          "value": "Bug'doy yormasi (Bulgur)"
+        }
+      ]
+    },
+    {
+      "code": "735124003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ячмень"
+        },
+        {
+          "language": "uz",
+          "value": "Arpa"
+        }
+      ]
+    },
+    {
+      "code": "226721008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крупа Перловая"
+        },
+        {
+          "language": "uz",
+          "value": "Arpa yormalari (perlovka)"
+        }
+      ]
+    },
+    {
+      "code": "1290190002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кукуруза продовольственная (зерно)"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol makkajo'xorisi (don)"
+        }
+      ]
+    },
+    {
+      "code": "226604005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кукурузные хлопья"
+        },
+        {
+          "language": "uz",
+          "value": "Makkajo'xori xlopyalari"
+        }
+      ]
+    },
+    {
+      "code": "226735005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лапша"
+        },
+        {
+          "language": "uz",
+          "value": "Lag'mon (ugra)"
+        }
+      ]
+    },
+    {
+      "code": "226744006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Макаронные изделия (Спагетти)"
+        },
+        {
+          "language": "uz",
+          "value": "Makaron mahsulotlari (Spagetti)"
+        }
+      ]
+    },
+    {
+      "code": "226742005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Макаронные изделия (Рожки)"
+        },
+        {
+          "language": "uz",
+          "value": "Makaron mahsulotlari (Rojki)"
+        }
+      ]
+    },
+    {
+      "code": "226740002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Макаронные изделия"
+        },
+        {
+          "language": "uz",
+          "value": "Makaron mahsulotlari"
+        }
+      ]
+    },
+    {
+      "code": "226732008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Манная крупа"
+        },
+        {
+          "language": "uz",
+          "value": "Manniy yormasi"
+        }
+      ]
+    },
+    {
+      "code": "89811004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мука глютеновая / клейковина пшеничная (для пищ. применения)"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol uchun bug'doy kleykovinasi (glyuten)"
+        }
+      ]
+    },
+    {
+      "code": "229934002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мука Нутовая"
+        },
+        {
+          "language": "uz",
+          "value": "Dukkakli un (nut)"
+        }
+      ]
+    },
+    {
+      "code": "229944000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пшеничная мука"
+        },
+        {
+          "language": "uz",
+          "value": "Bug'doy uni"
+        }
+      ]
+    },
+    {
+      "code": "229940009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ржаная мука"
+        },
+        {
+          "language": "uz",
+          "value": "Javdar uni"
+        }
+      ]
+    },
+    {
+      "code": "229941008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мука соевая"
+        },
+        {
+          "language": "uz",
+          "value": "Soya uni"
+        }
+      ]
+    },
+    {
+      "code": "226611009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мюсли"
+        },
+        {
+          "language": "uz",
+          "value": "Myusli"
+        }
+      ]
+    },
+    {
+      "code": "391858005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Отруби из зерновых"
+        },
+        {
+          "language": "uz",
+          "value": "Don va don ekinlari asosida kepak"
+        }
+      ]
+    },
+    {
+      "code": "412533000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Отруби пшеничные"
+        },
+        {
+          "language": "uz",
+          "value": "Bug'doy kepagi"
+        }
+      ]
+    },
+    {
+      "code": "226555008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Печенье сахарное"
+        },
+        {
+          "language": "uz",
+          "value": "Shakarli pechenye"
+        }
+      ]
+    },
+    {
+      "code": "226554007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Печенье затяжное"
+        },
+        {
+          "language": "uz",
+          "value": "Cho'zilgan va shirin pechenye"
+        }
+      ]
+    },
+    {
+      "code": "226658001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пряники"
+        },
+        {
+          "language": "uz",
+          "value": "Pryaniklar"
+        }
+      ]
+    },
+    {
+      "code": "420963005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Псевдозлаки: амарант"
+        },
+        {
+          "language": "uz",
+          "value": "Soxta donlar: amarant"
+        }
+      ]
+    },
+    {
+      "code": "227515004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Псевдозлаки: киноа"
+        },
+        {
+          "language": "uz",
+          "value": "Soxta donlar: kinoa"
+        }
+      ]
+    },
+    {
+      "code": "226756007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рис нешлифованный (коричневый)"
+        },
+        {
+          "language": "uz",
+          "value": "Jigarrang (sayqallanmagan) guruch"
+        }
+      ]
+    },
+    {
+      "code": "226759000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рис шлифованный"
+        },
+        {
+          "language": "uz",
+          "value": "Sayqal berilgan guruch"
+        }
+      ]
+    },
+    {
+      "code": "412068007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рожь продовольственная"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol javdari"
+        }
+      ]
+    },
+    {
+      "code": "226562004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухари панировочные"
+        },
+        {
+          "language": "uz",
+          "value": "Panirovka suxarilari"
+        }
+      ]
+    },
+    {
+      "code": "226559002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хлеб"
+        },
+        {
+          "language": "uz",
+          "value": "Non"
+        }
+      ]
+    },
+    {
+      "code": "226590000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хлеб пшеничный из муки высшего сорта"
+        },
+        {
+          "language": "uz",
+          "value": "Oliy nav undan bug'doy noni"
+        }
+      ]
+    },
+    {
+      "code": "226584004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хлеб ржаной"
+        },
+        {
+          "language": "uz",
+          "value": "Javdar noni"
+        }
+      ]
+    },
+    {
+      "code": "226547001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хлебцы хрустящие"
+        },
+        {
+          "language": "uz",
+          "value": "Xrustyash xlebsalari"
+        }
+      ]
+    },
+    {
+      "code": "412357001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кукуруза"
+        },
+        {
+          "language": "uz",
+          "value": "Makkajo'xori"
+        }
+      ]
+    },
+    {
+      "code": "264331002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зерно и зерновые культуры"
+        },
+        {
+          "language": "uz",
+          "value": "Don va don ekinlari"
+        }
+      ]
+    },
+    {
+      "code": "63766005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мука"
+        },
+        {
+          "language": "uz",
+          "value": "Un"
+        }
+      ]
+    },
+    {
+      "code": "227587004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Закуски из кукурузы"
+        },
+        {
+          "language": "uz",
+          "value": "Makkajo'xoridan tayyorlangan gazaklar"
+        }
+      ]
+    },
+    {
+      "code": "412395006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Экстракт женьшеня"
+        },
+        {
+          "language": "uz",
+          "value": "Jenshen ekstrakti"
+        }
+      ]
+    },
+    {
+      "code": "227400003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Имбирь"
+        },
+        {
+          "language": "uz",
+          "value": "Zanjabil"
+        }
+      ]
+    },
+    {
+      "code": "230037009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Листья лекарственные (Мята)"
+        },
+        {
+          "language": "uz",
+          "value": "Dorivor barglar (Yalpiz)"
+        }
+      ]
+    },
+    {
+      "code": "710226003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плоды и семена (Шиповник)"
+        },
+        {
+          "language": "uz",
+          "value": "Meva va urug'lar (Namatak)"
+        }
+      ]
+    },
+    {
+      "code": "763200007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плоды и семена (Боярышник)"
+        },
+        {
+          "language": "uz",
+          "value": "Meva va urug'lar (Do'lana)"
+        }
+      ]
+    },
+    {
+      "code": "720488001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плоды и семена (Расторопша)"
+        },
+        {
+          "language": "uz",
+          "value": "Meva va urug'lar (Rastoropsha)"
+        }
+      ]
+    },
+    {
+      "code": "227381002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Плоды и семена (Тмин обыкновенный)"
+        },
+        {
+          "language": "uz",
+          "value": "Meva va urug'lar (Tmin)"
+        }
+      ]
+    },
+    {
+      "code": "227413009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зелень: тимьян"
+        },
+        {
+          "language": "uz",
+          "value": "Ko'kat: timyan"
+        }
+      ]
+    },
+    {
+      "code": "769047004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Липа"
+        },
+        {
+          "language": "uz",
+          "value": "Jo'ka"
+        }
+      ]
+    },
+    {
+      "code": "227708009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мороженое"
+        },
+        {
+          "language": "uz",
+          "value": "Muzqaymoq"
+        }
+      ]
+    },
+    {
+      "code": "226877001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Йогурт питьевой"
+        },
+        {
+          "language": "uz",
+          "value": "Ichiladigan yogurt"
+        }
+      ]
+    },
+    {
+      "code": "226866007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фруктовый йогурт из цельного молока"
+        },
+        {
+          "language": "uz",
+          "value": "To'liq sutdan tayyorlangan mevali yogurt"
+        }
+      ]
+    },
+    {
+      "code": "50593009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Казеин"
+        },
+        {
+          "language": "uz",
+          "value": "Kazein"
+        }
+      ]
+    },
+    {
+      "code": "10827009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Белки молока"
+        },
+        {
+          "language": "uz",
+          "value": "Sut oqsillari"
+        }
+      ]
+    },
+    {
+      "code": "47703008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лактоза пищевая"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol laktozasi"
+        }
+      ]
+    },
+    {
+      "code": "226888007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сливочное масло"
+        },
+        {
+          "language": "uz",
+          "value": "Sariyog'"
+        }
+      ]
+    },
+    {
+      "code": "25743006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молоко обезжиренное"
+        },
+        {
+          "language": "uz",
+          "value": "Yog'sizlantirilgan sut"
+        }
+      ]
+    },
+    {
+      "code": "3718001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Коровье молоко"
+        },
+        {
+          "language": "uz",
+          "value": "Sigir suti"
+        }
+      ]
+    },
+    {
+      "code": "226766004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молоко питьевое стерилизованное"
+        },
+        {
+          "language": "uz",
+          "value": "Sterillangan ichimlik suti"
+        }
+      ]
+    },
+    {
+      "code": "226787009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молоко сгущённое без сахара (концентрированное)"
+        },
+        {
+          "language": "uz",
+          "value": "Shakarsiz quyuq (konsentrlangan) sut"
+        }
+      ]
+    },
+    {
+      "code": "226786000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молоко сгущённое с сахаром"
+        },
+        {
+          "language": "uz",
+          "value": "Shakar qo'shilgan quyuq sut"
+        }
+      ]
+    },
+    {
+      "code": "226778000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молоко сухое обезжиренное"
+        },
+        {
+          "language": "uz",
+          "value": "Yog'sizlantirilgan quruq sut"
+        }
+      ]
+    },
+    {
+      "code": "226780006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молоко сухое цельное"
+        },
+        {
+          "language": "uz",
+          "value": "To'liq quruq sut"
+        }
+      ]
+    },
+    {
+      "code": "83595008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Козье молоко"
+        },
+        {
+          "language": "uz",
+          "value": "Echki suti"
+        }
+      ]
+    },
+    {
+      "code": "226791004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Овечье молоко"
+        },
+        {
+          "language": "uz",
+          "value": "Qo'y suti"
+        }
+      ]
+    },
+    {
+      "code": "226770007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молочная сыворотка"
+        },
+        {
+          "language": "uz",
+          "value": "Sut zardobi"
+        }
+      ]
+    },
+    {
+      "code": "226782003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молочная сыворотка сухая"
+        },
+        {
+          "language": "uz",
+          "value": "Quruq sut zardobi"
+        }
+      ]
+    },
+    {
+      "code": "226467007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молочный коктейль"
+        },
+        {
+          "language": "uz",
+          "value": "Sutli kokteyl"
+        }
+      ]
+    },
+    {
+      "code": "226796009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сливки питьевые пастеризованные"
+        },
+        {
+          "language": "uz",
+          "value": "Pasterlangan ichimlik qaymog'i"
+        }
+      ]
+    },
+    {
+      "code": "415768008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ультрапастеризованные сливки"
+        },
+        {
+          "language": "uz",
+          "value": "Ultrapasterlangan qaymoq"
+        }
+      ]
+    },
+    {
+      "code": "226808005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сметана"
+        },
+        {
+          "language": "uz",
+          "value": "Smetana"
+        }
+      ]
+    },
+    {
+      "code": "102264005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сыр"
+        },
+        {
+          "language": "uz",
+          "value": "Pishloq"
+        }
+      ]
+    },
+    {
+      "code": "226848002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сыр мягкий"
+        },
+        {
+          "language": "uz",
+          "value": "Yumshoq pishloq"
+        }
+      ]
+    },
+    {
+      "code": "226846003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сыр плавленый"
+        },
+        {
+          "language": "uz",
+          "value": "Eritilgan pishloq"
+        }
+      ]
+    },
+    {
+      "code": "226831005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сыр рассольный (Фета)"
+        },
+        {
+          "language": "uz",
+          "value": "Tuzlama pishloq (Feta)"
+        }
+      ]
+    },
+    {
+      "code": "1259878002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сыр с плесенью"
+        },
+        {
+          "language": "uz",
+          "value": "Mog'orli pishloq"
+        }
+      ]
+    },
+    {
+      "code": "226818000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сыр твёрдый"
+        },
+        {
+          "language": "uz",
+          "value": "Qattiq pishloq"
+        }
+      ]
+    },
+    {
+      "code": "226814003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Творог зернёный"
+        },
+        {
+          "language": "uz",
+          "value": "Donador tvorog"
+        }
+      ]
+    },
+    {
+      "code": "226902007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Топлёное масло (гхи)"
+        },
+        {
+          "language": "uz",
+          "value": "Eritilgan sariyog' (giy)"
+        }
+      ]
+    },
+    {
+      "code": "710184005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мясо баранины"
+        },
+        {
+          "language": "uz",
+          "value": "qo'y go'shti"
+        }
+      ]
+    },
+    {
+      "code": "226928005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бекон"
+        },
+        {
+          "language": "uz",
+          "value": "Bekon"
+        }
+      ]
+    },
+    {
+      "code": "226932004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ветчина"
+        },
+        {
+          "language": "uz",
+          "value": "Vetchina"
+        }
+      ]
+    },
+    {
+      "code": "226916002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мясо говядины"
+        },
+        {
+          "language": "uz",
+          "value": "Qoramol go'shti"
+        }
+      ]
+    },
+    {
+      "code": "227011000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зельц"
+        },
+        {
+          "language": "uz",
+          "value": "Zelts (go'shtli zich jeleli mahsulot)"
+        }
+      ]
+    },
+    {
+      "code": "227020009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Колбаса"
+        },
+        {
+          "language": "uz",
+          "value": "Kolbasa"
+        }
+      ]
+    },
+    {
+      "code": "227018006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Салями"
+        },
+        {
+          "language": "uz",
+          "value": "Salyami"
+        }
+      ]
+    },
+    {
+      "code": "710171001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Конина"
+        },
+        {
+          "language": "uz",
+          "value": "Ot go'shti"
+        }
+      ]
+    },
+    {
+      "code": "710183004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крольчатина"
+        },
+        {
+          "language": "uz",
+          "value": "Quyon go'shti"
+        }
+      ]
+    },
+    {
+      "code": "226971001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мясо дичи (диких животных)"
+        },
+        {
+          "language": "uz",
+          "value": "Yovvoyi hayvonlar go'shti"
+        }
+      ]
+    },
+    {
+      "code": "226965007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мясо птицы (гусь)"
+        },
+        {
+          "language": "uz",
+          "value": "Parranda go'shti (g'oz)"
+        }
+      ]
+    },
+    {
+      "code": "226967004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мясо птицы (индейка)"
+        },
+        {
+          "language": "uz",
+          "value": "Parranda go'shti (kurka)"
+        }
+      ]
+    },
+    {
+      "code": "226955001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мясо птицы (Курица)"
+        },
+        {
+          "language": "uz",
+          "value": "Parranda go'shti (Tovuq)"
+        }
+      ]
+    },
+    {
+      "code": "28230009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мясо птицы"
+        },
+        {
+          "language": "uz",
+          "value": "parranda go'shti"
+        }
+      ]
+    },
+    {
+      "code": "226963000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мясо птицы (утка)"
+        },
+        {
+          "language": "uz",
+          "value": "Parranda go'shti (o'rdak)"
+        }
+      ]
+    },
+    {
+      "code": "226934003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мясо свинины"
+        },
+        {
+          "language": "uz",
+          "value": "cho'chqa go'shti"
+        }
+      ]
+    },
+    {
+      "code": "227021008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сосиска"
+        },
+        {
+          "language": "uz",
+          "value": "Sosiska"
+        }
+      ]
+    },
+    {
+      "code": "226982009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Субпродукты"
+        },
+        {
+          "language": "uz",
+          "value": "Submahsulotlar"
+        }
+      ]
+    },
+    {
+      "code": "227000008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Субпродукты говяжьи (Рубец)"
+        },
+        {
+          "language": "uz",
+          "value": "Mol qorin chati"
+        }
+      ]
+    },
+    {
+      "code": "226991008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Печень (мясо)"
+        },
+        {
+          "language": "uz",
+          "value": "Jigar (go'sht)"
+        }
+      ]
+    },
+    {
+      "code": "226987003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Почки (мясо)"
+        },
+        {
+          "language": "uz",
+          "value": "Buyrak (go'sht)"
+        }
+      ]
+    },
+    {
+      "code": "226983004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сердце (мясо)"
+        },
+        {
+          "language": "uz",
+          "value": "Yurak (go'sht)"
+        }
+      ]
+    },
+    {
+      "code": "226999005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Субпродукты говяжьи (язык)"
+        },
+        {
+          "language": "uz",
+          "value": "Mol tili"
+        }
+      ]
+    },
+    {
+      "code": "226952003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Телятина"
+        },
+        {
+          "language": "uz",
+          "value": "Buzoq go'shti"
+        }
+      ]
+    },
+    {
+      "code": "226900004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Почечный жир (сало)"
+        },
+        {
+          "language": "uz",
+          "value": "Charvi yog'i"
+        }
+      ]
+    },
+    {
+      "code": "227215000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Артишок"
+        },
+        {
+          "language": "uz",
+          "value": "Artishok"
+        }
+      ]
+    },
+    {
+      "code": "227219006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Баклажаны"
+        },
+        {
+          "language": "uz",
+          "value": "Baqlajon"
+        }
+      ]
+    },
+    {
+      "code": "227254004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бамия (окра)"
+        },
+        {
+          "language": "uz",
+          "value": "Bamiya (okra)"
+        }
+      ]
+    },
+    {
+      "code": "735004000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Батат (сладкий картофель)"
+        },
+        {
+          "language": "uz",
+          "value": "Shirin kartoshka (batat)"
+        }
+      ]
+    },
+    {
+      "code": "256318007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бобы зелёные"
+        },
+        {
+          "language": "uz",
+          "value": "Yashil loviya"
+        }
+      ]
+    },
+    {
+      "code": "227369001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Горошек зелёный свежий"
+        },
+        {
+          "language": "uz",
+          "value": "Yangi yashil no'xat"
+        }
+      ]
+    },
+    {
+      "code": "1268404004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вешенка грибы"
+        },
+        {
+          "language": "uz",
+          "value": "Veshenka qo'ziqorini"
+        }
+      ]
+    },
+    {
+      "code": "735045008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Обычные грибы"
+        },
+        {
+          "language": "uz",
+          "value": "Oddiy qo'ziqorin"
+        }
+      ]
+    },
+    {
+      "code": "1287818008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грибы шампиньоны культивируемые"
+        },
+        {
+          "language": "uz",
+          "value": "Madaniylashtirilgan shampinyonlar"
+        }
+      ]
+    },
+    {
+      "code": "256331002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зелень столовая: укроп"
+        },
+        {
+          "language": "uz",
+          "value": "Stol ko'kati: ukrop"
+        }
+      ]
+    },
+    {
+      "code": "735048005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Петрушка"
+        },
+        {
+          "language": "uz",
+          "value": "Petrushka"
+        }
+      ]
+    },
+    {
+      "code": "735106000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Базилик"
+        },
+        {
+          "language": "uz",
+          "value": "Rayhon"
+        }
+      ]
+    },
+    {
+      "code": "227390009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зелень: кинза (кориандр листовой)"
+        },
+        {
+          "language": "uz",
+          "value": "Ko'kat: kashnich (bargli koriandr)"
+        }
+      ]
+    },
+    {
+      "code": "256320005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зелень: кресс-салат"
+        },
+        {
+          "language": "uz",
+          "value": "Ko'kat: kress-salat"
+        }
+      ]
+    },
+    {
+      "code": "227387003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зелень: лук-резанец (шнитт-лук)"
+        },
+        {
+          "language": "uz",
+          "value": "Ko'kat: shnitt-piyoz"
+        }
+      ]
+    },
+    {
+      "code": "227236003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зелень: мангольд"
+        },
+        {
+          "language": "uz",
+          "value": "Ko'kat: mangold"
+        }
+      ]
+    },
+    {
+      "code": "227410007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зелень: розмарин"
+        },
+        {
+          "language": "uz",
+          "value": "Ko'kat: rozmarin"
+        }
+      ]
+    },
+    {
+      "code": "256329006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зелень: шпинат"
+        },
+        {
+          "language": "uz",
+          "value": "Ko'kat: ismaloq"
+        }
+      ]
+    },
+    {
+      "code": "227412004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зелень: эстрагон (тархун)"
+        },
+        {
+          "language": "uz",
+          "value": "Ko'kat: tarxun (estragon)"
+        }
+      ]
+    },
+    {
+      "code": "227402006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Имбирь свежий (корень)"
+        },
+        {
+          "language": "uz",
+          "value": "Yangi zanjabil (ildiz)"
+        }
+      ]
+    },
+    {
+      "code": "227250008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кабачки"
+        },
+        {
+          "language": "uz",
+          "value": "Kabachki"
+        }
+      ]
+    },
+    {
+      "code": "227239005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цуккини"
+        },
+        {
+          "language": "uz",
+          "value": "Italyan kabachogi"
+        }
+      ]
+    },
+    {
+      "code": "1376032007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тыква (овощ)"
+        },
+        {
+          "language": "uz",
+          "value": "Qovoq (sabzavot)"
+        }
+      ]
+    },
+    {
+      "code": "227229004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Белокочанная капуста"
+        },
+        {
+          "language": "uz",
+          "value": "Oq karam"
+        }
+      ]
+    },
+    {
+      "code": "735123009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Капуста брокколи"
+        },
+        {
+          "language": "uz",
+          "value": "Brokkoli karam"
+        }
+      ]
+    },
+    {
+      "code": "735122004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Капуста брюссельская"
+        },
+        {
+          "language": "uz",
+          "value": "Brussel karami"
+        }
+      ]
+    },
+    {
+      "code": "227225005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Капуста пекинская"
+        },
+        {
+          "language": "uz",
+          "value": "Pekin karami"
+        }
+      ]
+    },
+    {
+      "code": "227231008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Капуста кольраби"
+        },
+        {
+          "language": "uz",
+          "value": "Kolrabi karami"
+        }
+      ]
+    },
+    {
+      "code": "227226006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Капуста краснокочанная"
+        },
+        {
+          "language": "uz",
+          "value": "Qizil karam"
+        }
+      ]
+    },
+    {
+      "code": "227230009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шотландская (кейл, кудрявая)"
+        },
+        {
+          "language": "uz",
+          "value": "Shotland bargli karami (keyl, jingalak karam)"
+        }
+      ]
+    },
+    {
+      "code": "227227002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Капуста савойская"
+        },
+        {
+          "language": "uz",
+          "value": "Savoy karami"
+        }
+      ]
+    },
+    {
+      "code": "735336002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Капуста цветная"
+        },
+        {
+          "language": "uz",
+          "value": "Gul karam"
+        }
+      ]
+    },
+    {
+      "code": "735053000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Картофель"
+        },
+        {
+          "language": "uz",
+          "value": "Kartoshka"
+        }
+      ]
+    },
+    {
+      "code": "227270002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кукуруза сахарная (в початках)"
+        },
+        {
+          "language": "uz",
+          "value": "So'tali shirin makkajo'xori"
+        }
+      ]
+    },
+    {
+      "code": "227269003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кукуруза сахарная (зерно)"
+        },
+        {
+          "language": "uz",
+          "value": "Shirin makkajo'xori doni"
+        }
+      ]
+    },
+    {
+      "code": "227414003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Куркума"
+        },
+        {
+          "language": "uz",
+          "value": "Zarchava"
+        }
+      ]
+    },
+    {
+      "code": "735047000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лук репчатый"
+        },
+        {
+          "language": "uz",
+          "value": "Bosh piyoz"
+        }
+      ]
+    },
+    {
+      "code": "726755004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лук-порей"
+        },
+        {
+          "language": "uz",
+          "value": "Pyorey-piyoz"
+        }
+      ]
+    },
+    {
+      "code": "227255003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зелёный лук"
+        },
+        {
+          "language": "uz",
+          "value": "Ko'k piyoz"
+        }
+      ]
+    },
+    {
+      "code": "227234000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маниока"
+        },
+        {
+          "language": "uz",
+          "value": "Manioka"
+        }
+      ]
+    },
+    {
+      "code": "227436000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маслины и оливки столовые (консервированные)"
+        },
+        {
+          "language": "uz",
+          "value": "Konservalangan stol zaytunlari (oliva, maslin)"
+        }
+      ]
+    },
+    {
+      "code": "256319004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морковь свежая"
+        },
+        {
+          "language": "uz",
+          "value": "Yangi sabzi"
+        }
+      ]
+    },
+    {
+      "code": "735213008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Огурец"
+        },
+        {
+          "language": "uz",
+          "value": "Bodring"
+        }
+      ]
+    },
+    {
+      "code": "227245002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Корнишон"
+        },
+        {
+          "language": "uz",
+          "value": "Kornishon"
+        }
+      ]
+    },
+    {
+      "code": "227274006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Паста томатная концентрированная"
+        },
+        {
+          "language": "uz",
+          "value": "Konsentrlangan pomidor pastasi"
+        }
+      ]
+    },
+    {
+      "code": "726753006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пастернак"
+        },
+        {
+          "language": "uz",
+          "value": "Pasternak"
+        }
+      ]
+    },
+    {
+      "code": "710040007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Острый перец"
+        },
+        {
+          "language": "uz",
+          "value": "Achchiq qalampir"
+        }
+      ]
+    },
+    {
+      "code": "1137359008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сладкий перец"
+        },
+        {
+          "language": "uz",
+          "value": "Shirin qalampir"
+        }
+      ]
+    },
+    {
+      "code": "734881000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Помидор"
+        },
+        {
+          "language": "uz",
+          "value": "Pomidor"
+        }
+      ]
+    },
+    {
+      "code": "726750009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ревень"
+        },
+        {
+          "language": "uz",
+          "value": "Rovoch"
+        }
+      ]
+    },
+    {
+      "code": "256325000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Редис"
+        },
+        {
+          "language": "uz",
+          "value": "Rediska"
+        }
+      ]
+    },
+    {
+      "code": "227275007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Репа"
+        },
+        {
+          "language": "uz",
+          "value": "Sholg'om"
+        }
+      ]
+    },
+    {
+      "code": "227266005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Брюква"
+        },
+        {
+          "language": "uz",
+          "value": "Brukva"
+        }
+      ]
+    },
+    {
+      "code": "735042006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Салат-латук"
+        },
+        {
+          "language": "uz",
+          "value": "Salat bargi"
+        }
+      ]
+    },
+    {
+      "code": "227220000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Свёкла столовая"
+        },
+        {
+          "language": "uz",
+          "value": "Stol lavlagi"
+        }
+      ]
+    },
+    {
+      "code": "227235004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сельдерей корневой"
+        },
+        {
+          "language": "uz",
+          "value": "Tuganakli selderey"
+        }
+      ]
+    },
+    {
+      "code": "256326004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сельдерей черешковый"
+        },
+        {
+          "language": "uz",
+          "value": "Bandli selderey"
+        }
+      ]
+    },
+    {
+      "code": "227264008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Козлобородник"
+        },
+        {
+          "language": "uz",
+          "value": "Takasoqol"
+        }
+      ]
+    },
+    {
+      "code": "129561006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соки овощные"
+        },
+        {
+          "language": "uz",
+          "value": "Sabzavot sharbatlari"
+        }
+      ]
+    },
+    {
+      "code": "226498009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Томатный сок"
+        },
+        {
+          "language": "uz",
+          "value": "Pomidor sharbati"
+        }
+      ]
+    },
+    {
+      "code": "227538001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соленья"
+        },
+        {
+          "language": "uz",
+          "value": "Tuzlama"
+        }
+      ]
+    },
+    {
+      "code": "227536002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Томатный соус"
+        },
+        {
+          "language": "uz",
+          "value": "Pomidor sousi"
+        }
+      ]
+    },
+    {
+      "code": "227218003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спаржа"
+        },
+        {
+          "language": "uz",
+          "value": "Sarsabil"
+        }
+      ]
+    },
+    {
+      "code": "227217008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Топинамбур"
+        },
+        {
+          "language": "uz",
+          "value": "Topinambur"
+        }
+      ]
+    },
+    {
+      "code": "227260004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "ОБЫКНОВЕННАЯ ТЫКВА"
+        },
+        {
+          "language": "uz",
+          "value": "Oddiy qovoq"
+        }
+      ]
+    },
+    {
+      "code": "227396003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фенхель (клубнелуковица)"
+        },
+        {
+          "language": "uz",
+          "value": "Fenxel piyoz tuganagi"
+        }
+      ]
+    },
+    {
+      "code": "735040003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хрен (корень)"
+        },
+        {
+          "language": "uz",
+          "value": "Xren (ildiz)"
+        }
+      ]
+    },
+    {
+      "code": "726761001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Цикорий"
+        },
+        {
+          "language": "uz",
+          "value": "Sikoriy"
+        }
+      ]
+    },
+    {
+      "code": "735030001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чеснок свежий (головки)"
+        },
+        {
+          "language": "uz",
+          "value": "Yangi sarimsoq (bosh)"
+        }
+      ]
+    },
+    {
+      "code": "726730005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ямс"
+        },
+        {
+          "language": "uz",
+          "value": "Yams"
+        }
+      ]
+    },
+    {
+      "code": "726757007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тыквы"
+        },
+        {
+          "language": "uz",
+          "value": "Qovoqlar"
+        }
+      ]
+    },
+    {
+      "code": "227313005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бобовые"
+        },
+        {
+          "language": "uz",
+          "value": "Dukkaklilar"
+        }
+      ]
+    },
+    {
+      "code": "256330001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Трава (зелень)"
+        },
+        {
+          "language": "uz",
+          "value": "O'simlik (ko'kat)"
+        }
+      ]
+    },
+    {
+      "code": "226733003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мука из тапиоки"
+        },
+        {
+          "language": "uz",
+          "value": "tapioki uni"
+        }
+      ]
+    },
+    {
+      "code": "229938004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хлопья маниоки"
+        },
+        {
+          "language": "uz",
+          "value": "Manioki bo'laklari (xlopyasi)"
+        }
+      ]
+    },
+    {
+      "code": "762952008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арахис"
+        },
+        {
+          "language": "uz",
+          "value": "Yeryong'oq"
+        }
+      ]
+    },
+    {
+      "code": "227509004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арахис жареный"
+        },
+        {
+          "language": "uz",
+          "value": "Qovurilgan yeryong'oq"
+        }
+      ]
+    },
+    {
+      "code": "227510009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арахис солёный"
+        },
+        {
+          "language": "uz",
+          "value": "Tuzlangan yeryong'oq"
+        }
+      ]
+    },
+    {
+      "code": "256351003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бразильский орех"
+        },
+        {
+          "language": "uz",
+          "value": "Braziliya yong'og'i"
+        }
+      ]
+    },
+    {
+      "code": "256352005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грецкий орех"
+        },
+        {
+          "language": "uz",
+          "value": "Yong'oq"
+        }
+      ]
+    },
+    {
+      "code": "227511008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кедровые орехи"
+        },
+        {
+          "language": "uz",
+          "value": "Kedr yong'oqlari"
+        }
+      ]
+    },
+    {
+      "code": "227493005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кешью"
+        },
+        {
+          "language": "uz",
+          "value": "Kaju"
+        }
+      ]
+    },
+    {
+      "code": "227501001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Макадамия"
+        },
+        {
+          "language": "uz",
+          "value": "Makadamiya"
+        }
+      ]
+    },
+    {
+      "code": "256350002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Миндаль"
+        },
+        {
+          "language": "uz",
+          "value": "Bodom"
+        }
+      ]
+    },
+    {
+      "code": "102260001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пасты и пралине из орехов и семян (Арахисовая)"
+        },
+        {
+          "language": "uz",
+          "value": "Yong'oq va urug'lardan tayyorlangan pastalar (Yeryong'oq pastasi)"
+        }
+      ]
+    },
+    {
+      "code": "227516003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пасты и пралине из орехов и семян (Тахини)"
+        },
+        {
+          "language": "uz",
+          "value": "Yong'oq va urug'lardan tayyorlangan pastalar (Tahini)"
+        }
+      ]
+    },
+    {
+      "code": "260189007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пекан"
+        },
+        {
+          "language": "uz",
+          "value": "Pekan yong'og'i"
+        }
+      ]
+    },
+    {
+      "code": "227406009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена горчицы (масличные)"
+        },
+        {
+          "language": "uz",
+          "value": "Xantal urug'i (yog' uchun)"
+        }
+      ]
+    },
+    {
+      "code": "260167008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена кунжута"
+        },
+        {
+          "language": "uz",
+          "value": "Kunjut urug'lari"
+        }
+      ]
+    },
+    {
+      "code": "710178007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена льна (для пищ. применения)"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol uchun zig'ir urug'i"
+        }
+      ]
+    },
+    {
+      "code": "227409002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена мака пищевые"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol mak (ko'knori) urug'i"
+        }
+      ]
+    },
+    {
+      "code": "260205009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена подсолнечника жареные/нежареные"
+        },
+        {
+          "language": "uz",
+          "value": "Qovurilgan/qovurilmagan kungaboqar urug'lari"
+        }
+      ]
+    },
+    {
+      "code": "710039005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена рапса"
+        },
+        {
+          "language": "uz",
+          "value": "Raps urug'i"
+        }
+      ]
+    },
+    {
+      "code": "227514000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена тыквы"
+        },
+        {
+          "language": "uz",
+          "value": "Qovoq urug'lari"
+        }
+      ]
+    },
+    {
+      "code": "227512001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фисташка"
+        },
+        {
+          "language": "uz",
+          "value": "Pista"
+        }
+      ]
+    },
+    {
+      "code": "256353000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фундук"
+        },
+        {
+          "language": "uz",
+          "value": "Funduk"
+        }
+      ]
+    },
+    {
+      "code": "260204008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Семена хлопчатника"
+        },
+        {
+          "language": "uz",
+          "value": "Chigit"
+        }
+      ]
+    },
+    {
+      "code": "10249006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Агар-агар"
+        },
+        {
+          "language": "uz",
+          "value": "Agar-agar"
+        }
+      ]
+    },
+    {
+      "code": "43706004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Антиоксиданты (Аскорбиновая кислота)"
+        },
+        {
+          "language": "uz",
+          "value": "Antioksidantlar (Askorbin kislotasi)"
+        }
+      ]
+    },
+    {
+      "code": "37237003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Антиоксиданты (Токоферолы)"
+        },
+        {
+          "language": "uz",
+          "value": "Antioksidantlar (Tokoferollar)"
+        }
+      ]
+    },
+    {
+      "code": "228104004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Антиоксиданты (BHA)"
+        },
+        {
+          "language": "uz",
+          "value": "Antioksidantlar (BHA)"
+        }
+      ]
+    },
+    {
+      "code": "255859001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Антиоксиданты (BHT)"
+        },
+        {
+          "language": "uz",
+          "value": "Antioksidantlar (BHT)"
+        }
+      ]
+    },
+    {
+      "code": "7330008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Глазирующие агенты (Шеллак)"
+        },
+        {
+          "language": "uz",
+          "value": "Yaltiratuvchi vositalar (Shellak)"
+        }
+      ]
+    },
+    {
+      "code": "58296003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дрожжи Saccharomyces cerevisiae"
+        },
+        {
+          "language": "uz",
+          "value": "Saccharomyces cerevisiae achitqisi"
+        }
+      ]
+    },
+    {
+      "code": "373531009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Желатин пищевой"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol jelatini"
+        }
+      ]
+    },
+    {
+      "code": "55946005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Загустители и стабилизаторы (Пектин)"
+        },
+        {
+          "language": "uz",
+          "value": "Quyultiruvchi va stabilizatorlar (Pektin)"
+        }
+      ]
+    },
+    {
+      "code": "109240008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Загустители и стабилизаторы (Каррагинан)"
+        },
+        {
+          "language": "uz",
+          "value": "Quyultiruvchi va stabilizatorlar (Karragenan)"
+        }
+      ]
+    },
+    {
+      "code": "395734009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Загустители и стабилизаторы (Гуаровая камедь)"
+        },
+        {
+          "language": "uz",
+          "value": "Quyultiruvchi va stabilizatorlar (Guar smolasi)"
+        }
+      ]
+    },
+    {
+      "code": "387350000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бензойная кислота"
+        },
+        {
+          "language": "uz",
+          "value": "Benzoy kislotasi"
+        }
+      ]
+    },
+    {
+      "code": "28421003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сорбиновая кислота"
+        },
+        {
+          "language": "uz",
+          "value": "Sorbin kislotasi"
+        }
+      ]
+    },
+    {
+      "code": "31528005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Консерванты (Нитриты)"
+        },
+        {
+          "language": "uz",
+          "value": "Konservantlar (Nitrit)"
+        }
+      ]
+    },
+    {
+      "code": "89119000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Консерванты (Нитраты)"
+        },
+        {
+          "language": "uz",
+          "value": "Konservantlar (Nitrat)"
+        }
+      ]
+    },
+    {
+      "code": "74242007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевой крахмал"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol kraxmali"
+        }
+      ]
+    },
+    {
+      "code": "229936000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крахмал кукурузный"
+        },
+        {
+          "language": "uz",
+          "value": "Makkajo'xori"
+        }
+      ]
+    },
+    {
+      "code": "75399008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лимонная кислота пищевая"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol limon kislotasi"
+        }
+      ]
+    },
+    {
+      "code": "73892005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевые красители натуральные (Кармин)"
+        },
+        {
+          "language": "uz",
+          "value": "Tabiiy oziq-ovqat bo'yog'i (Karmin)"
+        }
+      ]
+    },
+    {
+      "code": "89028002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевые красители натуральные (Куркумин)"
+        },
+        {
+          "language": "uz",
+          "value": "Tabiiy oziq-ovqat bo'yog'i (Kurkumin)"
+        }
+      ]
+    },
+    {
+      "code": "21592006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевые красители синтетические (Тартразин)"
+        },
+        {
+          "language": "uz",
+          "value": "Sintetik oziq-ovqat bo'yog'i (Tartrazin)"
+        }
+      ]
+    },
+    {
+      "code": "412548006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Индигокармин"
+        },
+        {
+          "language": "uz",
+          "value": "Indigokarmin"
+        }
+      ]
+    },
+    {
+      "code": "227554003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Разрыхлители и пекарские порошки"
+        },
+        {
+          "language": "uz",
+          "value": "Yumshatuvchilar va non kukunlari"
+        }
+      ]
+    },
+    {
+      "code": "77370004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Регуляторы кислотности (Молочная)"
+        },
+        {
+          "language": "uz",
+          "value": "Kislotalik regulyatorlari (Sut)"
+        }
+      ]
+    },
+    {
+      "code": "31790006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Регуляторы кислотности (Яблочная кислоты)"
+        },
+        {
+          "language": "uz",
+          "value": "Kislotalik regulyatorlari (Olma kislotalari)"
+        }
+      ]
+    },
+    {
+      "code": "387319002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сода пищевая (бикарбонат натрия)"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol sodasi (natriy bikarbonati)"
+        }
+      ]
+    },
+    {
+      "code": "387031005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ферментные препараты (Амилазы)"
+        },
+        {
+          "language": "uz",
+          "value": "Ferment preparatlari (Amilaza)"
+        }
+      ]
+    },
+    {
+      "code": "130202003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ферментные препараты (Протеазы)"
+        },
+        {
+          "language": "uz",
+          "value": "Ferment preparatlari (Proteaza)"
+        }
+      ]
+    },
+    {
+      "code": "72993008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ферментные препараты (Липазы)"
+        },
+        {
+          "language": "uz",
+          "value": "Ferment preparatlari (Lipaza)"
+        }
+      ]
+    },
+    {
+      "code": "26312007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эмульгаторы (Лецитин)"
+        },
+        {
+          "language": "uz",
+          "value": "Emulgatorlar (Lesitin)"
+        }
+      ]
+    },
+    {
+      "code": "227376006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Анис семена"
+        },
+        {
+          "language": "uz",
+          "value": "Arpabodiyon urug'i"
+        }
+      ]
+    },
+    {
+      "code": "412070003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ваниль"
+        },
+        {
+          "language": "uz",
+          "value": "Vanil"
+        }
+      ]
+    },
+    {
+      "code": "11170003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ванилин"
+        },
+        {
+          "language": "uz",
+          "value": "Vanilin"
+        }
+      ]
+    },
+    {
+      "code": "227389000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гвоздика"
+        },
+        {
+          "language": "uz",
+          "value": "Qalampirmunchoq"
+        }
+      ]
+    },
+    {
+      "code": "762953003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Горчица столовая"
+        },
+        {
+          "language": "uz",
+          "value": "Stol xantali"
+        }
+      ]
+    },
+    {
+      "code": "227553009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Готовые сухие приправы и пряные смеси"
+        },
+        {
+          "language": "uz",
+          "value": "Tayyor quruq ziravor va ziravor aralashmalari"
+        }
+      ]
+    },
+    {
+      "code": "227392001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зира индийская (кумин)"
+        },
+        {
+          "language": "uz",
+          "value": "Hind zirasi (kumin)"
+        }
+      ]
+    },
+    {
+      "code": "227401004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Молотый имбирь"
+        },
+        {
+          "language": "uz",
+          "value": "Maydalangan zanjabil"
+        }
+      ]
+    },
+    {
+      "code": "227382009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кардамон"
+        },
+        {
+          "language": "uz",
+          "value": "Kardamon"
+        }
+      ]
+    },
+    {
+      "code": "227395004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Карри в порошке"
+        },
+        {
+          "language": "uz",
+          "value": "Karri kukuni"
+        }
+      ]
+    },
+    {
+      "code": "227391008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кориандр семена"
+        },
+        {
+          "language": "uz",
+          "value": "Koriandr urug'i"
+        }
+      ]
+    },
+    {
+      "code": "227388008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Корица"
+        },
+        {
+          "language": "uz",
+          "value": "Dolchin"
+        }
+      ]
+    },
+    {
+      "code": "227379004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лавровый лист"
+        },
+        {
+          "language": "uz",
+          "value": "Lavr bargi"
+        }
+      ]
+    },
+    {
+      "code": "735046009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мускатный орех"
+        },
+        {
+          "language": "uz",
+          "value": "Muskat yong'og'i"
+        }
+      ]
+    },
+    {
+      "code": "1259874000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Белый перец"
+        },
+        {
+          "language": "uz",
+          "value": "Oq qalampir"
+        }
+      ]
+    },
+    {
+      "code": "227375005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Перец душистый (ямайский)"
+        },
+        {
+          "language": "uz",
+          "value": "Xushbo'y qalampir (yamayka)"
+        }
+      ]
+    },
+    {
+      "code": "412113006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Перец красный молотый (Кайенский)"
+        },
+        {
+          "language": "uz",
+          "value": "Maydalangan qizil qalampir (Kayen)"
+        }
+      ]
+    },
+    {
+      "code": "227408005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Перец красный молотый (Паприка)"
+        },
+        {
+          "language": "uz",
+          "value": "Maydalangan qizil qalampir (Paprika)"
+        }
+      ]
+    },
+    {
+      "code": "227385006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Перец красный молотый (Чили молотый)"
+        },
+        {
+          "language": "uz",
+          "value": "Maydalangan qizil qalampir (Chili)"
+        }
+      ]
+    },
+    {
+      "code": "412060000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чёрный перец"
+        },
+        {
+          "language": "uz",
+          "value": "Qora qalampir"
+        }
+      ]
+    },
+    {
+      "code": "227537006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соевый соус"
+        },
+        {
+          "language": "uz",
+          "value": "Soya sousi"
+        }
+      ]
+    },
+    {
+      "code": "227564007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевая соль"
+        },
+        {
+          "language": "uz",
+          "value": "Osh tuzi"
+        }
+      ]
+    },
+    {
+      "code": "227545001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Соусы салатные"
+        },
+        {
+          "language": "uz",
+          "value": "Salat souslari"
+        }
+      ]
+    },
+    {
+      "code": "227407000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Орегано"
+        },
+        {
+          "language": "uz",
+          "value": "Oregano"
+        }
+      ]
+    },
+    {
+      "code": "227405008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Майоран"
+        },
+        {
+          "language": "uz",
+          "value": "Mayoran"
+        }
+      ]
+    },
+    {
+      "code": "227565008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Уксус"
+        },
+        {
+          "language": "uz",
+          "value": "Sirka"
+        }
+      ]
+    },
+    {
+      "code": "1259873006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Уксус винный"
+        },
+        {
+          "language": "uz",
+          "value": "Vino uksusi"
+        }
+      ]
+    },
+    {
+      "code": "75665004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Глутамат натрия"
+        },
+        {
+          "language": "uz",
+          "value": "Natriy glutamati"
+        }
+      ]
+    },
+    {
+      "code": "227397007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фенхель семена"
+        },
+        {
+          "language": "uz",
+          "value": "Fenxel urug'i"
+        }
+      ]
+    },
+    {
+      "code": "227533005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хрен столовый (приправа)"
+        },
+        {
+          "language": "uz",
+          "value": "Stol xreni (ziravor)"
+        }
+      ]
+    },
+    {
+      "code": "735010000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шафран"
+        },
+        {
+          "language": "uz",
+          "value": "Za'faron"
+        }
+      ]
+    },
+    {
+      "code": "710176006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Любисток"
+        },
+        {
+          "language": "uz",
+          "value": "Lyubistok"
+        }
+      ]
+    },
+    {
+      "code": "24515005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пряность"
+        },
+        {
+          "language": "uz",
+          "value": "Ziravor"
+        }
+      ]
+    },
+    {
+      "code": "735029006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моллюски и ракообразные"
+        },
+        {
+          "language": "uz",
+          "value": "Mollyuskalar va qisqichbaqasimonlar"
+        }
+      ]
+    },
+    {
+      "code": "770326002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Моллюск"
+        },
+        {
+          "language": "uz",
+          "value": "Mollyuska"
+        }
+      ]
+    },
+    {
+      "code": "227183005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Икра рыб"
+        },
+        {
+          "language": "uz",
+          "value": "Baliq ikrasi"
+        }
+      ]
+    },
+    {
+      "code": "735006003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кальмар"
+        },
+        {
+          "language": "uz",
+          "value": "Kalmar"
+        }
+      ]
+    },
+    {
+      "code": "726759005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Каракатицы"
+        },
+        {
+          "language": "uz",
+          "value": "Karakatitsa"
+        }
+      ]
+    },
+    {
+      "code": "726763003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Карповые (Карп)"
+        },
+        {
+          "language": "uz",
+          "value": "Karpsimon baliqlar (Karp)"
+        }
+      ]
+    },
+    {
+      "code": "227191001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыбные консервы"
+        },
+        {
+          "language": "uz",
+          "value": "Baliq konservalari"
+        }
+      ]
+    },
+    {
+      "code": "227171008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крабовые палочки"
+        },
+        {
+          "language": "uz",
+          "value": "Krab tayoqchalari"
+        }
+      ]
+    },
+    {
+      "code": "736159005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крабы и крабовое мясо"
+        },
+        {
+          "language": "uz",
+          "value": "Krablar va krab go'shti"
+        }
+      ]
+    },
+    {
+      "code": "278840001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Креветки"
+        },
+        {
+          "language": "uz",
+          "value": "Krevetka"
+        }
+      ]
+    },
+    {
+      "code": "227150003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мидии"
+        },
+        {
+          "language": "uz",
+          "value": "Midiyalar"
+        }
+      ]
+    },
+    {
+      "code": "227265009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морские водоросли"
+        },
+        {
+          "language": "uz",
+          "value": "Dengiz suvo'tlari"
+        }
+      ]
+    },
+    {
+      "code": "715178005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морские водоросли пищевые (Спирулина)"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol uchun dengiz suvo'tlari (Spirulina)"
+        }
+      ]
+    },
+    {
+      "code": "736027000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Морские гребешки"
+        },
+        {
+          "language": "uz",
+          "value": "Dengiz grebeshkalari"
+        }
+      ]
+    },
+    {
+      "code": "227173006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полуфабрикаты рыбные (Котлеты)"
+        },
+        {
+          "language": "uz",
+          "value": "Baliq yarimtayyor mahsulotlari (Kotletlar)"
+        }
+      ]
+    },
+    {
+      "code": "710185006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Раки и омары (Лангусты)"
+        },
+        {
+          "language": "uz",
+          "value": "Qisqichbaqalar va omarlar (Langustlar)"
+        }
+      ]
+    },
+    {
+      "code": "736162008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Раки и омары (Лобстеры)"
+        },
+        {
+          "language": "uz",
+          "value": "Qisqichbaqalar va omarlar (Lobsterlar)"
+        }
+      ]
+    },
+    {
+      "code": "735009005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба лососёвых пород (Лосось)"
+        },
+        {
+          "language": "uz",
+          "value": "Qizil baliq turlari (Losos)"
+        }
+      ]
+    },
+    {
+      "code": "735034005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба лососёвых пород (Форель)"
+        },
+        {
+          "language": "uz",
+          "value": "Qizil baliq turlari (Forel)"
+        }
+      ]
+    },
+    {
+      "code": "735971005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "рыбное мясо"
+        },
+        {
+          "language": "uz",
+          "value": "Baliq go'shti"
+        }
+      ]
+    },
+    {
+      "code": "735035006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба сельдевая (Сельдь)"
+        },
+        {
+          "language": "uz",
+          "value": "Seld turlari (Seld)"
+        }
+      ]
+    },
+    {
+      "code": "227136008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба сельдевая (Сардина)"
+        },
+        {
+          "language": "uz",
+          "value": "Seld turlari (Sardina)"
+        }
+      ]
+    },
+    {
+      "code": "735337006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба сельдевая (Анчоус)"
+        },
+        {
+          "language": "uz",
+          "value": "Seld turlari (Anchous)"
+        }
+      ]
+    },
+    {
+      "code": "227139001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба сельдевая (Килька)"
+        },
+        {
+          "language": "uz",
+          "value": "Seld turlari (Kilka)"
+        }
+      ]
+    },
+    {
+      "code": "227144008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба тунцовая (Тунец)"
+        },
+        {
+          "language": "uz",
+          "value": "Tunyets turlari (Tunyets)"
+        }
+      ]
+    },
+    {
+      "code": "735043001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Рыба тунцовая (Скумбрия)"
+        },
+        {
+          "language": "uz",
+          "value": "Tunyets turlari (Skumbriya)"
+        }
+      ]
+    },
+    {
+      "code": "726762008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сом"
+        },
+        {
+          "language": "uz",
+          "value": "Laqqa"
+        }
+      ]
+    },
+    {
+      "code": "735246002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Угорь"
+        },
+        {
+          "language": "uz",
+          "value": "Ilonbaliq"
+        }
+      ]
+    },
+    {
+      "code": "736031006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Устрицы"
+        },
+        {
+          "language": "uz",
+          "value": "Ustritsalar"
+        }
+      ]
+    },
+    {
+      "code": "726731009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "рыба-меч"
+        },
+        {
+          "language": "uz",
+          "value": "Qilich baliq"
+        }
+      ]
+    },
+    {
+      "code": "15017001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Воск пчелиный пищевой"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol uchun mum"
+        }
+      ]
+    },
+    {
+      "code": "227627008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Восточные сладости (Рахат-лукум)"
+        },
+        {
+          "language": "uz",
+          "value": "Sharqona shirinliklar (Rohat-luqum)"
+        }
+      ]
+    },
+    {
+      "code": "229871004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Глазури кондитерские"
+        },
+        {
+          "language": "uz",
+          "value": "Qandolat glazurlari"
+        }
+      ]
+    },
+    {
+      "code": "67079006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Глюкоза пищевая"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol glyukozasi"
+        }
+      ]
+    },
+    {
+      "code": "227626004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ирис"
+        },
+        {
+          "language": "uz",
+          "value": "Iris"
+        }
+      ]
+    },
+    {
+      "code": "227621009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Конфеты карамельные (Леденцовые)"
+        },
+        {
+          "language": "uz",
+          "value": "Karamel konfetlari (Mursaklilar)"
+        }
+      ]
+    },
+    {
+      "code": "227607007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Конфеты"
+        },
+        {
+          "language": "uz",
+          "value": "Konfetlar"
+        }
+      ]
+    },
+    {
+      "code": "227608002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Конфеты шоколадные"
+        },
+        {
+          "language": "uz",
+          "value": "Shokoladli konfetlar"
+        }
+      ]
+    },
+    {
+      "code": "722195007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маточное молочко"
+        },
+        {
+          "language": "uz",
+          "value": "Ona suti"
+        }
+      ]
+    },
+    {
+      "code": "227598003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мёд"
+        },
+        {
+          "language": "uz",
+          "value": "Asal"
+        }
+      ]
+    },
+    {
+      "code": "229887001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Зефир"
+        },
+        {
+          "language": "uz",
+          "value": "Zefir"
+        }
+      ]
+    },
+    {
+      "code": "412064009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сироп кукурузный"
+        },
+        {
+          "language": "uz",
+          "value": "Makkajo'xori qiyomi"
+        }
+      ]
+    },
+    {
+      "code": "412583005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пыльца цветочная"
+        },
+        {
+          "language": "uz",
+          "value": "Gul changi"
+        }
+      ]
+    },
+    {
+      "code": "395951005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подсластители натуральные (Ксилит)"
+        },
+        {
+          "language": "uz",
+          "value": "Tabiiy shirinlashtirgichlar (Ksilit)"
+        }
+      ]
+    },
+    {
+      "code": "11526002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подсластители синтетические (Аспартам)"
+        },
+        {
+          "language": "uz",
+          "value": "Sintetik shirinlashtirgichlar (Aspartam)"
+        }
+      ]
+    },
+    {
+      "code": "27138006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подсластители синтетические (Сахарин)"
+        },
+        {
+          "language": "uz",
+          "value": "Sintetik shirinlashtirgichlar (Saxarin)"
+        }
+      ]
+    },
+    {
+      "code": "418992009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подсластители синтетические (Сукралоза)"
+        },
+        {
+          "language": "uz",
+          "value": "Sintetik shirinlashtirgichlar (Sukraloza)"
+        }
+      ]
+    },
+    {
+      "code": "255970007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Прополис"
+        },
+        {
+          "language": "uz",
+          "value": "Propolis"
+        }
+      ]
+    },
+    {
+      "code": "264322002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сахар"
+        },
+        {
+          "language": "uz",
+          "value": "Qand"
+        }
+      ]
+    },
+    {
+      "code": "230055000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сахар тростниковый коричневый"
+        },
+        {
+          "language": "uz",
+          "value": "Jigarrang shakar qamish shakari"
+        }
+      ]
+    },
+    {
+      "code": "230053007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сахар-песок белый"
+        },
+        {
+          "language": "uz",
+          "value": "Oq shakar (qum)"
+        }
+      ]
+    },
+    {
+      "code": "230054001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сахарная пудра"
+        },
+        {
+          "language": "uz",
+          "value": "Shakar kukuni (pudrasi)"
+        }
+      ]
+    },
+    {
+      "code": "229865005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сироп кленовый"
+        },
+        {
+          "language": "uz",
+          "value": "Zarang qiyomi"
+        }
+      ]
+    },
+    {
+      "code": "227452002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сушёный абрикос"
+        },
+        {
+          "language": "uz",
+          "value": "Quritilgan o'rik"
+        }
+      ]
+    },
+    {
+      "code": "58202007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фруктоза"
+        },
+        {
+          "language": "uz",
+          "value": "Fruktoza"
+        }
+      ]
+    },
+    {
+      "code": "229893009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Халва"
+        },
+        {
+          "language": "uz",
+          "value": "Halva"
+        }
+      ]
+    },
+    {
+      "code": "227612008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шоколад белый"
+        },
+        {
+          "language": "uz",
+          "value": "Oq shokolad"
+        }
+      ]
+    },
+    {
+      "code": "227611001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шоколад горький"
+        },
+        {
+          "language": "uz",
+          "value": "Achchiq shokolad"
+        }
+      ]
+    },
+    {
+      "code": "227610000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шоколад молочный"
+        },
+        {
+          "language": "uz",
+          "value": "Sutli shokolad"
+        }
+      ]
+    },
+    {
+      "code": "229878005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шоколад с начинкой"
+        },
+        {
+          "language": "uz",
+          "value": "To'ldirgichli shokolad"
+        }
+      ]
+    },
+    {
+      "code": "102262009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шоколад"
+        },
+        {
+          "language": "uz",
+          "value": "Shokolad"
+        }
+      ]
+    },
+    {
+      "code": "406774009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Омега-3 жирные кислоты из рыбы"
+        },
+        {
+          "language": "uz",
+          "value": "Baliqdan olingan omega-3 yog' kislotalari"
+        }
+      ]
+    },
+    {
+      "code": "819018009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкие специализированные смеси для медицинского питания"
+        },
+        {
+          "language": "uz",
+          "value": "Tibbiy ovqat uchun suyuq maxsus aralashmalar"
+        }
+      ]
+    },
+    {
+      "code": "14804005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спортивное питание: креатин"
+        },
+        {
+          "language": "uz",
+          "value": "Sport ovqatlanishi: kreatin"
+        }
+      ]
+    },
+    {
+      "code": "372601001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спортивное питание: L-карнитин"
+        },
+        {
+          "language": "uz",
+          "value": "Sport ovqatlanishi: L-karnitin"
+        }
+      ]
+    },
+    {
+      "code": "52625008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Спортивное питание: Аргинин"
+        },
+        {
+          "language": "uz",
+          "value": "Sport ovqatlanishi: Arginin"
+        }
+      ]
+    },
+    {
+      "code": "735214002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Абрикос свежий"
+        },
+        {
+          "language": "uz",
+          "value": "Yangi o'rik"
+        }
+      ]
+    },
+    {
+      "code": "735249009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Авокадо"
+        },
+        {
+          "language": "uz",
+          "value": "Avokado"
+        }
+      ]
+    },
+    {
+      "code": "227443006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Айва свежая"
+        },
+        {
+          "language": "uz",
+          "value": "Yangi behi"
+        }
+      ]
+    },
+    {
+      "code": "256313003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ананасы"
+        },
+        {
+          "language": "uz",
+          "value": "Ananas"
+        }
+      ]
+    },
+    {
+      "code": "256306003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Апельсины"
+        },
+        {
+          "language": "uz",
+          "value": "Apelsin"
+        }
+      ]
+    },
+    {
+      "code": "419420009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Арбуз"
+        },
+        {
+          "language": "uz",
+          "value": "Tarvuz"
+        }
+      ]
+    },
+    {
+      "code": "256307007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бананы"
+        },
+        {
+          "language": "uz",
+          "value": "Banan"
+        }
+      ]
+    },
+    {
+      "code": "227450005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бананы сушёные"
+        },
+        {
+          "language": "uz",
+          "value": "Quritilgan banan"
+        }
+      ]
+    },
+    {
+      "code": "227424006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Бузина (ягоды)"
+        },
+        {
+          "language": "uz",
+          "value": "Buzina rezavorlari"
+        }
+      ]
+    },
+    {
+      "code": "227601008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Джем"
+        },
+        {
+          "language": "uz",
+          "value": "Jem"
+        }
+      ]
+    },
+    {
+      "code": "256317002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Виноград"
+        },
+        {
+          "language": "uz",
+          "value": "Uzum"
+        }
+      ]
+    },
+    {
+      "code": "735248001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вишня"
+        },
+        {
+          "language": "uz",
+          "value": "Olcha"
+        }
+      ]
+    },
+    {
+      "code": "412061001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Голубика"
+        },
+        {
+          "language": "uz",
+          "value": "Yovvoyi ko'k meva"
+        }
+      ]
+    },
+    {
+      "code": "227417005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Черника"
+        },
+        {
+          "language": "uz",
+          "value": "chernika"
+        }
+      ]
+    },
+    {
+      "code": "227441008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гранат свежий"
+        },
+        {
+          "language": "uz",
+          "value": "Yangi anor"
+        }
+      ]
+    },
+    {
+      "code": "256315005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Грейпфруты"
+        },
+        {
+          "language": "uz",
+          "value": "Greypfrut"
+        }
+      ]
+    },
+    {
+      "code": "735050002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Груши свежие"
+        },
+        {
+          "language": "uz",
+          "value": "Yangi nok"
+        }
+      ]
+    },
+    {
+      "code": "227429001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Гуава"
+        },
+        {
+          "language": "uz",
+          "value": "Guava"
+        }
+      ]
+    },
+    {
+      "code": "260177005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дыня"
+        },
+        {
+          "language": "uz",
+          "value": "Qovun"
+        }
+      ]
+    },
+    {
+      "code": "227418000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ежевика"
+        },
+        {
+          "language": "uz",
+          "value": "Maymunjon (yejevika)"
+        }
+      ]
+    },
+    {
+      "code": "227425007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Инжир свежий"
+        },
+        {
+          "language": "uz",
+          "value": "Yangi anjir"
+        }
+      ]
+    },
+    {
+      "code": "710035004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Карамбола (звёздчатый плод)"
+        },
+        {
+          "language": "uz",
+          "value": "Karambola (yulduz meva)"
+        }
+      ]
+    },
+    {
+      "code": "260176001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Киви"
+        },
+        {
+          "language": "uz",
+          "value": "Kivi"
+        }
+      ]
+    },
+    {
+      "code": "102261002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клубника свежая"
+        },
+        {
+          "language": "uz",
+          "value": "Yangi qulupnay"
+        }
+      ]
+    },
+    {
+      "code": "227421003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Клюква"
+        },
+        {
+          "language": "uz",
+          "value": "Klyukva"
+        }
+      ]
+    },
+    {
+      "code": "227457008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кожура цитрусовых засахаренная и пищевая"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol va shakarlangan sitrus po'stlog'i"
+        }
+      ]
+    },
+    {
+      "code": "227496002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кокос (Свежий)"
+        },
+        {
+          "language": "uz",
+          "value": "Kokos (Yangi)"
+        }
+      ]
+    },
+    {
+      "code": "735211005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кокос"
+        },
+        {
+          "language": "uz",
+          "value": "Kokos"
+        }
+      ]
+    },
+    {
+      "code": "227498001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кокосовая стружка пищевая"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'mol kokos qirilmasi"
+        }
+      ]
+    },
+    {
+      "code": "227465006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Консервированные фрукты"
+        },
+        {
+          "language": "uz",
+          "value": "Konservalangan mevalar"
+        }
+      ]
+    },
+    {
+      "code": "227427004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Крыжовник"
+        },
+        {
+          "language": "uz",
+          "value": "Krijovnik"
+        }
+      ]
+    },
+    {
+      "code": "227431005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кумкват"
+        },
+        {
+          "language": "uz",
+          "value": "Kumkvat"
+        }
+      ]
+    },
+    {
+      "code": "735340006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Лимоны"
+        },
+        {
+          "language": "uz",
+          "value": "Limon"
+        }
+      ]
+    },
+    {
+      "code": "227433008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Личи"
+        },
+        {
+          "language": "uz",
+          "value": "Lichi"
+        }
+      ]
+    },
+    {
+      "code": "227444000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Малина"
+        },
+        {
+          "language": "uz",
+          "value": "Malina"
+        }
+      ]
+    },
+    {
+      "code": "260179008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Манго"
+        },
+        {
+          "language": "uz",
+          "value": "Mango"
+        }
+      ]
+    },
+    {
+      "code": "256316006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Мандарин"
+        },
+        {
+          "language": "uz",
+          "value": "Mandarin"
+        }
+      ]
+    },
+    {
+      "code": "227438004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Маракуйя"
+        },
+        {
+          "language": "uz",
+          "value": "Marakuya"
+        }
+      ]
+    },
+    {
+      "code": "227435001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Нектарин свежий"
+        },
+        {
+          "language": "uz",
+          "value": "Yangi nektarin"
+        }
+      ]
+    },
+    {
+      "code": "735212003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Папайя"
+        },
+        {
+          "language": "uz",
+          "value": "Papayya"
+        }
+      ]
+    },
+    {
+      "code": "735049002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Персик свежий"
+        },
+        {
+          "language": "uz",
+          "value": "Yangi shaftoli"
+        }
+      ]
+    },
+    {
+      "code": "227442001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Помело"
+        },
+        {
+          "language": "uz",
+          "value": "Pomelo"
+        }
+      ]
+    },
+    {
+      "code": "735051003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сливы"
+        },
+        {
+          "language": "uz",
+          "value": "Olxo'ri"
+        }
+      ]
+    },
+    {
+      "code": "227459006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухофрукты: груша сушёная"
+        },
+        {
+          "language": "uz",
+          "value": "Quritilgan nok"
+        }
+      ]
+    },
+    {
+      "code": "227449005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухофрукты"
+        },
+        {
+          "language": "uz",
+          "value": "Quritilgan mevalar"
+        }
+      ]
+    },
+    {
+      "code": "227463004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухофрукты: изюм"
+        },
+        {
+          "language": "uz",
+          "value": "Mayiz"
+        }
+      ]
+    },
+    {
+      "code": "227455000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухофрукты: инжир сушёный"
+        },
+        {
+          "language": "uz",
+          "value": "Quritilgan anjir"
+        }
+      ]
+    },
+    {
+      "code": "227456004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухофрукты: смесь сухофруктов"
+        },
+        {
+          "language": "uz",
+          "value": "Quritilgan meva aralashmalari"
+        }
+      ]
+    },
+    {
+      "code": "227454001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухофрукты: финики сушёные"
+        },
+        {
+          "language": "uz",
+          "value": "Quritilgan xurmo"
+        }
+      ]
+    },
+    {
+      "code": "227462009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухофрукты: чернослив"
+        },
+        {
+          "language": "uz",
+          "value": "Quruq olxo'ri"
+        }
+      ]
+    },
+    {
+      "code": "227451009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сухофрукты: яблоко сушёное (qoqi)"
+        },
+        {
+          "language": "uz",
+          "value": "Quritilgan olma (qoqi)"
+        }
+      ]
+    },
+    {
+      "code": "771582007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Тёрн"
+        },
+        {
+          "language": "uz",
+          "value": "Olxo'ri (tarn)"
+        }
+      ]
+    },
+    {
+      "code": "1264515001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Унаби (Китайский финик)"
+        },
+        {
+          "language": "uz",
+          "value": "Unobi (Xitoy xurmosi)"
+        }
+      ]
+    },
+    {
+      "code": "227423000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Финики свежие"
+        },
+        {
+          "language": "uz",
+          "value": "Yangi xurmo"
+        }
+      ]
+    },
+    {
+      "code": "227447007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хурма (шарон)"
+        },
+        {
+          "language": "uz",
+          "value": "Xurmo (sharon)"
+        }
+      ]
+    },
+    {
+      "code": "227448002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Белая смородина"
+        },
+        {
+          "language": "uz",
+          "value": "Oq qorag'at"
+        }
+      ]
+    },
+    {
+      "code": "227434002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Шелковица (Тут)"
+        },
+        {
+          "language": "uz",
+          "value": "Tut (shoxtut)"
+        }
+      ]
+    },
+    {
+      "code": "735215001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яблоки"
+        },
+        {
+          "language": "uz",
+          "value": "Olmalar"
+        }
+      ]
+    },
+    {
+      "code": "420823005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яблочное пюре"
+        },
+        {
+          "language": "uz",
+          "value": "Olma pyuresi"
+        }
+      ]
+    },
+    {
+      "code": "63045006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Ягода"
+        },
+        {
+          "language": "uz",
+          "value": "Rezavor meva"
+        }
+      ]
+    },
+    {
+      "code": "226492005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Виноградный сок"
+        },
+        {
+          "language": "uz",
+          "value": "Uzum sharbati"
+        }
+      ]
+    },
+    {
+      "code": "72511004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Фрукты"
+        },
+        {
+          "language": "uz",
+          "value": "Mevalar"
+        }
+      ]
+    },
+    {
+      "code": "226026007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Какао-напитки"
+        },
+        {
+          "language": "uz",
+          "value": "Kakaoli ichimliklar"
+        }
+      ]
+    },
+    {
+      "code": "1296981002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кофе декофеинизированный"
+        },
+        {
+          "language": "uz",
+          "value": "Kofeinsizlantirilgan kofe"
+        }
+      ]
+    },
+    {
+      "code": "1296982009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кофейные напитки (Ячмёнем)"
+        },
+        {
+          "language": "uz",
+          "value": "Kofeli ichimliklar (Arpa bilan)"
+        }
+      ]
+    },
+    {
+      "code": "412194001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чай зелёный байховый"
+        },
+        {
+          "language": "uz",
+          "value": "Yashil bargli choy"
+        }
+      ]
+    },
+    {
+      "code": "226476000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Чёрный чай"
+        },
+        {
+          "language": "uz",
+          "value": "Qora choy"
+        }
+      ]
+    },
+    {
+      "code": "226033007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Горячий шоколад"
+        },
+        {
+          "language": "uz",
+          "value": "Issiq shokolad"
+        }
+      ]
+    },
+    {
+      "code": "303301007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Альбумин яичный"
+        },
+        {
+          "language": "uz",
+          "value": "Tuxum albumini"
+        }
+      ]
+    },
+    {
+      "code": "256443002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Белок сухой / жидкий"
+        },
+        {
+          "language": "uz",
+          "value": "Quruq / suyuq tuxum oqi"
+        }
+      ]
+    },
+    {
+      "code": "256442007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Желток сухой / жидкий"
+        },
+        {
+          "language": "uz",
+          "value": "Quruq / suyuq tuxum sarig'i"
+        }
+      ]
+    },
+    {
+      "code": "414074006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яичный продукт"
+        },
+        {
+          "language": "uz",
+          "value": "Tuxum mahsuloti"
+        }
+      ]
+    },
+    {
+      "code": "226881001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яичный порошок (цельный)"
+        },
+        {
+          "language": "uz",
+          "value": "To'liq tuxum kukuni"
+        }
+      ]
+    },
+    {
+      "code": "226882008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яйца варёные готовые к употреблению (фабричные)"
+        },
+        {
+          "language": "uz",
+          "value": "Iste'molga tayyor (fabrika) qaynatilgan tuxum"
+        }
+      ]
+    },
+    {
+      "code": "102263004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яйца (пищевые)"
+        },
+        {
+          "language": "uz",
+          "value": "Tuxum (iste'mol)"
+        }
+      ]
+    },
+    {
+      "code": "286550009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Куриное яйцо"
+        },
+        {
+          "language": "uz",
+          "value": "Tovuq tuxumi"
+        }
+      ]
+    },
+    {
+      "code": "11713004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вода"
+        },
+        {
+          "language": "uz",
+          "value": "Suv"
+        }
+      ]
+    },
+    {
+      "code": "444883009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дистиллированная вода"
+        },
+        {
+          "language": "uz",
+          "value": "Distillangan suv"
+        }
+      ]
+    },
+    {
+      "code": "446278008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вода плавательного бассейна"
+        },
+        {
+          "language": "uz",
+          "value": "Suzish havzasi suvi"
+        }
+      ]
+    },
+    {
+      "code": "5024000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пресная вода"
+        },
+        {
+          "language": "uz",
+          "value": "Chuchuk suv"
+        }
+      ]
+    },
+    {
+      "code": "224939005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хозяйственно-бытовые стоки"
+        },
+        {
+          "language": "uz",
+          "value": "Xo'jalik-maishiy oqava suvlar"
+        }
+      ]
+    },
+    {
+      "code": "264327008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Сточные воды"
+        },
+        {
+          "language": "uz",
+          "value": "Oqava suvlar"
+        }
+      ]
+    },
+    {
+      "code": "15158005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Воздух"
+        },
+        {
+          "language": "uz",
+          "value": "Havo"
+        }
+      ]
+    },
+    {
+      "code": "415555003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Почва"
+        },
+        {
+          "language": "uz",
+          "value": "Tuproq"
+        }
+      ]
+    },
+    {
+      "code": "37759000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Хирургический инструментарий"
+        },
+        {
+          "language": "uz",
+          "value": "Jarrohlik asboblari"
+        }
+      ]
+    },
+    {
+      "code": "303607000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Медицинское оборудование / Аппаратура"
+        },
+        {
+          "language": "uz",
+          "value": "Tibbiy uskunalar / apparatura"
+        }
+      ]
+    },
+    {
+      "code": "33712006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Кожа кисти"
+        },
+        {
+          "language": "uz",
+          "value": "Qo'l terisi"
+        }
+      ]
+    },
+    {
+      "code": "6919005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Материал защитной одежды"
+        },
+        {
+          "language": "uz",
+          "value": "Himoya kiyimi materiali"
+        }
+      ]
+    },
+    {
+      "code": "91032009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Игрушки"
+        },
+        {
+          "language": "uz",
+          "value": "O'yinchoqlar"
+        }
+      ]
+    },
+    {
+      "code": "706699008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стулья"
+        },
+        {
+          "language": "uz",
+          "value": "Stullar"
+        }
+      ]
+    },
+    {
+      "code": "54638004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полотенца"
+        },
+        {
+          "language": "uz",
+          "value": "Sochiqlar"
+        }
+      ]
+    },
+    {
+      "code": "71463006",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полиэтилен"
+        },
+        {
+          "language": "uz",
+          "value": "Polietilen"
+        }
+      ]
+    },
+    {
+      "code": "47358009",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Полимерные материалы и пластические массы на их основе полистирол (блочный, суспензионный, ударопрочный)"
+        },
+        {
+          "language": "uz",
+          "value": "Polimer materiallar va ular asosidagi plastik massalar: polistirol (blokli, suspenzion, zarbaga chidamli)"
+        }
+      ]
+    },
+    {
+      "code": "35233000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "поливинилхлоридные пластики жесткий ПВХ пластифицированный ПВХ, дополнительно к покозателем, указанным следует определят"
+        },
+        {
+          "language": "uz",
+          "value": "Qattiq PVX, plastifikatsiyalangan PVX; qattiq PVX uchun ko'rsatilgan ko'rsatkichlarga qo'shimcha ravishda quyidagilarni aniqlash lozim"
+        }
+      ]
+    },
+    {
+      "code": "32039001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "стекло и изделия из стекла"
+        },
+        {
+          "language": "uz",
+          "value": "Shisha va shishadan tayyorlangan buyumlar"
+        }
+      ]
+    },
+    {
+      "code": "261253002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "керамические изделия"
+        },
+        {
+          "language": "uz",
+          "value": "Keramik buyumlar"
+        }
+      ]
+    },
+    {
+      "code": "425620007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Металл"
+        },
+        {
+          "language": "uz",
+          "value": "Metall"
+        }
+      ]
+    },
+    {
+      "code": "25307002",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Вазелин"
+        },
+        {
+          "language": "uz",
+          "value": "Vazelin"
+        }
+      ]
+    },
+    {
+      "code": "25780000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "мыло ( туалетное, дезодорирующее и т.д)"
+        },
+        {
+          "language": "uz",
+          "value": "Sovun (hojatxona sovuni, dezodoratsiyalovchi va boshqalar)"
+        }
+      ]
+    },
+    {
+      "code": "28647000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "1.1. Мясо, в.т.ч. полу фабрикаты, парные, охлажденные, подморо женные, замороженные (все виды убойных, про мысловых и диких жи вотных), в т.ч.:"
+        },
+        {
+          "language": "uz",
+          "value": "1.1 Go'sht, sh.j. yarim tayyor go'sht mahsulotlari, yangi so'yilgan, sovutilgan, muzlatilgan, yaxlatilgan (barcha turdagi so'yiladigan, ovlanadigan va yovvoyi hayvonlar), shu jumladan."
+        }
+      ]
+    }
+  ],
+  "supplements": "http://snomed.info/sct",
+  "version": "2026.1.0",
+  "language": "en",
+  "experimental": true
+}

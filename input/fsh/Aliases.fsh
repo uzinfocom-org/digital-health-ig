@@ -283,3 +283,7 @@ Alias: $inventoryreport-status = http://hl7.org/fhir/inventoryreport-status
 Alias: $inventory-operation-type-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/inventory-operation-type-cs
 Alias: $inventory-operation-reason-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/inventory-operation-reason-cs
 Alias: $inventory-status-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/inventoryitem-inventory-status-cs
+Alias: $substance-status = http://hl7.org/fhir/substance-status
+Alias: $substance-sample-number = https://dhp.uz/fhir/core/sid/prd/uz/substance-sample
+Alias: $substance-lot-number = https://dhp.uz/fhir/core/sid/prd/uz/substance-lot
+Alias: $substance-definition-number = https://dhp.uz/fhir/core/sid/doc/uz/substance-definition
