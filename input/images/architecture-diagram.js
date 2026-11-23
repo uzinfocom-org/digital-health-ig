@@ -201,6 +201,9 @@
       own: "the component is responsible for this resource",
       service: "Service",
       noService: "No service assigned yet",
+      expandAll: "Expand all components",
+      collapseAll: "Collapse all components",
+      fitView: "Fit the diagram to the view",
       resourceCount: function (n) { return n + (n === 1 ? " resource" : " resources"); }
     },
     ru: {
@@ -234,6 +237,9 @@
       own: "компонент отвечает за этот ресурс",
       service: "Сервис",
       noService: "Сервис ещё не назначен",
+      expandAll: "Раскрыть все компоненты",
+      collapseAll: "Свернуть все компоненты",
+      fitView: "Вписать диаграмму в область просмотра",
       // 1 ресурс / 2-4 ресурса / 5+ ресурсов, with the 11-14 exception.
       resourceCount: function (n) {
         var m10 = n % 10, m100 = n % 100;
@@ -273,6 +279,9 @@
       own: "komponent ushbu resurs uchun javobgar",
       service: "Xizmat",
       noService: "Xizmat hali belgilanmagan",
+      expandAll: "Barcha komponentlarni ochish",
+      collapseAll: "Barcha komponentlarni yopish",
+      fitView: "Diagrammani ko'rinishga moslash",
       resourceCount: function (n) { return n + " ta resurs"; }
     }
   };
@@ -758,6 +767,37 @@
   // Resizing re-fits the whole drawing, using whatever the latest render left.
   var currentFit = null;
   window.addEventListener('resize', function () { if (currentFit) currentFit(); });
+
+  // Opening or closing every card changes the drawing's size, so both re-fit
+  // it rather than keeping the current pan and zoom.
+  function setAll(open) {
+    Object.keys(COMPONENTS).forEach(function (id) {
+      if (COMPONENTS[id].resources.length) expanded[id] = open;
+    });
+    view = null; anchor = null;
+    render();
+  }
+
+  var toolbar = document.createElement('div');
+  toolbar.className = 'arch-toolbar';
+  [
+    { label: T.expandAll, glyph: '\u229E', run: function () { setAll(true); } },
+    { label: T.collapseAll, glyph: '\u229F', run: function () { setAll(false); } },
+    { label: T.fitView, glyph: '\u2922', run: function () { if (currentFit) currentFit(); } }
+  ].forEach(function (b) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.title = b.label;
+    btn.setAttribute('aria-label', b.label);
+    btn.textContent = b.glyph;
+    btn.onclick = b.run;
+    toolbar.appendChild(btn);
+  });
+  // Without this the canvas would take a press on a button as the start of a pan.
+  ['pointerdown', 'pointerup', 'wheel'].forEach(function (type) {
+    toolbar.addEventListener(type, function (ev) { ev.stopPropagation(); });
+  });
+  canvas.appendChild(toolbar);
 
   render();
 })();
