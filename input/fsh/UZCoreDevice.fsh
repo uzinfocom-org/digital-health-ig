@@ -6,6 +6,35 @@ Description: "Uzbekistan Core Device profile, used to record the identity, statu
 * ^experimental = true
 
 * identifier MS
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Identifiers for device (national registry)"
+* identifier ^slicing.ordered = false
+* identifier contains uzpharmDeviceItemID 0..1 MS and
+    uzpharmDeviceID 0..1 MS and
+    registrationCertificateID 0..1 MS
+
+* identifier[uzpharmDeviceItemID]
+  * ^short = "Pharmaceutical Committee registry identifier of the registered device variant"
+  * system 0..1 MS
+  * system = $uzpharmDeviceItemID
+  * use = #official
+  * value 0..1 MS
+
+* identifier[uzpharmDeviceID]
+  * ^short = "Pharmaceutical Committee registry identifier of the registered device"
+  * system 0..1 MS
+  * system = $uzpharmDeviceID
+  * use = #official
+  * value 0..1 MS
+
+* identifier[registrationCertificateID]
+  * ^short = "Registration certificate number of the device"
+  * system 0..1 MS
+  * system = $registrationCertificateID
+  * use = #official
+  * value 0..1 MS
 
 * displayName MS
 

@@ -403,6 +403,44 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[=].comment = "Canonical URI to populate Identifier.system when recording a pharm box group ID."
 
+Instance: uz-pharm-device-item-id
+InstanceOf: NamingSystem
+Description: "NamingSystem for the Pharmaceutical Committee registry identifier of a registered medical device variant."
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uz-pharm-device-item-id"
+* name = "UzbekistanPharmDeviceItemID"
+* status = #active
+* kind = #identifier
+* date = "2026-11-23"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan."
+* description = "Pharmaceutical Committee medical device registry identifier (device_item_id) of a registered device variant in a registration certificate."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Use as Identifier.system for the device_item_id of a Pharmaceutical Committee registry record in Device."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $uzpharmDeviceItemID
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "Canonical URI to populate Identifier.system when recording a registry device_item_id."
+
+Instance: uz-pharm-device-id
+InstanceOf: NamingSystem
+Description: "NamingSystem for the Pharmaceutical Committee registry identifier of a registered medical device."
+Usage: #definition
+* url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uz-pharm-device-id"
+* name = "UzbekistanPharmDeviceID"
+* status = #active
+* kind = #identifier
+* date = "2026-11-23"
+* publisher = "Uzinfocom"
+* responsible = "Ministry of Health of the Republic of Uzbekistan."
+* description = "Pharmaceutical Committee medical device registry identifier (device_id) of a registered device; shared by all its variants."
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* usage = "Use as Identifier.system for the device_id of a Pharmaceutical Committee registry record in Device."
+* uniqueId[0].type = #uri
+* uniqueId[=].value = $uzpharmDeviceID
+* uniqueId[=].preferred = true
+* uniqueId[=].comment = "Canonical URI to populate Identifier.system when recording a registry device_id."
+
 Instance: global-trade-item-id
 InstanceOf: NamingSystem
 Description: "NamingSystem for globally standardized trade identifiers (GTIN) used for medicinal products."

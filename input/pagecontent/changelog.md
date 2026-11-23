@@ -4,6 +4,10 @@
 
 [Registration certificate number](NamingSystem-registration-certificate-id.html) and [UzPharm box group ID](NamingSystem-uz-pharm-box-id.html) change their URIs to `https://uzpharminfo.uz/registrationNumber` and `https://uzpharminfo.uz/boxGroupId`, the ones the Pharmaceutical Committee registry loader already sends. A [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifier with the old `registration_number` or `box_group_id` URI no longer falls into its slice, and searches by identifier must use the new URIs.
 
+#### Added
+
+[UZ Core Device](StructureDefinition-uz-core-device.html) adds `identifier` slices for the Pharmaceutical Committee registry [device item ID](NamingSystem-uz-pharm-device-item-id.html), [device ID](NamingSystem-uz-pharm-device-id.html) and [registration certificate number](NamingSystem-registration-certificate-id.html).
+
 ### Version 0.13.0
 
 #### Added
