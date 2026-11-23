@@ -375,15 +375,6 @@ Description: "Diagnosis types in Uzbekistan"
   * ^designation[=].value = "Diagnosis of the referring institution"
 ```
 
-**Large CodeSystems (>100 codes):**
-
-CodeSystems with more than 100 codes slow down every SUSHI build. Pre-generate their JSON:
-
-1. Build the IG with SUSHI.
-2. Move `fsh-generated/resources/CodeSystem-<id>.json` → `input/vocabulary/`.
-3. Move the source `.fsh` → `input/manual-fsh/` (SUSHI does not parse it, but the FSH is kept as the source).
-4. When updating the code list: move the `.fsh` back to `input/fsh/terminology/`, rebuild, repeat steps 2-3.
-
 ### 5.2 FSH example for ClinicalStatusCS (using Condition as an example)
 
 ```fsh
