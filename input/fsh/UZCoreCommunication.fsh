@@ -2,55 +2,53 @@ Profile: UZCoreCommunication
 Parent: Communication
 Id: uz-core-communication
 Title: "UZ Core Communication"
-Description: "Uzbekistan Core Communication profile, used to record a public health alert shown to patients in the Patient Portal, such as an alert to the residents of a zone with an assigned alert level or to the members of an organization employee group"
+Description: "Uzbekistan Core Communication profile, used to record information conveyed to patients, practitioners or organizations, such as a public health alert shown to patients in the Patient Portal"
 * ^experimental = true
 * ^status = #active
 * obeys uzcore-comm-1
 
 * status MS
 * status from ProcedureEventStatusVS (required)
-* status ^short = "Status of the alert, for example completed when it has been sent"
+* status ^short = "Status of the communication, for example completed once it has been sent"
 
-* category 1..* MS
-* category ^short = "Kind of alert and the zone alert level"
+* category MS
+* category ^short = "Kind of communication, such as a public health alert, and the zone alert level of an alert"
 * category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "coding.system"
 * category ^slicing.rules = #open
-* category ^slicing.description = "Kind and level of the alert from the national value sets; codes from other systems are allowed alongside them"
+* category ^slicing.description = "Kind and level of a public health alert from the national value sets; codes from other systems are allowed alongside them"
 * category ^slicing.ordered = false
 * category contains
-    type 1..1 MS and
+    type 0..1 MS and
     alertLevel 0..1 MS
 * category[type] from CommunicationCategoryVS (required)
 * category[type].coding.system = Canonical(CommunicationCategoryCS)
-* category[type] ^short = "Who the alert is addressed to: the residents of a risk zone or an organization employee group"
+* category[type] ^short = "Kind of public health alert: to the residents of a risk zone or to an organization employee group"
 * category[alertLevel] from AlertLevelVS (required)
 * category[alertLevel].coding.system = Canonical(AlertLevelCS)
 * category[alertLevel] ^short = "Zone alert level under the national alert regulation: I red, II orange, III yellow, IV blue; required for an alert to the residents of a zone; keeps the level at the time of sending if the zone level changes later"
 
 * about MS
-* about only Reference(UZCoreLocation or UZCoreGroup)
-* about ^short = "What the alert is about: the risk zone for an alert to its residents, or the employee group for an alert to its members"
+* about ^short = "What the communication is about; for a public health alert, the risk zone (Location) or the employee group (Group)"
 
 * sent 1..1 MS
-* sent ^short = "When the alert was sent; the patient sees it in the Patient Portal"
+* sent ^short = "When the communication was sent; a patient sees an alert in the Patient Portal from this time"
 
 * recipient 1..* MS
-* recipient only Reference(UZCorePatient)
-* recipient ^short = "Who receives the alert: each patient living in the risk zone, or each member of the employee group"
+* recipient only Reference(UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization)
+* recipient ^short = "Who receives the communication; for a public health alert, each patient living in the risk zone or each member of the employee group"
 
 * reason MS
 * reason only CodeableReference(UZCoreCondition or UZCoreObservation)
 * reason from ConditionCodeVS (preferred)
-* reason ^short = "Why the alert was sent: a disease code (ICD-10 or SNOMED CT) or a reference to a confirmed diagnosis or a sample test result, such as an outbreak of an intestinal infection"
+* reason ^short = "Why the communication was sent: a disease code (ICD-10 or SNOMED CT) or a reference to a confirmed diagnosis or a sample test result, such as an outbreak of an intestinal infection"
 
 * payload 1..* MS
-* payload ^short = "Content of the alert"
-* payload.content[x] only CodeableConcept
+* payload ^short = "Content of the communication"
 * payload.content[x] MS
-* payload.content[x] ^short = "Content of the alert; no codes are used, the text is sent in contentCodeableConcept.text"
+* payload.content[x] ^short = "Content of the communication; the text of a public health alert goes in contentCodeableConcept.text"
 * payload.contentCodeableConcept.text 1..1 MS
-* payload.contentCodeableConcept.text ^short = "Text of the alert the patient sees in the Patient Portal"
+* payload.contentCodeableConcept.text ^short = "Text of the communication, such as the alert text a patient sees in the Patient Portal"
 
 Invariant: uzcore-comm-1
 Description: "An alert to the residents of a zone carries its alert level"

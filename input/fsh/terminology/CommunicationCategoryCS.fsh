@@ -7,7 +7,7 @@ Description: "Local classifier of the kinds of public health alerts sent to pati
 
 * #comcat-0001-00001 "Hudud aholisini ogohlantirish"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Оповещение пациентов зоны"
+  * ^designation[=].value = "Оповещение жителей зоны"
   * ^designation[+].language = #en
   * ^designation[=].value = "Zone residents alert"
 

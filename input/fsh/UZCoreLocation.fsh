@@ -2,7 +2,7 @@ Profile: UZCoreLocation
 Parent: Location
 Id: uz-core-location
 Title: "UZ Core Location"
-Description: "Uzbekistan Core Location profile, used to define locations of healthcare services"
+Description: "Uzbekistan Core Location profile, used to define physical places and areas, such as the buildings, wards and beds where healthcare services are provided or a mahalla set as a public health risk zone"
 * ^experimental = true
 * ^status = #active
 * ^date = "2025-03-13"
@@ -116,5 +116,11 @@ Description: "A mahalla for which a manager has set a public health alert level 
 * language = #uz
 * status = #active
 * mode = #instance
-* name = "Bunyodkor mahallasi"
-* address.text = "Toshkent shahar, Chilonzor tumani, Bunyodkor mahallasi"
+* form = $location-physical-type#area
+* name = "Novza mahallasi"
+* address.type = #physical
+* address.text = "Toshkent shahar, Chilonzor tumani, Novza mahallasi"
+* address.city = "103-0117"
+* address.district = "1726294"
+* address.state = "1726"
+* address.country = "UZ"

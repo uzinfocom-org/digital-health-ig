@@ -1,7 +1,7 @@
 CodeSystem: ProcedureEventStatusCS
 Id: procedure-event-status-cs
-Title: "Procedure event status translations"
-Description: "Procedure event status supplement with translations in Uzbek and Russian"
+Title: "Event status translations"
+Description: "Event status supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(procedure-event-status-cs, $event-status, 5.0.0)
 

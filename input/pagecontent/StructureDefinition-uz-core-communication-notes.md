@@ -12,7 +12,7 @@ GET [base]/Communication/[id]
 
 ```
 GET [base]/Communication?recipient=Patient/[id]&status=completed
-GET [base]/Communication?category=comcat-0001-00001
+GET [base]/Communication?category=https://terminology.dhp.uz/fhir/core/CodeSystem/communication-category-cs%7Ccomcat-0001-00001
 GET [base]/Communication?recipient=Patient/[id]&sent=ge2026-11-01
 GET [base]/Communication?identifier=[system]%7C[value]
 ```

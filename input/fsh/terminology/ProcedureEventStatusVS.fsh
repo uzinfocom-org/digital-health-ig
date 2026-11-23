@@ -1,7 +1,7 @@
 ValueSet: ProcedureEventStatusVS
 Id: procedure-event-status-vs
-Title: "Procedure event status"
-Description: "Procedure event statuses"
+Title: "Event status"
+Description: "Event statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/procedure-event-status-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

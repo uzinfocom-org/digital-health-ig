@@ -2,7 +2,15 @@
 
 #### Добавлено
 
-[UZ Core Communication](StructureDefinition-uz-core-communication.html) фиксирует оповещение в области общественного здравоохранения, которое пациенты видят в Портале пациента: оповещение жителей зоны риска с уровнем зоны I-IV по национальному регламенту оповещений или оповещение менеджера группе работников организации. Виды оповещений и уровни берутся из новых локальных систем кодов [Communication category](CodeSystem-communication-category-cs.html) и [Alert level](CodeSystem-alert-level-cs.html) с названиями на узбекском, русском и английском языках.
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) фиксирует информацию, передаваемую пациентам, медицинским работникам или организациям, например оповещение в области общественного здравоохранения, которое пациенты видят в Портале пациента: оповещение жителей зоны риска с уровнем зоны I-IV по национальному регламенту оповещений или оповещение менеджера группе работников организации. Виды оповещений и уровни берутся из новых локальных систем кодов [Communication category](CodeSystem-communication-category-cs.html) и [Alert level](CodeSystem-alert-level-cs.html) с названиями на узбекском, русском и английском языках.
+
+#### Изменено
+
+[UZ Core Location](StructureDefinition-uz-core-location.html) теперь охватывает и территории, например махаллю, объявленную зоной риска для общественного здоровья.
+
+[Вид группы](ValueSet-group-kind-vs.html) дополнен группой работников организации.
+
+[Статус события](ValueSet-procedure-event-status-vs.html), ранее Статус события Procedure, теперь используется в UZ Core Procedure и UZ Core Communication.
 
 #### Несовместимые изменения
 

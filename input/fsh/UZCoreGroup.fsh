@@ -101,11 +101,12 @@ Instance: example-employee-group
 InstanceOf: UZCoreGroup
 Usage: #example
 Title: "Example UZ Core Group - Organization Employee Group"
-Description: "Enumerated group of employees of an organization, created by a manager from confirmed cases of the same diagnosis."
+Description: "Enumerated group of the employees of an organization, to whom a manager sends public health alerts."
 * language = #uz
 * active = true
 * type = #person
 * membership = #enumerated
+* code = GroupKindCS#group-0001-00013 "Tashkilot xodimlari guruhi"
 * name = "Tashkilot xodimlari guruhi"
 * managingEntity = Reference(Organization/example-organization)
 * member[0].entity = Reference(Patient/example-salim)

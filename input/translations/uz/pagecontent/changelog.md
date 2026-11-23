@@ -2,7 +2,15 @@
 
 #### Qo'shildi
 
-[UZ Core Communication](StructureDefinition-uz-core-communication.html) bemorlar Bemor portalida ko'radigan jamoat salomatligi ogohlantirishini qayd etadi: milliy ogohlantirishlar reglamenti bo'yicha hududning I-IV darajasi bilan xavfli hudud aholisiga ogohlantirish yoki menejerning tashkilot xodimlari guruhiga ogohlantirishi. Ogohlantirish turlari va darajalari o'zbek, rus va ingliz tilidagi nomlari bilan yangi mahalliy [Communication category](CodeSystem-communication-category-cs.html) va [Alert level](CodeSystem-alert-level-cs.html) kod tizimlaridan olinadi.
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) bemorlar, tibbiyot xodimlari yoki tashkilotlarga yetkaziladigan ma'lumotni, masalan bemorlar Bemor portalida ko'radigan jamoat salomatligi ogohlantirishini qayd etadi: milliy ogohlantirishlar reglamenti bo'yicha hududning I-IV darajasi bilan xavfli hudud aholisiga ogohlantirish yoki menejerning tashkilot xodimlari guruhiga ogohlantirishi. Ogohlantirish turlari va darajalari o'zbek, rus va ingliz tilidagi nomlari bilan yangi mahalliy [Communication category](CodeSystem-communication-category-cs.html) va [Alert level](CodeSystem-alert-level-cs.html) kod tizimlaridan olinadi.
+
+#### O'zgartirildi
+
+[Guruh turi](ValueSet-group-kind-vs.html) tashkilot xodimlari guruhi bilan to'ldirildi.
+
+[Hodisa holati](ValueSet-procedure-event-status-vs.html), avval Procedure hodisasi holati, endi UZ Core Procedure va UZ Core Communication da ishlatiladi.
+
+[UZ Core Location](StructureDefinition-uz-core-location.html) endi hududlarni ham qamrab oladi, masalan jamoat salomatligi uchun xavfli hudud deb belgilangan mahalla.
 
 #### Buzuvchi o'zgarishlar
 

@@ -2,7 +2,15 @@
 
 #### Added
 
-[UZ Core Communication](StructureDefinition-uz-core-communication.html) records a public health alert that patients see in the Patient Portal: an alert to the residents of a risk zone, which carries the zone's alert level I-IV under the national alert regulation, or an alert from a manager to an organization employee group. The kinds of alert and the alert levels come from the new local [Communication category](CodeSystem-communication-category-cs.html) and [Alert level](CodeSystem-alert-level-cs.html) code systems, with Uzbek, Russian and English names.
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) records information conveyed to patients, practitioners or organizations, such as a public health alert that patients see in the Patient Portal: an alert to the residents of a risk zone, which carries the zone's alert level I-IV under the national alert regulation, or an alert from a manager to an organization employee group. The kinds of alert and the alert levels come from the new local [Communication category](CodeSystem-communication-category-cs.html) and [Alert level](CodeSystem-alert-level-cs.html) code systems, with Uzbek, Russian and English names.
+
+#### Changed
+
+[Event status](ValueSet-procedure-event-status-vs.html), formerly Procedure event status, is now shared by UZ Core Procedure and UZ Core Communication.
+
+[Group kind](ValueSet-group-kind-vs.html) adds the organization employee group.
+
+[UZ Core Location](StructureDefinition-uz-core-location.html) now also covers areas, such as a mahalla set as a public health risk zone.
 
 #### Breaking changes
 
