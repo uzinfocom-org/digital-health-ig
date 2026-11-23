@@ -1,5 +1,20 @@
-{% if include.lang == 'ru' %}{% assign ph = 'Поиск кодов и ресурсов' %}{% assign btn = 'Найти' %}{% elsif include.lang == 'uz' %}{% assign ph = "Kodlar va resurslarni qidirish" %}{% assign btn = 'Qidirish' %}{% else %}{% assign ph = 'Search codes and resources' %}{% assign btn = 'Search' %}{% endif %}
+{% if include.lang == 'ru' %}{% assign ph = 'Поиск кодов и ресурсов' %}{% assign btn = 'Найти' %}{% assign themeLabel = 'Тема' %}{% assign themeLight = 'Светлая' %}{% assign themeDark = 'Тёмная' %}{% assign themeSystem = 'Как в системе' %}{% elsif include.lang == 'uz' %}{% assign ph = "Kodlar va resurslarni qidirish" %}{% assign btn = 'Qidirish' %}{% assign themeLabel = 'Mavzu' %}{% assign themeLight = "Yorug'" %}{% assign themeDark = "Qorong'i" %}{% assign themeSystem = 'Tizimdagidek' %}{% else %}{% assign ph = 'Search codes and resources' %}{% assign btn = 'Search' %}{% assign themeLabel = 'Theme' %}{% assign themeLight = 'Light' %}{% assign themeDark = 'Dark' %}{% assign themeSystem = 'System' %}{% endif %}
+{% capture sun %}<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>{% endcapture %}
+{% capture moon %}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>{% endcapture %}
+{% capture monitor %}<svg viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/></svg>{% endcapture %}
+<div id="dhp-tools">
 <form id="dhp-search" action="search.html" method="get" role="search">
   <input type="search" name="q" placeholder="{{ ph }}" aria-label="{{ ph }}"/>
   <button type="submit">{{ btn }}</button>
 </form>
+<div id="dhp-theme" hidden="hidden">
+  <button type="button" class="dhp-theme-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="dhp-theme-menu" aria-label="{{ themeLabel }}" data-label="{{ themeLabel }}">
+    <span class="dhp-theme-glyph" data-glyph="light">{{ sun }}</span><span class="dhp-theme-glyph" data-glyph="dark">{{ moon }}</span><span class="dhp-theme-glyph" data-glyph="system">{{ monitor }}</span>
+  </button>
+  <div id="dhp-theme-menu" class="dhp-theme-menu" role="group" aria-label="{{ themeLabel }}" hidden="hidden">
+    <button type="button" data-theme-option="light" aria-pressed="false"><span class="dhp-theme-icon">{{ sun }}</span><span class="dhp-theme-name">{{ themeLight }}</span></button>
+    <button type="button" data-theme-option="dark" aria-pressed="false"><span class="dhp-theme-icon">{{ moon }}</span><span class="dhp-theme-name">{{ themeDark }}</span></button>
+    <button type="button" data-theme-option="system" aria-pressed="false"><span class="dhp-theme-icon">{{ monitor }}</span><span class="dhp-theme-name">{{ themeSystem }}</span></button>
+  </div>
+</div>
+</div>
