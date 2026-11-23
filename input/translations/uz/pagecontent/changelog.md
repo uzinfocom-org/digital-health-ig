@@ -2,7 +2,7 @@
 
 #### O'zgartirildi
 
-Qo'llanma sahifalari [DHP dasturchilar hujjatlari](https://docs.dhp.uz/uz/) uslubida bezatilgan: Onest va JetBrains Mono shriftlari, DHP yashil ranglari va logotipi, yangilangan sarlavha, menyu, jadvallar, eslatmalar va nusxa olish tugmasi bilan kod bloklari.
+Qo'llanma sahifalari [DHP dasturchilar hujjatlari](https://docs.dhp.uz/uz/) uslubida bezatilgan: Onest va JetBrains Mono shriftlari, DHP yashil ranglari va logotipi, yangilangan sarlavha, menyu, jadvallar, eslatmalar va nusxa olish tugmasi bilan kod bloklari. Sarlavhadagi mavzu menyusi yorug', qorong'i yoki tizimdagidek mavzuni tanlaydi.
 
 #### Buzuvchi o'zgarishlar
 
