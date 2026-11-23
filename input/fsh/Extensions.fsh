@@ -234,3 +234,15 @@ Context: SupplyRequest
 * . ^mapping[=].map = "Request.groupIdentifier"
 * value[x] 1..
 * value[x] only Identifier
+
+
+Extension: DeviceUsageBasedOn
+Id: deviceusage-based-on
+Title: "Based on device request"
+Description: "A device request that is fulfilled in whole or in part by this device usage. FHIR R5 DeviceUsage.basedOn allows only ServiceRequest, and the standard event-basedOn extension has no DeviceUsage context, so this extension follows event-basedOn for DeviceUsage."
+Context: DeviceUsage
+* ^experimental = true
+* ^date = "2026-11-23"
+* . ^short = "Fulfilled device request"
+* value[x] 1..
+* value[x] only Reference(UZCoreDeviceRequest)
