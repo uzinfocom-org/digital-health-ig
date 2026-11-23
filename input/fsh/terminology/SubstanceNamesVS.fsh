@@ -1,7 +1,7 @@
 ValueSet: SubstanceNamesVS
 Id: substance-names-vs
 Title: "Substance name"
-Description: "Substances and sampling objects that samples are taken from for sanitary and epidemiological laboratory examination: SNOMED CT concepts, with Russian and Uzbek names in the substance name SNOMED CT supplement, and national codes for the names that have no SNOMED CT concept"
+Description: "Substance names"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/substance-names-vs"
 * ^status = #draft
 * ^experimental = true

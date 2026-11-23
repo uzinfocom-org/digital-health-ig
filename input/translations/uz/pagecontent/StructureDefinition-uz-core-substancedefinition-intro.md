@@ -14,7 +14,7 @@ Bazaviy SubstanceDefinition resursida yuqori darajada majburiy elementlar yo'q v
 
 - yozuvning ma'lumotnomadagi raqami ([quyidagi jadvalga](#identifier-slices) qarang);
 - yozuvning `status` holati (active / retired);
-- `classification` - namuna turi - suv, havo, tuproq yoki oziq-ovqat mahsulotlari - [modda namunasi toifalari](ValueSet-substance-sample-category-vs.html) qiymatlar to'plamidan;
+- `classification` - namuna turi - suv, havo, tuproq yoki oziq-ovqat mahsulotlari -;
 - moddaning `code` kodi: SNOMED CT yoki SNOMED CT konsepti bo'lmasa, milliy kod;
 - har bir `name` - nomning o'zi, u afzal nommi va uning tili, tarjimalar bilan, masalan ruscha nom;
 - modda yoki mahsulotning ishlab chiqaruvchisi `manufacturer`.
@@ -77,7 +77,7 @@ Amalda yozuv shuningdek ma'lumotnomadagi raqamni, holati va toifasini, o'zbekcha
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-substancedefinition"] },
   "language": "uz",
   "identifier": [ { "system": "https://dhp.uz/fhir/core/sid/doc/uz/substance-definition", "value": "1368" } ],
-  "version": "1",
+  "version": "1.0.0",
   "status": { "coding": [ { "system": "http://hl7.org/fhir/publication-status", "code": "active" } ] },
   "classification": [
     { "coding": [ { "system": "http://snomed.info/sct", "code": "255620007", "display": "Food" } ] }

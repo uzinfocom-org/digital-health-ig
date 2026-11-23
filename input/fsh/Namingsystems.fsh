@@ -849,7 +849,7 @@ InstanceOf: NamingSystem
 Description: "Identifiers of substance samples taken for sanitary and epidemiological examination in Uzbekistan"
 Usage: #definition
 * url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-substance-sample-number"
-* name = "UzbekistanSubstanceSampleNumber"
+* name = "UzbekistanSubstanceSampleIdentifier"
 * status = #active
 * kind = #identifier
 * date = "2026-11-18"
@@ -867,7 +867,7 @@ InstanceOf: NamingSystem
 Description: "Batch (lot) numbers of sampled substances and products in Uzbekistan"
 Usage: #definition
 * url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uzb-substance-lot-number"
-* name = "UzbekistanSubstanceLotNumber"
+* name = "UzbekistanSubstanceLotIdentifier"
 * status = #active
 * kind = #identifier
 * date = "2026-11-18"

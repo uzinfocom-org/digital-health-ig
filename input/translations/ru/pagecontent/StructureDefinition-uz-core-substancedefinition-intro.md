@@ -14,7 +14,7 @@ UZ Core SubstanceDefinition представляет запись справоч
 
 - номер записи в справочнике (см. [таблицу ниже](#identifier-slices));
 - `status` записи (active / retired);
-- `classification` - вид образца - вода, воздух, почва или пищевые продукты - из набора значений [категорий образцов веществ](ValueSet-substance-sample-category-vs.html);
+- `classification` - вид образца - вода, воздух, почва или пищевые продукты -;
 - `code` вещества: SNOMED CT или национальный код, если концепта SNOMED CT нет;
 - каждое `name` - само наименование, является ли оно предпочтительным и его язык, с переводами, например русским наименованием;
 - производителя `manufacturer` вещества или продукции.
@@ -77,7 +77,7 @@ GET [base]/SubstanceDefinition?classification=http://snomed.info/sct|255620007
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-substancedefinition"] },
   "language": "uz",
   "identifier": [ { "system": "https://dhp.uz/fhir/core/sid/doc/uz/substance-definition", "value": "1368" } ],
-  "version": "1",
+  "version": "1.0.0",
   "status": { "coding": [ { "system": "http://hl7.org/fhir/publication-status", "code": "active" } ] },
   "classification": [
     { "coding": [ { "system": "http://snomed.info/sct", "code": "255620007", "display": "Food" } ] }

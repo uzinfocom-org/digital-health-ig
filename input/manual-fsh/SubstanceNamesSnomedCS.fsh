@@ -3255,3 +3255,9 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[=].value = "1.1. Мясо, в.т.ч. полу фабрикаты, парные, охлажденные, подморо женные, замороженные (все виды убойных, про мысловых и диких жи вотных), в т.ч.:"
   * ^designation[+].language = #uz
   * ^designation[=].value = "1.1 Go'sht, sh.j. yarim tayyor go'sht mahsulotlari, yangi so'yilgan, sovutilgan, muzlatilgan, yaxlatilgan (barcha turdagi so'yiladigan, ovlanadigan va yovvoyi hayvonlar), shu jumladan."
+
+* #255620007
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пищевые продукты"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Oziq-ovqat mahsulotlari"

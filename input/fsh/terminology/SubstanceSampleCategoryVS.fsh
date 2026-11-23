@@ -1,9 +1,11 @@
 ValueSet: SubstanceSampleCategoryVS
 Id: substance-sample-category-vs
 Title: "Substance sample category"
-Description: "ValueSet of SNOMED CT concepts representing categories of substances and sampling objects that samples are taken from for sanitary and epidemiological laboratory examination"
+Description: "Substance sample categories"
+* ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/substance-sample-category-vs"
 * ^experimental = true
-* ^language = #uz
+* ^extension[0].url = $valueset-supplement
+* ^extension[=].valueCanonical = Canonical(SubstanceNamesSnomedCS)
 
 * include $sct#11713004
 * include $sct#15158005

@@ -12,7 +12,7 @@ The elements below must always be present (mandatory) or must be supported when 
 
 - the sample identifier and the batch (lot) number (see [the table below](#identifier-slices));
 - the `status` of the record (active / inactive / entered-in-error);
-- the `category` - the kind of sample - water, air, soil or food products - from the [substance sample category](ValueSet-substance-sample-category-vs.html) value set;
+- the `category` - the kind of sample - water, air, soil or food products -;
 - the `code` - the reference list entry, optionally with its SNOMED CT or national code;
 - the `expiry` date of the batch;
 - the `quantity` taken as the sample, in UCUM units.

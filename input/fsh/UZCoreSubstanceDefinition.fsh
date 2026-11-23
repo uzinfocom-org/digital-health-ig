@@ -35,7 +35,7 @@ Description: "Uzbekistan Core SubstanceDefinition profile, used to represent an 
 * classification ^slicing.ordered = false
 * classification contains substanceCategory 0..* MS
 * classification[substanceCategory] from SubstanceSampleCategoryVS (required)
-* classification[substanceCategory] ^short = "High-level kind of substance (chemical, food, material ...)"
+* classification[substanceCategory] ^short = "Kind of sample: water, air, soil or food"
 
 * description ^short = "Textual description of the substance"
 

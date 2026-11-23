@@ -14,7 +14,7 @@ Har doim `true` bo'lgan `instance`: resurs moddani umuman emas, balki olingan qi
 
 - namuna identifikatori va partiya raqami ([quyidagi jadvalga](#identifier-slices) qarang);
 - yozuvning `status` holati (active / inactive / entered-in-error);
-- `category` - namuna turi - suv, havo, tuproq yoki oziq-ovqat mahsulotlari - [modda namunasi toifalari](ValueSet-substance-sample-category-vs.html) qiymatlar to'plamidan;
+- `category` - namuna turi - suv, havo, tuproq yoki oziq-ovqat mahsulotlari -;
 - `code` - ma'lumotnoma yozuvi, zarur bo'lsa uning SNOMED CT yoki milliy kodi bilan;
 - partiyaning yaroqlilik muddati `expiry`;
 - namuna sifatida olingan miqdor `quantity`, UCUM birliklarida.

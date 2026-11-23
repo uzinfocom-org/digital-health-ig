@@ -7053,6 +7053,19 @@
           "value": "1.1 Go'sht, sh.j. yarim tayyor go'sht mahsulotlari, yangi so'yilgan, sovutilgan, muzlatilgan, yaxlatilgan (barcha turdagi so'yiladigan, ovlanadigan va yovvoyi hayvonlar), shu jumladan."
         }
       ]
+    },
+    {
+      "code": "255620007",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевые продукты"
+        },
+        {
+          "language": "uz",
+          "value": "Oziq-ovqat mahsulotlari"
+        }
+      ]
     }
   ],
   "supplements": "http://snomed.info/sct",

@@ -12,7 +12,7 @@ The base SubstanceDefinition resource has no mandatory elements at the top level
 
 - the number of the entry in the reference list (see [the table below](#identifier-slices));
 - the `status` of the entry (active / retired);
-- the `classification` - the kind of sample - water, air, soil or food products - from the [substance sample category](ValueSet-substance-sample-category-vs.html) value set;
+- the `classification` - the kind of sample - water, air, soil or food products -;
 - the `code` of the substance: SNOMED CT, or the national code when there is no SNOMED CT concept;
 - each `name` - the name itself, whether it is the preferred name, and its language, with translations such as the Russian name;
 - the `manufacturer` of the substance or product.
@@ -75,7 +75,7 @@ In practice an entry also carries the reference list number, its status and cate
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-substancedefinition"] },
   "language": "uz",
   "identifier": [ { "system": "https://dhp.uz/fhir/core/sid/doc/uz/substance-definition", "value": "1368" } ],
-  "version": "1",
+  "version": "1.0.0",
   "status": { "coding": [ { "system": "http://hl7.org/fhir/publication-status", "code": "active" } ] },
   "classification": [
     { "coding": [ { "system": "http://snomed.info/sct", "code": "255620007", "display": "Food" } ] }
