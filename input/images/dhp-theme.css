@@ -104,13 +104,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   outline-offset: 2px;
   border-radius: 4px;
 }
-#segment-content p a, #segment-content li a {
+#segment-content p a, #segment-content li a, table.dict td + td a, td.hierarchy a.binding {
   text-decoration: underline;
   text-decoration-color: var(--dhp-primary-40);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 3px;
 }
-#segment-content p a:hover, #segment-content li a:hover { text-decoration-color: currentColor; }
+#segment-content p a:hover, #segment-content li a:hover, table.dict td + td a:hover, td.hierarchy a.binding:hover { text-decoration-color: currentColor; }
 
 code, kbd, samp, tt {
   font-family: var(--dhp-font-mono);
@@ -573,6 +573,7 @@ code[class*="language-"], pre[class*="language-"] { font-family: var(--dhp-font-
 }
 .dhp-copy:hover { color: var(--dhp-fg); border-color: var(--dhp-input-border); }
 .dhp-copy:focus-visible { border-radius: 8px; }
+.dhp-code > pre:focus-visible { border-radius: 16px; }
 .dhp-copy.done { color: var(--dhp-link); border-color: var(--dhp-link); }
 .dhp-copy-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 

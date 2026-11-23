@@ -45,6 +45,7 @@
   function init() {
     var blocks = document.querySelectorAll('#segment-content pre');
     if (!blocks.length) return;
+    var wrapped = [];
     var status = document.createElement('span');
     status.className = 'dhp-copy-status';
     status.setAttribute('role', 'status');
@@ -55,6 +56,7 @@
       wrap.className = 'dhp-code';
       pre.parentNode.insertBefore(wrap, pre);
       wrap.appendChild(pre);
+      wrapped.push(pre);
 
       var button = document.createElement('button');
       button.type = 'button';
@@ -87,6 +89,20 @@
       });
       wrap.appendChild(button);
     });
+
+    // Scrolling code blocks must be reachable by keyboard
+    function markScrollable(pre) {
+      if (pre.scrollWidth > pre.clientWidth) pre.setAttribute('tabindex', '0');
+      else pre.removeAttribute('tabindex');
+    }
+    wrapped.forEach(markScrollable);
+    if (document.fonts) document.fonts.ready.then(function () { wrapped.forEach(markScrollable); });
+    if (window.ResizeObserver) {
+      var observer = new ResizeObserver(function (entries) {
+        entries.forEach(function (entry) { markScrollable(entry.target); });
+      });
+      wrapped.forEach(function (pre) { observer.observe(pre); });
+    }
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
