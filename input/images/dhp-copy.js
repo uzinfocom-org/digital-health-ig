@@ -11,6 +11,7 @@
   var doneIcon = svg + '<path d="M20 6 9 17l-5-5"/></svg>';
 
   function fallbackCopy(value) {
+    var focused = document.activeElement;
     var area = document.createElement('textarea');
     area.value = value;
     area.setAttribute('readonly', '');
@@ -20,6 +21,7 @@
     area.select();
     var ok = document.execCommand('copy');
     document.body.removeChild(area);
+    if (focused) focused.focus();
     return ok ? Promise.resolve() : Promise.reject();
   }
 
@@ -42,6 +44,11 @@
 
   function init() {
     var blocks = document.querySelectorAll('#segment-content pre');
+    if (!blocks.length) return;
+    var status = document.createElement('span');
+    status.className = 'dhp-copy-status';
+    status.setAttribute('role', 'status');
+    document.body.appendChild(status);
     Array.prototype.forEach.call(blocks, function (pre) {
       if (pre.closest('table') || !pre.textContent.trim()) return;
       var wrap = document.createElement('div');
@@ -61,6 +68,8 @@
           button.classList.add('done');
           button.title = text[1];
           button.setAttribute('aria-label', text[1]);
+          status.textContent = '';
+          setTimeout(function () { status.textContent = text[1]; }, 50);
           clearTimeout(button.timer);
           button.timer = setTimeout(function () {
             button.innerHTML = copyIcon;
@@ -68,6 +77,12 @@
             button.title = text[0];
             button.setAttribute('aria-label', text[0]);
           }, 1500);
+        }, function () {
+          var range = document.createRange();
+          range.selectNodeContents(pre);
+          var selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
         });
       });
       wrap.appendChild(button);

@@ -552,29 +552,32 @@ code[class*="language-"], pre[class*="language-"] { font-family: var(--dhp-font-
 
 /* Copy buttons on code blocks (dhp-copy.js) */
 .dhp-code { position: relative; }
-.dhp-code > pre { margin-top: 0; }
+.dhp-code > pre { margin-top: 0; padding-right: 48px; }
 .highlight > .dhp-code { margin-top: 12px; }
 .dhp-copy {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 12px;
+  right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   padding: 0;
   color: var(--dhp-muted-fg);
   background: var(--dhp-bg);
   border: 1px solid var(--dhp-border);
   border-radius: 8px;
   cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 0.15s, color 0.15s, border-color 0.15s;
+  transition: color 0.15s, border-color 0.15s;
 }
-.dhp-code:hover .dhp-copy, .dhp-copy:focus-visible { opacity: 1; }
 .dhp-copy:hover { color: var(--dhp-fg); border-color: var(--dhp-input-border); }
-.dhp-copy.done { color: var(--dhp-link); border-color: var(--dhp-link); opacity: 1; }
+.dhp-copy:focus-visible { border-radius: 8px; }
+.dhp-copy.done { color: var(--dhp-link); border-color: var(--dhp-link); }
+.dhp-copy-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Profile intro/notes wrappers are inline-block; keep wide code blocks scrolling inside them */
+#segment-content div[style="display:inline-block"] { max-width: 100%; }
 
 /* Content images */
 #segment-content figure img, #segment-content p > img { max-width: 100%; height: auto; }
@@ -604,8 +607,11 @@ table.codes td a { overflow-wrap: anywhere; }
   #segment-content table:not([class]):not([style]) { display: block; max-width: 100%; overflow-x: auto; }
   #segment-content table:not([class]):not([style]) > * > tr > th,
   #segment-content table:not([class]):not([style]) > * > tr > td { padding: 6px 8px; }
-  table.colsi td, table.colsd td, table.cols td, table.codes th, table.codes td, table.grid th, table.grid td { padding: 6px 6px; }
-  table.codes th, table.codes td, table.grid th, table.grid td { font-size: 12.5px; }
+  table.colsi td, table.colsd td, table.cols td, table.codes th, table.codes td, table.grid th, table.grid td, table.list th, table.list td { padding: 6px 6px; }
+  table.codes th, table.codes td, table.grid th, table.grid td, table.list th, table.list td,
+  #segment-content table:not([class]):not([style]) > * > tr > th,
+  #segment-content table:not([class]):not([style]) > * > tr > td { font-size: 12.5px; }
+  table.dict td { font-size: 12px; }
   table.colsi .copy-text, table.colsd .copy-text, table.colsi span[style*="monospace"],
   #segment-content :not(pre) > code { overflow-wrap: anywhere; }
   #segment-content :not(pre) > code { white-space: normal; }
