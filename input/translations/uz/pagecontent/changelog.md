@@ -1,6 +1,12 @@
 ### Ishlab chiqilmoqda
 
+#### Qo'shildi
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) o'zi bajaradigan [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) ga [Asos - buyum so'rovi](StructureDefinition-deviceusage-based-on.html) kengaytmasi orqali havola qiladi, masalan [mis BIV](DeviceUsage-example-deviceusage-iud.html) misolida.
+
 #### O'zgartirildi
+
+[Komponentlararo resurs arxitekturasi](components.html#komponentlararo-resurs-arxitekturasi) diagrammasiga MedicationRequest, MedicationDispense, Medication, MedicationKnowledge va MedicationAdministration bilan "Retseptlar" hamda SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport va Device bilan "Ta'minot" komponentlari qo'shildi. Yangi profillar ular ishlatiladigan joyda ko'rsatiladi: DeviceRequest va DeviceUsage - elektron tibbiy yozuvlarda (CHR), ChargeItem - reimbursatsiyada, BiologicallyDerivedProductDispense va Flag - qon resurslarini boshqarishda, CarePlan - hamshiralik ishida. CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport va BiologicallyDerivedProduct endi UZ Core profillariga ega, shuning uchun ular "nomlangan, lekin hali belgilanmagan" emas, balki ushbu qo'llanmada belgilangan deb belgilanadi. Diagrammaning yuqori o'ng burchagidagi tugmalar barcha komponentlarni birdaniga ochadi yoki yopadi va diagrammani ko'rinishga qaytadan moslaydi.
 
 Qo'llanma sahifalari [DHP dasturchilar hujjatlari](https://docs.dhp.uz/uz/) uslubida bezatilgan: Onest va JetBrains Mono shriftlari, DHP yashil ranglari va logotipi, yangilangan sarlavha, menyu, jadvallar, eslatmalar va nusxa olish tugmasi bilan kod bloklari. Sarlavhadagi mavzu menyusi yorug', qorong'i yoki tizimdagidek mavzuni tanlaydi.
 

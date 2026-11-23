@@ -1,6 +1,12 @@
 ### In development
 
+#### Added
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) links to the [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) it fulfils with the [Based On Device Request](StructureDefinition-deviceusage-based-on.html) extension, as in the [copper IUD](DeviceUsage-example-deviceusage-iud.html) example.
+
 #### Changed
+
+The [cross-component resource architecture](components.html#cross-component-resource-architecture) diagram adds Prescription, with MedicationRequest, MedicationDispense, Medication, MedicationKnowledge and MedicationAdministration, and Supplies, with SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport and Device. It shows the newer profiles where they are used: DeviceRequest and DeviceUsage in Clinical Health Records, ChargeItem in Reimbursement, BiologicallyDerivedProductDispense and Flag in Blood Management, and CarePlan in Nursing. CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport and BiologicallyDerivedProduct now have UZ Core profiles, so they are marked as defined in this IG rather than named, not yet defined. Buttons in the top right corner of the diagram open or close every component at once and fit the diagram back into view.
 
 The guide's pages use the look of the [DHP developer documentation](https://docs.dhp.uz/): Onest and JetBrains Mono fonts, DHP green colours and logo, and a restyled header, menu, tables, notes and code blocks, which now have a copy button. A theme menu in the header switches between light, dark and the system setting.
 
