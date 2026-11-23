@@ -6,6 +6,8 @@
 
 #### O'zgartirildi
 
+[Komponentlararo resurs arxitekturasi](components.html#komponentlararo-resurs-arxitekturasi) diagrammasiga MedicationRequest, MedicationDispense, Medication, MedicationKnowledge va MedicationAdministration bilan "Retseptlar" hamda SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport va Device bilan "Ta'minot" komponentlari qo'shildi. Yangi profillar ular ishlatiladigan joyda ko'rsatiladi: DeviceRequest va DeviceUsage - elektron tibbiy yozuvlarda (CHR), ChargeItem - reimbursatsiyada, BiologicallyDerivedProductDispense va Flag - qon resurslarini boshqarishda, CarePlan - hamshiralik ishida. CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport va BiologicallyDerivedProduct endi UZ Core profillariga ega, shuning uchun ular "nomlangan, lekin hali belgilanmagan" emas, balki ushbu qo'llanmada belgilangan deb belgilanadi.
+
 Qo'llanma sahifalari [DHP dasturchilar hujjatlari](https://docs.dhp.uz/uz/) uslubida bezatilgan: Onest va JetBrains Mono shriftlari, DHP yashil ranglari va logotipi, yangilangan sarlavha, menyu, jadvallar, eslatmalar va nusxa olish tugmasi bilan kod bloklari.
 
 #### Buzuvchi o'zgarishlar
