@@ -29,6 +29,16 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 - **Title**: `"UZ Core [ResourceName]"`
 - **Description**: `"Uzbekistan Core [ResourceName] profile, used to [описание назначения]"`
 
+**Описание профиля:**
+
+Профиль UZ Core - национальный профиль своего ресурса для всей Республики, а не профиль одной системы или одного процесса. В Description сначала укажите общее назначение ресурса, а затем приведите текущие сценарии использования как примеры после "such as":
+
+```fsh
+Description: "Uzbekistan Core Communication profile, used to record information conveyed to patients, practitioners or organizations, such as a public health alert shown to patients in the Patient Portal"
+```
+
+**Неправильно:** `"Uzbekistan Core Communication profile, used to record a public health alert shown to patients in the Patient Portal"` - описание сводит профиль к первому сценарию, и для следующего (например, напоминания о приёме) кажется, что нужен отдельный профиль.
+
 **Имена ресурсов из нескольких слов:**
 
 Имя FHIR-ресурса пишется ровно так, как его пишет спецификация FHIR — одним словом в CamelCase. Пробел в шаблонах выше отделяет только префикс (`UZ Core`, `Uzbekistan Core`), а не части имени ресурса.
