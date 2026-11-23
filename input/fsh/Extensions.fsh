@@ -238,11 +238,17 @@ Context: SupplyRequest
 
 Extension: DeviceUsageBasedOn
 Id: deviceusage-based-on
-Title: "Based on device request"
-Description: "A device request that is fulfilled in whole or in part by this device usage. FHIR R5 DeviceUsage.basedOn allows only ServiceRequest, and the standard event-basedOn extension has no DeviceUsage context, so this extension follows event-basedOn for DeviceUsage."
+Title: "Based On Device Request"
+Description: "A device request that is fulfilled in whole or in part by this device usage."
 Context: DeviceUsage
 * ^experimental = true
 * ^date = "2026-11-23"
+* ^purpose = "FHIR R5 DeviceUsage.basedOn allows only ServiceRequest, and the standard event-basedOn extension has no DeviceUsage context. FHIR-59962 asks HL7 to allow DeviceRequest in DeviceUsage.basedOn. This extension will be retired when that change is published."
+* ^mapping[0].identity = "workflow"
+* ^mapping[=].uri = "http://hl7.org/fhir/workflow"
+* ^mapping[=].name = "Workflow Pattern"
 * . ^short = "Fulfilled device request"
+* . ^mapping[0].identity = "workflow"
+* . ^mapping[=].map = "Event.basedOn"
 * value[x] 1..
 * value[x] only Reference(UZCoreDeviceRequest)

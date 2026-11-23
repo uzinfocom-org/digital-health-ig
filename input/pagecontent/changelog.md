@@ -2,7 +2,7 @@
 
 #### Added
 
-[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) links to the [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) it fulfils with the [Based on device request](StructureDefinition-deviceusage-based-on.html) extension, as in the [copper IUD](DeviceUsage-example-deviceusage-iud.html) example.
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) links to the [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) it fulfils with the [Based On Device Request](StructureDefinition-deviceusage-based-on.html) extension, as in the [copper IUD](DeviceUsage-example-deviceusage-iud.html) example.
 
 #### Changed
 

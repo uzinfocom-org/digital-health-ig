@@ -1,6 +1,6 @@
 > **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
 
-UZ Core DeviceUsage фиксирует, что пациент использует, использовал или будет использовать изделие - инсулиновую помпу, слуховой аппарат, кресло-коляску, внутриматочную спираль. Это утверждение: кто сообщил об использовании, когда, насколько регулярно изделие используется на самом деле и зачем оно используется. Само изделие этот ресурс не описывает; изделие указывается как концепт SNOMED CT или как ссылка на [UZ Core Device](StructureDefinition-uz-core-device.html) или DeviceDefinition. DeviceUsage может исполнять [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), которым изделие было назначено, а его причина может ссылаться на [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) или [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). Об использовании сообщает [пациент](StructureDefinition-uz-core-patient.html), [медицинский работник](StructureDefinition-uz-core-practitioner.html) или его [роль](StructureDefinition-uz-core-practitioner-role.html), [связанное лицо](StructureDefinition-uz-core-relatedperson.html) или [организация](StructureDefinition-uz-core-organization.html).
+UZ Core DeviceUsage фиксирует, что пациент использует, использовал или будет использовать изделие - инсулиновую помпу, слуховой аппарат, кресло-коляску, внутриматочную спираль. Это утверждение: кто сообщил об использовании, когда, насколько регулярно изделие используется на самом деле и зачем оно используется. Само изделие этот ресурс не описывает; изделие указывается как концепт SNOMED CT или как ссылка на [UZ Core Device](StructureDefinition-uz-core-device.html) или DeviceDefinition. DeviceUsage может исполнять [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), которым изделие было назначено, или [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html), связанный расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), а его причина может ссылаться на [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) или [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). Об использовании сообщает [пациент](StructureDefinition-uz-core-patient.html), [медицинский работник](StructureDefinition-uz-core-practitioner.html) или его [роль](StructureDefinition-uz-core-practitioner-role.html), [связанное лицо](StructureDefinition-uz-core-relatedperson.html) или [организация](StructureDefinition-uz-core-organization.html).
 
 ### Обязательные и поддерживаемые (Must Support) элементы данных
 
@@ -18,6 +18,7 @@ UZ Core DeviceUsage фиксирует, что пациент используе
 
 - идентификатор утверждения, всегда передаваемый вместе с его `system`;
 - `basedOn` - [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), которым изделие было назначено;
+- расширение [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html) - [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html), которым изделие было назначено;
 - `category` - условия использования (inpatient / outpatient / community);
 - `timing[x]` - когда изделие используется: `dateTime`, `Period` или `Timing`;
 - `dateAsserted` - когда было сделано утверждение;
@@ -86,7 +87,7 @@ UZ Core DeviceUsage фиксирует, что пациент используе
 }
 ```
 
-`reason` и `bodySite` - тоже `CodeableReference`. Здесь показание - закодированный концепт; если диагноз уже записан, сошлитесь на него: `{ "reference": { "reference": "Condition/id" } }`. Если изделие было назначено, добавьте `basedOn` со ссылкой на [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), а для условий использования - `category`.
+`reason` и `bodySite` - тоже `CodeableReference`. Здесь показание - закодированный концепт; если диагноз уже записан, сошлитесь на него: `{ "reference": { "reference": "Condition/id" } }`. Если изделие было назначено, добавьте `basedOn` со ссылкой на [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) или, для [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html), расширение [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), а для условий использования - `category`.
 
 #### Запись приверженности
 
