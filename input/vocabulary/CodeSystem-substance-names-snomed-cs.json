@@ -5,7 +5,7 @@
   "name": "SubstanceNamesSnomedCS",
   "id": "substance-names-snomed-cs",
   "title": "Substance name SNOMED CT translations",
-  "description": "Supplement to SNOMED CT with Russian and Uzbek names for the SNOMED CT concepts used for the substances and sampling objects that samples are taken from for sanitary and epidemiological laboratory examination",
+  "description": "Substance name SNOMED CT supplement with translations in Uzbek and Russian",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-snomed-cs",
   "concept": [
     {

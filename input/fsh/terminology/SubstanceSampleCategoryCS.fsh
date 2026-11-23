@@ -1,7 +1,7 @@
 CodeSystem: SubstanceSampleCategoryCS
 Id: substance-sample-category-cs
 Title: "Substance sample category SNOMED CT translations"
-Description: "Supplement to SNOMED CT with Russian and Uzbek names for the SNOMED CT concepts representing substance sample categories used for sanitary and epidemiological laboratory examination"
+Description: "Substance sample category SNOMED CT supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(substance-sample-category-cs, $sct, 2026.1.0)
 
 * #11713004

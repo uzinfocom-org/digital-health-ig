@@ -1,7 +1,7 @@
 CodeSystem: SubstanceNamesSnomedCS
 Id: substance-names-snomed-cs
 Title: "Substance name SNOMED CT translations"
-Description: "Supplement to SNOMED CT with Russian and Uzbek names for the SNOMED CT concepts used for the substances and sampling objects that samples are taken from for sanitary and epidemiological laboratory examination"
+Description: "Substance name SNOMED CT supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(substance-names-snomed-cs, $sct, 2026.1.0)
 
 * #608773004

@@ -76,7 +76,7 @@ Description: "Example reference list entry for pasteurized drinking milk, a food
 Usage: #example
 * language = #uz
 * identifier[substanceDefinition].value = "1368"
-* version = "1"
+* version = "1.0.0"
 * status = $publication-status#active
 * classification[substanceCategory] = $sct#255620007
 * description = "Pasterlangan ichimlik suti"
