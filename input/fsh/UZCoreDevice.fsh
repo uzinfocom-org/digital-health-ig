@@ -6,28 +6,14 @@ Description: "Uzbekistan Core Device profile, used to record the identity, statu
 * ^experimental = true
 
 * identifier MS
+* identifier.use from IdentifierUseVS (required)
+* identifier.type from IdentifierTypeVS (required)
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Identifiers for device (national registry)"
 * identifier ^slicing.ordered = false
-* identifier contains uzpharmDeviceItemID 0..1 MS and
-    uzpharmDeviceID 0..1 MS and
-    registrationCertificateID 0..1 MS
-
-* identifier[uzpharmDeviceItemID]
-  * ^short = "Pharmaceutical Committee registry identifier of the registered device variant"
-  * system 1..1 MS
-  * system = $uzpharmDeviceItemID
-  * use = #official
-  * value 1..1 MS
-
-* identifier[uzpharmDeviceID]
-  * ^short = "Pharmaceutical Committee registry identifier of the registered device"
-  * system 1..1 MS
-  * system = $uzpharmDeviceID
-  * use = #official
-  * value 1..1 MS
+* identifier contains registrationCertificateID 0..1 MS
 
 * identifier[registrationCertificateID]
   * ^short = "Registration certificate number of the device"
@@ -70,6 +56,27 @@ Description: "Uzbekistan Core Device profile, used to record the identity, statu
 
 * type MS
 * type from DeviceTypeVS (preferred)
+* type ^slicing.discriminator.type = #value
+* type ^slicing.discriminator.path = "coding.system"
+* type ^slicing.rules = #open
+* type ^slicing.description = "Registered device model in the Pharmaceutical Committee registry; other type codings, such as SNOMED CT, are allowed"
+* type ^slicing.ordered = false
+* type contains uzpharmDeviceItemID 0..1 MS and
+    uzpharmDeviceID 0..1 MS
+
+* type[uzpharmDeviceItemID]
+  * ^short = "Pharmaceutical Committee registry device_item_id of the registered device variant"
+  * coding 1..1 MS
+  * coding.system 1..1 MS
+  * coding.system = $uzpharmDeviceItemID
+  * coding.code 1..1 MS
+
+* type[uzpharmDeviceID]
+  * ^short = "Pharmaceutical Committee registry device_id of the registered device"
+  * coding 1..1 MS
+  * coding.system 1..1 MS
+  * coding.system = $uzpharmDeviceID
+  * coding.code 1..1 MS
 
 * owner MS
 * owner only Reference(UZCoreOrganization)
@@ -105,7 +112,9 @@ Description: "Example of a CT scanner installed at a hospital"
 
 * category = $device-category#dme "Durable Medical Equipment"
 
-* type = $sct#54953005 "Computed tomography scanner"
+* type[0] = $sct#54953005 "Computed tomography scanner"
+* type[uzpharmDeviceItemID].coding = $uzpharmDeviceItemID#10452
+* type[uzpharmDeviceID].coding = $uzpharmDeviceID#3871
 
 * owner = Reference(tashkent-diseases-hospital)
 * location = Reference(example-location)

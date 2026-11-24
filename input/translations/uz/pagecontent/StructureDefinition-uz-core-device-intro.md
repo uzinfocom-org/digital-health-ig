@@ -12,10 +12,10 @@ Asosiy Device resursida majburiy elementlar yo'q va ushbu profil ham ularni qo's
 
 #### Har bir UZ Core Device quyidagilarni qo'llab-quvvatlashi shart
 
-- identifikator, har doim o'z `system` i bilan yuboriladi ([Identifikatorlar](identifiers.html) ga qarang);
+- identifikator, har doim o'z `system` i bilan yuboriladi ([Identifikatorlar](identifiers.html) ga qarang), masalan ro'yxatga olish guvohnomasi raqami;
 - yozuv holati `status` (active / inactive / entered-in-error) va buyumdan foydalanish mumkinligi `availabilityStatus` (available / lost / damaged / destroyed);
 - `displayName` va har bir `name` - uning `value` qiymati, `type` turi (ro'yxatdan o'tgan, foydalanuvchiga qulay yoki bemor tomonidan bildirilgan nom) va `display` belgisi bilan;
-- buyum turi `type` (SNOMED CT tushunchasi) va umumiyroq toifasi `category`;
+- buyum turi `type` (SNOMED CT tushunchasi va Farmatsevtika qo'mitasi reyestridagi ro'yxatdan o'tgan model, [quyidagi jadvalga](#registry-codes) qarang) va umumiyroq toifasi `category`;
 - `manufacturer`, `modelNumber` va `partNumber`;
 - `serialNumber`, `lotNumber`, `manufactureDate` va `expirationDate`;
 - egasi `owner` - [Organization](StructureDefinition-uz-core-organization.html) ga havola - va joyi `location` - [Location](StructureDefinition-uz-core-location.html) ga havola;
@@ -31,6 +31,9 @@ GET [base]/Device?serial-number=SN-2023-001456
 
 # by type, within one organization
 GET [base]/Device?type=http://snomed.info/sct|54953005&organization=Organization/[id]
+
+# by registered model in the Pharmaceutical Committee registry
+GET [base]/Device?type=https://uzpharminfo.uz/deviceItemId|10452
 
 # by manufacturer and model, or by batch
 GET [base]/Device?manufacturer=Siemens Healthineers&model=SOMATOM Edge
@@ -153,5 +156,39 @@ Implant yoki bir martalik buyum uzoq muddatli aktiv sifatida emas, balki partiya
 ```
 
 `expirationDate` va `manufactureDate` `dateTime` turida, shuning uchun oddiy sana yetarli. UZ Core [buyum turlari qiymatlar to'plami](ValueSet-device-type-vs.html) kontratseptiv buyum turlarining o'zbekcha va ruscha nomlarini o'z ichiga oladi: bachadon ichi kontratseptiv vositasi, prezervativ, dori moddasi ajratuvchi kontratseptiv implant va kontratseptiv vosita.
+
+#### Farmatsevtika qo'mitasi reyestridagi buyum {#registry-codes}
+
+Farmatsevtika qo'mitasining tibbiy buyumlar reyestri alohida nusxani emas, ro'yxatdan o'tgan modelni bildiradi: bir xil ro'yxatdan o'tgan variantdagi barcha KT skanerlarda `device_item_id` bir xil. Shuning uchun reyestr kodlari SNOMED CT tushunchasi yonida `type` da yuboriladi, nusxani esa avvalgidek `serialNumber` ajratadi. Har bir `type` slice'i bitta kodlashga ega va `system` URI'si bo'yicha tanlanadi:
+
+| Reyestr maydoni | `type.coding.system` | Ma'nosi |
+|---|---|---|
+| `device_item_id` | `https://uzpharminfo.uz/deviceItemId` | ro'yxatga olish guvohnomasidagi ro'yxatdan o'tgan buyum varianti |
+| `device_id` | `https://uzpharminfo.uz/deviceId` | ro'yxatdan o'tgan buyum, uning barcha variantlari uchun umumiy |
+
+```json
+{
+  "resourceType": "Device",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-device"] },
+  "language": "en",
+  "status": "active",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "54953005",
+          "display": "Computed tomography scanner"
+        }
+      ]
+    },
+    { "coding": [ { "system": "https://uzpharminfo.uz/deviceItemId", "code": "10452" } ] },
+    { "coding": [ { "system": "https://uzpharminfo.uz/deviceId", "code": "3871" } ] }
+  ],
+  "serialNumber": "SN-2023-001456"
+}
+```
+
+Reyestr FHIR CodeSystem nashr etmaydi, shuning uchun server bu kodlarni validatsiya qilmaydi. Bir modeldagi barcha buyumlar `GET [base]/Device?type=https://uzpharminfo.uz/deviceItemId%7C10452` so'rovi bilan topiladi.
 
 API chaqiruvlari misollari ushbu sahifa pastidagi [Tez boshlash](#quick-start) bo'limida keltirilgan.

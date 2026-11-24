@@ -12,10 +12,10 @@ UZ Core Device описывает одно физическое медицинс
 
 #### Каждое UZ Core Device должно поддерживать
 
-- идентификатор, всегда передаваемый вместе со своей `system` (см. [Идентификаторы](identifiers.html));
+- идентификатор, всегда передаваемый вместе со своей `system` (см. [Идентификаторы](identifiers.html)), например номер регистрационного удостоверения;
 - статус записи `status` (active / inactive / entered-in-error) и возможность использовать изделие `availabilityStatus` (available / lost / damaged / destroyed);
 - `displayName` и каждое `name` с его `value`, типом `type` (зарегистрированное, удобное для пользователя или указанное пациентом наименование) и признаком `display`;
-- вид изделия `type` (концепт SNOMED CT) и более общую категорию `category`;
+- вид изделия `type` (концепт SNOMED CT и зарегистрированную модель из реестра Фармкомитета, см. [таблицу ниже](#registry-codes)) и более общую категорию `category`;
 - `manufacturer`, `modelNumber` и `partNumber`;
 - `serialNumber`, `lotNumber`, `manufactureDate` и `expirationDate`;
 - владельца `owner` - ссылку на [Organization](StructureDefinition-uz-core-organization.html) - и место `location` - ссылку на [Location](StructureDefinition-uz-core-location.html);
@@ -31,6 +31,9 @@ GET [base]/Device?serial-number=SN-2023-001456
 
 # by type, within one organization
 GET [base]/Device?type=http://snomed.info/sct|54953005&organization=Organization/[id]
+
+# by registered model in the Pharmaceutical Committee registry
+GET [base]/Device?type=https://uzpharminfo.uz/deviceItemId|10452
 
 # by manufacturer and model, or by batch
 GET [base]/Device?manufacturer=Siemens Healthineers&model=SOMATOM Edge
@@ -153,5 +156,39 @@ GET [base]/Device?lot-number=CU-2025-0412
 ```
 
 `expirationDate` и `manufactureDate` имеют тип `dateTime`, поэтому достаточно простой даты. [Набор значений типов изделий](ValueSet-device-type-vs.html) UZ Core содержит узбекские и русские наименования типов контрацептивных изделий: внутриматочное контрацептивное средство, презерватив, контрацептивный имплантат с высвобождением лекарственного вещества и контрацептивное средство.
+
+#### Изделие из реестра Фармкомитета {#registry-codes}
+
+Реестр медицинских изделий Фармкомитета обозначает зарегистрированную модель, а не отдельный экземпляр: у всех КТ-сканеров одного зарегистрированного варианта один и тот же `device_item_id`. Поэтому коды реестра передаются в `type` рядом с концептом SNOMED CT, а экземпляр по-прежнему отличает `serialNumber`. Каждый срез `type` содержит одно кодирование и выбирается по URI в `system`:
+
+| Поле реестра | `type.coding.system` | Значение |
+|---|---|---|
+| `device_item_id` | `https://uzpharminfo.uz/deviceItemId` | зарегистрированный вариант изделия в регистрационном удостоверении |
+| `device_id` | `https://uzpharminfo.uz/deviceId` | зарегистрированное изделие, общее для всех его вариантов |
+
+```json
+{
+  "resourceType": "Device",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-device"] },
+  "language": "en",
+  "status": "active",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "54953005",
+          "display": "Computed tomography scanner"
+        }
+      ]
+    },
+    { "coding": [ { "system": "https://uzpharminfo.uz/deviceItemId", "code": "10452" } ] },
+    { "coding": [ { "system": "https://uzpharminfo.uz/deviceId", "code": "3871" } ] }
+  ],
+  "serialNumber": "SN-2023-001456"
+}
+```
+
+Реестр не публикует FHIR CodeSystem, поэтому сервер эти коды не валидирует. Все изделия одной модели находятся запросом `GET [base]/Device?type=https://uzpharminfo.uz/deviceItemId%7C10452`.
 
 Примеры вызовов API приведены в разделе [Быстрый старт](#quick-start) внизу этой страницы.
