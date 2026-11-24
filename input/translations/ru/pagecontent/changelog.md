@@ -18,6 +18,8 @@
 
 Страницы руководства оформлены в стиле [документации DHP для разработчиков](https://docs.dhp.uz/ru/): шрифты Onest и JetBrains Mono, зелёные цвета и логотип DHP, обновлённые шапка, меню, таблицы, примечания и блоки кода с кнопкой копирования. Меню темы в шапке переключает светлую, тёмную тему или тему как в системе.
 
+[Типы документов Composition](CodeSystem-composition-type-cs.html): `emdoc-0010-0106` теперь выписка из медицинской карты пациента - стационарного или амбулаторного, как уже было в узбекском названии; русское и английское названия больше не говорят о стационаре. Форма 027 использует этот код в обоих случаях, а различает их `Encounter.class` (`AMB` или `IMP`).
+
 #### Несовместимые изменения
 
 [Номер регистрационного удостоверения](NamingSystem-registration-certificate-id.html) и [ID групповой упаковки UzPharm](NamingSystem-uz-pharm-box-id.html) меняют URI на `https://uzpharminfo.uz/registrationNumber` и `https://uzpharminfo.uz/boxGroupId` — те, что уже передаёт загрузчик реестра Фармкомитета. Идентификатор [UZ Core Medication](StructureDefinition-uz-core-medication.html) со старым URI `registration_number` или `box_group_id` больше не попадает в свой срез, а поиск по идентификатору должен использовать новые URI.

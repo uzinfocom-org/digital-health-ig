@@ -8,6 +8,8 @@
 
 #### O'zgartirildi
 
+[Composition hujjat turlari](CodeSystem-composition-type-cs.html): `emdoc-0010-0106` endi bemorning tibbiy kartasidan ko'chirma - statsionar yoki ambulator, o'zbekcha nomida bo'lgani kabi; ruscha va inglizcha nomlari endi statsionar haqida gapirmaydi. 027-shakl bu kodni ikkala holatda ham ishlatadi, ularni `Encounter.class` (`AMB` yoki `IMP`) farqlaydi.
+
 [Guruh turi](ValueSet-group-kind-vs.html) tashkilot xodimlari guruhi bilan to'ldirildi.
 
 [Hodisa holati](ValueSet-procedure-event-status-vs.html), avval Procedure hodisasi holati, endi UZ Core Procedure va UZ Core Communication da ishlatiladi.
