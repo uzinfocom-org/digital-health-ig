@@ -10,7 +10,7 @@ The base Device resource has no mandatory elements, and this profile adds none. 
 
 #### Each UZ Core Device Must Support
 
-- an identifier, always sent with its `system` (see [Identifiers](identifiers.html)), such as the registration certificate number;
+- an identifier, always sent with its `system` (see [Identifiers](identifiers.html)), such as the registration certificate number with its issue and expiry dates in `period`;
 - the `status` of the record (active / inactive / entered-in-error), and whether the device can be used (`availabilityStatus`: available / lost / damaged / destroyed);
 - the `displayName`, and each `name` with its `value`, its `type` (registered, user-friendly or patient-reported name), and the `display` flag;
 - the kind of device (`type`, a SNOMED CT concept, and the registered model from the Pharmaceutical Committee registry, see [the table below](#registry-codes)) and its broader `category`;
@@ -183,10 +183,18 @@ The Pharmaceutical Committee medical device registry identifies a registered mod
     { "coding": [ { "system": "https://uzpharminfo.uz/deviceItemId", "code": "10452" } ] },
     { "coding": [ { "system": "https://uzpharminfo.uz/deviceId", "code": "3871" } ] }
   ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://uzpharminfo.uz/registrationNumber",
+      "value": "TB/M 00024/09/15",
+      "period": { "start": "2015-09-24", "end": "2030-09-24" }
+    }
+  ],
   "serialNumber": "SN-2023-001456"
 }
 ```
 
-The registry publishes no FHIR CodeSystem, so the server does not validate these codes. All devices of one model are found with `GET [base]/Device?type=https://uzpharminfo.uz/deviceItemId%7C10452`.
+The registration certificate number goes in `identifier`, with the certificate issue date in `period.start` and its expiry date in `period.end`; leave `end` out when the certificate is valid indefinitely. The registry publishes no FHIR CodeSystem, so the server does not validate the `type` codes. All devices of one model are found with `GET [base]/Device?type=https://uzpharminfo.uz/deviceItemId%7C10452`.
 
 For example API calls, see the [Quick Start](#quick-start) at the bottom of this page.

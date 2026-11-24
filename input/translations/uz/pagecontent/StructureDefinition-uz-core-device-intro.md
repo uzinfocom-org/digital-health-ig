@@ -12,7 +12,7 @@ Asosiy Device resursida majburiy elementlar yo'q va ushbu profil ham ularni qo's
 
 #### Har bir UZ Core Device quyidagilarni qo'llab-quvvatlashi shart
 
-- identifikator, har doim o'z `system` i bilan yuboriladi ([Identifikatorlar](identifiers.html) ga qarang), masalan ro'yxatga olish guvohnomasi raqami;
+- identifikator, har doim o'z `system` i bilan yuboriladi ([Identifikatorlar](identifiers.html) ga qarang), masalan ro'yxatga olish guvohnomasi raqami, `period` da berilgan va amal qilish muddati tugaydigan sanalari bilan;
 - yozuv holati `status` (active / inactive / entered-in-error) va buyumdan foydalanish mumkinligi `availabilityStatus` (available / lost / damaged / destroyed);
 - `displayName` va har bir `name` - uning `value` qiymati, `type` turi (ro'yxatdan o'tgan, foydalanuvchiga qulay yoki bemor tomonidan bildirilgan nom) va `display` belgisi bilan;
 - buyum turi `type` (SNOMED CT tushunchasi va Farmatsevtika qo'mitasi reyestridagi ro'yxatdan o'tgan model, [quyidagi jadvalga](#registry-codes) qarang) va umumiyroq toifasi `category`;
@@ -185,10 +185,18 @@ Farmatsevtika qo'mitasining tibbiy buyumlar reyestri alohida nusxani emas, ro'yx
     { "coding": [ { "system": "https://uzpharminfo.uz/deviceItemId", "code": "10452" } ] },
     { "coding": [ { "system": "https://uzpharminfo.uz/deviceId", "code": "3871" } ] }
   ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://uzpharminfo.uz/registrationNumber",
+      "value": "TB/M 00024/09/15",
+      "period": { "start": "2015-09-24", "end": "2030-09-24" }
+    }
+  ],
   "serialNumber": "SN-2023-001456"
 }
 ```
 
-Reyestr FHIR CodeSystem nashr etmaydi, shuning uchun server bu kodlarni validatsiya qilmaydi. Bir modeldagi barcha buyumlar `GET [base]/Device?type=https://uzpharminfo.uz/deviceItemId%7C10452` so'rovi bilan topiladi.
+Ro'yxatga olish guvohnomasi raqami `identifier` da yuboriladi: guvohnoma berilgan sana `period.start` da, amal qilish muddati tugaydigan sana `period.end` da; muddatsiz guvohnoma uchun `end` ko'rsatilmaydi. Reyestr FHIR CodeSystem nashr etmaydi, shuning uchun server `type` dagi kodlarni validatsiya qilmaydi. Bir modeldagi barcha buyumlar `GET [base]/Device?type=https://uzpharminfo.uz/deviceItemId%7C10452` so'rovi bilan topiladi.
 
 API chaqiruvlari misollari ushbu sahifa pastidagi [Tez boshlash](#quick-start) bo'limida keltirilgan.

@@ -12,7 +12,7 @@ UZ Core Device описывает одно физическое медицинс
 
 #### Каждое UZ Core Device должно поддерживать
 
-- идентификатор, всегда передаваемый вместе со своей `system` (см. [Идентификаторы](identifiers.html)), например номер регистрационного удостоверения;
+- идентификатор, всегда передаваемый вместе со своей `system` (см. [Идентификаторы](identifiers.html)), например номер регистрационного удостоверения с датами выдачи и окончания срока действия в `period`;
 - статус записи `status` (active / inactive / entered-in-error) и возможность использовать изделие `availabilityStatus` (available / lost / damaged / destroyed);
 - `displayName` и каждое `name` с его `value`, типом `type` (зарегистрированное, удобное для пользователя или указанное пациентом наименование) и признаком `display`;
 - вид изделия `type` (концепт SNOMED CT и зарегистрированную модель из реестра Фармкомитета, см. [таблицу ниже](#registry-codes)) и более общую категорию `category`;
@@ -185,10 +185,18 @@ GET [base]/Device?lot-number=CU-2025-0412
     { "coding": [ { "system": "https://uzpharminfo.uz/deviceItemId", "code": "10452" } ] },
     { "coding": [ { "system": "https://uzpharminfo.uz/deviceId", "code": "3871" } ] }
   ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://uzpharminfo.uz/registrationNumber",
+      "value": "TB/M 00024/09/15",
+      "period": { "start": "2015-09-24", "end": "2030-09-24" }
+    }
+  ],
   "serialNumber": "SN-2023-001456"
 }
 ```
 
-Реестр не публикует FHIR CodeSystem, поэтому сервер эти коды не валидирует. Все изделия одной модели находятся запросом `GET [base]/Device?type=https://uzpharminfo.uz/deviceItemId%7C10452`.
+Номер регистрационного удостоверения передаётся в `identifier`: дата выдачи удостоверения - в `period.start`, дата окончания срока действия - в `period.end`; для бессрочного удостоверения `end` не указывается. Реестр не публикует FHIR CodeSystem, поэтому сервер коды в `type` не валидирует. Все изделия одной модели находятся запросом `GET [base]/Device?type=https://uzpharminfo.uz/deviceItemId%7C10452`.
 
 Примеры вызовов API приведены в разделе [Быстрый старт](#quick-start) внизу этой страницы.

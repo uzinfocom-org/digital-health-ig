@@ -21,6 +21,8 @@ Description: "Uzbekistan Core Device profile, used to record the identity, statu
   * system = $registrationCertificateID
   * use = #official
   * value 1..1 MS
+  * period MS
+  * period ^short = "Registration certificate issue date (start) and expiry date (end); no end when the certificate is valid indefinitely"
 
 * displayName MS
 
@@ -102,6 +104,9 @@ Description: "Example of a CT scanner installed at a hospital"
 * manufacturer = "Siemens Healthineers"
 * manufactureDate = "2023-05-15"
 * serialNumber = "SN-2023-001456"
+* identifier[registrationCertificateID].value = "TB/M 00024/09/15"
+* identifier[registrationCertificateID].period.start = "2015-09-24"
+* identifier[registrationCertificateID].period.end = "2030-09-24"
 
 * name.value = "SOMATOM Edge"
 * name.type = $device-name-type#registered-name "Ro'yxatdan o'tgan nomi"
