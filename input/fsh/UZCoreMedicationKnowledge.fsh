@@ -32,6 +32,9 @@ Description: "Uzbekistan Core MedicationKnowledge profile, used to represent ref
 * author ^short = "Organization responsible for publishing, approving or maintaining this record in DHP (e.g. SHIF for reimbursement or price ceiling)"
 
 * regulatory.regulatoryAuthority only Reference(UZCoreOrganization)
+* regulatory MS
+* regulatory.schedule MS
+* regulatory.schedule from MedicationRegulatoryScheduleVS (extensible)
 * relatedMedicationKnowledge.reference only Reference(UZCoreMedicationKnowledge)
 
 * cost MS

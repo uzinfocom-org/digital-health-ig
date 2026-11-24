@@ -252,3 +252,14 @@ Context: DeviceUsage
 * . ^mapping[=].map = "Event.basedOn"
 * value[x] 1..
 * value[x] only Reference(UZCoreDeviceRequest)
+
+Extension: DeviceManufacturerCountry
+Id: device-manufacturer-country
+Title: "Device manufacturer country"
+Description: "Country of the device manufacturer"
+Context: Device
+* ^url = "https://dhp.uz/fhir/core/StructureDefinition/device-manufacturer-country"
+* ^experimental = true
+* value[x] 1..
+* value[x] only CodeableConcept
+* valueCodeableConcept from ISO3166_2 (required)

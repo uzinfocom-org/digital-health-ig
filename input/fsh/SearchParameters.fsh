@@ -61,3 +61,22 @@ Usage: #definition
 * expression = "SupplyRequest.extension('https://dhp.uz/fhir/core/StructureDefinition/supplyrequest-group-identifier').value.ofType(Identifier)"
 * processingMode = #normal
 * multipleOr = true
+
+Instance: uz-core-device-manufacturer-country
+InstanceOf: SearchParameter
+Description: "Search for devices by the country of their manufacturer"
+Usage: #definition
+* url = "https://dhp.uz/fhir/core/SearchParameter/uz-core-device-manufacturer-country"
+* name = "UZDeviceManufacturerCountry"
+* title = "Device manufacturer country"
+* status = #active
+* experimental = true
+* date = "2026-11-24"
+* publisher = "Uzinfocom"
+* jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
+* description = "Search for Device resources by the country of the manufacturer (`device-manufacturer-country` extension). Base FHIR R5 has no search parameter for it."
+* code = #manufacturer-country
+* base = #Device
+* type = #token
+* expression = "Device.extension('https://dhp.uz/fhir/core/StructureDefinition/device-manufacturer-country').value"
+* processingMode = #normal
