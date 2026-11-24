@@ -2,7 +2,7 @@
 
 #### Qo'shildi
 
-[Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi va ambulator tibbiy kartadan berilgan 027-shakl uchun `emdoc-0010-0472` kodi qo'shildi; `emdoc-0010-0106` statsionar bemor kartasidan ko'chirma bo'lib qoladi.
+[Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga IXLA tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
 
 [Dori shakllari](CodeSystem-medication-doseform-cs.html): DMED elektron retsepti va Farmatsevtika qo'mitasi dori vositalari reyestrining kodi bo'lmagan dori shakllari uchun `CTP101` kataplazma, `DRS101` dorivor bog'lam, `HRB101` dorivor o'simlik xomashyosi, `JEL101` dorivor jele, `KIT101` to'plam, `LOT101` losyon, `SHA101` dorivor shampun, `SUB101` substansiya va `TEA101` dorivor o'simliklar yig'masi kodlari o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi.
 
@@ -43,6 +43,8 @@ Endi har bir profil sahifasida kirish qismi va Tez boshlash bo'limi bor. Ular [U
 [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) ga `group` identifikator slaysi qo'shildi - birga yuborilgan so'rovlar uchun umumiy [ta'minot so'rovlari guruhi raqami](NamingSystem-uzb-supply-group-number.html), yetkazib beruvchi ularni bitta buyurtma sifatida ko'rib chiqishi uchun. Ikki misol bitta operatsiya uchun birga buyurtma qilingan eritrotsitar massa va yangi muzlatilgan plazmani ko'rsatadi.
 
 #### O'zgartirildi
+
+[Composition hujjat turlari](CodeSystem-composition-type-cs.html): `emdoc-0010-0106` endi bemorning tibbiy kartasidan ko'chirma - statsionar yoki ambulator, o'zbekcha nomida bo'lgani kabi; ruscha va inglizcha nomlari endi statsionar haqida gapirmaydi. 027-shakl bu kodni ikkala holatda ham ishlatadi, ularni `Encounter.class` (`AMB` yoki `IMP`) farqlaydi.
 
 [Allergen kodlari](ValueSet-allergen-codes-vs.html) endi [dorilarning XPN nomlarini](CodeSystem-inn-medication-name-cs.html) ham o'z ichiga oladi, shuning uchun dori allergiyasini ta'sir qiluvchi modda bo'yicha ko'rsatish mumkin. [Analgetikka allergiya namunasi](AllergyIntolerance-example-analgesic-allergy.html) endi paratsetamolni XPN bo'yicha kodlaydi.
 

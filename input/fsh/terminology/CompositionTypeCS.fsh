@@ -532,9 +532,9 @@ Description: "Composition types in Uzbekistan"
   * ^designation[=].value = "EFGDS (gastroscopy) register"
 * #emdoc-0010-0106 "Tibbiy muassasadagi bemorning tibbiy bayonnomasidan ko‘chirma"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Выписка из медицинской карты стационарного пациента"
+  * ^designation[=].value = "Выписка из медицинской карты пациента"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Extract from inpatient medical record"
+  * ^designation[=].value = "Extract from patient medical record"
 * #emdoc-0010-0107 "Yomon sifatli o‘sma xastaligi bor shifoxona bemorining tibbiy kartasidan"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Из медицинской карты стационарного пациента с заболеванием злокачественной опухолью"
@@ -2360,8 +2360,3 @@ Description: "Composition types in Uzbekistan"
   * ^designation[=].value = "Клинико-диагностическая лаборатория, анализ ИФА: фолиевая кислота, 25-OH витамин D, витамин B12"
   * ^designation[+].language = #en
   * ^designation[=].value = "Clinical diagnostic laboratory ELISA analysis: folic acid, 25-OH vitamin D, vitamin B12"
-* #emdoc-0010-0472 "Tibbiy muassasadagi ambulator bemorning tibbiy kartasidan ko‘chirma"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Выписка из медицинской карты амбулаторного пациента"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Extract from outpatient medical record"
