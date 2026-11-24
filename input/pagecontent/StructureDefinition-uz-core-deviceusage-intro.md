@@ -1,4 +1,4 @@
-UZ Core DeviceUsage records that a patient is using, has used or will use a device - an insulin pump, a hearing aid, a wheelchair, an intrauterine device. It is a statement: who reported the use, when, how regularly the device is actually used, and why it is used. It does not describe the device itself; the device is given as a SNOMED CT concept, or as a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html) or a DeviceDefinition. A DeviceUsage may fulfil a [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) that ordered the device, and its reason can point to a [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) or [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). The use is reported by the [patient](StructureDefinition-uz-core-patient.html), a [practitioner](StructureDefinition-uz-core-practitioner.html) or [practitioner role](StructureDefinition-uz-core-practitioner-role.html), a [related person](StructureDefinition-uz-core-relatedperson.html) or an [organization](StructureDefinition-uz-core-organization.html).
+UZ Core DeviceUsage records that a patient is using, has used or will use a device - an insulin pump, a hearing aid, a wheelchair, an intrauterine device. It is a statement: who reported the use, when, how regularly the device is actually used, and why it is used. It does not describe the device itself; the device is given as a SNOMED CT concept, or as a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html) or a DeviceDefinition. A DeviceUsage may fulfil a [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) that ordered the device, or a [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) linked through the [Based On Device Request](StructureDefinition-deviceusage-based-on.html) extension, and its reason can point to a [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) or [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). The use is reported by the [patient](StructureDefinition-uz-core-patient.html), a [practitioner](StructureDefinition-uz-core-practitioner.html) or [practitioner role](StructureDefinition-uz-core-practitioner-role.html), a [related person](StructureDefinition-uz-core-relatedperson.html) or an [organization](StructureDefinition-uz-core-organization.html).
 
 ### Mandatory and Must Support data elements
 
@@ -16,6 +16,7 @@ This profile adds no mandatory elements of its own. The base DeviceUsage resourc
 
 - an identifier for the statement, always sent with its `system`;
 - `basedOn` - the [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) that ordered the device;
+- the [Based On Device Request](StructureDefinition-deviceusage-based-on.html) extension - the [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) that ordered the device;
 - `category` - the setting of the use (inpatient / outpatient / community);
 - `timing[x]` - when the device is used: a `dateTime`, a `Period` or a `Timing`;
 - `dateAsserted` - when the statement was made;
@@ -84,7 +85,7 @@ In practice a clinician records when the use started, why the device is used and
 }
 ```
 
-`reason` and `bodySite` are also `CodeableReference`s. Here the indication is a coded concept; when the diagnosis is already recorded, point to it instead with `{ "reference": { "reference": "Condition/id" } }`. When the device was ordered, add `basedOn` with a reference to the [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), and `category` for the setting of the use.
+`reason` and `bodySite` are also `CodeableReference`s. Here the indication is a coded concept; when the diagnosis is already recorded, point to it instead with `{ "reference": { "reference": "Condition/id" } }`. When the device was ordered, add `basedOn` with a reference to the [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), or, for a [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html), the [Based On Device Request](StructureDefinition-deviceusage-based-on.html) extension, and `category` for the setting of the use.
 
 #### Recording adherence
 

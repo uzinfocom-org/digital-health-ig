@@ -2,11 +2,29 @@
 
 #### Added
 
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) records information conveyed to patients, practitioners or organizations, such as a public health alert that patients see in the Patient Portal: an alert to the residents of a risk zone, which carries the zone's alert level I-IV under the national alert regulation, or an alert from a manager to an organization employee group. Its `category` is the HL7 [communication category](ValueSet-communication-category-vs.html) `alert`, with Uzbek and Russian names in its [supplement](CodeSystem-communication-category-cs.html), and the alert level comes from the new local [Alert level](CodeSystem-alert-level-cs.html) code system, with Uzbek, Russian and English names.
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) links to the [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) it fulfils with the [Based On Device Request](StructureDefinition-deviceusage-based-on.html) extension, as in the [copper IUD](DeviceUsage-example-deviceusage-iud.html) example.
+
 [UZ Core Substance](StructureDefinition-uz-core-substance.html) represents a portion of a substance sampled for sanitary and epidemiological examination - a food product, water or a swabbed surface - with its [sample number](NamingSystem-uzb-substance-sample-number.html) and [batch number](NamingSystem-uzb-substance-lot-number.html), expiry date, the amount taken and the declared composition. It points to a [UZ Core SubstanceDefinition](StructureDefinition-uz-core-substancedefinition.html), an entry of the reference list of substances and sampling objects with its SNOMED CT or national code, Uzbek and Russian names, category and manufacturer, identified by a new [substance definition identifier](NamingSystem-uzb-substance-definition-number.html). The [substance name](ValueSet-substance-names-vs.html) value set codes the LIS SES list of sample names with 542 SNOMED CT concepts, which have Uzbek and Russian names in a new [SNOMED CT supplement](CodeSystem-substance-names-snomed-cs.html), and with 477 national codes, grouped by LIS SES sample category and with Uzbek, Russian and English names, in the new [substance names](CodeSystem-substance-names-cs.html) code system for the names that have no SNOMED CT concept. Uzbek and Russian translations of the HL7 [substance status](ValueSet-substance-status-vs.html) codes come with them, and the [substance sample category](ValueSet-substance-sample-category-vs.html) value set codes the kind of sample - water, air, soil or food products - with SNOMED CT concepts that have Uzbek and Russian names in the same [SNOMED CT supplement](CodeSystem-substance-names-snomed-cs.html). Both profile pages have the narrative intro and Quick Start.
 
 #### Changed
 
+[Composition types](CodeSystem-composition-type-cs.html) `emdoc-0010-0106` is now the extract from a patient's medical record, inpatient or outpatient, as its Uzbek name already said: the Russian and English names no longer say inpatient. Form 027 uses it for both settings, and `Encounter.class` (`AMB` or `IMP`) tells them apart.
+
+[Event status](ValueSet-procedure-event-status-vs.html), formerly Procedure event status, is now shared by UZ Core Procedure and UZ Core Communication.
+
 Every reference to a Substance or SubstanceDefinition in UZ Core profiles now targets [UZ Core Substance](StructureDefinition-uz-core-substance.html) or [UZ Core SubstanceDefinition](StructureDefinition-uz-core-substancedefinition.html): Specimen, SupplyDelivery, AdverseEvent and PlanDefinition.
+
+[Group kind](ValueSet-group-kind-vs.html) adds the organization employee group.
+
+The [cross-component resource architecture](components.html#cross-component-resource-architecture) diagram adds Prescription, with MedicationRequest, MedicationDispense, Medication, MedicationKnowledge and MedicationAdministration, and Supplies, with SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport and Device. It shows the newer profiles where they are used: DeviceRequest and DeviceUsage in Clinical Health Records, ChargeItem in Reimbursement, BiologicallyDerivedProductDispense and Flag in Blood Management, and CarePlan in Nursing. CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport and BiologicallyDerivedProduct now have UZ Core profiles, so they are marked as defined in this IG rather than named, not yet defined. Buttons in the top right corner of the diagram open or close every component at once and fit the diagram back into view.
+
+The guide's pages use the look of the [DHP developer documentation](https://docs.dhp.uz/): Onest and JetBrains Mono fonts, DHP green colours and logo, and a restyled header, menu, tables, notes and code blocks, which now have a copy button. A theme menu in the header switches between light, dark and the system setting.
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` can also reference a [UZ Core Device](StructureDefinition-uz-core-device.html) or a [UZ Core Organization](StructureDefinition-uz-core-organization.html), for events with no person behind them, such as a scheduled job or a system logging in.
+
+[UZ Core Location](StructureDefinition-uz-core-location.html) now also covers areas, such as a mahalla set as a public health risk zone.
 
 #### Breaking changes
 

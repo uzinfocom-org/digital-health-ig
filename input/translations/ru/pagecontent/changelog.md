@@ -2,11 +2,29 @@
 
 #### Добавлено
 
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) фиксирует информацию, передаваемую пациентам, медицинским работникам или организациям, например оповещение в области общественного здравоохранения, которое пациенты видят в Портале пациента: оповещение жителей зоны риска с уровнем зоны I-IV по национальному регламенту оповещений или оповещение менеджера группе работников организации. Его `category` - [категория сообщения](ValueSet-communication-category-vs.html) HL7 `alert` с узбекскими и русскими названиями в [дополнении](CodeSystem-communication-category-cs.html), а уровень оповещения берётся из новой локальной системы кодов [Alert level](CodeSystem-alert-level-cs.html) с названиями на узбекском, русском и английском языках.
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
+
 [UZ Core Substance](StructureDefinition-uz-core-substance.html) представляет порцию вещества, отобранную для санитарно-эпидемиологического исследования, - пищевой продукт, воду или смыв с поверхности - с [номером образца](NamingSystem-uzb-substance-sample-number.html) и [номером партии](NamingSystem-uzb-substance-lot-number.html), сроком годности, отобранным количеством и заявленным составом. Он ссылается на [UZ Core SubstanceDefinition](StructureDefinition-uz-core-substancedefinition.html) - запись справочника веществ и объектов отбора с кодом SNOMED CT или национальным кодом, узбекским и русским наименованиями, категорией и производителем, которая идентифицируется новым [идентификатором определения вещества](NamingSystem-uzb-substance-definition-number.html). Набор значений [наименований веществ](ValueSet-substance-names-vs.html) кодирует справочник наименований образцов ЛИС СЭС 542 концептами SNOMED CT с узбекскими и русскими наименованиями в новом [дополнении SNOMED CT](CodeSystem-substance-names-snomed-cs.html) и 477 национальными кодами, сгруппированными по категориям образцов ЛИС СЭС, с узбекскими, русскими и английскими наименованиями в новой системе кодов [наименований веществ](CodeSystem-substance-names-cs.html) для наименований без концепта SNOMED CT. Вместе с ними добавлены узбекские и русские переводы кодов HL7 [статуса вещества](ValueSet-substance-status-vs.html), а набор значений [категорий образцов веществ](ValueSet-substance-sample-category-vs.html) кодирует вид образца - вода, воздух, почва или пищевые продукты - концептами SNOMED CT с узбекскими и русскими наименованиями в том же [дополнении SNOMED CT](CodeSystem-substance-names-snomed-cs.html). Страницы обоих профилей содержат вводное описание и раздел «Быстрый старт».
 
 #### Изменено
 
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html): `agent.who` может также ссылаться на [UZ Core Device](StructureDefinition-uz-core-device.html) или [UZ Core Organization](StructureDefinition-uz-core-organization.html), для событий без участия человека, например задания по расписанию или входа системы.
+
+[UZ Core Location](StructureDefinition-uz-core-location.html) теперь охватывает и территории, например махаллю, объявленную зоной риска для общественного здоровья.
+
+[Вид группы](ValueSet-group-kind-vs.html) дополнен группой работников организации.
+
 Все ссылки на Substance и SubstanceDefinition в профилях UZ Core теперь указывают на [UZ Core Substance](StructureDefinition-uz-core-substance.html) или [UZ Core SubstanceDefinition](StructureDefinition-uz-core-substancedefinition.html): Specimen, SupplyDelivery, AdverseEvent и PlanDefinition.
+
+Диаграмма [межкомпонентной архитектуры ресурсов](components.html#межкомпонентная-архитектура-ресурсов) добавляет компоненты "Рецепты" с MedicationRequest, MedicationDispense, Medication, MedicationKnowledge и MedicationAdministration и "Поставки" с SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport и Device. Новые профили показаны там, где они используются: DeviceRequest и DeviceUsage - в электронных медицинских записях (CHR), ChargeItem - в реимбурсации, BiologicallyDerivedProductDispense и Flag - в управлении кровью, CarePlan - в сестринском деле. У CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport и BiologicallyDerivedProduct теперь есть профили UZ Core, поэтому они отмечены как определённые в этом руководстве, а не как упомянутые, но ещё не определённые. Кнопки в правом верхнем углу диаграммы раскрывают или сворачивают все компоненты сразу и вписывают диаграмму в область просмотра.
+
+[Статус события](ValueSet-procedure-event-status-vs.html), ранее Статус события Procedure, теперь используется в UZ Core Procedure и UZ Core Communication.
+
+Страницы руководства оформлены в стиле [документации DHP для разработчиков](https://docs.dhp.uz/ru/): шрифты Onest и JetBrains Mono, зелёные цвета и логотип DHP, обновлённые шапка, меню, таблицы, примечания и блоки кода с кнопкой копирования. Меню темы в шапке переключает светлую, тёмную тему или тему как в системе.
+
+[Типы документов Composition](CodeSystem-composition-type-cs.html): `emdoc-0010-0106` теперь выписка из медицинской карты пациента - стационарного или амбулаторного, как уже было в узбекском названии; русское и английское названия больше не говорят о стационаре. Форма 027 использует этот код в обоих случаях, а различает их `Encounter.class` (`AMB` или `IMP`).
 
 #### Несовместимые изменения
 
