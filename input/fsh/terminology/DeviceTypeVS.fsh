@@ -8,3 +8,5 @@ Description: "Device types"
 * ^extension[=].valueCanonical = Canonical(DeviceTypeCS)
 
 * include codes from system $sct where concept is-a #49062001 "Device"
+* include codes from system device-risk-class-cs
+* include codes from system device-product-type-cs

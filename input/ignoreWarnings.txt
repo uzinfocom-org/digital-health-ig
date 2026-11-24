@@ -129,6 +129,7 @@ ValueSet 'http://hl7.org/fhir/ValueSet/concept-property-type|5.0.0' not found
 %The codes 322 and 325 are both mapped to [TCID_50] as 'equivalent', which means that they have the same meaning%
 %The codes 37 and 571 are both mapped to kg as 'equivalent', which means that they have the same meaning%
 %The codes 381 and 461 are both mapped to g/L as 'equivalent', which means that they have the same meaning%
+%The codes 311 and 1402 are both mapped to mmol/L as 'equivalent', which means that they have the same meaning%
 %The codes 42 and 606 are both mapped to MBq as 'equivalent', which means that they have the same meaning%
 %The codes 480 and 500 are both mapped to [iU]/g as 'equivalent', which means that they have the same meaning%
 %The codes 491 and 78 are both mapped to ug/{dose} as 'equivalent', which means that they have the same meaning%

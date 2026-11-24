@@ -6,7 +6,11 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) links to the [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) it fulfils with the [Based On Device Request](StructureDefinition-deviceusage-based-on.html) extension, as in the [copper IUD](DeviceUsage-example-deviceusage-iud.html) example.
 
+[Device risk class](CodeSystem-device-risk-class-cs.html), [Device product type](CodeSystem-device-product-type-cs.html) and [Device property type](CodeSystem-device-property-type-cs.html) code systems hold the Pharmaceutical Committee device registry risk classes, 402 product types and 46 property types, with Uzbek and Russian names; [UZ Core Device](StructureDefinition-uz-core-device.html) takes them in `type` and `property.type`. The [manufacturer country](StructureDefinition-device-manufacturer-country.html) extension and search parameter hold the ISO 3166 country of the manufacturer, and [Contraceptive device product type](ValueSet-device-contraceptive-type-vs.html) lists contraceptive product types. [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) `regulatory.schedule` takes [narcotic and psychotropic](CodeSystem-medication-regulatory-schedule-cs.html) codes. [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) `target` allows MedicationRequest, MedicationDispense and MedicationAdministration.
+
 #### Changed
+
+[Route of administration](ValueSet-route-code-vs.html) adds Uzbek and Russian names for 34 SNOMED CT routes, [UCUM units](CodeSystem-ucum-units-supp-cs.html) for 35 units, and the [unit of measurement map](ConceptMap-unit-of-measurement-cm.html) maps 18 more registry units to UCUM. [Relationship type](ValueSet-relationship-type-vs.html) adds `FAMMEMB` family member. [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) `doseQuantity` takes [medication units](ValueSet-medication-total-volume-units-vs.html), such as a piece.
 
 [Composition types](CodeSystem-composition-type-cs.html) `emdoc-0010-0106` is now the extract from a patient's medical record, inpatient or outpatient, as its Uzbek name already said: the Russian and English names no longer say inpatient. Form 027 uses it for both settings, and `Encounter.class` (`AMB` or `IMP`) tells them apart.
 

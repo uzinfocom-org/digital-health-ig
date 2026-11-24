@@ -26,3 +26,4 @@ Description: "Relationship types"
 * include $v3-RoleCode#MTH
 * include $v3-RoleCode#FTH
 * include $v3-RoleCode#GUARD
+* include $v3-RoleCode#FAMMEMB

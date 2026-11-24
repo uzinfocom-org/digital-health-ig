@@ -68,3 +68,9 @@ Description: "Role code supplement with translations in Uzbek and Russian"
   * ^designation[=].value = "Амбулаторное учреждение"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Ambulatoriya muassasasi"
+
+* #FAMMEMB
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "член семьи"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "oila a'zosi"

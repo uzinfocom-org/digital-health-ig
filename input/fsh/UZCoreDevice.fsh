@@ -17,6 +17,8 @@ Description: "Uzbekistan Core Device profile, used to record the identity, statu
 
 * manufacturer MS
 
+* extension contains DeviceManufacturerCountry named manufacturerCountry 0..1 MS
+
 * manufactureDate MS
 
 * expirationDate MS
@@ -42,6 +44,8 @@ Description: "Uzbekistan Core Device profile, used to record the identity, statu
 * type MS
 * type from DeviceTypeVS (preferred)
 
+* property.type from DevicePropertyTypeVS (extensible)
+
 * owner MS
 * owner only Reference(UZCoreOrganization)
 
@@ -64,6 +68,7 @@ Description: "Example of a CT scanner installed at a hospital"
 * status = #active
 * availabilityStatus = $device-availability-status#available "Available"
 * manufacturer = "Siemens Healthineers"
+* extension[manufacturerCountry].valueCodeableConcept = $iso-3166#DE "Germany"
 * manufactureDate = "2023-05-15"
 * serialNumber = "SN-2023-001456"
 
@@ -94,6 +99,7 @@ Description: "Example of a single copper intrauterine contraceptive device track
 * status = #active
 * availabilityStatus = $device-availability-status#available "Available"
 * manufacturer = "Pregna International"
+* extension[manufacturerCountry].valueCodeableConcept = $iso-3166#IN "India"
 * manufactureDate = "2025-04-10"
 * expirationDate = "2030-03-31"
 * lotNumber = "CU-2025-0412"
@@ -121,6 +127,7 @@ Description: "Example of a drug-eluting subdermal contraceptive implant tracked 
 * status = #active
 * availabilityStatus = $device-availability-status#available "Available"
 * manufacturer = "Bayer AG"
+* extension[manufacturerCountry].valueCodeableConcept = $iso-3166#DE "Germany"
 * manufactureDate = "2025-01-20"
 * expirationDate = "2029-12-31"
 * lotNumber = "LNG-2025-0117"

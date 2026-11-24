@@ -6,7 +6,11 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
 
+Системы кодов [класс риска изделия](CodeSystem-device-risk-class-cs.html), [тип продукции изделия](CodeSystem-device-product-type-cs.html) и [тип свойства изделия](CodeSystem-device-property-type-cs.html) содержат классы риска, 402 типа продукции и 46 типов свойств из реестра изделий Фармкомитета с узбекскими и русскими названиями; [UZ Core Device](StructureDefinition-uz-core-device.html) принимает их в `type` и `property.type`. Расширение и параметр поиска [страна производителя](StructureDefinition-device-manufacturer-country.html) хранят страну производителя по ISO 3166, [тип продукции контрацептивов](ValueSet-device-contraceptive-type-vs.html) перечисляет типы контрацептивных изделий. `regulatory.schedule` в [UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) принимает коды [наркотическое средство и психотропное вещество](CodeSystem-medication-regulatory-schedule-cs.html). `target` в [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) допускает MedicationRequest, MedicationDispense и MedicationAdministration.
+
 #### Изменено
+
+[Путь введения](ValueSet-route-code-vs.html): узбекские и русские названия для 34 путей SNOMED CT, [единицы UCUM](CodeSystem-ucum-units-supp-cs.html) - для 35 единиц, [карта единиц измерения](ConceptMap-unit-of-measurement-cm.html) переводит в UCUM ещё 18 единиц реестра. [Тип родства](ValueSet-relationship-type-vs.html) дополнен `FAMMEMB` «член семьи». `doseQuantity` в [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) принимает [единицы лекарственных средств](ValueSet-medication-total-volume-units-vs.html), например штуку.
 
 [UZ Core Location](StructureDefinition-uz-core-location.html) теперь охватывает и территории, например махаллю, объявленную зоной риска для общественного здоровья.
 
