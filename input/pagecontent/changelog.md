@@ -6,7 +6,11 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) links to the [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) it fulfils with the [Based On Device Request](StructureDefinition-deviceusage-based-on.html) extension, as in the [copper IUD](DeviceUsage-example-deviceusage-iud.html) example.
 
+[Device risk class](CodeSystem-device-risk-class-cs.html), [Device product type](CodeSystem-device-product-type-cs.html) and [Device property type](CodeSystem-device-property-type-cs.html) code systems hold the Pharmaceutical Committee device registry risk classes, 402 product types and 46 property types, with Uzbek and Russian names; [UZ Core Device](StructureDefinition-uz-core-device.html) takes them in `type` and `property.type`.
+
 #### Changed
+
+[Route of administration](ValueSet-route-code-vs.html) adds Uzbek and Russian names for 34 SNOMED CT routes, [UCUM units](CodeSystem-ucum-units-supp-cs.html) for 35 units, and the [unit of measurement map](ConceptMap-unit-of-measurement-cm.html) maps 18 more registry units to UCUM. [Relationship type](ValueSet-relationship-type-vs.html) adds `FAMMEMB` family member. [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) `doseQuantity` takes [medication units](ValueSet-medication-total-volume-units-vs.html), such as a piece.
 
 [Event status](ValueSet-procedure-event-status-vs.html), formerly Procedure event status, is now shared by UZ Core Procedure and UZ Core Communication.
 

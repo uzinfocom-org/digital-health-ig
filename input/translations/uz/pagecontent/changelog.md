@@ -6,7 +6,11 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) o'zi bajaradigan [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) ga [Asos - buyum so'rovi](StructureDefinition-deviceusage-based-on.html) kengaytmasi orqali havola qiladi, masalan [mis BIV](DeviceUsage-example-deviceusage-iud.html) misolida.
 
+[Buyum xavf sinfi](CodeSystem-device-risk-class-cs.html), [buyum mahsulot turi](CodeSystem-device-product-type-cs.html) va [buyum xususiyati turi](CodeSystem-device-property-type-cs.html) kod tizimlari Farmatsevtika qo'mitasi tibbiy buyumlar reyestridagi xavf sinflari, 402 mahsulot turi va 46 xususiyat turini o'zbekcha va ruscha nomlari bilan o'z ichiga oladi; [UZ Core Device](StructureDefinition-uz-core-device.html) ularni `type` va `property.type` da qabul qiladi.
+
 #### O'zgartirildi
+
+[Yuborish yo'li](ValueSet-route-code-vs.html) 34 ta SNOMED CT yo'li uchun, [UCUM birliklari](CodeSystem-ucum-units-supp-cs.html) 35 ta birlik uchun o'zbekcha va ruscha nomlar bilan to'ldirildi, [o'lchov birliklari xaritasi](ConceptMap-unit-of-measurement-cm.html) reyestrning yana 18 birligini UCUM ga o'tkazadi. [Qarindoshlik turi](ValueSet-relationship-type-vs.html) `FAMMEMB` oila a'zosi bilan to'ldirildi. [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) `doseQuantity` [dori vositalari birliklarini](ValueSet-medication-total-volume-units-vs.html), masalan donani qabul qiladi.
 
 [Guruh turi](ValueSet-group-kind-vs.html) tashkilot xodimlari guruhi bilan to'ldirildi.
 

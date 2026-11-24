@@ -133,7 +133,7 @@ SHOULD NOT BE USED:
 * dosageInstruction.doseAndRate ^short = "Amount of medication to be administered"
 
 * dosageInstruction.doseAndRate.doseQuantity MS
-* dosageInstruction.doseAndRate.doseQuantity.code from UCUMUnitsSupplementVS (extensible)
+* dosageInstruction.doseAndRate.doseQuantity.code from MedicationTotalVolumeUnitsVS (extensible)
 
 * dosageInstruction.doseAndRate.doseQuantity.value MS
 

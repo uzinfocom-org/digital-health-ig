@@ -1184,3 +1184,9 @@ Units Tablet"
   * ^designation[=].value = "г/1000мл"
   * ^designation[+].language = #en
   * ^designation[=].value = "g/1000 mL"
+
+* #1402 "millimol/litr"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "миллимоль на литр"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "millimole per litre"

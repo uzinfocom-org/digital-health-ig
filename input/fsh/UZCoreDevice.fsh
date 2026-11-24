@@ -42,6 +42,8 @@ Description: "Uzbekistan Core Device profile, used to record the identity, statu
 * type MS
 * type from DeviceTypeVS (preferred)
 
+* property.type from DevicePropertyTypeVS (extensible)
+
 * owner MS
 * owner only Reference(UZCoreOrganization)
 

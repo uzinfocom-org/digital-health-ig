@@ -538,3 +538,93 @@ infektsion dozasi"
 * group.element[=].display = "g/1000 ml"
 * group.element[=].target[+].code = #"g/L"
 * group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #1040
+* group.element[=].display = "French"
+* group.element[=].target[+].code = #"[Ch]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #960
+* group.element[=].display = "santimetr"
+* group.element[=].target[+].code = #"cm"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #980
+* group.element[=].display = "metr"
+* group.element[=].target[+].code = #"m"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #1120
+* group.element[=].display = "dyum"
+* group.element[=].target[+].code = #"[in_i]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #290
+* group.element[=].display = "santimetr kub"
+* group.element[=].target[+].code = #"cm3"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #1100
+* group.element[=].display = "daraja°"
+* group.element[=].target[+].code = #"deg"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #1320
+* group.element[=].display = "daqiqasiga millilitr"
+* group.element[=].target[+].code = #"mL/min"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #727
+* group.element[=].display = "Selsiy gradus"
+* group.element[=].target[+].code = #"Cel"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #701
+* group.element[=].display = "gers"
+* group.element[=].target[+].code = #"Hz"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #1140
+* group.element[=].display = "bar"
+* group.element[=].target[+].code = #"bar"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #702
+* group.element[=].display = "vatt"
+* group.element[=].target[+].code = #"W"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #704
+* group.element[=].display = "volt"
+* group.element[=].target[+].code = #"V"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #707
+* group.element[=].display = "simens"
+* group.element[=].target[+].code = #"S"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #289
+* group.element[=].display = "millimetr kub"
+* group.element[=].target[+].code = #"mm3"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #1280
+* group.element[=].display = "dioptr"
+* group.element[=].target[+].code = #"[diop]"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #700
+* group.element[=].display = "paskal-sekund"
+* group.element[=].target[+].code = #"Pa.s"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #722
+* group.element[=].display = "lyuks"
+* group.element[=].target[+].code = #"lx"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #1402
+* group.element[=].display = "millimol/litr"
+* group.element[=].target[+].code = #"mmol/L"
+* group.element[=].target[=].relationship = #equivalent

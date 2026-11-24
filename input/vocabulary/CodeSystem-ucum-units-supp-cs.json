@@ -11083,6 +11083,461 @@
           "value": "на поле зрения при большом увеличении"
         }
       ]
+    },
+    {
+      "code": "%{mass}",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "massa foizi"
+        },
+        {
+          "language": "ru",
+          "value": "массовый процент"
+        }
+      ]
+    },
+    {
+      "code": "10*6.[arb'U]",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "million ta'sir birligi"
+        },
+        {
+          "language": "ru",
+          "value": "миллион единиц действия"
+        }
+      ]
+    },
+    {
+      "code": "10*9.[arb'U]",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "milliard ta'sir birligi"
+        },
+        {
+          "language": "ru",
+          "value": "миллиард единиц действия"
+        }
+      ]
+    },
+    {
+      "code": "10*9.{spore}",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "milliard spora"
+        },
+        {
+          "language": "ru",
+          "value": "миллиард спор"
+        }
+      ]
+    },
+    {
+      "code": "[CCID_50]",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "hujayra madaniyati uchun 50% infeksion doza"
+        },
+        {
+          "language": "ru",
+          "value": "50% инфекционная доза для клеточной культуры"
+        }
+      ]
+    },
+    {
+      "code": "[EID_50]",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "embrion uchun 50% infeksion doza"
+        },
+        {
+          "language": "ru",
+          "value": "50% эмбриональная инфекционная доза"
+        }
+      ]
+    },
+    {
+      "code": "[FFU]",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "fokus hosil qiluvchi birlik"
+        },
+        {
+          "language": "ru",
+          "value": "фокусобразующая единица"
+        }
+      ]
+    },
+    {
+      "code": "[IR]",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "reaktivlik indeksi"
+        },
+        {
+          "language": "ru",
+          "value": "индекс реактивности"
+        }
+      ]
+    },
+    {
+      "code": "[IR]/mL",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "reaktivlik indeksi/millilitr"
+        },
+        {
+          "language": "ru",
+          "value": "индекс реактивности на миллилитр"
+        }
+      ]
+    },
+    {
+      "code": "[NTU]",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "loyqalik birligi"
+        },
+        {
+          "language": "ru",
+          "value": "единица мутности"
+        }
+      ]
+    },
+    {
+      "code": "[PNU]/mL",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "oqsil azot birligi/millilitr"
+        },
+        {
+          "language": "ru",
+          "value": "единица белкового азота на миллилитр"
+        }
+      ]
+    },
+    {
+      "code": "[TCID_50]",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "to'qima madaniyati uchun 50% infeksion doza"
+        },
+        {
+          "language": "ru",
+          "value": "50% тканевая цитопатическая доза"
+        }
+      ]
+    },
+    {
+      "code": "[anti'Xa'U]",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "anti-Xa birligi"
+        },
+        {
+          "language": "ru",
+          "value": "единица анти-Xa"
+        }
+      ]
+    },
+    {
+      "code": "[iU]",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "xalqaro birlik"
+        },
+        {
+          "language": "ru",
+          "value": "международная единица"
+        }
+      ]
+    },
+    {
+      "code": "[iU]/g",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "xalqaro birlik/gramm"
+        },
+        {
+          "language": "ru",
+          "value": "международная единица на грамм"
+        }
+      ]
+    },
+    {
+      "code": "[iU]/mL",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "xalqaro birlik/millilitr"
+        },
+        {
+          "language": "ru",
+          "value": "международная единица на миллилитр"
+        }
+      ]
+    },
+    {
+      "code": "[iU]/mg",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "xalqaro birlik/milligramm"
+        },
+        {
+          "language": "ru",
+          "value": "международная единица на миллиграмм"
+        }
+      ]
+    },
+    {
+      "code": "g/(5.mL)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gramm/5 millilitr"
+        },
+        {
+          "language": "ru",
+          "value": "грамм на 5 миллилитров"
+        }
+      ]
+    },
+    {
+      "code": "g/mol",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "gramm/mol"
+        },
+        {
+          "language": "ru",
+          "value": "грамм на моль"
+        }
+      ]
+    },
+    {
+      "code": "kJ",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "kilojoul"
+        },
+        {
+          "language": "ru",
+          "value": "килоджоуль"
+        }
+      ]
+    },
+    {
+      "code": "mL/{dose}",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "millilitr/doza"
+        },
+        {
+          "language": "ru",
+          "value": "миллилитр на дозу"
+        }
+      ]
+    },
+    {
+      "code": "mg/(10.mL)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "milligramm/10 millilitr"
+        },
+        {
+          "language": "ru",
+          "value": "миллиграмм на 10 миллилитров"
+        }
+      ]
+    },
+    {
+      "code": "mg/(100.mL)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "milligramm/100 millilitr"
+        },
+        {
+          "language": "ru",
+          "value": "миллиграмм на 100 миллилитров"
+        }
+      ]
+    },
+    {
+      "code": "mg/(2.mL)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "milligramm/2 millilitr"
+        },
+        {
+          "language": "ru",
+          "value": "миллиграмм на 2 миллилитра"
+        }
+      ]
+    },
+    {
+      "code": "mg/(5.mL)",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "milligramm/5 millilitr"
+        },
+        {
+          "language": "ru",
+          "value": "миллиграмм на 5 миллилитров"
+        }
+      ]
+    },
+    {
+      "code": "mg/{dose}",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "milligramm/doza"
+        },
+        {
+          "language": "ru",
+          "value": "миллиграмм на дозу"
+        }
+      ]
+    },
+    {
+      "code": "ug/{dose}",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "mikrogramm/doza"
+        },
+        {
+          "language": "ru",
+          "value": "микрограмм на дозу"
+        }
+      ]
+    },
+    {
+      "code": "{Cells}",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "hujayra"
+        },
+        {
+          "language": "ru",
+          "value": "клетка"
+        }
+      ]
+    },
+    {
+      "code": "{KIU}",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "kallikreinni faolsizlantiruvchi birlik"
+        },
+        {
+          "language": "ru",
+          "value": "калликреин-инактивирующая единица"
+        }
+      ]
+    },
+    {
+      "code": "{LD_50}",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "yarim letal doza birligi"
+        },
+        {
+          "language": "ru",
+          "value": "единица полулетальной дозы"
+        }
+      ]
+    },
+    {
+      "code": "{dose}",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "doza"
+        },
+        {
+          "language": "ru",
+          "value": "доза"
+        }
+      ]
+    },
+    {
+      "code": "W",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "vatt"
+        },
+        {
+          "language": "ru",
+          "value": "ватт"
+        }
+      ]
+    },
+    {
+      "code": "mm3",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "kub millimetr"
+        },
+        {
+          "language": "ru",
+          "value": "кубический миллиметр"
+        }
+      ]
+    },
+    {
+      "code": "Pa.s",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "paskal-sekund"
+        },
+        {
+          "language": "ru",
+          "value": "паскаль-секунда"
+        }
+      ]
+    },
+    {
+      "code": "lx",
+      "designation": [
+        {
+          "language": "uz",
+          "value": "lyuks"
+        },
+        {
+          "language": "ru",
+          "value": "люкс"
+        }
+      ]
     }
   ],
   "supplements": "http://unitsofmeasure.org",
