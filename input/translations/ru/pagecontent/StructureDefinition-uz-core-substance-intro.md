@@ -65,6 +65,11 @@ UZ Core Substance представляет конкретную порцию в�
     "concept": {
       "coding": [
         {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs",
+          "code": "sbnam-0008-00013",
+          "display": "Pasterlangan ichimlik suti"
+        },
+        {
           "system": "http://snomed.info/sct",
           "code": "3718001",
           "display": "Cow's milk"
@@ -79,7 +84,7 @@ UZ Core Substance представляет конкретную порцию в�
 }
 ```
 
-Код - это концепт SNOMED CT из набора значений [наименований веществ](ValueSet-substance-names-vs.html) или национальный код, если концепта SNOMED CT нет. Если передаётся `code.concept`, это должен быть тот же код, что и в SubstanceDefinition. Упаковка и другие замечания передаются в `description` свободным текстом.
+Если передаётся `code.concept`, в нём должны быть те же коды, что и в SubstanceDefinition: здесь национальный код пастеризованного питьевого молока из набора значений [наименований веществ](ValueSet-substance-names-vs.html) вместе с его более широким концептом SNOMED CT. Упаковка и другие замечания передаются в `description` свободным текстом.
 
 #### Заявленный состав
 

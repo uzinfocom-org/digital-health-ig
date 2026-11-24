@@ -42,7 +42,7 @@ Description: "Uzbekistan Core Substance profile, used to represent a specific po
 * code ^short = "What substance this is: the reference list entry it was chosen from"
 * code.reference 1..1 MS
 * code.reference ^short = "The UZ Core SubstanceDefinition entry: names, classification and manufacturer"
-* code.concept ^short = "The SNOMED CT or national code of the substance, the same as in the SubstanceDefinition"
+* code.concept ^short = "The codes of the substance, the same as in the SubstanceDefinition: SNOMED CT, or the national code with its broader SNOMED CT concept"
 
 * description ^short = "Free-text description of the sampled portion, such as its kind and packaging"
 
@@ -71,7 +71,8 @@ Usage: #example
 * status = #active
 * category = $sct#255620007
 * code.reference = Reference(SubstanceDefinition/example-substance-definition-pasteurized-milk)
-* code.concept = $sct#3718001 "Cow's milk"
+* code.concept.coding[0] = $substance-names-cs#sbnam-0008-00013 "Pasterlangan ichimlik suti"
+* code.concept.coding[+] = $sct#3718001 "Cow's milk"
 * description = "Pasterlangan ichimlik suti, 1 l karton qadoq"
 * expiry = "2026-11-25"
 * quantity = 1 'L' "L"

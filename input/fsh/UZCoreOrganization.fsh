@@ -227,5 +227,11 @@ Title: "Example UZ Core Organization - Dairy Manufacturer"
 Description: "Example of a manufacturer of dairy products"
 Usage: #example
 * language = #uz
+* identifier[taxId]
+  * use = #official
+  * type = $identifier-type#TAX "Tax ID number"
+  * system = $organization-tax-id-system
+  * value = "300000001"
 * active = true
+* type.coding[+] = $organization-type-cs#bus
 * name = "Toshkent sut kombinati"

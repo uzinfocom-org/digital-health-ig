@@ -13,7 +13,7 @@ The base SubstanceDefinition resource has no mandatory elements at the top level
 - the number of the entry in the reference list (see [the table below](#identifier-slices));
 - the `status` of the entry (active / retired);
 - the `classification` - the kind of sample - water, air, soil or food products -;
-- the `code` of the substance: SNOMED CT, or the national code when there is no SNOMED CT concept;
+- the `code` of the substance: SNOMED CT, or the national code with its broader SNOMED CT concept alongside;
 - each `name` - the name itself, whether it is the preferred name, and its language, with translations such as the Russian name;
 - the `manufacturer` of the substance or product.
 
@@ -25,7 +25,8 @@ Look an entry up before you create one:
 # by reference list number - the reliable match
 GET [base]/SubstanceDefinition?identifier=https://dhp.uz/fhir/core/sid/doc/uz/substance-definition|1368
 
-# by SNOMED CT or national code
+# by national code, or by SNOMED CT code - which also finds the narrower national names
+GET [base]/SubstanceDefinition?code=https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs|sbnam-0008-00013
 GET [base]/SubstanceDefinition?code=http://snomed.info/sct|3718001
 
 # by name or category
@@ -51,6 +52,11 @@ Every UZ Core resource must name the profile it claims to conform to in `meta.pr
       "code": {
         "coding": [
           {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs",
+            "code": "sbnam-0008-00018",
+            "display": "Sigir xom suti"
+          },
+          {
             "system": "http://snomed.info/sct",
             "code": "3718001",
             "display": "Cow's milk"
@@ -63,7 +69,7 @@ Every UZ Core resource must name the profile it claims to conform to in `meta.pr
 }
 ```
 
-The code comes from the [substance name](ValueSet-substance-names-vs.html) value set: a SNOMED CT concept, with Uzbek and Russian names in the [SNOMED CT supplement](CodeSystem-substance-names-snomed-cs.html), or, when there is no SNOMED CT concept, a national code from the [substance names](CodeSystem-substance-names-cs.html) code system. Many LIS SES names share one broader SNOMED CT concept, such as raw cow's milk and pasteurised milk, which are both `3718001` Cow's milk. The exact LIS SES name is kept in `name`.
+The codes come from the [substance name](ValueSet-substance-names-vs.html) value set. When a SNOMED CT concept means the same as the LIS SES name, send that concept alone; its Uzbek and Russian names are in the [SNOMED CT supplement](CodeSystem-substance-names-snomed-cs.html). Otherwise send the national code from the [substance names](CodeSystem-substance-names-cs.html) code system. When the name is narrower than a SNOMED CT concept, also send that broader concept from the [substance name to SNOMED CT map](ConceptMap-substance-name-to-snomed.html) as a second coding: raw cow's milk and pasteurised milk are checked against different sanitary norms, so each has its own national code, and both carry `3718001` Cow's milk, which finds every kind of cow's milk in a search. The exact LIS SES name is kept in `name`.
 
 #### A complete entry
 
@@ -87,6 +93,11 @@ In practice an entry also carries the reference list number, its status and cate
     {
       "code": {
         "coding": [
+          {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs",
+            "code": "sbnam-0008-00013",
+            "display": "Pasterlangan ichimlik suti"
+          },
           {
             "system": "http://snomed.info/sct",
             "code": "3718001",

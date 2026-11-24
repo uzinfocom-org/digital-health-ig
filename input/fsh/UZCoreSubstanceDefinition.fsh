@@ -48,7 +48,8 @@ Description: "Uzbekistan Core SubstanceDefinition profile, used to represent an 
 
 * code MS
 * code.code 1..1 MS
-* code.code from SubstanceNamesVS (preferred)
+* code.code from SubstanceNamesVS (extensible)
+* code.code ^short = "SNOMED CT code, or the national code with its broader SNOMED CT concept as a second coding"
 * code.status from PublicationStatusVS (preferred)
 
 * name MS
@@ -82,7 +83,8 @@ Usage: #example
 * description = "Pasterlangan ichimlik suti"
 * manufacturer = Reference(Organization/example-organization-dairy-manufacturer)
 * note.text = "Namuna sovutilgan holda tashiladi"
-* code[0].code = $sct#3718001 "Cow's milk"
+* code[0].code.coding[0] = $substance-names-cs#sbnam-0008-00013 "Pasterlangan ichimlik suti"
+* code[=].code.coding[+] = $sct#3718001 "Cow's milk"
 * code[=].status = $publication-status#active
 * name[0].name = "Pasterlangan ichimlik suti"
 * name[=].preferred = true
@@ -101,7 +103,8 @@ Usage: #example
 * identifier[substanceDefinition].value = "1379"
 * status = $publication-status#active
 * classification[substanceCategory] = $sct#255620007
-* code[0].code = $sct#3718001 "Cow's milk"
+* code[0].code.coding[0] = $substance-names-cs#sbnam-0008-00018 "Sigir xom suti"
+* code[=].code.coding[+] = $sct#3718001 "Cow's milk"
 * name[0].name = "Sigir xom suti"
 * name[=].preferred = true
 * name[=].language = urn:ietf:bcp:47#uz

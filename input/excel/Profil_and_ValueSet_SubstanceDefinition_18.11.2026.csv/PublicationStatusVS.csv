@@ -1,5 +1,5 @@
 CODE,EN,RU,UZ,Definition,,http://hl7.org/fhir/publication-status
-draft,Draft,????????,Qoralama,This resource is still under development and is not yet considered to be ready for normal use.,,
-active,Active,????????,Faol,This resource is ready for normal use.,,
-retired,Retired,??????? ?? ????????????,Foydalanishdan chiqarilgan,This resource has been withdrawn or superseded and should no longer be used.,,
-unknown,Unknown,??????????,Noma'lum,The authoring system does not know which of the status values currently applies for this resource.,,
+draft,Draft,Черновик,Qoralama,This resource is still under development and is not yet considered to be ready for normal use.,,
+active,Active,Активный,Faol,This resource is ready for normal use.,,
+retired,Retired,Выведен из эксплуатации,Faol emas (yakunlangan),This resource has been withdrawn or superseded and should no longer be used.,,
+unknown,Unknown,Неизвестно,Noma'lum,The authoring system does not know which of the status values currently applies for this resource.,,

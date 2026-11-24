@@ -1,2866 +1,6220 @@
 CodeSystem: SubstanceNamesCS
 Id: substance-names-cs
 Title: "Substance name"
-Description: "National codes for the substances and sampling objects that samples are taken from for sanitary and epidemiological laboratory examination and that have no SNOMED CT concept, from the LIS SES reference list of sample names. The first number part of each code is the LIS SES sample category, the second is the number of the name within that category"
+Description: "National codes for the substances and sampling objects that samples are taken from for sanitary and epidemiological laboratory examination and that have no SNOMED CT concept of the same meaning, from the LIS SES reference list of sample names. A name that is narrower than a SNOMED CT concept, such as raw or pasteurised cow's milk, has a national code here and is mapped to the broader concept in the [substance name to SNOMED CT map](ConceptMap-substance-name-to-snomed.html). The first number part of each code is the LIS SES sample category, the second numbers the national codes within that category in the order of the LIS SES list"
 * insert OriginalCodeSystemDraft(substance-names-cs)
 
-* #subname_0001_0002 "Vinoli kokteyllar"
+* #sbnam-0001-00001 "Vinoli kokteyllar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Винные коктейли"
   * ^designation[+].language = #en
   * ^designation[=].value = "Wine cocktails"
 
-* #subname_0001_0007 "Meva-rezavor vinosi"
+* #sbnam-0001-00002 "Tabiiy uzum vinosi (stol vinosi)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вино виноградное тихое (столовое)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Still grape wine (table wine)"
+
+* #sbnam-0001-00003 "Likyor vinosi (Desert)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вино ликёрное (Десертное)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Liqueur wine (dessert)"
+
+* #sbnam-0001-00004 "Likyor vinosi (Mustahkamlangan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вино ликёрное (Креплёное)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Liqueur wine (fortified)"
+
+* #sbnam-0001-00005 "Meva-rezavor vinosi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Вино плодово-ягодное (фруктовое)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruit and berry wine"
 
-* #subname_0001_0008 "Vinomateriallar va susle"
+* #sbnam-0001-00006 "Vinomateriallar va susle"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Виноматериалы и сусло"
   * ^designation[+].language = #en
   * ^designation[=].value = "Wine materials and must"
 
-* #subname_0001_0013 "Djin ichimliklari"
+* #sbnam-0001-00007 "Aroq (vodka)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Водка"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Vodka"
+
+* #sbnam-0001-00008 "Maxsus vodka (Damlangan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Водка особая (С настоями)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Special vodka (with infusions)"
+
+* #sbnam-0001-00009 "Maxsus vodka (Xushbo'y)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Водка особая (Ароматизированная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Special vodka (flavoured)"
+
+* #sbnam-0001-00010 "Djin ichimliklari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Джиновые напитки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Gin-based drinks"
 
-* #subname_0001_0019 "Grappa"
+* #sbnam-0001-00011 "Vinoli distillyatlar (Brendi)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Дистилляты винные (Бренди)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wine distillates (brandy)"
+
+* #sbnam-0001-00012 "Vinoli distillyatlar (Konyak)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Дистилляты винные (Коньяк)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wine distillates (cognac)"
+
+* #sbnam-0001-00013 "Kalvados"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кальвадос"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Calvados"
+
+* #sbnam-0001-00014 "Grappa"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Граппа"
   * ^designation[+].language = #en
   * ^designation[=].value = "Grappa"
 
-* #subname_0001_0023 "Nalivkalar"
+* #sbnam-0001-00015 "Raqi va boshqa meva distillyatlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Ракия и иные фруктовые дистилляты"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rakia and other fruit distillates"
+
+* #sbnam-0001-00016 "Tayyor past gradusli alkogolli kokteyllar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Коктейли алкогольные слабоалкогольные (готовые)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready-to-drink low-alcohol cocktails"
+
+* #sbnam-0001-00017 "Likyorlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Ликёры"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Liqueurs"
+
+* #sbnam-0001-00018 "Nalivkalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Наливки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruit liqueurs (nalivka)"
 
-* #subname_0001_0024 "Shirin nastoykalar"
+* #sbnam-0001-00019 "Shirin nastoykalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Настойки сладкие"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sweet tinctures"
 
-* #subname_0001_0025 "Achchiq nastoykalar"
+* #sbnam-0001-00020 "Achchiq nastoykalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Настойки горькие"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bitter tinctures"
 
-* #subname_0001_0026 "Balzamlar"
+* #sbnam-0001-00021 "Balzamlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Бальзамы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Balsams"
 
-* #subname_0001_0027 "Perri (nokli)"
+* #sbnam-0001-00022 "Perri (nokli)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Перри (грушевый)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Perry (pear)"
 
-* #subname_0001_0046 "Uzum sharbati, vino, sidr, perri va mevali vino"
+* #sbnam-0001-00023 "Filtrlanmagan pivo"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пиво нефильтрованное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Unfiltered beer"
+
+* #sbnam-0001-00024 "To'q rangli filtrlangan pivo"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пиво тёмное фильтрованное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Filtered dark beer"
+
+* #sbnam-0001-00025 "Rom"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Ром"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rum"
+
+* #sbnam-0001-00026 "Rom distillyatlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Ромовые дистилляты"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rum distillates"
+
+* #sbnam-0001-00027 "Sambuka"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Самбука"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Sambuca"
+
+* #sbnam-0001-00028 "Arpabodiyon spirtli ichimliklar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Анисовые спиртные напитки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Aniseed spirits"
+
+* #sbnam-0001-00029 "Sidr (olmali)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сидр (яблочный)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cider (apple)"
+
+* #sbnam-0001-00030 "Tekila"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Текила"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Tequila"
+
+* #sbnam-0001-00031 "Meskal"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мескаль"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mezcal"
+
+* #sbnam-0001-00032 "Agavadan distillyatlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Агавовые дистилляты"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Agave distillates"
+
+* #sbnam-0001-00033 "Vino va mevali sharob spirtli ichimliklari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вино и фруктовые алкогольные напитки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wine and fruit alcoholic drinks"
+
+* #sbnam-0001-00034 "Xushbo'y vino va boshqa spirtli ichimliklar asosidagi xushbo'y sharobli kokteyllar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Ароматизированные винные и другие алкогольные коктейли на основе ароматизированного вина"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Aromatised wine cocktails and other alcoholic cocktails based on aromatised wine"
+
+* #sbnam-0001-00035 "Olmadan olingan yoki tarkibida olma sharbati bo'lgan alkogolli ichimliklar, sidr va boshqa fermentlangan ichimliklar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Алкогольные напитки, полученные из яблок или содержащие яблочный сок, сидр и другие ферментированные напитки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Alcoholic drinks made from apples or containing apple juice, cider and other fermented drinks"
+
+* #sbnam-0001-00036 "Uzum sharbati, vino, sidr, perri va mevali vino"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Виноградный сок, вино, сидр, перри и фруктовое вино"
   * ^designation[+].language = #en
   * ^designation[=].value = "Grape juice, wine, cider, perry and fruit wine"
 
-* #subname_0002_0010 "Kvas"
+* #sbnam-0001-00037 "Xom ashyoning barcha turlari uchun vino"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вино из всех видов сырья"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wine from all kinds of raw material"
+
+* #sbnam-0001-00038 "Uzumdan tayyorlangan likyor vinosi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Ликёрное вино из винограда"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Grape liqueur wine"
+
+* #sbnam-0002-00001 "Bolalar oziq-ovqati uchun suv"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вода для детского питания"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Water for baby food"
+
+* #sbnam-0002-00002 "Tabiiy davolovchi mineral suvi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вода минеральная природная лечебная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Natural medicinal mineral water"
+
+* #sbnam-0002-00003 "Tabiiy davo-stol mineral suvi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вода минеральная природная лечебно-столовая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Natural medicinal table mineral water"
+
+* #sbnam-0002-00004 "Tabiiy stol mineral suvi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вода минеральная природная столовая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Natural table mineral water"
+
+* #sbnam-0002-00005 "Idishlarga quyilgan ichimlik suvi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вода питьевая бутилированная (расфасованная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Bottled (packaged) drinking water"
+
+* #sbnam-0002-00006 "Markazlashmagan suv ta'minoti (Quduq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вода питьевая нецентрализованного водоснабжения (Скважины)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Drinking water from non-centralised supply (boreholes)"
+
+* #sbnam-0002-00007 "Markazlashmagan suv ta'minoti (Buloq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вода питьевая нецентрализованного водоснабжения (Колодцы)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Drinking water from non-centralised supply (wells)"
+
+* #sbnam-0002-00008 "Markazlashgan suv ta'minotidagi ichimlik suv"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вода питьевая централизованного водоснабжения"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Drinking water from centralised supply"
+
+* #sbnam-0002-00009 "Kvas"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Квас"
   * ^designation[+].language = #en
   * ^designation[=].value = "Kvass"
 
-* #subname_0002_0011 "Kisellar"
+* #sbnam-0002-00010 "Kisellar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кисели"
   * ^designation[+].language = #en
   * ^designation[=].value = "Kissels"
 
-* #subname_0002_0012 "Ichimlik tayyorlash uchun konsentratlar"
+* #sbnam-0002-00011 "Ichimlik tayyorlash uchun konsentratlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Концентраты для приготовления напитков"
   * ^designation[+].language = #en
   * ^designation[=].value = "Concentrates for making drinks"
 
-* #subname_0002_0013 "Ichimlik tayyorlash uchun ekstraktlar"
+* #sbnam-0002-00012 "Ichimlik tayyorlash uchun ekstraktlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Экстракты для приготовления напитков"
   * ^designation[+].language = #en
   * ^designation[=].value = "Extracts for making drinks"
 
-* #subname_0002_0014 "Iste'mol muz"
+* #sbnam-0002-00013 "Iste'mol muz"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лёд пищевой"
   * ^designation[+].language = #en
   * ^designation[=].value = "Food ice"
 
-* #subname_0002_0019 "O'tlar va ziravorlardan alkogolsiz ichimliklar"
+* #sbnam-0002-00014 "Meva-rezavor morslari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Морсы плодово-ягодные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fruit and berry mors"
+
+* #sbnam-0002-00015 "O'tlar va ziravorlardan alkogolsiz ichimliklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Напитки безалкогольные на травах и пряностях"
   * ^designation[+].language = #en
   * ^designation[=].value = "Herbal and spice soft drinks"
 
-* #subname_0002_0022 "O'simlik suti (Suli)"
+* #sbnam-0002-00016 "O'simlik suti (Suli)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Растительное молоко (Овсяное)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Plant-based milk (oat)"
 
-* #subname_0002_0023 "O'simlik suti (Bodom)"
+* #sbnam-0002-00017 "O'simlik suti (Bodom)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Растительное молоко (Миндальное)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Plant-based milk (almond)"
 
-* #subname_0002_0027 "Quruq (kukunsimon) ichimlik aralashmalari"
+* #sbnam-0002-00018 "Ichimlik tayyorlash uchun qiyomlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сиропы для приготовления напитков"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Syrups for making drinks"
+
+* #sbnam-0002-00019 "Quruq (kukunsimon) ichimlik aralashmalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сухие смеси для напитков (порошкообразные)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dry drink mixes (powdered)"
 
-* #subname_0002_0030 "Alkogolsiz energetik ichimliklar"
+* #sbnam-0002-00020 "Tayyor sovuq kofe"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Холодный кофе готовый"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready-to-drink cold coffee"
+
+* #sbnam-0002-00021 "Tayyor sovuq choy"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Холодный чай готовый"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready-to-drink cold tea"
+
+* #sbnam-0002-00022 "Alkogolsiz energetik ichimliklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Энергетические напитки безалкогольные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Non-alcoholic energy drinks"
 
-* #subname_0003_0011 "Tayyor ikkinchi taomlar (Shashlik)"
+* #sbnam-0003-00001 "Tayyor garnirlar (Guruch)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Гарниры готовые (Рис)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready side dishes (rice)"
+
+* #sbnam-0003-00002 "Tayyor garnirlar (Grechka)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Гарниры готовые (Гречка)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready side dishes (buckwheat)"
+
+* #sbnam-0003-00003 "Yaroqlilik muddati 5 sutkadan ortiq tayyor mahsulotlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовая продукция со сроком годности более 5 суток"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready-made products with a shelf life of more than 5 days"
+
+* #sbnam-0003-00004 "Yaroqlilik muddati 5 sutkadan kam tayyor mahsulotlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовая продукция со сроком годности менее 5 суток"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready-made products with a shelf life of less than 5 days"
+
+* #sbnam-0003-00005 "Umumiy ovqatlanishdan tayyor taomlar (HoReCa)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовые блюда из общественного питания (HoReCa)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready meals from public catering (HoReCa)"
+
+* #sbnam-0003-00006 "Umumiy ovqatlanishdan tayyor taomlar (Keytering)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовые блюда из общественного питания (Кейтеринг)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready meals from public catering (catering)"
+
+* #sbnam-0003-00007 "Tayyor ikkinchi taomlar (Manti)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовые вторые блюда (Манты)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready main courses (manti)"
+
+* #sbnam-0003-00008 "Tayyor ikkinchi taomlar (Shashlik)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Готовые вторые блюда (Шашлык)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready main courses (shashlik)"
 
-* #subname_0003_0012 "Tayyor ikkinchi taomlar (Kotlet)"
+* #sbnam-0003-00009 "Tayyor ikkinchi taomlar (Kotlet)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Готовые вторые блюда (Котлеты)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready main courses (cutlets)"
 
-* #subname_0003_0013 "Tayyor ikkinchi taomlar (Garnir)"
+* #sbnam-0003-00010 "Tayyor ikkinchi taomlar (Garnir)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Готовые вторые блюда (Гарниры)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready main courses (side dishes)"
 
-* #subname_0003_0016 "Tayyor birinchi taomlar (Lag'mon)"
+* #sbnam-0003-00011 "Tayyor birinchi taomlar (Sho'rva)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовые первые блюда (Супы)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready first courses (soups)"
+
+* #sbnam-0003-00012 "Tayyor birinchi taomlar (sho'rva)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовые первые блюда (Шурпы)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready first courses (shurpa)"
+
+* #sbnam-0003-00013 "Tayyor birinchi taomlar (Lag'mon)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Готовые первые блюда (Лагман)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready first courses (lagman)"
 
-* #subname_0003_0025 "To'ldirgichli xamirli mahsulotlar (Piroshki)"
+* #sbnam-0003-00014 "Tayyor birinchi taomlar (Karam sho'rva)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовые первые блюда (Борщ)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready first courses (borscht)"
+
+* #sbnam-0003-00015 "Tayyor birinchi taomlar (Xarcho)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовые первые блюда (Харчо)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready first courses (kharcho)"
+
+* #sbnam-0003-00016 "Tayyor salatlar (Mayonezli)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовые салаты (С майонезом)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready salads (with mayonnaise)"
+
+* #sbnam-0003-00017 "Tayyor salatlar (Mayonezsiz)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовые салаты (Без майонеза)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready salads (without mayonnaise)"
+
+* #sbnam-0003-00018 "Muzlatilgan tayyor taomlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Замороженные готовые блюда"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen ready meals"
+
+* #sbnam-0003-00019 "To'ldirgichli xamirli mahsulotlar (Piroshki)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Изделия из теста с начинкой (Пирожки)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Filled dough products (pirozhki)"
 
-* #subname_0003_0027 "To'ldirgichli xamirli mahsulotlar (Cheburek)"
+* #sbnam-0003-00020 "To'ldirgichli xamirli mahsulotlar (Somsa)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Изделия из теста с начинкой (Самса)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Filled dough products (samsa)"
+
+* #sbnam-0003-00021 "To'ldirgichli xamirli mahsulotlar (Cheburek)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Изделия из теста с начинкой (Чебуреки)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Filled dough products (chebureki)"
 
-* #subname_0003_0028 "To'ldirgichli xamirli mahsulotlar (Balish)"
+* #sbnam-0003-00022 "To'ldirgichli xamirli mahsulotlar (Balish)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Изделия из теста с начинкой (Бэлиш)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Filled dough products (belish)"
 
-* #subname_0003_0037 "Hamirdan tayyorlangan kulinariya mahsulotlari"
+* #sbnam-0003-00023 "Muzlatilgan to'ldirgichli mahsulotlar (Pelmen)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Изделия с начинкой замороженные (Пельмени)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen filled products (pelmeni)"
+
+* #sbnam-0003-00024 "Muzlatilgan to'ldirgichli mahsulotlar (Manti)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Изделия с начинкой замороженные (Манты)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen filled products (manti)"
+
+* #sbnam-0003-00025 "Muzlatilgan to'ldirgichli mahsulotlar (Varenik)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Изделия с начинкой замороженные (Вареники)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen filled products (vareniki)"
+
+* #sbnam-0003-00026 "Muzlatilgan to'ldirgichli mahsulotlar (Xinkali)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Изделия с начинкой замороженные (Хинкали)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen filled products (khinkali)"
+
+* #sbnam-0003-00027 "Muzlatilgan to'ldirgichli mahsulotlar (Chuchvara)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Изделия с начинкой замороженные (Чучвара)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen filled products (chuchvara)"
+
+* #sbnam-0003-00028 "Hamirdan tayyorlangan kulinariya mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кулинарные изделия из теста"
   * ^designation[+].language = #en
   * ^designation[=].value = "Culinary dough products"
 
-* #subname_0003_0046 "Xamir yarim tayyor mahsulotlari (Xamir)"
+* #sbnam-0003-00029 "Keks"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кексы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cakes (keks)"
+
+* #sbnam-0003-00030 "Muzlatilgan pitsa"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пицца замороженная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen pizza"
+
+* #sbnam-0003-00031 "Sovutilgan pitsa"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пицца охлаждённая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Chilled pizza"
+
+* #sbnam-0003-00032 "Tayyor pitsa"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пицца готовая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready pizza"
+
+* #sbnam-0003-00033 "Tezda tayyor yarim tayyor mahsulotlar (Instant vermisheli)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Полуфабрикаты быстрого приготовления (Вермишель)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Instant semi-finished products (vermicelli)"
+
+* #sbnam-0003-00034 "Xamir yarim tayyor mahsulotlari (Xamir)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Полуфабрикаты тестовые (Тесто)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Semi-finished dough products (dough)"
 
-* #subname_0003_0047 "Xamir yarim tayyor mahsulotlari (Xom non)"
+* #sbnam-0003-00035 "Xamir yarim tayyor mahsulotlari (Xom non)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Полуфабрикаты тестовые (Лепёшки сырые)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Semi-finished dough products (raw flatbreads)"
 
-* #subname_0003_0048 "Xamir yarim tayyor mahsulotlari (Pitssa zagotovkalari)"
+* #sbnam-0003-00036 "Xamir yarim tayyor mahsulotlari (Pitssa zagotovkalari)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Полуфабрикаты тестовые (Заготовки для пиццы)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Semi-finished dough products (pizza bases)"
 
-* #subname_0003_0054 "Shavurma"
+* #sbnam-0003-00037 "Tayyor souslar (Go'shtli)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соусы готовые (Мясные)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready sauces (meat)"
+
+* #sbnam-0003-00038 "Tayyor souslar (Baliqli)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соусы готовые (Рыбные)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready sauces (fish)"
+
+* #sbnam-0003-00039 "Tayyor souslar (Sabzavotli)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соусы готовые (Овощные)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready sauces (vegetable)"
+
+* #sbnam-0003-00040 "Sendvich"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сэндвичи"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Sandwiches"
+
+* #sbnam-0003-00041 "Buterbrod"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Бутерброды"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Open sandwiches"
+
+* #sbnam-0003-00042 "Shavurma"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Шаурма"
   * ^designation[+].language = #en
   * ^designation[=].value = "Shawarma"
 
-* #subname_0003_0056 "To'ldirgichli non mahsulotlari (Shirin)"
+* #sbnam-0003-00043 "To'ldirgichli non mahsulotlari (Shirin)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлебобулочные изделия с начинкой (Сладкие)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Filled bakery products (sweet)"
 
-* #subname_0003_0057 "To'ldirgichli non mahsulotlari (Go'shtli)"
+* #sbnam-0003-00044 "To'ldirgichli non mahsulotlari (Go'shtli)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлебобулочные изделия с начинкой (Мясные)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Filled bakery products (meat)"
 
-* #subname_0003_0058 "Sovuq gazaklar"
+* #sbnam-0003-00045 "Sovuq gazaklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Холодные закуски"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cold appetisers"
 
-* #subname_0003_0059 "Tayyor tilimlar"
+* #sbnam-0003-00046 "Tayyor tilimlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Нарезки готовые"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready sliced foods"
 
-* #subname_0004_0002 "Kichik yoshdagi bolalar uchun tayyor taomlar"
+* #sbnam-0004-00001 "6 oygacha bolalar uchun adaptlangan sut aralashmalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Адаптированные молочные смеси (для детей до 6 мес.)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Infant formula (for children up to 6 months)"
+
+* #sbnam-0004-00002 "Kichik yoshdagi bolalar uchun tayyor taomlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Готовые блюда для детей раннего возраста"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready meals for young children"
 
-* #subname_0004_0005 "Bolalar uchun maxsus mahsulotlar (davo-profilaktika)"
+* #sbnam-0004-00003 "Bolalar uchun sutli desertlar (Tvorojki)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Десерты молочные детские (Творожки)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Children's dairy desserts (curd desserts)"
+
+* #sbnam-0004-00004 "Bolalar uchun sutli desertlar (Yogurtlar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Десерты молочные детские (Йогурты)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Children's dairy desserts (yoghurts)"
+
+* #sbnam-0004-00005 "Bolalar uchun maxsus mahsulotlar (davo-profilaktika)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Детские специализированные продукты (лечебно-профилактические)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Specialised children's products (therapeutic and preventive)"
 
-* #subname_0004_0014 "Bolalar uchun qatiq mahsulotlari (Biolakt)"
+* #sbnam-0004-00006 "Bolalar uchun fito (Erish) choylari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Детские чаи фиточаи (Растворимые)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Children's herbal teas (instant)"
+
+* #sbnam-0004-00007 "Bolalar uchun fito (Donador) choylari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Детские чаи фиточаи (Гранулированные)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Children's herbal teas (granulated)"
+
+* #sbnam-0004-00008 "Glyutensiz bolalar yormalari (Grechka)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Каши без глютена (Гречневая) для детей"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Gluten-free children's porridge (buckwheat)"
+
+* #sbnam-0004-00009 "Glyutensiz bolalar yormalari (Makkajo'xori)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Каши без глютена (Кукурузная) для детей"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Gluten-free children's porridge (corn)"
+
+* #sbnam-0004-00010 "Bolalar uchun sutsiz yormalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Каши безмолочные для детей"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Milk-free children's porridge"
+
+* #sbnam-0004-00011 "Bolalar uchun tezda tayyorlanadigan sutli yormalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Каши быстрого приготовления молочные для детей"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Instant milk porridge for children"
+
+* #sbnam-0004-00012 "Mevali to'ldirgichlar bilan don asosidagi bolalar yormalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Каши на зерновой основе с фруктовыми наполнителями (детские)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cereal-based children's porridge with fruit fillings"
+
+* #sbnam-0004-00013 "Bolalar uchun qatiq mahsulotlari (Biolakt)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кисломолочные продукты детские (Биолакт)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Children's fermented milk products (biolact)"
 
-* #subname_0004_0015 "Bolalar uchun qatiq mahsulotlari (Atsidofilin)"
+* #sbnam-0004-00014 "Bolalar uchun qatiq mahsulotlari (Atsidofilin)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кисломолочные продукты детские (Ацидофилин)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Children's fermented milk products (acidophilin)"
 
-* #subname_0004_0017 "Bolalar morslari va kompotlari"
+* #sbnam-0004-00015 "1 yoshdan oshgan bolalar uchun sut aralashmalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Молочные смеси для детей старше года"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Milk formula for children over one year"
+
+* #sbnam-0004-00016 "Bolalar morslari va kompotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Морсы и компоты детские"
   * ^designation[+].language = #en
   * ^designation[=].value = "Children's morses and compotes"
 
-* #subname_0004_0018 "Bolalar uchun nektarlar"
+* #sbnam-0004-00017 "Bolalar uchun nektarlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Нектары детские"
   * ^designation[+].language = #en
   * ^designation[=].value = "Children's nectars"
 
-* #subname_0004_0019 "Bolalar pechenyesi"
+* #sbnam-0004-00018 "Bolalar pechenyesi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Печенье детское"
   * ^designation[+].language = #en
   * ^designation[=].value = "Children's biscuits"
 
-* #subname_0004_0021 "Go'sht"
+* #sbnam-0004-00019 "Go'sht"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Продукты прикорма на мясной"
   * ^designation[+].language = #en
   * ^designation[=].value = "Meat-based complementary foods"
 
-* #subname_0004_0022 "Baliq"
+* #sbnam-0004-00020 "Baliq"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Продукты прикорма на рыбной"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fish-based complementary foods"
 
-* #subname_0004_0023 "Sabzavot va meva asosidagi qo'shimcha ovqatlanish mahsulotlari"
+* #sbnam-0004-00021 "Sabzavot va meva asosidagi qo'shimcha ovqatlanish mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Продукты прикорма на овощной и фруктовой основе"
   * ^designation[+].language = #en
   * ^designation[=].value = "Vegetable- and fruit-based complementary foods"
 
-* #subname_0004_0024 "Bolalar uchun go'sht pyuresi"
+* #sbnam-0004-00022 "Bolalar uchun go'sht pyuresi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пюре мясное детское"
   * ^designation[+].language = #en
   * ^designation[=].value = "Children's meat puree"
 
-* #subname_0004_0025 "Bolalar uchun aralash go'sht-sabzavot pyuresi"
+* #sbnam-0004-00023 "Bolalar uchun aralash go'sht-sabzavot pyuresi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пюре мясо-овощное (комбинированное) детское"
   * ^designation[+].language = #en
   * ^designation[=].value = "Children's meat and vegetable puree (combined)"
 
-* #subname_0004_0026 "Banka ko'rinishidagi bolalar sabzavot pyuresi"
+* #sbnam-0004-00024 "Banka ko'rinishidagi bolalar sabzavot pyuresi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пюре овощное детское (в банках)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Children's vegetable puree (in jars)"
 
-* #subname_0004_0027 "Bolalar uchun baliq pyuresi"
+* #sbnam-0004-00025 "Bolalar uchun baliq pyuresi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пюре рыбное детское"
   * ^designation[+].language = #en
   * ^designation[=].value = "Children's fish puree"
 
-* #subname_0004_0028 "Banka ko'rinishidagi bolalar meva pyuresi"
+* #sbnam-0004-00026 "Banka ko'rinishidagi bolalar meva pyuresi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пюре фруктовое детское (в банках)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Children's fruit puree (in jars)"
 
-* #subname_0004_0035 "Homilador va emizikli ayollar uchun maxsus oziq-ovqat mahsulotlari"
+* #sbnam-0004-00027 "Bolalar oziq-ovqati ishlab chiqarishga mo'ljallangan o'simlik moylari va yog'lari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Растительные масла и жиры предназначенные для производства детского питания"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Vegetable oils and fats intended for the production of baby food"
+
+* #sbnam-0004-00028 "Gipoallergen aralashmalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Смеси гипоаллергенные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hypoallergenic formula"
+
+* #sbnam-0004-00029 "Laktozasiz aralashmalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Смеси Безлактозные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Lactose-free formula"
+
+* #sbnam-0004-00030 "Bolalar uchun tiniqlangan meva sharbatlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соки фруктовые осветлённые для детского питания"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Clarified fruit juices for baby food"
+
+* #sbnam-0004-00031 "Bolalar uchun mevali (mag'izli) meva sharbatlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соки фруктовые с мякотью для детского питания"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fruit juices with pulp for baby food"
+
+* #sbnam-0004-00032 "Homilador va emizikli ayollar uchun maxsus oziq-ovqat mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Специализированные продукты для питания беременных и кормящих женщин"
   * ^designation[+].language = #en
   * ^designation[=].value = "Specialised foods for pregnant and breastfeeding women"
 
-* #subname_0004_0037 "Bolalar sushki va galetlari"
+* #sbnam-0004-00033 "Bolalar suxariklari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сухарики детские"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Children's croutons"
+
+* #sbnam-0004-00034 "Bolalar sushki va galetlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сушки и галеты детские"
   * ^designation[+].language = #en
   * ^designation[=].value = "Children's sushki and galettes"
 
-* #subname_0005_0005 "Tovuq yog'i"
+* #sbnam-0004-00035 "Echki suti asosidagi quruq sut aralashmalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сухие молочные смеси на основе козьего молока"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dry milk formula based on goat's milk"
+
+* #sbnam-0005-00001 "Eritilgan qo'y yog'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жир бараний топлёный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rendered mutton fat"
+
+* #sbnam-0005-00002 "Eritilgan mol yog'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жир говяжий топлёный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rendered beef fat"
+
+* #sbnam-0005-00003 "Eritilgan echki yog'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жир козий топлёный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rendered goat fat"
+
+* #sbnam-0005-00004 "Eritilgan ot yog'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жир конский топлёный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rendered horse fat"
+
+* #sbnam-0005-00005 "Tovuq yog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Жир куриный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Chicken fat"
 
-* #subname_0005_0006 "G'oz yog'i"
+* #sbnam-0005-00006 "G'oz yog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Жир гусиный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Goose fat"
 
-* #subname_0005_0007 "O'rdak yog'i"
+* #sbnam-0005-00007 "O'rdak yog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Жир утиный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Duck fat"
 
-* #subname_0005_0011 "Baliq yog'i"
+* #sbnam-0005-00008 "Baliq yog'i (Baliq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жир рыбий (Рыбий)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fish oil"
+
+* #sbnam-0005-00009 "Baliq yog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Жир рыбий (Прочих морских животных)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fish oil (from other marine animals)"
 
-* #subname_0005_0013 "Frityur yog'i"
+* #sbnam-0005-00010 "Eritilgan cho'chqa yog'i (smalets)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жир свиной топлёный (смалец)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rendered pork fat (lard)"
+
+* #sbnam-0005-00011 "Frityur yog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Жир фритюрный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Deep-frying fat"
 
-* #subname_0005_0014 "Sutdan tashqari quruqlikdagi sut emizuvchilar yog'lari"
+* #sbnam-0005-00012 "Sutdan tashqari quruqlikdagi sut emizuvchilar yog'lari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Жиры из других сухопутных млекопитающих (кроме молочных)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fats from other land mammals (except milk fats)"
 
-* #subname_0005_0015 "Trans-yog'-kislotali yog'lar (yog'-moy mahsulotlarida trans izomerlar)"
+* #sbnam-0005-00013 "Trans-yog'-kislotali yog'lar (yog'-moy mahsulotlarida trans izomerlar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Жиры с трансизомерами жирных кислот"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fats containing trans fatty acid isomers"
 
-* #subname_0005_0025 "Xantal moyi"
+* #sbnam-0005-00014 "Mayonez"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Майонез"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mayonnaise"
+
+* #sbnam-0005-00015 "Buterbrod margarinlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Маргарин бутербродный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Spreadable margarine"
+
+* #sbnam-0005-00016 "Yumshoq margarinlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Маргарин мягкий"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Soft margarine"
+
+* #sbnam-0005-00017 "Sanoat margarini (Non pishirish)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Маргарин промышленный (Для выпечки)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Industrial margarine (for baking)"
+
+* #sbnam-0005-00018 "Sanoat margarini (Qandolatchilik uchun)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Маргарин промышленный (Кондитерский)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Industrial margarine (for confectionery)"
+
+* #sbnam-0005-00019 "Stol margarini"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Маргарин столовый"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Table margarine"
+
+* #sbnam-0005-00020 "Uzum danagi moyi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Масло виноградных косточек"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Grape seed oil"
+
+* #sbnam-0005-00021 "Xantal moyi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Масло горчичное"
   * ^designation[+].language = #en
   * ^designation[=].value = "Mustard oil"
 
-* #subname_0005_0029 "Danak moyi (O'rik)"
+* #sbnam-0005-00022 "Danak moyi (Uzum va boshq.)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Масло косточковое (Абрикосовое)"
+  * ^designation[=].value = "Масло косточковое (Виноградное и т.п.)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Kernel oil (apricot)"
+  * ^designation[=].value = "Fruit kernel oil (grape seed and similar)"
 
-* #subname_0005_0034 "Zig'ir moyi"
+* #sbnam-0005-00023 "Rafinatlanmagan makkajo'xori moyi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Масло льняное"
+  * ^designation[=].value = "Масло кукурузное нерафинированное"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Linseed oil"
+  * ^designation[=].value = "Unrefined corn oil"
 
-* #subname_0005_0041 "Palma yadrosi moyi"
+* #sbnam-0005-00024 "Rafinatlangan makkajo'xori moyi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Масло кукурузное рафинированное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Refined corn oil"
+
+* #sbnam-0005-00025 "Pomas zaytun moyi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Масло оливковое из выжимок (помас)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Olive pomace oil"
+
+* #sbnam-0005-00026 "Rafinatlanmagan zaytun moyi (Extra Virgin)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Масло оливковое нерафинированное (Extra Virgin)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Unrefined olive oil (extra virgin)"
+
+* #sbnam-0005-00027 "Rafinatlanmagan palma yog'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Масло пальмовое нерафинированное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Unrefined palm oil"
+
+* #sbnam-0005-00028 "Rafinatlangan palma yog'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Масло пальмовое рафинированное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Refined palm oil"
+
+* #sbnam-0005-00029 "Palma yadrosi moyi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Масло пальмоядровое"
   * ^designation[+].language = #en
   * ^designation[=].value = "Palm kernel oil"
 
-* #subname_0005_0048 "Qovoq moyi"
+* #sbnam-0005-00030 "Rafinatlanmagan kungaboqar moyi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Масло подсолнечное нерафинированное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Unrefined sunflower oil"
+
+* #sbnam-0005-00031 "Rafinatlangan kungaboqar moyi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Масло подсолнечное рафинированное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Refined sunflower oil"
+
+* #sbnam-0005-00032 "Rafinatlanmagan raps moyi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Масло рапсовое нерафинированное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Unrefined rapeseed oil"
+
+* #sbnam-0005-00033 "Rafinatlangan raps moyi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Масло рапсовое рафинированное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Refined rapeseed oil"
+
+* #sbnam-0005-00034 "Qovoq moyi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Масло тыквенное"
   * ^designation[+].language = #en
   * ^designation[=].value = "Pumpkin seed oil"
 
-* #subname_0005_0051 "Shi moyi (karite)"
+* #sbnam-0005-00035 "Rafinatlanmagan paxta yog'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Масло хлопковое нерафинированное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Unrefined cottonseed oil"
+
+* #sbnam-0005-00036 "Rafinatlangan paxta yog'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Масло хлопковое рафинированное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Refined cottonseed oil"
+
+* #sbnam-0005-00037 "Shi moyi (karite)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Масло ши (карите)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Shea butter (karite)"
 
-* #subname_0005_0057 "Kanop urug'i moyi"
+* #sbnam-0005-00038 "Bolalar oziq-ovqati uchun o'simlik moy va yog'lari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Растительные масла и жиры для производства детского питания"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Vegetable oils and fats for the production of baby food"
+
+* #sbnam-0005-00039 "Mayonez sousi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соус майонезный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mayonnaise sauce"
+
+* #sbnam-0005-00040 "O'simlik-yog' spredi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Спред растительно-жировой"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Vegetable fat spread"
+
+* #sbnam-0005-00041 "O'simlik-qaymoq spredi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Спред растительно-сливочный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Vegetable-cream spread"
+
+* #sbnam-0005-00042 "Kanop urug'i moyi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Масло семян конопли"
   * ^designation[+].language = #en
   * ^designation[=].value = "Hemp seed oil"
 
-* #subname_0005_0059 "Kamelina yog'i"
+* #sbnam-0005-00043 "O'simlik moylari va yog'lari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Растительные масла и жиры"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Vegetable oils and fats"
+
+* #sbnam-0005-00044 "Kamelina yog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Камелиновое масло"
   * ^designation[+].language = #en
   * ^designation[=].value = "Camelina oil"
 
-* #subname_0005_0060 "Xantal yog'i"
+* #sbnam-0005-00045 "Xantal yog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Горчичное масло"
   * ^designation[+].language = #en
   * ^designation[=].value = "Mustard seed oil"
 
-* #subname_0006_0001 "Boranka va suxari mahsulotlari"
+* #sbnam-0005-00046 "Yog'li va yog'-moyli spredlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жировые и масляные спреды"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fat and oil spreads"
+
+* #sbnam-0006-00001 "Boranka va suxari mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Бараночные и сухарные изделия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ring-shaped bakery products and rusks"
 
-* #subname_0006_0004 "Sumbul loviya"
+* #sbnam-0006-00002 "Sumbul loviya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сумбульная фасоль"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sumbul beans"
 
-* #subname_0006_0011 "Bulochka mahsulotlari"
+* #sbnam-0006-00003 "Iste'mol dukkaklilari: soya (don)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Бобовые продовольственные: соя (зерно)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Food legumes: soybean (grain)"
+
+* #sbnam-0006-00004 "Iste'mol dukkaklilari: loviya (quruq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Бобовые продовольственные: фасоль (сухая)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Food legumes: beans (dry)"
+
+* #sbnam-0006-00005 "Bulochka mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Булочные изделия"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bun products"
 
-* #subname_0006_0013 "Havo guruchi"
+* #sbnam-0006-00006 "Tezda tayyor vermisheli"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вермишель быстрого приготовления"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Instant vermicelli"
+
+* #sbnam-0006-00007 "Havo guruchi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Воздушный рис"
   * ^designation[+].language = #en
   * ^designation[=].value = "Puffed rice"
 
-* #subname_0006_0015 "Ekstruziya yengil gazaklar"
+* #sbnam-0006-00008 "Ekstruziya yengil gazaklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Экструзионные снеки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Extruded snacks"
 
-* #subname_0006_0019 "O'sgan don (kurtaklar)"
+* #sbnam-0006-00009 "Grechka (don)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Гречиха (зерно)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Buckwheat (grain)"
+
+* #sbnam-0006-00010 "O'sgan don (kurtaklar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Зерно проращённое (проростки)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sprouted grain (sprouts)"
 
-* #subname_0006_0022 "Galetalar"
+* #sbnam-0006-00011 "Galetalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Галеты"
   * ^designation[+].language = #en
   * ^designation[=].value = "Galettes"
 
-* #subname_0006_0032 "Tariq yormasi"
+* #sbnam-0006-00012 "Grechka yormasi (Yadritsa)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Крупа гречневая (Ядрица)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Buckwheat groats (whole kernel)"
+
+* #sbnam-0006-00013 "Grechka yormasi (Prodel)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Крупа гречневая (Продел)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Buckwheat groats (broken)"
+
+* #sbnam-0006-00014 "Makkajo'xori yormasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Крупа кукурузная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Corn grits"
+
+* #sbnam-0006-00015 "Suli yormasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Крупа овсяная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Oat groats"
+
+* #sbnam-0006-00016 "Bug'doy yormasi (Poltavkaya)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Крупа пшеничная (Полтавская)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wheat groats (Poltavskaya)"
+
+* #sbnam-0006-00017 "Bug'doy yormasi (Artek)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Крупа пшеничная (Артек)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wheat groats (Artek)"
+
+* #sbnam-0006-00018 "Tariq yormasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Крупа пшённая"
   * ^designation[+].language = #en
   * ^designation[=].value = "Millet groats"
 
-* #subname_0006_0048 "Dukkakli un (no'xat)"
+* #sbnam-0006-00019 "Guruch yormasi (Maydalangan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Крупа рисовая (Дроблёная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rice groats (broken)"
+
+* #sbnam-0006-00020 "Guruch yormasi (Silliqlangan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Крупа рисовая (Шлифованная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rice groats (polished)"
+
+* #sbnam-0006-00021 "Arpa yormalari (yacheviy)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Крупа ячневая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Barley groats"
+
+* #sbnam-0006-00022 "Iste'mol makkajo'xorisi (don)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кукуруза продовольственная (зерно)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Food corn (grain)"
+
+* #sbnam-0006-00023 "Makkajo'xori xlopyalari va tayyor nonushtalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кукурузные хлопья и готовые завтраки кукурузные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Corn flakes and ready-to-eat corn breakfast cereals"
+
+* #sbnam-0006-00024 "Quruq lag'mon"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лагман сухой"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dry lagman noodles"
+
+* #sbnam-0006-00025 "Ugra"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Угра"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ugra noodles"
+
+* #sbnam-0006-00026 "Osiyo lag'moni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лапша азиатская"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Asian noodles"
+
+* #sbnam-0006-00027 "Makaron mahsulotlari (Lag'mon)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Макаронные изделия (Лапша)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pasta (noodles)"
+
+* #sbnam-0006-00028 "Manniy yormasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Манная крупа"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Semolina"
+
+* #sbnam-0006-00029 "Dukkakli un (no'xat)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука гороховая"
   * ^designation[+].language = #en
   * ^designation[=].value = "Pea flour"
 
-* #subname_0006_0050 "Dukkakli un (yasmiq)"
+* #sbnam-0006-00030 "Dukkakli un (yasmiq)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука Чечевичная (бобовая)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Lentil flour (legume)"
 
-* #subname_0006_0051 "Grechka uni"
+* #sbnam-0006-00031 "Grechka uni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука гречневая"
   * ^designation[+].language = #en
   * ^designation[=].value = "Buckwheat flour"
 
-* #subname_0006_0053 "Suli uni"
+* #sbnam-0006-00032 "Makkajo'xori uni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мука кукурузная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Corn flour"
+
+* #sbnam-0006-00033 "Suli uni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука овсяная"
   * ^designation[+].language = #en
   * ^designation[=].value = "Oat flour"
 
-* #subname_0006_0061 "Guruch uni"
+* #sbnam-0006-00034 "Makaron uchun bug'doy uni (krupka)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мука пшеничная макаронная (крупка)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wheat flour for pasta (semolina)"
+
+* #sbnam-0006-00035 "Non pishirish uchun bug'doy uni oliy nav"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мука пшеничная хлебопекарная высший сорт"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Bread-making wheat flour, premium grade"
+
+* #sbnam-0006-00036 "Non pishirish uchun bug'doy uni 1-nav"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мука пшеничная хлебопекарная 1-й сорт"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Bread-making wheat flour, first grade"
+
+* #sbnam-0006-00037 "Non pishirish uchun bug'doy uni 2-nav"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мука пшеничная хлебопекарная 2-й сорт"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Bread-making wheat flour, second grade"
+
+* #sbnam-0006-00038 "Javdar uni (Saralangan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мука ржаная (Сеяная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rye flour (sifted)"
+
+* #sbnam-0006-00039 "Javdar uni (Qipiqli)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мука ржаная (Обдирная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rye flour (peeled)"
+
+* #sbnam-0006-00040 "Javdar uni (Butun)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мука ржаная (Обойная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rye flour (wholemeal)"
+
+* #sbnam-0006-00041 "Guruch uni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука рисовая"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rice flour"
 
-* #subname_0006_0063 "Arpa uni"
+* #sbnam-0006-00042 "Arpa uni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука ячменная"
   * ^designation[+].language = #en
   * ^designation[=].value = "Barley flour"
 
-* #subname_0006_0064 "To'ldirgichli un qandolat mahsulotlari"
+* #sbnam-0006-00043 "To'ldirgichli un qandolat mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мучные кондитерские изделия с начинкой"
   * ^designation[+].language = #en
   * ^designation[=].value = "Filled flour confectionery"
 
-* #subname_0006_0073 "Shakar"
+* #sbnam-0006-00044 "Iste'mol sulisi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Овёс продовольственный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Food oats"
+
+* #sbnam-0006-00045 "Suli kepagi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Отруби овсяные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Oat bran"
+
+* #sbnam-0006-00046 "Javdar kepagi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Отруби ржаные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rye bran"
+
+* #sbnam-0006-00047 "Guruch kepagi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Отруби рисовые"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rice bran"
+
+* #sbnam-0006-00048 "Shakar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сдобное"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rich biscuits"
 
-* #subname_0006_0074 "Polba"
+* #sbnam-0006-00049 "Polba"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Полба"
   * ^designation[+].language = #en
   * ^designation[=].value = "Farro"
 
-* #subname_0006_0075 "Spelta"
+* #sbnam-0006-00050 "Spelta"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Спельта"
   * ^designation[+].language = #en
   * ^designation[=].value = "Spelt"
 
-* #subname_0006_0076 "Emmer"
+* #sbnam-0006-00051 "Emmer"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Эммер"
   * ^designation[+].language = #en
   * ^designation[=].value = "Emmer"
 
-* #subname_0006_0077 "Tariq (don)"
+* #sbnam-0006-00052 "Tariq (don)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Просо (зерно)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Millet (grain)"
 
-* #subname_0006_0081 "Soxta donlar: kannixua"
+* #sbnam-0006-00053 "Pryaniklar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пряники"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pryaniki (spice cakes)"
+
+* #sbnam-0006-00054 "Kovrijkalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Коврижки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Kovrizhki (honey cakes)"
+
+* #sbnam-0006-00055 "Soxta donlar: kannixua"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Псевдозлаки: каниуа"
   * ^designation[+].language = #en
   * ^designation[=].value = "Pseudocereals: canihua"
 
-* #subname_0006_0090 "Shirin bulochkalar (Pushki)"
+* #sbnam-0006-00056 "Iste'mol bug'doyi (yumshoq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пшеница продовольственная (мягкая)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Food wheat (soft)"
+
+* #sbnam-0006-00057 "Qattiq bug'doy (durum)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пшеница твёрдая (durum)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Durum wheat"
+
+* #sbnam-0006-00058 "Tozalanmagan sholi (paddi)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рис нешелушёный (падди)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Paddy rice"
+
+* #sbnam-0006-00059 "Bug'lab qayta ishlangan guruch"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рис пропаренный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Parboiled rice"
+
+* #sbnam-0006-00060 "Iste'mol javdari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рожь продовольственная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Food rye"
+
+* #sbnam-0006-00061 "Shirin bulochkalar (Pushki)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сдобные булочные изделия (Плюшки)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rich buns (plyushki)"
 
-* #subname_0006_0092 "Tayyor pirogi va sloyka"
+* #sbnam-0006-00062 "Shirin bulochkalar (Keks)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сдобные булочные изделия (Кексы)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Sweet buns (keks)"
+
+* #sbnam-0006-00063 "Tayyor pirogi va sloyka"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Слойки и пироги (готовые)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Puff pastries and pies (ready)"
 
-* #subname_0006_0093 "Tayoqcha non mahsulotlari"
+* #sbnam-0006-00064 "Tayoqcha non mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлебные палочки (Соломка)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Breadsticks"
 
-* #subname_0006_0094 "Jo'xori (don)"
+* #sbnam-0006-00065 "Jo'xori (don)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сорго (зерно)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sorghum (grain)"
 
-* #subname_0006_0097 "Tritikale"
+* #sbnam-0006-00066 "Suxari va grenkalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сухари и гренки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rusks and croutons"
+
+* #sbnam-0006-00067 "Tritikale"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Тритикале"
   * ^designation[+].language = #en
   * ^designation[=].value = "Triticale"
 
-* #subname_0006_0111 "Ekstrudirovkalangan non"
+* #sbnam-0006-00068 "Parhez non (Diabetik)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Хлеб диетический (Диабетический)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dietary bread (for diabetics)"
+
+* #sbnam-0006-00069 "Parhez non (Glyutensiz)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Хлеб диетический (Безглютеновый)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dietary bread (gluten-free)"
+
+* #sbnam-0006-00070 "Parhez non (Oqsilsiz)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Хлеб диетический (Безбелковый)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dietary bread (protein-free)"
+
+* #sbnam-0006-00071 "O'zbek obi noni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Хлеб лепёшечный (Узбекские лепёшки)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Flatbread (Uzbek non)"
+
+* #sbnam-0006-00072 "Lavash"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Хлеб лепёшечный (Лаваш)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Flatbread (lavash)"
+
+* #sbnam-0006-00073 "Sandiq noni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Хлеб подовый"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hearth bread"
+
+* #sbnam-0006-00074 "1-nav undan bug'doy noni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Хлеб пшеничный из муки 1-го сорта"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wheat bread from first-grade flour"
+
+* #sbnam-0006-00075 "2-nav undan bug'doy noni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Хлеб пшеничный из муки 2-го сорта"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wheat bread from second-grade flour"
+
+* #sbnam-0006-00076 "Javdar-bug'doy noni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Хлеб ржано-пшеничный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rye-wheat bread"
+
+* #sbnam-0006-00077 "Qoliplangan non"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Хлеб формовой"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Tin bread"
+
+* #sbnam-0006-00078 "Ekstrudirovkalangan non"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлеб экструдированные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Extruded bread"
 
-* #subname_0006_0118 "Makkajo'xori shrot"
+* #sbnam-0006-00079 "Iste'mol arpasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Ячмень продовольственный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Food barley"
+
+* #sbnam-0006-00080 "Qayta ishlanmagan makkajo'xori doni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Необработанные зерна кукурузы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Unprocessed corn kernels"
+
+* #sbnam-0006-00081 "Makkajo'xori"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кукуруза"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Corn"
+
+* #sbnam-0006-00082 "Guruch"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рис"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rice"
+
+* #sbnam-0006-00083 "Bug'doy"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пшеница"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wheat"
+
+* #sbnam-0006-00084 "Don va don ekinlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Зерно и зерновые культуры"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Grain and cereal crops"
+
+* #sbnam-0006-00085 "Makkajo'xori shrot"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кукурузный шрот"
   * ^designation[+].language = #en
   * ^designation[=].value = "Corn meal"
 
-* #subname_0006_0123 "Makkajo'xori asosida oziq-ovqat mahsuloti"
+* #sbnam-0006-00086 "Makkajo'xori doni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кукурузное зерно"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Corn grain"
+
+* #sbnam-0006-00087 "Makkajo'xori uni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кукурузная мука"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cornmeal"
+
+* #sbnam-0006-00088 "Makkajo'xori iste'mol uchun"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кукуруза для употребления"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Corn for consumption"
+
+* #sbnam-0006-00089 "Makkajo'xori asosida oziq-ovqat mahsuloti"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Продукты питания на основе кукурузы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Corn-based foods"
 
-* #subname_0006_0126 "Faqat makkajo'xoridan tayyorlangan qo'shimcha oziq-ovqat mahsulotlari"
+* #sbnam-0006-00090 "Makkajo'xori asosida tayyor nonushta"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовый завтрак из кукурузы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready-to-eat corn breakfast"
+
+* #sbnam-0006-00091 "Faqat makkajo'xoridan tayyorlangan qo'shimcha oziq-ovqat mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дополнительные продукты питания только из кукурузы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Complementary foods made only from corn"
 
-* #subname_0006_0132 "Guruchli vaflilar"
+* #sbnam-0006-00092 "Don va don ekinlari iste'mol uchun"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Зерно и зерновые культуры для употребления"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Grain and cereal crops for consumption"
+
+* #sbnam-0006-00093 "Don va don ekinlari asosida manniy yormasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Манная крупа из зерновых"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cereal semolina"
+
+* #sbnam-0006-00094 "Don va don ekinlari asosida kepak"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Отруби из зерновых"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cereal bran"
+
+* #sbnam-0006-00095 "Maydalangan javdar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Дроблёная рожь"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Crushed rye"
+
+* #sbnam-0006-00096 "Bug'doy doni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пшеничное зерно"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wheat grain"
+
+* #sbnam-0006-00097 "Guruchli vaflilar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рисовые вафли"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rice wafers"
 
-* #subname_0006_0133 "Guruchli krekerlar"
+* #sbnam-0006-00098 "Guruchli krekerlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рисовые крекеры"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rice crackers"
 
-* #subname_0006_0134 "Guruchli nonlar"
+* #sbnam-0006-00099 "Guruchli nonlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рисовый хлеб"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rice bread"
 
-* #subname_0006_0135 "Guruchli pag'alar"
+* #sbnam-0006-00100 "Guruchli pag'alar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рисовые палочки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rice sticks"
 
-* #subname_0006_0136 "Nonushta uchun guruch"
+* #sbnam-0006-00101 "Nonushta uchun guruch"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рис для завтрака"
   * ^designation[+].language = #en
   * ^designation[=].value = "Breakfast rice"
 
-* #subname_0007_0002 "Iste'mol uchun po'stloq (Dub)"
+* #sbnam-0007-00001 "Iste'mol uchun po'stloq (Dub)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кора (Дуб) пищевого назначения"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bark for food use (oak)"
 
-* #subname_0007_0003 "Iste'mol uchun po'stloq (Krushina)"
+* #sbnam-0007-00002 "Iste'mol uchun po'stloq (Krushina)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кора (Крушина) пищевого назначения"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bark for food use (buckthorn)"
 
-* #subname_0007_0005 "Ildiz va ildizpoyalari (Shirinmiya)"
+* #sbnam-0007-00003 "Ildiz va ildizpoyalari (Shirinmiya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Корни и корневища (Солодка)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Roots and rhizomes (liquorice)"
 
-* #subname_0007_0006 "Ildiz va ildizpoyalari (Valeriana)"
+* #sbnam-0007-00004 "Ildiz va ildizpoyalari (Valeriana)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Корни и корневища (Валериана)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Roots and rhizomes (valerian)"
 
-* #subname_0007_0007 "Ildiz va ildizpoyalari (Jenshen)"
+* #sbnam-0007-00005 "Ildiz va ildizpoyalari (Jenshen)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Корни и корневища (Женьшень)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Roots and rhizomes (ginseng)"
 
-* #subname_0007_0008 "Ildiz va ildizpoyalari (Eleuterokokk)"
+* #sbnam-0007-00006 "Ildiz va ildizpoyalari (Eleuterokokk)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Корни и корневища (Элеутерококк)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Roots and rhizomes (eleutherococcus)"
 
-* #subname_0007_0011 "Dorivor barglar (Melissa)"
+* #sbnam-0007-00007 "Dorivor yig'malar va fitochaylar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лекарственные сборы и фиточаи"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Medicinal herbal mixtures and herbal teas"
+
+* #sbnam-0007-00008 "Dorivor barglar (Yalpiz)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Листья лекарственные (Мята)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Medicinal leaves (mint)"
+
+* #sbnam-0007-00009 "Dorivor barglar (Melissa)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Листья лекарственные (Мелисса)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Medicinal leaves (lemon balm)"
 
-* #subname_0007_0012 "Dorivor barglar (Malina bargi)"
+* #sbnam-0007-00010 "Dorivor barglar (Malina bargi)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Листья лекарственные (Лист малины)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Medicinal leaves (raspberry leaf)"
 
-* #subname_0007_0013 "Dorivor barglar (Krapiva bargi)"
+* #sbnam-0007-00011 "Dorivor barglar (Krapiva bargi)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Листья лекарственные (Лист крапивы)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Medicinal leaves (nettle leaf)"
 
-* #subname_0007_0018 "BAQ ishlab chiqarish uchun o'simlik xom ashyosi"
+* #sbnam-0007-00012 "Meva va urug'lar (Namatak)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Плоды и семена (Шиповник)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fruits and seeds (rose hip)"
+
+* #sbnam-0007-00013 "Meva va urug'lar (Do'lana)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Плоды и семена (Боярышник)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fruits and seeds (hawthorn)"
+
+* #sbnam-0007-00014 "BAQ ishlab chiqarish uchun o'simlik xom ashyosi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сырьё для производства БАД (растительное)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Raw materials for the production of dietary supplements (plant)"
 
-* #subname_0007_0019 "Quruq dorivor o'tlar (Zveroboy)"
+* #sbnam-0007-00015 "Quruq dorivor o'tlar (Zveroboy)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Травы лекарственные сухие (Зверобой)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried medicinal herbs (St John's wort)"
 
-* #subname_0007_0020 "Quruq dorivor o'tlar (Dushitsa)"
+* #sbnam-0007-00016 "Quruq dorivor o'tlar (Dushitsa)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Травы лекарственные сухие (Душица)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried medicinal herbs (oregano)"
 
-* #subname_0007_0021 "Quruq dorivor o'tlar (Tysyacheletnik)"
+* #sbnam-0007-00017 "Quruq dorivor o'tlar (Tysyacheletnik)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Травы лекарственные сухие (Тысячелистник)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried medicinal herbs (yarrow)"
 
-* #subname_0007_0023 "Dorivor gullar (Romashka)"
+* #sbnam-0007-00018 "Quruq dorivor o'tlar (Chabrets)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Травы лекарственные сухие (Чабрец)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dried medicinal herbs (thyme)"
+
+* #sbnam-0007-00019 "Dorivor gullar (Romashka)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Цветки лекарственные (Ромашка)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Medicinal flowers (chamomile)"
 
-* #subname_0007_0025 "Dorivor gullar (Buzina)"
+* #sbnam-0007-00020 "Dorivor gullar (Buzina)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Цветки лекарственные (Бузина)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Medicinal flowers (elder)"
 
-* #subname_0007_0026 "Dorivor gullar (Kalendula)"
+* #sbnam-0007-00021 "Dorivor gullar (Kalendula)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Цветки лекарственные (Календула)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Medicinal flowers (calendula)"
 
-* #subname_0008_0006 "Kazeinatlar"
+* #sbnam-0008-00001 "Muzlatilgan sut desertlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Замороженные молочные десерты"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen dairy desserts"
+
+* #sbnam-0008-00002 "Tabiiy yogurt"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Йогурт натуральный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Natural yoghurt"
+
+* #sbnam-0008-00003 "Kazeinatlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Казеинаты"
   * ^designation[+].language = #en
   * ^designation[=].value = "Caseinates"
 
-* #subname_0008_0008 "Qatiq"
+* #sbnam-0008-00004 "Qatiq"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Катык"
   * ^designation[+].language = #en
   * ^designation[=].value = "Katyk"
 
-* #subname_0008_0009 "Tan"
+* #sbnam-0008-00005 "Tan"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Тан"
   * ^designation[+].language = #en
   * ^designation[=].value = "Tan"
 
-* #subname_0008_0010 "Ayron"
+* #sbnam-0008-00006 "Ayron"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Айран"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ayran"
 
-* #subname_0008_0011 "Kefir"
+* #sbnam-0008-00007 "Kefir"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кефир"
   * ^designation[+].language = #en
   * ^designation[=].value = "Kefir"
 
-* #subname_0008_0012 "Sut va zardob oqsillari konsentratlari"
+* #sbnam-0008-00008 "Sut va zardob oqsillari konsentratlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Концентраты молочных белков и сывороточных белков"
   * ^designation[+].language = #en
   * ^designation[=].value = "Milk protein and whey protein concentrates"
 
-* #subname_0008_0013 "Qimiz"
+* #sbnam-0008-00009 "Qimiz"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кумыс"
   * ^designation[+].language = #en
   * ^designation[=].value = "Koumiss"
 
-* #subname_0008_0014 "Shubat"
+* #sbnam-0008-00010 "Shubat"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Шубат"
   * ^designation[+].language = #en
   * ^designation[=].value = "Shubat"
 
-* #subname_0008_0017 "Shokolad sariyog'i"
+* #sbnam-0008-00011 "Krestyan va lubitelskiy sariyog'"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Масло крестьянское и любительское"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Peasant and amateur butter"
+
+* #sbnam-0008-00012 "Shokolad sariyog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Масло шоколадное"
   * ^designation[+].language = #en
   * ^designation[=].value = "Chocolate butter"
 
-* #subname_0008_0021 "Pishirilgan ichimlik sut"
+* #sbnam-0008-00013 "Pasterlangan ichimlik suti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Молоко питьевое пастеризованное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pasteurised drinking milk"
+
+* #sbnam-0008-00014 "Pishirilgan ichimlik sut"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Молоко питьевое топлёное"
   * ^designation[+].language = #en
   * ^designation[=].value = "Baked drinking milk"
 
-* #subname_0008_0027 "Tuya xom suti"
+* #sbnam-0008-00015 "Ultrapasterlangan (UYUT) ichimlik suti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Молоко питьевое ультрапастеризованное (УВТ)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ultra-pasteurised (UHT) drinking milk"
+
+* #sbnam-0008-00016 "Tuya xom suti"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Молоко сырое верблюжье"
   * ^designation[+].language = #en
   * ^designation[=].value = "Raw camel milk"
 
-* #subname_0008_0028 "Biya xom suti"
+* #sbnam-0008-00017 "Biya xom suti"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Молоко сырое кобылье"
   * ^designation[+].language = #en
   * ^designation[=].value = "Raw mare's milk"
 
-* #subname_0008_0038 "Mevali muz / sorbet"
+* #sbnam-0008-00018 "Sigir xom suti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Молоко сырое коровье"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Raw cow's milk"
+
+* #sbnam-0008-00019 "Sutli/qaymoqli muzqaymoq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мороженое молочное / сливочное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Milk / cream ice cream"
+
+* #sbnam-0008-00020 "Plombir muzqaymoq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мороженое пломбир"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Plombir ice cream"
+
+* #sbnam-0008-00021 "Mevali muzqaymoq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мороженое с фруктовым наполнителем"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ice cream with fruit filling"
+
+* #sbnam-0008-00022 "Mevali muz / sorbet"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мороженое фруктовый лёд / сорбет"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruit ice / sorbet"
 
-* #subname_0008_0039 "Qatiq"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Простокваша"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Prostokvasha (soured milk)"
-
-* #subname_0008_0040 "Atsidofilin"
+* #sbnam-0008-00023 "Atsidofilin"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ацидофилин"
   * ^designation[+].language = #en
   * ^designation[=].value = "Acidophilin"
 
-* #subname_0008_0041 "Ryajenka"
+* #sbnam-0008-00024 "Ryajenka"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ряженка"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ryazhenka"
 
-* #subname_0008_0042 "Varenets"
+* #sbnam-0008-00025 "Varenets"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Варенец"
   * ^designation[+].language = #en
   * ^designation[=].value = "Varenets"
 
-* #subname_0008_0045 "Quruq qaymoq"
+* #sbnam-0008-00026 "Quruq qaymoq"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сливки сухие"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dry cream"
 
-* #subname_0008_0049 "Bolalar uchun maxsus tibbiy maqsadlarda quruq parhez aralashmalari"
+* #sbnam-0008-00027 "Sariyog'"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сливочное масло"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Butter"
+
+* #sbnam-0008-00028 "Sariyog'-o'simlik spredi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Спред сливочно-растительный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cream-vegetable spread"
+
+* #sbnam-0008-00029 "Bolalar uchun maxsus tibbiy maqsadlarda quruq parhez aralashmalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сухие диетические смеси для специального медицинского питания детей"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dry dietary formulas for special medical purposes for children"
 
-* #subname_0008_0051 "Zardobli ichimliklar"
+* #sbnam-0008-00030 "6 oygacha bolalar uchun quruq sut aralashmalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сухие молочные смеси для детей до 6 месяцев"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dry milk formula for children up to 6 months"
+
+* #sbnam-0008-00031 "Zardobli ichimliklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сывороточные напитки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Whey drinks"
 
-* #subname_0008_0067 "Tvorog massasi va sirniklar"
+* #sbnam-0008-00032 "Xom sutdan tayyorlangan pishloq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сыр из сырого молока"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cheese made from raw milk"
+
+* #sbnam-0008-00033 "Dudlangan pishloq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сыр копчёный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Smoked cheese"
+
+* #sbnam-0008-00034 "Yarim qattiq pishloq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сыр полутвёрдый"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Semi-hard cheese"
+
+* #sbnam-0008-00035 "Tuzlama pishloq (Brinza)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сыр рассольный (Брынза)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Brine cheese (brynza)"
+
+* #sbnam-0008-00036 "Tuzlama pishloq (Suluguni)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сыр рассольный (Сулугуни)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Brine cheese (suluguni)"
+
+* #sbnam-0008-00037 "Tuzlama pishloq (Chanaq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сыр рассольный (Чанах)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Brine cheese (chanakh)"
+
+* #sbnam-0008-00038 "Tuzlama pishloq (Motal)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сыр рассольный (Мотал)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Brine cheese (motal)"
+
+* #sbnam-0008-00039 "Pasterlangan sutdan tayyorlangan yangi pishmagan pishloq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сыр свежий незрелый из пастеризованного молока"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh unripened cheese made from pasteurised milk"
+
+* #sbnam-0008-00040 "Tvorog (suzma)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Творог"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Tvorog (curd cheese)"
+
+* #sbnam-0008-00041 "Tvorog massasi va sirniklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Творожная масса и сырки глазированные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Curd mass and glazed curd snacks"
 
-* #subname_0009_0001 "Baliklar (go'sht)"
+* #sbnam-0009-00001 "Baliklar (go'sht)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Балыки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cured loins (balyk)"
 
-* #subname_0009_0002 "Korejka"
+* #sbnam-0009-00002 "Korejka"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Корейки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cured pork loin (koreyka)"
 
-* #subname_0009_0003 "Bo'yin go'sht mahsulotlari"
+* #sbnam-0009-00003 "Bo'yin go'sht mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Шейки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cured neck (sheyka)"
 
-* #subname_0009_0009 "Tuya go'shti"
+* #sbnam-0009-00004 "Qo'y go'shti (Tushalar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Баранина (Туши)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mutton (carcasses)"
+
+* #sbnam-0009-00005 "Qo'y go'shti (Yarim tushalar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Баранина (Полутуши)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mutton (half carcasses)"
+
+* #sbnam-0009-00006 "Muzlatilgan qo'y go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Баранина замороженная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen mutton"
+
+* #sbnam-0009-00007 "Sovutilgan qo'y go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Баранина охлаждённая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Chilled mutton"
+
+* #sbnam-0009-00008 "Tuya go'shti"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Верблюжатина"
   * ^designation[+].language = #en
   * ^designation[=].value = "Camel meat"
 
-* #subname_0009_0016 "Iste'mol uchun xom hayvon yog'i"
+* #sbnam-0009-00009 "Mol go'shti (Tushalar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Говядина (Туши)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Beef (carcasses)"
+
+* #sbnam-0009-00010 "Mol go'shti (Yarim tushalar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Говядина (Полутуши)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Beef (half carcasses)"
+
+* #sbnam-0009-00011 "Mol go'shti (Choraklar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Говядина (Четвертины)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Beef (quarters)"
+
+* #sbnam-0009-00012 "Muzlatilgan mol go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Говядина замороженная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen beef"
+
+* #sbnam-0009-00013 "Sovutilgan mol go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Говядина охлаждённая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Chilled beef"
+
+* #sbnam-0009-00014 "Iste'mol uchun xom hayvon yog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Жир-сырец животный (пищевой)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Raw animal fat (edible)"
 
-* #subname_0009_0022 "Go'shtli jele"
+* #sbnam-0009-00015 "Iste'mol uchun eritilgan yog'lar (Mol)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жиры топлёные пищевые (Говяжий)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rendered edible fats (beef)"
+
+* #sbnam-0009-00016 "Iste'mol uchun eritilgan yog'lar (Qo'y)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жиры топлёные пищевые (Бараний)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rendered edible fats (mutton)"
+
+* #sbnam-0009-00017 "Iste'mol uchun eritilgan yog'lar (Cho'chqa)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жиры топлёные пищевые (Свиной)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rendered edible fats (pork)"
+
+* #sbnam-0009-00018 "Iste'mol uchun eritilgan yog'lar (Ot)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жиры топлёные пищевые (Конский)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rendered edible fats (horse)"
+
+* #sbnam-0009-00019 "Go'shtli jele"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Студень"
   * ^designation[+].language = #en
   * ^designation[=].value = "Meat jelly (studen)"
 
-* #subname_0009_0023 "Go'shtli jele (xolodets)"
+* #sbnam-0009-00020 "Go'shtli jele (xolodets)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Холодец"
   * ^designation[+].language = #en
   * ^designation[=].value = "Meat aspic (kholodets)"
 
-* #subname_0009_0024 "Kolbasa qobig'i uchun tabiiy ichaklar"
+* #sbnam-0009-00021 "Kolbasa qobig'i uchun tabiiy ichaklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кишки натуральные для колбасных оболочек"
   * ^designation[+].language = #en
   * ^designation[=].value = "Natural casings for sausages"
 
-* #subname_0009_0025 "Parranda terisi"
+* #sbnam-0009-00022 "Parranda terisi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кожа птицы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Poultry skin"
 
-* #subname_0009_0026 "Echki go'shti"
+* #sbnam-0009-00023 "Echki go'shti"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Козлятина"
   * ^designation[+].language = #en
   * ^designation[=].value = "Goat meat"
 
-* #subname_0009_0033 "Go'sht konservalari (tushyonka)"
+* #sbnam-0009-00024 "Qaynatib-dudlangan kolbasalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Колбасы варёно-копчёные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cooked smoked sausages"
+
+* #sbnam-0009-00025 "Qaynatilgan kolbasalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Колбасы варёные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cooked sausages"
+
+* #sbnam-0009-00026 "Yarim dudlangan kolbasalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Колбасы полукопчёные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Semi-smoked sausages"
+
+* #sbnam-0009-00027 "Xom-quritilgan kolbasalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Колбасы сыровяленые"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dry-cured sausages"
+
+* #sbnam-0009-00028 "Xom-dudlangan kolbasalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Колбасы сырокопчёные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Raw smoked sausages"
+
+* #sbnam-0009-00029 "Go'sht konservalari (tushyonka)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Консервы мясные (тушёнка)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Canned meat (stewed meat)"
 
-* #subname_0009_0034 "Pashtet ko'rinishidagi go'sht konservalari"
+* #sbnam-0009-00030 "Pashtet ko'rinishidagi go'sht konservalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Консервы мясные паштетные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Canned meat pates"
 
-* #subname_0009_0035 "Go'sht-o'simlik konservalari"
+* #sbnam-0009-00031 "Go'sht-o'simlik konservalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Консервы мясорастительные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Canned meat and vegetable products"
 
-* #subname_0009_0037 "Go'sht qiymasi"
+* #sbnam-0009-00032 "Go'sht qiymasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мясной фарш"
   * ^designation[+].language = #en
   * ^designation[=].value = "Minced meat"
 
-* #subname_0009_0040 "Bolalar oziq-ovqati uchun go'sht va go'sht mahsulotlari"
+* #sbnam-0009-00033 "Yovvoyi hayvonlar go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мясо дичи (диких животных)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Game meat (wild animals)"
+
+* #sbnam-0009-00034 "Yovvoyi parrandalar go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мясо дичи (диких птиц)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Game meat (wild birds)"
+
+* #sbnam-0009-00035 "Bolalar oziq-ovqati uchun go'sht va go'sht mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мясо и мясопродукты для детского питания"
   * ^designation[+].language = #en
   * ^designation[=].value = "Meat and meat products for infant food"
 
-* #subname_0009_0045 "Parranda go'shti (bedana)"
+* #sbnam-0009-00036 "Parranda go'shti (Tovuq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мясо птицы (Курица)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Poultry meat (chicken)"
+
+* #sbnam-0009-00037 "Parranda go'shti (Tushka)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мясо птицы (Тушка)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Poultry meat (carcass)"
+
+* #sbnam-0009-00038 "Parranda go'shti (bedana)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мясо птицы (перепел)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Poultry meat (quail)"
 
-* #subname_0009_0050 "Go'shtli pashtetlar"
+* #sbnam-0009-00039 "Muzlatilgan parranda go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мясо птицы замороженное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen poultry meat"
+
+* #sbnam-0009-00040 "Mexanik suyaksizlantirilgan parranda go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мясо птицы механической обвалки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mechanically separated poultry meat"
+
+* #sbnam-0009-00041 "Sovutilgan parranda go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мясо птицы охлаждённое"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Chilled poultry meat"
+
+* #sbnam-0009-00042 "Go'shtli pashtetlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Паштеты мясные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Meat pates"
 
-* #subname_0009_0054 "Tabiiy go'sht yarimtayyor mahsulotlari (Steyklar)"
+* #sbnam-0009-00043 "Chuchvara"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пельмени"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pelmeni"
+
+* #sbnam-0009-00044 "Manti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Манты"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Manti"
+
+* #sbnam-0009-00045 "Xinkali"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Хинкали"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Khinkali"
+
+* #sbnam-0009-00046 "Tabiiy go'sht yarimtayyor mahsulotlari (Steyklar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Полуфабрикаты мясные натуральные (Стейки)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Natural semi-finished meat products (steaks)"
 
-* #subname_0009_0055 "Tabiiy go'sht yarimtayyor mahsulotlari (Eskaloplar)"
+* #sbnam-0009-00047 "Tabiiy go'sht yarimtayyor mahsulotlari (Eskaloplar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Полуфабрикаты мясные натуральные (Эскалопы)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Natural semi-finished meat products (escalopes)"
 
-* #subname_0009_0056 "Maydalangan go'sht yarimtayyor mahsulotlari (Kotletlar)"
+* #sbnam-0009-00048 "Maydalangan go'sht yarimtayyor mahsulotlari (Kotletlar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Полуфабрикаты мясные рубленые (Котлеты)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Minced semi-finished meat products (cutlets)"
 
-* #subname_0009_0057 "Maydalangan go'sht yarimtayyor mahsulotlari (Teftellar)"
+* #sbnam-0009-00049 "Maydalangan go'sht yarimtayyor mahsulotlari (Teftellar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Полуфабрикаты мясные рубленые (Тефтели)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Minced semi-finished meat products (meatballs)"
 
-* #subname_0009_0058 "Maydalangan go'sht yarimtayyor mahsulotlari"
+* #sbnam-0009-00050 "Maydalangan go'sht yarimtayyor mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Полуфабрикаты мясные рубленые (Биточки)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Minced semi-finished meat products (bitochki)"
 
-* #subname_0009_0065 "Mol o'pkasi"
+* #sbnam-0009-00051 "Cho'chqa go'shti (Tushalar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Свинина (Туши)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pork (carcasses)"
+
+* #sbnam-0009-00052 "Cho'chqa go'shti (Yarim tushalar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Свинина (Полутуши)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pork (half carcasses)"
+
+* #sbnam-0009-00053 "Muzlatilgan cho'chqa go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Свинина замороженная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen pork"
+
+* #sbnam-0009-00054 "Sovutilgan cho'chqa go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Свинина охлаждённая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Chilled pork"
+
+* #sbnam-0009-00055 "Qo'y subhmahsulotlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Субпродукты бараньи"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mutton offal"
+
+* #sbnam-0009-00056 "Mol o'pkasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Субпродукты говяжьи (Лёгкое)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Beef offal (lungs)"
 
-* #subname_0009_0066 "Mol miyasi"
+* #sbnam-0009-00057 "Mol miyasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Субпродукты говяжьи (Мозги)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Beef offal (brains)"
 
-* #subname_0009_0073 "Parranda subhmahsulotlari (Oshqozon)"
+* #sbnam-0009-00058 "Mol jigari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Субпродукты говяжьи (печень)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Beef offal (liver)"
+
+* #sbnam-0009-00059 "Mol buyragi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Субпродукты говяжьи (почки)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Beef offal (kidneys)"
+
+* #sbnam-0009-00060 "Mol yuragi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Субпродукты говяжьи (сердце)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Beef offal (heart)"
+
+* #sbnam-0009-00061 "Parranda subhmahsulotlari (Jigar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Субпродукты птицы (Печень)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Poultry offal (liver)"
+
+* #sbnam-0009-00062 "Parranda subhmahsulotlari (Oshqozon)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Субпродукты птицы (Желудки)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Poultry offal (gizzards)"
 
-* #subname_0009_0076 "Quruq go'sht mahsulotlari (Quruq bulon)"
+* #sbnam-0009-00063 "Parranda subhmahsulotlari (Yurak)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Субпродукты птицы (Сердечки)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Poultry offal (hearts)"
+
+* #sbnam-0009-00064 "Cho'chqa subhmahsulotlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Субпродукты свиные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pork offal"
+
+* #sbnam-0009-00065 "Quruq go'sht mahsulotlari (Quruq bulon)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сухие мясные продукты (Сухой бульон)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried meat products (dry broth)"
 
-* #subname_0009_0077 "Quruq go'sht mahsulotlari (Sublimirovkalangan go'sht)"
+* #sbnam-0009-00066 "Quruq go'sht mahsulotlari (Sublimirovkalangan go'sht)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сухие мясные продукты (Сублимированное мясо)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried meat products (freeze-dried meat)"
 
-* #subname_0009_0081 "Marinovkalangan shashlik (yarim tayyor mahsulot)"
+* #sbnam-0009-00067 "Broyler tushkalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Тушки бройлеров"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Broiler carcasses"
+
+* #sbnam-0009-00068 "Go'shtli somsa va chebureklar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чебуреки и самса с мясом"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Chebureki and samsa with meat"
+
+* #sbnam-0009-00069 "Marinovkalangan shashlik (yarim tayyor mahsulot)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Шашлык маринованный (полуфабрикат)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Marinated shashlik (semi-finished)"
 
-* #subname_0009_0098 "Qo'y yog'i"
+* #sbnam-0009-00070 "Qoramol go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мясо говядины"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Beef meat"
+
+* #sbnam-0009-00071 "Qo'y go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мясо баранины"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mutton meat"
+
+* #sbnam-0009-00072 "Cho'chqa go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мясо свинины"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pork meat"
+
+* #sbnam-0009-00073 "Parranda go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мясо птицы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Poultry meat"
+
+* #sbnam-0009-00074 "Qoramol qo'shimcha submahsulotlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Дополнительные субпродукты говядины"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Additional beef offal"
+
+* #sbnam-0009-00075 "Qoramol jigari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Говяжья печень"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Beef liver"
+
+* #sbnam-0009-00076 "Qo'y jigari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Баранья печень"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mutton liver"
+
+* #sbnam-0009-00077 "Cho'chqa jigari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Свиная печень"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pork liver"
+
+* #sbnam-0009-00078 "Parranda jigari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Птичья печень"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Poultry liver"
+
+* #sbnam-0009-00079 "Otlarning jigari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лошадиная печень"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Horse liver"
+
+* #sbnam-0009-00080 "Qoramol buyragi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Говяжьи почки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Beef kidneys"
+
+* #sbnam-0009-00081 "Qo'y buyragi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Бараньи почки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mutton kidneys"
+
+* #sbnam-0009-00082 "Cho'chqa buyragi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Свиные почки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pork kidneys"
+
+* #sbnam-0009-00083 "Parranda buyragi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Птичьи почки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Poultry kidneys"
+
+* #sbnam-0009-00084 "Otlarning buyragi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лошадиные почки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Horse kidneys"
+
+* #sbnam-0009-00085 "Qo'y yog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Бараний жир"
   * ^designation[+].language = #en
   * ^designation[=].value = "Mutton fat"
 
-* #subname_0009_0100 "Parranda yog'i"
+* #sbnam-0009-00086 "Cho'chqa yog'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Свиной жир / Сало"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pork fat / salo"
+
+* #sbnam-0009-00087 "Parranda yog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Птичий жир"
   * ^designation[+].language = #en
   * ^designation[=].value = "Poultry fat"
 
-* #subname_0009_0101 "Ot yog'i"
+* #sbnam-0009-00088 "Ot yog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Конский жир"
   * ^designation[+].language = #en
   * ^designation[=].value = "Horse fat"
 
-* #subname_0009_0102 "Aralash hayvon yog'lari"
+* #sbnam-0009-00089 "Aralash hayvon yog'lari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Смешанный животный жир"
   * ^designation[+].language = #en
   * ^designation[=].value = "Mixed animal fat"
 
-* #subname_0009_0104 "Ovlanadigan hayvonlarning submahsulotlari"
+* #sbnam-0009-00090 "Ovlanadigan hayvonlar go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мясо диких животных"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Meat of wild animals"
+
+* #sbnam-0009-00091 "Ovlanadigan hayvonlarning submahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Субпродукты диких животных"
   * ^designation[+].language = #en
   * ^designation[=].value = "Wild game offal"
 
-* #subname_0010_0001 "Ajika"
+* #sbnam-0010-00001 "Ajika"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Аджика"
   * ^designation[+].language = #en
   * ^designation[=].value = "Adjika"
 
-* #subname_0010_0007 "Yetilmagan loviya"
+* #sbnam-0010-00002 "Yashil loviya"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Бобы зелёные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Green beans"
+
+* #sbnam-0010-00003 "Yetilmagan loviya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Бобы недозрелые"
   * ^designation[+].language = #en
   * ^designation[=].value = "Immature beans"
 
-* #subname_0010_0016 "Madaniylashtirilgan shiitake"
+* #sbnam-0010-00004 "Madaniylashtirilgan veshenka"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Грибы вешенки культивируемые"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cultivated oyster mushrooms"
+
+* #sbnam-0010-00005 "Yovvoyi iste'mol qo'ziqorinlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Грибы дикорастущие пищевые"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wild edible mushrooms"
+
+* #sbnam-0010-00006 "Konservalangan qo'ziqorinlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Грибы консервированные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Canned mushrooms"
+
+* #sbnam-0010-00007 "Tuzlangan qo'ziqorinlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Грибы солёные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Salted mushrooms"
+
+* #sbnam-0010-00008 "Marinovkalangan qo'ziqorinlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Грибы маринованные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pickled mushrooms"
+
+* #sbnam-0010-00009 "Quritilgan qo'ziqorinlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Грибы сушёные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dried mushrooms"
+
+* #sbnam-0010-00010 "Madaniylashtirilgan shiitake"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Грибы шиитаке культивируемые"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cultivated shiitake mushrooms"
 
-* #subname_0010_0025 "Melissa"
+* #sbnam-0010-00011 "Stol ko'kati: ukrop"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Зелень столовая: укроп"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Table herbs: dill"
+
+* #sbnam-0010-00012 "Ko'kat: rayhon"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Зелень: базилик (рейхон)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Herbs: basil (reyhan)"
+
+* #sbnam-0010-00013 "Ko'kat: yalpiz"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Зелень: мята"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Herbs: mint"
+
+* #sbnam-0010-00014 "Melissa"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мелисса"
   * ^designation[+].language = #en
   * ^designation[=].value = "Lemon balm"
 
-* #subname_0010_0027 "Ko'kat: rukkola (himoyalangan tuproq)"
+* #sbnam-0010-00015 "Ko'kat: rozmarin"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Зелень: розмарин"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Herbs: rosemary"
+
+* #sbnam-0010-00016 "Ko'kat: rukkola (himoyalangan tuproq)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Зелень: руккола (защищённый грунт)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Greens: rocket (greenhouse)"
 
-* #subname_0010_0028 "Ko'kat: rukkola (ochiq tuproq)"
+* #sbnam-0010-00017 "Ko'kat: rukkola (ochiq tuproq)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Зелень: руккола (открытый грунт)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Greens: rocket (open field)"
 
-* #subname_0010_0032 "Ko'kat: otquloq"
+* #sbnam-0010-00018 "Ko'kat: timyan"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Зелень: тимьян"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Herbs: thyme"
+
+* #sbnam-0010-00019 "Chabrets"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чабрец"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Thyme (chabrets)"
+
+* #sbnam-0010-00020 "Ko'kat: ismaloq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Зелень: шпинат"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Herbs: spinach"
+
+* #sbnam-0010-00021 "Ko'kat: otquloq"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Зелень: щавель"
   * ^designation[+].language = #en
   * ^designation[=].value = "Greens: sorrel"
 
-* #subname_0010_0042 "Tuzlangan karam"
+* #sbnam-0010-00022 "Kechki oq karam"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Капуста белокочанная поздняя"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Late white cabbage"
+
+* #sbnam-0010-00023 "Erta oq karam"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Капуста белокочанная ранняя"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Early white cabbage"
+
+* #sbnam-0010-00024 "Tuzlangan karam"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Капуста квашеная"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sauerkraut"
 
-* #subname_0010_0046 "Bargli karam"
+* #sbnam-0010-00025 "Xitoy karami (pak-choy)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Капуста китайская (пак-чой)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Chinese cabbage (pak choi)"
+
+* #sbnam-0010-00026 "Bargli karam"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Капуста листовая"
   * ^designation[+].language = #en
   * ^designation[=].value = "Leaf cabbage"
 
-* #subname_0010_0054 "Pomidor ketchupi"
+* #sbnam-0010-00027 "Pekin karami"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Капуста пекинская"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Napa cabbage"
+
+* #sbnam-0010-00028 "Kechki kartoshka"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Картофель поздний"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Late potatoes"
+
+* #sbnam-0010-00029 "Erta kartoshka"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Картофель ранний"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Early potatoes"
+
+* #sbnam-0010-00030 "Iste'mol yangi kartoshka"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Картофель свежий продовольственный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh food potatoes"
+
+* #sbnam-0010-00031 "Pomidor ketchupi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кетчуп томатный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Tomato ketchup"
 
-* #subname_0010_0055 "Tabiiy sabzavot konservalari"
+* #sbnam-0010-00032 "Tabiiy sabzavot konservalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Консервы овощные натуральные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Natural canned vegetables"
 
-* #subname_0010_0059 "Lecho"
+* #sbnam-0010-00033 "Yangi zarchava (ildiz)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Куркума свежая (корень)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh turmeric (root)"
+
+* #sbnam-0010-00034 "Lecho"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лечо"
   * ^designation[+].language = #en
   * ^designation[=].value = "Lecho"
 
-* #subname_0010_0060 "Sabzavot ikrasi (qovoqchali)"
+* #sbnam-0010-00035 "Sabzavot ikrasi (qovoqchali)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Икра овощная (кабачковая)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Vegetable caviar (courgette)"
 
-* #subname_0010_0061 "Sabzavot ikrasi (baqlajonli)"
+* #sbnam-0010-00036 "Sabzavot ikrasi (baqlajonli)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Икра овощная (баклажанная)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Vegetable caviar (aubergine)"
 
-* #subname_0010_0067 "Shalot piyozi"
+* #sbnam-0010-00037 "Bosh piyoz (Oq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лук репчатый (Белый)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Bulb onion (white)"
+
+* #sbnam-0010-00038 "Bosh piyoz (Sariq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лук репчатый (Жёлтый)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Bulb onion (yellow)"
+
+* #sbnam-0010-00039 "Bosh piyoz (Qizil)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лук репчатый (Красный)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Bulb onion (red)"
+
+* #sbnam-0010-00040 "Ko'k piyoz"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лук-севок и зелёный лук перо"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Onion sets and green onion leaves"
+
+* #sbnam-0010-00041 "Shalot piyozi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лук-шалот"
   * ^designation[+].language = #en
   * ^designation[=].value = "Shallots"
 
-* #subname_0010_0070 "Marinovkalangan sabzavotlar"
+* #sbnam-0010-00042 "Manioka"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Маниока"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Manioc"
+
+* #sbnam-0010-00043 "Kassava (yangi)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кассава (свежая)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cassava (fresh)"
+
+* #sbnam-0010-00044 "Marinovkalangan sabzavotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Маринады овощные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Vegetable marinades"
 
-* #subname_0010_0072 "Yashil dukkak holatidagi mosh va adzuki"
+* #sbnam-0010-00045 "Konservalangan stol zaytunlari (oliva, maslin)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Маслины и оливки столовые (консервированные)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Table olives (canned)"
+
+* #sbnam-0010-00046 "Yashil dukkak holatidagi mosh va adzuki"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Маш и адзуки в стадии зелёных стручков"
   * ^designation[+].language = #en
   * ^designation[=].value = "Mung and adzuki beans at the green pod stage"
 
-* #subname_0010_0074 "Muzlatilgan sabzavotlar (sochma)"
+* #sbnam-0010-00047 "Yangi sabzi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Морковь свежая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh carrots"
+
+* #sbnam-0010-00048 "Muzlatilgan sabzavotlar (sochma)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Овощи замороженные (россыпью)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Frozen vegetables (loose)"
 
-* #subname_0010_0075 "Quyma bilan konservalangan sabzavotlar"
+* #sbnam-0010-00049 "Quyma bilan konservalangan sabzavotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Овощи консервированные с заливкой"
   * ^designation[+].language = #en
   * ^designation[=].value = "Canned vegetables in brine"
 
-* #subname_0010_0076 "Quritilgan sabzavotlar (Sabzi)"
+* #sbnam-0010-00050 "Quritilgan sabzavotlar (Sabzi)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Овощи сушёные (Морковь)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried vegetables (carrots)"
 
-* #subname_0010_0077 "Quritilgan sabzavotlar (Piyoz)"
+* #sbnam-0010-00051 "Quritilgan sabzavotlar (Piyoz)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Овощи сушёные (Лук)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried vegetables (onions)"
 
-* #subname_0010_0078 "Quritilgan sabzavotlar (Qalampir)"
+* #sbnam-0010-00052 "Quritilgan sabzavotlar (Qalampir)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Овощи сушёные (Перец)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried vegetables (peppers)"
 
-* #subname_0010_0079 "Quritilgan sabzavotlar (Sarimsoq va boshq.)"
+* #sbnam-0010-00053 "Quritilgan sabzavotlar (Sarimsoq va boshq.)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Овощи сушёные (Чеснок и др.)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried vegetables (garlic and other)"
 
-* #subname_0010_0080 "Iste'molga tayyor sabzavot tilimlari"
+* #sbnam-0010-00054 "Iste'molga tayyor sabzavot tilimlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Овощная нарезка готовая к употреблению"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready-to-eat sliced vegetables"
 
-* #subname_0010_0081 "Muzlatilgan sabzavot aralashmalari"
+* #sbnam-0010-00055 "Muzlatilgan sabzavot aralashmalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Овощные смеси замороженные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Frozen vegetable mixes"
 
-* #subname_0010_0094 "Iste'mol kurtaklar va mikroko'kat"
+* #sbnam-0010-00056 "Ochiq tuproq bodringi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Огурцы грунтовые (открытый грунт)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Open-ground cucumbers"
+
+* #sbnam-0010-00057 "Himoyalangan tuproq bodringi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Огурцы тепличные (защищённый грунт)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Greenhouse cucumbers (protected ground)"
+
+* #sbnam-0010-00058 "Konsentrlangan pomidor pastasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Паста томатная концентрированная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Concentrated tomato paste"
+
+* #sbnam-0010-00059 "Yangi achchiq qalampir (chili)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Перец острый свежий (чили)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh hot pepper (chilli)"
+
+* #sbnam-0010-00060 "Quritilgan achchiq qalampir"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Перец острый сушёный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dried hot pepper"
+
+* #sbnam-0010-00061 "Ochiq tuproq shirin bolgar qalampiri"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Перец сладкий (болгарский) грунтовый"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Open-ground sweet (bell) pepper"
+
+* #sbnam-0010-00062 "Himoyalangan tuproq shirin bolgar qalampiri"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Перец сладкий (болгарский) тепличный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Greenhouse sweet (bell) pepper"
+
+* #sbnam-0010-00063 "Yangi ochiq tuproq pomidori"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Помидоры свежие грунтовые"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh open-ground tomatoes"
+
+* #sbnam-0010-00064 "Yangi himoyalangan tuproq pomidori"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Помидоры свежие тепличные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh greenhouse tomatoes"
+
+* #sbnam-0010-00065 "Cherri pomidor"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Помидоры черри"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cherry tomatoes"
+
+* #sbnam-0010-00066 "Iste'mol kurtaklar va mikroko'kat"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Проростки и микрозелень съедобные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Edible sprouts and microgreens"
 
-* #subname_0010_0095 "Bolalar oziq-ovqati uchun sabzavot pyuresi"
+* #sbnam-0010-00067 "Bolalar oziq-ovqati uchun sabzavot pyuresi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пюре овощное для детского питания"
   * ^designation[+].language = #en
   * ^designation[=].value = "Vegetable puree for infant food"
 
-* #subname_0010_0096 "Umumiy iste'mol uchun sabzavot pyuresi"
+* #sbnam-0010-00068 "Umumiy iste'mol uchun sabzavot pyuresi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пюре овощное для общего употребления"
   * ^designation[+].language = #en
   * ^designation[=].value = "Vegetable puree for general consumption"
 
-* #subname_0010_0108 "Qand lavlagi"
+* #sbnam-0010-00069 "Rediska"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Редис"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Radish"
+
+* #sbnam-0010-00070 "Turp"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Редька"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Black radish"
+
+* #sbnam-0010-00071 "Bosh salat (aysberg)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Салат кочанный (айсберг)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Head lettuce (iceberg)"
+
+* #sbnam-0010-00072 "Bargli salat (himoyalangan tuproq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Салат листовой (защищённый грунт)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Leaf lettuce (protected ground)"
+
+* #sbnam-0010-00073 "Bargli salat (ochiq tuproq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Салат листовой (открытый грунт)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Leaf lettuce (open ground)"
+
+* #sbnam-0010-00074 "Romen"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Салат ромэн"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Romaine lettuce"
+
+* #sbnam-0010-00075 "Lolo"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лоло"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Lollo lettuce"
+
+* #sbnam-0010-00076 "Frillis salatlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Фриллис"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frillice lettuce"
+
+* #sbnam-0010-00077 "Qand lavlagi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Свёкла сахарная"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sugar beet"
 
-* #subname_0010_0139 "Bargli sabzavotlar (Himoyalangan tuproq)"
+* #sbnam-0010-00078 "Tuzlangan sabzavotlar (Bodring)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соленья овощные (Огурцы)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pickled vegetables (cucumbers)"
+
+* #sbnam-0010-00079 "Tuzlangan sabzavotlar (Pomidor)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соленья овощные (Помидоры)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pickled vegetables (tomatoes)"
+
+* #sbnam-0010-00080 "Tuzlangan sabzavotlar (Karam)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соленья овощные (Капуста)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pickled vegetables (cabbage)"
+
+* #sbnam-0010-00081 "Pomidor souslari (garnirlar uchun)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соусы томатные (Для гарниров)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Tomato sauces (for side dishes)"
+
+* #sbnam-0010-00082 "Pomidor souslari (shashlik uchun)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соусы томатные (Шашлыка)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Tomato sauces (for shashlik)"
+
+* #sbnam-0010-00083 "Stol qovog'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Тыква столовая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Table pumpkin"
+
+* #sbnam-0010-00084 "Yashil dukkakli loviya"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Фасоль стручковая (Зелёная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Green pod beans"
+
+* #sbnam-0010-00085 "Sparja loviyasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Фасоль стручковая (Спаржевая)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Asparagus beans"
+
+* #sbnam-0010-00086 "Sikoriy (Vitluf)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Цикорий (Витлуф)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Chicory (witloof)"
+
+* #sbnam-0010-00087 "Sikoriy (Bargli)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Цикорий (Листовой)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Chicory (leaf)"
+
+* #sbnam-0010-00088 "Yangi sarimsoq (bosh)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чеснок свежий (головки)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh garlic (bulbs)"
+
+* #sbnam-0010-00089 "Yashil sarimsoq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чеснок ярый (зелёный)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Green garlic"
+
+* #sbnam-0010-00090 "Konservalangan ismaloq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Консервированный шпинат"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Canned spinach"
+
+* #sbnam-0010-00091 "Muzlatilgan ismaloq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Замороженный шпинат"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen spinach"
+
+* #sbnam-0010-00092 "Sabzi (Erta hosil, 1-sentabrgacha)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Морковь (ранний урожай, до 1 сентября)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Carrots (early harvest, before 1 September)"
+
+* #sbnam-0010-00093 "Sabzi (Kechki hosil)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Морковь (поздний урожай)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Carrots (late harvest)"
+
+* #sbnam-0010-00094 "Tomat pastasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Томатная паста"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Tomato paste"
+
+* #sbnam-0010-00095 "Ko'k piyoz (Himoyalangan tuproq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Зелёный лук (закрытый грунт)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Green onion (protected ground)"
+
+* #sbnam-0010-00096 "Ko'k piyoz (Ochiq tuproq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Зелёный лук (открытый грунт)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Green onion (open ground)"
+
+* #sbnam-0010-00097 "Bargli sabzavotlar (Himoyalangan tuproq)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Листовые овощи (закрытый грунт)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Leafy vegetables (greenhouse)"
 
-* #subname_0010_0140 "Bargli sabzavotlar (Ochiq tuproq)"
+* #sbnam-0010-00098 "Bargli sabzavotlar (Ochiq tuproq)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Листовые овощи (открытый грунт)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Leafy vegetables (open field)"
 
-* #subname_0010_0143 "Dukkaklilardan olingan oqsillar"
+* #sbnam-0010-00099 "Oddiy qo'ziqorin"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Обычные грибы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Common mushrooms"
+
+* #sbnam-0010-00100 "Dukkaklilardan olingan oqsillar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Белки из бобовых"
   * ^designation[+].language = #en
   * ^designation[=].value = "Legume proteins"
 
-* #subname_0010_0146 "Poyali sabzavotlar"
+* #sbnam-0010-00101 "Madaniylashtiriladigan qo'ziqorinlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Культивируемые грибы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cultivated mushrooms"
+
+* #sbnam-0010-00102 "Poyali sabzavotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Стеблевые овощи"
   * ^designation[+].language = #en
   * ^designation[=].value = "Stem vegetables"
 
-* #subname_0010_0147 "Bargli sabzavotlar"
+* #sbnam-0010-00103 "Bargli sabzavotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Листовые овощи"
   * ^designation[+].language = #en
   * ^designation[=].value = "Leafy vegetables"
 
-* #subname_0010_0148 "Mevali sabzavotlar"
+* #sbnam-0010-00104 "Mevali sabzavotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Плодовые овощи"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruiting vegetables"
 
-* #subname_0010_0150 "Piyozli sabzavotlari"
+* #sbnam-0010-00105 "Veshenka qo'ziqorini"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вешенка грибы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Oyster mushrooms"
+
+* #sbnam-0010-00106 "Piyozli sabzavotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Луковые овощи"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bulb vegetables"
 
-* #subname_0010_0151 "Tropik ildiz"
+* #sbnam-0010-00107 "Tropik ildiz"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Тропические корнеплоды"
   * ^designation[+].language = #en
   * ^designation[=].value = "Tropical root vegetables"
 
-* #subname_0010_0152 "Tuganaklar"
+* #sbnam-0010-00108 "Tuganaklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Клубни"
   * ^designation[+].language = #en
   * ^designation[=].value = "Tubers"
 
-* #subname_0010_0155 "Konservalangan sabzavotlar"
+* #sbnam-0010-00109 "Xo'raki (oshxona) zaytunlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Столовые оливки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Table olives"
+
+* #sbnam-0010-00110 "Konservalangan tomat pastasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Консервированная томатная паста"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Canned tomato paste"
+
+* #sbnam-0010-00111 "Konservalangan sabzavotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Консервированные овощи"
   * ^designation[+].language = #en
   * ^designation[=].value = "Canned vegetables"
 
-* #subname_0010_0157 "Kamelina barglari"
+* #sbnam-0010-00112 "Kamelina barglari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Листья камелины"
   * ^designation[+].language = #en
   * ^designation[=].value = "Camelina leaves"
 
-* #subname_0010_0159 "Manioki uni"
+* #sbnam-0010-00113 "Manioki ildizi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Корень маниоки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Manioc root"
+
+* #sbnam-0010-00114 "Manioki uni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука из маниоки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cassava flour"
 
-* #subname_0011_0009 "Iste'mol uchun jmix"
+* #sbnam-0011-00001 "Qobiqli yeryong'oq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Арахис в скорлупе"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Peanuts in shell"
+
+* #sbnam-0011-00002 "Qoplangan yeryong'oq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Арахис с покрытием"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Coated peanuts"
+
+* #sbnam-0011-00003 "Tozalangan yeryong'oq (mag'iz)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Арахис очищенный (ядро)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Shelled peanuts (kernels)"
+
+* #sbnam-0011-00004 "Yong'oq (qobiqli)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Грецкий орех (в скорлупе)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Walnut (in shell)"
+
+* #sbnam-0011-00005 "Yong'oq (mag'iz)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Грецкий орех (ядро)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Walnut (kernel)"
+
+* #sbnam-0011-00006 "Iste'mol uchun jmix"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Жмых"
   * ^designation[+].language = #en
   * ^designation[=].value = "Oilseed cake"
 
-* #subname_0011_0010 "Shrot"
+* #sbnam-0011-00007 "Shrot"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Шрот пищевой (для пищевого применения)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Food-grade oilseed meal"
 
-* #subname_0011_0013 "Iste'mol uchun o'rik danagi (mag'iz)"
+* #sbnam-0011-00008 "Iste'mol uchun o'rik danagi (mag'iz)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Косточки абрикоса (ядро) используемые в пищу"
   * ^designation[+].language = #en
   * ^designation[=].value = "Apricot kernels used as food"
 
-* #subname_0011_0014 "Iste'mol uchun shaftoli"
+* #sbnam-0011-00009 "Iste'mol uchun shaftoli"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Косточки персика"
   * ^designation[+].language = #en
   * ^designation[=].value = "Peach kernels"
 
-* #subname_0011_0015 "Olxo'ri danagi"
+* #sbnam-0011-00010 "Olxo'ri danagi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сливы (ядро, пищевое использование)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Plum kernels (for food use)"
 
-* #subname_0011_0019 "Qovurilgan yong'oqlar"
+* #sbnam-0011-00011 "Bodom (qobiqli)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Миндаль (в скорлупе)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Almond (in shell)"
+
+* #sbnam-0011-00012 "Bodom (mag'iz)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Миндаль (ядро)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Almond (kernel)"
+
+* #sbnam-0011-00013 "Qovurilgan yong'oqlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Орехи жареные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Roasted nuts"
 
-* #subname_0011_0020 "Tuzlangan yong'oqlar aralashmasi"
+* #sbnam-0011-00014 "Tuzlangan yong'oqlar aralashmasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Солёные (смеси)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Salted nut mixes"
 
-* #subname_0011_0021 "Shokoladli yong'oqlar va quritilgan mevalar"
+* #sbnam-0011-00015 "Shokoladli yong'oqlar va quritilgan mevalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Орехи и сухофрукты в шоколаде"
   * ^designation[+].language = #en
   * ^designation[=].value = "Chocolate-coated nuts and dried fruit"
 
-* #subname_0011_0022 "Glazur bilan qoplangan yong'oqlar va quritilgan mevalar"
+* #sbnam-0011-00016 "Glazur bilan qoplangan yong'oqlar va quritilgan mevalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Орехи и сухофрукты в глазури"
   * ^designation[+].language = #en
   * ^designation[=].value = "Glazed nuts and dried fruit"
 
-* #subname_0011_0027 "Kamelina (sariq) urug'i"
+* #sbnam-0011-00017 "Xantal urug'i (yog' uchun)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Семена горчицы (масличные)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mustard seed (oilseed)"
+
+* #sbnam-0011-00018 "Kamelina (sariq) urug'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Семена камелины (рыжика)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Camelina seeds"
 
-* #subname_0011_0028 "Iste'mol kanop urug'i"
+* #sbnam-0011-00019 "Iste'mol kanop urug'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Семена конопли пищевые"
   * ^designation[+].language = #en
   * ^designation[=].value = "Edible hemp seeds"
 
-* #subname_0011_0034 "Saflor urug'i"
+* #sbnam-0011-00020 "Iste'mol uchun zig'ir urug'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Семена льна (для пищ. применения)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Linseed (for food use)"
+
+* #sbnam-0011-00021 "Saflor urug'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Семена сафлора"
   * ^designation[+].language = #en
   * ^designation[=].value = "Safflower seeds"
 
-* #subname_0011_0036 "Chia urug'i"
+* #sbnam-0011-00022 "Chia urug'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Семена чиа"
   * ^designation[+].language = #en
   * ^designation[=].value = "Chia seeds"
 
-* #subname_0011_0043 "Maydalangan kanop urug'i"
+* #sbnam-0011-00023 "Iste'mol uchun soya donalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соевые бобы (Для пищевого применения)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Soybeans (for food use)"
+
+* #sbnam-0011-00024 "Qayta ishlash uchun soya donalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соевые бобы (Переработки)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Soybeans (for processing)"
+
+* #sbnam-0011-00025 "Pista (qobiqli)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Фисташки (в скорлупе)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pistachios (in shell)"
+
+* #sbnam-0011-00026 "Pista (mag'iz)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Фисташки (ядро)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pistachios (kernel)"
+
+* #sbnam-0011-00027 "Funduk / o'rmon yong'og'i (qobiqli)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Фундук / лесной орех (в скорлупе)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hazelnut / filbert (in shell)"
+
+* #sbnam-0011-00028 "Funduk / o'rmon yong'og'i (mag'iz)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Фундук / лесной орех (ядро)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hazelnut / filbert (kernel)"
+
+* #sbnam-0011-00029 "Maydalangan kanop urug'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Измельчённые семена конопли"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ground hemp seeds"
 
-* #subname_0011_0044 "Qisman yog'sizlantirilgan kanop urug'i"
+* #sbnam-0011-00030 "Qisman yog'sizlantirilgan kanop urug'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Частично обезжиренные семена конопли"
   * ^designation[+].language = #en
   * ^designation[=].value = "Partially defatted hemp seeds"
 
-* #subname_0011_0045 "Kanop urug'larini qayta ishlashning boshqa mahsulotlari"
+* #sbnam-0011-00031 "Kanop urug'larini qayta ishlashning boshqa mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Другие продукты переработки семян конопли"
   * ^designation[+].language = #en
   * ^designation[=].value = "Other processed hemp seed products"
 
-* #subname_0011_0046 "Boshqa moyli o'simliklarning urug'lari"
+* #sbnam-0011-00032 "Boshqa moyli o'simliklarning urug'lari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Другие масличные семена"
   * ^designation[+].language = #en
   * ^designation[=].value = "Other oilseeds"
 
-* #subname_0011_0047 "Daraxt yong'oqlari"
+* #sbnam-0011-00033 "Daraxt yong'oqlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Орехи деревьев"
   * ^designation[+].language = #en
   * ^designation[=].value = "Tree nuts"
 
-* #subname_0011_0048 "Daraxt yong'oqlaridan qayta ishlash orqali olinadigan mahsulotlar"
+* #sbnam-0011-00034 "Daraxt yong'oqlaridan qayta ishlash orqali olinadigan mahsulotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Продукты из орехов деревьев"
   * ^designation[+].language = #en
   * ^designation[=].value = "Tree nut products"
 
-* #subname_0012_0006 "Quyqalashga qarshi vositalar"
+* #sbnam-0012-00001 "Agar-agar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Агар-агар"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Agar-agar"
+
+* #sbnam-0012-00002 "Quyqalashga qarshi vositalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Антислёживатели"
   * ^designation[+].language = #en
   * ^designation[=].value = "Anti-caking agents"
 
-* #subname_0012_0007 "Tabiiyga identik aromatlashtirgichlar"
+* #sbnam-0012-00003 "Tabiiyga identik aromatlashtirgichlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ароматизаторы идентичные натуральным"
   * ^designation[+].language = #en
   * ^designation[=].value = "Nature-identical flavourings"
 
-* #subname_0012_0008 "sintetik aromatlashtirgichlar"
+* #sbnam-0012-00004 "sintetik aromatlashtirgichlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ароматизаторы Синтетические"
   * ^designation[+].language = #en
   * ^designation[=].value = "Synthetic flavourings"
 
-* #subname_0012_0009 "Tabiiy aromatlashtirgichlar"
+* #sbnam-0012-00005 "Tabiiy aromatlashtirgichlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ароматизаторы натуральные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Natural flavourings"
 
-* #subname_0012_0010 "Yaltiratuvchi vositalar (Vosk)"
+* #sbnam-0012-00006 "Yaltiratuvchi vositalar (Vosk)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Глазирующие агенты (Воска)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Glazing agents (waxes)"
 
-* #subname_0012_0021 "Sutli va qatiq mahsulotlari uchun zakvaskalar"
+* #sbnam-0012-00007 "Quruq pivo achitqilari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Дрожжи пивные сухие"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dry brewer's yeast"
+
+* #sbnam-0012-00008 "Presslangan non achitqilari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Дрожжи хлебопекарные прессованные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Compressed baker's yeast"
+
+* #sbnam-0012-00009 "Quruq non achitqilari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Дрожжи хлебопекарные сухие"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dry baker's yeast"
+
+* #sbnam-0012-00010 "Instant non achitqilari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Дрожжи инстантные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Instant yeast"
+
+* #sbnam-0012-00011 "Quyultiruvchi va stabilizatorlar (Pektin)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Загустители и стабилизаторы (Пектин)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Thickeners and stabilisers (pectin)"
+
+* #sbnam-0012-00012 "Quyultiruvchi va stabilizatorlar (Agar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Загустители и стабилизаторы (Агар)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Thickeners and stabilisers (agar)"
+
+* #sbnam-0012-00013 "Sutli va qatiq mahsulotlari uchun zakvaskalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Закваски молочные и кисломолочные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dairy and fermented milk starter cultures"
 
-* #subname_0012_0031 "Modifikatsiyalangan kraxmal"
+* #sbnam-0012-00014 "Kartoshka"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Крахмал картофельный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Potato starch"
+
+* #sbnam-0012-00015 "Guruch"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Крахмал рисовый"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rice starch"
+
+* #sbnam-0012-00016 "Bug'doy kraxmali"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Крахмал пшеничный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wheat starch"
+
+* #sbnam-0012-00017 "Iste'mol limon kislotasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лимонная кислота пищевая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Food-grade citric acid"
+
+* #sbnam-0012-00018 "Modifikatsiyalangan kraxmal"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Модифицированные крахмалы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Modified starches"
 
-* #subname_0012_0034 "Ko'pikga qarshi vositalar va ko'pik stabilizatorlari"
+* #sbnam-0012-00019 "Pektin (Quruq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пектин (Сухой)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pectin (dry)"
+
+* #sbnam-0012-00020 "Pektin (Suyuq)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пектин (Жидкий)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pectin (liquid)"
+
+* #sbnam-0012-00021 "Ko'pikga qarshi vositalar va ko'pik stabilizatorlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пеногасители и пеностабилизаторы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Antifoaming agents and foam stabilisers"
 
-* #subname_0012_0036 "Tabiiy oziq-ovqat bo'yog'i (Annato)"
+* #sbnam-0012-00022 "Tabiiy oziq-ovqat bo'yog'i (Annato)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пищевые красители натуральные (Аннато)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Natural food colours (annatto)"
 
-* #subname_0012_0038 "Tabiiy oziq-ovqat bo'yog'i (Betanin)"
+* #sbnam-0012-00023 "Tabiiy oziq-ovqat bo'yog'i (Betanin)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пищевые красители натуральные (Бетанин)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Natural food colours (betanin)"
 
-* #subname_0012_0040 "Sintetik oziq-ovqat bo'yog'i (Ponso)"
+* #sbnam-0012-00024 "Sintetik oziq-ovqat bo'yog'i (Ponso)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пищевые красители синтетические (Понсо)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Synthetic food colours (Ponceau)"
 
-* #subname_0012_0047 "Go'sht sanoati uchun nitritli tuz"
+* #sbnam-0012-00025 "Kislotalik regulyatorlari (Limon)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Регуляторы кислотности (Лимонная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Acidity regulators (citric acid)"
+
+* #sbnam-0012-00026 "Go'sht sanoati uchun nitritli tuz"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Соль нитритная для мясной промышленности"
   * ^designation[+].language = #en
   * ^designation[=].value = "Nitrite curing salt for the meat industry"
 
-* #subname_0012_0048 "Ta'm va xushbo'ylik kuchaytirgichlari (E600-E699)"
+* #sbnam-0012-00027 "Ta'm va xushbo'ylik kuchaytirgichlari (E600-E699)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Усилители вкуса и аромата (E600-E699)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Flavour and aroma enhancers (E600-E699)"
 
-* #subname_0012_0053 "Emulgatorlar (Mono- va digliseridlar)"
+* #sbnam-0012-00028 "Emulgatorlar (Mono- va digliseridlar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Эмульгаторы (Моно- и диглицериды)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Emulsifiers (mono- and diglycerides)"
 
-* #subname_0012_0054 "Qizil xamirturush bilan fermentlangan guruchga asoslangan parhez qo'shimchalari"
+* #sbnam-0012-00029 "Qizil xamirturush bilan fermentlangan guruchga asoslangan parhez qo'shimchalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Диетические добавки на основе ферментированного риса с красными дрожжами"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dietary supplements based on red yeast rice"
 
-* #subname_0012_0055 "Kukun shaklidagi oziq-ovqat mahsuloti"
+* #sbnam-0012-00030 "Kukun shaklidagi oziq-ovqat mahsuloti"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пищевой продукт в порошкообразной форме"
   * ^designation[+].language = #en
   * ^designation[=].value = "Food in powder form"
 
-* #subname_0012_0056 "Suyuq shakldagi oziq-ovqat mahsuloti"
+* #sbnam-0012-00031 "Suyuq shakldagi oziq-ovqat mahsuloti"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пищевой продукт в жидкой форме"
   * ^designation[+].language = #en
   * ^designation[=].value = "Food in liquid form"
 
-* #subname_0012_0057 "Kukun shaklidagi oziq-ovqat mahsuloti sotuvga qo'yilganda"
+* #sbnam-0012-00032 "Kukun shaklidagi oziq-ovqat mahsuloti sotuvga qo'yilganda"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пищевой продукт в порошкообразной форме при продаже"
   * ^designation[+].language = #en
   * ^designation[=].value = "Food in powder form as sold"
 
-* #subname_0012_0058 "Suyuq shakldagi oziq-ovqat mahsuloti sotuvga qo'yilganda"
+* #sbnam-0012-00033 "Suyuq shakldagi oziq-ovqat mahsuloti sotuvga qo'yilganda"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пищевой продукт в жидкой форме при продаже"
   * ^designation[+].language = #en
   * ^designation[=].value = "Food in liquid form as sold"
 
-* #subname_0012_0060 "Tunuka idishda oziq-ovqat mahsulotlari"
+* #sbnam-0012-00034 "Meva sharbatlari hamda ishlab chiqaruvchining yo'riqnomalariga muvofiq qayta ishlanadigan"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Фруктовые соки, перерабатываемые в соответствии с инструкциями производителя"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fruit juices processed according to the manufacturer's instructions"
+
+* #sbnam-0012-00035 "Tunuka idishda oziq-ovqat mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пищевые продукты в жестяной банке"
   * ^designation[+].language = #en
   * ^designation[=].value = "Food in tin cans"
 
-* #subname_0012_0061 "Tunuka idishdagi qo'shimcha oziq-ovqat mahsulotlari"
+* #sbnam-0012-00036 "Tunuka idishdagi qo'shimcha oziq-ovqat mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дополнительные пищевые продукты в жестяной банке"
   * ^designation[+].language = #en
   * ^designation[=].value = "Complementary foods in tin cans"
 
-* #subname_0012_0062 "Tarkibida o'simlik komponentlari va ularning preparatlari, shuningdek tarkibida propolis, ona suti, spirulina yoki ularning preparatlari bo'lgan oziq-ovqat qo'shimchalari"
+* #sbnam-0012-00037 "Tarkibida o'simlik komponentlari va ularning preparatlari, shuningdek tarkibida propolis, ona suti, spirulina yoki ularning preparatlari bo'lgan oziq-ovqat qo'shimchalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пищевые добавки, содержащие растительные компоненты и их препараты, а также прополис, материнское молоко, спирулину или их препараты"
   * ^designation[+].language = #en
   * ^designation[=].value = "Food supplements containing botanicals and their preparations, and propolis, royal jelly, spirulina or their preparations"
 
-* #subname_0012_0063 "Ichimliklar tayyorlash uchun o'simlik kelib chiqishiga ega bo'lgan oziq-ovqat kukunlari"
+* #sbnam-0012-00038 "Ichimliklar tayyorlash uchun o'simlik kelib chiqishiga ega bo'lgan oziq-ovqat kukunlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пищевые порошки растительного происхождения для приготовления напитков"
   * ^designation[+].language = #en
   * ^designation[=].value = "Plant-derived food powders for making drinks"
 
-* #subname_0012_0064 "Don tarkibli ingrediyentlarni o'z ichiga olmagan qo'shimcha ovqatlanish mahsulotlari"
+* #sbnam-0012-00039 "Don tarkibli ingrediyentlarni o'z ichiga olmagan qo'shimcha ovqatlanish mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дополнительные пищевые продукты, не содержащие зерновые ингредиенты"
   * ^designation[+].language = #en
   * ^designation[=].value = "Complementary foods without cereal ingredients"
 
-* #subname_0013_0002 "Yulduzli arpabodiyon (bad'yan)"
+* #sbnam-0013-00001 "Yulduzli arpabodiyon (bad'yan)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Бадьян (звёздчатый анис)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Star anise"
 
-* #subname_0013_0003 "Bulonli kubiklar"
+* #sbnam-0013-00002 "Bulonli kubiklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Бульонные кубики"
   * ^designation[+].language = #en
   * ^designation[=].value = "Stock cubes"
 
-* #subname_0013_0004 "Bulon konsentratlari"
+* #sbnam-0013-00003 "Bulon konsentratlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Концентраты бульонов"
   * ^designation[+].language = #en
   * ^designation[=].value = "Broth concentrates"
 
-* #subname_0013_0007 "Vanil shakar"
+* #sbnam-0013-00004 "Vanil shakar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ванильный сахар"
   * ^designation[+].language = #en
   * ^designation[=].value = "Vanilla sugar"
 
-* #subname_0013_0011 "Achitqi ekstraktlari"
+* #sbnam-0013-00005 "Achitqi ekstraktlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дрожжевые экстракты"
   * ^designation[+].language = #en
   * ^designation[=].value = "Yeast extracts"
 
-* #subname_0013_0012 "O'simlik oqsili gidrolizatlari"
+* #sbnam-0013-00006 "O'simlik oqsili gidrolizatlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Гидролизаты растительного белка"
   * ^designation[+].language = #en
   * ^designation[=].value = "Hydrolysed vegetable proteins"
 
-* #subname_0013_0022 "Tayyor marinad (go'sht uchun)"
+* #sbnam-0013-00007 "Hind zirasi (kumin)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Зира индийская (кумин)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Indian cumin (cumin)"
+
+* #sbnam-0013-00008 "Maydalangan holatidagi dolchin"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Корица молотая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ground cinnamon"
+
+* #sbnam-0013-00009 "Tayoqcha holatidagi dolchin"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Корица в палочках"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cinnamon sticks"
+
+* #sbnam-0013-00010 "Quritilgan, maydalangan zarchava"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Куркума сушёная молотая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dried ground turmeric"
+
+* #sbnam-0013-00011 "Tayyor marinad (go'sht uchun)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Маринад готовый (Для мяса)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready marinade (for meat)"
 
-* #subname_0013_0023 "Tayyor marinad (baliq uchun)"
+* #sbnam-0013-00012 "Tayyor marinad (baliq uchun)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Маринад готовый (Рыбы)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready marinade (for fish)"
 
-* #subname_0013_0040 "Qo'shimchali tuz (O'tlar)"
+* #sbnam-0013-00013 "Muskat yong'og'i (Butun)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мускатный орех (Целый)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Nutmeg (whole)"
+
+* #sbnam-0013-00014 "Muskat yong'og'i (Maydalangan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мускатный орех (Молотый)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Nutmeg (ground)"
+
+* #sbnam-0013-00015 "Oq qalampir (Don)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Перец белый (Горошек)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "White pepper (whole)"
+
+* #sbnam-0013-00016 "Oq qalampir (Maydalangan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Перец белый (Молотый)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "White pepper (ground)"
+
+* #sbnam-0013-00017 "Qora qalampir (Don)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Перец чёрный (Горошек)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Black pepper (whole)"
+
+* #sbnam-0013-00018 "Qora qalampir (Maydalangan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Перец чёрный (Молотый)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Black pepper (ground)"
+
+* #sbnam-0013-00019 "Xantal urug'i (ziravor)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Семена горчицы (приправа)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mustard seed (seasoning)"
+
+* #sbnam-0013-00020 "Iste'mol tuzi (Oshxona)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соль пищевая (Поваренная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Food salt (table salt)"
+
+* #sbnam-0013-00021 "Iste'mol tuzi (Ekstra)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соль пищевая (Экстра)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Food salt (extra)"
+
+* #sbnam-0013-00022 "Iste'mol tuzi (Yodlangan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соль пищевая (Йодированная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Food salt (iodised)"
+
+* #sbnam-0013-00023 "Iste'mol tuzi (Dengiz tuzi)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соль пищевая (Морская)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Food salt (sea salt)"
+
+* #sbnam-0013-00024 "Qo'shimchali tuz (O'tlar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Соль с добавками (С травами)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Salt with additives (with herbs)"
 
-* #subname_0013_0041 "Qo'shimchali tuz (Ziravorlar bilan)"
+* #sbnam-0013-00025 "Qo'shimchali tuz (Ziravorlar bilan)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Соль с добавками (Специями)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Salt with additives (with spices)"
 
-* #subname_0013_0042 "Tkemali souslari"
+* #sbnam-0013-00026 "Tkemali souslari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Соус ткемали"
   * ^designation[+].language = #en
   * ^designation[=].value = "Tkemali sauce"
 
-* #subname_0013_0043 "Satsebeli souslari"
+* #sbnam-0013-00027 "Satsebeli souslari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Соус Сацебели"
   * ^designation[+].language = #en
   * ^designation[=].value = "Satsebeli sauce"
 
-* #subname_0013_0044 "Ustritsa souslari"
+* #sbnam-0013-00028 "Ustritsa souslari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Соус устричный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Oyster sauce"
 
-* #subname_0013_0045 "Baliq (tay) souslari"
+* #sbnam-0013-00029 "Baliq (tay) souslari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыбный (тайский)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fish sauce (Thai)"
 
-* #subname_0013_0056 "Ziravor sifatida quritilgan rezavor va mevalar (Mojjevelnik)"
+* #sbnam-0013-00030 "Salat souslari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соусы салатные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Salad sauces"
+
+* #sbnam-0013-00031 "Dressinglar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Дрессинги"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dressings"
+
+* #sbnam-0013-00032 "Quritilgan o'tlar: rayhon"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сушёные травы: базилик"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dried herbs: basil"
+
+* #sbnam-0013-00033 "Timyan"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Тимьян"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Thyme"
+
+* #sbnam-0013-00034 "Rozmarin"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Розмарин"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rosemary"
+
+* #sbnam-0013-00035 "Quritilgan o'tlar: ukrop"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сушёные травы: укроп"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dried herbs: dill"
+
+* #sbnam-0013-00036 "Yalpiz"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мята"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mint"
+
+* #sbnam-0013-00037 "Ziravor sifatida quritilgan rezavor va mevalar (Mojjevelnik)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сушёные ягоды и фрукты как пряности (Можжевельник)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried berries and fruits as spices (juniper)"
 
-* #subname_0013_0057 "Ziravor sifatida quritilgan rezavor va mevalar (Zirk)"
+* #sbnam-0013-00038 "Ziravor sifatida quritilgan rezavor va mevalar (Zirk)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сушёные ягоды и фрукты как пряности (Барбарис)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried berries and fruits as spices (barberry)"
 
-* #subname_0013_0058 "Ziravor sifatida quritilgan rezavor va mevalar (Sumax)"
+* #sbnam-0013-00039 "Ziravor sifatida quritilgan rezavor va mevalar (Sumax)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сушёные ягоды и фрукты как пряности (Сумах)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried berries and fruits as spices (sumac)"
 
-* #subname_0013_0061 "Olma uksusi"
+* #sbnam-0013-00040 "Sedana (zira) urug'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Тмин (зира) семена"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Caraway (zira) seeds"
+
+* #sbnam-0013-00041 "Stol uksusi (sintetik)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Уксус столовый (синтетический)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Table vinegar (synthetic)"
+
+* #sbnam-0013-00042 "Olma uksusi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Уксус яблочный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Apple cider vinegar"
 
-* #subname_0013_0067 "Xmeli-suneli"
+* #sbnam-0013-00043 "Balzamik uksusi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Уксус бальзамический"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Balsamic vinegar"
+
+* #sbnam-0013-00044 "Guruch uksusi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Уксус рисовый"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rice vinegar"
+
+* #sbnam-0013-00045 "Xmeli-suneli"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хмели-сунели"
   * ^designation[+].language = #en
   * ^designation[=].value = "Khmeli-suneli"
 
-* #subname_0013_0068 "Quruq ajika"
+* #sbnam-0013-00046 "Quruq ajika"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Аджика сухая"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dry adjika"
 
-* #subname_0013_0069 "Chimichurri"
+* #sbnam-0013-00047 "Chimichurri"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Чимичурри"
   * ^designation[+].language = #en
   * ^designation[=].value = "Chimichurri"
 
-* #subname_0013_0072 "ziravorlar urug'i"
+* #sbnam-0013-00048 "ziravorlar urug'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "семена специй"
   * ^designation[+].language = #en
   * ^designation[=].value = "Spice seeds"
 
-* #subname_0013_0073 "mevali ziravorlar"
+* #sbnam-0013-00049 "mevali ziravorlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "плодовые специи"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruit spices"
 
-* #subname_0013_0074 "Burachnik"
+* #sbnam-0013-00050 "Burachnik"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Бурачник"
   * ^designation[+].language = #en
   * ^designation[=].value = "Borage"
 
-* #subname_0013_0076 "Po'stloqdan tayyorlangan ziravorlar"
+* #sbnam-0013-00051 "Po'stloqdan tayyorlangan ziravorlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пряности из коры"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bark spices"
 
-* #subname_0013_0077 "Ildiz va ildizpoyadan tayyorlangan ziravorlar"
+* #sbnam-0013-00052 "Ildiz va ildizpoyadan tayyorlangan ziravorlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пряности из корней и корневищ"
   * ^designation[+].language = #en
   * ^designation[=].value = "Root and rhizome spices"
 
-* #subname_0013_0078 "Shonali ziravorlar"
+* #sbnam-0013-00053 "Shonali ziravorlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Зерновые пряности"
   * ^designation[+].language = #en
   * ^designation[=].value = "Grain spices"
 
-* #subname_0013_0079 "Gul urug'idan tayyorlangan ziravorlar"
+* #sbnam-0013-00054 "Gul urug'idan tayyorlangan ziravorlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пряности из семян цветов"
   * ^designation[+].language = #en
   * ^designation[=].value = "Flower seed spices"
 
-* #subname_0013_0080 "Oziq-ovqat qo'shimchalari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Пищевые добавки"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Food additives"
-
-* #subname_0013_0083 "Kislota yordamida gidrolizlangan o'simlik oqsillarini o'z ichiga olgan suyuq ziravorlar"
+* #sbnam-0013-00055 "Kislota yordamida gidrolizlangan o'simlik oqsillarini o'z ichiga olgan suyuq ziravorlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Жидкие пряности, содержащие растительные белки, гидролизованные кислотой"
   * ^designation[+].language = #en
   * ^designation[=].value = "Liquid seasonings containing acid-hydrolysed vegetable protein"
 
-* #subname_0014_0001 "Baliq balig'i"
+* #sbnam-0014-00001 "Baliq balig'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Балык рыбный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cured fish (balyk)"
 
-* #subname_0014_0002 "Qorin oyoqli mollyuskalar (chig'anoqlar)"
+* #sbnam-0014-00002 "Qorin oyoqli mollyuskalar (chig'anoqlar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Брюхоногие моллюски (улитки)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Gastropod molluscs (snails)"
 
-* #subname_0014_0027 "Dengiz tipratikani va trepanglar"
+* #sbnam-0014-00003 "Iste'molga tayyor qisqichbaqasimonlar va mollyuskalar (Tozalangan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовые к употреблению ракообразные и моллюски (Очищенные)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready-to-eat crustaceans and molluscs (peeled)"
+
+* #sbnam-0014-00004 "Iste'molga tayyor qisqichbaqasimonlar va mollyuskalar (Qobig'isiz)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Готовые к употреблению ракообразные и моллюски (Без раковин)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready-to-eat crustaceans and molluscs (shell removed)"
+
+* #sbnam-0014-00005 "Qizil baliq ikrasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Икра лососёвых рыб (красная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Salmon roe (red caviar)"
+
+* #sbnam-0014-00006 "Bekra balig'i ikrasi (qora)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Икра осетровых рыб (чёрная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Sturgeon roe (black caviar)"
+
+* #sbnam-0014-00007 "Boshqa baliq turlari ikrasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Икра прочих видов рыб"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Roe of other fish species"
+
+* #sbnam-0014-00008 "Karpsimon baliqlar (Karp)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Карповые (Карп)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cyprinids (carp)"
+
+* #sbnam-0014-00009 "Karpsimon baliqlar (Sazan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Карповые (Сазан)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cyprinids (wild carp)"
+
+* #sbnam-0014-00010 "Karpsimon baliqlar (Oqcha)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Карповые (Толстолобик)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cyprinids (silver carp)"
+
+* #sbnam-0014-00011 "Karpsimon baliqlar (Oq amur)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Карповые (Белый амур)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cyprinids (grass carp)"
+
+* #sbnam-0014-00012 "Yog'dagi baliq konservalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Консервы рыбные в масле"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Canned fish in oil"
+
+* #sbnam-0014-00013 "Pomidor sousidagi baliq konservalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Консервы рыбные в томатном соусе"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Canned fish in tomato sauce"
+
+* #sbnam-0014-00014 "Tabiiy baliq konservalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Консервы рыбные натуральные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Canned fish in its own juice"
+
+* #sbnam-0014-00015 "Qaynatib muzlatilgan qisqichbaqalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Креветки варёно-мороженые"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cooked frozen shrimp"
+
+* #sbnam-0014-00016 "Muzlatilgan qisqichbaqalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Креветки свежемороженые"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh frozen shrimp"
+
+* #sbnam-0014-00017 "Iste'mol uchun dengiz suvo'tlari (Laminariya)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Морские водоросли пищевые (Ламинария)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Edible seaweed (kelp)"
+
+* #sbnam-0014-00018 "Iste'mol uchun dengiz suvo'tlari (Nori)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Морские водоросли пищевые (Нори)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Edible seaweed (nori)"
+
+* #sbnam-0014-00019 "Iste'mol uchun dengiz suvo'tlari (Spirulina)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Морские водоросли пищевые (Спирулина)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Edible seaweed (spirulina)"
+
+* #sbnam-0014-00020 "Dengiz tipratikani va trepanglar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Морские ежи и трепанги"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sea urchins and sea cucumbers"
 
-* #subname_0014_0028 "Baliq jigari (treska va boshq.) va undan tayyorlangan mahsulotlar"
+* #sbnam-0014-00021 "Baliq jigari (treska va boshq.) va undan tayyorlangan mahsulotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Печень рыбная (треска и др.) и продукты из неё"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fish liver (cod and other) and its products"
 
-* #subname_0014_0031 "Baliq preserylari"
+* #sbnam-0014-00022 "Baliq yarimtayyor mahsulotlari (Kotletlar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Полуфабрикаты рыбные (Котлеты)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Semi-finished fish products (cutlets)"
+
+* #sbnam-0014-00023 "Baliq yarimtayyor mahsulotlari (Teftellar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Полуфабрикаты рыбные (Биточки)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Semi-finished fish products (patties)"
+
+* #sbnam-0014-00024 "Baliq preserylari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пресервы рыбные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fish preserves"
 
-* #subname_0014_0034 "Quritilgan baliq"
+* #sbnam-0014-00025 "Quritilgan baliq"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба вяленая"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried-cured fish"
 
-* #subname_0014_0035 "Bolalar oziq-ovqati uchun baliq va dengiz mahsulotlari"
+* #sbnam-0014-00026 "Bolalar oziq-ovqati uchun baliq va dengiz mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба и морепродукты для детского питания"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fish and seafood for infant food"
 
-* #subname_0014_0036 "Issiq dudlangan baliq"
+* #sbnam-0014-00027 "Issiq dudlangan baliq"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба копчёная горячего копчения"
   * ^designation[+].language = #en
   * ^designation[=].value = "Hot-smoked fish"
 
-* #subname_0014_0037 "Sovuq dudlangan baliq"
+* #sbnam-0014-00028 "Sovuq dudlangan baliq"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба копчёная холодного копчения"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cold-smoked fish"
 
-* #subname_0014_0044 "Bekrabaliq turlari (Bekra)"
+* #sbnam-0014-00029 "Qizil baliq turlari (Losos)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рыба лососёвых пород (Лосось)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Salmonid fish (salmon)"
+
+* #sbnam-0014-00030 "Qizil baliq turlari (Keta)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рыба лососёвых пород (Кета)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Salmonid fish (chum salmon)"
+
+* #sbnam-0014-00031 "Qizil baliq turlari (Gorbusha)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рыба лососёвых пород (Горбуша)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Salmonid fish (pink salmon)"
+
+* #sbnam-0014-00032 "Muzlatilgan dengiz balig'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рыба морская замороженная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen sea fish"
+
+* #sbnam-0014-00033 "Yangi (sovutilgan) dengiz balig'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рыба морская свежая (охлаждённая)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh (chilled) sea fish"
+
+* #sbnam-0014-00034 "Bekrabaliq turlari (Bekra)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба осетровых пород (Осётр)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sturgeon fish (sturgeon)"
 
-* #subname_0014_0045 "Bekrabaliq turlari (Beluga)"
+* #sbnam-0014-00035 "Bekrabaliq turlari (Beluga)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба осетровых пород (Белуга)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sturgeon fish (beluga)"
 
-* #subname_0014_0046 "Bekrabaliq turlari (Sterlyad)"
+* #sbnam-0014-00036 "Bekrabaliq turlari (Sterlyad)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба осетровых пород (Стерлядь)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sturgeon fish (sterlet)"
 
-* #subname_0014_0054 "Tuzlangan baliq"
+* #sbnam-0014-00037 "Tirik chuchuk suv balig'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рыба пресноводная живая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Live freshwater fish"
+
+* #sbnam-0014-00038 "Muzlatilgan chuchuk suv balig'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рыба пресноводная замороженная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen freshwater fish"
+
+* #sbnam-0014-00039 "Yangi (sovutilgan) chuchuk suv balig'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рыба пресноводная свежая (охлаждённая)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh (chilled) freshwater fish"
+
+* #sbnam-0014-00040 "Seld turlari (Anchous)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рыба сельдевая (Анчоус)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Herring-type fish (anchovy)"
+
+* #sbnam-0014-00041 "Tuzlangan baliq"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба солёная"
   * ^designation[+].language = #en
   * ^designation[=].value = "Salted fish"
 
-* #subname_0014_0055 "Quritilgan (suvsiz) baliq"
+* #sbnam-0014-00042 "Quritilgan (suvsiz) baliq"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба сушёная"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried fish"
 
-* #subname_0014_0058 "Tunyets turlari (Bonito)"
+* #sbnam-0014-00043 "Tunyets turlari (Tunyets)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рыба тунцовая (Тунец)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Tuna fish (tuna)"
+
+* #sbnam-0014-00044 "Tunyets turlari (Bonito)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба тунцовая (Бонито)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Tuna fish (bonito)"
 
-* #subname_0014_0059 "Yirtqich baliq (Cho'rtan)"
+* #sbnam-0014-00045 "Yirtqich baliq (Cho'rtan)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба хищная (Щука)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Predatory fish (pike)"
 
-* #subname_0014_0060 "Yirtqich baliq (Oqcha)"
+* #sbnam-0014-00046 "Yirtqich baliq (Oqcha)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба хищная (Судак)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Predatory fish (zander)"
 
-* #subname_0014_0061 "Yirtqich baliq (Olabug'a)"
+* #sbnam-0014-00047 "Yirtqich baliq (Olabug'a)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба хищная (Окунь)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Predatory fish (perch)"
 
-* #subname_0014_0063 "Baliqli pelmen va xinkali"
+* #sbnam-0014-00048 "Iste'mol uchun baliq moyi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рыбий жир пищевой"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Edible fish oil"
+
+* #sbnam-0014-00049 "Baliqli pelmen va xinkali"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыбные пельмени и хинкали"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fish pelmeni and khinkali"
 
-* #subname_0014_0064 "Baliq qiymasi"
+* #sbnam-0014-00050 "Baliq qiymasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыбный фарш"
   * ^designation[+].language = #en
   * ^designation[=].value = "Minced fish"
 
-* #subname_0014_0065 "Baliqli yengil gazaklar (Chips)"
+* #sbnam-0014-00051 "Baliqli yengil gazaklar (Chips)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Снеки рыбные (Стружка)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fish snacks (shavings)"
 
-* #subname_0014_0066 "Baliqli yengil gazaklar (Qirilgan)"
+* #sbnam-0014-00052 "Baliqli yengil gazaklar (Qirilgan)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Снеки рыбные (Чипсы)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fish snacks (chips)"
 
-* #subname_0015_0002 "Sharqona shirinliklar (Navvot)"
+* #sbnam-0014-00053 "Muzlatilgan baliq filesi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Филе рыбное замороженное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen fish fillet"
+
+* #sbnam-0014-00054 "Sovutilgan baliq filesi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Филе рыбное охлаждённое"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Chilled fish fillet"
+
+* #sbnam-0014-00055 "Baliq go'shti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рыбное мясо"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fish meat"
+
+* #sbnam-0014-00056 "O'q tunets"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Фрегатовый тунец"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frigate tuna"
+
+* #sbnam-0014-00057 "Anchoz baliq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Анчоус рыба"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Anchovy fish"
+
+* #sbnam-0015-00001 "Sharqona shirinliklar (Navvot)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Восточные сладости (Нават)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Oriental sweets (navat)"
 
-* #subname_0015_0003 "Sharqona shirinliklar (Parvarda)"
+* #sbnam-0015-00002 "Sharqona shirinliklar (Parvarda)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Восточные сладости (Парварда)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Oriental sweets (parvarda)"
 
-* #subname_0015_0005 "Sharqona shirinliklar (Kozinak)"
+* #sbnam-0015-00003 "Sharqona shirinliklar (Kozinak)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Восточные сладости (Козинаки)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Oriental sweets (kozinaki)"
 
-* #subname_0015_0007 "Shokolad glazurlari"
+* #sbnam-0015-00004 "Shokolad glazurlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Глазури шоколадные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Chocolate glazes"
 
-* #subname_0015_0010 "Draje"
+* #sbnam-0015-00005 "Iste'mol glyukozasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Глюкоза пищевая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Food glucose"
+
+* #sbnam-0015-00006 "Dekstroza"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Декстроза"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dextrose"
+
+* #sbnam-0015-00007 "Draje"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Драже"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dragees"
 
-* #subname_0015_0011 "Marmelad"
+* #sbnam-0015-00008 "Marmelad"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мармелад"
   * ^designation[+].language = #en
   * ^designation[=].value = "Marmalade"
 
-* #subname_0015_0012 "Saqich"
+* #sbnam-0015-00009 "Saqich"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Жевательная резинка"
   * ^designation[+].language = #en
   * ^designation[=].value = "Chewing gum"
 
-* #subname_0015_0013 "Qovurilgan tsikoriy va undan tayyorlangan mahsulotlar"
+* #sbnam-0015-00010 "Qovurilgan tsikoriy va undan tayyorlangan mahsulotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Зерно цикория обжаренное и продукты из него"
   * ^designation[+].language = #en
   * ^designation[=].value = "Roasted chicory and its products"
 
-* #subname_0015_0016 "Maydalangan kakao"
+* #sbnam-0015-00011 "Iris"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Ирис"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Iris toffee"
+
+* #sbnam-0015-00012 "Toffi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Тоффи"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Toffee"
+
+* #sbnam-0015-00013 "Maydalangan kakao"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Какао тёртое"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cocoa liquor"
 
-* #subname_0015_0017 "Kakao donalari"
+* #sbnam-0015-00014 "Kakao donalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Какао-бобы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cocoa beans"
 
-* #subname_0015_0019 "Kakao kukuni"
+* #sbnam-0015-00015 "Kakao kukuni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Какао-порошок"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cocoa powder"
 
-* #subname_0015_0020 "Kakao qobig'i"
+* #sbnam-0015-00016 "Kakao qobig'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Какаовелла"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cocoa shells"
 
-* #subname_0015_0031 "Pastila"
+* #sbnam-0015-00017 "Ona suti"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Маточное молочко"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Royal jelly"
+
+* #sbnam-0015-00018 "Monoflyor asal"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мёд монофлёрный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Monofloral honey"
+
+* #sbnam-0015-00019 "Poliflyor asal"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мёд полифлёрный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Polyfloral honey"
+
+* #sbnam-0015-00020 "Tabiiy asal (Gul)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мёд натуральный пчелиный (Цветочный)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Natural bee honey (flower)"
+
+* #sbnam-0015-00021 "Tabiiy asal (Grechka)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мёд натуральный пчелиный (Гречишный)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Natural bee honey (buckwheat)"
+
+* #sbnam-0015-00022 "Tabiiy asal (Jo'ka va boshq.)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мёд натуральный пчелиный (Липовый и др.)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Natural bee honey (linden and other)"
+
+* #sbnam-0015-00023 "Pad asali"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мёд падевый"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Honeydew honey"
+
+* #sbnam-0015-00024 "Pastila"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пастила"
   * ^designation[+].language = #en
   * ^designation[=].value = "Pastila"
 
-* #subname_0015_0034 "Perga"
+* #sbnam-0015-00025 "Kraxmal patokasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Патока крахмальная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Starch syrup"
+
+* #sbnam-0015-00026 "Perga"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Перга"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bee bread"
 
-* #subname_0015_0036 "Tabiiy shirinlashtirgichlar (Steviya)"
+* #sbnam-0015-00027 "Gul changi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пыльца цветочная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Flower pollen"
+
+* #sbnam-0015-00028 "Tabiiy shirinlashtirgichlar (Steviya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Подсластители натуральные (Стевия)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Natural sweeteners (stevia)"
 
-* #subname_0015_0037 "Tabiiy shirinlashtirgichlar (Eritrit)"
+* #sbnam-0015-00029 "Tabiiy shirinlashtirgichlar (Eritrit)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Подсластители натуральные (Эритрит)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Natural sweeteners (erythritol)"
 
-* #subname_0015_0042 "Sintetik shirinlashtirgichlar (Tsiklamat)"
+* #sbnam-0015-00030 "Sintetik shirinlashtirgichlar (Tsiklamat)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Подсластители синтетические (Цикламат)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Synthetic sweeteners (cyclamate)"
 
-* #subname_0015_0043 "Pomadkalar va to'ldirgichlar"
+* #sbnam-0015-00031 "Pomadkalar va to'ldirgichlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Помадные массы и начинки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fondant masses and fillings"
 
-* #subname_0015_0057 "Sukatlar"
+* #sbnam-0015-00032 "Propolis"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Прополис"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Propolis"
+
+* #sbnam-0015-00033 "Lavlagidan olingan shakar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сахар свекловичный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Beet sugar"
+
+* #sbnam-0015-00034 "Rafinatlanmagan shakar (xom)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сахар сырец (нерафинированный)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Raw sugar (unrefined)"
+
+* #sbnam-0015-00035 "Oq shakar (qum)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сахар-песок белый"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "White granulated sugar"
+
+* #sbnam-0015-00036 "Shakar-rafinad (Bo'lakli)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сахар-рафинад (Кусковой)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Refined sugar (lump)"
+
+* #sbnam-0015-00037 "Shakar-rafinad (Presslangan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сахар-рафинад (Прессованный)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Refined sugar (pressed)"
+
+* #sbnam-0015-00038 "Agava qiyomi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сироп агавы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Agave syrup"
+
+* #sbnam-0015-00039 "Invert qiyomi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сироп инвертный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Invert syrup"
+
+* #sbnam-0015-00040 "Makkajo'xori qiyomi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сироп кукурузный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Corn syrup"
+
+* #sbnam-0015-00041 "Shakarli o'rik qoqisi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Урюк сахарный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Sweet dried apricots (uryuk)"
+
+* #sbnam-0015-00042 "Sukatlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Цукаты"
   * ^designation[+].language = #en
   * ^designation[=].value = "Candied fruit peel (sukaty)"
 
-* #subname_0015_0066 "Kakao tolasi"
+* #sbnam-0015-00043 "Achchiq shokolad"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Шоколад горький"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Bitter chocolate"
+
+* #sbnam-0015-00044 "Qora shokolad"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Шоколад тёмный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dark chocolate"
+
+* #sbnam-0015-00045 "Sutli shokolad"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Шоколад молочный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Milk chocolate"
+
+* #sbnam-0015-00046 "Rafinirlangan shakar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рафинированный сахар"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Refined sugar"
+
+* #sbnam-0015-00047 "Kakao tolasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Какао волокно"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cocoa fibre"
 
-* #subname_0016_0001 "Aminokislotali kompleksli BAQ"
+* #sbnam-0015-00048 "Kakao miqdori kamida ellik foiz bo'lgan shokolad"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Шоколад с содержанием какао не менее пятидесяти процентов"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Chocolate with at least fifty percent cocoa"
+
+* #sbnam-0015-00049 "Kakao miqdori kamida yetmish foiz bo'lgan shokolad"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Шоколад с содержанием какао не менее семидесяти процентов"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Chocolate with at least seventy percent cocoa"
+
+* #sbnam-0015-00050 "Qand"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сахар"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Sugar"
+
+* #sbnam-0015-00051 "Kakao miqdori kamida o'ttiz foiz bo'lgan sutli shokolad"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Молочный шоколад с содержанием какао не менее тридцати процентов"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Milk chocolate with at least thirty percent cocoa"
+
+* #sbnam-0016-00001 "Aminokislotali kompleksli BAQ"
   * ^designation[0].language = #ru
   * ^designation[=].value = "БАД к пище аминокислотные комплексы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Amino acid complex dietary supplements"
 
-* #subname_0016_0002 "Vitamin-mineral kompleksli BAQ"
+* #sbnam-0016-00002 "Vitamin-mineral kompleksli BAQ"
   * ^designation[0].language = #ru
   * ^designation[=].value = "БАД к пище витаминно-минеральные комплексы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Vitamin and mineral complex dietary supplements"
 
-* #subname_0016_0004 "Suvo'tlar asosidagi BAQ (Xlorella)"
+* #sbnam-0016-00003 "Suvo'tlar asosidagi BAQ (Spirulina)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "БАД к пище на основе водорослей (Спирулина)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dietary supplement based on algae (spirulina)"
+
+* #sbnam-0016-00004 "Suvo'tlar asosidagi BAQ (Xlorella)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "БАД к пище на основе водорослей (Хлорелла)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Algae-based dietary supplements (chlorella)"
 
-* #subname_0016_0005 "Suvo'tlar asosidagi BAQ (Laminariya)"
+* #sbnam-0016-00005 "Suvo'tlar asosidagi BAQ (Laminariya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "БАД к пище на основе водорослей (Ламинария)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Algae-based dietary supplements (kelp)"
 
-* #subname_0016_0011 "O'simlik asosidagi oziq-ovqat qo'shimchalari (Fitopreparatlar)"
+* #sbnam-0016-00006 "Asalarichilik mahsulotlari asosidagi BAQ (Propolis)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "БАД к пище на основе пчелопродуктов (Прополис)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dietary supplement based on bee products (propolis)"
+
+* #sbnam-0016-00007 "Asalarichilik mahsulotlari asosidagi BAQ (Ona suti)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "БАД к пище на основе пчелопродуктов (Маточное молочко)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dietary supplement based on bee products (royal jelly)"
+
+* #sbnam-0016-00008 "Asalarichilik mahsulotlari asosidagi BAQ (Gul changi)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "БАД к пище на основе пчелопродуктов (Пыльца)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dietary supplement based on bee products (pollen)"
+
+* #sbnam-0016-00009 "Baliq yog'i asosidagi BAQ (Gul changi)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "БАД к пище на основе рыбьего жира"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dietary supplement based on fish oil"
+
+* #sbnam-0016-00010 "O'simlik asosidagi oziq-ovqat qo'shimchalari (Fitopreparatlar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "БАД к пище на растительной основе (Фитопрепараты)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Plant-based dietary supplements (herbal preparations)"
 
-* #subname_0016_0012 "O'simlik asosidagi oziq-ovqat qo'shimchalari (Ekstraktlar)"
+* #sbnam-0016-00011 "O'simlik asosidagi oziq-ovqat qo'shimchalari (Ekstraktlar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "БАД к пище на растительной основе (Экстракты)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Plant-based dietary supplements (extracts)"
 
-* #subname_0016_0013 "Probiotik asosidagi oziq-ovqat qo'shimchalari"
+* #sbnam-0016-00012 "Probiotik asosidagi oziq-ovqat qo'shimchalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "БАД к пище пробиотики"
   * ^designation[+].language = #en
   * ^designation[=].value = "Probiotic dietary supplements"
 
-* #subname_0016_0014 "Prebiotik BAQ"
+* #sbnam-0016-00013 "Prebiotik BAQ"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пребиотики БАД"
   * ^designation[+].language = #en
   * ^designation[=].value = "Prebiotic dietary supplements"
 
-* #subname_0016_0015 "Simbiotik BAQ"
+* #sbnam-0016-00014 "Simbiotik BAQ"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Симбиотики БАД"
   * ^designation[+].language = #en
   * ^designation[=].value = "Synbiotic dietary supplements"
 
-* #subname_0016_0016 "Kattalar uchun parhez (davo-profilaktik) ovqatlanish"
+* #sbnam-0016-00015 "Kattalar uchun parhez (davo-profilaktik) ovqatlanish"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Диетическое (лечебное и профилактическое) питание для взрослых"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dietary (therapeutic and preventive) nutrition for adults"
 
-* #subname_0016_0018 "Oziq-ovqat o'rnini bosuvchilar (mil-shake)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Заменители пищи (мил-шейки)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Meal replacements (meal shakes)"
-
-* #subname_0016_0019 "Boyitilgan (funksional) oziq-ovqat mahsulotlari"
+* #sbnam-0016-00016 "Boyitilgan (funksional) oziq-ovqat mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Обогащённые (функциональные) пищевые продукты"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fortified (functional) foods"
 
-* #subname_0016_0020 "Fenilketonuriya va boshqa irsiy buzilishlarli odamlar uchun oziqlanish"
+* #sbnam-0016-00017 "Fenilketonuriya va boshqa irsiy buzilishlarli odamlar uchun oziqlanish"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Питание для людей с фенилкетонурией и др. наследственными нарушениями"
   * ^designation[+].language = #en
   * ^designation[=].value = "Foods for people with phenylketonuria and other inherited disorders"
 
-* #subname_0016_0021 "Glyutensiz maxsus mahsulotlar"
+* #sbnam-0016-00018 "Glyutensiz maxsus mahsulotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Продукты безглютеновые специализированные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Specialised gluten-free products"
 
-* #subname_0016_0022 "Laktozasiz maxsus mahsulotlar"
+* #sbnam-0016-00019 "Laktozasiz maxsus mahsulotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Продукты безлактозные специализированные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Specialised lactose-free products"
 
-* #subname_0016_0023 "Diabet bilan kasallanganlar uchun (shakar o'rnini bosuvchilar bilan) mahsulotlar"
+* #sbnam-0016-00020 "Diabet bilan kasallanganlar uchun (shakar o'rnini bosuvchilar bilan) mahsulotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Продукты для питания людей с диабетом (с сахарозаменителями)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Foods for people with diabetes (with sugar substitutes)"
 
-* #subname_0016_0024 "Sport ovqatlanishi: BCAA"
+* #sbnam-0016-00021 "Sport ovqatlanishi: BCAA"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Спортивное питание: BCAA"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sports nutrition: BCAA"
 
-* #subname_0016_0025 "Aminokislota aralashmalari"
+* #sbnam-0016-00022 "Aminokislota aralashmalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Аминокислотные смеси"
   * ^designation[+].language = #en
   * ^designation[=].value = "Amino acid mixes"
 
-* #subname_0016_0026 "Sport ovqatlanishi: energetik batonchiklar"
+* #sbnam-0016-00023 "Sport ovqatlanishi: energetik batonchiklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Спортивное питание: батончики энергетические"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sports nutrition: energy bars"
 
-* #subname_0016_0027 "Sport ovqatlanishi: oqsilli batonchiklar"
+* #sbnam-0016-00024 "Sport ovqatlanishi: oqsilli batonchiklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Спортивное питание: Протеиновые батончики"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sports nutrition: protein bars"
 
-* #subname_0016_0028 "Sport ovqatlanishi: geyner"
+* #sbnam-0016-00025 "Sport ovqatlanishi: geyner"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Спортивное питание: гейнеры"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sports nutrition: gainers"
 
-* #subname_0016_0029 "Uglevod-oqsil aralashmalari"
+* #sbnam-0016-00026 "Uglevod-oqsil aralashmalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Углеводно-белковые смеси"
   * ^designation[+].language = #en
   * ^designation[=].value = "Carbohydrate-protein mixes"
 
-* #subname_0016_0033 "Sport ovqatlanishi: oqsillar (Konsentrat)"
+* #sbnam-0016-00027 "Sport ovqatlanishi: oqsillar (Konsentrat)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Спортивное питание: протеины (Концентраты)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sports nutrition: proteins (concentrates)"
 
-* #subname_0016_0034 "Sport ovqatlanishi: oqsillar (Izolyat)"
+* #sbnam-0016-00028 "Sport ovqatlanishi: oqsillar (Izolyat)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Спортивное питание: протеины (Изоляты)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sports nutrition: proteins (isolates)"
 
-* #subname_0016_0035 "Sport ovqatlanishi: oqsillar (Gidrolizat)"
+* #sbnam-0016-00029 "Sport ovqatlanishi: oqsillar (Gidrolizat)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Спортивное питание: протеины (Гидролизаты)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sports nutrition: proteins (hydrolysates)"
 
-* #subname_0016_0036 "Maxsus tibbiy maqsadlardagi quruq aralashmalar"
+* #sbnam-0016-00030 "Maxsus tibbiy maqsadlardagi quruq aralashmalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сухие смеси для специальных медицинских целей"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dry formulas for special medical purposes"
 
-* #subname_0016_0037 "Enteral ovqatlanish (maxsus tibbiy mahsulotlar)"
+* #sbnam-0016-00031 "Enteral ovqatlanish (maxsus tibbiy mahsulotlar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Энтеральное питание (специализированные мед. продукты)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Enteral nutrition (specialised medical products)"
 
-* #subname_0017_0009 "Banan chiplari"
+* #sbnam-0017-00001 "Banan chiplari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Чипсы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Banana chips"
 
-* #subname_0017_0010 "Zirk (barbaris)"
+* #sbnam-0017-00002 "Zirk (barbaris)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Барбарис"
   * ^designation[+].language = #en
   * ^designation[=].value = "Barberry"
 
-* #subname_0017_0011 "Bergamot"
+* #sbnam-0017-00003 "Bergamot"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Бергамот"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bergamot"
 
-* #subname_0017_0012 "Kafir-laym mevalari"
+* #sbnam-0017-00004 "Kafir-laym mevalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кафир-лайм (плоды)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Kaffir lime (fruit)"
 
-* #subname_0017_0014 "Brusnika"
+* #sbnam-0017-00005 "Do'lana"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Боярышник"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hawthorn"
+
+* #sbnam-0017-00006 "Brusnika"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Брусника"
   * ^designation[+].language = #en
   * ^designation[=].value = "Lingonberry"
 
-* #subname_0017_0020 "Meva marmeladi"
+* #sbnam-0017-00007 "Murabbo"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Варенье"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Varenye (fruit preserve)"
+
+* #sbnam-0017-00008 "Jem"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Джем"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Jam"
+
+* #sbnam-0017-00009 "Povidlo"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Повидло"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Povidlo (fruit butter)"
+
+* #sbnam-0017-00010 "Konfityur"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Конфитюр"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Confiture"
+
+* #sbnam-0017-00011 "Meva marmeladi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мармелад фруктовый"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruit marmalade"
 
-* #subname_0017_0024 "Godji"
+* #sbnam-0017-00012 "Stol uzumi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Виноград столовый"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Table grapes"
+
+* #sbnam-0017-00013 "Texnik uzum (vino uchun)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Виноград технический (для вина)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Wine grapes"
+
+* #sbnam-0017-00014 "Yangi Olcha"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вишня свежая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh sour cherries"
+
+* #sbnam-0017-00015 "Godji"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Годжи"
   * ^designation[+].language = #en
   * ^designation[=].value = "Goji"
 
-* #subname_0017_0031 "Drakon mevasi (pitaxaya)"
+* #sbnam-0017-00016 "Drakon mevasi (pitaxaya)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Драконий фрукт (питахайя)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dragon fruit (pitahaya)"
 
-* #subname_0017_0032 "Duriyan"
+* #sbnam-0017-00017 "Duriyan"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дуриан"
   * ^designation[+].language = #en
   * ^designation[=].value = "Durian"
 
-* #subname_0017_0035 "Meva jelesi"
+* #sbnam-0017-00018 "Meva jelesi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Желе фруктовое"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruit jelly"
 
-* #subname_0017_0036 "Muzlatilgan meva va rezavorlar"
+* #sbnam-0017-00019 "Muzlatilgan meva va rezavorlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Замороженные фрукты и ягоды"
   * ^designation[+].language = #en
   * ^designation[=].value = "Frozen fruit and berries"
 
-* #subname_0017_0038 "Irga"
+* #sbnam-0017-00020 "Irga"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ирга"
   * ^designation[+].language = #en
   * ^designation[=].value = "Serviceberry (irga)"
 
-* #subname_0017_0039 "Saskatun"
+* #sbnam-0017-00021 "Saskatun"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Саскатун"
   * ^designation[+].language = #en
   * ^designation[=].value = "Saskatoon berry"
 
-* #subname_0017_0040 "Kalina mevalari"
+* #sbnam-0017-00022 "Kalina mevalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Калина"
   * ^designation[+].language = #en
   * ^designation[=].value = "Viburnum berries"
 
-* #subname_0017_0049 "Kompot"
+* #sbnam-0017-00023 "Kompot"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Компоты"
   * ^designation[+].language = #en
   * ^designation[=].value = "Compotes"
 
-* #subname_0017_0050 "Meva konservalari (Kompot)"
+* #sbnam-0017-00024 "Meva konservalari (Kompot)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Консервы фруктовые (Компоты)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Canned fruit (compotes)"
 
-* #subname_0017_0052 "Meva sharbatlari konsentratlari"
+* #sbnam-0017-00025 "Meva konservalari (Qiyomli mevalar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Консервы фруктовые (Фрукты в сиропе)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Canned fruit (fruit in syrup)"
+
+* #sbnam-0017-00026 "Meva sharbatlari konsentratlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Концентраты фруктовых соков"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruit juice concentrates"
 
-* #subname_0017_0055 "Laym"
+* #sbnam-0017-00027 "Laym"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лаймы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Limes"
 
-* #subname_0017_0058 "Longan"
+* #sbnam-0017-00028 "Longan"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лонган"
   * ^designation[+].language = #en
   * ^designation[=].value = "Longan"
 
-* #subname_0017_0061 "Mangostan"
+* #sbnam-0017-00029 "Mangostan"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мангостан"
   * ^designation[+].language = #en
   * ^designation[=].value = "Mangosteen"
 
-* #subname_0017_0066 "Meva nektarlari"
+* #sbnam-0017-00030 "Mors"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Морсы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mors"
+
+* #sbnam-0017-00031 "Meva nektarlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Нектары фруктовые"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruit nectars"
 
-* #subname_0017_0067 "Chakanda (oblepixa)"
+* #sbnam-0017-00032 "Chakanda (oblepixa)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Облепиха"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sea buckthorn"
 
-* #subname_0017_0071 "Bolalar oziq-ovqati uchun meva pyuresi"
+* #sbnam-0017-00033 "Bolalar oziq-ovqati uchun meva pyuresi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пюре фруктовое для детского питания"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruit puree for infant food"
 
-* #subname_0017_0072 "Umumiy iste'mol uchun meva pyuresi"
+* #sbnam-0017-00034 "Umumiy iste'mol uchun meva pyuresi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пюре фруктовое для общего употребления"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruit puree for general consumption"
 
-* #subname_0017_0073 "Rambutan"
+* #sbnam-0017-00035 "Rambutan"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рамбутан"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rambutan"
 
-* #subname_0017_0078 "Meva sharbati bo'lgan ichimliklar"
+* #sbnam-0017-00036 "Meva qiyomlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сиропы фруктовые"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fruit syrups"
+
+* #sbnam-0017-00037 "Yangi olxo'ri"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Слива свежая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh plums"
+
+* #sbnam-0017-00038 "Konsentratdan qayta tiklangan meva sharbatlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соки фруктовые восстановленные из концентрата"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fruit juices reconstituted from concentrate"
+
+* #sbnam-0017-00039 "To'g'ridan-to'g'ri presslangan meva sharbatlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соки фруктовые прямого отжима"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Direct-pressed fruit juices"
+
+* #sbnam-0017-00040 "Meva sharbati bo'lgan ichimliklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сокосодержащие фруктовые напитки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Juice-containing fruit drinks"
 
-* #subname_0017_0079 "Sublimirovkalangan rezavorlar"
+* #sbnam-0017-00041 "Sublimirovkalangan rezavorlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сублимированные ягоды"
   * ^designation[+].language = #en
   * ^designation[=].value = "Freeze-dried berries"
 
-* #subname_0017_0091 "Olcha (alycha)"
+* #sbnam-0017-00042 "Quritilgan mevalar: bo'lakchalar (yoki tilimlar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сухофрукты: Дольки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dried fruits: slices"
+
+* #sbnam-0017-00043 "Quritilgan mevalar: kuraga"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сухофрукты: курага"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dried fruits: dried apricots (kuraga)"
+
+* #sbnam-0017-00044 "O'rik"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Урюк"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dried apricots with stone (uryuk)"
+
+* #sbnam-0017-00045 "Olcha (alycha)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Алыча"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cherry plum (alycha)"
 
-* #subname_0017_0095 "Iste'molga tayyor meva tilimlari"
+* #sbnam-0017-00046 "Unobi (Xitoy xurmosi)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Унаби (Китайский финик)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Jujube (Chinese date)"
+
+* #sbnam-0017-00047 "Unobi (Zizifus)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Унаби (Зизифус)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Jujube (Ziziphus)"
+
+* #sbnam-0017-00048 "Iste'molga tayyor meva tilimlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Фруктовая нарезка готовая к употреблению"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready-to-eat sliced fruit"
 
-* #subname_0017_0096 "Meva tayoqchalari"
+* #sbnam-0017-00049 "Meva tayoqchalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Фруктовые батончики"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruit bars"
 
-* #subname_0017_0097 "Tabiiy pastila"
+* #sbnam-0017-00050 "Tabiiy pastila"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пастила натуральная"
   * ^designation[+].language = #en
   * ^designation[=].value = "Natural pastila"
 
-* #subname_0017_0098 "Sublimirovkalangan quritilgan mevalar"
+* #sbnam-0017-00051 "Sublimirovkalangan quritilgan mevalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Фрукты сушёные сублимированные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Freeze-dried fruit"
 
-* #subname_0017_0101 "Sukatlar"
+* #sbnam-0017-00052 "Xurmo (Yapon)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Цукаты"
+  * ^designation[=].value = "Хурма (В т.ч. японская)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Candied fruit peel (sukaty)"
+  * ^designation[=].value = "Persimmon (including Japanese)"
 
-* #subname_0017_0102 "Shakarlangan mevalar"
+* #sbnam-0017-00053 "Xurmo (Xitoy)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Хурма (Китайская)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Persimmon (Chinese)"
+
+* #sbnam-0017-00054 "Shakarlangan mevalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Засахаренные фрукты"
   * ^designation[+].language = #en
   * ^designation[=].value = "Candied fruit"
 
-* #subname_0017_0117 "Tunuka idishdagi ichimliklar, shu jumladan meva va sabzavot sharbatlari"
+* #sbnam-0017-00055 "Yangi gilos"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Черешня свежая"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh sweet cherries"
+
+* #sbnam-0017-00056 "Qora gilos"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Черешня Чёрная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Black sweet cherries"
+
+* #sbnam-0017-00057 "Qizil gilos"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Черешня Красная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Red sweet cherries"
+
+* #sbnam-0017-00058 "Namatak mevalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Шиповник (плоды)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rose hip (fruits)"
+
+* #sbnam-0017-00059 "Yangi olma"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Яблоки свежие"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fresh apples"
+
+* #sbnam-0017-00060 "Meva sharbatlari, konsentrlangan o'z holatiga keltirilgan meva sharbatlari va nektarlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Фруктовые соки, восстановленные концентрированные фруктовые соки и нектары"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Fruit juices, reconstituted concentrated fruit juices and nectars"
+
+* #sbnam-0017-00061 "Rezavor va mayda meva sharbatlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Соки из ягод и мелких фруктов"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Juices from berries and small fruits"
+
+* #sbnam-0017-00062 "Konservalangan mevalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Консервированные фрукты"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Canned fruit"
+
+* #sbnam-0017-00063 "Tunuka idishdagi ichimliklar, shu jumladan meva va sabzavot sharbatlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Напитки в жестяной банке, включая фруктовые и овощные соки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Drinks in tin cans, including fruit and vegetable juices"
 
-* #subname_0018_0011 "Kofeli ichimliklar (Tsikoriy)"
+* #sbnam-0017-00064 "Quritilgan mevalar va ularni qayta ishlash mahsulotlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сушёные фрукты и продукты их переработки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dried fruits and their processed products"
+
+* #sbnam-0018-00001 "Kakaoli ichimliklar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Какао-напитки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cocoa drinks"
+
+* #sbnam-0018-00002 "Erish kakao"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Какао растворимое"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Instant cocoa"
+
+* #sbnam-0018-00003 "Kofe kapsulalari va chaldlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Капсулы и чалды кофейные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Coffee capsules and pods"
+
+* #sbnam-0018-00004 "Qovurilgan kofe doni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кофе в зёрнах обжаренный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Roasted coffee beans"
+
+* #sbnam-0018-00005 "Xom kofe doni"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кофе в зёрнах сырой"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Green coffee beans"
+
+* #sbnam-0018-00006 "Maydalangan kofe"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кофе молотый"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ground coffee"
+
+* #sbnam-0018-00007 "Erish kofe (Kukunli)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кофе растворимый (Порошкообразный)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Instant coffee (powdered)"
+
+* #sbnam-0018-00008 "Erish kofe (Sublimirovkalangan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кофе растворимый (Сублимированный)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Instant coffee (freeze-dried)"
+
+* #sbnam-0018-00009 "Erish kofe (Donador)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кофе растворимый (Гранулированный)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Instant coffee (granulated)"
+
+* #sbnam-0018-00010 "Kofeli ichimliklar (Tsikoriy)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кофейные напитки (С цикорием)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Coffee drinks (with chicory)"
 
-* #subname_0018_0025 "Erish (instant) meva-o'simlik choyli ichimliklar"
+* #sbnam-0018-00011 "Xushbo'y choy (qo'shimchalar bilan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чай ароматизированный (с добавками)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Flavoured tea (with additives)"
+
+* #sbnam-0018-00012 "Oq choy"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чай белый"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "White tea"
+
+* #sbnam-0018-00013 "Bir martalik idishlarda tayyor iste'mol choyi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чай в одноразовой посуде готовый к употреблению"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ready-to-drink tea in disposable containers"
+
+* #sbnam-0018-00014 "Paket choy"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чай пакетированный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Tea bags"
+
+* #sbnam-0018-00015 "Pu-er choyi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чай пуэр"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pu-erh tea"
+
+* #sbnam-0018-00016 "O'simlik (fito) choylari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чай травяной (фиточай)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Herbal tea"
+
+* #sbnam-0018-00017 "Yig'malar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сборы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Herbal mixtures"
+
+* #sbnam-0018-00018 "Yosh bolalar uchun o'simlik choyi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чай травяной для детей раннего возраста"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Herbal tea for young children"
+
+* #sbnam-0018-00019 "Ulun choyi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чай улун"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Oolong tea"
+
+* #sbnam-0018-00020 "Qora bargli choy"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чай чёрный байховый листовой"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Black loose-leaf tea"
+
+* #sbnam-0018-00021 "Qora donador choy (CTC)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чай чёрный гранулированный (CTC)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Black granulated tea (CTC)"
+
+* #sbnam-0018-00022 "Erish (instant) meva-o'simlik choyli ichimliklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Чайные напитки фруктово-травяные растворимые (инстант)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Instant fruit and herbal tea drinks"
 
-* #subname_0020_0001 "QandLavlagi"
+* #sbnam-0019-00001 "Mayonez va tuxumli souslar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Майонез и яичные соусы (с использованием яйцепродуктов)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Mayonnaise and egg sauces (made with egg products)"
+
+* #sbnam-0019-00002 "Suyuq tuxum melanji"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Меланж яичный (жидкий)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Liquid egg melange"
+
+* #sbnam-0019-00003 "Muzlatilgan tuxum melanji"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Меланж яичный замороженный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Frozen egg melange"
+
+* #sbnam-0019-00004 "G'oz tuxumi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Яйца гусиные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Goose eggs"
+
+* #sbnam-0019-00005 "Kurka tuxumi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Яйца индюшиные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Turkey eggs"
+
+* #sbnam-0019-00006 "Tovuq dietik tuxumi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Яйца куриные диетические"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dietary hen's eggs"
+
+* #sbnam-0019-00007 "Iste'mol tovuq tuxumi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Яйца куриные пищевые"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Table hen's eggs"
+
+* #sbnam-0019-00008 "Bedana tuxumi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Яйца перепелиные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Quail eggs"
+
+* #sbnam-0019-00009 "Tuyaqush tuxumi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Яйца страусиные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ostrich eggs"
+
+* #sbnam-0019-00010 "O'rdak tuxumi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Яйца утиные"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Duck eggs"
+
+* #sbnam-0020-00001 "QandLavlagi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "САХАРНАЯ СВЕКЛА"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sugar beet (raw crop)"
 
-* #subname_0048_0002 "Ish sirtlari / Stollar"
+* #sbnam-0020-00002 "Loviya"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Фасоль"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Beans"
+
+* #sbnam-0020-00003 "Zig'ir"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Лен"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Flax"
+
+* #sbnam-0020-00004 "Olxo'ri"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сливы"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Plums"
+
+* #sbnam-0020-00005 "Olmalar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Яблоки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Apples"
+
+* #sbnam-0020-00006 "Qizil shirin butun garimdori"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Красный сладкий цельный гаримдори"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Whole red sweet pepper"
+
+* #sbnam-0020-00007 "Oddiy qovoq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Обыкновенная тыква"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Common pumpkin"
+
+* #sbnam-0031-00001 "Suv ta'minoti tarmog'i (iste'molchi krani)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Водопроводная сеть (кран потребителя)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Water supply network (consumer tap)"
+
+* #sbnam-0031-00002 "Toza suv rezervuari (TSR)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Резервуар чистой воды (РЧВ)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Clean water reservoir"
+
+* #sbnam-0031-00003 "Suv olish kolonkasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Водозаборная колонка"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Water standpipe"
+
+* #sbnam-0032-00001 "Shaxta quduq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Колодец шахтный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Dug well"
+
+* #sbnam-0032-00002 "Buloq (kaptaj)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Родник (каптаж)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Spring (spring catchment)"
+
+* #sbnam-0032-00003 "Quduq (burg'ulangan)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Скважина"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Borehole"
+
+* #sbnam-0033-00001 "Havza vannasi (kattalar / sport)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Ванна бассейна (взрослая / спортивная)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Swimming pool basin (adult / sports)"
+
+* #sbnam-0033-00002 "Bolalar havzasi vannasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Ванна детского бассейна"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Children's swimming pool basin"
+
+* #sbnam-0033-00003 "Akvapark havzasi (to'lqinli havzalar, sirpanchiq tushish zonalari)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Чаша аквапарка (волновые бассейны, зоны приземления горок)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Water park basin (wave pools, slide landing areas)"
+
+* #sbnam-0033-00004 "Kiruvchi suv (tozalashdan oldin / suv tayyorlashdan keyin)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Вода поступающая (до очистки / после водоподготовки)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Incoming water (before treatment / after water preparation)"
+
+* #sbnam-0034-00001 "Daryo"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Река"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "River"
+
+* #sbnam-0034-00002 "Ko'l / Suv ombori"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Озеро / Водохранилище"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Lake / reservoir"
+
+* #sbnam-0034-00003 "Ariq tarmog'i / Kanal"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Арычная сеть / Канал"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Irrigation ditch network / canal"
+
+* #sbnam-0035-00001 "Artezian quduq"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Арт.скважина"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Artesian well"
+
+* #sbnam-0036-00001 "Sanoat oqava suvlari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Промышленные стоки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Industrial effluents"
+
+* #sbnam-0036-00002 "Oqava suvlar (tozalashdan oldin)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сточные воды (до очистки)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Waste water (before treatment)"
+
+* #sbnam-0036-00003 "Oqava suvlar (tozalashdan keyin)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сточные воды (после очистки)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Waste water (after treatment)"
+
+* #sbnam-0037-00001 "Turar-joy hududi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жилая зона"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Residential area"
+
+* #sbnam-0037-00002 "Dam olish zonasi / Park / Skver"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Зона отдыха / Парк / Сквер"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Recreation area / park / public garden"
+
+* #sbnam-0037-00003 "Avtomagistralga tutash hudud"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Прилегающая территория автомагистрали"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Area adjacent to a highway"
+
+* #sbnam-0038-00001 "Sanitariya-himoya zonasi (SHZ)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Санитарно-защитная зона (СЗЗ)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Sanitary protection zone"
+
+* #sbnam-0039-00001 "Sanoat maydonchasi hududi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Территория промышленной площадки"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Industrial site area"
+
+* #sbnam-0040-00001 "Ishlab chiqarish sexi / Uchastka"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Производственный цех / Участок"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Production shop / section"
+
+* #sbnam-0040-00002 "Ombor xonasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Складское помещение"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Storage room"
+
+* #sbnam-0040-00003 "Mashinist / operator kabinasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кабина машиниста / оператора"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Driver / operator cab"
+
+* #sbnam-0041-00001 "Ofis / Ma'muriy xona"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Офисное / Административное помещение"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Office / administrative room"
+
+* #sbnam-0041-00002 "O'quv auditoriyasi / Sinf xonasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Учебная аудитория / Класс"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Lecture room / classroom"
+
+* #sbnam-0041-00003 "O'yin/yotoq xonasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Игровая/спальное помещение"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Play room / bedroom"
+
+* #sbnam-0041-00004 "Yashash xonasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Жилая комната"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Living room"
+
+* #sbnam-0041-00005 "Operatsion / muolaja xonasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Операционная/ процедурный кабинет"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Operating room / treatment room"
+
+* #sbnam-0041-00006 "Davolash-profilaktika muassasasi xonalari"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Помещения лечебно-профилактического учреждения"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Rooms of a healthcare facility"
+
+* #sbnam-0041-00007 "Operatsiya xonalari, tug'ruq zallari, gematologik va kuyish bilan kasallangan bemorlar uchun aseptik bokslar, muddatidan oldin tug'ilgan bolalar palatalari, dorixonalarning aseptik bloki, sterilizatsiya xonasi (toza qismi), bakteriologik laboratoriya bokslar (Ish boshlanishidan oldin)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Операционные, родильные залы, асептические боксы для гематологических, ожоговых пациентов, палаты для недоношенных детей, асептический блок аптек, стерилизационная (чистая половина), боксы бак. лабораторий (До работы)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Operating rooms, delivery rooms, aseptic boxes for haematology and burn patients, wards for premature infants, aseptic pharmacy units, sterilisation room (clean side), bacteriology laboratory boxes (before work)"
+
+* #sbnam-0041-00008 "Operatsiya xonalari, tug'ruq zallari, gematologik va kuyish bilan kasallangan bemorlar uchun aseptik bokslar, muddatidan oldin tug'ilgan bolalar palatalari, dorixonalarning aseptik bloki, sterilizatsiya xonasi (toza qismi), bakteriologik laboratoriya bokslar (Ishdan keyin yoki ish vaqtida)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Операционные, родильные залы, асептические боксы для гематологических, ожоговых пациентов, палаты для недоношенных детей, асептический блок аптек, стерилизационная (чистая половина), боксы бак. лабораторий (После или во время работы)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Operating rooms, delivery rooms, aseptic boxes for haematology and burn patients, wards for premature infants, aseptic pharmacy units, sterilisation room (clean side), bacteriology laboratory boxes (after or during work)"
+
+* #sbnam-0041-00009 "Protsedura xonalari, bog'lov xonalari, operatsiyadan oldingi xonalar, reanimatsiya palatalari va zallari, bolalar palatalari, dorixonalarning yordamchi va qadoqlash xonalari, bakteriologik va klinik laboratoriyalarning tadqiqotlar o'tkazish uchun mo'ljallangan xonalari (Ish boshlanishidan oldin)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Процедурные, перевязочные, предоперационные, палаты и залы реанимации, детские палаты, ассистентские и фасовочные аптек, помещения бактериологических и клинических лабораторий, предназначенные для проведения исследований (До работы)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Treatment rooms, dressing rooms, pre-operative rooms, intensive care wards and halls, children's wards, pharmacy compounding and packing rooms, bacteriology and clinical laboratory testing rooms (before work)"
+
+* #sbnam-0041-00010 "Protsedura xonalari, bog'lov xonalari, operatsiyadan oldingi xonalar, reanimatsiya palatalari va zallari, bolalar palatalari, dorixonalarning yordamchi va qadoqlash xonalari, bakteriologik va klinik laboratoriyalarning tadqiqotlar o'tkazish uchun mo'ljallangan xonalari (Ish vaqtida)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Процедурные, перевязочные, предоперационные, палаты и залы реанимации, детские палаты, ассистентские и фасовочные аптек, помещения бактериологических и клинических лабораторий, предназначенные для проведения исследований (Во время работы)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Treatment rooms, dressing rooms, pre-operative rooms, intensive care wards and halls, children's wards, pharmacy compounding and packing rooms, bacteriology and clinical laboratory testing rooms (during work)"
+
+* #sbnam-0041-00011 "Jarrohlik bo'limlari palatalari, koridorlar, operatsiya xonalari va tug'ruq zallariga tutash xonalar, ko'rik xonalari, yuqumli kasalliklar bo'limlarining boks va palatalari, somatik palatalar, ordinator xonalari, moddiy-texnik xonalar, toza choyshablar saqlanadigan omborxonalar (Ish boshlanishidan oldin)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Палаты хирургических отделений, коридоры, примыкающие к операционным, родильным залам, смотровые, боксы, палаты инфекционных отделений, соматические палаты, ординаторские, материальные, кладовые чистого белья(До работы)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Surgical wards, corridors adjoining operating and delivery rooms, examination rooms, infectious disease boxes and wards, somatic wards, staff rooms, supply rooms, clean linen stores (before work)"
+
+* #sbnam-0041-00012 "Jarrohlik bo'limlari palatalari, koridorlar, operatsiya xonalari va tug'ruq zallariga tutash xonalar, ko'rik xonalari, yuqumli kasalliklar bo'limlarining boks va palatalari, somatik palatalar, ordinator xonalari, moddiy-texnik xonalar, toza choyshablar saqlanadigan omborxonalar (Ish vaqtida)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Палаты хирургических отделений, коридоры, примыкающие к операционным, родильным залам, смотровые, боксы, палаты инфекционных отделений, соматические палаты, ординаторские, материальные, кладовые чистого белья (Во время работы)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Surgical wards, corridors adjoining operating and delivery rooms, examination rooms, infectious disease boxes and wards, somatic wards, staff rooms, supply rooms, clean linen stores (during work)"
+
+* #sbnam-0043-00001 "Bolalar / O'yin maydonchasi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Детская / Игровая площадка"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Children's playground"
+
+* #sbnam-0043-00002 "Uy atrofi hudud"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Придомовая территория"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Residential yard"
+
+* #sbnam-0043-00003 "Bolalar maktabgacha / maktab muassasalari hududi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Территория детских дошкольных / школьных учреждений"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Grounds of preschool / school institutions"
+
+* #sbnam-0044-00001 "Haydalma yer (sug'oriladigan yerlar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пашня (орошаемые земли)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Arable land (irrigated land)"
+
+* #sbnam-0044-00002 "Bog' / Tokzor"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Сад / Виноградник"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Orchard / vineyard"
+
+* #sbnam-0044-00003 "Issiqxona tuprog'i"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Тепличный грунт"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Greenhouse soil"
+
+* #sbnam-0044-00004 "Yaylov"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Пастбище"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Pasture"
+
+* #sbnam-0045-00001 "Suv olish inshootlari hududida"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "На территории водозоборных сооружения"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Grounds of water intake facilities"
+
+* #sbnam-0045-00002 "Oqova suvlarni tozalash inshootlari hududida"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "На территории очистных сооружений"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Grounds of waste water treatment facilities"
+
+* #sbnam-0046-00001 "Sanoat korxonasi hududi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Территория промышленного предприятия"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Industrial enterprise grounds"
+
+* #sbnam-0046-00002 "Qattiq maishiy chiqindilar poligoni (QMCH)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Полигон твердых бытовых отходов (ТБО)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Municipal solid waste landfill"
+
+* #sbnam-0046-00003 "Avtomoy yoqilg'i quyish shaxobchasi (AYQSH) hududi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Территория автозаправочной станции (АЗС)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Filling station grounds"
+
+* #sbnam-0047-00001 "Sanoat obyekti SHZ"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СЗЗ промышленного объекта"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Sanitary protection zone of an industrial facility"
+
+* #sbnam-0047-00002 "Suv olish inshooti SHZ (sanitariya-himoya zonasi)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "СЗЗ водозабора"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Sanitary protection zone of a water intake"
+
+* #sbnam-0048-00001 "Ish sirtlari / Stollar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рабочие поверхности / Столы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Work surfaces / tables"
 
-* #subname_0048_0006 "DPM oshxonasidagi sirtlar"
+* #sbnam-0048-00002 "Xodimlar qo'li"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Руки персонала"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hands of staff"
+
+* #sbnam-0048-00003 "DPM oshxonasidagi sirtlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Поверхности в пищеблоке ЛПУ"
   * ^designation[+].language = #en
   * ^designation[=].value = "Surfaces in a healthcare facility kitchen"
 
-* #subname_0049_0001 "Kesish anjomlari (taxtalar, pichoqlar)"
+* #sbnam-0049-00001 "Kesish anjomlari (taxtalar, pichoqlar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Разделочный инвентарь (доски, ножи)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cutting equipment (boards, knives)"
 
-* #subname_0049_0002 "Texnologik uskunalar (go'sht maydalagich, mikser)"
+* #sbnam-0049-00002 "Texnologik uskunalar (go'sht maydalagich, mikser)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Технологическое оборудование (мясорубки, миксеры)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Processing equipment (meat grinders, mixers)"
 
-* #subname_0049_0003 "Oshxona idish-tovoqlari va asboblari"
+* #sbnam-0049-00003 "Oshxona idish-tovoqlari va asboblari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Столовая посуда и приборы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Tableware and cutlery"
 
-* #subname_0050_0002 "Mebel (partalar, stollar)"
+* #sbnam-0049-00004 "Oshxona xodimlari qo'li"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Руки работников пищеблока"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Hands of catering staff"
+
+* #sbnam-0050-00001 "Mebel (partalar, stollar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мебель (парты, столы)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Furniture (desks, tables)"
 
-* #subname_0050_0003 "Yotoq jihozlari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Постельные принадлежности"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Bedding"
-
-* #subname_0050_0004 "Oshxonadagi sirtlar"
+* #sbnam-0050-00002 "Oshxonadagi sirtlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Поверхности в пищеблоке"
   * ^designation[+].language = #en
   * ^designation[=].value = "Kitchen surfaces"
 
-* #subname_0051_0001 "Sartaroshlik / manikyur asboblari"
+* #sbnam-0051-00001 "Sartaroshlik / manikyur asboblari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Парикмахерский / Маникюрный инструментарий"
   * ^designation[+].language = #en
   * ^designation[=].value = "Hairdressing / manicure instruments"
 
-* #subname_0051_0002 "Mehmonxona / hammom / havzalardagi sirtlar"
+* #sbnam-0051-00002 "Mehmonxona / hammom / havzalardagi sirtlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Поверхности в гостиницах / банях / бассейнах"
   * ^designation[+].language = #en
   * ^designation[=].value = "Surfaces in hotels / bathhouses / swimming pools"
 
-* #subname_0052_0001 "Non uchun pichoq"
+* #sbnam-0052-00001 "Non uchun pichoq"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Нож для хлеба"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bread knife"
 
-* #subname_0052_0002 "Meva kesish taxtasi"
+* #sbnam-0052-00002 "Meva kesish taxtasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Разделочная доска для фруктов"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruit cutting board"
 
-* #subname_0052_0003 "Tarqatish stoli"
+* #sbnam-0052-00003 "Tarqatish stoli"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Раздаточный стол"
   * ^designation[+].language = #en
   * ^designation[=].value = "Serving table"
 
-* #subname_0052_0004 "Tayyor mahsulotlar uchin idish"
+* #sbnam-0052-00004 "Tayyor mahsulotlar uchin idish"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Посуда для готовой продукции"
   * ^designation[+].language = #en
   * ^designation[=].value = "Containers for finished products"
 
-* #subname_0052_0006 "Oshpaz ish kiyimi"
+* #sbnam-0052-00005 "Oshpaz qo'li"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Рука повара"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cook's hand"
+
+* #sbnam-0052-00006 "Oshpaz ish kiyimi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рабочая одежда повара"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cook's workwear"
 
-* #subname_0053_0001 "1-ovqat idishi"
+* #sbnam-0053-00001 "1-ovqat idishi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Посуда для 1-го блюда"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dishes for the first course"
 
-* #subname_0053_0002 "2-ovqat idishi"
+* #sbnam-0053-00002 "2-ovqat idishi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Посуда для 2-го блюда"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dishes for the second course"
 
-* #subname_0053_0004 "Stollar"
+* #sbnam-0053-00003 "Tarbiyachi qo'li: (F.I.Sh.)"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Столы"
+  * ^designation[=].value = "Руки воспитателя: (Ф.И.О.)"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Tables"
+  * ^designation[=].value = "Hands of a childcare worker (full name)"
 
-* #subname_0053_0006 "Oynalar tokchasi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Подоконники"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Window sills"
-
-* #subname_0053_0007 "Eshiklar tutqichi"
+* #sbnam-0053-00004 "Eshiklar tutqichi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ручки дверей"
   * ^designation[+].language = #en
   * ^designation[=].value = "Door handles"
 
-* #subname_0053_0009 "O'yinchoqlar javoni"
+* #sbnam-0053-00005 "O'yinchoqlar javoni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Шкаф для игрушек"
   * ^designation[+].language = #en
   * ^designation[=].value = "Toy cabinet"
 
-* #subname_0053_0010 "Gilamlar"
+* #sbnam-0053-00006 "Gilamlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ковры"
   * ^designation[+].language = #en
   * ^designation[=].value = "Carpets"
 
-* #subname_0053_0011 "Kiyim javoni"
+* #sbnam-0053-00007 "Kiyim javoni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Шкаф для одежды"
   * ^designation[+].language = #en
   * ^designation[=].value = "Wardrobe"
 
-* #subname_0053_0012 "O'rin oqliklari-1 (F.I.Sh.)"
+* #sbnam-0053-00008 "O'rin oqliklari-1 (F.I.Sh.)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Постельное бельё-1 (Ф.И.О.)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bed linen 1 (full name)"
 
-* #subname_0053_0013 "O'rin oqliklari-2 (F.I.Sh.)"
+* #sbnam-0053-00009 "O'rin oqliklari-2 (F.I.Sh.)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Постельное бельё-2 (Ф.И.О.)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bed linen 2 (full name)"
 
-* #subname_0053_0014 "Yuvinish xonasi devori"
+* #sbnam-0053-00010 "Yuvinish xonasi devori"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Стены моечной комнаты"
   * ^designation[+].language = #en
   * ^designation[=].value = "Washroom walls"
 
-* #subname_0053_0016 "Sochiqlar javoni"
+* #sbnam-0053-00011 "Sochiqlar javoni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Шкаф для полотенец"
   * ^designation[+].language = #en
   * ^designation[=].value = "Towel cabinet"
 
-* #subname_0053_0017 "Suv krani jo'mragi"
+* #sbnam-0053-00012 "Suv krani jo'mragi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Водопроводный кран"
   * ^designation[+].language = #en
   * ^designation[=].value = "Water tap"
 
-* #subname_0053_0018 "Tuvak (unitaz)"
+* #sbnam-0053-00013 "Tuvak (unitaz)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Горшок (унитаз)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Potty (toilet)"
 
-* #subname_0054_0001 "1-ovqat idishi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Посуда для 1-го блюда"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Dishes for the first course"
-
-* #subname_0054_0002 "2-ovqat idishi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Посуда для 2-го блюда"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Dishes for the second course"
-
-* #subname_0054_0004 "Stollar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Столы"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Tables"
-
-* #subname_0054_0006 "Oynalar tokchasi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Подоконники"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Window sills"
-
-* #subname_0054_0007 "Eshiklar tutqichi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Ручки дверей"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Door handles"
-
-* #subname_0054_0009 "O'yinchoqlar javoni"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Шкаф для игрушек"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Toy cabinet"
-
-* #subname_0054_0010 "Gilamlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Ковры"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Carpets"
-
-* #subname_0054_0011 "Kiyim javoni"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Шкаф для одежды"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Wardrobe"
-
-* #subname_0054_0012 "O'rin oqliklari-1 (F.I.Sh.)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Постельное бельё-1 (Ф.И.О.)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Bed linen 1 (full name)"
-
-* #subname_0054_0013 "O'rin oqliklari-2 (F.I.Sh.)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Постельное бельё-2 (Ф.И.О.)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Bed linen 2 (full name)"
-
-* #subname_0054_0014 "Yuvinish xonasi devori"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Стены моечной комнаты"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Washroom walls"
-
-* #subname_0054_0016 "Sochiqlar javoni"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Шкаф для полотенец"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Towel cabinet"
-
-* #subname_0054_0017 "Suv krani jo'mragi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Водопроводный кран"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Water tap"
-
-* #subname_0054_0018 "Tuvak (unitaz)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Горошок (унитаз)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Potty (toilet)"
-
-* #subname_0055_0001 "1-ovqat idishi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Посуда для 1-го блюда"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Dishes for the first course"
-
-* #subname_0055_0002 "2-ovqat idishi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Посуда для 2-го блюда"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Dishes for the second course"
-
-* #subname_0055_0004 "Stollar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Столы"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Tables"
-
-* #subname_0055_0006 "Oynalar tokchasi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Подоконники"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Window sills"
-
-* #subname_0055_0007 "Eshiklar tutqichi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Ручки дверей"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Door handles"
-
-* #subname_0055_0009 "O'yinchoqlar javoni"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Шкаф для игрушек"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Toy cabinet"
-
-* #subname_0055_0010 "Gilamlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Ковры"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Carpets"
-
-* #subname_0055_0011 "Kiyim javoni"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Шкаф для одежды"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Wardrobe"
-
-* #subname_0055_0012 "O'rin oqliklari-1 (F.I.Sh.)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Постельное бельё-1 (Ф.И.О.)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Bed linen 1 (full name)"
-
-* #subname_0055_0013 "O'rin oqliklari-1 (F.I.Sh.)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Постельное бельё-2 (Ф.И.О.)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Bed linen 2 (full name)"
-
-* #subname_0055_0014 "Yuvinish xonasi devori"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Стены моечной комнаты"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Washroom walls"
-
-* #subname_0055_0016 "Sochiqlar javoni"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Шкаф для полотенец"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Towel cabinet"
-
-* #subname_0055_0017 "Suv krani jo'mragi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Водопроводный кран"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Water tap"
-
-* #subname_0055_0018 "Tuvak (unitaz)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Горшок (унитаз)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Potty (toilet)"
-
-* #subname_0061_0001 "Turar joy obyektlari"
+* #sbnam-0061-00001 "Turar joy obyektlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Объекты жилого назначения"
   * ^designation[+].language = #en
   * ^designation[=].value = "Residential facilities"
 
-* #subname_0062_0004 "Qog'oz, karton, pergament, podpergament"
+* #sbnam-0062-00001 "Qog'oz, karton, pergament, podpergament"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Бумага, картон, пергамент, подпергамент"
   * ^designation[+].language = #en
   * ^designation[=].value = "Paper, cardboard, parchment, greaseproof paper"
 
-* #subname_0062_0009 "Po'latdan tayyorlangan emallangan idishlar"
+* #sbnam-0062-00002 "Shisha va shishadan tayyorlangan buyumlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Стекло и изделия из стекла"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Glass and glass products"
+
+* #sbnam-0062-00003 "Dekorativ qoplamali shisha buyumlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Изделия из стекла с декоративным покритием"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Glass products with decorative coating"
+
+* #sbnam-0062-00004 "Keramik buyumlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Керамические изделия"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Ceramic products"
+
+* #sbnam-0062-00005 "Chinni va fayans buyumlar"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Изделия из форфора и фаянса"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Porcelain and faience products"
+
+* #sbnam-0062-00006 "Po'latdan tayyorlangan emallangan idishlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "стальная эмалированная посуда"
   * ^designation[+].language = #en
   * ^designation[=].value = "Enamelled steel cookware"
 
-* #subname_0062_0010 "Yopishmaydigan qoplamali idishlar"
+* #sbnam-0062-00007 "Yopishmaydigan qoplamali idishlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "посуда с антипригарным покрытием"
   * ^designation[+].language = #en
   * ^designation[=].value = "Non-stick cookware"
 
-* #subname_0062_0011 "Laklangan konserva idishlari"
+* #sbnam-0062-00008 "Laklangan konserva idishlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лакированная консервная тара"
   * ^designation[+].language = #en
   * ^designation[=].value = "Lacquered cans"
 
-* #subname_0063_0001 "Yuz va tana terisini parvarish qilish vositalari: kremlar, emulsiyalar, qaymoqlar, sutlar"
+* #sbnam-0063-00001 "Yuz va tana terisini parvarish qilish vositalari: kremlar, emulsiyalar, qaymoqlar, sutlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Средство для ухода за кожей лица и тела: кремы, эмульсии, сливки, молочко"
   * ^designation[+].language = #en
   * ^designation[=].value = "Face and body skin care products: creams, emulsions, creams, lotions (milks)"
 
-* #subname_0063_0002 "Yuz va tana terisini parvarish qilish vositalari: Gellar, jelelar"
+* #sbnam-0063-00002 "Yuz va tana terisini parvarish qilish vositalari: Gellar, jelelar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Средство для ухода за кожей лица и тела: Гели,желе"
   * ^designation[+].language = #en
   * ^designation[=].value = "Face and body skin care products: gels, jellies"
 
-* #subname_0063_0003 "Yuz va tana terisini parvarish qilish vositalari: Losyonlar, toniklar"
+* #sbnam-0063-00003 "Yuz va tana terisini parvarish qilish vositalari: Losyonlar, toniklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Средство для ухода за кожей лица и тела: Лосьон, тоники"
   * ^designation[+].language = #en
   * ^designation[=].value = "Face and body skin care products: lotions, toners"
 
-* #subname_0063_0004 "Yuz va tana terisini parvarish qilish vositalari: Kosmetik moylar"
+* #sbnam-0063-00004 "Yuz va tana terisini parvarish qilish vositalari: Kosmetik moylar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Средство для ухода за кожей лица и тела: Масло косметические"
   * ^designation[+].language = #en
   * ^designation[=].value = "Face and body skin care products: cosmetic oils"
 
-* #subname_0063_0006 "Yuz va tana terisini parvarish qilish vositalari: oziqlantiruvchi, namlantiruvchi, tozalovchi va boshqa niqoblar"
+* #sbnam-0063-00005 "Yuz va tana terisini parvarish qilish vositalari: oziqlantiruvchi, namlantiruvchi, tozalovchi va boshqa niqoblar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Средство для ухода за кожей лица и тела: маски питательные, очищающие и т. д"
   * ^designation[+].language = #en
   * ^designation[=].value = "Face and body skin care products: nourishing, cleansing and other masks"
 
-* #subname_0063_0007 "Vanna va dush qabul qilish vositalari (tuzlar, ko'piklar, moylar, gellar va boshqalar): Vanna tuzi.."
+* #sbnam-0063-00006 "Vanna va dush qabul qilish vositalari (tuzlar, ko'piklar, moylar, gellar va boshqalar): Vanna tuzi.."
   * ^designation[0].language = #ru
   * ^designation[=].value = "средства для принятия ванн и душа (соли, пена, масла,гели и т.д): Соль для купания"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bath and shower products (salts, foams, oils, gels and other): bath salt"
 
-* #subname_0063_0008 "Vanna va dush qabul qilish vositalari (tuzlar, ko'piklar, moylar, gellar va boshqalar): Ko'pik hosil qiluvchi yuvish vositalari"
+* #sbnam-0063-00007 "Vanna va dush qabul qilish vositalari (tuzlar, ko'piklar, moylar, gellar va boshqalar): Ko'pik hosil qiluvchi yuvish vositalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "средства для принятия ванн и душа (соли, пена, масла,гели и т.д): Средство пеномоющие"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bath and shower products (salts, foams, oils, gels and other): foaming cleansers"
 
-* #subname_0063_0011 "Dezodorantlar va terlashga qarshi vositalar: dezodorant qalam"
+* #sbnam-0063-00008 "Sovun (hojatxona sovuni, dezodoratsiyalovchi va boshqalar)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мыло (туалетное, дезодорирующее и т.д)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Soap (toilet, deodorant and other)"
+
+* #sbnam-0063-00009 "Suyuq hojatxona sovuni (yog' asosidagi)"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Мыло жидкое туалетное (на жировой основе)"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Liquid toilet soap (fat-based)"
+
+* #sbnam-0063-00010 "Dezodorantlar va terlashga qarshi vositalar: dezodorant qalam"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дезодаранты и средства от пота: дезодарант карандаш"
   * ^designation[+].language = #en
   * ^designation[=].value = "Deodorants and antiperspirants: deodorant stick"
 
-* #subname_0063_0012 "Dezodorantlar va terlashga qarshi vositalar: Aerozol qadoqdagi dezodorant"
+* #sbnam-0063-00011 "Dezodorantlar va terlashga qarshi vositalar: Aerozol qadoqdagi dezodorant"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дезодаранты и средства от пота: дезодаранты в аэрозольной упаковке"
   * ^designation[+].language = #en
   * ^designation[=].value = "Deodorants and antiperspirants: aerosol deodorants"
 
-* #subname_0063_0013 "Dezodorantlar va terlashga qarshi vositalar: Gelsimon, kremsimon va boshqa dezodorantlar"
+* #sbnam-0063-00012 "Dezodorantlar va terlashga qarshi vositalar: Gelsimon, kremsimon va boshqa dezodorantlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дезодаранты и средства от пота: дезодаранты гелеобразные, кремообразные и другие"
   * ^designation[+].language = #en
   * ^designation[=].value = "Deodorants and antiperspirants: gel, cream and other deodorants"
 
-* #subname_0065_0001 "Statsionar"
+* #sbnam-0065-00001 "Statsionar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Стационар"
   * ^designation[+].language = #en
   * ^designation[=].value = "Inpatient facility"
 
-* #subname_0065_0002 "Ambulatoriya"
+* #sbnam-0065-00002 "Ambulatoriya"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Амбулатория"
   * ^designation[+].language = #en
   * ^designation[=].value = "Outpatient clinic"
 
-* #subname_0066_0001 "Maktab"
+* #sbnam-0066-00001 "Maktab"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Школа"
   * ^designation[+].language = #en
   * ^designation[=].value = "School"
 
-* #subname_0066_0002 "Maktabgacha ta'lim tashkiloti"
+* #sbnam-0066-00002 "Maktabgacha ta'lim tashkiloti"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Детский сад"
   * ^designation[+].language = #en
   * ^designation[=].value = "Kindergarten"
 
-* #subname_0066_0003 "Oliy va o'rta maxsus ta'lim muassasalari"
+* #sbnam-0066-00003 "Oliy va o'rta maxsus ta'lim muassasalari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Учреждения высшего и среднего специального образования"
   * ^designation[+].language = #en
   * ^designation[=].value = "Higher and secondary specialised education institutions"
 
-* #subname_0067_0001 "Oziq-ovqat mahsulotlarini ishlab chiqarish va savdosi bilan shug'ullanuvchi tashkilotlar"
+* #sbnam-0067-00001 "Oziq-ovqat mahsulotlarini ishlab chiqarish va savdosi bilan shug'ullanuvchi tashkilotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Организации, занимающиеся производством и торговлей пищевыми продуктами"
   * ^designation[+].language = #en
   * ^designation[=].value = "Organisations producing and trading in food products"
 
-* #subname_0067_0002 "Aholiga maishiy xizmat ko'rsatuvchi tashkilotlar"
+* #sbnam-0067-00002 "Aholiga maishiy xizmat ko'rsatuvchi tashkilotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Организации, оказывающие бытовые услуги населению"
   * ^designation[+].language = #en
   * ^designation[=].value = "Organisations providing consumer services to the public"
 
-* #subname_0067_0003 "Boshqalar"
+* #sbnam-0067-00003 "Boshqalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Другие"
   * ^designation[+].language = #en
   * ^designation[=].value = "Other"
 
-* #subname_0068_0001 "10.5. Sof moddalar (vitaminlar, mineral moddalar, organik moddalar va boshqalar) yoki konsentratlar (o'simlik ekstraktlari va boshqalar) asosida turli to'ldiruvchilar qo'shilgan holda tayyorlangan biologik faol qo'shimchalar, shu jumladan ichimliklar uchun quruq konsentratlar."
+* #sbnam-0068-00001 "10.5. Sof moddalar (vitaminlar, mineral moddalar, organik moddalar va boshqalar) yoki konsentratlar (o'simlik ekstraktlari va boshqalar) asosida turli to'ldiruvchilar qo'shilgan holda tayyorlangan biologik faol qo'shimchalar, shu jumladan ichimliklar uchun quruq konsentratlar."
   * ^designation[0].language = #ru
   * ^designation[=].value = "10.5. БАД на основе чистых субстанций (витамины, минеральные вещества, органические и др.) или концентратов (экстракты растений и др.) с использованием различных наполнителей, в т.ч. сухие концентраты для напитков."
   * ^designation[+].language = #en

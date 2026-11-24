@@ -288,4 +288,5 @@ Alias: $inventory-status-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/in
 Alias: $substance-status = http://hl7.org/fhir/substance-status
 Alias: $substance-sample-number = https://dhp.uz/fhir/core/sid/prd/uz/substance-sample
 Alias: $substance-lot-number = https://dhp.uz/fhir/core/sid/prd/uz/substance-lot
+Alias: $substance-names-cs = https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs
 Alias: $substance-definition-number = https://dhp.uz/fhir/core/sid/doc/uz/substance-definition

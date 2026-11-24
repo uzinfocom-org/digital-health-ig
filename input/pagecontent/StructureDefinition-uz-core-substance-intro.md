@@ -63,6 +63,11 @@ A sample of a manufactured product, such as packaged milk, also carries the samp
     "concept": {
       "coding": [
         {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs",
+          "code": "sbnam-0008-00013",
+          "display": "Pasterlangan ichimlik suti"
+        },
+        {
           "system": "http://snomed.info/sct",
           "code": "3718001",
           "display": "Cow's milk"
@@ -77,7 +82,7 @@ A sample of a manufactured product, such as packaged milk, also carries the samp
 }
 ```
 
-The code is a SNOMED CT concept from the [substance name](ValueSet-substance-names-vs.html) value set, or a national code when there is no SNOMED CT concept. When `code.concept` is sent it must be the same code as in the SubstanceDefinition. Packaging and other remarks go in `description` as free text.
+When `code.concept` is sent it must carry the same codes as the SubstanceDefinition: here the national code of pasteurised drinking milk from the [substance name](ValueSet-substance-names-vs.html) value set, with its broader SNOMED CT concept alongside. Packaging and other remarks go in `description` as free text.
 
 #### Declared composition
 

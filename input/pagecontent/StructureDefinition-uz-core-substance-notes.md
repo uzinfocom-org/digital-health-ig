@@ -17,7 +17,9 @@ GET [base]/Substance?identifier=https://dhp.uz/fhir/core/sid/prd/uz/substance-sa
 # by batch number
 GET [base]/Substance?identifier=https://dhp.uz/fhir/core/sid/prd/uz/substance-lot|SER-2611-15
 
-# by SNOMED CT or national code, or by the SubstanceDefinition entry
+# by national code, by SNOMED CT code - which also finds the narrower national names -
+# or by the SubstanceDefinition entry
+GET [base]/Substance?code=https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs|sbnam-0008-00013
 GET [base]/Substance?code=http://snomed.info/sct|3718001
 GET [base]/Substance?code-reference=SubstanceDefinition/[id]
 ```

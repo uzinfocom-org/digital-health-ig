@@ -15,7 +15,7 @@ UZ Core SubstanceDefinition представляет запись справоч
 - номер записи в справочнике (см. [таблицу ниже](#identifier-slices));
 - `status` записи (active / retired);
 - `classification` - вид образца - вода, воздух, почва или пищевые продукты -;
-- `code` вещества: SNOMED CT или национальный код, если концепта SNOMED CT нет;
+- `code` вещества: SNOMED CT или национальный код вместе с его более широким концептом SNOMED CT;
 - каждое `name` - само наименование, является ли оно предпочтительным и его язык, с переводами, например русским наименованием;
 - производителя `manufacturer` вещества или продукции.
 
@@ -27,7 +27,8 @@ UZ Core SubstanceDefinition представляет запись справоч
 # by reference list number - the reliable match
 GET [base]/SubstanceDefinition?identifier=https://dhp.uz/fhir/core/sid/doc/uz/substance-definition|1368
 
-# by SNOMED CT or national code
+# by national code, or by SNOMED CT code - which also finds the narrower national names
+GET [base]/SubstanceDefinition?code=https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs|sbnam-0008-00013
 GET [base]/SubstanceDefinition?code=http://snomed.info/sct|3718001
 
 # by name or category
@@ -53,6 +54,11 @@ GET [base]/SubstanceDefinition?classification=http://snomed.info/sct|255620007
       "code": {
         "coding": [
           {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs",
+            "code": "sbnam-0008-00018",
+            "display": "Sigir xom suti"
+          },
+          {
             "system": "http://snomed.info/sct",
             "code": "3718001",
             "display": "Cow's milk"
@@ -65,7 +71,7 @@ GET [base]/SubstanceDefinition?classification=http://snomed.info/sct|255620007
 }
 ```
 
-Код берётся из набора значений [наименований веществ](ValueSet-substance-names-vs.html): это концепт SNOMED CT с узбекским и русским наименованиями в [дополнении SNOMED CT](CodeSystem-substance-names-snomed-cs.html), а если концепта SNOMED CT нет - национальный код из системы кодов [наименований веществ](CodeSystem-substance-names-cs.html). Многие наименования ЛИС СЭС имеют один общий, более широкий концепт SNOMED CT: например, сырое коровье и пастеризованное молоко - оба `3718001` Cow's milk. Точное наименование ЛИС СЭС передаётся в `name`.
+Коды берутся из набора значений [наименований веществ](ValueSet-substance-names-vs.html). Если концепт SNOMED CT означает то же, что и наименование ЛИС СЭС, передаётся только он; его узбекское и русское наименования приведены в [дополнении SNOMED CT](CodeSystem-substance-names-snomed-cs.html). Иначе передаётся национальный код из системы кодов [наименований веществ](CodeSystem-substance-names-cs.html). Если наименование уже концепта SNOMED CT, этот более широкий концепт из [карты наименований веществ в SNOMED CT](ConceptMap-substance-name-to-snomed.html) передаётся вторым кодом: сырое коровье и пастеризованное молоко проверяются по разным санитарным нормам, поэтому у каждого свой национальный код, а `3718001` Cow's milk у обоих позволяет найти поиском любое коровье молоко. Точное наименование ЛИС СЭС передаётся в `name`.
 
 #### Полная запись
 
@@ -89,6 +95,11 @@ GET [base]/SubstanceDefinition?classification=http://snomed.info/sct|255620007
     {
       "code": {
         "coding": [
+          {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs",
+            "code": "sbnam-0008-00013",
+            "display": "Pasterlangan ichimlik suti"
+          },
           {
             "system": "http://snomed.info/sct",
             "code": "3718001",

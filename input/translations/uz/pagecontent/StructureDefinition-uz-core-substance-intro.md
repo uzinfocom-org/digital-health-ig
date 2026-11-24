@@ -65,6 +65,11 @@ Ishlab chiqarilgan mahsulot, masalan qadoqlangan sut namunasi, shuningdek namuna
     "concept": {
       "coding": [
         {
+          "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs",
+          "code": "sbnam-0008-00013",
+          "display": "Pasterlangan ichimlik suti"
+        },
+        {
           "system": "http://snomed.info/sct",
           "code": "3718001",
           "display": "Cow's milk"
@@ -79,7 +84,7 @@ Ishlab chiqarilgan mahsulot, masalan qadoqlangan sut namunasi, shuningdek namuna
 }
 ```
 
-Kod - [modda nomlari](ValueSet-substance-names-vs.html) qiymatlar to'plamidagi SNOMED CT konsepti yoki SNOMED CT konsepti bo'lmasa, milliy kod. `code.concept` yuborilsa, u SubstanceDefinition dagi kod bilan bir xil bo'lishi kerak. Qadoq va boshqa izohlar `description` da erkin matn sifatida yuboriladi.
+`code.concept` yuborilsa, unda SubstanceDefinition dagi kodlar bo'lishi kerak: bu yerda [modda nomlari](ValueSet-substance-names-vs.html) qiymatlar to'plamidagi pasterlangan ichimlik sutining milliy kodi va uning yonida umumiyroq SNOMED CT konsepti. Qadoq va boshqa izohlar `description` da erkin matn sifatida yuboriladi.
 
 #### E'lon qilingan tarkib
 

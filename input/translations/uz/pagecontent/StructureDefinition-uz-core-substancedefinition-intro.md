@@ -15,7 +15,7 @@ Bazaviy SubstanceDefinition resursida yuqori darajada majburiy elementlar yo'q v
 - yozuvning ma'lumotnomadagi raqami ([quyidagi jadvalga](#identifier-slices) qarang);
 - yozuvning `status` holati (active / retired);
 - `classification` - namuna turi - suv, havo, tuproq yoki oziq-ovqat mahsulotlari -;
-- moddaning `code` kodi: SNOMED CT yoki SNOMED CT konsepti bo'lmasa, milliy kod;
+- moddaning `code` kodi: SNOMED CT yoki milliy kod va uning yonida umumiyroq SNOMED CT konsepti;
 - har bir `name` - nomning o'zi, u afzal nommi va uning tili, tarjimalar bilan, masalan ruscha nom;
 - modda yoki mahsulotning ishlab chiqaruvchisi `manufacturer`.
 
@@ -27,7 +27,8 @@ Yangi yozuv yaratishdan oldin uni qidiring:
 # by reference list number - the reliable match
 GET [base]/SubstanceDefinition?identifier=https://dhp.uz/fhir/core/sid/doc/uz/substance-definition|1368
 
-# by SNOMED CT or national code
+# by national code, or by SNOMED CT code - which also finds the narrower national names
+GET [base]/SubstanceDefinition?code=https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs|sbnam-0008-00013
 GET [base]/SubstanceDefinition?code=http://snomed.info/sct|3718001
 
 # by name or category
@@ -53,6 +54,11 @@ Har bir UZ Core resursi o'zi muvofiq deb da'vo qiladigan profilni `meta.profile`
       "code": {
         "coding": [
           {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs",
+            "code": "sbnam-0008-00018",
+            "display": "Sigir xom suti"
+          },
+          {
             "system": "http://snomed.info/sct",
             "code": "3718001",
             "display": "Cow's milk"
@@ -65,7 +71,7 @@ Har bir UZ Core resursi o'zi muvofiq deb da'vo qiladigan profilni `meta.profile`
 }
 ```
 
-Kod [modda nomlari](ValueSet-substance-names-vs.html) qiymatlar to'plamidan olinadi: o'zbekcha va ruscha nomlari [SNOMED CT qo'shimchasida](CodeSystem-substance-names-snomed-cs.html) berilgan SNOMED CT konsepti yoki SNOMED CT konsepti bo'lmasa, [modda nomlari](CodeSystem-substance-names-cs.html) kod tizimidagi milliy kod. Ko'plab LIS SES nomlari bitta umumiyroq SNOMED CT konseptiga ega: masalan, sigir xom suti va pasterlangan sut - ikkalasi ham `3718001` Cow's milk. LIS SES nomi aniq holda `name` da beriladi.
+Kodlar [modda nomlari](ValueSet-substance-names-vs.html) qiymatlar to'plamidan olinadi. SNOMED CT konsepti LIS SES nomi bilan bir xil ma'noga ega bo'lsa, faqat shu konsept yuboriladi; uning o'zbekcha va ruscha nomlari [SNOMED CT qo'shimchasida](CodeSystem-substance-names-snomed-cs.html) berilgan. Aks holda [modda nomlari](CodeSystem-substance-names-cs.html) kod tizimidagi milliy kod yuboriladi. Nom SNOMED CT konseptidan torroq bo'lsa, [modda nomlarining SNOMED CT ga xaritasidagi](ConceptMap-substance-name-to-snomed.html) shu umumiyroq konsept ikkinchi kod sifatida yuboriladi: sigir xom suti va pasterlangan sut turli sanitariya normalari bo'yicha tekshiriladi, shuning uchun har birining o'z milliy kodi bor, ikkalasidagi `3718001` Cow's milk esa qidiruvda har qanday sigir sutini topadi. LIS SES nomi aniq holda `name` da beriladi.
 
 #### To'liq yozuv
 
@@ -89,6 +95,11 @@ Amalda yozuv shuningdek ma'lumotnomadagi raqamni, holati va toifasini, o'zbekcha
     {
       "code": {
         "coding": [
+          {
+            "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs",
+            "code": "sbnam-0008-00013",
+            "display": "Pasterlangan ichimlik suti"
+          },
           {
             "system": "http://snomed.info/sct",
             "code": "3718001",

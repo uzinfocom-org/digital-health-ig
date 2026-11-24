@@ -16,7 +16,8 @@ GET [base]/SubstanceDefinition/[id]
 # by reference list number - the reliable match
 GET [base]/SubstanceDefinition?identifier=https://dhp.uz/fhir/core/sid/doc/uz/substance-definition|1368
 
-# by SNOMED CT or national code
+# by national code, or by SNOMED CT code - which also finds the narrower national names
+GET [base]/SubstanceDefinition?code=https://terminology.dhp.uz/fhir/core/CodeSystem/substance-names-cs|sbnam-0008-00013
 GET [base]/SubstanceDefinition?code=http://snomed.info/sct|3718001
 ```
 

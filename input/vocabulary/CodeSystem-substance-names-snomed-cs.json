@@ -13,11 +13,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вермут и ароматизированные вина"
+          "value": "Вермут"
         },
         {
           "language": "uz",
-          "value": "Vermut va xushbo'y vinolar"
+          "value": "Vermut"
         }
       ]
     },
@@ -39,11 +39,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вино из всех видов сырья"
+          "value": "Вино"
         },
         {
           "language": "uz",
-          "value": "Xom ashyoning barcha turlari uchun vino"
+          "value": "Vino"
         }
       ]
     },
@@ -52,11 +52,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ликёрное вино из винограда"
+          "value": "Креплёное вино"
         },
         {
           "language": "uz",
-          "value": "Uzumdan tayyorlangan likyor vinosi"
+          "value": "Kuchaytirilgan vino"
         }
       ]
     },
@@ -91,11 +91,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Дистилляты винные (Бренди)"
+          "value": "Бренди"
         },
         {
           "language": "uz",
-          "value": "Vinoli distillyatlar (Brendi)"
+          "value": "Brendi"
         }
       ]
     },
@@ -104,11 +104,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Дистилляты зерновые (Виски)"
+          "value": "Виски"
         },
         {
           "language": "uz",
-          "value": "Donli distillyatlar (Viski)"
+          "value": "Viski"
         }
       ]
     },
@@ -117,11 +117,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Дистилляты зерновые (Бурбон)"
+          "value": "Бурбон"
         },
         {
           "language": "uz",
-          "value": "Donli distillyatlar (Burbon)"
+          "value": "Burbon"
         }
       ]
     },
@@ -195,11 +195,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Пиво светлое"
+          "value": "Лагер"
         },
         {
           "language": "uz",
-          "value": "Och rangli pivo"
+          "value": "Lager"
         }
       ]
     },
@@ -234,11 +234,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сидр (яблочный)"
+          "value": "Сидр"
         },
         {
           "language": "uz",
-          "value": "Sidr (olmali)"
+          "value": "Sidr"
         }
       ]
     },
@@ -325,11 +325,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Морсы плодово-ягодные"
+          "value": "Фруктовый морс"
         },
         {
           "language": "uz",
-          "value": "Meva-rezavor morslari"
+          "value": "Meva morsi"
         }
       ]
     },
@@ -351,11 +351,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Напитки безалкогольные газированные сладкие (Тоники)"
+          "value": "Тоник"
         },
         {
           "language": "uz",
-          "value": "Shirin gazli alkogolsiz ichimliklar (Tonik)"
+          "value": "Tonik"
         }
       ]
     },
@@ -364,11 +364,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Напитки безалкогольные газированные сладкие (Колы)"
+          "value": "Кола"
         },
         {
           "language": "uz",
-          "value": "Shirin gazli alkogolsiz ichimliklar (Kola)"
+          "value": "Kola"
         }
       ]
     },
@@ -377,11 +377,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Напитки безалкогольные негазированные"
+          "value": "Негазированный напиток"
         },
         {
           "language": "uz",
-          "value": "Gazsiz alkogolsiz ichimliklar"
+          "value": "Gazsiz ichimlik"
         }
       ]
     },
@@ -390,11 +390,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Растительное молоко (Соевое)"
+          "value": "Соевое молоко"
         },
         {
           "language": "uz",
-          "value": "O'simlik suti (Soya)"
+          "value": "Soya suti"
         }
       ]
     },
@@ -429,11 +429,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Спортивные напитки (изотонические)"
+          "value": "Спортивный напиток"
         },
         {
           "language": "uz",
-          "value": "Sport ichimliklari (izotonik)"
+          "value": "Sport ichimligi"
         }
       ]
     },
@@ -468,11 +468,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Гарниры готовые (Картофель отварной)"
+          "value": "Отварной картофель"
         },
         {
           "language": "uz",
-          "value": "Tayyor garnirlar (Qaynatilgan kartoshka)"
+          "value": "Qaynatilgan kartoshka"
         }
       ]
     },
@@ -481,11 +481,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Гарниры готовые (Пюре)"
+          "value": "Картофельное пюре"
         },
         {
           "language": "uz",
-          "value": "Tayyor garnirlar (Pyure)"
+          "value": "Kartoshka pyuresi"
         }
       ]
     },
@@ -533,11 +533,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Готовые вторые блюда (Плов)"
+          "value": "Плов"
         },
         {
           "language": "uz",
-          "value": "Tayyor ikkinchi taomlar (Osh)"
+          "value": "Palov"
         }
       ]
     },
@@ -546,11 +546,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Пельмени (изделия из теста с начинкой)"
+          "value": "Пельмени"
         },
         {
           "language": "uz",
-          "value": "Chuchvara (to'ldirgichli xamir mahsulotlari)"
+          "value": "Chuchvara"
         }
       ]
     },
@@ -585,11 +585,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Десерты готовые (Чизкейк)"
+          "value": "Чизкейк"
         },
         {
           "language": "uz",
-          "value": "Tayyor desertlar (Chizkeyk)"
+          "value": "Chizkeyk"
         }
       ]
     },
@@ -611,11 +611,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Десерты готовые (Муссы)"
+          "value": "Мусс"
         },
         {
           "language": "uz",
-          "value": "Tayyor desertlar (Mussa)"
+          "value": "Muss"
         }
       ]
     },
@@ -637,11 +637,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кулинарные изделия из мяса"
+          "value": "Мясные блюда"
         },
         {
           "language": "uz",
-          "value": "Go'shtli kulinariya mahsulotlari."
+          "value": "Go'shtli taomlar"
         }
       ]
     },
@@ -650,11 +650,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кулинарные изделия из рыбы"
+          "value": "Рыбные продукты"
         },
         {
           "language": "uz",
-          "value": "Baliqli kulinariya mahsulotlari."
+          "value": "Baliq mahsulotlari"
         }
       ]
     },
@@ -663,11 +663,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кулинарные изделия из овощей"
+          "value": "Овощные блюда"
         },
         {
           "language": "uz",
-          "value": "Sabzavot va xamirdan tayyorlangan pazandachilik mahsulotlari"
+          "value": "Sabzavotli taomlar"
         }
       ]
     },
@@ -741,11 +741,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Полуфабрикаты быстрого приготовления (Лапша инстант)"
+          "value": "Лапша быстрого приготовления"
         },
         {
           "language": "uz",
-          "value": "Tezda tayyor yarim tayyor mahsulotlar (Lag'mon)"
+          "value": "Tez tayyorlanadigan ugra"
         }
       ]
     },
@@ -832,11 +832,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Лекарственные сборы и фиточаи"
+          "value": "Травяной чай"
         },
         {
           "language": "uz",
-          "value": "Dorivor yig'malar va fitochaylar"
+          "value": "O'simlik choyi"
         }
       ]
     },
@@ -845,11 +845,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Каши без глютена (Рисовая) для детей"
+          "value": "Детская каша на основе риса"
         },
         {
           "language": "uz",
-          "value": "Glyutensiz bolalar yormalari (Guruch)"
+          "value": "Guruch asosidagi bolalar bo'tqasi"
         }
       ]
     },
@@ -871,11 +871,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Последующие молочные смеси (для детей 6-12 мес.)"
+          "value": "Последующая молочная смесь"
         },
         {
           "language": "uz",
-          "value": "6-12 oylik bolalar uchun keyingi sut aralashmalari"
+          "value": "Keyingi sut aralashmasi"
         }
       ]
     },
@@ -897,11 +897,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Смеси на основе соевого белка для детского питания"
+          "value": "Детская смесь на основе сои"
         },
         {
           "language": "uz",
-          "value": "Bolalar oziq-ovqati uchun soya oqsili asosidagi aralashmalar"
+          "value": "Soya asosidagi bolalar aralashmasi"
         }
       ]
     },
@@ -962,7 +962,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Жир молочный (молочный жир)"
+          "value": "Молочный жир"
         },
         {
           "language": "uz",
@@ -975,11 +975,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Жир рыбий (Рыбий)"
+          "value": "Рыбий жир"
         },
         {
           "language": "uz",
-          "value": "Baliq yog'i (Baliq)"
+          "value": "Baliq yog'i"
         }
       ]
     },
@@ -988,11 +988,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Жир рыбий (Из печени рыб)"
+          "value": "Жир из печени рыб"
         },
         {
           "language": "uz",
-          "value": "Baliq yog'i (Jigar va boshqa dengiz hayvonlari)"
+          "value": "Baliq jigari yog'i"
         }
       ]
     },
@@ -1053,11 +1053,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Масло арахисовое пищевое"
+          "value": "Арахисовое масло"
         },
         {
           "language": "uz",
-          "value": "Iste'mol uchun yeryong'oq moyi"
+          "value": "Yeryong'oq moyi"
         }
       ]
     },
@@ -1092,11 +1092,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Масло какао пищевое"
+          "value": "Масло какао"
         },
         {
           "language": "uz",
-          "value": "Iste'mol kakao moyi"
+          "value": "Kakao moyi"
         }
       ]
     },
@@ -1144,11 +1144,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Масло миндальное пищевое"
+          "value": "Миндальное масло"
         },
         {
           "language": "uz",
-          "value": "Iste'mol bodom yog'i"
+          "value": "Bodom moyi"
         }
       ]
     },
@@ -1261,11 +1261,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Растительно-жировые смеси (купажные)"
+          "value": "Купажированное растительное масло"
         },
         {
           "language": "uz",
-          "value": "O'simlik-yog' aralashmalari (kupaj)"
+          "value": "Aralash o'simlik moyi"
         }
       ]
     },
@@ -1304,7 +1304,7 @@
         },
         {
           "language": "uz",
-          "value": "No'xat"
+          "value": "Ko'k no'xat"
         }
       ]
     },
@@ -1313,11 +1313,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Бобовые продовольственные: лимская фасоль"
+          "value": "Лимская фасоль"
         },
         {
           "language": "uz",
-          "value": "Iste'mol dukkaklilari: lima loviyasi"
+          "value": "Lima loviyasi"
         }
       ]
     },
@@ -1326,11 +1326,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Бобовые продовольственные: люпин (пищевой)"
+          "value": "Семена люпина"
         },
         {
           "language": "uz",
-          "value": "Iste'mol dukkaklilari: lyupin"
+          "value": "Lyupin urug'i"
         }
       ]
     },
@@ -1339,11 +1339,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Бобовые продовольственные: маш"
+          "value": "Маш"
         },
         {
           "language": "uz",
-          "value": "Iste'mol dukkaklilari: mosh"
+          "value": "Mosh"
         }
       ]
     },
@@ -1352,11 +1352,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Бобовые продовольственные: нут"
+          "value": "Нут"
         },
         {
           "language": "uz",
-          "value": "Iste'mol dukkaklilari: noxat (nut)"
+          "value": "No'xat"
         }
       ]
     },
@@ -1365,11 +1365,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Бобовые продовольственные: соя (зерно)"
+          "value": "Соя"
         },
         {
           "language": "uz",
-          "value": "Iste'mol dukkaklilari: soya (don)"
+          "value": "Soya"
         }
       ]
     },
@@ -1378,7 +1378,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Фасол"
+          "value": "Фасоль"
         },
         {
           "language": "uz",
@@ -1391,11 +1391,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Бобовые продовольственные: чечевица"
+          "value": "Чечевица"
         },
         {
           "language": "uz",
-          "value": "Iste'mol dukkaklilari: yasmiq"
+          "value": "Yasmiq"
         }
       ]
     },
@@ -1417,11 +1417,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Готовые сухие завтраки на зерновой основе"
+          "value": "Сухой завтрак"
         },
         {
           "language": "uz",
-          "value": "Don asosidagi quruq tayyor nonushtalar"
+          "value": "Quruq nonushta"
         }
       ]
     },
@@ -1443,11 +1443,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Изделия слоёные (слойка)"
+          "value": "Слоёное тесто"
         },
         {
           "language": "uz",
-          "value": "Qatlamali xamir mahsulotlari (sloyka)"
+          "value": "Qatlamali xamir"
         }
       ]
     },
@@ -1495,11 +1495,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Овёс продовольственный"
+          "value": "Овёс"
         },
         {
           "language": "uz",
-          "value": "Iste'mol sulisi"
+          "value": "Suli"
         }
       ]
     },
@@ -1560,7 +1560,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Крупа Перловая"
+          "value": "Перловая крупа"
         },
         {
           "language": "uz",
@@ -1573,11 +1573,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кукуруза продовольственная (зерно)"
+          "value": "Зёрна кукурузы"
         },
         {
           "language": "uz",
-          "value": "Iste'mol makkajo'xorisi (don)"
+          "value": "Makkajo'xori donlari"
         }
       ]
     },
@@ -1612,11 +1612,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Макаронные изделия (Спагетти)"
+          "value": "Спагетти"
         },
         {
           "language": "uz",
-          "value": "Makaron mahsulotlari (Spagetti)"
+          "value": "Spagetti"
         }
       ]
     },
@@ -1625,11 +1625,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Макаронные изделия (Рожки)"
+          "value": "Макароны"
         },
         {
           "language": "uz",
-          "value": "Makaron mahsulotlari (Rojki)"
+          "value": "Makaron"
         }
       ]
     },
@@ -1655,7 +1655,7 @@
         },
         {
           "language": "uz",
-          "value": "Manniy yormasi"
+          "value": "Manna yormasi"
         }
       ]
     },
@@ -1664,11 +1664,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Мука глютеновая / клейковина пшеничная (для пищ. применения)"
+          "value": "Глютен"
         },
         {
           "language": "uz",
-          "value": "Iste'mol uchun bug'doy kleykovinasi (glyuten)"
+          "value": "Glyuten"
         }
       ]
     },
@@ -1677,11 +1677,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Мука Нутовая"
+          "value": "Нутовая мука"
         },
         {
           "language": "uz",
-          "value": "Dukkakli un (nut)"
+          "value": "No'xat uni"
         }
       ]
     },
@@ -1742,11 +1742,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Отруби из зерновых"
+          "value": "Отруби"
         },
         {
           "language": "uz",
-          "value": "Don va don ekinlari asosida kepak"
+          "value": "Kepak"
         }
       ]
     },
@@ -1785,7 +1785,7 @@
         },
         {
           "language": "uz",
-          "value": "Cho'zilgan va shirin pechenye"
+          "value": "Yarim shirin pechenye"
         }
       ]
     },
@@ -1807,11 +1807,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Псевдозлаки: амарант"
+          "value": "Амарант"
         },
         {
           "language": "uz",
-          "value": "Soxta donlar: amarant"
+          "value": "Amarant"
         }
       ]
     },
@@ -1820,11 +1820,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Псевдозлаки: киноа"
+          "value": "Киноа"
         },
         {
           "language": "uz",
-          "value": "Soxta donlar: kinoa"
+          "value": "Kinoa"
         }
       ]
     },
@@ -1859,11 +1859,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Рожь продовольственная"
+          "value": "Рожь"
         },
         {
           "language": "uz",
-          "value": "Iste'mol javdari"
+          "value": "Javdar"
         }
       ]
     },
@@ -1898,11 +1898,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Хлеб пшеничный из муки высшего сорта"
+          "value": "Белый хлеб"
         },
         {
           "language": "uz",
-          "value": "Oliy nav undan bug'doy noni"
+          "value": "Oq non"
         }
       ]
     },
@@ -1928,7 +1928,7 @@
         },
         {
           "language": "uz",
-          "value": "Xrustyash xlebsalari"
+          "value": "Qarsildoq non"
         }
       ]
     },
@@ -1950,11 +1950,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Зерно и зерновые культуры"
+          "value": "Зерно"
         },
         {
           "language": "uz",
-          "value": "Don va don ekinlari"
+          "value": "Don"
         }
       ]
     },
@@ -2015,11 +2015,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Листья лекарственные (Мята)"
+          "value": "Мята"
         },
         {
           "language": "uz",
-          "value": "Dorivor barglar (Yalpiz)"
+          "value": "Yalpiz"
         }
       ]
     },
@@ -2028,11 +2028,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Плоды и семена (Шиповник)"
+          "value": "Шиповник"
         },
         {
           "language": "uz",
-          "value": "Meva va urug'lar (Namatak)"
+          "value": "Na'matak"
         }
       ]
     },
@@ -2041,11 +2041,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Плоды и семена (Боярышник)"
+          "value": "Боярышник обыкновенный"
         },
         {
           "language": "uz",
-          "value": "Meva va urug'lar (Do'lana)"
+          "value": "Do'lana"
         }
       ]
     },
@@ -2054,11 +2054,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Плоды и семена (Расторопша)"
+          "value": "Расторопша"
         },
         {
           "language": "uz",
-          "value": "Meva va urug'lar (Rastoropsha)"
+          "value": "Rastoropsha"
         }
       ]
     },
@@ -2067,11 +2067,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Плоды и семена (Тмин обыкновенный)"
+          "value": "Семена тмина"
         },
         {
           "language": "uz",
-          "value": "Meva va urug'lar (Tmin)"
+          "value": "Tmin urug'i"
         }
       ]
     },
@@ -2080,11 +2080,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Зелень: тимьян"
+          "value": "Тимьян"
         },
         {
           "language": "uz",
-          "value": "Ko'kat: timyan"
+          "value": "Kakliko't"
         }
       ]
     },
@@ -2171,11 +2171,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Лактоза пищевая"
+          "value": "Лактоза"
         },
         {
           "language": "uz",
-          "value": "Iste'mol laktozasi"
+          "value": "Laktoza"
         }
       ]
     },
@@ -2223,11 +2223,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Молоко питьевое стерилизованное"
+          "value": "Стерилизованное молоко"
         },
         {
           "language": "uz",
-          "value": "Sterillangan ichimlik suti"
+          "value": "Sterillangan sut"
         }
       ]
     },
@@ -2353,11 +2353,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сливки питьевые пастеризованные"
+          "value": "Свежие сливки"
         },
         {
           "language": "uz",
-          "value": "Pasterlangan ichimlik qaymog'i"
+          "value": "Yangi qaymoq"
         }
       ]
     },
@@ -2431,11 +2431,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сыр рассольный (Фета)"
+          "value": "Фета"
         },
         {
           "language": "uz",
-          "value": "Tuzlama pishloq (Feta)"
+          "value": "Feta pishlog'i"
         }
       ]
     },
@@ -2496,11 +2496,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Мясо баранины"
+          "value": "Баранина"
         },
         {
           "language": "uz",
-          "value": "qo'y go'shti"
+          "value": "Qo'y go'shti"
         }
       ]
     },
@@ -2535,7 +2535,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Мясо говядины"
+          "value": "Говядина"
         },
         {
           "language": "uz",
@@ -2552,7 +2552,7 @@
         },
         {
           "language": "uz",
-          "value": "Zelts (go'shtli zich jeleli mahsulot)"
+          "value": "Zelts"
         }
       ]
     },
@@ -2613,7 +2613,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Мясо дичи (диких животных)"
+          "value": "Мясо дичи"
         },
         {
           "language": "uz",
@@ -2626,11 +2626,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Мясо птицы (гусь)"
+          "value": "Гусятина"
         },
         {
           "language": "uz",
-          "value": "Parranda go'shti (g'oz)"
+          "value": "G'oz go'shti"
         }
       ]
     },
@@ -2639,11 +2639,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Мясо птицы (индейка)"
+          "value": "Мясо индейки"
         },
         {
           "language": "uz",
-          "value": "Parranda go'shti (kurka)"
+          "value": "Kurka go'shti"
         }
       ]
     },
@@ -2652,11 +2652,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Мясо птицы (Курица)"
+          "value": "Курятина"
         },
         {
           "language": "uz",
-          "value": "Parranda go'shti (Tovuq)"
+          "value": "Tovuq go'shti"
         }
       ]
     },
@@ -2669,7 +2669,7 @@
         },
         {
           "language": "uz",
-          "value": "parranda go'shti"
+          "value": "Parranda go'shti"
         }
       ]
     },
@@ -2678,11 +2678,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Мясо птицы (утка)"
+          "value": "Утятина"
         },
         {
           "language": "uz",
-          "value": "Parranda go'shti (o'rdak)"
+          "value": "O'rdak go'shti"
         }
       ]
     },
@@ -2691,11 +2691,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Мясо свинины"
+          "value": "Свинина"
         },
         {
           "language": "uz",
-          "value": "cho'chqa go'shti"
+          "value": "Cho'chqa go'shti"
         }
       ]
     },
@@ -2730,11 +2730,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Субпродукты говяжьи (Рубец)"
+          "value": "Рубец"
         },
         {
           "language": "uz",
-          "value": "Mol qorin chati"
+          "value": "Qorin"
         }
       ]
     },
@@ -2782,11 +2782,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Субпродукты говяжьи (язык)"
+          "value": "Язык (мясо)"
         },
         {
           "language": "uz",
-          "value": "Mol tili"
+          "value": "Til (go'sht)"
         }
       ]
     },
@@ -2873,7 +2873,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Бобы зелёные"
+          "value": "Стручковая фасоль"
         },
         {
           "language": "uz",
@@ -2899,7 +2899,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Вешенка грибы"
+          "value": "Вёшенка"
         },
         {
           "language": "uz",
@@ -2912,11 +2912,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Обычные грибы"
+          "value": "Гриб"
         },
         {
           "language": "uz",
-          "value": "Oddiy qo'ziqorin"
+          "value": "Qo'ziqorin"
         }
       ]
     },
@@ -2925,11 +2925,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Грибы шампиньоны культивируемые"
+          "value": "Шампиньон двуспоровый"
         },
         {
           "language": "uz",
-          "value": "Madaniylashtirilgan shampinyonlar"
+          "value": "Shampinyon"
         }
       ]
     },
@@ -2938,11 +2938,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Зелень столовая: укроп"
+          "value": "Укроп"
         },
         {
           "language": "uz",
-          "value": "Stol ko'kati: ukrop"
+          "value": "Shivit"
         }
       ]
     },
@@ -2977,11 +2977,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Зелень: кинза (кориандр листовой)"
+          "value": "Кинза"
         },
         {
           "language": "uz",
-          "value": "Ko'kat: kashnich (bargli koriandr)"
+          "value": "Kashnich"
         }
       ]
     },
@@ -2990,11 +2990,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Зелень: кресс-салат"
+          "value": "Кресс-салат"
         },
         {
           "language": "uz",
-          "value": "Ko'kat: kress-salat"
+          "value": "Kress-salat"
         }
       ]
     },
@@ -3003,11 +3003,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Зелень: лук-резанец (шнитт-лук)"
+          "value": "Шнитт-лук"
         },
         {
           "language": "uz",
-          "value": "Ko'kat: shnitt-piyoz"
+          "value": "Shnitt-piyoz"
         }
       ]
     },
@@ -3016,11 +3016,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Зелень: мангольд"
+          "value": "Мангольд"
         },
         {
           "language": "uz",
-          "value": "Ko'kat: mangold"
+          "value": "Mangold"
         }
       ]
     },
@@ -3029,11 +3029,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Зелень: розмарин"
+          "value": "Розмарин"
         },
         {
           "language": "uz",
-          "value": "Ko'kat: rozmarin"
+          "value": "Rozmarin"
         }
       ]
     },
@@ -3042,11 +3042,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Зелень: шпинат"
+          "value": "Шпинат"
         },
         {
           "language": "uz",
-          "value": "Ko'kat: ismaloq"
+          "value": "Ismaloq"
         }
       ]
     },
@@ -3055,11 +3055,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Зелень: эстрагон (тархун)"
+          "value": "Эстрагон"
         },
         {
           "language": "uz",
-          "value": "Ko'kat: tarxun (estragon)"
+          "value": "Tarxun"
         }
       ]
     },
@@ -3068,11 +3068,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Имбирь свежий (корень)"
+          "value": "Корень имбиря"
         },
         {
           "language": "uz",
-          "value": "Yangi zanjabil (ildiz)"
+          "value": "Zanjabil ildizi"
         }
       ]
     },
@@ -3081,11 +3081,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кабачки"
+          "value": "Кабачок"
         },
         {
           "language": "uz",
-          "value": "Kabachki"
+          "value": "Kabachok"
         }
       ]
     },
@@ -3198,11 +3198,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Шотландская (кейл, кудрявая)"
+          "value": "Кудрявая капуста (кейл)"
         },
         {
           "language": "uz",
-          "value": "Shotland bargli karami (keyl, jingalak karam)"
+          "value": "Jingalak karam (keyl)"
         }
       ]
     },
@@ -3341,11 +3341,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Маслины и оливки столовые (консервированные)"
+          "value": "Оливки"
         },
         {
           "language": "uz",
-          "value": "Konservalangan stol zaytunlari (oliva, maslin)"
+          "value": "Zaytun"
         }
       ]
     },
@@ -3354,11 +3354,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Морковь свежая"
+          "value": "Морковь"
         },
         {
           "language": "uz",
-          "value": "Yangi sabzi"
+          "value": "Sabzi"
         }
       ]
     },
@@ -3575,11 +3575,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Соки овощные"
+          "value": "Овощной сок"
         },
         {
           "language": "uz",
-          "value": "Sabzavot sharbatlari"
+          "value": "Sabzavot sharbati"
         }
       ]
     },
@@ -3653,11 +3653,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "ОБЫКНОВЕННАЯ ТЫКВА"
+          "value": "Тыква"
         },
         {
           "language": "uz",
-          "value": "Oddiy qovoq"
+          "value": "Qovoq"
         }
       ]
     },
@@ -3666,11 +3666,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Фенхель (клубнелуковица)"
+          "value": "Фенхель"
         },
         {
           "language": "uz",
-          "value": "Fenxel piyoz tuganagi"
+          "value": "Fenxel"
         }
       ]
     },
@@ -3705,11 +3705,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Чеснок свежий (головки)"
+          "value": "Чеснок"
         },
         {
           "language": "uz",
-          "value": "Yangi sarimsoq (bosh)"
+          "value": "Sarimsoq"
         }
       ]
     },
@@ -3770,11 +3770,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Мука из тапиоки"
+          "value": "Тапиока"
         },
         {
           "language": "uz",
-          "value": "tapioki uni"
+          "value": "Tapioka"
         }
       ]
     },
@@ -3913,11 +3913,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Пасты и пралине из орехов и семян (Арахисовая)"
+          "value": "Арахисовая паста"
         },
         {
           "language": "uz",
-          "value": "Yong'oq va urug'lardan tayyorlangan pastalar (Yeryong'oq pastasi)"
+          "value": "Yeryong'oq pastasi"
         }
       ]
     },
@@ -3926,11 +3926,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Пасты и пралине из орехов и семян (Тахини)"
+          "value": "Тахини"
         },
         {
           "language": "uz",
-          "value": "Yong'oq va urug'lardan tayyorlangan pastalar (Tahini)"
+          "value": "Tahini"
         }
       ]
     },
@@ -3952,11 +3952,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Семена горчицы (масличные)"
+          "value": "Семена горчицы"
         },
         {
           "language": "uz",
-          "value": "Xantal urug'i (yog' uchun)"
+          "value": "Xantal urug'i"
         }
       ]
     },
@@ -3978,11 +3978,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Семена льна (для пищ. применения)"
+          "value": "Семена льна"
         },
         {
           "language": "uz",
-          "value": "Iste'mol uchun zig'ir urug'i"
+          "value": "Zig'ir urug'i"
         }
       ]
     },
@@ -3991,11 +3991,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Семена мака пищевые"
+          "value": "Семена мака"
         },
         {
           "language": "uz",
-          "value": "Iste'mol mak (ko'knori) urug'i"
+          "value": "Ko'knori urug'i"
         }
       ]
     },
@@ -4004,11 +4004,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Семена подсолнечника жареные/нежареные"
+          "value": "Семена подсолнечника"
         },
         {
           "language": "uz",
-          "value": "Qovurilgan/qovurilmagan kungaboqar urug'lari"
+          "value": "Kungaboqar urug'i"
         }
       ]
     },
@@ -4095,11 +4095,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Антиоксиданты (Аскорбиновая кислота)"
+          "value": "Аскорбиновая кислота"
         },
         {
           "language": "uz",
-          "value": "Antioksidantlar (Askorbin kislotasi)"
+          "value": "Askorbin kislotasi"
         }
       ]
     },
@@ -4108,11 +4108,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Антиоксиданты (Токоферолы)"
+          "value": "Витамин E и/или его производные"
         },
         {
           "language": "uz",
-          "value": "Antioksidantlar (Tokoferollar)"
+          "value": "E vitamini va/yoki uning hosilalari"
         }
       ]
     },
@@ -4121,11 +4121,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Антиоксиданты (BHA)"
+          "value": "Бутилгидроксианизол"
         },
         {
           "language": "uz",
-          "value": "Antioksidantlar (BHA)"
+          "value": "Butilgidroksianizol"
         }
       ]
     },
@@ -4134,11 +4134,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Антиоксиданты (BHT)"
+          "value": "Бутилгидрокситолуол"
         },
         {
           "language": "uz",
-          "value": "Antioksidantlar (BHT)"
+          "value": "Butilgidroksitoluol"
         }
       ]
     },
@@ -4147,11 +4147,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Глазирующие агенты (Шеллак)"
+          "value": "Шеллак"
         },
         {
           "language": "uz",
-          "value": "Yaltiratuvchi vositalar (Shellak)"
+          "value": "Shellak"
         }
       ]
     },
@@ -4173,11 +4173,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Желатин пищевой"
+          "value": "Желатин"
         },
         {
           "language": "uz",
-          "value": "Iste'mol jelatini"
+          "value": "Jelatin"
         }
       ]
     },
@@ -4186,11 +4186,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Загустители и стабилизаторы (Пектин)"
+          "value": "Пектин"
         },
         {
           "language": "uz",
-          "value": "Quyultiruvchi va stabilizatorlar (Pektin)"
+          "value": "Pektin"
         }
       ]
     },
@@ -4199,11 +4199,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Загустители и стабилизаторы (Каррагинан)"
+          "value": "Каррагинан"
         },
         {
           "language": "uz",
-          "value": "Quyultiruvchi va stabilizatorlar (Karragenan)"
+          "value": "Karragenan"
         }
       ]
     },
@@ -4212,11 +4212,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Загустители и стабилизаторы (Гуаровая камедь)"
+          "value": "Гуаровая камедь"
         },
         {
           "language": "uz",
-          "value": "Quyultiruvchi va stabilizatorlar (Guar smolasi)"
+          "value": "Guar smolasi"
         }
       ]
     },
@@ -4251,11 +4251,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Консерванты (Нитриты)"
+          "value": "Нитрит"
         },
         {
           "language": "uz",
-          "value": "Konservantlar (Nitrit)"
+          "value": "Nitrit"
         }
       ]
     },
@@ -4264,11 +4264,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Консерванты (Нитраты)"
+          "value": "Нитрат"
         },
         {
           "language": "uz",
-          "value": "Konservantlar (Nitrat)"
+          "value": "Nitrat"
         }
       ]
     },
@@ -4290,11 +4290,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Крахмал кукурузный"
+          "value": "Кукурузный крахмал"
         },
         {
           "language": "uz",
-          "value": "Makkajo'xori"
+          "value": "Makkajo'xori kraxmali"
         }
       ]
     },
@@ -4303,11 +4303,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Лимонная кислота пищевая"
+          "value": "Лимонная кислота"
         },
         {
           "language": "uz",
-          "value": "Iste'mol limon kislotasi"
+          "value": "Limon kislotasi"
         }
       ]
     },
@@ -4316,11 +4316,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Пищевые красители натуральные (Кармин)"
+          "value": "Кармин"
         },
         {
           "language": "uz",
-          "value": "Tabiiy oziq-ovqat bo'yog'i (Karmin)"
+          "value": "Karmin"
         }
       ]
     },
@@ -4329,11 +4329,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Пищевые красители натуральные (Куркумин)"
+          "value": "Куркумин"
         },
         {
           "language": "uz",
-          "value": "Tabiiy oziq-ovqat bo'yog'i (Kurkumin)"
+          "value": "Kurkumin"
         }
       ]
     },
@@ -4342,11 +4342,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Пищевые красители синтетические (Тартразин)"
+          "value": "Тартразин"
         },
         {
           "language": "uz",
-          "value": "Sintetik oziq-ovqat bo'yog'i (Tartrazin)"
+          "value": "Tartrazin"
         }
       ]
     },
@@ -4368,11 +4368,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Разрыхлители и пекарские порошки"
+          "value": "Пекарский порошок"
         },
         {
           "language": "uz",
-          "value": "Yumshatuvchilar va non kukunlari"
+          "value": "Xamir yumshatuvchi kukun"
         }
       ]
     },
@@ -4381,11 +4381,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Регуляторы кислотности (Молочная)"
+          "value": "Молочная кислота"
         },
         {
           "language": "uz",
-          "value": "Kislotalik regulyatorlari (Sut)"
+          "value": "Sut kislotasi"
         }
       ]
     },
@@ -4394,11 +4394,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Регуляторы кислотности (Яблочная кислоты)"
+          "value": "Яблочная кислота"
         },
         {
           "language": "uz",
-          "value": "Kislotalik regulyatorlari (Olma kislotalari)"
+          "value": "Olma kislotasi"
         }
       ]
     },
@@ -4407,11 +4407,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сода пищевая (бикарбонат натрия)"
+          "value": "Бикарбонат натрия"
         },
         {
           "language": "uz",
-          "value": "Iste'mol sodasi (natriy bikarbonati)"
+          "value": "Natriy bikarbonati"
         }
       ]
     },
@@ -4420,11 +4420,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ферментные препараты (Амилазы)"
+          "value": "Амилаза"
         },
         {
           "language": "uz",
-          "value": "Ferment preparatlari (Amilaza)"
+          "value": "Amilaza"
         }
       ]
     },
@@ -4433,11 +4433,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ферментные препараты (Протеазы)"
+          "value": "Пептидгидролаза"
         },
         {
           "language": "uz",
-          "value": "Ferment preparatlari (Proteaza)"
+          "value": "Peptidgidrolaza"
         }
       ]
     },
@@ -4446,11 +4446,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Ферментные препараты (Липазы)"
+          "value": "Липаза"
         },
         {
           "language": "uz",
-          "value": "Ferment preparatlari (Lipaza)"
+          "value": "Lipaza"
         }
       ]
     },
@@ -4459,11 +4459,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Эмульгаторы (Лецитин)"
+          "value": "Лецитин"
         },
         {
           "language": "uz",
-          "value": "Emulgatorlar (Lesitin)"
+          "value": "Lesitin"
         }
       ]
     },
@@ -4472,7 +4472,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Анис семена"
+          "value": "Семена аниса"
         },
         {
           "language": "uz",
@@ -4537,11 +4537,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Готовые сухие приправы и пряные смеси"
+          "value": "Приправа"
         },
         {
           "language": "uz",
-          "value": "Tayyor quruq ziravor va ziravor aralashmalari"
+          "value": "Ziravor"
         }
       ]
     },
@@ -4550,11 +4550,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Зира индийская (кумин)"
+          "value": "Семена кумина (зиры)"
         },
         {
           "language": "uz",
-          "value": "Hind zirasi (kumin)"
+          "value": "Zira urug'i"
         }
       ]
     },
@@ -4602,7 +4602,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кориандр семена"
+          "value": "Семена кориандра"
         },
         {
           "language": "uz",
@@ -4680,11 +4680,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Перец красный молотый (Кайенский)"
+          "value": "Кайенский перец"
         },
         {
           "language": "uz",
-          "value": "Maydalangan qizil qalampir (Kayen)"
+          "value": "Kayen qalampiri"
         }
       ]
     },
@@ -4693,11 +4693,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Перец красный молотый (Паприка)"
+          "value": "Паприка"
         },
         {
           "language": "uz",
-          "value": "Maydalangan qizil qalampir (Paprika)"
+          "value": "Paprika"
         }
       ]
     },
@@ -4706,11 +4706,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Перец красный молотый (Чили молотый)"
+          "value": "Молотый перец чили"
         },
         {
           "language": "uz",
-          "value": "Maydalangan qizil qalampir (Chili)"
+          "value": "Maydalangan chili qalampiri"
         }
       ]
     },
@@ -4758,11 +4758,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Соусы салатные"
+          "value": "Салатная заправка"
         },
         {
           "language": "uz",
-          "value": "Salat souslari"
+          "value": "Salat sousi"
         }
       ]
     },
@@ -4814,7 +4814,7 @@
         },
         {
           "language": "uz",
-          "value": "Vino uksusi"
+          "value": "Vino sirkasi"
         }
       ]
     },
@@ -4836,7 +4836,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Фенхель семена"
+          "value": "Семена фенхеля"
         },
         {
           "language": "uz",
@@ -4849,11 +4849,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Хрен столовый (приправа)"
+          "value": "Соус из хрена"
         },
         {
           "language": "uz",
-          "value": "Stol xreni (ziravor)"
+          "value": "Xren sousi"
         }
       ]
     },
@@ -4966,11 +4966,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Карповые (Карп)"
+          "value": "Карп"
         },
         {
           "language": "uz",
-          "value": "Karpsimon baliqlar (Karp)"
+          "value": "Karp"
         }
       ]
     },
@@ -5005,11 +5005,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Крабы и крабовое мясо"
+          "value": "Краб"
         },
         {
           "language": "uz",
-          "value": "Krablar va krab go'shti"
+          "value": "Krab"
         }
       ]
     },
@@ -5057,11 +5057,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Морские водоросли пищевые (Спирулина)"
+          "value": "Спирулина"
         },
         {
           "language": "uz",
-          "value": "Iste'mol uchun dengiz suvo'tlari (Spirulina)"
+          "value": "Spirulina"
         }
       ]
     },
@@ -5083,11 +5083,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Полуфабрикаты рыбные (Котлеты)"
+          "value": "Рыбная котлета"
         },
         {
           "language": "uz",
-          "value": "Baliq yarimtayyor mahsulotlari (Kotletlar)"
+          "value": "Baliq kotleti"
         }
       ]
     },
@@ -5096,11 +5096,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Раки и омары (Лангусты)"
+          "value": "Лангуст"
         },
         {
           "language": "uz",
-          "value": "Qisqichbaqalar va omarlar (Langustlar)"
+          "value": "Langust"
         }
       ]
     },
@@ -5109,11 +5109,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Раки и омары (Лобстеры)"
+          "value": "Омар"
         },
         {
           "language": "uz",
-          "value": "Qisqichbaqalar va omarlar (Lobsterlar)"
+          "value": "Omar"
         }
       ]
     },
@@ -5122,11 +5122,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Рыба лососёвых пород (Лосось)"
+          "value": "Лосось"
         },
         {
           "language": "uz",
-          "value": "Qizil baliq turlari (Losos)"
+          "value": "Losos"
         }
       ]
     },
@@ -5135,11 +5135,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Рыба лососёвых пород (Форель)"
+          "value": "Форель"
         },
         {
           "language": "uz",
-          "value": "Qizil baliq turlari (Forel)"
+          "value": "Forel"
         }
       ]
     },
@@ -5148,11 +5148,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "рыбное мясо"
+          "value": "Рыба"
         },
         {
           "language": "uz",
-          "value": "Baliq go'shti"
+          "value": "Baliq"
         }
       ]
     },
@@ -5161,11 +5161,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Рыба сельдевая (Сельдь)"
+          "value": "Сельдь"
         },
         {
           "language": "uz",
-          "value": "Seld turlari (Seld)"
+          "value": "Seld"
         }
       ]
     },
@@ -5174,11 +5174,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Рыба сельдевая (Сардина)"
+          "value": "Сардина"
         },
         {
           "language": "uz",
-          "value": "Seld turlari (Sardina)"
+          "value": "Sardina"
         }
       ]
     },
@@ -5187,11 +5187,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Рыба сельдевая (Анчоус)"
+          "value": "Анчоус"
         },
         {
           "language": "uz",
-          "value": "Seld turlari (Anchous)"
+          "value": "Anchous"
         }
       ]
     },
@@ -5200,11 +5200,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Рыба сельдевая (Килька)"
+          "value": "Килька"
         },
         {
           "language": "uz",
-          "value": "Seld turlari (Kilka)"
+          "value": "Kilka"
         }
       ]
     },
@@ -5213,11 +5213,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Рыба тунцовая (Тунец)"
+          "value": "Тунец"
         },
         {
           "language": "uz",
-          "value": "Tunyets turlari (Tunyets)"
+          "value": "Tunets"
         }
       ]
     },
@@ -5226,11 +5226,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Рыба тунцовая (Скумбрия)"
+          "value": "Скумбрия"
         },
         {
           "language": "uz",
-          "value": "Tunyets turlari (Skumbriya)"
+          "value": "Skumbriya"
         }
       ]
     },
@@ -5278,7 +5278,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "рыба-меч"
+          "value": "Рыба-меч"
         },
         {
           "language": "uz",
@@ -5291,11 +5291,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Воск пчелиный пищевой"
+          "value": "Пчелиный воск"
         },
         {
           "language": "uz",
-          "value": "Iste'mol uchun mum"
+          "value": "Asalari mumi"
         }
       ]
     },
@@ -5304,11 +5304,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Восточные сладости (Рахат-лукум)"
+          "value": "Рахат-лукум"
         },
         {
           "language": "uz",
-          "value": "Sharqona shirinliklar (Rohat-luqum)"
+          "value": "Rohat-lukum"
         }
       ]
     },
@@ -5317,11 +5317,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Глазури кондитерские"
+          "value": "Глазурь"
         },
         {
           "language": "uz",
-          "value": "Qandolat glazurlari"
+          "value": "Glazur"
         }
       ]
     },
@@ -5330,11 +5330,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Глюкоза пищевая"
+          "value": "Глюкоза"
         },
         {
           "language": "uz",
-          "value": "Iste'mol glyukozasi"
+          "value": "Glyukoza"
         }
       ]
     },
@@ -5356,11 +5356,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Конфеты карамельные (Леденцовые)"
+          "value": "Леденцовая карамель"
         },
         {
           "language": "uz",
-          "value": "Karamel konfetlari (Mursaklilar)"
+          "value": "Qattiq karamel konfet"
         }
       ]
     },
@@ -5399,7 +5399,7 @@
         },
         {
           "language": "uz",
-          "value": "Ona suti"
+          "value": "Asalari qirollik suti"
         }
       ]
     },
@@ -5447,11 +5447,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Пыльца цветочная"
+          "value": "Пчелиная пыльца"
         },
         {
           "language": "uz",
-          "value": "Gul changi"
+          "value": "Asalari changi"
         }
       ]
     },
@@ -5460,11 +5460,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Подсластители натуральные (Ксилит)"
+          "value": "Ксилит"
         },
         {
           "language": "uz",
-          "value": "Tabiiy shirinlashtirgichlar (Ksilit)"
+          "value": "Ksilit"
         }
       ]
     },
@@ -5473,11 +5473,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Подсластители синтетические (Аспартам)"
+          "value": "Аспартам"
         },
         {
           "language": "uz",
-          "value": "Sintetik shirinlashtirgichlar (Aspartam)"
+          "value": "Aspartam"
         }
       ]
     },
@@ -5486,11 +5486,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Подсластители синтетические (Сахарин)"
+          "value": "Сахарин"
         },
         {
           "language": "uz",
-          "value": "Sintetik shirinlashtirgichlar (Saxarin)"
+          "value": "Saxarin"
         }
       ]
     },
@@ -5499,11 +5499,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Подсластители синтетические (Сукралоза)"
+          "value": "Сукралоза"
         },
         {
           "language": "uz",
-          "value": "Sintetik shirinlashtirgichlar (Sukraloza)"
+          "value": "Sukraloza"
         }
       ]
     },
@@ -5529,7 +5529,7 @@
         },
         {
           "language": "uz",
-          "value": "Qand"
+          "value": "Shakar"
         }
       ]
     },
@@ -5538,11 +5538,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сахар тростниковый коричневый"
+          "value": "Коричневый сахар"
         },
         {
           "language": "uz",
-          "value": "Jigarrang shakar qamish shakari"
+          "value": "Jigarrang shakar"
         }
       ]
     },
@@ -5551,11 +5551,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сахар-песок белый"
+          "value": "Белый сахар"
         },
         {
           "language": "uz",
-          "value": "Oq shakar (qum)"
+          "value": "Oq shakar"
         }
       ]
     },
@@ -5707,11 +5707,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Жидкие специализированные смеси для медицинского питания"
+          "value": "Полноценная жидкая питательная смесь"
         },
         {
           "language": "uz",
-          "value": "Tibbiy ovqat uchun suyuq maxsus aralashmalar"
+          "value": "To'liq qiymatli suyuq ozuqaviy aralashma"
         }
       ]
     },
@@ -5720,11 +5720,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Спортивное питание: креатин"
+          "value": "Креатин"
         },
         {
           "language": "uz",
-          "value": "Sport ovqatlanishi: kreatin"
+          "value": "Kreatin"
         }
       ]
     },
@@ -5733,11 +5733,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Спортивное питание: L-карнитин"
+          "value": "Левокарнитин (L-карнитин)"
         },
         {
           "language": "uz",
-          "value": "Sport ovqatlanishi: L-karnitin"
+          "value": "Levokarnitin (L-karnitin)"
         }
       ]
     },
@@ -5746,11 +5746,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Спортивное питание: Аргинин"
+          "value": "Аргинин"
         },
         {
           "language": "uz",
-          "value": "Sport ovqatlanishi: Arginin"
+          "value": "Arginin"
         }
       ]
     },
@@ -5759,11 +5759,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Абрикос свежий"
+          "value": "Абрикос"
         },
         {
           "language": "uz",
-          "value": "Yangi o'rik"
+          "value": "O'rik"
         }
       ]
     },
@@ -5785,11 +5785,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Айва свежая"
+          "value": "Айва"
         },
         {
           "language": "uz",
-          "value": "Yangi behi"
+          "value": "Behi"
         }
       ]
     },
@@ -5932,7 +5932,7 @@
         },
         {
           "language": "uz",
-          "value": "chernika"
+          "value": "Chernika"
         }
       ]
     },
@@ -5941,11 +5941,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Гранат свежий"
+          "value": "Гранат"
         },
         {
           "language": "uz",
-          "value": "Yangi anor"
+          "value": "Anor"
         }
       ]
     },
@@ -5967,11 +5967,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Груши свежие"
+          "value": "Груша"
         },
         {
           "language": "uz",
-          "value": "Yangi nok"
+          "value": "Nok"
         }
       ]
     },
@@ -6019,11 +6019,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Инжир свежий"
+          "value": "Инжир"
         },
         {
           "language": "uz",
-          "value": "Yangi anjir"
+          "value": "Anjir"
         }
       ]
     },
@@ -6058,11 +6058,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Клубника свежая"
+          "value": "Клубника"
         },
         {
           "language": "uz",
-          "value": "Yangi qulupnay"
+          "value": "Qulupnay"
         }
       ]
     },
@@ -6084,11 +6084,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кожура цитрусовых засахаренная и пищевая"
+          "value": "Засахаренная цитрусовая кожура"
         },
         {
           "language": "uz",
-          "value": "Iste'mol va shakarlangan sitrus po'stlog'i"
+          "value": "Shakarlangan sitrus po'stlog'i"
         }
       ]
     },
@@ -6097,11 +6097,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кокос (Свежий)"
+          "value": "Свежий кокос"
         },
         {
           "language": "uz",
-          "value": "Kokos (Yangi)"
+          "value": "Yangi kokos"
         }
       ]
     },
@@ -6123,11 +6123,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кокосовая стружка пищевая"
+          "value": "Кокосовая стружка"
         },
         {
           "language": "uz",
-          "value": "Iste'mol kokos qirilmasi"
+          "value": "Kokos qirilmasi"
         }
       ]
     },
@@ -6253,11 +6253,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Нектарин свежий"
+          "value": "Нектарин"
         },
         {
           "language": "uz",
-          "value": "Yangi nektarin"
+          "value": "Nektarin"
         }
       ]
     },
@@ -6279,11 +6279,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Персик свежий"
+          "value": "Персик"
         },
         {
           "language": "uz",
-          "value": "Yangi shaftoli"
+          "value": "Shaftoli"
         }
       ]
     },
@@ -6318,7 +6318,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сухофрукты: груша сушёная"
+          "value": "Сушёная груша"
         },
         {
           "language": "uz",
@@ -6344,7 +6344,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сухофрукты: изюм"
+          "value": "Изюм"
         },
         {
           "language": "uz",
@@ -6357,7 +6357,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сухофрукты: инжир сушёный"
+          "value": "Сушёный инжир"
         },
         {
           "language": "uz",
@@ -6370,7 +6370,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сухофрукты: смесь сухофруктов"
+          "value": "Смесь сухофруктов"
         },
         {
           "language": "uz",
@@ -6383,7 +6383,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сухофрукты: финики сушёные"
+          "value": "Сушёные финики"
         },
         {
           "language": "uz",
@@ -6396,7 +6396,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сухофрукты: чернослив"
+          "value": "Чернослив"
         },
         {
           "language": "uz",
@@ -6409,7 +6409,7 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Сухофрукты: яблоко сушёное (qoqi)"
+          "value": "Сушёное яблоко"
         },
         {
           "language": "uz",
@@ -6426,7 +6426,7 @@
         },
         {
           "language": "uz",
-          "value": "Olxo'ri (tarn)"
+          "value": "Tikanli olxo'ri"
         }
       ]
     },
@@ -6448,11 +6448,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Финики свежие"
+          "value": "Финик"
         },
         {
           "language": "uz",
-          "value": "Yangi xurmo"
+          "value": "Xurmo"
         }
       ]
     },
@@ -6591,11 +6591,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Кофейные напитки (Ячмёнем)"
+          "value": "Ячменный кофе"
         },
         {
           "language": "uz",
-          "value": "Kofeli ichimliklar (Arpa bilan)"
+          "value": "Arpa kofesi"
         }
       ]
     },
@@ -6604,11 +6604,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Чай зелёный байховый"
+          "value": "Зелёный чай"
         },
         {
           "language": "uz",
-          "value": "Yashil bargli choy"
+          "value": "Yashil choy"
         }
       ]
     },
@@ -6643,11 +6643,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Альбумин яичный"
+          "value": "Овальбумин"
         },
         {
           "language": "uz",
-          "value": "Tuxum albumini"
+          "value": "Ovalbumin"
         }
       ]
     },
@@ -6656,11 +6656,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Белок сухой / жидкий"
+          "value": "Яичный белок"
         },
         {
           "language": "uz",
-          "value": "Quruq / suyuq tuxum oqi"
+          "value": "Tuxum oqi"
         }
       ]
     },
@@ -6669,11 +6669,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Желток сухой / жидкий"
+          "value": "Яичный желток"
         },
         {
           "language": "uz",
-          "value": "Quruq / suyuq tuxum sarig'i"
+          "value": "Tuxum sarig'i"
         }
       ]
     },
@@ -6695,11 +6695,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Яичный порошок (цельный)"
+          "value": "Яичный порошок"
         },
         {
           "language": "uz",
-          "value": "To'liq tuxum kukuni"
+          "value": "Tuxum kukuni"
         }
       ]
     },
@@ -6708,11 +6708,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Яйца варёные готовые к употреблению (фабричные)"
+          "value": "Варёное яйцо"
         },
         {
           "language": "uz",
-          "value": "Iste'molga tayyor (fabrika) qaynatilgan tuxum"
+          "value": "Qaynatilgan tuxum"
         }
       ]
     },
@@ -6864,11 +6864,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Медицинское оборудование / Аппаратура"
+          "value": "Медицинское оборудование"
         },
         {
           "language": "uz",
-          "value": "Tibbiy uskunalar / apparatura"
+          "value": "Tibbiy uskuna"
         }
       ]
     },
@@ -6955,11 +6955,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "Полимерные материалы и пластические массы на их основе полистирол (блочный, суспензионный, ударопрочный)"
+          "value": "Полистирол"
         },
         {
           "language": "uz",
-          "value": "Polimer materiallar va ular asosidagi plastik massalar: polistirol (blokli, suspenzion, zarbaga chidamli)"
+          "value": "Polistirol"
         }
       ]
     },
@@ -6968,11 +6968,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "поливинилхлоридные пластики жесткий ПВХ пластифицированный ПВХ, дополнительно к покозателем, указанным следует определят"
+          "value": "Поливинилхлорид"
         },
         {
           "language": "uz",
-          "value": "Qattiq PVX, plastifikatsiyalangan PVX; qattiq PVX uchun ko'rsatilgan ko'rsatkichlarga qo'shimcha ravishda quyidagilarni aniqlash lozim"
+          "value": "Polivinilxlorid"
         }
       ]
     },
@@ -6981,11 +6981,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "стекло и изделия из стекла"
+          "value": "Стекло"
         },
         {
           "language": "uz",
-          "value": "Shisha va shishadan tayyorlangan buyumlar"
+          "value": "Shisha"
         }
       ]
     },
@@ -6994,11 +6994,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "керамические изделия"
+          "value": "Керамика"
         },
         {
           "language": "uz",
-          "value": "Keramik buyumlar"
+          "value": "Keramika"
         }
       ]
     },
@@ -7033,11 +7033,11 @@
       "designation": [
         {
           "language": "ru",
-          "value": "мыло ( туалетное, дезодорирующее и т.д)"
+          "value": "Мыло"
         },
         {
           "language": "uz",
-          "value": "Sovun (hojatxona sovuni, dezodoratsiyalovchi va boshqalar)"
+          "value": "Sovun"
         }
       ]
     },
@@ -7046,11 +7046,115 @@
       "designation": [
         {
           "language": "ru",
-          "value": "1.1. Мясо, в.т.ч. полу фабрикаты, парные, охлажденные, подморо женные, замороженные (все виды убойных, про мысловых и диких жи вотных), в т.ч.:"
+          "value": "Мясо"
         },
         {
           "language": "uz",
-          "value": "1.1 Go'sht, sh.j. yarim tayyor go'sht mahsulotlari, yangi so'yilgan, sovutilgan, muzlatilgan, yaxlatilgan (barcha turdagi so'yiladigan, ovlanadigan va yovvoyi hayvonlar), shu jumladan."
+          "value": "Go'sht"
+        }
+      ]
+    },
+    {
+      "code": "41573001",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Льняное масло"
+        },
+        {
+          "language": "uz",
+          "value": "Zig'ir moyi"
+        }
+      ]
+    },
+    {
+      "code": "54732005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Абрикосовое масло"
+        },
+        {
+          "language": "uz",
+          "value": "O'rik danagi moyi"
+        }
+      ]
+    },
+    {
+      "code": "59533004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Пищевая добавка"
+        },
+        {
+          "language": "uz",
+          "value": "Oziq-ovqat qo'shimchasi"
+        }
+      ]
+    },
+    {
+      "code": "708547008",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Постельные принадлежности"
+        },
+        {
+          "language": "uz",
+          "value": "Yotoq jihozlari"
+        }
+      ]
+    },
+    {
+      "code": "86407004",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Стол"
+        },
+        {
+          "language": "uz",
+          "value": "Stol"
+        }
+      ]
+    },
+    {
+      "code": "708660005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Подоконник"
+        },
+        {
+          "language": "uz",
+          "value": "Deraza tokchasi"
+        }
+      ]
+    },
+    {
+      "code": "823054000",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Жидкий заменитель пищи"
+        },
+        {
+          "language": "uz",
+          "value": "Suyuq ovqat o'rnini bosuvchi"
+        }
+      ]
+    },
+    {
+      "code": "227989005",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Консервированные продукты"
+        },
+        {
+          "language": "uz",
+          "value": "Konservalangan oziq-ovqat"
         }
       ]
     },

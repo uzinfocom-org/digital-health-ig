@@ -1,5 +1,5 @@
 CODE(snomed),EN,RU,UZ
-11713004,Suv,????,Water
-15158005,Havo,??????,Air
-415555003,Tuproq,?????,Soil
-255620007,Oziq-ovqat mahsulotlari,??????? ????????,Food
+11713004,Water,Вода,Suv
+15158005,Air,Воздух,Havo
+415555003,Soil,Почва,Tuproq
+255620007,Food,Пищевые продукты,Oziq-ovqat mahsulotlari
