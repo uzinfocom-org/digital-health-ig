@@ -2,13 +2,21 @@
 
 #### Qo'shildi
 
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) bemorlar, tibbiyot xodimlari yoki tashkilotlarga yetkaziladigan ma'lumotni, masalan bemorlar Bemor portalida ko'radigan jamoat salomatligi ogohlantirishini qayd etadi: milliy ogohlantirishlar reglamenti bo'yicha hududning I-IV darajasi bilan xavfli hudud aholisiga ogohlantirish yoki menejerning tashkilot xodimlari guruhiga ogohlantirishi. Uning `category` si - HL7 [xabar toifasi](ValueSet-communication-category-vs.html) `alert`, o'zbekcha va ruscha nomlari [supplement](CodeSystem-communication-category-cs.html) da, ogohlantirish darajasi esa o'zbek, rus va ingliz tilidagi nomlari bilan yangi mahalliy [Alert level](CodeSystem-alert-level-cs.html) kod tizimidan olinadi.
+
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) o'zi bajaradigan [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) ga [Asos - buyum so'rovi](StructureDefinition-deviceusage-based-on.html) kengaytmasi orqali havola qiladi, masalan [mis BIV](DeviceUsage-example-deviceusage-iud.html) misolida.
 
 #### O'zgartirildi
 
+[Guruh turi](ValueSet-group-kind-vs.html) tashkilot xodimlari guruhi bilan to'ldirildi.
+
+[Hodisa holati](ValueSet-procedure-event-status-vs.html), avval Procedure hodisasi holati, endi UZ Core Procedure va UZ Core Communication da ishlatiladi.
+
 [Komponentlararo resurs arxitekturasi](components.html#komponentlararo-resurs-arxitekturasi) diagrammasiga MedicationRequest, MedicationDispense, Medication, MedicationKnowledge va MedicationAdministration bilan "Retseptlar" hamda SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport va Device bilan "Ta'minot" komponentlari qo'shildi. Yangi profillar ular ishlatiladigan joyda ko'rsatiladi: DeviceRequest va DeviceUsage - elektron tibbiy yozuvlarda (CHR), ChargeItem - reimbursatsiyada, BiologicallyDerivedProductDispense va Flag - qon resurslarini boshqarishda, CarePlan - hamshiralik ishida. CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport va BiologicallyDerivedProduct endi UZ Core profillariga ega, shuning uchun ular "nomlangan, lekin hali belgilanmagan" emas, balki ushbu qo'llanmada belgilangan deb belgilanadi. Diagrammaning yuqori o'ng burchagidagi tugmalar barcha komponentlarni birdaniga ochadi yoki yopadi va diagrammani ko'rinishga qaytadan moslaydi.
 
 Qo'llanma sahifalari [DHP dasturchilar hujjatlari](https://docs.dhp.uz/uz/) uslubida bezatilgan: Onest va JetBrains Mono shriftlari, DHP yashil ranglari va logotipi, yangilangan sarlavha, menyu, jadvallar, eslatmalar va nusxa olish tugmasi bilan kod bloklari. Sarlavhadagi mavzu menyusi yorug', qorong'i yoki tizimdagidek mavzuni tanlaydi.
+
+[UZ Core Location](StructureDefinition-uz-core-location.html) endi hududlarni ham qamrab oladi, masalan jamoat salomatligi uchun xavfli hudud deb belgilangan mahalla.
 
 #### Buzuvchi o'zgarishlar
 
