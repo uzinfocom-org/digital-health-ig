@@ -12,6 +12,8 @@
 
 [Route of administration](ValueSet-route-code-vs.html) adds Uzbek and Russian names for 34 SNOMED CT routes, [UCUM units](CodeSystem-ucum-units-supp-cs.html) for 35 units, and the [unit of measurement map](ConceptMap-unit-of-measurement-cm.html) maps 18 more registry units to UCUM. [Relationship type](ValueSet-relationship-type-vs.html) adds `FAMMEMB` family member. [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) `doseQuantity` takes [medication units](ValueSet-medication-total-volume-units-vs.html), such as a piece.
 
+[Composition types](CodeSystem-composition-type-cs.html) `emdoc-0010-0106` is now the extract from a patient's medical record, inpatient or outpatient, as its Uzbek name already said: the Russian and English names no longer say inpatient. Form 027 uses it for both settings, and `Encounter.class` (`AMB` or `IMP`) tells them apart.
+
 [Event status](ValueSet-procedure-event-status-vs.html), formerly Procedure event status, is now shared by UZ Core Procedure and UZ Core Communication.
 
 [Group kind](ValueSet-group-kind-vs.html) adds the organization employee group.

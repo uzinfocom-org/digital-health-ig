@@ -12,6 +12,8 @@
 
 [Yuborish yo'li](ValueSet-route-code-vs.html) 34 ta SNOMED CT yo'li uchun, [UCUM birliklari](CodeSystem-ucum-units-supp-cs.html) 35 ta birlik uchun o'zbekcha va ruscha nomlar bilan to'ldirildi, [o'lchov birliklari xaritasi](ConceptMap-unit-of-measurement-cm.html) reyestrning yana 18 birligini UCUM ga o'tkazadi. [Qarindoshlik turi](ValueSet-relationship-type-vs.html) `FAMMEMB` oila a'zosi bilan to'ldirildi. [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) `doseQuantity` [dori vositalari birliklarini](ValueSet-medication-total-volume-units-vs.html), masalan donani qabul qiladi.
 
+[Composition hujjat turlari](CodeSystem-composition-type-cs.html): `emdoc-0010-0106` endi bemorning tibbiy kartasidan ko'chirma - statsionar yoki ambulator, o'zbekcha nomida bo'lgani kabi; ruscha va inglizcha nomlari endi statsionar haqida gapirmaydi. 027-shakl bu kodni ikkala holatda ham ishlatadi, ularni `Encounter.class` (`AMB` yoki `IMP`) farqlaydi.
+
 [Guruh turi](ValueSet-group-kind-vs.html) tashkilot xodimlari guruhi bilan to'ldirildi.
 
 [Hodisa holati](ValueSet-procedure-event-status-vs.html), avval Procedure hodisasi holati, endi UZ Core Procedure va UZ Core Communication da ishlatiladi.
