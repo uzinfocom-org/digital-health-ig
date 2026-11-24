@@ -16,14 +16,14 @@ Description: "Uzbekistan Core Communication profile, used to record information 
 * category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "coding.system"
 * category ^slicing.rules = #open
-* category ^slicing.description = "Kind and level of a public health alert from the national value sets; codes from other systems are allowed alongside them"
+* category ^slicing.description = "Kind of communication from the HL7 communication category code system and the level of a public health alert from the national value set; codes from other systems are allowed alongside them"
 * category ^slicing.ordered = false
 * category contains
     type 0..1 MS and
     alertLevel 0..1 MS
 * category[type] from CommunicationCategoryVS (required)
-* category[type].coding.system = Canonical(CommunicationCategoryCS)
-* category[type] ^short = "Kind of public health alert: to the residents of a risk zone or to an organization employee group"
+* category[type].coding.system = $communication-category
+* category[type] ^short = "Kind of communication, such as alert for a public health alert"
 * category[alertLevel] from AlertLevelVS (required)
 * category[alertLevel].coding.system = Canonical(AlertLevelCS)
 * category[alertLevel] ^short = "Zone alert level under the national alert regulation: I red, II orange, III yellow, IV blue; required for an alert to the residents of a zone; keeps the level at the time of sending if the zone level changes later"
@@ -51,9 +51,9 @@ Description: "Uzbekistan Core Communication profile, used to record information 
 * payload.contentCodeableConcept.text ^short = "Text of the communication, such as the alert text a patient sees in the Patient Portal"
 
 Invariant: uzcore-comm-1
-Description: "An alert to the residents of a zone carries its alert level"
+Description: "An alert about a zone (Location) carries its alert level"
 * severity = #error
-* expression = "category.coding.where(system = 'https://terminology.dhp.uz/fhir/core/CodeSystem/communication-category-cs' and code = 'comcat-0001-00001').exists() implies category.coding.where(system = 'https://terminology.dhp.uz/fhir/core/CodeSystem/alert-level-cs').exists()"
+* expression = "about.where(reference.startsWith('Location/')).exists() implies category.coding.where(system = 'https://terminology.dhp.uz/fhir/core/CodeSystem/alert-level-cs').exists()"
 
 Instance: example-zone-alert-communication
 InstanceOf: UZCoreCommunication
@@ -62,7 +62,7 @@ Title: "Example UZ Core Communication - Zone Residents Alert"
 Description: "An orange-level alert shown in the Patient Portal to a patient who lives in a mahalla with confirmed cases of an intestinal infection."
 * language = #uz
 * status = #completed
-* category[type] = communication-category-cs#comcat-0001-00001 "Hudud aholisini ogohlantirish"
+* category[type] = $communication-category#alert
 * category[alertLevel] = alert-level-cs#alrtlv-0001-00002 "II - To'q sariq"
 * about = Reference(Location/example-mahalla-zone-location)
 * sent = "2026-11-18T10:00:00+05:00"
@@ -78,7 +78,7 @@ Title: "Example UZ Core Communication - Employee Group Alert"
 Description: "An alert sent by a manager to the members of an organization employee group."
 * language = #uz
 * status = #completed
-* category[type] = communication-category-cs#comcat-0001-00002 "Tashkilot xodimlari guruhini ogohlantirish"
+* category[type] = $communication-category#alert
 * about = Reference(Group/example-employee-group)
 * sent = "2026-11-18T11:00:00+05:00"
 * recipient = Reference(Patient/example-salim)

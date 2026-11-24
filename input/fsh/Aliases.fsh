@@ -25,6 +25,7 @@ Alias: $birthcertificate = https://dhp.uz/fhir/core/sid/pid/uz/bct
 Alias: $bodysite = http://hl7.org/fhir/ValueSet/body-site
 Alias: $bodySite-condition = http://hl7.org/fhir/ValueSet/body-site
 Alias: $clinical-findings = http://hl7.org/fhir/ValueSet/clinical-findings
+Alias: $communication-category = http://terminology.hl7.org/CodeSystem/communication-category
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $condition-verification-status = http://terminology.hl7.org/CodeSystem/condition-ver-status

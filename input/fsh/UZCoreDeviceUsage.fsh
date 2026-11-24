@@ -10,6 +10,8 @@ Description: "Uzbekistan Core DeviceUsage profile, used to record that a patient
 * basedOn MS
 * basedOn only Reference(UZCoreServiceRequest)
 
+* extension contains DeviceUsageBasedOn named basedOnDeviceRequest 0..* MS
+
 * status MS
 * status from DeviceUsageStatusVS (required)
 
@@ -88,6 +90,7 @@ Usage: #example
 Title: "Example UZ Core DeviceUsage - Copper IUD"
 Description: "Example of a device usage that points to the UZ Core Device record of the unit used: a copper intrauterine device inserted at a polyclinic"
 
+* extension[basedOnDeviceRequest].valueReference = Reference(example-devicerequest-iud)
 * status = #active
 * patient = Reference(example-nodira)
 * device.reference = Reference(example-copper-iud)

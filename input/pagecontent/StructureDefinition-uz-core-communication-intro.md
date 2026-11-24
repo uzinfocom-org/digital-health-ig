@@ -6,14 +6,14 @@ The elements below must always be present (mandatory) or must be supported when 
 
 #### Each UZ Core Communication Must Have
 
-Every Communication must carry a `status` (mandatory in base FHIR R5), the time it was `sent`, at least one `recipient` and at least one `payload` with its content. An alert to the residents of a zone must also carry its alert level.
+Every Communication must carry a `status` (mandatory in base FHIR R5), the time it was `sent`, at least one `recipient` and at least one `payload` with its content. An alert whose `about` points to a zone (Location) must also carry its alert level.
 
 #### Each UZ Core Communication Must Support
 
 - the `status` of the communication (for example, completed once it has been sent);
-- the kind of public health alert (to the residents of a zone / to an employee group);
+- the kind of communication in `category` (`alert` for a public health alert);
 - the alert level (I red / II orange / III yellow / IV blue) at the time the alert was sent - it stays the same if the zone level changes later;
-- `about` - what the communication is about, for an alert the zone or the employee group;
+- `about` - what the communication is about, for an alert the zone or the employee group, which tells an alert to the residents of a zone from an alert to an employee group;
 - the time it was `sent`, from which a patient sees an alert in the Patient Portal;
 - the `recipient` - a patient, practitioner or organization; for an alert, each patient who lives in the zone or each member of the employee group;
 - the `reason` - a disease code or a reference to a Condition or Observation;
@@ -47,7 +47,7 @@ The smallest valid Communication carries its `status`, the time it was `sent`, a
 
 #### An alert to an employee group
 
-A manager opens an organization employee group and sends its members an alert. Each member is a `recipient`, and `about` points to the group. The kind of alert comes from the local communication category code system, so its display is in Uzbek and the resource sets `language` to `uz`:
+A manager opens an organization employee group and sends its members an alert. Each member is a `recipient`, and `about` points to the group. `category` carries the HL7 communication category `alert`. The text of the alert is in Uzbek, so the resource sets `language` to `uz`:
 
 ```json
 {
@@ -59,9 +59,8 @@ A manager opens an organization employee group and sends its members an alert. E
   "status": "completed",
   "category": [{
     "coding": [{
-      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/communication-category-cs",
-      "code": "comcat-0001-00002",
-      "display": "Tashkilot xodimlari guruhini ogohlantirish"
+      "system": "http://terminology.hl7.org/CodeSystem/communication-category",
+      "code": "alert"
     }]
   }],
   "about": [{ "reference": "Group/example-employee-group" }],
@@ -77,7 +76,7 @@ A manager opens an organization employee group and sends its members an alert. E
 
 #### An alert to the residents of a zone
 
-When a manager assigns a level to a zone, the alert goes to the patients who live there. It carries a second `category` with the alert level from the local alert level code system - an alert to the residents of a zone without it is invalid. `about` points to the zone and `reason` gives the reason. Who created the alert is recorded in the audit log, so `sender` is not used:
+When a manager assigns a level to a zone, the alert goes to the patients who live there. It carries a second `category` with the alert level from the local alert level code system - an alert whose `about` points to a Location without it is invalid. `about` points to the zone and `reason` gives the reason. Who created the alert is recorded in the audit log, so `sender` is not used:
 
 ```json
 {
@@ -89,9 +88,8 @@ When a manager assigns a level to a zone, the alert goes to the patients who liv
   "status": "completed",
   "category": [{
     "coding": [{
-      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/communication-category-cs",
-      "code": "comcat-0001-00001",
-      "display": "Hudud aholisini ogohlantirish"
+      "system": "http://terminology.hl7.org/CodeSystem/communication-category",
+      "code": "alert"
     }]
   }, {
     "coding": [{

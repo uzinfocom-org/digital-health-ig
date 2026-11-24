@@ -1,8 +1,11 @@
 ValueSet: CommunicationCategoryVS
 Id: communication-category-vs
 Title: "Communication category"
-Description: "Communication categories of public health alerts"
+Description: "Communication categories"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/communication-category-vs"
 * ^experimental = true
 * ^language = #uz
-* include codes from system communication-category-cs
+* ^extension[0].url = $valueset-supplement
+* ^extension[=].valueCanonical = Canonical(CommunicationCategoryCS)
+
+* include codes from system $communication-category

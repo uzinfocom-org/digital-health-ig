@@ -29,6 +29,16 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 - **Title**: `"UZ Core [ResourceName]"`
 - **Description**: `"Uzbekistan Core [ResourceName] profile, used to [описание назначения]"`
 
+**Описание профиля:**
+
+Профиль UZ Core - национальный профиль своего ресурса для всей Республики, а не профиль одной системы или одного процесса. В Description сначала укажите общее назначение ресурса, а затем приведите текущие сценарии использования как примеры после "such as":
+
+```fsh
+Description: "Uzbekistan Core Communication profile, used to record information conveyed to patients, practitioners or organizations, such as a public health alert shown to patients in the Patient Portal"
+```
+
+**Неправильно:** `"Uzbekistan Core Communication profile, used to record a public health alert shown to patients in the Patient Portal"` - описание сводит профиль к первому сценарию, и для следующего (например, напоминания о приёме) кажется, что нужен отдельный профиль.
+
 **Имена ресурсов из нескольких слов:**
 
 Имя FHIR-ресурса пишется ровно так, как его пишет спецификация FHIR — одним словом в CamelCase. Пробел в шаблонах выше отделяет только префикс (`UZ Core`, `Uzbekistan Core`), а не части имени ресурса.
@@ -374,15 +384,6 @@ Description: "Diagnosis types in Uzbekistan"
   * ^designation[+].language = #en
   * ^designation[=].value = "Diagnosis of the referring institution"
 ```
-
-**Большие CodeSystems (>100 кодов):**
-
-CodeSystems с более чем 100 кодами замедляют каждую сборку SUSHI. Предгенерируйте их JSON:
-
-1. Соберите IG через SUSHI.
-2. Переместите `fsh-generated/resources/CodeSystem-<id>.json` → `input/vocabulary/`.
-3. Переместите исходный `.fsh` → `input/manual-fsh/` (SUSHI его не парсит, но FSH сохраняется как источник).
-4. При обновлении справочника: верните `.fsh` в `input/fsh/terminology/`, пересоберите, повторите шаги 2-3.
 
 ### 5.2 Пример FSH для ClinicalStatusCS (на примере Condition)
 

@@ -14,12 +14,12 @@ GET [base]/Communication/[id]
 
 ```
 GET [base]/Communication?recipient=Patient/[id]&status=completed
-GET [base]/Communication?category=https://terminology.dhp.uz/fhir/core/CodeSystem/communication-category-cs%7Ccomcat-0001-00001
+GET [base]/Communication?category=https://terminology.dhp.uz/fhir/core/CodeSystem/alert-level-cs%7Calrtlv-0001-00001
 GET [base]/Communication?recipient=Patient/[id]&sent=ge2026-11-01
 GET [base]/Communication?identifier=[system]%7C[value]
 ```
 
-Birinchi so'rov bemor Bemor portalida ko'radigan ogohlantirishlarni qaytaradi; ikkinchisi hudud aholisiga barcha ogohlantirishlarni topadi.
+Birinchi so'rov bemor Bemor portalida ko'radigan ogohlantirishlarni qaytaradi; ikkinchisi hudud aholisiga I (qizil) darajadagi barcha ogohlantirishlarni topadi.
 
 **Yaratish**
 
@@ -34,8 +34,8 @@ POST [base]/Communication
   "status": "completed",
   "category": [{
     "coding": [{
-      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/communication-category-cs",
-      "code": "comcat-0001-00002"
+      "system": "http://terminology.hl7.org/CodeSystem/communication-category",
+      "code": "alert"
     }]
   }],
   "sent": "2026-11-18T11:00:00+05:00",

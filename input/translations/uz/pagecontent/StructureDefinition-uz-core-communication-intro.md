@@ -8,14 +8,14 @@ Quyidagi elementlar har doim mavjud bo'lishi (majburiy) yoki ma'lumot mavjud bo'
 
 #### Har bir UZ Core Communication da bo'lishi shart
 
-Har bir Communication da `status` (asosiy FHIR R5 da majburiy), yuborilgan vaqt `sent`, kamida bitta qabul qiluvchi `recipient` va mazmuni bilan kamida bitta `payload` bo'ladi. Hudud aholisiga ogohlantirishda ogohlantirish darajasi ham bo'lishi shart.
+Har bir Communication da `status` (asosiy FHIR R5 da majburiy), yuborilgan vaqt `sent`, kamida bitta qabul qiluvchi `recipient` va mazmuni bilan kamida bitta `payload` bo'ladi. `about` hududga (Location) havola beradigan ogohlantirishda ogohlantirish darajasi ham bo'lishi shart.
 
 #### Har bir UZ Core Communication qo'llab-quvvatlashi shart
 
 - xabar `status` i (masalan, yuborilgandan keyin completed);
-- jamoat salomatligi ogohlantirishi turi (hudud aholisiga / xodimlar guruhiga);
+- `category` dagi xabar turi (jamoat salomatligi ogohlantirishi uchun `alert`);
 - yuborilgan paytdagi ogohlantirish darajasi (I qizil / II to'q sariq / III sariq / IV ko'k) - hudud darajasi keyin o'zgarsa ham, u o'zgarmaydi;
-- `about` - xabar nimaga tegishli, ogohlantirish uchun hudud yoki xodimlar guruhi;
+- `about` - xabar nimaga tegishli, ogohlantirish uchun hudud yoki xodimlar guruhi; hudud aholisiga ogohlantirish xodimlar guruhiga ogohlantirishdan shu bilan farqlanadi;
 - yuborilgan vaqt `sent`, shu vaqtdan boshlab bemor ogohlantirishni Bemor portalida ko'radi;
 - qabul qiluvchi `recipient` - bemor, tibbiyot xodimi yoki tashkilot; ogohlantirish uchun hududda yashovchi har bir bemor yoki guruhning har bir xodimi;
 - sabab `reason` - kasallik kodi yoki Condition yoki Observation ga havola;
@@ -49,7 +49,7 @@ Eng kichik yaroqli Communication da `status`, yuborilgan vaqt `sent`, qabul qilu
 
 #### Xodimlar guruhiga ogohlantirish
 
-Menejer tashkilot xodimlari guruhini ochadi va uning a'zolariga ogohlantirish yuboradi. Har bir xodim `recipient` da ko'rsatiladi, `about` esa guruhga havola beradi. Ogohlantirish turi mahalliy ogohlantirish toifalari kod tizimidan olinadi, shuning uchun uning nomi o'zbek tilida va resursda `language` qiymati `uz`:
+Menejer tashkilot xodimlari guruhini ochadi va uning a'zolariga ogohlantirish yuboradi. Har bir xodim `recipient` da ko'rsatiladi, `about` esa guruhga havola beradi. `category` da HL7 xabar toifasi `alert` bo'ladi. Ogohlantirish matni o'zbek tilida, shuning uchun resursda `language` qiymati `uz`:
 
 ```json
 {
@@ -61,9 +61,8 @@ Menejer tashkilot xodimlari guruhini ochadi va uning a'zolariga ogohlantirish yu
   "status": "completed",
   "category": [{
     "coding": [{
-      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/communication-category-cs",
-      "code": "comcat-0001-00002",
-      "display": "Tashkilot xodimlari guruhini ogohlantirish"
+      "system": "http://terminology.hl7.org/CodeSystem/communication-category",
+      "code": "alert"
     }]
   }],
   "about": [{ "reference": "Group/example-employee-group" }],
@@ -79,7 +78,7 @@ Menejer tashkilot xodimlari guruhini ochadi va uning a'zolariga ogohlantirish yu
 
 #### Hudud aholisiga ogohlantirish
 
-Menejer hududga daraja berganda, ogohlantirishni u yerda yashovchi bemorlar oladi. Unda mahalliy ogohlantirish darajalari kod tizimidan daraja bilan ikkinchi `category` bo'ladi - usiz hudud aholisiga ogohlantirish yaroqsiz. `about` hududga havola beradi, `reason` sababni ko'rsatadi. Ogohlantirishni kim yaratgani audit jurnalida qayd etiladi, shuning uchun `sender` ishlatilmaydi:
+Menejer hududga daraja berganda, ogohlantirishni u yerda yashovchi bemorlar oladi. Unda mahalliy ogohlantirish darajalari kod tizimidan daraja bilan ikkinchi `category` bo'ladi - usiz `about` Location ga havola beradigan ogohlantirish yaroqsiz. `about` hududga havola beradi, `reason` sababni ko'rsatadi. Ogohlantirishni kim yaratgani audit jurnalida qayd etiladi, shuning uchun `sender` ishlatilmaydi:
 
 ```json
 {
@@ -91,9 +90,8 @@ Menejer hududga daraja berganda, ogohlantirishni u yerda yashovchi bemorlar olad
   "status": "completed",
   "category": [{
     "coding": [{
-      "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/communication-category-cs",
-      "code": "comcat-0001-00001",
-      "display": "Hudud aholisini ogohlantirish"
+      "system": "http://terminology.hl7.org/CodeSystem/communication-category",
+      "code": "alert"
     }]
   }, {
     "coding": [{

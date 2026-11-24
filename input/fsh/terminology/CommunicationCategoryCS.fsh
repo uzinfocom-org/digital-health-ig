@@ -1,18 +1,29 @@
 CodeSystem: CommunicationCategoryCS
 Id: communication-category-cs
-Title: "Communication category"
-Description: "Local classifier of the kinds of public health alerts sent to patients through the Patient Portal"
+Title: "Communication category translations"
+Description: "Communication category supplement with translations in Uzbek and Russian"
+* insert SupplementCodeSystemDraft(communication-category-cs, $communication-category, 1.0.1)
 
-* insert OriginalCodeSystemDraft(communication-category-cs)
-
-* #comcat-0001-00001 "Hudud aholisini ogohlantirish"
+* #alert
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Оповещение жителей зоны"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Zone residents alert"
+  * ^designation[=].value = "Оповещение"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ogohlantirish"
 
-* #comcat-0001-00002 "Tashkilot xodimlari guruhini ogohlantirish"
+* #notification
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Оповещение работников группы"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Employee group alert"
+  * ^designation[=].value = "Уведомление"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Bildirishnoma"
+
+* #reminder
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Напоминание"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Eslatma"
+
+* #instruction
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Инструкция"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ko'rsatma"
