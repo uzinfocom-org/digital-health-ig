@@ -1,0 +1,9 @@
+<script src="dhp-theme-init.js"> </script>
+<link rel="preload" href="dhp-onest-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+<link rel="preload" href="dhp-onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+<link href="dhp-theme.css" rel="stylesheet"/>
+<script src="dhp-copy.js" defer="defer"> </script>
+<script src="dhp-theme.js" defer="defer"> </script>
+{% comment %}Until HL7/ig-template-base2#57 is released: the template renders the h2 heading number as ["1"]{% endcomment %}
+{% assign dhpHeadingLabel = site.data.pages[localPage].label | split: '.0' | join: '' %}
+<style type="text/css">html h2{--heading-prefix:"{{site.data.info.headingOffset | escape}}{{dhpHeadingLabel | escape}}"}</style>

@@ -1,12 +1,30 @@
 ### In development
 
+#### Added
+
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) records information conveyed to patients, practitioners or organizations, such as a public health alert that patients see in the Patient Portal: an alert to the residents of a risk zone, which carries the zone's alert level I-IV under the national alert regulation, or an alert from a manager to an organization employee group. Its `category` is the HL7 [communication category](ValueSet-communication-category-vs.html) `alert`, with Uzbek and Russian names in its [supplement](CodeSystem-communication-category-cs.html), and the alert level comes from the new local [Alert level](CodeSystem-alert-level-cs.html) code system, with Uzbek, Russian and English names.
+
+[UZ Core Device](StructureDefinition-uz-core-device.html) adds `identifier` slices for the Pharmaceutical Committee registry [device item ID](NamingSystem-uz-pharm-device-item-id.html), [device ID](NamingSystem-uz-pharm-device-id.html) and [registration certificate number](NamingSystem-registration-certificate-id.html).
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) links to the [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) it fulfils with the [Based On Device Request](StructureDefinition-deviceusage-based-on.html) extension, as in the [copper IUD](DeviceUsage-example-deviceusage-iud.html) example.
+
+#### Changed
+
+[Event status](ValueSet-procedure-event-status-vs.html), formerly Procedure event status, is now shared by UZ Core Procedure and UZ Core Communication.
+
+[Group kind](ValueSet-group-kind-vs.html) adds the organization employee group.
+
+The [cross-component resource architecture](components.html#cross-component-resource-architecture) diagram adds Prescription, with MedicationRequest, MedicationDispense, Medication, MedicationKnowledge and MedicationAdministration, and Supplies, with SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport and Device. It shows the newer profiles where they are used: DeviceRequest and DeviceUsage in Clinical Health Records, ChargeItem in Reimbursement, BiologicallyDerivedProductDispense and Flag in Blood Management, and CarePlan in Nursing. CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport and BiologicallyDerivedProduct now have UZ Core profiles, so they are marked as defined in this IG rather than named, not yet defined. Buttons in the top right corner of the diagram open or close every component at once and fit the diagram back into view.
+
+The guide's pages use the look of the [DHP developer documentation](https://docs.dhp.uz/): Onest and JetBrains Mono fonts, DHP green colours and logo, and a restyled header, menu, tables, notes and code blocks, which now have a copy button. A theme menu in the header switches between light, dark and the system setting.
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` can also reference a [UZ Core Device](StructureDefinition-uz-core-device.html) or a [UZ Core Organization](StructureDefinition-uz-core-organization.html), for events with no person behind them, such as a scheduled job or a system logging in.
+
+[UZ Core Location](StructureDefinition-uz-core-location.html) now also covers areas, such as a mahalla set as a public health risk zone.
+
 #### Breaking changes
 
 [Registration certificate number](NamingSystem-registration-certificate-id.html) and [UzPharm box group ID](NamingSystem-uz-pharm-box-id.html) change their URIs to `https://uzpharminfo.uz/registrationNumber` and `https://uzpharminfo.uz/boxGroupId`, the ones the Pharmaceutical Committee registry loader already sends. A [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifier with the old `registration_number` or `box_group_id` URI no longer falls into its slice, and searches by identifier must use the new URIs.
-
-#### Added
-
-[UZ Core Device](StructureDefinition-uz-core-device.html) adds `identifier` slices for the Pharmaceutical Committee registry [device item ID](NamingSystem-uz-pharm-device-item-id.html), [device ID](NamingSystem-uz-pharm-device-id.html) and [registration certificate number](NamingSystem-registration-certificate-id.html).
 
 ### Version 0.13.0
 

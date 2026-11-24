@@ -2,7 +2,7 @@ Profile: UZCoreLocation
 Parent: Location
 Id: uz-core-location
 Title: "UZ Core Location"
-Description: "Uzbekistan Core Location profile, used to define locations of healthcare services"
+Description: "Uzbekistan Core Location profile, used to define physical places and areas, such as the buildings, wards and beds where healthcare services are provided or a mahalla set as a public health risk zone"
 * ^experimental = true
 * ^status = #active
 * ^date = "2025-03-13"
@@ -107,3 +107,20 @@ Description: "Example of psychiatric hospital"
 * mode = #instance
 * name = "Toshkent shahar 1-sonli shifoxona"
 * address.text = "Toshkent shahar, Chilonzor tumani, Katta Qo'yliq 45"
+
+Instance: example-mahalla-zone-location
+InstanceOf: UZCoreLocation
+Usage: #example
+Title: "Example UZ Core Location - Mahalla Zone"
+Description: "A mahalla for which a manager has set a public health alert level after confirmed cases of an intestinal infection."
+* language = #uz
+* status = #active
+* mode = #instance
+* form = $location-physical-type#area
+* name = "Novza mahallasi"
+* address.type = #physical
+* address.text = "Toshkent shahar, Chilonzor tumani, Novza mahallasi"
+* address.city = "103-0117"
+* address.district = "1726294"
+* address.state = "1726"
+* address.country = "UZ"
