@@ -1,7 +1,7 @@
 CodeSystem: AlertLevelCS
 Id: alert-level-cs
 Title: "Alert level"
-Description: "Local classifier of the four public health alert levels set by the national alert regulation, clause 5.2"
+Description: "Local classifier of the four public health alert levels set by the Regulation on the generation, calibration and delivery of alerts in the Unified Digital Health Platform, edition 1.0 of 12.10.2026, clause 5.2"
 
 * insert OriginalCodeSystemDraft(alert-level-cs)
 
