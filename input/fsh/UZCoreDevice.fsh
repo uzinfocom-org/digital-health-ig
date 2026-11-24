@@ -17,24 +17,24 @@ Description: "Uzbekistan Core Device profile, used to record the identity, statu
 
 * identifier[uzpharmDeviceItemID]
   * ^short = "Pharmaceutical Committee registry identifier of the registered device variant"
-  * system 0..1 MS
+  * system 1..1 MS
   * system = $uzpharmDeviceItemID
   * use = #official
-  * value 0..1 MS
+  * value 1..1 MS
 
 * identifier[uzpharmDeviceID]
   * ^short = "Pharmaceutical Committee registry identifier of the registered device"
-  * system 0..1 MS
+  * system 1..1 MS
   * system = $uzpharmDeviceID
   * use = #official
-  * value 0..1 MS
+  * value 1..1 MS
 
 * identifier[registrationCertificateID]
   * ^short = "Registration certificate number of the device"
-  * system 0..1 MS
+  * system 1..1 MS
   * system = $registrationCertificateID
   * use = #official
-  * value 0..1 MS
+  * value 1..1 MS
 
 * displayName MS
 
