@@ -633,14 +633,13 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Cancer-related service category"
-msgstr "Категория онкологических услуг"
+msgid "Service category"
+msgstr "Категория услуг"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Cancer-related service categories"
-msgstr "Категории онкологических услуг"
-"Определяет категории онкологических услуг на узбекском и русском языках"
+msgid "Service categories"
+msgstr "Категории услуг"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -3433,20 +3432,18 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Procedure event status translations"
-msgstr "Переводы статуса события Procedure"
+msgid "Event status translations"
+msgstr "Переводы статуса события"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Procedure event statuses"
-msgstr "Статусы события Procedure"
+msgid "Event statuses"
+msgstr "Статусы события"
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Procedure event status supplement with translations in Uzbek and Russian"
-msgstr ""
-"Дополнение к статусу события Procedure с переводами на узбекский и русский "
-"языки"
+msgid "Event status supplement with translations in Uzbek and Russian"
+msgstr "Дополнение к статусу события с переводами на узбекский и русский языки"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -4508,11 +4505,14 @@ msgstr "UZ Core Location"
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid ""
-"Uzbekistan Core Location profile, used to define locations of healthcare "
-"services"
+"Uzbekistan Core Location profile, used to define physical places and areas, "
+"such as the buildings, wards and beds where healthcare services are provided "
+"or a mahalla set as a public health risk zone"
 msgstr ""
-"Профиль Uzbekistan Core Location, используемый для определения мест оказания "
-"медицинских услуг"
+"Профиль Uzbekistan Core Location, используемый для определения физических "
+"мест и территорий, например зданий, отделений и коек, где оказываются "
+"медицинские услуги, или махалли, объявленной зоной риска для общественного "
+"здоровья"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
@@ -5158,8 +5158,8 @@ msgstr "Пример национального календаря иммуни�
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Procedure event status"
-msgstr "Статус события Procedure"
+msgid "Event status"
+msgstr "Статус события"
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name

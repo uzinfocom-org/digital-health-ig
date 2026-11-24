@@ -9,11 +9,12 @@ The elements below must always be present (mandatory) or must be supported when 
 - the item requested (`item`);
 - the quantity requested (`quantity`).
 
-Both are mandatory in the base SupplyRequest resource; this profile adds no further mandatory elements. A request or contract number must carry its `system`, and each blood group parameter must carry both its code and its value.
+Both are mandatory in the base SupplyRequest resource; this profile adds no further mandatory elements. A request or contract number must carry its `system`, a group number its `system` and `value`, and each blood group parameter must carry both its code and its value.
 
 #### Each UZ Core SupplyRequest Must Support
 
-- the request number assigned by the requesting hospital, the number of the supply agreement it falls under and, for requests placed together, a shared group number, each sent with its `system` (see [identifier slices](#identifier-slices));
+- the request number assigned by the requesting hospital and the number of the supply agreement it falls under, each sent with its `system` (see [identifier slices](#identifier-slices));
+- for requests placed together, a shared group number (see [grouped requests](#grouped-requests));
 - the [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) or other SupplyRequest the request is based on (`basedOn`);
 - the `status` of the request (draft / active / suspended / cancelled / completed / entered-in-error / unknown);
 - the `category` of the request (stock replenishment / named, for one patient / between institutions);
@@ -108,7 +109,7 @@ A hospital asks the Andijan blood station for two units of red blood cells for a
 
 `parameter` is sliced by its `code`: SNOMED CT `63915006` (ABO blood group system) carries the ABO group from the [blood group](ValueSet-blood-group-vs.html) value set, and `115678000` (Rh blood group system) carries the RhD type from the [RhD type](ValueSet-blood-rh-vs.html) value set. Both value bindings are `required`. The `category` code system is Uzbek-first, with Russian and English designations; send a `display` only when it matches the resource `language`. `supplier` repeats, `deliverTo` does not. `reason` is a `CodeableReference`: a code under `concept`, or a reference to the diagnosis or test result under `reference`.
 
-#### The request, contract and group numbers {#identifier-slices}
+#### The request and contract numbers {#identifier-slices}
 
 `identifier` is sliced by its `system` URI, so the system must match exactly:
 
@@ -116,7 +117,6 @@ A hospital asks the Andijan blood station for two units of red blood cells for a
 |---|---|---|
 | [Supply request number](NamingSystem-uzb-supply-request-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-request` | The requesting hospital |
 | [Supply contract number](NamingSystem-uzb-supply-contract-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-contract` | The party that issued the supply agreement between the hospital and the blood service |
-| [Supply group number](NamingSystem-uzb-supply-group-number.html) | `https://dhp.uz/fhir/core/sid/doc/uz/supply-group` | The requesting hospital |
 
 The request number lets the blood service and the hospital match the request with the delivery that answers it; the delivery carries its own [delivery number](StructureDefinition-uz-core-supply-delivery.html#identifier-slices).
 
@@ -124,17 +124,47 @@ The request number lets the blood service and the hospital match the request wit
 
 A SupplyRequest can only ask for one thing. If a hospital needs several blood components for the same patient at the same time, such as red blood cells and plasma for an operation, it sends a separate request for each one. To show that they belong together, it gives them all the same group number.
 
+The group number goes in the [group identifier](StructureDefinition-supplyrequest-group-identifier.html) extension, not in `identifier`. FHIR R5 SupplyRequest has no element for it. The extension pre-adopts `groupIdentifier`, which HL7 has added to SupplyRequest in the Orders and Observations incubator, and will be replaced by the official cross-version extension once one is published. Its `valueIdentifier` takes the [supply group number](NamingSystem-uzb-supply-group-number.html) system `https://dhp.uz/fhir/core/sid/doc/uz/supply-group` and a `value`. This is the plasma request from the grouped example, cut down to the group number and its own request number:
+
+```json
+{
+  "resourceType": "SupplyRequest",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-supply-request"] },
+  "extension": [
+    {
+      "url": "https://dhp.uz/fhir/core/StructureDefinition/supplyrequest-group-identifier",
+      "valueIdentifier": {
+        "system": "https://dhp.uz/fhir/core/sid/doc/uz/supply-group",
+        "value": "GR-0001",
+        "assigner": { "reference": "Organization/tashkent-hospital" }
+      }
+    }
+  ],
+  "identifier": [
+    { "system": "https://dhp.uz/fhir/core/sid/doc/uz/supply-request", "value": "CK-0005" }
+  ],
+  "status": "active",
+  "deliverFor": { "reference": "Patient/example-salim" },
+  "item": {
+    "concept": {
+      "coding": [ { "system": "http://snomed.info/sct", "code": "346447007" } ]
+    }
+  },
+  "quantity": { "value": 2, "unit": "units", "system": "http://unitsofmeasure.org", "code": "1" }
+}
+```
+
 How the hospital uses the group number:
 
 - Give every request in the set the same group number, next to each request's own request number.
 - Use a new group number for each new set, and never reuse an old one.
-- Put your hospital in `identifier.assigner`.
+- Put your hospital in the group identifier's `assigner`.
 - Once the requests are sent, the group is closed. If you need one more component for the same operation later, send a new request with a new group number.
 
-The group number is shared, so it can't pick out a single request. To find, update or link to one request, use its request number. To see the whole group, search by the group number:
+The group number is shared, so it can't pick out a single request. To find, update or link to one request, use its request number. To see the whole group, search with the `group-identifier` [search parameter](SearchParameter-uz-core-supplyrequest-group-identifier.html):
 
 ```
-GET [base]/SupplyRequest?identifier=https://dhp.uz/fhir/core/sid/doc/uz/supply-group|GR-0001
+GET [base]/SupplyRequest?group-identifier=https://dhp.uz/fhir/core/sid/doc/uz/supply-group|GR-0001
 ```
 
 Each request in the group has its own status. Cancelling the plasma doesn't cancel the red blood cells. When the blood service delivers several requests together, the delivery lists all of them in `basedOn`.

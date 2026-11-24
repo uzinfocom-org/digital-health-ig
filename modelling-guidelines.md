@@ -29,6 +29,16 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 - **Title**: `"UZ Core [ResourceName]"`
 - **Description**: `"Uzbekistan Core [ResourceName] profile, used to [описание назначения]"`
 
+**Описание профиля:**
+
+Профиль UZ Core - национальный профиль своего ресурса для всей Республики, а не профиль одной системы или одного процесса. В Description сначала укажите общее назначение ресурса, а затем приведите текущие сценарии использования как примеры после "such as":
+
+```fsh
+Description: "Uzbekistan Core Communication profile, used to record information conveyed to patients, practitioners or organizations, such as a public health alert shown to patients in the Patient Portal"
+```
+
+**Неправильно:** `"Uzbekistan Core Communication profile, used to record a public health alert shown to patients in the Patient Portal"` - описание сводит профиль к первому сценарию, и для следующего (например, напоминания о приёме) кажется, что нужен отдельный профиль.
+
 **Имена ресурсов из нескольких слов:**
 
 Имя FHIR-ресурса пишется ровно так, как его пишет спецификация FHIR — одним словом в CamelCase. Пробел в шаблонах выше отделяет только префикс (`UZ Core`, `Uzbekistan Core`), а не части имени ресурса.
@@ -255,6 +265,8 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 
 Локальный код допустим только тогда, когда эквивалентного стандартного концепта нет: стандартный концепт шире или уже по значению либо отсутствует вовсе (например, национальные административные категории). Если стандарт покрывает только часть списка, ValueSet может сочетать стандартные и локальные коды - локальными остаются только непокрытые концепты.
 
+Каждый концепт SNOMED CT берите из иерархии, подходящей элементу, - её показывает семантический тег в полном названии концепта: элемент-продукт, например `BiologicallyDerivedProduct.productCode`, получает `789265003` "Albumin human only product" `(medicinal product)`, а не вещество `789261007` "Albumin human" `(substance)`.
+
 ### 5.1 Почему нужен supplement для CodeSystem и ValueSet
 
 При создании национальных профилей часто возникает необходимость локализации терминологий. Создание **supplement** к существующим CodeSystem HL7 (например, `condition-clinical` для профиля Condition) позволяет:
@@ -372,15 +384,6 @@ Description: "Diagnosis types in Uzbekistan"
   * ^designation[+].language = #en
   * ^designation[=].value = "Diagnosis of the referring institution"
 ```
-
-**Большие CodeSystems (>100 кодов):**
-
-CodeSystems с более чем 100 кодами замедляют каждую сборку SUSHI. Предгенерируйте их JSON:
-
-1. Соберите IG через SUSHI.
-2. Переместите `fsh-generated/resources/CodeSystem-<id>.json` → `input/vocabulary/`.
-3. Переместите исходный `.fsh` → `input/manual-fsh/` (SUSHI его не парсит, но FSH сохраняется как источник).
-4. При обновлении справочника: верните `.fsh` в `input/fsh/terminology/`, пересоберите, повторите шаги 2-3.
 
 ### 5.2 Пример FSH для ClinicalStatusCS (на примере Condition)
 
@@ -592,7 +595,7 @@ Description: "Example instance of a headache condition documented during a patie
 - Используйте только параметры поиска, на которые клиент может положиться: перечисленные для ресурса в CapabilityStatement (стандартные параметры FHIR R5, если ресурса там ещё нет), а также SearchParameter UZ Core из этого руководства со ссылкой на их страницу.
 - Не повторяйте одно правило в нескольких местах страницы.
 - RU и UZ копии обоих фрагментов кладите в `input/translations/<lang>/pagecontent/` под тем же именем файла, с баннером машинного перевода в начале. Блоки кода и JSON идентичны английским. Якоря `{#quick-start}`, `{#finding}`, `{#identifier-slices}` проставляйте явно - переведённые заголовки их не генерируют.
-- Добавьте запись в changelog (en, ru, uz) на её место в алфавитном порядке внутри категории, а не в конец - см. `AGENTS.md`.
+- Добавьте запись в changelog (en, ru, uz) на её место в алфавитном порядке внутри категории, а не в конец - см. `AGENTS.md`. Changelog описывает изменения относительно последнего релиза: если артефакт добавлен в разделе *In development*, последующие правки в нём меняют его запись в *Added*, а не добавляют отдельные записи в *Changed*, *Removed* или *Breaking changes*.
 
 ## 6) Переводы и локализация
 

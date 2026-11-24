@@ -14,7 +14,7 @@ GET [base]/Medication/[id]
 
 ```
 # by national identifier - any of the five identifier slices
-GET [base]/Medication?identifier=https://uzpharminfo.uz/registration_number|UZ/MED/2024/00123
+GET [base]/Medication?identifier=https://uzpharminfo.uz/registrationNumber|UZ/MED/2024/00123
 GET [base]/Medication?identifier=https://mobile-api.aslbelgisi.uz/gtin|04780123456789
 GET [base]/Medication?identifier=https://mobile-api.aslbelgisi.uz/marking|010478012345678921AbC9xQ
 GET [base]/Medication?identifier=https://uzpharminfo.uz/icps|02804001001000000
@@ -41,7 +41,7 @@ POST [base]/Medication
 {
   "resourceType": "Medication",
   "meta": { "profile": [ "https://dhp.uz/fhir/core/StructureDefinition/uz-core-medication" ] },
-  "identifier": [ { "use": "official", "system": "https://uzpharminfo.uz/registration_number", "value": "..." } ],
+  "identifier": [ { "use": "official", "system": "https://uzpharminfo.uz/registrationNumber", "value": "..." } ],
   "code": { ... },
   "status": "active",
   ...

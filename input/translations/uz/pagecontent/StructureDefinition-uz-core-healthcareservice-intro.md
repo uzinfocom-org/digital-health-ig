@@ -16,10 +16,10 @@ Bazaviy FHIR HealthcareService da majburiy elementlar yo'q va ushbu profil ularn
 
 - `active` bayrog'i;
 - xizmat nomi;
-- kategoriya - DHP xizmat kategoriyasi slayci yoki laboratoriya kategoriyasi slaycidan biriga kodlangan (har biri o'z milliy qiymatlar to'plamiga bog'langan);
-- tur - DHP xizmat slayci yoki laboratoriya tahlili slaycidan biriga kodlangan (har biri o'z milliy qiymatlar to'plamiga bog'langan).
+- kategoriya - DHP xizmat kategoriyasi slayci, laboratoriya kategoriyasi slayci yoki TXMK kategoriyasi slaycidan biriga kodlangan;
+- tur - DHP xizmat slayci, laboratoriya tahlili slayci yoki TXMK xizmati slaycidan biriga kodlangan.
 
-> Xizmat katalogdagi laboratoriya tahlili bo'lganda laboratoriya kategoriyasi/turi slayclaridan, klinik xizmatlar uchun esa DHP xizmat slayclaridan foydalaning - mos keladigan slaycni to'ldiring, ikkalasini emas.
+> Xizmat TXMK da bo'lsa, TXMK kategoriyasi/turi slayclaridan foydalaning - ular asta-sekin laboratoriya slayclarini almashtirmoqda. Boshqa hollarda katalogdagi laboratoriya tahlili uchun laboratoriya slayclaridan, klinik xizmatlar uchun esa DHP xizmat slayclaridan foydalaning. Bir nechtasini emas, bitta slaycni to'ldiring.
 
 ### JSON ni bosqichma-bosqich qurish
 

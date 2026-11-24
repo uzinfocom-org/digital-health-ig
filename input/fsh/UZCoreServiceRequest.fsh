@@ -33,6 +33,16 @@ Description: "Uzbekistan Core ServiceRequest profile, used to represent a reques
 * code MS
 * code from ServiceRequestCodesVS (extensible)
 * code ^short = "Specifies the procedure, diagnostic investigation, or panel being requested. The codes used represent orderable services and must not be used for analytical result observations."
+* orderDetail MS
+* orderDetail.parameter.code from ServiceRequestOrderDetailParameterVS (preferred)
+* orderDetail.parameter.valueCodeableConcept from RouteCodeVS (example)
+  * ^binding.additional[+].purpose = #extensible
+  * ^binding.additional[=].valueSet = Canonical(RouteCodeVS)
+  * ^binding.additional[=].usage.code = $uz-core-servicerequest#ServiceRequest.orderDetail.parameter.code
+  * ^binding.additional[=].usage.valueCodeableConcept = $sct#410675002 "Route of administration"
+* location MS
+* location only CodeableReference(UZCoreLocation)
+* location from ServiceRequestLocationVS (preferred)
 * subject MS
 * subject only Reference(UZCorePatient or UZCoreLocation)
 * subject ^short = "The patient for whom the laboratory referral or order is issued. This element identifies the individual who is the subject of the requested laboratory investigation."
@@ -107,3 +117,48 @@ Description: "Example ServiceRequest instance for UZCore."
 
 * specimen[0] = Reference(Specimen/example-specimen-blood-cbc)
 * note[0].text = "Please perform CBC urgently."
+
+Instance: example-electrophoresis-request
+InstanceOf: UZCoreServiceRequest
+Usage: #example
+Title: "Example UZ Core ServiceRequest - Drug Electrophoresis Course"
+Description: "Order for a course of ten daily drug electrophoresis sessions at an outpatient facility, with the transdermal route given as an order detail."
+* language = #uz
+* status = $service-request-status#active
+* intent = $request-intent#order
+* code = $sct#91480001 "Iontophoresis procedure"
+* code.concept.text = "Elektroforez (dori elektroforezi)"
+* orderDetail[0].parameter[0].code = $sct#410675002 "Route of administration"
+* orderDetail[0].parameter[0].valueCodeableConcept = $sct#45890007 "Transdermal route"
+* location = $v3-RoleCode#OF
+* subject = Reference(Patient/example-david)
+* encounter = Reference(Encounter/example-physiotherapy-encounter)
+* occurrenceTiming.repeat.boundsPeriod.start = "2025-05-16"
+* occurrenceTiming.repeat.count = 10
+* occurrenceTiming.repeat.frequency = 1
+* occurrenceTiming.repeat.period = 1
+* occurrenceTiming.repeat.periodUnit = #d
+* authoredOn = "2025-05-15T12:20:00+05:00"
+* requester = Reference(Practitioner/example-practitioner)
+* performer[0] = Reference(PractitionerRole/example-physiotherapist-role)
+* reason[0].reference = Reference(Condition/example-foot-pain)
+* note[0].text = "O'ng oyoqqa 10 seans, kuniga bir marta"
+
+Instance: example-servicerequest-txmk-brain-ct
+InstanceOf: UZCoreServiceRequest
+Title: "Example UZ Core ServiceRequest - TXMK Brain CT"
+Description: "A doctor orders a computed tomography of the brain for a patient admitted with migraine, coded with the TXMK national classifier of medical services."
+Usage: #example
+* language = #uz
+* status = $service-request-status#active
+* intent = $request-intent#order
+* category[dhpCategory] = $sct#363679005
+* priority = #urgent
+* doNotPerform = false
+* code = TXMKCS#5204488 "Bosh miyaning kompyuter tomografiyasi"
+* subject = Reference(example-patient)
+* encounter = Reference(example-encounter)
+* occurrenceDateTime = "2024-01-01T15:40:00+05:00"
+* authoredOn = "2024-01-01T15:15:00+05:00"
+* requester = Reference(example-practitioner)
+* reason[0].reference = Reference(example-headache)

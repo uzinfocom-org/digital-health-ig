@@ -64,3 +64,8 @@ Description: "Local classifier describing the purpose or kind of a group, such a
   * ^designation[=].value = "Требующие дообследования"
   * ^designation[+].language = #en
   * ^designation[=].value = "Follow-up required"
+* #group-0001-00013 "Tashkilot xodimlari guruhi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Группа работников организации"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Organization employee group"

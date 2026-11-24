@@ -15,7 +15,7 @@ Binding: https://terminology.dhp.uz/ValueSet/procedure-not-performed-reason (Exa
 category		        SΣ	D	0..*	"coding: proce-0001 ""Physical therapy procedure""
 text: "		SNOMED-CT	CodeableConcept	"Классификацию процедуры по её типу, цели или клиническому контексту
 Binding: https://terminology.dhp.uz/ValueSet/procedure-category (Required)"	Отправим запрос в поликлинику					
-code		        SΣ	D	0..1	"coding: proce-0001-00049 ""Therapeutic massage""
+code		        SΣ	D	0..1	"coding: proce-0001-00048 ""Therapeutic massage""
 text: ""Therapeutic massage of right foot"""		SNOMED-CT	CodeableConcept	"Какая именно процедура была выполнена
 Binding: https://terminology.dhp.uz/ValueSet/procedure-code (Required)"	Отправим запрос в поликлинику					
 subject		        SΣ	D	1..1	"reference: example-patient

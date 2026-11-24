@@ -29,6 +29,16 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 - **Title**: `"UZ Core [ResourceName]"`
 - **Description**: `"Uzbekistan Core [ResourceName] profile, used to [description of purpose]"`
 
+**Profile description:**
+
+A UZ Core profile is the national profile of its resource for the whole Republic, not a profile of one system or one workflow. In the Description, state the general purpose of the resource first, then give the current use cases as examples after "such as":
+
+```fsh
+Description: "Uzbekistan Core Communication profile, used to record information conveyed to patients, practitioners or organizations, such as a public health alert shown to patients in the Patient Portal"
+```
+
+**Incorrect:** `"Uzbekistan Core Communication profile, used to record a public health alert shown to patients in the Patient Portal"` - the description narrows the profile to its first use case, so the next one (for example, an appointment reminder) looks as if it needs a profile of its own.
+
 **Multi-word resource names:**
 
 The FHIR resource name is written exactly as the FHIR specification writes it - as one word in CamelCase. The space in the templates above separates only the prefix (`UZ Core`, `Uzbekistan Core`), not the parts of the resource name.
@@ -255,6 +265,8 @@ Therefore every local code must go through a check: before adding a concept to a
 
 A local code is acceptable only when there is no equivalent standard concept: the standard concept is broader or narrower in meaning, or is missing altogether (for example, national administrative categories). If the standard covers only part of the list, a ValueSet may combine standard and local codes - only the uncovered concepts remain local.
 
+Take each SNOMED CT concept from the hierarchy that fits the element, as shown by the semantic tag in its fully specified name: a product element such as `BiologicallyDerivedProduct.productCode` takes `789265003` "Albumin human only product" `(medicinal product)`, not the substance `789261007` "Albumin human" `(substance)`.
+
 ### 5.1 Why a supplement is needed for CodeSystem and ValueSet
 
 When creating national profiles, there is often a need to localise terminologies. Creating a **supplement** to existing HL7 CodeSystems (for example, `condition-clinical` for the Condition profile) allows you to:
@@ -372,15 +384,6 @@ Description: "Diagnosis types in Uzbekistan"
   * ^designation[+].language = #en
   * ^designation[=].value = "Diagnosis of the referring institution"
 ```
-
-**Large CodeSystems (>100 codes):**
-
-CodeSystems with more than 100 codes slow down every SUSHI build. Pre-generate their JSON:
-
-1. Build the IG with SUSHI.
-2. Move `fsh-generated/resources/CodeSystem-<id>.json` → `input/vocabulary/`.
-3. Move the source `.fsh` → `input/manual-fsh/` (SUSHI does not parse it, but the FSH is kept as the source).
-4. When updating the code list: move the `.fsh` back to `input/fsh/terminology/`, rebuild, repeat steps 2-3.
 
 ### 5.2 FSH example for ClinicalStatusCS (using Condition as an example)
 
