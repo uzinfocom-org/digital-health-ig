@@ -1,6 +1,6 @@
 CodeSystem: LocationTypesCS
 Id: location-types-cs
-Title: "Defines the possible location types"
+Title: "Location types"
 Description: "Defines the possible location types in Uzbek and Russian"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/location-types-cs"
 * ^status = #active

@@ -1,7 +1,7 @@
 ValueSet: CompositionListEmptyReasonVS
 Id: composition-list-empty-reason-vs
-Title: "Composition list empty reason value set"
-Description: "Composition list empty reason value set with Uzbek and Russian designations"
+Title: "Composition list empty reason"
+Description: "Composition list empty reasons"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/composition-list-empty-reason-vs"
 * ^experimental = false
 * ^extension[0].url = $valueset-supplement

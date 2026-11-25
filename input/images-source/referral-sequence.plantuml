@@ -7,11 +7,11 @@ participant "DHP" as DHP
 participant "Approval\ncommissions" as Comm
 participant "Performing\nfacility" as Fac
 
-Clin -> DHP : POST ServiceRequest\n(intent = order, PaymentType)
+Clin -> DHP : POST [[StructureDefinition-uz-core-servicerequest.html ServiceRequest]]\n(intent = order, PaymentType)
 activate DHP
 
 alt PaymentType = State-funded
-  DHP -> DHP : create approval Task chain\n(first Task status = requested)
+  DHP -> DHP : create approval [[StructureDefinition-uz-core-referral-approval-task.html Task]] chain\n(first Task status = requested)
   loop approve-family-doctor ... approve-hospitalization
     Comm -> DHP : advance Task\n(accepted -> in-progress -> completed)
   end

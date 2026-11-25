@@ -1,6 +1,6 @@
 CodeSystem: PaymentTypeCS
 Id: payment-type-cs
-Title: "Payment Type Code System"
+Title: "Payment type"
 Description: "List of payment types used in Uzbekistan healthcare system"
 * insert OriginalCodeSystemDraft(payment-type-cs)
 

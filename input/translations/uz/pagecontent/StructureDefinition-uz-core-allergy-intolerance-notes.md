@@ -44,9 +44,13 @@ PUT [base]/AllergyIntolerance/[id]
 If-Match: W/"3"   # oxirgi o'qishdagi ETag; o'shandan beri resurs o'zgargan bo'lsa, 412 qaytariladi
 ```
 
-Qo'llab-quvvatlanadigan barcha qidiruv parametrlari uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) ga qarang.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#AllergyIntolerance1-40) da keltirilgan.
 
 ### Bog'liq materiallar
 
 - [Ushbu qo'llanmani qanday o'qish kerak](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [Umumiy ko'rsatmalar](general-guidance.html)
 - [Ish jarayonlari](workflows.html)
+
+### Reaksiyani dori yuborish yozuviga bogʻlash
+
+**Allergiya bilan bog'liqlik:** `MedicationAdministration.reason` dori shu klinik ko'rsatma, masalan allergiyani davolash uchun yuborilganini anglatadi. Bu maydon dori keltirib chiqargan reaksiyani qayd etmaydi. Agar ushbu yuborish allergik reaksiyaga sabab bo'lsa, uni bemorning [AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) resursida qayd eting va `reaction` ni standart `openEHR-administration` extensioni bilan shu yuborishga bog'lang.

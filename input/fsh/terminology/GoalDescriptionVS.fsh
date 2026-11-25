@@ -1,7 +1,7 @@
 ValueSet: GoalDescriptionVS
 Id: goal-description-vs
-Title: "Goal Description VS"
-Description: "Value Set for Goal Description"
+Title: "Goal description"
+Description: "Goal descriptions"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/goal-description-vs"
 * ^experimental = true

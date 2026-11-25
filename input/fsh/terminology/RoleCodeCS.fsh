@@ -1,6 +1,6 @@
 CodeSystem: RoleCodeCS
 Id: role-code-cs
-Title: "Role code"
+Title: "Role code translations"
 Description: "Role code supplement with translations in Uzbek and Russian"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/role-code-cs"
 * ^experimental = true
@@ -56,3 +56,15 @@ Description: "Role code supplement with translations in Uzbek and Russian"
   * ^designation[=].value = "Уполномоченная организация, осуществляющая проверку информации для включения в запись."
   * ^designation[+].language = #en
   * ^designation[=].value = "Yozuvga kiritish uchun ma'lumotni tasdiqlash vakolatiga ega bo'lgan tashkilot"
+
+* #PTRES
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Место жительства пациента"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Bemorning yashash joyi"
+
+* #OF
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Амбулаторное учреждение"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Ambulatoriya muassasasi"

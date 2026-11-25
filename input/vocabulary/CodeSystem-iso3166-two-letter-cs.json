@@ -4,8 +4,8 @@
   "content": "supplement",
   "name": "ISO3166_TwoLetter_CS",
   "id": "iso3166-two-letter-cs",
-  "title": "ISO 3166-1 two-letter translations",
-  "description": "ISO 3166-1 2-letter supplement with Uzbek and Russian translations",
+  "title": "ISO 3166-1 two-letter code translations",
+  "description": "ISO 3166-1 two-letter code supplement with translations in Uzbek and Russian",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/iso3166-two-letter-cs",
   "concept": [
     {

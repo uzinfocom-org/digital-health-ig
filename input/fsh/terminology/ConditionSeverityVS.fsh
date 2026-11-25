@@ -1,7 +1,7 @@
 ValueSet: ConditionSeverityVS
 Id: condition-severity-vs
-Title: "Types of Condition severities"
-Description: "Types of Condition severities in Uzbekistan"
+Title: "Condition severity"
+Description: "Condition severities"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/condition-severity-vs"
 * ^experimental = true
 * ^language = #en // SNOMED-CT does not yet have Uzbek translations, so we use English for the display values

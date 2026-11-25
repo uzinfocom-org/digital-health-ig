@@ -1,7 +1,7 @@
 ValueSet: AdministrativeGenderVS
 Id: administrative-gender-vs
 Title: "Administrative gender"
-Description: "Administrative gender in Uzbekistan"
+Description: "Administrative genders"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/administrative-gender-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

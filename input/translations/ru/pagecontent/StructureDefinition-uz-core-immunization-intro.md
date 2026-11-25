@@ -138,7 +138,7 @@ UZ Core Immunization фиксирует одну дозу вакцины - бы�
 }
 ```
 
-`reaction.manifestation` несёт своё кодированное заключение в `concept`; вместо этого оно может указывать на [Observation](StructureDefinition-uz-core-observation.html) через свою вложенную `reference`. `protocolApplied.targetDisease` имеет связку `extensible` с SNOMED CT. Когда доза была обусловлена [рекомендацией](StructureDefinition-uz-core-immunization-recommendation.html) или назначением, добавьте ссылку `basedOn` на неё.
+`reaction.manifestation` несёт своё кодированное заключение в `concept`; вместо этого оно может указывать на [Observation](StructureDefinition-uz-core-observation.html) через свою вложенную `reference`. `protocolApplied.targetDisease` принимает коды SNOMED CT из [набора целевых заболеваний](ValueSet-target-disease-vs.html) через открытый слайс, поэтому рядом с ними можно указывать коды из других систем. Когда доза была обусловлена [рекомендацией](StructureDefinition-uz-core-immunization-recommendation.html) или назначением, добавьте ссылку `basedOn` на неё.
 
 #### Когда доза не была введена
 

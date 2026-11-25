@@ -1,7 +1,7 @@
 CodeSystem: NameUseCS
 Id: name-use-cs
-Title: "Possible name uses translations"
-Description: "Types of possible name uses supplement with translations in Uzbek and Russian"
+Title: "Name use translations"
+Description: "Name use supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(name-use-cs, $name-use, 5.0.0)
 * #usual
   * ^designation[0].language = #ru

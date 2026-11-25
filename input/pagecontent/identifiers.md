@@ -9,7 +9,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 ```
 
 Where:
-- `namespace`: `pid` (personal), `pro` (professional), `org` (organization), `doc` (document), or `prg` (program)
+- `namespace`: `pid` (personal), `pro` (professional), `org` (organization), `doc` (document), `prd` (product), or `prg` (program)
 - `country`: ISO 3166-1 two-letter country code (e.g., `uz` for Uzbekistan)
 - `type`: Identifier type (e.g., `ppn` for passport, `ni` for national ID)
 - `subtype`: Optional further classification (e.g., `local`, `intl` for passport types)
@@ -40,7 +40,7 @@ The national unique identifier (PINFL - Personal Identification Number for Forei
         ]
       },
       "use": "official",
-      "value": "30211975910033"
+      "value": "12345678912345"
     }
   ]
 }
@@ -206,6 +206,42 @@ Healthcare professionals are identified using the Human Resource Management (HRM
 }
 ```
 
+#### Specialist certificate
+
+A specialist certificate issued by the Ministry of Health identifies a qualification of the healthcare professional, so it is recorded in `Practitioner.qualification.identifier` rather than in `Practitioner.identifier`. The value is the series followed by the number, without separators. See [Specialist certificates](StructureDefinition-uz-core-practitioner.html#specialist-certificates) for the full mapping.
+
+**System URI**: `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`
+
+```json
+{
+  "resourceType": "Practitioner",
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
+          "value": "CA123456"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+            "code": "CER",
+            "display": "Certificate"
+          }
+        ],
+        "text": "Psixiatriya, oliy toifa, shifokor"
+      },
+      "period": {
+        "start": "2025-03-10",
+        "end": "2030-03-10"
+      }
+    }
+  ]
+}
+```
+
 For a complete list of all supported practitioner identifier systems, see the [PractitionerIdentifierDomainVS](ValueSet-practitioner-identifier-domain-vs.html) value set.
 
 ### Organization identifiers
@@ -276,6 +312,12 @@ Documents are identified using the `doc` namespace. This allows tracking of clin
 
 **System URI pattern**: `https://dhp.uz/fhir/core/sid/doc/{country}/{type}`
 
+### Product identifiers
+
+Products are identified using the `prd` namespace. It is for numbers whose namespace the platform defines itself, such as the unit numbers that blood services assign to blood products. When an external registry publishes its own system URI for a product number, use that URI instead: medication identifiers, for example, use the systems of Asl Belgisi and the uzpharminfo.uz registry.
+
+**System URI pattern**: `https://dhp.uz/fhir/core/sid/prd/{country}/{type}[/subtype]`
+
 ### Program identifiers
 
 The `prg` namespace records which national health program a resource was created under - a screening program, a vaccination campaign, dispensary follow-up of a chronic condition, and so on. There is one system for every program: the program is the identifier value, so a new program needs a new value, not a new identifier system.
@@ -322,7 +364,7 @@ A patient may have multiple identifiers. Here's a complete example showing prope
         ]
       },
       "use": "official",
-      "value": "30211975910033"
+      "value": "12345678912345"
     },
     {
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ppn/local",
@@ -389,6 +431,7 @@ Not all concepts in the IdentifierDomainCS CodeSystem are selectable. Parent/gro
 - `https://dhp.uz/fhir/core/sid/pid/uz/ni`
 - `https://dhp.uz/fhir/core/sid/pid/uz/ppn/local`
 - `https://dhp.uz/fhir/core/sid/pro/uz/argos`
+- `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`
 
 **Not selectable** (parent groupings only):
 - `https://dhp.uz/fhir/core/sid/pid` (root)
@@ -403,7 +446,7 @@ To search for resources by identifier, use the standard FHIR search parameters:
 ```
 # | is used to separate system and value, needs to be URL-encoded as %7C
 
-GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|30211975910033
+GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|12345678912345
 GET [base]/Practitioner?identifier=https://dhp.uz/fhir/core/sid/pro/uz/argos|9876543210
 GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200935935
 GET [base]/Observation?identifier=https://dhp.uz/fhir/core/sid/prg/uz/program|268547008

@@ -1,7 +1,7 @@
 CodeSystem: GoalStartEventCS
 Id: goal-start-event-cs
-Title: "Goal Start Event Supplement CodeSystem"
-Description: "SNOMED CT supplement containing Uzbek and Russian designations for goal start event codes used in Uzbekistan."
+Title: "Goal start event translations"
+Description: "Goal start event supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(
     goal-start-event-cs,

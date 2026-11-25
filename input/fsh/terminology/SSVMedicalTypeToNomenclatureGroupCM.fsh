@@ -17,7 +17,7 @@ Description: "Maps SSV medical type codes to UZ Core Nomenclature Group codes. N
 * group.element[=].display = "Disinfection station" // uz: Dezinfektsiya stantsiyasi, ru: Дезинфекционная станция
 * group.element[=].target[+].code = #II_800
 * group.element[=].target[=].display = "Sanitary and epidemiological welfare and health of the population"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #19
 * group.element[=].display = "Pathoanatomic Service" // uz: Patologik xizmat, ru: Патологоанатомическая служба
@@ -35,13 +35,13 @@ Description: "Maps SSV medical type codes to UZ Core Nomenclature Group codes. N
 * group.element[=].display = "Blood Transfusion station" // uz: Qon quyish stansiyasi, ru: Станция переливания крови
 * group.element[=].target[+].code = #II_700
 * group.element[=].target[=].display = "Blood transfusion center"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #29
 * group.element[=].display = "Blood transfusion facility" // uz: Qon quyish muassasalari, ru: Учреждение переливания крови
 * group.element[=].target[+].code = #II_700
 * group.element[=].target[=].display = "Blood transfusion center"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #31
 * group.element[=].display = "Establishment of sanitary and epidemiological service" // uz: Sanepidxizmati muassasalari, ru: Учреждение санитарно-эпидемиологической службы

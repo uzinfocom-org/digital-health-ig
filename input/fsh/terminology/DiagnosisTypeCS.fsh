@@ -1,6 +1,6 @@
 CodeSystem: DiagnosisTypeCS
 Id: diagnosis-type-cs
-Title: "Diagnosis Types"
+Title: "Diagnosis type"
 Description: "Diagnosis types in Uzbekistan"
 * insert OriginalCodeSystemDraft(diagnosis-type-cs)
 * #gencl-0001-00001 "Yo'naltiruvchi muassasaning tashxisi"
@@ -63,6 +63,11 @@ Description: "Diagnosis types in Uzbekistan"
   * ^designation[=].value = "Судебно-медицинский диагноз"
   * ^designation[+].language = #en
   * ^designation[=].value = "Forensic medical diagnosis"
+* #gencl-0001-00013 "Qo'shma kasallik tashxisi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Диагноз сочетанного заболевания"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Diagnosis of a combined disease"
 
 
 //Cancer diagnosis type codesystems

@@ -46,7 +46,7 @@ PUT [base]/QuestionnaireResponse/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-Qo'llab-quvvatlanadigan barcha qidiruv parametrlari uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) hujjatiga qarang.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#QuestionnaireResponse1-11) da keltirilgan.
 
 ### Aloqador
 

@@ -41,7 +41,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) for the full list of supported search parameters, and [Identifier systems](identifiers.html) for the identifier system URIs.
+See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Location1-16) for the full list of supported search parameters, and [Identifier systems](identifiers.html) for the identifier system URIs.
 
 ### Related
 

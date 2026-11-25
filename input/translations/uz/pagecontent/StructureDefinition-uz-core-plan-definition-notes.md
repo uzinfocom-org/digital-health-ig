@@ -2,7 +2,7 @@
 
 ### Tezkor boshlash {#quick-start}
 
-Ushbu profil uchun keng tarqalgan API o'zaro ta'sirlari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - bu [FHIR server bazaviy URL manzili](api-access.html#endpoints); `|` token tizimini uning qiymatidan ajratadi va `%7C` ko'rinishida URL-kodlangan bo'lishi kerak. Ushbu o'zaro ta'sirlar standart FHIR R5 qidiruv parametrlaridan foydalanadi; ushbu resurs uchun yakunlanayotgani sayin [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) hujjatiga qarang.
+Ushbu profil uchun keng tarqalgan API o'zaro ta'sirlari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - bu [FHIR server bazaviy URL manzili](api-access.html#endpoints); `|` token tizimini uning qiymatidan ajratadi va `%7C` ko'rinishida URL-kodlangan bo'lishi kerak. Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#PlanDefinition1-53) da keltirilgan.
 
 **Jadvalni server identifikatori bo'yicha o'qish**
 

@@ -1,7 +1,7 @@
 CodeSystem: DMEDReactionTypeCS
 Id: dmed-reaction-type-cs
-Title: "DMED Reaction Type Translations"
-Description: "DMED Reaction Type Code with Uzbek and Russian translations"
+Title: "DMED reaction type"
+Description: "DMED reaction types"
 * insert OriginalCodeSystemDraft(dmed-reaction-type-cs)
 
 * #none

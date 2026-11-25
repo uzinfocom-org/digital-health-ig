@@ -41,7 +41,7 @@ If-Match: W/"3"   # oxirgi o'qishdagi ETag; resurs shu vaqtdan beri o'zgargan bo
 
 Consent odatda bemor tomonidan portalda belgilanadi. Consent kirishni taqiqlasa, ma'lumot so'rovlari HTTP 403 bilan rad etiladi; mijoz tizimlari bu natijani to'g'ri qayta ishlashi kerak.
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da keltirilgan.
+Consent hali [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da ko'rsatilmagan; yuqoridagi so'rovlar FHIR R5 ning standart qidiruv parametrlaridan foydalanadi.
 
 ### Bog'liq bo'limlar
 

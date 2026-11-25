@@ -1,7 +1,7 @@
 CodeSystem: DaysOfWeekCS
 Id: days-of-week-cs
-Title: "Days of Week translations"
-Description: "Uzbek and Russian translations for the standard Days of Week codes."
+Title: "Day of week translations"
+Description: "Day of week supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(days-of-week-cs, $days-of-week, 5.0.0)
 
 * #mon "Monday"

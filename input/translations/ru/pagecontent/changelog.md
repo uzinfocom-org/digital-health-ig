@@ -2,7 +2,211 @@
 
 #### Добавлено
 
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) фиксирует информацию, передаваемую пациентам, медицинским работникам или организациям, например оповещение в области общественного здравоохранения, которое пациенты видят в Портале пациента: оповещение жителей зоны риска с уровнем зоны I-IV по национальному регламенту оповещений или оповещение менеджера группе работников организации. Его `category` - [категория сообщения](ValueSet-communication-category-vs.html) HL7 `alert` с узбекскими и русскими названиями в [дополнении](CodeSystem-communication-category-cs.html), а уровень оповещения берётся из новой локальной системы кодов [Alert level](CodeSystem-alert-level-cs.html) с названиями на узбекском, русском и английском языках.
+
+[UZ Core Device](StructureDefinition-uz-core-device.html) принимает зарегистрированную модель из реестра Фармкомитета, её [ID записи изделия](NamingSystem-uz-pharm-device-item-id.html) и [ID изделия](NamingSystem-uz-pharm-device-id.html), в срезах `type`, а [номер регистрационного удостоверения](NamingSystem-registration-certificate-id.html) с датами выдачи и окончания срока действия - в срезе `identifier`. У `identifier.use` и `identifier.type` есть узбекские и русские названия.
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
+
+#### Изменено
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html): `agent.who` может также ссылаться на [UZ Core Device](StructureDefinition-uz-core-device.html) или [UZ Core Organization](StructureDefinition-uz-core-organization.html), для событий без участия человека, например задания по расписанию или входа системы.
+
+[UZ Core Location](StructureDefinition-uz-core-location.html) теперь охватывает и территории, например махаллю, объявленную зоной риска для общественного здоровья.
+
+[Вид группы](ValueSet-group-kind-vs.html) дополнен группой работников организации.
+
+Диаграмма [межкомпонентной архитектуры ресурсов](components.html#межкомпонентная-архитектура-ресурсов) добавляет компоненты "Рецепты" с MedicationRequest, MedicationDispense, Medication, MedicationKnowledge и MedicationAdministration и "Поставки" с SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport и Device. Новые профили показаны там, где они используются: DeviceRequest и DeviceUsage - в электронных медицинских записях (CHR), ChargeItem - в реимбурсации, BiologicallyDerivedProductDispense и Flag - в управлении кровью, CarePlan - в сестринском деле. У CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport и BiologicallyDerivedProduct теперь есть профили UZ Core, поэтому они отмечены как определённые в этом руководстве, а не как упомянутые, но ещё не определённые. Кнопки в правом верхнем углу диаграммы раскрывают или сворачивают все компоненты сразу и вписывают диаграмму в область просмотра.
+
+[Статус события](ValueSet-procedure-event-status-vs.html), ранее Статус события Procedure, теперь используется в UZ Core Procedure и UZ Core Communication.
+
+Страницы руководства оформлены в стиле [документации DHP для разработчиков](https://docs.dhp.uz/ru/): шрифты Onest и JetBrains Mono, зелёные цвета и логотип DHP, обновлённые шапка, меню, таблицы, примечания и блоки кода с кнопкой копирования. Меню темы в шапке переключает светлую, тёмную тему или тему как в системе.
+
+[Типы документов Composition](CodeSystem-composition-type-cs.html): `emdoc-0010-0106` теперь выписка из медицинской карты пациента - стационарного или амбулаторного, как уже было в узбекском названии; русское и английское названия больше не говорят о стационаре. Форма 027 использует этот код в обоих случаях, а различает их `Encounter.class` (`AMB` или `IMP`).
+
+#### Несовместимые изменения
+
+[Номер регистрационного удостоверения](NamingSystem-registration-certificate-id.html) и [ID групповой упаковки UzPharm](NamingSystem-uz-pharm-box-id.html) меняют URI на `https://uzpharminfo.uz/registrationNumber` и `https://uzpharminfo.uz/boxGroupId` — те, что уже передаёт загрузчик реестра Фармкомитета. Идентификатор [UZ Core Medication](StructureDefinition-uz-core-medication.html) со старым URI `registration_number` или `box_group_id` больше не попадает в свой срез, а поиск по идентификатору должен использовать новые URI.
+
+### Версия 0.13.0
+
+#### Добавлено
+
+[Encounter admit source](ValueSet-encounter-admit-source-vs.html), [Использование причины Encounter](ValueSet-encounter-reason-use-vs.html) и [Encounter discharge disposition](ValueSet-encounter-discharge-disposition-vs.html) дополнены кодами вызовов скорой помощи: 18 мест вызова, 27 локальных и 33 SNOMED CT причины вызова и `emer200` - отказ пациента от госпитализации. [Тип Encounter](ValueSet-encounter-type-vs.html) дополнен пятью типами выезда скорой помощи и SNOMED CT `715537001` - транспортировка машиной скорой помощи, которые [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) принимает в `type`. У всех кодов есть узбекские и русские названия.
+
+[UZ Core BiologicallyDerivedProductDispense](StructureDefinition-uz-core-biologicallyderivedproductdispense.html) фиксирует выдачу биологического продукта клинической команде пациента: [номер выдачи](NamingSystem-uzb-bdp-dispense-number.html), назначение, реципиента, продукт, исполнителей и время передачи. Добавлены узбекские и русские переводы статусов, типов совместимости, отношений происхождения и функций исполнителя HL7, а примеры показывают минимальную запись, выдачу и возврат.
+
+[UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) - план помощи пациенту на период времени, например патронажных визитов медсестры, курса лечения или случая листка нетрудоспособности. План объединяет запросы на запланированные мероприятия и связывает события, фиксирующие выполненные, как в примерах [плана патронажа новорождённого](CarePlan-example-newborn-patronage-careplan.html) и [курса лечебного массажа](CarePlan-example-massage-careplan.html).
+
+[UZ Core ChargeItem](StructureDefinition-uz-core-chargeitem.html) фиксирует оплачиваемую услугу, товар или лекарство с количеством и стоимостью и связывает позицию с событием, в котором она предоставлена, например с [MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), процедурой или лабораторным анализом. Она идентифицируется новым [идентификатором ChargeItem](NamingSystem-uzb-charge-item-identifier.html), а её статус и код имеют узбекские и русские переводы.
+
+[UZ Core Device](StructureDefinition-uz-core-device.html) описывает физическое медицинское изделие, например компьютерный томограф или внутриматочную спираль: тип по SNOMED CT, категорию, производителя, модель, серийный номер и номер серии, статус, а также организацию и место, к которым оно относится. Добавлены узбекские и русские переводы кодов изделий HL7 и типов контрацептивных изделий SNOMED CT.
+
+[UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) назначает пациенту изделие - ссылкой на [UZ Core Device](StructureDefinition-uz-core-device.html) или по виду - с количеством, характеристиками, например размером, назначившим, исполнителем, сроками и причиной, как в назначениях [медной ВМС](DeviceRequest-example-devicerequest-iud.html) и [кресла-коляски](DeviceRequest-example-devicerequest-wheelchair.html). Действия CarePlan могут ссылаться на него.
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) фиксирует, что пациент использует, использовал или будет использовать изделие, например кресло-коляску или имплантируемый порт, как концепт SNOMED CT или ссылку на [UZ Core Device](StructureDefinition-uz-core-device.html), а также кто сообщил об этом, когда, условия использования, насколько регулярно изделие используется и зачем.
+
+[UZ Core Flag](StructureDefinition-uz-core-flag.html) фиксирует предупреждение о пациенте, прежде всего о допуске к донации крови и временном или постоянном медицинском отводе, закодированных в локальной системе кодов: временный отвод заканчивается в `period.end`, у постоянного его нет. Новый параметр поиска [Flag code](SearchParameter-uz-core-flag-code.html) находит действующие отводы пациента.
+
+[UZ Core InventoryReport](StructureDefinition-uz-core-inventoryreport.html) передаёт результат подсчёта запасов в месте хранения: тип подсчёта, количество каждой позиции с единицей измерения, а также приход или расход и его причину, закодированные новыми системами [Тип операции инвентаризации](CodeSystem-inventory-operation-type-cs.html) и [Причина операции инвентаризации](CodeSystem-inventory-operation-reason-cs.html), например плановый подсчёт или перемещение.
+
+[UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) содержит утверждённые цены [UZ Core Medication](StructureDefinition-uz-core-medication.html) - предельную, оптовую, розничную и цену [ФГМС](https://ig.shif.uz/build/core/ru/index.html) - каждую с периодом действия и типом из новой системы кодов [типов цен MedicationKnowledge](CodeSystem-medicationknowledge-cost-type-cs.html). Параметр поиска [associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) находит цены препарата Medication, в том числе по регистрационному номеру или GTIN.
+
+[UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) фиксирует место, откуда отправлены предметы снабжения, например склад-отправитель, в новом расширении [Deliver from](StructureDefinition-supplydelivery-deliver-from.html), как в [примере перемещения между складами](SupplyDelivery-example-warehouse-transfer-supply-delivery.html). На странице профиля есть вводный раздел и Быстрый старт.
+
+[UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) получил расширение [идентификатор группы](StructureDefinition-supplyrequest-group-identifier.html), заранее введённое из инкубатора HL7 Orders and Observations, чтобы поставщик обрабатывал запросы, отправленные вместе, как один заказ. [Параметр поиска по идентификатору группы](SearchParameter-uz-core-supplyrequest-group-identifier.html) находит все запросы группы.
+
+[Коды единиц измерения](CodeSystem-unit-of-measurement-cs.html) дополнены девятью единицами реестра лекарственных средств Фармкомитета, сопоставленными с UCUM в [карте единиц измерения](ConceptMap-unit-of-measurement-cm.html).
+
+[Коды физиотерапевтических процедур](CodeSystem-physiotherapy-procedure-cs.html) содержат 73 процедуры, сопоставленные со SNOMED CT в [карте физиотерапевтических процедур](ConceptMap-physiotherapy-procedure-to-snomed.html). [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) назначает 23 из них по коду SNOMED CT, а остальные 50 - по локальному коду, который также включают [коды процедур](ValueSet-procedure-code-vs.html). ServiceRequest добавляет элементы Must Support `orderDetail` для [пути введения](ValueSet-route-code-vs.html) и `location` - [UZ Core Location](StructureDefinition-uz-core-location.html) или [тип места](ValueSet-service-request-location-vs.html), например место жительства пациента, как в [назначении лекарственного электрофореза](ServiceRequest-example-electrophoresis-request.html).
+
+[Лекарственные формы](CodeSystem-medication-doseform-cs.html) дополнены девятью кодами для лекарственных форм электронного рецепта DMED и реестра лекарственных средств Фармкомитета, у которых не было кода, например `CTP101` катаплазма, `KIT101` набор и `TEA101` сбор лекарственный растительный, с названиями на узбекском, русском и английском.
+
+[Национальный классификатор медицинских услуг Узбекистана (TXMK)](CodeSystem-txmk-cs.html) содержит 10 699 медицинских услуг в 29 группах с названиями на узбекском, русском и английском языках, а также наборы значений [категорий услуг](ValueSet-txmk-service-categories-vs.html), [названий услуг](ValueSet-txmk-service-names-vs.html) и [услуг лучевой диагностики](ValueSet-txmk-radiology-vs.html). Коды Procedure, ActivityDefinition и ServiceRequest теперь включают услуги лучевой диагностики, как в [назначении КТ головного мозга](ServiceRequest-example-servicerequest-txmk-brain-ct.html).
+
+[Поиск](search.html), который открывается из шапки страницы, находит ресурсы по заголовку, имени, URL или описанию, а также коды, термины и сопоставления на английском, русском и узбекском языках, с фильтром по типу ресурса.
+
+[Причины статуса MedicationRequest](ValueSet-medicationrequest-status-reason-vs.html) дополнены кодом SNOMED CT `438833006` (применение лекарственного средства противопоказано) с названиями на узбекском и русском - для отмены электронного рецепта DMED.
+
+Страницы всех профилей теперь содержат вводный раздел и Быстрый старт. Они добавлены для [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html), [UZ Core Claim](StructureDefinition-uz-core-claim.html), [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html), [UZ Core Composition](StructureDefinition-uz-core-composition.html), [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html), [UZ Core Group](StructureDefinition-uz-core-group.html), [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html), [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html), [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) и [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html).
+
+[Типы документов Composition](CodeSystem-composition-type-cs.html) дополнены кодом `emdoc-0010-0471` для формы 112 Приказа № 399 - лабораторного анализа на фолиевую кислоту, 25-OH витамин D и витамин B12.
+
+[Типы продуктов крови](ValueSet-blood-product-type-snomed-vs.html) дополнены кодом SNOMED CT `789265003` (только альбумин человека) с названиями на узбекском и русском в [supplement](CodeSystem-blood-product-type-snomed-cs.html).
+
+#### Изменено
+
+ICCC-3 и WHO ICHI теперь требуют указания версии системы при передаче кодов, поскольку их классификационные иерархии зависят от версии.
+
+JSON-копия ресурса на каждом языке теперь сохраняет остальные языки в расширениях `translation`, как в пакете; раньше они удалялись.
+
+[Supplement FHIR-типов](CodeSystem-fhir-types-cs.html) теперь даёт каждому типу ресурса узбекское и русское название, например "Bemor" и "Пациент" для `Patient`, с отметкой `preferredForLanguage`, вместо переведённого определения.
+
+[UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) получил слайсы Must Support для категории и услуги TXMK. [Категории услуг](ValueSet-service-categories-vs.html), ранее только онкологические, теперь включают и лабораторные категории.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) больше не требует `identifier`: нужен идентификатор с системой и значением или код (`uzcore-med-1`), поэтому лекарство, назначенное по МНН, можно передать только с кодом МНН или ATC, как в [примере лекарства по МНН](Medication-example-inn-medication.html).
+
+[UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) привязывает `statusReason` как extensible вместо required.
+
+[UZ Core Organization](StructureDefinition-uz-core-organization.html) и [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) больше не фиксируют display типа идентификатора, который не совпадал с HL7 и вызывал предупреждение терминологии у каждого соответствующего профилю экземпляра: срезы фиксируют только систему и код `XX` или `HC`.
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) допускает несколько свидетельств о рождении и больше не фиксирует его `use`, поэтому прежнее свидетельство можно передать с `use = old` рядом с действующим с `use = official`.
+
+[UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) допускает переводы текста сертификата специалиста в `qualification.code.text`.
+
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) делает `complication` Must Support и рекомендует [коды осложнений донации крови](ValueSet-procedure-complication-vs.html), например обморок, при `code` SNOMED CT `25179006` (забор цельной крови), как в [примере донации крови](Procedure-example-blood-donation-procedure.html). При `code` SNOMED CT `116859006` (переливание продукта крови) рекомендует [коды осложнений переливания крови](ValueSet-blood-transfusion-complication-vs.html), например фебрильную или гемолитическую реакцию.
+
+Заголовки и описания систем кодов и наборов значений следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`. Канонические URL, идентификаторы и коды не изменились.
+
+Исправления сопоставлений, найденные проверками ConceptMap в IG Publisher 3.0.1: в [карте должностей DMED](ConceptMap-dmed-position-to-dhp-position-cm.html) изменены 24 должности, в том числе две должности медсестёр, ранее сопоставленные с кодами врачей. [Карта лабораторных кодов](ConceptMap-lab-pan-codes-to-loinc.html) исправляет коды микроскопии мочи, тромбокрита, сифилиса и сперматозоидов, а ручная лейкоцитарная формула, СОЭ и IgG к Ureaplasma больше не эквивалентны своим кодам. [Карта аллергенов](ConceptMap-substance-to-snomed.html) сопоставляет компоненты фундука и грецкого ореха с самим продуктом и исправляет коды ос.
+
+[Как связаны ресурсы](workflows.html#как-связаны-ресурсы) теперь охватывает CarePlan, Flag и AllergyIntolerance, показывает `encounter` как необязательный и указывает, что Provenance подписывает Bundle документа.
+
+[Карта единиц измерения](ConceptMap-unit-of-measurement-cm.html) дополнена целевыми кодами UCUM для 30 единиц, у которых их не было, например `[iU]`, `mg/{dose}` и `[CFU]`, сопоставляет `270` с `U/mL` вместо `[arb'U]/mL`, а `275` теперь шире `[CCID_50]`.
+
+[Карта лабораторных методов](ConceptMap-lab-methods-to-loinc.html) сопоставляет масс-спектрометрию с SNOMED CT `1306402001` вместо части LOINC и исправляет строки секвенирования и экспресс-иммуноанализа, которые указывали на код соседней строки.
+
+[Кодовая система веществ-аллергенов](CodeSystem-allergy-reaction-substance-cs.html) связывает каждый компонентный аллерген с его цельным экстрактом через `parent`, поэтому фильтры is-a находят компоненты под их экстрактом.
+
+[Коды аллергенов](ValueSet-allergen-codes-vs.html) теперь включают и [МНН лекарств](CodeSystem-inn-medication-name-cs.html), поэтому аллергию на лекарство можно указать по действующему веществу, как теперь делает для парацетамола [пример аллергии на анальгетик](AllergyIntolerance-example-analgesic-allergy.html).
+
+[Коды единиц измерения](CodeSystem-unit-of-measurement-cs.html) переименовывают `360` в ЛЕ (липаземическая единица), исправляют названия `570` на миллилитр на дозу и связывают 11 специфических единиц с их общей единицей через `parent`.
+
+[Переводы статусов MedicationRequest](CodeSystem-medicationrequest-status-cs.html) теперь называют `ended` по-русски «Окончено» вместо «Завершено», которое совпадало с `completed`.
+
+[Пример Procedure](Procedure-example-procedure.html) теперь ссылается на [амбулаторный визит на физиотерапию](Encounter-example-physiotherapy-encounter.html) и состояние [боль в правой стопе](Condition-example-foot-pain.html) того же пациента, а не на визит и состояние другого пациента.
+
+Примеры Patient, Practitioner и RelatedPerson и страница [систем идентификаторов](identifiers.html) теперь используют вымышленные ПИНФЛ, которые не могут принадлежать реальному человеку, а примеры сертификата специалиста - вымышленные номер и даты.
+
+Примеры больше не задают display у кодов HL7, если он отличался от display терминологии HL7 или был на узбекском или русском, например у типа идентификатора Organization и семейного положения Patient. Системы именования [номера медицинской карты](NamingSystem-patient-id-uzb-health-card.html) и [пенсионного номера](NamingSystem-patient-id-uzb-pension-number.html) теперь используют display HL7.
+
+Ссылки в профилях UZ Core теперь указывают на профили UZ Core: каждая ссылка на Device - на [UZ Core Device](StructureDefinition-uz-core-device.html), `basedOn` в Observation, Immunization и Procedure - на [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), а `Procedure.complication` - на [UZ Core Condition](StructureDefinition-uz-core-condition.html).
+
+[Статусы запасов](CodeSystem-inventoryitem-inventory-status-cs.html) теперь называют `in-fractionation` по-русски «На фракционировании» вместо «В фракционировании».
+
+#### Несовместимые изменения
+
+Срез идентификатора `uzpharmBoxGroupID` в [UZ Core Medication](StructureDefinition-uz-core-medication.html) теперь содержит идентификатор зарегистрированного препарата в реестре Фармкомитета, а не идентификатор отслеживания на уровне коробки. Отправители, передававшие там идентификаторы коробок, должны прекратить это.
+
+Удалены supplements типов ресурсов-запросов и типа ресурса участника, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` и `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`: они дублировали [supplement FHIR-типов](CodeSystem-fhir-types-cs.html), который теперь используют [Типы ресурсов-запросов](ValueSet-request-resource-types-vs.html) и [Типы ресурсов](ValueSet-resource-type-vs.html). Загружайте вместо них `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs`.
+
+### Версия 0.12.0
+
+#### Добавлено
+
+Добавлен [UZ Core MedicationAdministration](StructureDefinition-uz-core-medicationadministration.html) для введения лекарственного средства пациенту, например дозы в отделении. Он ссылается на исполняемый MedicationRequest и фиксирует, кто и как ввёл дозу. Расширение источника финансирования указывает, закуплен ли препарат по тендеру, за счёт гуманитарной помощи или другого национального источника; он может отличаться от покрытия пациента.
+
+Добавлен [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html) для учёта запаса, например компонента крови, лекарственного средства или изделия. Каждая позиция несёт национальный статус запаса, например карантин, ожидание анализов или доступен, и ссылается на хранимый продукт, с номером серии, сроком годности и местом хранения каждой физической единицы.
+
+Для целей Nursing добавлены национальные коды [переписи населения и выдачи препаратов на дом](CodeSystem-nursing-visit-purpose-cs.html).
+
+Направления Nursing помечаются категорией SNOMED CT `439708006` Home visit, а [набор услуг ServiceRequest](ValueSet-service-request-code-vs.html) включает `440068009` для патронажа новорождённых на 3-й, 15-й и 30-й день и `410620009` для профилактических визитов детей с 3 до 60 месяцев. Encounter визита на дом использует тип визита `mserv-0001-00009` «Патронаж» с `Encounter.class` = `HH`.
+
+[Patient/$attach](OperationDefinition-patient-attach.html) одним вызовом прикрепляет пациента к поликлинике, семейному врачу или к обоим, проверяя их по реестру основных данных. На уровне типа она находит или создаёт пациента по ПИНФЛ и поэтому заменяет пару `$populate` + `$attach`.
+
+[Patient/$relate](OperationDefinition-patient-relate.html) фиксирует связь родителя и ребёнка, подтверждённую по реестру детей Министерства юстиции. Она находит или создаёт ребёнка по ПИНФЛ и создаёт RelatedPerson для родителя.
+
+[Patient/$detach](OperationDefinition-patient-detach.html) обратна `$attach`: одним вызовом снимает прикрепление к поликлинике и семейному врачу и дату прикрепления, с обязательным `reason`.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) получил вводный раздел и Quick Start, как и другие профили. Он показывает, как найти существующий препарат по идентификатору реестра или по МНН либо коду ATC перед регистрацией нового.
+
+#### Изменено
+
+[UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) `reaction` может ссылаться на вызвавший реакцию MedicationAdministration через стандартное расширение `openEHR-administration`. Пример аллергии на анальгетик связывает кожную сыпь с дозой парацетамола.
+
+В [категориях ServiceRequest](ValueSet-service-request-categories-vs.html) у SNOMED CT `20135006` теперь официальное отображение "Screening procedure" вместо "Screening and home visits", а русский и узбекский переводы больше не упоминают патронаж: для визитов на дом есть отдельная категория `439708006` "Home visit".
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) и [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) объявляют расширение `translation` на `name.text`, `family`, `given` и `suffix`: имя записывается на узбекском, а его русская и каракалпакская формы передаются в том же `HumanName`, а не вторым именем. Примеры [Nodira](Patient-example-nodira.html) и [practitioner](Practitioner-example-practitioner.html) содержат русские формы, а страницы обоих профилей описывают этот подход.
+
+[Дополнение кодов действий](CodeSystem-action-code-cs.html) содержит узбекское и русское обозначения для `order-service`, который используется в [примере PlanDefinition регионального скрининга](PlanDefinition-example-uz-core-regional-screening-plan-definition.html).
+
+#### Несовместимые изменения
+
+Система идентификаторов [сертификата специалиста](NamingSystem-uzb-specialist-certificate.html) перенесена из пространства документов в пространство медицинских работников, так как сертификат идентифицирует квалификацию специалиста, а не документ: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` заменён на `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Отправители `Practitioner.qualification.identifier` переходят на новую систему; формат значения (серия и номер слитно, например `CA123456`) не меняется.
+
+### Версия 0.11.1
+
+#### Добавлено
+
+[Типы программ скрининга и патронажа](ValueSet-screening-program-type-vs.html) перечисляют значения идентификатора программы скрининга: восемь концептов скрининга SNOMED CT и национальные [коды скрининга и патронажа](CodeSystem-screening-code-cs.html). В них вернулись `mserv-0007-00007` и `mserv-0007-00009`, удалённые в 0.11.0, как программы DMED по скринингу рака молочной железы и шейки матки, чтобы они отличались от программ скрининга HPV `268547008` и `171149006`. Сама услуга скрининга по-прежнему кодируется в SNOMED CT.
+
+[Типы диагнозов](CodeSystem-diagnosis-type-cs.html) дополнены кодом `gencl-0001-00013` «Диагноз сочетанного заболевания» с узбекским и русским обозначениями, чтобы скрининговые системы могли передавать все типы диагноза из своих форм.
+
+[Дополнение для анатомических локализаций](CodeSystem-body-site-cs.html) даёт узбекские и русские обозначения 1001 структуре тела SNOMED CT вместо 4, а новое [дополнение для лабораторных методов](CodeSystem-lab-methods-sct-cs.html) - 1865 методам SNOMED CT.
+
+#### Изменено
+
+Наборы значений на повторяющихся кодируемых элементах теперь применяются через открытый слайс, а не ко всему элементу, поэтому рядом с национальными кодами можно указывать коды из других систем; сам элемент сохраняет национальный набор как предпочтительную (preferred) связку. Это касается AllergyIntolerance `reaction.manifestation`; AuditEvent `agent.role`, `agent.authorization` и `entity.securityLabel`; Composition `category`; Consent `regulatoryBasis` и `provision.action`; DiagnosticReport `category`; Encounter `class`; EpisodeOfCare `reason.value` и `diagnosis.condition`; Immunization `protocolApplied.targetDisease`; ImmunizationRecommendation `recommendation.vaccineCode`; Observation `category`; ObservationDefinition `permittedUnit`; Procedure `bodySite`; RelatedPerson `relationship`; и ServiceRequest `reason`. В [UZ Core Observation](StructureDefinition-uz-core-observation.html) `interpretation` привязан как extensible вместо required, как в базовом FHIR. Существующие ресурсы остаются валидными.
+
+Четыре набора значений, которые сохраняли лишь часть заменяемого ими базового набора FHIR, теперь включают его целиком. [Статус встречи](ValueSet-encounter-status-vs.html) добавляет `on-hold`, `discharged` и `discontinued`; [типы ресурсов-запросов](ValueSet-request-resource-types-vs.html), используемые в ActivityDefinition `kind`, перечисляют все 17 типов ресурсов-запросов вместо только ImmunizationRecommendation и MedicationRequest; [цели использования в согласии](ValueSet-consent-purpose-of-use-vs.html) включают все цели использования вместо только `RECORDMGT`, а Consent `provision.purpose` привязан к ним как extensible вместо required, как в базовом FHIR; [роли участников состояния](ValueSet-condition-participation-role-vs.html) добавляют `transmitter`. Новые статусы встречи и типы ресурсов имеют узбекские и русские обозначения.
+
+В [UZ Core Observation](StructureDefinition-uz-core-observation.html) `bodySite` привязан к [анатомическим локализациям](ValueSet-body-site-vs.html), то есть ко всем структурам тела SNOMED CT, вместо базового набора локализаций FHIR, который в них входит. [Лабораторные методы](ValueSet-lab-method-vs.html), привязанные к `method`, дополняют национальные коды техниками, действиями и оценочными процедурами SNOMED CT из базового набора методов наблюдения FHIR. Существующие ресурсы остаются валидными.
+
+#### Документация
+
+[UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) описывает шаблон приглашения на скрининг: `kind` равен `ServiceRequest`, `intent` равен `plan`, а `profile` указывает на UZ Core ServiceRequest. Примеры скрининга и контракт для приложений находятся в руководстве по интеграциям.
+
+### Версия 0.11.0
+
+#### Добавлено
+
+Добавлен [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) для единицы крови или компонента крови в [управлении кровью](components.html#blood-management). Единица несёт [номер единицы](NamingSystem-uzb-blood-unit-number.html), присвоенный службой крови, а в `biologicalSourceEvent` - [номер донации](NamingSystem-uzb-blood-donation-number.html), из которой она получена; этот номер сохраняют все компоненты, полученные из той же донации. Переработанный или пулированный компонент ссылается на исходные единицы в `parent`, а срезы `property` фиксируют группу крови ABO, резус-принадлежность RhD, объём и гематокрит. Вместе с ним добавлены наборы значений SNOMED CT для [типа продукта крови](ValueSet-blood-product-type-snomed-vs.html), [группы крови](ValueSet-blood-group-vs.html) и [типа RhD](ValueSet-blood-rh-vs.html), а также наборы [категории продукта](ValueSet-product-category-vs.html) и [статуса продукта](ValueSet-product-status-vs.html), все с узбекскими и русскими обозначениями.
+
+Добавлен [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) для заявки на поставку, например заявки больницы на компоненты крови в службу крови. Он несёт [номер заявки](NamingSystem-uzb-supply-request-number.html) больницы и [номер договора поставки](NamingSystem-uzb-supply-contract-number.html) как идентификаторы, а в `category` - национальный [тип заявки](ValueSet-request-type-vs.html): пополнение запаса, именная (для пациента) или между учреждениями. `item` привязан (extensible) к типам продуктов крови, срезы `parameter` передают группу крови и тип RhD, которым должны соответствовать компоненты, а `deliverFor` указывает пациента, для которого предназначена именная заявка. Набор значений [статуса](ValueSet-supply-request-status-vs.html) имеет узбекские и русские обозначения.
+
+Добавлен [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) для поставки по SupplyRequest, например выдачи компонента крови службой крови в больницу. Он фиксирует [номер поставки](NamingSystem-uzb-supply-delivery-number.html) поставщика, поставщика, получателя и место назначения, а также поставленный предмет, который может ссылаться на UZ Core BiologicallyDerivedProduct. Наборы значений [статуса](ValueSet-supply-delivery-status-vs.html) и [типа](ValueSet-supply-delivery-type-vs.html) имеют узбекские и русские обозначения.
+
 [Дополнение SNOMED CT для скрининга и патронажа](CodeSystem-screening-sct-cs.html) даёт узбекские и русские обозначения 15 концептам SNOMED CT, которыми теперь кодируются услуги скрининга и патронажа в наборе [процедур и исследований ServiceRequest](ValueSet-service-request-code-vs.html); набор перечисляет их по имени.
+
+[Категории ServiceRequest](ValueSet-service-request-categories-vs.html) включают SNOMED CT `310422005` «Prevention/screening invitation» с узбекским и русским обозначениями в [дополнении категорий](CodeSystem-sr-sct-category-cs.html). Приглашение или плановый ServiceRequest скрининговой программы передаёт его в `category`, поэтому отдельный код приглашения в `code` не нужен.
+
+#### Изменено
+
+В [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` может ссылаться на любой ресурс, а не только на другой ServiceRequest. `category` теперь разделён на срезы: не более одной категории берётся из [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html) с обязательной (required) привязкой, а рядом с ней могут указываться любые другие категории из любых кодовых систем.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) допускает несколько значений `basedOn` (0..* вместо 0..1): наблюдение может ссылаться и на назначение, которое оно выполняет, и на план, к которому относится это назначение. Например, результат скрининга ссылается на направление и на плановый ServiceRequest скрининговой программы. Существующие наблюдения остаются валидными.
+
+`suspectEntity.instance` в [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) теперь ссылается на [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html), а не на любой BiologicallyDerivedProduct.
 
 #### Несовместимые изменения
 
@@ -28,6 +232,14 @@
 | `mserv-0007-00020` | Скрининг по раку молочной железы | `268547008` Screening for malignant neoplasm of breast |
 
 Коды опросника и скрининга рака молочной железы оба соответствуют `268547008`. Диапазоны недель, дней и месяцев из прежних названий в концепты SNOMED CT не входят.
+
+#### Документация
+
+На странице [идентификаторов](identifiers.html) добавлено пространство имён `prd` для идентификаторов продуктов, например номеров единиц крови, для которых внешний реестр не публикует собственную систему.
+
+Страница [Основы FHIR](fhir-basics.html) больше не требует, чтобы приложения обменивались только локальными кодами. DHP использует код международного стандарта, например ICD-10, SNOMED CT или LOINC, везде, где он подходит, и вводит локальный код только для понятия, которого нет ни в одном стандарте; ConceptMap сопоставляют такие локальные коды с международными терминологиями.
+
+Новая страница [Информация о переводах](translationinfo.html) объясняет, что русская и узбекская версии - машинные переводы, которые проверяют редакторы, что при расхождении приоритет имеет английский текст, и как сообщить о проблеме с переводом.
 
 ### Версия 0.10.0
 

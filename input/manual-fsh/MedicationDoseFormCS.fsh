@@ -1,7 +1,7 @@
 CodeSystem: MedicationDoseFormCS
 Id: medication-doseform-cs
 Title: "Medication dose form"
-Description: "Code system of pharmaceutical dose forms (e.g., tablet, capsule, solution)."
+Description: "Pharmaceutical dose forms (e.g., tablet, capsule, solution)."
 * insert OriginalCodeSystemDraft(medication-doseform-cs)
 
 * #AER101 "aerozol"
@@ -2513,6 +2513,51 @@ Description: "Code system of pharmaceutical dose forms (e.g., tablet, capsule, s
 * #SLT102 "erituvchi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "растворитель"
+* #HRB101 "dorivor o'simlik xomashyosi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "сырьё растительное лекарственное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "herbal substance"
+* #TEA101 "dorivor o'simliklar yig'masi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "сбор лекарственный растительный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "herbal tea"
+* #SHA101 "dorivor shampun"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "шампунь лекарственный"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "medicated shampoo"
+* #LOT101 "losyon"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "лосьон"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "lotion"
+* #JEL101 "dorivor jele"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "желе лекарственное"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "medicated jelly"
+* #KIT101 "to'plam"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "набор"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "kit"
+* #SUB101 "substansiya"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "субстанция"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "active substance"
+* #CTP101 "kataplazma"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "катаплазма"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "poultice"
+* #DRS101 "dorivor bog'lam"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "повязка лекарственная"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "medicated dressing"
 * #OTH101 "boshqa dori shakllari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "другие лекарственные формы"

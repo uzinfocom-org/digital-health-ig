@@ -1,7 +1,7 @@
 ValueSet: MedicationTotalVolumeUnitsVS
 Id: medication-total-volume-units-vs
-Title: "Units of measure for total medication volume (a subset of UCUM)"
-Description: "UCUM units used in Uzbekistan for total volume / mass / quantity."
+Title: "Medication total volume unit"
+Description: "Medication total volume units"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/medication-total-volume-units-vs"
 * ^experimental = true
 * ^language = #uz

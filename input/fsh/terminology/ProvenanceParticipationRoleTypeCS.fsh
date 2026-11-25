@@ -1,7 +1,7 @@
 CodeSystem: ProvenanceParticipationRoleTypeCS
 Id: provenance-participation-role-type-cs
-Title: "Provenance Participation Role Type translations"
-Description: "Provenance Participation Role Type supplement with translations in Uzbek and Russian"
+Title: "Provenance participation role type translations"
+Description: "Provenance participation role type supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(provenance-participation-role-type-cs, $provenance-participant-type, 1.1.0)
 * #enterer
   * ^designation[0].language = #ru

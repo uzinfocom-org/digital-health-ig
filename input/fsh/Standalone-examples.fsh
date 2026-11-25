@@ -102,16 +102,6 @@ Description: "Example OperationOutcome returned when a transaction fails due to 
 * issue[=].diagnostics = "Observation.status: minimum required = 1, but only found 0 (from https://dhp.uz/fhir/core/StructureDefinition/uz-core-observation)"
 * issue[=].expression = "Bundle.entry[2].resource.ofType(Observation)"
 
-// Temporary stand-in referenced by the Procedure example; should be fleshed out (or replaced with a proper profile-conforming instance) before publication
-Instance: example-careplan
-InstanceOf: CarePlan
-Usage: #example
-Title: "example-careplan"
-Description: "Example of a careplan"
-* status = #active
-* intent = #plan
-* subject = Reference(example-david)
-
 // ============== Questionnaire Instance ==============
 
 Instance: PatientSatisfactionQuestionnaire
@@ -474,3 +464,95 @@ Description: "Temporary Specimen instance for lab (based on drafted UZCoreSpecim
 * collection.quantity = 3 'mL' "mL"
 * collection.fastingStatusCodeableConcept = $v2-0916#NF "The patient indicated they did not fast prior to the procedure."
 * note[0].text = "Venous blood collected into EDTA tube. No visible hemolysis."
+
+
+Instance: andijan-station
+InstanceOf: UZCoreOrganization
+Usage: #example
+Title: "Andijan blood station"
+Description: "Illustrative blood station supplying blood products."
+* language = #en
+* active = true
+* type.coding[subordinationGroup] = organizational-subordination-group-cs#I_2 "In territorial administration"
+* type.coding[nomenclatureGroup] = nomenclature-group-cs#II_700 "Blood transfusion center"
+* type.coding[organizationalServiceGroup] = organizational-service-group-cs#III_600 "Others"
+* name = "Andijan Blood Transfusion Station"
+
+
+Instance: tashkent-hospital
+InstanceOf: UZCoreOrganization
+Usage: #example
+Title: "Tashkent receiving hospital"
+Description: "Illustrative hospital receiving blood products from the Andijan blood station."
+* language = #en
+* active = true
+* type.coding[subordinationGroup] = organizational-subordination-group-cs#I_2 "In territorial administration"
+* type.coding[nomenclatureGroup] = nomenclature-group-cs#II_100 "Hospital premises"
+* type.coding[organizationalStructure] = organizational-structure-cs#146 "Hospital"
+* type.coding[organizationalServiceGroup] = organizational-service-group-cs#III_200 "There is an inpatient department."
+* type.coding[specialization] = organizational-specialization-cs#114.0 "Adult Hematology"
+* name = "Tashkent Hospital"
+
+
+Instance: transfusion-order-01
+InstanceOf: UZCoreServiceRequest
+Usage: #example
+Title: "Red blood cell transfusion order"
+Description: "Illustrative transfusion order for the patient in the blood product supply request example."
+* status = #active
+* intent = #order
+* priority = #routine
+* code = $sct#71493000 "Transfusion of packed red blood cells"
+* subject = Reference(example-salim)
+* authoredOn = "2025-08-31T14:00:00+05:00"
+* occurrenceDateTime = "2025-09-01T09:00:00+05:00"
+* requester = Reference(example-practitioner)
+* performer = Reference(tashkent-hospital)
+* reason.concept = $sct#87522002 "Iron deficiency anemia"
+
+
+Instance: transfusion-order-red-cells
+InstanceOf: UZCoreServiceRequest
+Usage: #example
+Title: "Urgent red blood cell transfusion order"
+Description: "Illustrative red blood cell transfusion order for an operation, fulfilled by the grouped red cell supply request example."
+* status = #active
+* intent = #order
+* priority = #urgent
+* code = $sct#71493000 "Transfusion of packed red blood cells"
+* subject = Reference(example-salim)
+* authoredOn = "2025-09-03T07:30:00+05:00"
+* occurrenceDateTime = "2025-09-04T09:00:00+05:00"
+* requester = Reference(example-practitioner)
+* performer = Reference(tashkent-hospital)
+* reason.concept = $sct#74474003 "Gastrointestinal hemorrhage"
+
+
+Instance: transfusion-order-plasma
+InstanceOf: UZCoreServiceRequest
+Usage: #example
+Title: "Urgent fresh frozen plasma transfusion order"
+Description: "Illustrative fresh frozen plasma transfusion order for the same operation, fulfilled by the grouped plasma supply request example."
+* status = #active
+* intent = #order
+* priority = #urgent
+* code = $sct#116861002 "Transfusion of fresh frozen plasma"
+* subject = Reference(example-salim)
+* authoredOn = "2025-09-03T07:30:00+05:00"
+* occurrenceDateTime = "2025-09-04T09:00:00+05:00"
+* requester = Reference(example-practitioner)
+* performer = Reference(tashkent-hospital)
+* reason.concept = $sct#74474003 "Gastrointestinal hemorrhage"
+
+
+Instance: example-cold-storage-shelf
+InstanceOf: UZCoreLocation
+Usage: #example
+Title: "Blood product cold storage shelf"
+Description: "Illustrative cold storage shelf at the Andijan blood station, referenced by the blood product inventory example."
+* language = #en
+* status = #active
+* mode = #instance
+* name = "Cold storage, shelf 3"
+* description = "Shelf 3 in the blood station's refrigerated blood product storage area."
+* managingOrganization = Reference(andijan-station)

@@ -44,7 +44,7 @@ PUT [base]/Procedure/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-Qo'llab-quvvatlanadigan barcha qidiruv parametrlari uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) hujjatiga qarang.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Procedure1-45) da keltirilgan.
 
 ### Aloqador
 

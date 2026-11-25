@@ -1,6 +1,6 @@
 CodeSystem: EncounterPriorityLocalCS
 Id: encounter-local-priority-cs
-Title: "Encounter local priority translations"
+Title: "Encounter local priority"
 Description: "Defines the local priority types in Uzbek and Russian"
 * insert OriginalCodeSystemDraft(encounter-local-priority-cs)
 

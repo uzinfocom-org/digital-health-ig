@@ -189,7 +189,7 @@ A parent is recorded against their child the same way: one RelatedPerson per par
         ]
       },
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ni",
-      "value": "40503855900021"
+      "value": "90000000000003"
     }
   ],
   "active": true,
@@ -222,7 +222,7 @@ A parent is recorded against their child the same way: one RelatedPerson per par
 The parent carries their own PINFL in `identifier`, the same one that identifies their own [Patient](StructureDefinition-uz-core-patient.html) record, so a system that knows the parent's PINFL finds the children they may act for with a single search:
 
 ```
-GET [base]/RelatedPerson?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|40503855900021
+GET [base]/RelatedPerson?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|90000000000003
 ```
 
 `patient` names the child, so the child's age is read from the child's `Patient.birthDate` rather than from this resource. RelatedPerson records *that* the relationship exists; it does not by itself grant access. Whether the parent may act for the child - see their record, or consent on their behalf - is decided by the system holding it, against the relationship and the rules that apply, the child's age among them.

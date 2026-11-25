@@ -1,7 +1,7 @@
 ValueSet: SecurityRoleTypeVS
 Id: security-role-type-vs
 Title: "Security role type"
-Description: "Defines the role of the participant that is being recorded in Uzbek and Russian"
+Description: "Security role types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/security-role-type-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

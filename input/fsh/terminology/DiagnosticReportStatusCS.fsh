@@ -1,7 +1,7 @@
 CodeSystem: DiagnosticReportStatusCS
 Id: diagnostic-report-status-cs
-Title: "DiagnosticReport status supplement"
-Description: "DiagnosticReport status supplement with translations in uzbek and russian"
+Title: "DiagnosticReport status translations"
+Description: "DiagnosticReport status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(diagnostic-report-status-cs, $diagnostic-report-status, 5.0.0)
 
 * #registered

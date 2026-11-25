@@ -41,7 +41,7 @@ PUT [base]/Condition/[id]
 If-Match: W/"3"   # ETag из последнего ответа; 412, если ресурс с тех пор изменился
 ```
 
-Полный перечень поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Condition1-5).
 
 ### Связанные материалы
 

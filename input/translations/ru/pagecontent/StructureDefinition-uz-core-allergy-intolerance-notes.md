@@ -44,9 +44,13 @@ PUT [base]/AllergyIntolerance/[id]
 If-Match: W/"3"   # ETag, полученный при последнем чтении; 412, если ресурс с тех пор изменился
 ```
 
-Все поддерживаемые параметры поиска приведены в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#AllergyIntolerance1-40).
 
 ### Связанные материалы
 
 - [Как читать это руководство](how-to-read.html) &middot; [Must Support](must-support.html) &middot; [Общие рекомендации](general-guidance.html)
 - [Рабочие процессы](workflows.html)
+
+### Как связать реакцию с введением лекарства
+
+**Связь с аллергией:** `MedicationAdministration.reason` означает, что лекарство введено по данному клиническому показанию, например для лечения аллергии. Это поле не регистрирует реакцию, вызванную лекарством. Если данное введение вызвало аллергическую реакцию, внесите её в [AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) пациента и свяжите его `reaction` с этим введением стандартным расширением `openEHR-administration`.

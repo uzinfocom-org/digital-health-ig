@@ -1,7 +1,7 @@
 ValueSet: AdverseEventActualityVS
 Id: adverse-event-actuality-vs
-Title: "Types of AdverseEvent actuality"
-Description: "Types of AdverseEvent actuality in Uzbekistan"
+Title: "AdverseEvent actuality"
+Description: "AdverseEvent actualities"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/adverse-event-actuality-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

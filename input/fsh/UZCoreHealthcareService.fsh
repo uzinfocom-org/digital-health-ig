@@ -27,7 +27,8 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 
 * category.coding contains
     dhpCategory 0..1 MS and
-    labCategory 0..1 MS
+    labCategory 0..1 MS and
+    txmkCategory 0..1 MS
 
 * category.coding[dhpCategory]
   * system 1..1 MS
@@ -39,7 +40,13 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
   * system 1..1 MS
   * system = Canonical(LabCategoriesCS)
   * code 1..1 MS
-  * code from service-categories-vs (extensible)
+  * code from ServiceCategoriesVS (extensible)
+
+* category.coding[txmkCategory]
+  * system 1..1 MS
+  * system = Canonical(TXMKCS)
+  * code 1..1 MS
+  * code from TXMKServiceCategoriesVS (required)
 
 * type.coding ^slicing.discriminator.type = #value
 * type.coding ^slicing.discriminator.path = "system"
@@ -49,7 +56,8 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
 
 * type.coding contains
     dhpService 0..1 MS and
-    labService 0..1 MS
+    labService 0..1 MS and
+    txmkService 0..1 MS
 
 * type.coding[dhpService]
   * system 1..1 MS
@@ -61,7 +69,13 @@ Description: "Uzbekistan Core HealthcareService profile, used to define healthca
   * system 1..1 MS
   * system = Canonical(LabPanelCS) 
   * code 1..1 MS
-  * code from observation-codes-vs (extensible)
+  * code from ObservationCodesVS (extensible)
+
+* type.coding[txmkService]
+  * system 1..1 MS
+  * system = Canonical(TXMKCS)
+  * code 1..1 MS
+  * code from TXMKServiceNamesVS (required)
 
 * characteristic ^slicing.discriminator.type = #value
 * characteristic ^slicing.discriminator.path = "coding.system"
@@ -148,3 +162,19 @@ Usage: #example
       * valueCode = #en
     * extension[content][0]
       * valueString = "Complete Blood Count (CBC)"
+
+Instance: example-healthcareservice-txmk-initial-visit
+InstanceOf: UZCoreHealthcareService
+Title: "Example UZ Core HealthcareService - TXMK Initial Physician Visit"
+Description: "An initial physician visit classified using the TXMK category and service coding slices."
+Usage: #example
+* language = #uz
+* active = true
+* providedBy = Reference(example-organization)
+* category.coding[txmkCategory] = TXMKCS#A01 "Shifokor qabullari va konsultatsiyalari"
+* type.coding[txmkService] = TXMKCS#5586604 "Shifokorning birlamchi qabuli"
+* characteristic[paymentType].coding.code = #paytype-0001-0001
+* name = "Shifokorning birlamchi qabuli"
+  * extension[translation][0]
+    * extension[lang][0].valueCode = #ru
+    * extension[content][0].valueString = "Прием врача первичный"

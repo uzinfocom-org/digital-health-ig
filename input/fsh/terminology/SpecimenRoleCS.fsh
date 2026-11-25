@@ -1,7 +1,7 @@
 CodeSystem: SpecimenRoleCS
 Id: specimen-role-cs
-Title: "Specimen role status translations"
-Description: "Specimen role status, supplemented with translations in Uzbek and Russian"
+Title: "Specimen role translations"
+Description: "Specimen role supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(specimen-role-cs, $specimen-role, 5.0.0)
 
 * #b

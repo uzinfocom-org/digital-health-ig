@@ -1,6 +1,6 @@
 CodeSystem: ContactRole2CS
 Id: contact-role2-cs
-Title: "Secondary Contact Role Definitions"
+Title: "Contact role translations"
 Description: "Contact role supplement with translations in Uzbek and Russian"
 * ^url = "https://terminology.dhp.uz/fhir/core/CodeSystem/contact-role2-cs"
 * ^status = #active

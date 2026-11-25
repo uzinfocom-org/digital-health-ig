@@ -126,8 +126,6 @@ Komponent quyidagilarni ta'minlaydi:
 - bemorning tashrif natijalari, bajarilgan protseduralar va tavsiyalarga bemor portali orqali kirishini;
 - patronaj faoliyatini monitoring qilishni hamda sog'liqni saqlash tashkilotlari va hududlar kesimida hisobotlar shakllantirishni.
 
-Patronaj tashrifi o'tkaziladigan maqsad [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) profilining `code` elementida ko'rsatiladi. Tug'ruqdan keyingi patronaj, profilaktik ko'rik, surunkali kasalliklarni dispanser kuzatuvi va uyda statsionar yordam [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) to'plamidan SNOMED CT da kodlanadi. Vaksinatsiyadan keyingi patronaj va reproduktiv yoshdagi ayollar patronaji uchun mos SNOMED CT konsepti yo'q, ular ushbu qo'llanmaning [skrining va uyga tashrif kodlari](CodeSystem-screening-code-cs.html)dan foydalanadi.
-
 Hamshiralik tashriflarini rejalashtirishni "Qabulga yozish va jadvalni boshqarish" komponenti bajaradi.
 
 ### Bemorning klinik marshrutini boshqarish {#patient-health-journey-management}
@@ -253,7 +251,7 @@ Komponent quyidagilarni ta'minlaydi:
 
 ### Komponentlararo resurs arxitekturasi
 
-Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan almashadi. Ushbu diagramma resurs darajasiga tushadi: har bir komponent qaysi resurslarga egalik qiladi va ulardan qaysilari boshqa komponent bilan bog'lanadi. Oddiy chiziqlar ikki komponentning keng integratsiyasini yoki ikkala komponent yopiq bo'lganda bitta chiziqqa birlashtirilgan bir nechta resurs aloqasini, strelkalar esa muayyan resursning bir komponentdan boshqasiga o'tishini ko'rsatadi. Ko'chirish uchun sudrang, masshtabni o'zgartirish uchun aylantiring, aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting. ★ komponentning o'zi javobgar bo'lgan resursni belgilaydi; qolganlarini u ular uchun javobgar komponent bilan birgalikda ishlatadi.
+Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan almashadi. Ushbu diagramma resurs darajasiga tushadi: har bir komponent qaysi resurslarga egalik qiladi va ulardan qaysilari boshqa komponent bilan bog'lanadi. Oddiy chiziqlar ikki komponentning keng integratsiyasini yoki ikkala komponent yopiq bo'lganda bitta chiziqqa birlashtirilgan bir nechta resurs aloqasini, strelkalar esa muayyan resursning bir komponentdan boshqasiga o'tishini ko'rsatadi. Ko'chirish uchun sudrang, masshtabni o'zgartirish uchun aylantiring, aloqalarni ko'rish uchun resurs, komponent yoki legenda elementiga sichqonchani olib boring yoki tab bilan o'ting. Yuqori o'ng burchakdagi tugmalar barcha komponentlarni birdaniga ochadi yoki yopadi va diagrammani ko'rinishga qaytadan moslaydi. ★ komponentning o'zi javobgar bo'lgan resursni belgilaydi; qolganlarini u ular uchun javobgar komponent bilan birgalikda ishlatadi.
 
 <br clear="all"/>
 
@@ -297,6 +295,19 @@ Amalda yuqorida tavsiflangan bir nechta komponent bir xil FHIR resurslari bilan 
   }
   .arch-canvas.dragging { cursor: grabbing; }
   .arch-canvas svg { display: block; }
+  .arch-toolbar {
+    position: absolute; top: 10px; right: 10px; z-index: 1;
+    display: flex; flex-direction: column;
+    border: 1px solid var(--line); border-radius: 4px; overflow: hidden;
+    background: var(--paper); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  .arch-toolbar button {
+    width: 32px; height: 32px; padding: 0; border: 0; border-bottom: 1px solid var(--line);
+    background: var(--paper); color: var(--blueprint); font-size: 16px; line-height: 1; cursor: pointer;
+  }
+  .arch-toolbar button:last-child { border-bottom: 0; }
+  .arch-toolbar button:hover { background: var(--blueprint-soft); }
+  .arch-toolbar button:focus-visible { outline: 2px solid var(--blueprint); outline-offset: -2px; }
 
   .arch-info {
     flex: 0 0 240px;

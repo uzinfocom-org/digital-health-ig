@@ -64,3 +64,23 @@ Usage: #example
 * organization = Reference(Organization/example-organization)
 * code.text = "Surgeon at Republican Specialized Scientific Center of Surgery, inpatient care"
 * healthcareService = Reference(HealthcareService/example-healthcareservice)
+
+Instance: example-patronage-nurse-role
+InstanceOf: UZCorePractitionerRole
+Title: "Example UZ Core PractitionerRole - Patronage Nurse"
+Description: "The patronage nurse role of a family polyclinic nurse"
+Usage: #example
+* language = #uz
+* active = true
+* practitioner = Reference(Practitioner/example-patronage-nurse)
+* code = position-and-profession-cs#3221.15 "Patronaj hamshirasi"
+
+Instance: example-physiotherapist-role
+InstanceOf: UZCorePractitionerRole
+Title: "Example UZ Core PractitionerRole - Physiotherapist"
+Description: "The physiotherapy doctor role of a practitioner who prescribes and carries out therapeutic massage"
+Usage: #example
+* language = #uz
+* active = true
+* practitioner = Reference(Practitioner/example-physiotherapist)
+* code = position-and-profession-cs#2264.1 "Vrach fizioterapevt"

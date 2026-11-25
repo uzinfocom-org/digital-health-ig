@@ -1,7 +1,7 @@
 CodeSystem: ConsentStateCodesCS
 Id: consent-state-codes-cs
-Title: "Consent State Codes translations"
-Description: "Consent State Codes supplement with translations in Uzbek and Russian"
+Title: "Consent state translations"
+Description: "Consent state supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(consent-state-codes-cs, $consent-state-codes, 5.0.0)
 * #draft
   * ^designation[0].language = #ru

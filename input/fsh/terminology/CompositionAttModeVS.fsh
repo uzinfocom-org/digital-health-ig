@@ -1,7 +1,7 @@
 ValueSet: CompositionAttModeVS
 Id: composition-att-mode-vs
 Title: "Composition attestation mode"
-Description: "Composition attestation mode codes with Uzbek and Russian designations"
+Description: "Composition attestation modes"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/composition-att-mode-vs"
 * ^experimental = false
 * ^extension[0].url = $valueset-supplement

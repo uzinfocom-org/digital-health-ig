@@ -31,7 +31,7 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 
 * participant 0..* MS
 * participant.actor 1..1 MS
-* participant.actor  only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCorePatient or UZCoreRelatedPerson or UZCoreOrganization or Device)
+* participant.actor  only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCorePatient or UZCoreRelatedPerson or UZCoreOrganization or UZCoreDevice)
 * participant.function MS
 * participant.function from ConditionParticipationRoleTypeVS (extensible)
 
@@ -63,8 +63,8 @@ Title: "Example Uz Core Condition - Disability Group I"
 Description: "Example instance of a disability condition with Group I classification"
 Usage: #example
 * language = #uz
-* clinicalStatus = $condition-clinical#active "Faol"
-* verificationStatus = $condition-ver-status#confirmed "Tasdiqlangan"
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#confirmed
 * code = $sct#21134002 "Disability"
 * severity = DisabilityCS#regis0011.00001 "I guruh"
 * subject = Reference(example-salim)
@@ -72,7 +72,7 @@ Usage: #example
 * recordedDate = "2025-09-17"
 * participant
   * actor = Reference(example-practitioner)
-  * function = $provenance-participant-type#author "Muallif"
+  * function = $provenance-participant-type#author
 * note
   * text = "Patient has been classified with Group I disability status following medical evaluation."
 

@@ -106,8 +106,6 @@ The component provides:
 - patient access to visit results, procedures performed, and recommendations through the patient portal;
 - monitoring of patronage activity and reporting by healthcare organization and region.
 
-The purpose a patronage visit is made for goes on `code` in [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html). Postpartum patronage, preventive examination, chronic disease follow-up, and home inpatient care are coded in SNOMED CT, from [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html). Post-vaccination patronage and patronage of women of reproductive age have no suitable SNOMED CT concept and use this guide's [screening and home visit codes](CodeSystem-screening-code-cs.html).
-
 Scheduling of nursing visits is handled by the Appointment and Scheduling component.
 
 ### Patient health journey management
@@ -224,7 +222,7 @@ The [Immunization](workflow-immunization.html) workflow shows how the national s
 
 ### Cross-component resource architecture
 
-In practice, several of the components described above exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources connect to another component. Plain lines show two components integrating broadly, or several resource connections merged into one while both components are closed; arrows show a specific resource flowing from one component into another. Drag to pan, scroll to zoom, and hover or tab to a resource, component, or legend item to see its connections. A ★ marks a resource the component itself is responsible for; the others it shares with the component that is.
+In practice, several of the components described above exchange the same underlying FHIR resources. This diagram drops to the resource level: which resources each component owns, and which of those resources connect to another component. Plain lines show two components integrating broadly, or several resource connections merged into one while both components are closed; arrows show a specific resource flowing from one component into another. Drag to pan, scroll to zoom, and hover or tab to a resource, component, or legend item to see its connections. The buttons in the top right corner open or close every component at once and fit the diagram back into view. A ★ marks a resource the component itself is responsible for; the others it shares with the component that is.
 
 <br clear="all"/>
 
@@ -268,6 +266,19 @@ In practice, several of the components described above exchange the same underly
   }
   .arch-canvas.dragging { cursor: grabbing; }
   .arch-canvas svg { display: block; }
+  .arch-toolbar {
+    position: absolute; top: 10px; right: 10px; z-index: 1;
+    display: flex; flex-direction: column;
+    border: 1px solid var(--line); border-radius: 4px; overflow: hidden;
+    background: var(--paper); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  .arch-toolbar button {
+    width: 32px; height: 32px; padding: 0; border: 0; border-bottom: 1px solid var(--line);
+    background: var(--paper); color: var(--blueprint); font-size: 16px; line-height: 1; cursor: pointer;
+  }
+  .arch-toolbar button:last-child { border-bottom: 0; }
+  .arch-toolbar button:hover { background: var(--blueprint-soft); }
+  .arch-toolbar button:focus-visible { outline: 2px solid var(--blueprint); outline-offset: -2px; }
 
   .arch-info {
     flex: 0 0 240px;

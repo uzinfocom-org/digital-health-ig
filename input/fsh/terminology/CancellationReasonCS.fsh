@@ -1,7 +1,7 @@
 CodeSystem: CancellationReasonCS
 Id: cancellation-reason-cs
-Title: "Cancellation Reason CS"
-Description: "Allergy codes supplement with translations in Russian and English"
+Title: "Cancellation reason"
+Description: "Reasons for cancellation of a request, service, appointment, or reimbursement process"
 
 * insert OriginalCodeSystemDraft(cancellation-reason-cs)
 

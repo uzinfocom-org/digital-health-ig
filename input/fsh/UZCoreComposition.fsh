@@ -11,13 +11,21 @@ Description: "UZ Core Composition profile, used as a foundation for creating med
 * status and type and category and subject and date and author and title and attester and custodian and section MS
 * status from CompositionStatusVS (required)
 * type from CompositionTypeVS (required)
-* category from CompositionCategoryVS (extensible)
+* category from CompositionCategoryVS (preferred)
+* category ^slicing.discriminator.type = #value
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category ^slicing.description = "Categories from the national value set; codes from other systems are allowed alongside them"
+* category ^slicing.ordered = false
+* category contains dhpCategory 0..* MS
+* category[dhpCategory] from CompositionCategoryVS (required)
+* category[dhpCategory] ^short = "Category from the national value set"
 
 * subject 0..* MS
   * ^short = "Who and/or what the medical document or digital form is about."
 
 * author 1..* MS
-* author only Reference(UZCorePractitionerRole or UZCorePractitioner or UZCoreOrganization or UZCoreRelatedPerson or UZCorePatient or Device)
+* author only Reference(UZCorePractitionerRole or UZCorePractitioner or UZCoreOrganization or UZCoreRelatedPerson or UZCorePatient or UZCoreDevice)
 
 * attester
   * mode 1..1 MS

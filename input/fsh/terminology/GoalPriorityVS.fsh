@@ -1,7 +1,7 @@
 ValueSet: GoalPriorityVS
 Id: goal-priority-vs
-Title: "Goal Priority VS"
-Description: "Value Set for Goal Priority translations"
+Title: "Goal priority"
+Description: "Goal priorities"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/goal-priority-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

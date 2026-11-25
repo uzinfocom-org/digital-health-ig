@@ -24,7 +24,7 @@ GET [base]/Provenance?entity=DocumentReference/[id]
 
 Чтобы получить запись вместе с её происхождением за один вызов, используйте обратное включение, например `GET [base]/DocumentReference?_id=[id]&_revinclude=Provenance:target`.
 
-Полный перечень поддерживаемых поисковых параметров см. в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Provenance пока не указан в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); запросы выше используют стандартные параметры поиска FHIR R5.
 
 ### Связанные материалы
 

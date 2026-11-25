@@ -33,7 +33,7 @@
     ["MDM", "MSM"],
     ["CHR", "PHJM"],
     ["LAB", "REFERRALS", "REIMB", "SCREEN", "VACC"],
-    ["BLOOD", "NURSING"]
+    ["SUPPLIES", "BLOOD", "NURSING", "PRESCRIPTION"]
   ];
 
   var COMPONENTS = {
@@ -50,11 +50,12 @@
     CHR: { service: "chr", short: "CHR", label: "Clinical Health Records (CHR)", resources: [
       { name: "Patient", profiled: true }, { name: "EpisodeOfCare", profiled: true }, { name: "Condition", profiled: true },
       { name: "Observation", profiled: true }, { name: "Procedure", profiled: true }, { name: "AllergyIntolerance", profiled: true },
-      { name: "MedicationRequest" }
+      { name: "MedicationRequest", profiled: true }, { name: "DeviceRequest", profiled: true },
+      { name: "DeviceUsage", profiled: true }
     ]},
     PHJM: { service: "phjm", short: "PHJM", label: "Patient health journey management (PHJM)", resources: [
       { name: "EpisodeOfCare", profiled: true }, { name: "Encounter", profiled: true }, { name: "Condition", profiled: true },
-      { name: "Observation", profiled: true }, { name: "CarePlan" }, { name: "Questionnaire", profiled: true },
+      { name: "Observation", profiled: true }, { name: "CarePlan", profiled: true }, { name: "Questionnaire", profiled: true },
       { name: "QuestionnaireResponse", profiled: true }
     ]},
     LAB: { service: "laboratory", short: "Laboratory", label: "Laboratory", resources: [
@@ -67,7 +68,8 @@
     REIMB: { service: "reimbursement", short: "Reimbursement", label: "Reimbursement", resources: [
       { name: "Claim", profiled: true }, { name: "ClaimResponse", profiled: true }, { name: "Encounter", profiled: true },
       { name: "Procedure", profiled: true }, { name: "MedicationDispense", profiled: true }, { name: "Condition", profiled: true },
-      { name: "Observation", profiled: true }, { name: "CarePlan" }, { name: "Composition", profiled: true }
+      { name: "Observation", profiled: true }, { name: "CarePlan", profiled: true }, { name: "Composition", profiled: true },
+      { name: "ChargeItem", profiled: true }
     ]},
     SCREEN: { short: "Screening Schedules", label: "Screening Schedules Management", resources: [
       { name: "Questionnaire", profiled: true }
@@ -79,17 +81,28 @@
       { name: "Observation", profiled: true }
     ]},
     BLOOD: { service: "blood", short: "Blood Mgmt", label: "Blood Management", resources: [
-      { name: "ServiceRequest", profiled: true }, { name: "SupplyRequest" },
+      { name: "ServiceRequest", profiled: true }, { name: "SupplyRequest", profiled: true },
       { name: "Procedure", profiled: true }, { name: "Observation", profiled: true },
-      { name: "InventoryItem" }, { name: "InventoryReport" },
+      { name: "InventoryItem", profiled: true }, { name: "InventoryReport", profiled: true },
       { name: "PlanDefinition", profiled: true }, { name: "Group", profiled: true },
-      { name: "BiologicallyDerivedProduct" }, { name: "DiagnosticReport", profiled: true }
+      { name: "BiologicallyDerivedProduct", profiled: true }, { name: "DiagnosticReport", profiled: true },
+      { name: "BiologicallyDerivedProductDispense", profiled: true }, { name: "Flag", profiled: true }
     ]},
     NURSING: { service: "nursing", short: "Nursing", label: "Nursing", resources: [
       { name: "ServiceRequest", profiled: true }, { name: "Encounter", profiled: true },
       { name: "Observation", profiled: true }, { name: "Procedure", profiled: true },
       { name: "Condition", profiled: true }, { name: "Questionnaire", profiled: true },
-      { name: "QuestionnaireResponse", profiled: true }
+      { name: "QuestionnaireResponse", profiled: true }, { name: "CarePlan", profiled: true }
+    ]},
+    PRESCRIPTION: { service: "prescription", short: "Prescription", label: "Prescription", resources: [
+      { name: "MedicationRequest", profiled: true }, { name: "MedicationDispense", profiled: true },
+      { name: "Medication", profiled: true }, { name: "MedicationKnowledge", profiled: true },
+      { name: "MedicationAdministration", profiled: true }
+    ]},
+    SUPPLIES: { service: "supplies", short: "Supplies", label: "Supplies", resources: [
+      { name: "SupplyRequest", profiled: true }, { name: "SupplyDelivery", profiled: true },
+      { name: "InventoryItem", profiled: true }, { name: "InventoryReport", profiled: true },
+      { name: "Device", profiled: true }
     ]}
   };
 
@@ -97,8 +110,7 @@
   // the platform team's service-to-resource allocation. A resource type used
   // by several components is still stored by exactly one service, so this is
   // keyed by resource type rather than by component. Resource types with no
-  // service listed yet (CapabilityStatement, Provenance, AuditEvent, Consent,
-  // InventoryReport, Group) simply have no entry.
+  // service listed yet (such as Consent, Group or Device) simply have no entry.
   var SERVICES = {
     metadata: ["NamingSystem", "ValueSet", "CodeSystem", "ConceptMap", "StructureDefinition", "OperationDefinition", "SearchParameter"],
     mdm: ["Organization", "Practitioner", "PractitionerRole", "Location", "Person", "HealthcareService"],
@@ -155,7 +167,13 @@
     { from: "MDM.Patient", to: "CHR.Patient", kind: "sharesType" },
     { from: "VACC.PlanDefinition", to: "BLOOD.PlanDefinition", kind: "sharesType" },
     { from: "VACC.Encounter", to: "PHJM.Encounter", kind: "sharesType" },
-    { from: "VACC.Observation", to: "CHR.Observation", kind: "sharesType" }
+    { from: "VACC.Observation", to: "CHR.Observation", kind: "sharesType" },
+    { from: "NURSING.CarePlan", to: "PHJM.CarePlan", kind: "sharesType" },
+    { from: "PRESCRIPTION.MedicationRequest", to: "CHR.MedicationRequest", kind: "sharesType" },
+    { from: "PRESCRIPTION.MedicationDispense", to: "REIMB.MedicationDispense", kind: "sharesType" },
+    { from: "BLOOD.SupplyRequest", to: "SUPPLIES.SupplyRequest", kind: "sharesType" },
+    { from: "BLOOD.InventoryItem", to: "SUPPLIES.InventoryItem", kind: "sharesType" },
+    { from: "BLOOD.InventoryReport", to: "SUPPLIES.InventoryReport", kind: "sharesType" }
   ];
 
   // Everything the diagram renders as prose, per page language. The publisher
@@ -183,6 +201,9 @@
       own: "the component is responsible for this resource",
       service: "Service",
       noService: "No service assigned yet",
+      expandAll: "Expand all components",
+      collapseAll: "Collapse all components",
+      fitView: "Fit the diagram to the view",
       resourceCount: function (n) { return n + (n === 1 ? " resource" : " resources"); }
     },
     ru: {
@@ -197,7 +218,9 @@
         SCREEN: { short: "Графики скрининга", label: "Управление графиками скрининга" },
         VACC: { short: "Вакцинация", label: "Управление вакцинацией" },
         BLOOD: { short: "Управление кровью", label: "Управление кровью" },
-        NURSING: { short: "Сестринское дело", label: "Сестринское дело" }
+        NURSING: { short: "Сестринское дело", label: "Сестринское дело" },
+        PRESCRIPTION: { short: "Рецепты", label: "Рецепты" },
+        SUPPLIES: { short: "Поставки", label: "Поставки" }
       },
       edge: {
         fullCompat: "полная совместимость",
@@ -214,6 +237,9 @@
       own: "компонент отвечает за этот ресурс",
       service: "Сервис",
       noService: "Сервис ещё не назначен",
+      expandAll: "Раскрыть все компоненты",
+      collapseAll: "Свернуть все компоненты",
+      fitView: "Вписать диаграмму в область просмотра",
       // 1 ресурс / 2-4 ресурса / 5+ ресурсов, with the 11-14 exception.
       resourceCount: function (n) {
         var m10 = n % 10, m100 = n % 100;
@@ -234,7 +260,9 @@
         SCREEN: { short: "Skrining jadvallari", label: "Skrining jadvallarini boshqarish" },
         VACC: { short: "Vaksinatsiya", label: "Vaksinatsiyani boshqarish" },
         BLOOD: { short: "Qon resurslari", label: "Qon resurslarini boshqarish" },
-        NURSING: { short: "Hamshiralik ishi", label: "Hamshiralik ishi" }
+        NURSING: { short: "Hamshiralik ishi", label: "Hamshiralik ishi" },
+        PRESCRIPTION: { short: "Retseptlar", label: "Retseptlar" },
+        SUPPLIES: { short: "Ta'minot", label: "Ta'minot" }
       },
       edge: {
         fullCompat: "to'liq moslik",
@@ -251,6 +279,9 @@
       own: "komponent ushbu resurs uchun javobgar",
       service: "Xizmat",
       noService: "Xizmat hali belgilanmagan",
+      expandAll: "Barcha komponentlarni ochish",
+      collapseAll: "Barcha komponentlarni yopish",
+      fitView: "Diagrammani ko'rinishga moslash",
       resourceCount: function (n) { return n + " ta resurs"; }
     }
   };
@@ -736,6 +767,37 @@
   // Resizing re-fits the whole drawing, using whatever the latest render left.
   var currentFit = null;
   window.addEventListener('resize', function () { if (currentFit) currentFit(); });
+
+  // Opening or closing every card changes the drawing's size, so both re-fit
+  // it rather than keeping the current pan and zoom.
+  function setAll(open) {
+    Object.keys(COMPONENTS).forEach(function (id) {
+      if (COMPONENTS[id].resources.length) expanded[id] = open;
+    });
+    view = null; anchor = null;
+    render();
+  }
+
+  var toolbar = document.createElement('div');
+  toolbar.className = 'arch-toolbar';
+  [
+    { label: T.expandAll, glyph: '\u229E', run: function () { setAll(true); } },
+    { label: T.collapseAll, glyph: '\u229F', run: function () { setAll(false); } },
+    { label: T.fitView, glyph: '\u2922', run: function () { if (currentFit) currentFit(); } }
+  ].forEach(function (b) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.title = b.label;
+    btn.setAttribute('aria-label', b.label);
+    btn.textContent = b.glyph;
+    btn.onclick = b.run;
+    toolbar.appendChild(btn);
+  });
+  // Without this the canvas would take a press on a button as the start of a pan.
+  ['pointerdown', 'pointerup', 'wheel'].forEach(function (type) {
+    toolbar.addEventListener(type, function (ev) { ev.stopPropagation(); });
+  });
+  canvas.appendChild(toolbar);
 
   render();
 })();

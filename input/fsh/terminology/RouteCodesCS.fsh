@@ -1,6 +1,6 @@
 CodeSystem: RouteCodesCS
 Id: route-codes-cs
-Title: "Route Codes CodeSystem"
+Title: "Local route of administration"
 Description: "Routes of administration used in Uzbekistan that SNOMED CT does not cover. Everything SNOMED CT covers is taken from SNOMED CT instead - see route-code-vs."
 * insert OriginalCodeSystemDraft(route-codes-cs)
 

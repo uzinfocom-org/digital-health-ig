@@ -41,7 +41,7 @@ If-Match: W/"3"   # ETag из последнего чтения; 412, если �
 
 Consent обычно задаётся пациентом в портале. Если Consent запрещает доступ, запросы данных отклоняются с HTTP 403; клиентские системы должны корректно обрабатывать такой результат.
 
-Полный перечень поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Consent пока не указан в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); запросы выше используют стандартные параметры поиска FHIR R5.
 
 ### Связанные разделы
 

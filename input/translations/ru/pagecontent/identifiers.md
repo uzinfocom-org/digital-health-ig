@@ -11,7 +11,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 ```
 
 Где:
-- `namespace`: `pid` (персональный), `pro` (профессиональный), `org` (организация), `doc` (документ) или `prg` (программа)
+- `namespace`: `pid` (персональный), `pro` (профессиональный), `org` (организация), `doc` (документ), `prd` (продукт) или `prg` (программа)
 - `country`: двухбуквенный код страны ISO 3166-1 (например, `uz` для Узбекистана)
 - `type`: тип идентификатора (например, `ppn` для паспорта, `ni` для национального ID)
 - `subtype`: дополнительная классификация (например, `local` или `intl` для типов паспортов)
@@ -42,7 +42,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
         ]
       },
       "use": "official",
-      "value": "30211975910033"
+      "value": "12345678912345"
     }
   ]
 }
@@ -208,6 +208,42 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 }
 ```
 
+#### Сертификат специалиста
+
+Сертификат специалиста, выданный Министерством здравоохранения, идентифицирует квалификацию медицинского работника, поэтому он записывается в `Practitioner.qualification.identifier`, а не в `Practitioner.identifier`. Значение - серия и номер без разделителя. Полное сопоставление полей приведено в разделе [Сертификаты специалиста](StructureDefinition-uz-core-practitioner.html#specialist-certificates).
+
+**System URI**: `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`
+
+```json
+{
+  "resourceType": "Practitioner",
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "system": "https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate",
+          "value": "CA123456"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+            "code": "CER",
+            "display": "Certificate"
+          }
+        ],
+        "text": "Psixiatriya, oliy toifa, shifokor"
+      },
+      "period": {
+        "start": "2025-03-10",
+        "end": "2030-03-10"
+      }
+    }
+  ]
+}
+```
+
 Полный перечень всех поддерживаемых систем идентификаторов медицинских работников приведён в value set [PractitionerIdentifierDomainVS](ValueSet-practitioner-identifier-domain-vs.html).
 
 ### Идентификаторы организаций
@@ -278,7 +314,13 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 
 **Шаблон System URI**: `https://dhp.uz/fhir/core/sid/doc/{country}/{type}`
 
-### Идентификаторы программ
+### Идентификаторы продуктов {#product-identifiers}
+
+Продукты идентифицируются с использованием пространства имён `prd`. Оно предназначено для номеров, пространство имён которых задаёт сама платформа, например номеров единиц, которые службы крови присваивают продуктам крови. Если внешний реестр публикует собственный URI системы для номера продукта, используйте этот URI: например, идентификаторы лекарственных средств используют системы Asl Belgisi и реестра uzpharminfo.uz.
+
+**Шаблон System URI**: `https://dhp.uz/fhir/core/sid/prd/{country}/{type}[/subtype]`
+
+### Идентификаторы программ {#program-identifiers}
 
 Пространство имён `prg` указывает, в рамках какой национальной программы здравоохранения создан ресурс, - программы скрининга, кампании вакцинации, диспансерного наблюдения при хроническом заболевании и т. д. Для всех программ используется одна система: программа является значением идентификатора, поэтому новой программе нужно новое значение, а не новая система идентификаторов.
 
@@ -324,7 +366,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
         ]
       },
       "use": "official",
-      "value": "30211975910033"
+      "value": "12345678912345"
     },
     {
       "system": "https://dhp.uz/fhir/core/sid/pid/uz/ppn/local",
@@ -391,6 +433,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 - `https://dhp.uz/fhir/core/sid/pid/uz/ni`
 - `https://dhp.uz/fhir/core/sid/pid/uz/ppn/local`
 - `https://dhp.uz/fhir/core/sid/pro/uz/argos`
+- `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`
 
 **Недоступны для выбора** (только родительские группировки):
 - `https://dhp.uz/fhir/core/sid/pid` (корневой уровень)
@@ -405,7 +448,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 ```
 # | используется для разделения system и value и должен быть URL-кодирован как %7C
 
-GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|30211975910033
+GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|12345678912345
 GET [base]/Practitioner?identifier=https://dhp.uz/fhir/core/sid/pro/uz/argos|9876543210
 GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200935935
 GET [base]/Observation?identifier=https://dhp.uz/fhir/core/sid/prg/uz/program|268547008

@@ -1,7 +1,7 @@
 ValueSet: RelationshipTypeVS
 Id: relationship-type-vs
 Title: "Relationship type"
-Description: "Relationship types in Uzbekistan"
+Description: "Relationship types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/relationship-type-vs"
 * ^experimental = true
 * ^language = #uz

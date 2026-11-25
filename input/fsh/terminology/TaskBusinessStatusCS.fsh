@@ -1,7 +1,7 @@
 CodeSystem: TaskBusinessStatusCS
 Id: task-business-status-cs
-Title: "Task Business Status Codes"
-Description: "Uzbekistan national code system for Task business status codes. This CodeSystem contains codes for business-level statuses of tasks in the healthcare workflow."
+Title: "Task business status"
+Description: "Uzbekistan national codes for business-level statuses of tasks in the healthcare workflow"
 
 * insert OriginalCodeSystemDraft(task-business-status-cs)
 

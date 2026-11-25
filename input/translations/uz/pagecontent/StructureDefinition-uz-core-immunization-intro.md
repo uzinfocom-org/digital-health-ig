@@ -138,7 +138,7 @@ To'liq yozuv uchun `protocolApplied` (seriya nomi, maqsadli kasallik, doza raqam
 }
 ```
 
-`reaction.manifestation` o'zining kodlangan topilmasini `concept` ichida olib yuradi; u o'rniga o'zining ichki `reference` orqali [Observation](StructureDefinition-uz-core-observation.html) ga ishora qilishi mumkin. `protocolApplied.targetDisease` SNOMED CT ga `extensible` bog'langan. Doza [tavsiya](StructureDefinition-uz-core-immunization-recommendation.html) yoki buyurtmadan kelib chiqqan bo'lsa, unga `basedOn` havolasini qo'shing.
+`reaction.manifestation` o'zining kodlangan topilmasini `concept` ichida olib yuradi; u o'rniga o'zining ichki `reference` orqali [Observation](StructureDefinition-uz-core-observation.html) ga ishora qilishi mumkin. `protocolApplied.targetDisease` [maqsadli kasalliklar to'plamidagi](ValueSet-target-disease-vs.html) SNOMED CT kodlarini ochiq slays orqali qabul qiladi, shuning uchun ular yonida boshqa tizimlardagi kodlar ham bo'lishi mumkin. Doza [tavsiya](StructureDefinition-uz-core-immunization-recommendation.html) yoki buyurtmadan kelib chiqqan bo'lsa, unga `basedOn` havolasini qo'shing.
 
 #### Doza berilmaganda
 

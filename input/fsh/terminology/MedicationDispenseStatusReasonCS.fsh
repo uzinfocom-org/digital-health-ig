@@ -1,7 +1,7 @@
 CodeSystem: MedicationDispenseStatusReasonCS
 Id: medicationdispense-status-reason-cs
-Title: "MedicationDispense Status Reason (UZ supplement)"
-Description: "Uzbek and Russian display translations for HL7 MedicationDispense status reason codes"
+Title: "MedicationDispense status reason translations"
+Description: "MedicationDispense status reason supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(medicationdispense-status-reason-cs, $medicationdispense-status-reason, 5.0.0)
 
 * #frr01

@@ -1,7 +1,7 @@
 ValueSet: DiagnosticReportStatusVS
 Id: diagnostic-report-status-vs
-Title: "Diagnostic report status valueset"
-Description: "Value set defining codes that represent the clinical status of an allergy or intolerance."
+Title: "DiagnosticReport status"
+Description: "DiagnosticReport statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/diagnostic-report-status-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

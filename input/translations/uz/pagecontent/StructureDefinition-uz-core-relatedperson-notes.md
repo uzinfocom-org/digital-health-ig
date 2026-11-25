@@ -44,7 +44,7 @@ If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 }
 ```
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) hujjatiga, identifikator tizimi URI manzillari uchun esa [Identifikator tizimlari](identifiers.html) bo'limiga qarang.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#RelatedPerson1-12) hujjatiga, identifikator tizimi URI manzillari uchun esa [Identifikator tizimlari](identifiers.html) bo'limiga qarang.
 
 ### Aloqador materiallar
 

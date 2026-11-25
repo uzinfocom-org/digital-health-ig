@@ -719,8 +719,8 @@ Description: "Maps local UZ ReactionSubstanceCS codes to SNOMED CT."
 * group.element[+].code = #aller-0010-00130
 * group.element[=].display = "Spelta bo'g'doyi (Tri s)"
 * group.element[=].target[+].code = #412071004
-* group.element[=].target[=].display = "Spelt wheat"
-* group.element[=].target[=].relationship = #equivalent
+* group.element[=].target[=].display = "Wheat"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00131
 * group.element[=].display = "Makkajo'hori (Zea m)"
@@ -994,62 +994,62 @@ Description: "Maps local UZ ReactionSubstanceCS codes to SNOMED CT."
 
 * group.element[+].code = #aller-0010-00180
 * group.element[=].display = "Funduk yong'og'i (Cor a 1-0401)"
-* group.element[=].target[+].code = #387980002
+* group.element[=].target[+].code = #256353000
 * group.element[=].target[=].display = "Hazelnut (Cor a 1-0401)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00181
 * group.element[=].display = "Funduk yong'og'i (Cor a 8)"
-* group.element[=].target[+].code = #387980002
+* group.element[=].target[+].code = #256353000
 * group.element[=].target[=].display = "Hazelnut (Cor a 8)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00182
 * group.element[=].display = "Funduk yong'og'i (Cor a 9)"
-* group.element[=].target[+].code = #387980002
+* group.element[=].target[+].code = #256353000
 * group.element[=].target[=].display = "Hazelnut (Cor a 9)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00183
 * group.element[=].display = "Funduk yong'og'i (Cor a 11)"
-* group.element[=].target[+].code = #387980002
+* group.element[=].target[+].code = #256353000
 * group.element[=].target[=].display = "Hazelnut (Cor a 11)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00184
 * group.element[=].display = "Funduk yong'og'i (Cor a 14)"
-* group.element[=].target[+].code = #387980002
+* group.element[=].target[+].code = #256353000
 * group.element[=].target[=].display = "Hazelnut (Cor a 14)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00185
 * group.element[=].display = "Gretsiya yong'og'i (Jug r 1)"
-* group.element[=].target[+].code = #1264473004
-* group.element[=].target[=].display = "Walnut (Jug r 1)"
+* group.element[=].target[+].code = #256352005
+* group.element[=].target[=].display = "Walnut - nut (Jug r 1)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00186
 * group.element[=].display = "Gretsiya yong'og'i (Jug r 2)"
-* group.element[=].target[+].code = #1264473004
-* group.element[=].target[=].display = "Walnut (Jug r 2)"
+* group.element[=].target[+].code = #256352005
+* group.element[=].target[=].display = "Walnut - nut (Jug r 2)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00187
 * group.element[=].display = "Gretsiya yong'og'i (Jug r 3)"
-* group.element[=].target[+].code = #1264473004
-* group.element[=].target[=].display = "Walnut (Jug r 3)"
+* group.element[=].target[+].code = #256352005
+* group.element[=].target[=].display = "Walnut - nut (Jug r 3)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00188
 * group.element[=].display = "Gretsiya yong'og'i (Jug r 4)"
-* group.element[=].target[+].code = #1264473004
-* group.element[=].target[=].display = "Walnut (Jug r 4)"
+* group.element[=].target[+].code = #256352005
+* group.element[=].target[=].display = "Walnut - nut (Jug r 4)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00189
 * group.element[=].display = "Gretsiya yong'og'i (Jug r 6)"
-* group.element[=].target[+].code = #1264473004
-* group.element[=].target[=].display = "Walnut (Jug r 6)"
+* group.element[=].target[+].code = #256352005
+* group.element[=].target[=].display = "Walnut - nut (Jug r 6)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00190
@@ -1504,20 +1504,20 @@ Description: "Maps local UZ ReactionSubstanceCS codes to SNOMED CT."
 
 * group.element[+].code = #aller-0010-00275
 * group.element[=].display = "Sakson arisi (Dol spp)"
-* group.element[=].target[+].code = #261356007
-* group.element[=].target[=].display = "Saxon wasp"
+* group.element[=].target[+].code = #1279974000
+* group.element[=].target[=].display = "Dolichovespula"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #aller-0010-00276
 * group.element[=].display = "Qog'oz ari (Pol d)"
-* group.element[=].target[+].code = #261356007
-* group.element[=].target[=].display = "Paper wasp"
+* group.element[=].target[+].code = #1263993009
+* group.element[=].target[=].display = "European paper wasp venom"
 * group.element[=].target[=].relationship = #equivalent
 
 * group.element[+].code = #aller-0010-00277
 * group.element[=].display = "Qog'oz ari (Pol d 5)"
-* group.element[=].target[+].code = #261356007
-* group.element[=].target[=].display = "Paper wasp (Pol d 5)"
+* group.element[=].target[+].code = #1263993009
+* group.element[=].target[=].display = "European paper wasp venom (Pol d 5)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #aller-0010-00278

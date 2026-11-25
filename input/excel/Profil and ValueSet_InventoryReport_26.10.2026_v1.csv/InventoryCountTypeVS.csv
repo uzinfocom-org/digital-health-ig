@@ -1,0 +1,3 @@
+CODE,UZ,RU,EN,http://hl7.org/fhir/inventoryreport-counttype,Definition (EN)
+snapshot,Joriy qoldiq,Текущий остаток,Snapshot,,"The inventory report is a current absolute snapshot, i.e. it represents the quantities at hand."
+difference,Qoldiq o‘zgarishi,Изменение остатка,Difference,,"The inventory report is about the difference between a previous count and a current count, i.e. it represents the items that have been added/subtracted from inventory."

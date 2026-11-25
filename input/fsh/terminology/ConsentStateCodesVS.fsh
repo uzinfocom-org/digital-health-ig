@@ -1,7 +1,7 @@
 ValueSet: ConsentStateCodesVS
 Id: consent-state-codes-vs
-Title: "Consent State Codes"
-Description: "Defines the consent state codes in Uzbek and Russian"
+Title: "Consent state"
+Description: "Consent states"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/consent-state-codes-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

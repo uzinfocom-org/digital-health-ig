@@ -1,7 +1,7 @@
 CodeSystem: MedicationDispenseAdminLocationCS
 Id: medicationdispense-admin-location-cs
-Title: "MedicationDispense AdminLocation (UZ supplement)"
-Description: "Uzbek and Russian display translations for MedicationDispense administration location codes"
+Title: "MedicationDispense admin location translations"
+Description: "MedicationDispense admin location supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(medicationdispense-admin-location-cs, $medicationdispense-admin-location, 5.0.0)
 
 * #inpatient
