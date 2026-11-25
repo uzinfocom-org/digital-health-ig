@@ -1,0 +1,6 @@
+code,uz,ru,en,http://hl7.org/fhir/slotstatus
+busy,Band,Занят,Busy
+free,Bo'sh,Свободен,Free
+busy-unavailable,Yozilish uchun mavjud emas,Недоступен для записи,Busy (Unavailable)
+busy-tentative,Dastlabki band qilingan,Предварительно занят,Busy (Tentative)
+entered-in-error,Xato bilan kiritilgan,Введено ошибочно,Entered in error

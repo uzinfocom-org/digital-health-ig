@@ -8,6 +8,8 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) o'zi bajaradigan [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) ga [Asos - buyum so'rovi](StructureDefinition-deviceusage-based-on.html) kengaytmasi orqali havola qiladi, masalan [mis BIV](DeviceUsage-example-deviceusage-iud.html) misolida.
 
+[UZ Core Slot](StructureDefinition-uz-core-slot.html) jadvaldagi qabulga yozilish mumkin bo'lgan yoki band yoki bloklangan vaqt oralig'ini ifodalaydi, masalan onlayn yozilish uchun ochilgan umumiy amaliyot shifokorining 30 daqiqalik qabuli. Uning `serviceCategory` si o'zbek, rus va ingliz tilidagi nomlari bilan yangi mahalliy [Appointment service category](CodeSystem-appointment-service-category-cs.html) kod tizimidan, `specialty` si [kasb mutaxassisliklari](ValueSet-profession-specialization-vs.html) dan, `appointmentType` va `status` esa o'zbekcha va ruscha nomlari supplement'larida bo'lgan HL7 [qabul turi](ValueSet-appointment-type-vs.html) va [slot holati](ValueSet-slot-status-vs.html) dan olinadi.
+
 #### O'zgartirildi
 
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): `emdoc-0010-0106` endi bemorning tibbiy kartasidan ko'chirma - statsionar yoki ambulator, o'zbekcha nomida bo'lgani kabi; ruscha va inglizcha nomlari endi statsionar haqida gapirmaydi. 027-shakl bu kodni ikkala holatda ham ishlatadi, ularni `Encounter.class` (`AMB` yoki `IMP`) farqlaydi.

@@ -8,6 +8,8 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
 
+[UZ Core Slot](StructureDefinition-uz-core-slot.html) представляет интервал времени в расписании, доступный для записи на приём либо занятый или заблокированный, например 30-минутный приём у врача общей практики, открытый для онлайн-записи. Его `serviceCategory` берётся из новой локальной системы кодов [Appointment service category](CodeSystem-appointment-service-category-cs.html) с названиями на узбекском, русском и английском языках, `specialty` - из [специализаций профессий](ValueSet-profession-specialization-vs.html), а `appointmentType` и `status` - из HL7 [типа приёма](ValueSet-appointment-type-vs.html) и [статуса слота](ValueSet-slot-status-vs.html) с узбекскими и русскими названиями в их дополнениях.
+
 #### Изменено
 
 [UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html): `agent.who` может также ссылаться на [UZ Core Device](StructureDefinition-uz-core-device.html) или [UZ Core Organization](StructureDefinition-uz-core-organization.html), для событий без участия человека, например задания по расписанию или входа системы.
