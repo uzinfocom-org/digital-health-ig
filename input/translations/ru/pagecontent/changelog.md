@@ -8,6 +8,8 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
 
+Идентификаторы [программы здравоохранения](NamingSystem-uzb-health-program.html) в системе `https://dhp.uz/fhir/core/sid/prg/uz/program` указывают, в рамках какой национальной программы здравоохранения - скрининга, вакцинации, диспансерного наблюдения - создан ресурс. Это одна система для всех программ, значение которой - код программы SNOMED CT или её код DHP, если в SNOMED CT подходящего кода нет, поэтому новой программе не нужна новая система идентификаторов. На странице [идентификаторов](identifiers.html) описано новое пространство имён `prg`, а [IdentifierDomainCS CodeSystem](CodeSystem-identifier-domain-cs.html) включает его.
+
 #### Изменено
 
 [UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html): `agent.who` может также ссылаться на [UZ Core Device](StructureDefinition-uz-core-device.html) или [UZ Core Organization](StructureDefinition-uz-core-organization.html), для событий без участия человека, например задания по расписанию или входа системы.
@@ -254,8 +256,6 @@ JSON-копия ресурса на каждом языке теперь сох�
 По запросу Министерства здравоохранения набор значений [причин статуса иммунизации](ValueSet-immunization-status-reason-vs.html) вырос с 4 до 8 кодов: добавлены `PHILISOP` (мировоззренческий отказ), `RELIG` (религиозный отказ), `VACEFF` (сомнения в эффективности вакцины) и `VACSAF` (опасения по безопасности вакцины), чтобы несостоявшаяся вакцинация могла указать причину точнее, чем просто возражение пациента. Их узбекские и русские designation находятся в [supplement act reason](CodeSystem-actreason-cs.html).
 
 Добавлены `organizational-specialization-cs#176.0` для гериатрии взрослых, `coverage-type-cs#covtp-0001-00014` для благотворительного фонда «Вакф», `admit-source-local-cs#mserv-0006-00007` для направления из поликлиники и `benefits-cs#regis0004.00024` для лиц с гематологическими заболеваниями - право на бесплатную высокотехнологичную специализированную помощь по указу Президента УП-88 - пробелы, найденные при сверке формы 066 с живой системой DMED. Набор значений [приоритета обращения](ValueSet-encounter-priority-vs.html) теперь также включает `UR` (срочно) и `EL` (планово), а список [Provenance Participation Role Type](ValueSet-provenance-participation-role-type-vs.html) включает `attester`.
-
-Новая система идентификаторов [программы здравоохранения](NamingSystem-uzb-health-program.html), `https://dhp.uz/fhir/core/sid/prg/uz/program`, указывает, в рамках какой национальной программы здравоохранения - скрининга, вакцинации, диспансерного наблюдения - создан ресурс. Это одна система для всех программ со значением в виде кода программы SNOMED CT, поэтому новой программе не нужна новая система идентификаторов. На странице [идентификаторов](identifiers.html) описано новое пространство имён `prg`.
 
 #### Изменено
 

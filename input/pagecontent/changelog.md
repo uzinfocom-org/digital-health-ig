@@ -2,6 +2,8 @@
 
 #### Added
 
+[Health program](NamingSystem-uzb-health-program.html) identifiers, in the system `https://dhp.uz/fhir/core/sid/prg/uz/program`, record which national health program - screening, vaccination, dispensary follow-up - a resource was created under. It is one system for every program, with the program's SNOMED CT code, or its DHP code where SNOMED CT has none, as the value, so a new program needs no new identifier system. The [identifiers](identifiers.html) page documents the new `prg` namespace, and the [IdentifierDomainCS CodeSystem](CodeSystem-identifier-domain-cs.html) lists it.
+
 [UZ Core Communication](StructureDefinition-uz-core-communication.html) records information conveyed to patients, practitioners or organizations, such as a public health alert that patients see in the Patient Portal: an alert to the residents of a risk zone, which carries the zone's alert level I-IV under the national alert regulation, or an alert from a manager to an organization employee group. Its `category` is the HL7 [communication category](ValueSet-communication-category-vs.html) `alert`, with Uzbek and Russian names in its [supplement](CodeSystem-communication-category-cs.html), and the alert level comes from the new local [Alert level](CodeSystem-alert-level-cs.html) code system, with Uzbek, Russian and English names.
 
 [UZ Core Device](StructureDefinition-uz-core-device.html) takes the registered model from the Pharmaceutical Committee registry, its [device item ID](NamingSystem-uz-pharm-device-item-id.html) and [device ID](NamingSystem-uz-pharm-device-id.html), in `type` slices, and the [registration certificate number](NamingSystem-registration-certificate-id.html) with its issue and expiry dates in an `identifier` slice. `identifier.use` and `identifier.type` have Uzbek and Russian names.
@@ -254,8 +256,6 @@ Added [ICHI](CodeSystem-who-ichi.html) in full - the WHO International Classific
 At the Ministry of Health's request, the [immunization status reason value set](ValueSet-immunization-status-reason-vs.html) has grown from 4 to 8 codes, adding `PHILISOP` (philosophical objection), `RELIG` (religious objection), `VACEFF` (vaccine efficacy concerns) and `VACSAF` (vaccine safety concerns), so a vaccination that did not happen can say why beyond a patient objection. Their Uzbek and Russian designations are in the [act reason supplement](CodeSystem-actreason-cs.html).
 
 Added `organizational-specialization-cs#176.0` for adult geriatrics, `coverage-type-cs#covtp-0001-00014` for the Vaqf charitable fund, `admit-source-local-cs#mserv-0006-00007` for a polyclinic referral, and `benefits-cs#regis0004.00024` for people with haematological diseases, an entitlement to state-funded high-tech specialized care under Presidential Decree UP-88 - gaps found auditing Form 066 against the live DMED system. The [encounter priority value set](ValueSet-encounter-priority-vs.html) now also includes `UR` (urgent) and `EL` (elective), and the [Provenance Participation Role Type value set](ValueSet-provenance-participation-role-type-vs.html) includes `attester`.
-
-A new [health program](NamingSystem-uzb-health-program.html) identifier system, `https://dhp.uz/fhir/core/sid/prg/uz/program`, records which national health program - screening, vaccination, dispensary follow-up - a resource was created under. It is one system for every program, with the program's SNOMED CT code as the value, so a new program needs no new identifier system. The [identifiers](identifiers.html) page documents the new `prg` namespace.
 
 #### Changed
 

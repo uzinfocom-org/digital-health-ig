@@ -890,12 +890,12 @@ Usage: #definition
 * name = "UzbekistanHealthProgram"
 * status = #active
 * kind = #identifier
-* date = "2026-09-28"
+* date = "2026-11-25"
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Health of the Republic of Uzbekistan"
-* description = "Naming system for the national health program - screening, vaccination, dispensary follow-up and so on - under which a resource was created. One system serves every program: the value is the program's SNOMED CT concept id, or its code from a DHP code system where SNOMED CT has no suitable concept."
+* description = "Naming system for the national health program - screening, vaccination, dispensary follow-up and so on - under which a resource was created. One system serves every program: the value is the program's SNOMED CT concept id, or its code from a DHP code system where SNOMED CT has no suitable concept. Screening program values are listed in ScreeningProgramTypeVS."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-* usage = "Used on clinical and workflow resources created under a program, repeated when a resource belongs to several programs. Not used on Patient, Practitioner, PractitionerRole or Organization. Every resource in a program carries the same value, so it does not replace the resource's own business identifier."
+* usage = "Used on the PlanDefinition and ActivityDefinition of a program and on the clinical and workflow resources created under it, repeated when a resource belongs to several programs. Programs that screen for the same condition but are run by different systems are different programs with different values. Not used on Patient, Practitioner, PractitionerRole or Organization. Every resource in a program carries the same value, so it does not replace the resource's own business identifier."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://dhp.uz/fhir/core/sid/prg/uz/program"
 * uniqueId[=].preferred = true
