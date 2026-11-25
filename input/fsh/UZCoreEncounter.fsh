@@ -16,7 +16,15 @@ Description: "Uzbekistan Core Encounter profile, used to represent clinical enco
 * status ^short = "Текущее состояние встречи"
 
 * class MS
-* class from EncounterClassVS (required)
+* class from EncounterClassVS (preferred)
+* class ^slicing.discriminator.type = #value
+* class ^slicing.discriminator.path = "$this"
+* class ^slicing.rules = #open
+* class ^slicing.description = "Encounter classes from the national value set; codes from other systems are allowed alongside them"
+* class ^slicing.ordered = false
+* class contains dhpClass 0..* MS
+* class[dhpClass] from EncounterClassVS (required)
+* class[dhpClass] ^short = "Encounter class from the national value set"
 * class ^short = "Классификация встречи с пациентом"
 
 * priority MS
@@ -26,13 +34,13 @@ Description: "Uzbekistan Core Encounter profile, used to represent clinical enco
 * type MS
   * ^short = "Конкретный тип встречи"
   * ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "coding.system"
+  * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
   * ^slicing.description = "A national encounter-type classification is required; additional type codings from other systems are allowed"
+  * ^slicing.ordered = false
 * type contains nationalType 1..1 MS
 * type[nationalType] from EncounterTypeVS (required)
   * ^short = "National encounter-type classification"
-  * coding.system = Canonical(EncounterTypeCS)
 
 * serviceType MS
 * serviceType only CodeableReference(UZCoreHealthcareService)
@@ -139,8 +147,8 @@ Title: "Example Encounter"
 Description: "Example of an psychiatric encounter"
 Usage: #example
 * status = #completed "Completed"
-* class = $v3-ActCode#IMP "Inpatient encounter"
-* priority = $v3ActPriority#EM "Emergency"
+* class = $v3-ActCode#IMP
+* priority = $v3ActPriority#EM
 * type[0] = encounter-type-cs#mserv-0001-00004  "Treatment services"
 * serviceType[0] = Reference(example-healthcareservice)
 * subject = Reference(example-patient)
@@ -171,3 +179,18 @@ Usage: #example
 
 * location[0].location = Reference(example-location)
 * location[0].status = #completed
+
+Instance: example-ambulance-encounter
+InstanceOf: UZCoreEncounter
+Title: "Example Encounter - Ambulance Call"
+Description: "Example of an emergency ambulance call to a patient"
+Usage: #example
+* language = #uz
+* status = #completed
+* class[dhpClass] = $v3-ActCode#EMER
+* priority = $v3ActPriority#EM
+* type[nationalType] = encounter-type-ambulance-cs#emer5-0006-6 "Shoshilinch holatlar"
+* subject = Reference(example-patient)
+* participant.actor = Reference(example-practitionerrole)
+* actualPeriod.start = "2026-03-14T21:05:00+05:00"
+* actualPeriod.end = "2026-03-14T21:50:00+05:00"

@@ -13,7 +13,7 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * identifier ^short = "Business identifier"
 
 * basedOn 0..* MS
-* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest or UZCoreImmunizationRecommendation)
+* basedOn only Reference(UZCoreCarePlan or MedicationRequest or ServiceRequest or UZCoreImmunizationRecommendation)
 * basedOn ^short = "The legal basis for the event"
 
 * status 1..1 MS
@@ -148,7 +148,15 @@ Description: "Uzbekistan Core Immunization profile, used to represent immunizati
 * protocolApplied.authority ^short = "Authority organization"
 
 * protocolApplied.targetDisease 0..* MS
-* protocolApplied.targetDisease from TargetDiseaseVS (extensible)
+* protocolApplied.targetDisease from TargetDiseaseVS (preferred)
+* protocolApplied.targetDisease ^slicing.discriminator.type = #value
+* protocolApplied.targetDisease ^slicing.discriminator.path = "$this"
+* protocolApplied.targetDisease ^slicing.rules = #open
+* protocolApplied.targetDisease ^slicing.description = "Target diseases from the national value set; codes from other systems are allowed alongside them"
+* protocolApplied.targetDisease ^slicing.ordered = false
+* protocolApplied.targetDisease contains dhpTargetDisease 0..* MS
+* protocolApplied.targetDisease[dhpTargetDisease] from TargetDiseaseVS (required)
+* protocolApplied.targetDisease[dhpTargetDisease] ^short = "Target disease from the national value set"
 * protocolApplied.targetDisease ^short = "Target Disease"
 
 * protocolApplied.doseNumber 1..1 MS
@@ -195,7 +203,7 @@ Description: "Example immunization event for UZ Core Immunization profile."
 
 * location = Reference(example-location-1)
 
-* site = $v3-ActSite#LA "Left arm"
+* site = $v3-ActSite#LA
 * route = $sct#36673005 "Intradermal injection"
 
 * doseQuantity.value = 0.05

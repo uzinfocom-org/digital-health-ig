@@ -1,6 +1,6 @@
 CodeSystem: CoverageTypeCS
 Id: coverage-type-cs
-Title: "Coverage Type CodeSystem"
+Title: "Coverage type"
 Description: "Local coverage type codes for financing source of treatment"
 * insert OriginalCodeSystemDraft(coverage-type-cs)
 
@@ -82,3 +82,9 @@ Description: "Local coverage type codes for financing source of treatment"
   * ^designation[=].value = "Other"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Другое"
+
+* #covtp-0001-00014 "Vaqf jamg'armasi"
+  * ^designation[0].language = #en
+  * ^designation[=].value = "Vaqf Fund"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Благотворительный общественный фонд «Вакф»"

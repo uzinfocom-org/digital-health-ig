@@ -1,6 +1,6 @@
 CodeSystem: DMEDDispensaryDeregistrationReasonCS
 Id: dmed-dispensary-deregistration-reason-cs
-Title: "DMED Dispensary Deregistration Reason CodeSystem"
+Title: "DMED dispensary deregistration reason"
 Description: "Deregistration reasons exactly as DMED sends them in the `deregistration_reason` field of a dispensary registration record. Codes are reproduced verbatim, including the misspelling `patitient_decline`, so that the wire value is always representable; [dmed-dispensary-deregistration-reason-to-dhp-cm](ConceptMap-dmed-dispensary-deregistration-reason-to-dhp-cm.html) translates them to DHP codes."
 * insert OriginalCodeSystemDraft(dmed-dispensary-deregistration-reason-cs)
 

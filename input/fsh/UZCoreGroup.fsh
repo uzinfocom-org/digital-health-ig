@@ -42,7 +42,7 @@ Description: "Uzbekistan Core Group profile, used to represent a defined collect
 * member MS
 * member.entity MS
 * member.entity ^short = "Reference to the group member"
-* member.entity only Reference(CareTeam or Device or UZCoreGroup or UZCoreHealthcareService or UZCoreLocation or UZCoreOrganization or UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreRelatedPerson or UZCoreSpecimen)
+* member.entity only Reference(CareTeam or UZCoreDevice or UZCoreGroup or UZCoreHealthcareService or UZCoreLocation or UZCoreOrganization or UZCorePatient or UZCorePractitioner or UZCorePractitionerRole or UZCoreRelatedPerson or UZCoreSpecimen)
 * member.period MS
 * member.inactive MS
 
@@ -96,3 +96,18 @@ Usage: #example
 * member[1].entity = Reference(example-emma)
 * member[1].period.start = "2026-02-03"
 * member[1].inactive = false
+
+Instance: example-employee-group
+InstanceOf: UZCoreGroup
+Usage: #example
+Title: "Example UZ Core Group - Organization Employee Group"
+Description: "Enumerated group of the employees of an organization, to whom a manager sends public health alerts."
+* language = #uz
+* active = true
+* type = #person
+* membership = #enumerated
+* code = GroupKindCS#group-0001-00013 "Tashkilot xodimlari guruhi"
+* name = "Tashkilot xodimlari guruhi"
+* managingEntity = Reference(Organization/example-organization)
+* member[0].entity = Reference(Patient/example-salim)
+* member[0].period.start = "2026-11-17"

@@ -31,6 +31,7 @@ Description: "Uzbekistan Core Practitioner profile, used to define healthcare pr
 * name MS
   * use and text and family and given and suffix and period MS
   * use from NameUseVS (required)
+* insert MultilingualHumanName
 * telecom MS
   * system and value and use and rank and period MS
   * system from ContactPointSystemVS (required)
@@ -43,8 +44,19 @@ Description: "Uzbekistan Core Practitioner profile, used to define healthcare pr
 * photo MS
   * url and size MS
 * qualification MS
+  * identifier MS
+    * ^short = "Certificate number"
+    * ^comment = "For a specialist certificate issued by the Ministry of Health, use the system https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate and put the series followed by the number, without separators (e.g. CA123456), in value."
+    * system and value MS
   * code and period and issuer MS
   * code from LicenseCertificateVS (required)
+  * code.text MS
+    * ^short = "Specialty, qualification category and medical role as free text"
+    * ^comment = "Until these are coded, describe the certificate in plain text, e.g. 'Psixiatriya, oliy toifa, shifokor'. Add translations to other languages with the translation extension."
+    * extension contains $translation-extension named translation 0..* MS
+    * extension[translation] ^short = "Specialty, qualification category and medical role in other languages"
+  * period
+    * ^short = "Date of issue (start) and end of validity (end)"
 
 Instance: example-practitioner
 InstanceOf: UZCorePractitioner
@@ -52,14 +64,26 @@ Description: "Example of a practitioner"
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "9876543210"
+  * value = "90000000000006"
 * active = true
 * name
   * use = #official
-  * text = "Test Test Test"
-  * family = "Test"
-  * given = "Test"
-  * suffix = "Test"
+  * text = "Rahimova Dilnoza Akmalovna"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Рахимова Дилноза Акмаловна"
+  * family = "Rahimova"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Рахимова"
+  * given = "Dilnoza"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Дилноза"
+  * suffix = "Akmalovna"
+    * extension[translation]
+      * extension[lang].valueCode = #ru
+      * extension[content].valueString = "Акмаловна"
 * telecom
   * system = #phone
   * value = "975555555"
@@ -78,9 +102,28 @@ Usage: #example
   * contentType = #image/png
   * data = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Wl2n1cAAAAASUVORK5CYII="
   * size = 68
-* qualification
+* qualification[0]
   * code = $qualification-codes#DIP
   * issuer = Reference(example-organization)
+* qualification[+]
+  * identifier
+    * system = $specialist-certificate
+    * value = "CA123456"
+  * code = $qualification-codes#CER "Certificate"
+  * code.text = "Psixiatriya, oliy toifa, shifokor"
+  * code.text.extension[+].url = $translation-extension
+  * code.text.extension[=].extension[0].url = "lang"
+  * code.text.extension[=].extension[=].valueCode = #ru
+  * code.text.extension[=].extension[+].url = "content"
+  * code.text.extension[=].extension[=].valueString = "Психиатрия, высшая категория, врач"
+  * code.text.extension[+].url = $translation-extension
+  * code.text.extension[=].extension[0].url = "lang"
+  * code.text.extension[=].extension[=].valueCode = #en
+  * code.text.extension[=].extension[+].url = "content"
+  * code.text.extension[=].extension[=].valueString = "Psychiatry, higher category, doctor"
+  * period
+    * start = "2025-03-10"
+    * end = "2030-03-10"
 
 Instance: example-practitioner-gender-other
 InstanceOf: UZCorePractitioner
@@ -88,7 +131,41 @@ Description: "Example of a practitioner with a gender extension"
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "9876543211"
+  * value = "90000000000007"
 * active = true
 * gender = #other
 * gender.extension[gender-other].valueCoding = GenderOtherCS#regis0007.00005 "Jinsni erkakka o'zgartirdi"
+
+Instance: example-patronage-nurse
+InstanceOf: UZCorePractitioner
+Title: "Example UZ Core Practitioner - Patronage Nurse"
+Description: "A family polyclinic patronage nurse who visits newborns at home"
+Usage: #example
+* language = #uz
+* identifier[nationalId]
+  * value = "90000000000004"
+* active = true
+* name
+  * use = #official
+  * text = "Yusupova Malika Rustamovna"
+  * family = "Yusupova"
+  * given = "Malika"
+  * suffix = "Rustamovna"
+* gender = #female
+
+Instance: example-physiotherapist
+InstanceOf: UZCorePractitioner
+Title: "Example UZ Core Practitioner - Physiotherapist"
+Description: "A physiotherapy doctor who plans and carries out therapeutic massage courses"
+Usage: #example
+* language = #uz
+* identifier[nationalId]
+  * value = "90000000000002"
+* active = true
+* name
+  * use = #official
+  * text = "Ivanov Pavel Sergeyevich"
+  * family = "Ivanov"
+  * given = "Pavel"
+  * suffix = "Sergeyevich"
+* gender = #male

@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-### Tez boshlash
+### Tez boshlash {#quick-start}
 
 Ushbu profil uchun keng tarqalgan API o'zaro ta'sirlari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - bu [FHIR server bazaviy URL manzili](api-access.html#endpoints); `|` belgisi kod tizimini uning qiymatidan ajratadi va `%7C` shaklida URL-kodlangan bo'lishi kerak.
 
@@ -24,7 +24,7 @@ GET [base]/Provenance?entity=DocumentReference/[id]
 
 Yozuvni uning provenance ma'lumoti bilan birga bitta so'rovda olish uchun teskari include (reverse include) dan foydalaning, masalan `GET [base]/DocumentReference?_id=[id]&_revinclude=Provenance:target`.
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) ga qarang.
+Provenance hali [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da ko'rsatilmagan; yuqoridagi so'rovlar FHIR R5 ning standart qidiruv parametrlaridan foydalanadi.
 
 ### Aloqador
 

@@ -50,7 +50,7 @@ Jadvaldagi har bir satr bitta elementga (maydonga) mos keladi. Ustunlar:
 - Turi - ma'lumot turi yoki references uchun ular qaysi resurs(lar)ga ishora qilishini ko'rsatadi. `Reference(UZ Core Patient)` kabi Reference ushbu profilga mos keladigan resursga ishora qilishi kerakligini anglatadi.
 - Tavsif va cheklovlar - ta'rif, ValueSet'ga terminologik bog'lash va qat'iy belgilangan qiymatlar.
 
-### References va CodeableReferences
+### References va CodeableReferences {#references-and-codeablereferences}
 
 Ikki xil tur boshqa resurslarga ishora qiladi va JSON tuzilmasida turlicha ichma-ich joylashadi.
 
@@ -112,7 +112,7 @@ Mos kod mavjud bo'lmasa, faqat `text` maydonini kiriting - mavjud matnni `coding
 
 Element uchun belgilangan bog'lash qat'iyligi (quyida) bunga ruxsat berilgan yoki berilmaganini ko'rsatadi: `required` bog'lash faqat text'dan iborat qiymatni qabul qilmaydi - kamida bitta `coding` ValueSet'dan olinishi shart. `extensible`, `preferred` va `example` bog'lashlari esa mos kod mavjud bo'lmaganda text'dan foydalanishga ruxsat beradi.
 
-### Terminologik bog'lashlar
+### Terminologik bog'lashlar {#terminology-bindings}
 
 Element ValueSet'ga bog'langanda, bog'lash qat'iyligi ushbu talabni qanchalik qat'iy bajarish kerakligini ko'rsatadi:
 

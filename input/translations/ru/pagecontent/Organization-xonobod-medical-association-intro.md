@@ -1,6 +1,6 @@
 Этот пример демонстрирует преобразование организации из формата Hepatitis JSON в ресурс FHIR Organization, соответствующий профилю [UZ Core Organization](StructureDefinition-uz-core-organization.html). См. [результирующий FHIR JSON](Organization-xonobod-medical-association.json.html).
 
-#### Исходный Hepatitis JSON
+### Исходный Hepatitis JSON
 
 ```json
 {
@@ -27,7 +27,7 @@
 }
 ```
 
-#### Примечания к маппингу
+### Примечания к маппингу
 
 | Исходное поле | FHIR путь | Используемый ConceptMap |
 |---|---|---|

@@ -1,6 +1,6 @@
 > **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
 
-UZ Core Location представляет физическое место - здание, отделение, филиал, палату, кабинет или койку, - которым управляет [Organization](StructureDefinition-uz-core-organization.html). На него ссылается [Encounter](StructureDefinition-uz-core-encounter.html), чтобы указать, где была оказана помощь, и [HealthcareService](StructureDefinition-uz-core-healthcareservice.html), чтобы указать, где предоставляется услуга. Локации могут быть вложенными, например палата внутри здания внутри площадки.
+UZ Core Location представляет физическое место - здание, отделение, филиал, палату, кабинет или койку, - которым управляет [Organization](StructureDefinition-uz-core-organization.html). На него ссылается [Encounter](StructureDefinition-uz-core-encounter.html), чтобы указать, где была оказана помощь, и [HealthcareService](StructureDefinition-uz-core-healthcareservice.html), чтобы указать, где предоставляется услуга. Локации могут быть вложенными, например палата внутри здания внутри площадки. Location может быть и территорией, например махаллей, которую менеджер объявил зоной риска для общественного здоровья: на неё ссылается [UZ Core Communication](StructureDefinition-uz-core-communication.html) в оповещении её жителей.
 
 ### Обязательные и Must Support элементы данных
 

@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-### Tez boshlash
+### Tez boshlash {#quick-start}
 
 Ushbu profil uchun keng tarqalgan API o'zaro ta'sirlari. So'rovlar JWT kirish tokenini talab qiladi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` bu [FHIR server bazaviy URL manzili](api-access.html#endpoints); `|` belgisi identifikator tizimini uning qiymatidan ajratadi va URL sifatida `%7C` ko'rinishida kodlanishi shart.
 
@@ -14,7 +14,7 @@ GET [base]/Patient/[id]
 
 ```
 # by national identifier (PINFL) - the reliable match
-GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|30211975910033
+GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|12345678912345
 
 # by name + birth date when no identifier is to hand
 GET [base]/Patient?family=Usmanov&birthdate=1994-01-27
@@ -49,7 +49,7 @@ GET [base]/Patient?organization=Organization/[id]
 GET [base]/Patient?address-city=22070013
 ```
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) hujjatiga, barcha bemor identifikatori tizimi URI manzillari uchun esa [Identifikator tizimlari](identifiers.html) bo'limiga qarang.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati uchun [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Patient1-1) hujjatiga, barcha bemor identifikatori tizimi URI manzillari uchun esa [Identifikator tizimlari](identifiers.html) bo'limiga qarang.
 
 ### Boshqaruvchi tashkilotga biriktirish
 

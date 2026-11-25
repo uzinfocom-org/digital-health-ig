@@ -69,7 +69,7 @@ PUT [base]/Encounter/[id]    # reason -> ImmunizationRecommendation, status -> c
 | Препарат отсутствует | `not-done` | `statusReason` = `OSTOCK` (препарат отсутствует в наличии) |
 | Запись создана ошибочно | `entered-in-error` | - |
 
-`statusReason` имеет обязательную привязку (required) к [ValueSet причин статуса Immunization](ValueSet-immunization-status-reason-vs.html); перечисленные выше четыре кода из HL7 v3 ActReason являются единственными допустимыми значениями.
+`statusReason` имеет обязательную привязку (required) к ValueSet [причин статуса Immunization](ValueSet-immunization-status-reason-vs.html); перечисленные выше четыре кода из HL7 v3 ActReason являются единственными допустимыми значениями.
 
 ```
 POST [base]/Immunization
@@ -97,5 +97,5 @@ POST [base]/Immunization
 ### Связанные материалы
 
 - Профили: [PlanDefinition](StructureDefinition-uz-core-plan-definition.html) &middot; [ImmunizationRecommendation](StructureDefinition-uz-core-immunization-recommendation.html) &middot; [Encounter](StructureDefinition-uz-core-encounter.html) &middot; [Immunization](StructureDefinition-uz-core-immunization.html) &middot; [AdverseEvent](StructureDefinition-uz-core-adverse-event.html)
-- Компонент: [Управление вакцинацией](components.html#управление-вакцинацией)
+- Компонент: [Управление вакцинацией](components.html#vaccination-management)
 - [Обзор рабочих процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html)

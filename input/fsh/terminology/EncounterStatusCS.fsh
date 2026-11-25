@@ -34,3 +34,18 @@ Description: "Encounter status supplement with translations in Uzbek and Russian
   * ^designation[=].value = "Noma'lum"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Неизвестный"
+* #on-hold
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "To'xtatib turilgan"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Приостановлено"
+* #discharged
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "Chiqarilgan"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Выписан"
+* #discontinued
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "To'xtatilgan"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Прекращено"

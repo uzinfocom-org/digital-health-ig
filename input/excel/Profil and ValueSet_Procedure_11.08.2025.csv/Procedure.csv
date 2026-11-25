@@ -9,7 +9,7 @@ status		        SΣ	D	1..1	completed		FHIR ValueSet	code	"Текущее сос�
 Binding: http://hl7.org/fhir/ValueSet/event-status (Required)"			https://terminology.dhp.uz/ValueSet/procedure-outcome (Example)	CS-ProcedureOutcome	все коды	Результат выполнения процедуры
 category		        SΣ	D	0..*	"coding: proce-0001 ""Physical therapy procedure""
 text: "		SNOMED-CT	CodeableConcept	Классификацию процедуры по её типу, цели или клиническому контексту						
-code		        SΣ	D	0..1	"coding: proce-0001-00049 ""Therapeutic massage""
+code		        SΣ	D	0..1	"coding: proce-0001-00048 ""Therapeutic massage""
 text: ""Therapeutic massage of right foot"""		SNOMED-CT	CodeableConcept	"Какая именно процедура была выполнена
 Binding: https://terminology.dhp.uz/ValueSet/procedure-code (Required)"						
 subject		        SΣ	D	1..1	"reference: example-patient

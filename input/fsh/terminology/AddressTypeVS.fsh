@@ -1,7 +1,7 @@
 ValueSet: AddressTypeVS
 Id: address-type-vs
-Title: "Types of possible addresses"
-Description: "Defines the types of addresses with translations in Uzbek and Russian"
+Title: "Address type"
+Description: "Address types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/address-type-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

@@ -1,7 +1,7 @@
 CodeSystem: MaritalStatusCS
 Id: marital-status-cs
 Title: "Marital status translations"
-Description: "Marital status supplement with Uzbek and Russian translations"
+Description: "Marital status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(marital-status-cs, $v3-MaritalStatus, 3.0.0)
 * #M "Married"
   * ^designation[0].language = #uz

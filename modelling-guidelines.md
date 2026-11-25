@@ -25,9 +25,19 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 **Конвенции для профилей:**
 - **Profile**: `UZCore[ResourceName]` (например, `UZCorePatient`, `UZCoreObservation`)
 - **Parent**: Соответствующий базовый FHIR ресурс
-- **Id**: `uz-core-[resource-name]` в нижнем регистре с дефисами
+- **Id**: `uz-core-[resourcename]` в нижнем регистре, имя ресурса одним словом (например, `uz-core-medicationrequest`)
 - **Title**: `"UZ Core [ResourceName]"`
 - **Description**: `"Uzbekistan Core [ResourceName] profile, used to [описание назначения]"`
+
+**Описание профиля:**
+
+Профиль UZ Core - национальный профиль своего ресурса для всей Республики, а не профиль одной системы или одного процесса. В Description сначала укажите общее назначение ресурса, а затем приведите текущие сценарии использования как примеры после "such as":
+
+```fsh
+Description: "Uzbekistan Core Communication profile, used to record information conveyed to patients, practitioners or organizations, such as a public health alert shown to patients in the Patient Portal"
+```
+
+**Неправильно:** `"Uzbekistan Core Communication profile, used to record a public health alert shown to patients in the Patient Portal"` - описание сводит профиль к первому сценарию, и для следующего (например, напоминания о приёме) кажется, что нужен отдельный профиль.
 
 **Имена ресурсов из нескольких слов:**
 
@@ -41,13 +51,13 @@ Description: "Uzbekistan Core Condition profile, used for documenting a patient'
 
 **Неправильно:** `Title: "UZ Core Medication Request"`, `Description: "Uzbekistan Core Claim Response profile, ..."` — имя ресурса разделено на два слова.
 
-В `Id`, наоборот, слова разделяются дефисами: `uz-core-medication-request`, `uz-core-claim-response`, `uz-core-practitioner-role`.
+В `Id` имя ресурса тоже пишется одним словом, в нижнем регистре; дефис отделяет только префикс `uz-core-`: `uz-core-medicationrequest`, `uz-core-claimresponse`, `uz-core-practitionerrole`, `uz-core-inventoryitem`. Так уже названы `uz-core-auditevent`, `uz-core-episodeofcare`, `uz-core-healthcareservice`, `uz-core-relatedperson`, `uz-core-servicerequest`, `uz-core-activitydefinition` и `uz-core-medicationrequest`.
 
-**Существующие исключения — не исправлять:** пять профилей опубликованы с `Id`, в котором слова слиты:
+**Существующие исключения — не исправлять:** эти профили опубликованы с `Id`, в котором слова имени ресурса разделены дефисами:
 
-`uz-core-auditevent`, `uz-core-episodeofcare`, `uz-core-healthcareservice`, `uz-core-relatedperson`, `uz-core-servicerequest`
+`uz-core-practitioner-role`, `uz-core-questionnaire-response`, `uz-core-allergy-intolerance`, `uz-core-immunization-recommendation`, `uz-core-adverse-event`, `uz-core-plan-definition`, `uz-core-diagnostic-report`, `uz-core-laboratory-observation-definition`, `uz-core-medication-dispense`, `uz-core-claim-response`, `uz-core-biologically-derived-product`, `uz-core-supply-request`, `uz-core-supply-delivery`
 
-Их канонические URL уже опубликованы, поэтому переименование сломает ссылки у разработчиков и адреса страниц IG. Оставьте их как есть; правило с дефисами действует для новых профилей.
+Их канонические URL уже опубликованы, поэтому переименование сломает ссылки у разработчиков и адреса страниц IG. Оставьте их как есть; правило одного слова действует для новых профилей.
 
 ### 2.3 Именование файлов
 
@@ -134,6 +144,26 @@ Id: uz-core-condition-diagnosis-type
 * description = "Search for conditions by diagnosis type"
 ```
 
+### 2.8 Системы идентификаторов
+
+Все системы идентификаторов (`Identifier.system`) строятся по шаблону со страницы [Identifiers](https://dhp.uz/fhir/core/identifiers.html):
+
+```
+https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
+```
+
+- Сегмент `namespace` обязателен. Выбирайте его по тому, что идентифицируется, а не по тому, кто присваивает идентификатор: номер случая, записи или документа относится к `doc`, даже если его выдаёт организация. Номер продукта (например, единицы продукта крови) относится к `prd`; если номер выдаёт внешний реестр с собственным URI системы (например, Asl Belgisi или uzpharminfo.uz для лекарственных средств), используйте этот URI.
+- Прежде чем создавать систему, проверьте [IdentifierDomainCS](https://dhp.uz/fhir/core/CodeSystem-identifier-domain-cs.html) и NamingSystem ядра. Если система уже есть, используйте её: ПИНФЛ - всегда `https://dhp.uz/fhir/core/sid/pid/uz/ni`, отдельная система или NamingSystem для него не создаётся.
+- Для каждой новой системы создайте NamingSystem с `kind = #identifier` и этим URI в `uniqueId.value`.
+- Идентификатор без системы не идентифицирует ничего: каждый `Identifier` передаётся вместе с `system`. В профиле система фиксируется в слайсе (`system 1..1` и `system = ...`), в примерах заполняется всегда, а в таблицах сопоставления указывается рядом со значением.
+- Правило действует и для руководств, построенных на UZ Core. Используйте только пространства имён, перечисленные на странице [Identifiers](https://dhp.uz/fhir/core/identifiers.html); новые пространства имён не создаются.
+
+Если новое пространство имён кажется необходимым, сначала проверьте его:
+- Подходит ли существующее пространство имён, если выбирать по тому, что идентифицируется?
+- Есть ли уже система для этого в IdentifierDomainCS или NamingSystem ядра?
+
+Только если пространство имён проходит проверку, его сначала добавляют в UZ Core - на страницу Identifiers (en/ru/uz), в IdentifierDomainCS и в NamingSystem - и используют в зависимых руководствах только после слияния этого изменения.
+
 ## 3) Конвенции слайсинга
 
 ### 3.1 Основные принципы слайсинга
@@ -200,6 +230,9 @@ Id: uz-core-condition-diagnosis-type
 - **MustSupport (MS)**: Все элементы, которые должны поддерживаться всеми системами в Узбекистане, должны быть помечены как MS. Подробное описание MustSupport можно найти в [документации](https://build.fhir.org/ig/uzinfocom-org/digital-health-ig/en/api-access.html#must-support).
 - **Кардинальности**: Указывайте кардинальности элементов только если они отличаются от базового FHIR ресурса. Если кардинальность совпадает с базовым ресурсом, не дублируйте эту информацию.
 - **Связки**: При указании связки с ValueSet всегда явно указывайте силу связки (`required`, `extensible`, `preferred` или `example`). Используйте `required` связку для обязательных элементов с фиксированным набором значений. Используйте `extensible` связку когда разрешены дополнительные коды. Используйте `preferred` связку когда DHP не может или не хочет принудительно применять определённые коды, но даёт рекомендацию по их использованию. Используйте `example` связку когда ValueSet служит только примером без какой-либо рекомендации. **Предупреждение**: если использовать `extensible` связку, валидатор не сможет различить опечатки от новых допустимых кодов.
+- **Сужение базовых ValueSet**: Не сужайте ValueSet, к которому элемент привязан в базовом FHIR, до подмножества его кодов, если нет конкретной причины запретить остальные. Такое сужение делает невалидными корректные ресурсы и требует менять ValueSet при каждом новом сценарии. Чтобы добавить переводы, включайте весь базовый набор вместе с supplement.
+- **Связки повторяющихся элементов**: Не привязывайте ValueSet со связкой `required` или `extensible` к повторяющемуся кодируемому элементу (`0..*`, `1..*`) целиком: связка действует на каждое повторение и не даёт добавить рядом коды из других систем. Создайте открытый слайс и привяжите ValueSet к нему.
+- **Инварианты**: Не используйте инвариант для того, что выражается средствами профиля: кардинальностью, фиксированным значением, связкой (в том числе на слайсе) или ограничением типа и цели ссылки. Ограничения профиля видны в формальных представлениях и проверяются валидатором напрямую. Инвариант добавляется, только когда правило нельзя выразить этими средствами, например «должен присутствовать code или bodySite».
 - **Дополнительные связки (Additional Bindings)**: Используйте `^binding.additional` когда есть возможность объединить несколько профилей в один. Это позволяет указать разные ValueSet для разных контекстов использования одного элемента. Пример из UZCoreSocioeconomicObservation:
 
 ```fsh
@@ -222,11 +255,17 @@ Id: uz-core-condition-diagnosis-type
 // UZ Core профили существуют — указываем их
 * performer only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization)
 * encounter only Reference(UZCoreEncounter)
-// Для CarePlan, MedicationRequest и ServiceRequest национальных профилей нет — оставляем базовые ресурсы
-* basedOn only Reference(CarePlan or MedicationRequest or ServiceRequest)
 ```
 
 ## 5) Терминологические артефакты
+
+Везде, где это возможно, используйте коды из международных стандартов (SNOMED CT, LOINC, МКБ-10, МКБ-11, ATC, UCUM, терминологии HL7 и других), а не локальные коды. Стандартный код более интероперабелен, чем локальный: локальный код для обмена данными за пределами платформы требует сопоставления через ConceptMap.
+
+Поэтому каждый локальный код должен проходить проверку: прежде чем добавить концепт в оригинальную CodeSystem (или оставить уже существующий), найдите стандартный код с тем же значением и, если он есть, используйте его вместо локального.
+
+Локальный код допустим только тогда, когда эквивалентного стандартного концепта нет: стандартный концепт шире или уже по значению либо отсутствует вовсе (например, национальные административные категории). Если стандарт покрывает только часть списка, ValueSet может сочетать стандартные и локальные коды - локальными остаются только непокрытые концепты.
+
+Каждый концепт SNOMED CT берите из иерархии, подходящей элементу, - её показывает семантический тег в полном названии концепта: элемент-продукт, например `BiologicallyDerivedProduct.productCode`, получает `789265003` "Albumin human only product" `(medicinal product)`, а не вещество `789261007` "Albumin human" `(substance)`.
 
 ### 5.1 Почему нужен supplement для CodeSystem и ValueSet
 
@@ -296,7 +335,7 @@ FHIR технически допускает указывать версию Cod
 
 **Лучшие практики качества CodeSystems:**
 
-При создании CodeSystems следуйте методологии обеспечения качества терминологий согласно [Checklist for Terminology Quality Assurance](https://zenodo.org/records/14609494).
+При создании CodeSystems следуйте методологии обеспечения качества терминологий согласно [чек-листу обеспечения качества терминологий](terminology-quality-checklist.md) ([источник](https://doi.org/10.5281/zenodo.14609494)).
 
 **Конвенции иерархических CodeSystems:**
 
@@ -335,7 +374,7 @@ FHIR технически допускает указывать версию Cod
 ```fsh
 CodeSystem: DiagnosisTypeCS
 Id: diagnosis-type-cs
-Title: "Diagnosis Types"
+Title: "Diagnosis type"
 Description: "Diagnosis types in Uzbekistan"
 * insert OriginalCodeSystemDraft(diagnosis-type-cs)
 
@@ -345,15 +384,6 @@ Description: "Diagnosis types in Uzbekistan"
   * ^designation[+].language = #en
   * ^designation[=].value = "Diagnosis of the referring institution"
 ```
-
-**Большие CodeSystems (>100 кодов):**
-
-CodeSystems с более чем 100 кодами замедляют каждую сборку SUSHI. Предгенерируйте их JSON:
-
-1. Соберите IG через SUSHI.
-2. Переместите `fsh-generated/resources/CodeSystem-<id>.json` → `input/vocabulary/`.
-3. Переместите исходный `.fsh` → `input/manual-fsh/` (SUSHI его не парсит, но FSH сохраняется как источник).
-4. При обновлении справочника: верните `.fsh` в `input/fsh/terminology/`, пересоберите, повторите шаги 2-3.
 
 ### 5.2 Пример FSH для ClinicalStatusCS (на примере Condition)
 
@@ -378,7 +408,8 @@ Description: "Clinical status supplement with translations in Uzbek and Russian"
 ```fsh
 ValueSet: ClinicalStatusVS
 Id: clinical-status-vs
-Title: "Clinical Status"
+Title: "Clinical status"
+Description: "Clinical statuses"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/clinical-status-vs"
 * ^status = #active
 * ^extension[0].url = $valueset-supplement
@@ -391,12 +422,35 @@ Title: "Clinical Status"
 - Расширение `valueset-supplement` необходимо только для ValueSets, которые включают коды из supplement CodeSystems. Для ValueSets с только оригинальными кодами это расширение не требуется.
 - При использовании supplement CodeSystems в ValueSet необходимо включать коды из **оригинальной** CodeSystem (например, `$condition-clinical`), а не из supplement CodeSystem. Расширение `valueset-supplement` указывает на supplement, который предоставляет переводы к оригинальным кодам.
 
+**Title и Description supplement и ValueSet:**
+
+Supplement и ValueSet над ним называют одно и то же понятие, поэтому их Title и Description строятся по одному шаблону:
+
+| Артефакт | Title | Description |
+|---|---|---|
+| Supplement CodeSystem | `"[Понятие] translations"` | `"[Понятие] supplement with translations in Uzbek and Russian"` |
+| ValueSet | `"[Понятие]"` | `"[Понятие во множественном числе]"` |
+
+Например, для категорий изделий: `"Device category translations"` / `"Device category supplement with translations in Uzbek and Russian"` и `"Device category"` / `"Device categories"`.
+
+- Пишите Title с заглавной буквы только в первом слове (sentence case); имена FHIR-ресурсов (например, `AdverseEvent`) пишутся как в спецификации.
+- Не добавляйте к Title тип артефакта: `"Code System"`, `"Value Set"`, `"CS"`, `"VS"`, `"Supplement CodeSystem"`. Тип уже виден на странице артефакта.
+- Не перечисляйте коды в Description: список кодов показан на странице артефакта и устаревает при изменении системы.
+- Существующие артефакты с другими Title приводите к шаблону, когда меняете их. Title и Description не входят в канонический URL, поэтому их изменение ничего не ломает.
+
 ### 5.4 Почему и как создавать Extensions
 
 При создании национальных профилей часто требуются дополнительные атрибуты, которые отсутствуют в базовых ресурсах FHIR. В таких случаях создаются **Extensions**. Например, для профиля Condition может потребоваться «Тип диагноза» (первичный, направившего учреждения, уточнённый и т.д.). Расширения позволяют:
 
 - Добавить новые данные, не нарушая совместимость с базовой спецификацией.
 - Учитывать национальные требования, обеспечивая обмен необходимой информацией.
+
+**Сначала стандартные расширения.** Прежде чем создавать собственное расширение, пройдите по порядку:
+
+1. Убедитесь, что в базовом ресурсе нет подходящего элемента.
+2. Проверьте [реестр расширений HL7 FHIR](https://hl7.org/fhir/extensions/extension-registry.html) (пакет `hl7.fhir.uv.extensions`). Если там есть подходящее расширение, используйте его и добавьте для него Alias в `Aliases.fsh` (как `$translation-extension`). Например, если в ресурсе нет элемента для места проведения события, используйте стандартное `event-location`, а не собственное расширение для той же цели.
+3. Если стандартного расширения нет, поищите расширения, определённые сообществом, в [реестре XIG](https://packages2.fhir.org/xig?offset=0&type=ext). Если найдётся расширение с нужной семантикой, подходящим контекстом и типом значения, переиспользуйте его.
+4. Собственное расширение DHP создавайте только когда ни стандартного, ни подходящего расширения сообщества нет. Моделируйте его с той же семантикой (структура, типы данных), что и у ближайшего существующего расширения: так расширения останутся совместимыми и дальнейшая интеграция будет проще.
 
 Ниже показаны основные шаги и сразу после них — пример FSH.
 
@@ -509,6 +563,39 @@ Description: "Example instance of a headache condition documented during a patie
 * subject = Reference(Patient/example)
 * recordedDate = "2025-07-29"
 ```
+
+### 5.7 Описательные страницы профилей (intro и notes)
+
+У каждого профиля должны быть два markdown-фрагмента в `input/pagecontent/`; IG Publisher вставляет их на страницу профиля до и после формальных представлений:
+
+- `StructureDefinition-<id>-intro.md` - вводная часть над таблицами;
+- `StructureDefinition-<id>-notes.md` - Quick Start под таблицами.
+
+Образцы: Organization, Location, Medication. Новый профиль без этих фрагментов считается незавершённым.
+
+**Структура intro:**
+
+1. Абзац-резюме: что представляет ресурс, какие ресурсы на него ссылаются (со ссылками на их страницы). Для справочных сущностей (Patient, Organization, Practitioner, Medication) - совет искать существующий ресурс по идентификатору перед созданием нового.
+2. `### Mandatory and Must Support data elements` со стандартным вводным абзацем (скопируйте из существующего intro), затем `#### Each UZ Core <Resource> Must Have` прозой и `#### Each UZ Core <Resource> Must Support` списком - одна строка на элемент или группу: простыми словами, что в нём хранится, с основными значениями в скобках, где это полезно, например: «статус (active / suspended / inactive)». Связки не перечисляйте и на ValueSet не ссылайтесь - их показывает формальный профиль. В Must Have учитывайте и обязательные элементы базового ресурса R5, не только добавленные профилем.
+3. Для справочных сущностей - короткий раздел `### Finding an existing <Resource> {#finding}` с примерами поиска по идентификатору и коду.
+4. `### Building the JSON, step by step`: три-четыре примера от минимального валидного экземпляра до полного, после каждого - короткое пояснение (связки, типы Reference / CodeableReference, срезы). Ссылки на полные эталонные Instance. Если `identifier` нарезан - таблица срезов `{#identifier-slices}` с URI `system`.
+5. Заключительная строка со ссылкой на `[Quick Start](#quick-start)`.
+
+**Структура notes:**
+
+- `### Quick Start` со стандартным абзацем про JWT, `[base]` и `%7C`;
+- чтение по id, поиск (сначала по идентификатору и коду, затем прочие полезные запросы), создание, обновление с `If-Match`;
+- заключительная строка со ссылкой на раздел ресурса в CapabilityStatement: `See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#<Type>1-<N>) for the full list of supported search parameters.` `<N>` - позиция ресурса в `rest.resource` файла `input/vocabulary/CapabilityStatement-DHPCapabilityStatement.json`, считая с 1 (Patient - `#Patient1-1`); проверьте якорь на собранной странице, он сдвигается, когда сервер меняет порядок ресурсов. Не перечисляйте параметры в тексте. Если ресурса ещё нет в CapabilityStatement, пишите `<Type> is not yet listed in the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html); the searches above use standard FHIR R5 search parameters.` В RU и UZ используется то же предложение, что и на других страницах (`Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](…).`, `Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](…) da keltirilgan.`);
+- `### Related` со ссылками на рабочие процессы и общие страницы руководства.
+
+**Правила:**
+
+- Каждый JSON-пример должен проходить валидацию по профилю (команда в `AGENTS.md`): всегда `meta.profile`; `display` кодов локальных CodeSystem должен соответствовать `language` ресурса; необязательный `display` у кодов HL7 лучше опустить.
+- Строки в блоках кода не длиннее ~120 символов - длинные объекты разбивайте на несколько строк, иначе страница расползается по ширине.
+- Используйте только параметры поиска, на которые клиент может положиться: перечисленные для ресурса в CapabilityStatement (стандартные параметры FHIR R5, если ресурса там ещё нет), а также SearchParameter UZ Core из этого руководства со ссылкой на их страницу.
+- Не повторяйте одно правило в нескольких местах страницы.
+- RU и UZ копии обоих фрагментов кладите в `input/translations/<lang>/pagecontent/` под тем же именем файла, с баннером машинного перевода в начале. Блоки кода и JSON идентичны английским. Якоря `{#quick-start}`, `{#finding}`, `{#identifier-slices}` проставляйте явно - переведённые заголовки их не генерируют.
+- Добавьте запись в changelog (en, ru, uz) на её место в алфавитном порядке внутри категории, а не в конец - см. `AGENTS.md`. Changelog описывает изменения относительно последнего релиза: если артефакт добавлен в разделе *In development*, последующие правки в нём меняют его запись в *Added*, а не добавляют отдельные записи в *Changed*, *Removed* или *Breaking changes*.
 
 ## 6) Переводы и локализация
 

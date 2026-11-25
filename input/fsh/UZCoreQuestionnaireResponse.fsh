@@ -20,7 +20,7 @@ Description: "Uzbekistan Core QuestionnaireResponse profile for capturing respon
 * encounter only Reference(UZCoreEncounter)
 * authored MS
 * author MS
-* author only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCorePatient or UZCoreRelatedPerson or Device or UZCoreOrganization)
+* author only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCorePatient or UZCoreRelatedPerson or UZCoreDevice or UZCoreOrganization)
 * source MS
 * source only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCorePatient or UZCoreRelatedPerson)
 

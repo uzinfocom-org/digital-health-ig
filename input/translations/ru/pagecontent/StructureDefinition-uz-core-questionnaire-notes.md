@@ -1,6 +1,6 @@
 > **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
 
-### Быстрый старт
+### Быстрый старт {#quick-start}
 
 Questionnaire - это шаблон, а не данные пациента, поэтому поиск выполняется по метаданным формы, а не по пациенту. `[base]` - это [базовый URL FHIR-сервера](api-access.html#endpoints); `|` разделяет систему и значение и должен быть закодирован для URL как `%7C`.
 
@@ -43,7 +43,7 @@ PUT [base]/Questionnaire/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-См. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) для всех поддерживаемых параметров поиска.
+См. Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Questionnaire1-10).
 
 ### Связанные материалы
 

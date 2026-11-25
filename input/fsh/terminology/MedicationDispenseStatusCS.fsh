@@ -1,7 +1,7 @@
 CodeSystem: MedicationDispenseStatusCS
 Id: medicationdispense-status-cs
-Title: "MedicationDispense Status (UZ supplement)"
-Description: "Uzbek and Russian display translations for HL7 MedicationDispense status codes"
+Title: "MedicationDispense status translations"
+Description: "MedicationDispense status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(medicationdispense-status-cs, $medicationdispense-status, 5.0.0)
 
 * #preparation

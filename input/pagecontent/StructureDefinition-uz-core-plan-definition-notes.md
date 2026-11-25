@@ -1,6 +1,6 @@
 ### Quick Start
 
-Common API interactions for this profile. Requests require a JWT access token - see [Security and authentication](api-access.html#security). `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates a token system from its value and must be URL-encoded as `%7C`. These interactions use standard FHIR R5 search parameters; see the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) as it is finalized for this resource.
+Common API interactions for this profile. Requests require a JWT access token - see [Security and authentication](api-access.html#security). `[base]` is the [FHIR server base URL](api-access.html#endpoints); `|` separates a token system from its value and must be URL-encoded as `%7C`. See the [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#PlanDefinition1-53) for the full list of supported search parameters.
 
 **Read a schedule by server id**
 
@@ -19,9 +19,12 @@ GET [base]/PlanDefinition?name=NationalImmunizationSchedule
 GET [base]/PlanDefinition?title=National%20Immunization%20Schedule
 GET [base]/PlanDefinition?version=1.0.0
 
-# by publication date, jurisdiction, or use-context value
+# by publication date or use-context value
 GET [base]/PlanDefinition?date=ge2026-01-01
-GET [base]/PlanDefinition?jurisdiction=urn:iso:std:iso:3166%7CUZ
+
+# national schedules, or the schedules for one region (here Samarqand)
+GET [base]/PlanDefinition?context-type-value=jurisdiction$urn:iso:std:iso:3166%7CUZ
+GET [base]/PlanDefinition?context-type-value=jurisdiction$https://terminology.dhp.uz/fhir/core/CodeSystem/states-cs%7C1718
 GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct%7C14189004
 ```
 

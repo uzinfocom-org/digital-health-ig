@@ -14,7 +14,7 @@ Ushbu profil o'zining hech qanday majburiy kardinalligini qo'shmaydi. Talab qili
 
 
 
-- identifikator, instantiates[x] (rioya qilingan ta'rif) va basedOn (0..1 - boshlang'ich ServiceRequest, CarePlan yoki MedicationRequest);
+- identifikator, instantiates[x] (rioya qilingan ta'rif) va basedOn (0..* - boshlang'ich ServiceRequest, CarePlan, MedicationRequest yoki ImmunizationRecommendation, masalan yo'llanma va u tegishli bo'lgan reja birgalikda);
 - triggeredBy (ushbu kuzatuvni keltirib chiqargan kuzatuv, uning sababi bilan) va partOf (muolaja, immunizatsiya, tasvirlash tadqiqoti yoki dori voqeasi);
 - holat (required bog'lanish) va kategoriya (vital-signs, laboratory ...);
 - kod (preferred LOINC / SNOMED bog'lanish) va subyekt (odatda bemor);

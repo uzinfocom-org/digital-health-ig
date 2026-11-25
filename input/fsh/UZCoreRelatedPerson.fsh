@@ -80,7 +80,7 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
   * system 1..1 MS
   * system = $healthcard
   * type 1..1 MS
-  * type = $identifier-type#HC "Health card number"
+  * type = $identifier-type#HC
   * use = #official
   * value 1..1 MS
 
@@ -94,7 +94,15 @@ Description: "Uzbekistan Core RelatedPerson profile, used to represent persons r
 * patient 1..1 MS
 * patient only Reference(UZCorePatient)
 * relationship 0..* MS
-* relationship from RelationshipTypeVS (required)
+* relationship from RelationshipTypeVS (preferred)
+* relationship ^slicing.discriminator.type = #value
+* relationship ^slicing.discriminator.path = "$this"
+* relationship ^slicing.rules = #open
+* relationship ^slicing.description = "Relationships from the national value set; codes from other systems are allowed alongside them"
+* relationship ^slicing.ordered = false
+* relationship contains dhpRelationship 0..* MS
+* relationship[dhpRelationship] from RelationshipTypeVS (required)
+* relationship[dhpRelationship] ^short = "Relationship from the national value set"
 * telecom 0..* MS
   * system 0..1 MS
   * system from ContactPointSystemVS (required)
@@ -171,10 +179,10 @@ Description: "The mother of a child, recorded so that a system can recognise her
 Usage: #example
 * language = #uz
 * identifier[nationalId]
-  * value = "40503855900021"
+  * value = "90000000000003"
 * active = true
 * patient = Reference(example-jasur)
-* relationship[0].coding[0] = $v3-RoleCode#MTH "Ona"
+* relationship[0].coding[0] = $v3-RoleCode#MTH
 * name
   * use = #usual
   * text = "Karimova Nodira Anvarovna"

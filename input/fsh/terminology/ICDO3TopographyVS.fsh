@@ -1,6 +1,6 @@
 ValueSet: ICDO3TopographyVS
 Id: icd-o-3-topography-vs
-Title: "ICD-O-3 Topography ValueSet"
+Title: "ICD-O-3 topography"
 Description: "All four-character ICD-O-3 topography codes (C00.0-C80.9); the three-character site groupers are excluded."
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/icd-o-3-topography-vs"
 * ^experimental = true

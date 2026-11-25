@@ -1,7 +1,7 @@
 CodeSystem: DiagnosticReportServiceCategoryCS
 Id: diagnostic-report-service-category-cs
-Title: "DiagnosticReport status supplement"
-Description: "DiagnosticReport status supplement with translations in uzbek and russian"
+Title: "DiagnosticReport service category translations"
+Description: "DiagnosticReport service category supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(diagnostic-report-service-category-cs, $diagnostic-report-service-category, 5.0.0)
 
 * #AU 

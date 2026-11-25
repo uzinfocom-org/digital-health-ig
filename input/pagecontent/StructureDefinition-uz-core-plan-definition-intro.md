@@ -14,7 +14,7 @@ Every PlanDefinition must carry a url (the canonical identifier for this schedul
 
 - an identifier, version and version algorithm, a human-readable title, and the status (draft, active, retired);
 - the subject the schedule applies to (a coded concept or a reference);
-- the date, publisher, use context, approval date and effective period;
+- the date, publisher, use context (including where the schedule applies - nationally or in specific regions), approval date and effective period;
 - the actions that make up the schedule, each with a linkId, title, description and code;
 - per action: a condition (eligibility - its kind and FHIRPath expression), a related action (the target action, relationship, and offset as a duration or range for minimum intervals), the timing (an age or a schedule), a participant (its actor id and type), and the definition (a canonical link to an ActivityDefinition or other definition, or a uri).
 
@@ -59,6 +59,45 @@ A PlanDefinition is mostly authored once and read by the recommendation engine, 
 ```
 
 Exactly one `focus` context is allowed. Use `33879002` for an immunization schedule, `25179006` for a whole blood donation schedule, or `360156006` for a screening schedule. A schedule is found with `GET [base]/PlanDefinition?context-type-value=focus$http://snomed.info/sct|33879002`.
+
+#### National or regional
+
+A `jurisdiction` use context says where the schedule applies. A national schedule carries one entry with the country code `UZ`. A regional schedule carries one entry per region instead, using the same region codes as `Address.state` in a patient's address, so a patient's region can be matched to the schedules that apply there directly. A schedule cannot be both: `UZ` cannot be combined with region codes. A screening schedule run in Samarqand and Navoiy regions only:
+
+```json
+{
+  "resourceType": "PlanDefinition",
+  "meta": {
+    "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-plan-definition"]
+  },
+  "url": "https://terminology.dhp.uz/fhir/core/PlanDefinition/example-uz-core-regional-screening-plan-definition",
+  "name": "ExampleRegionalDiabetesScreeningPlanDefinition",
+  "status": "draft",
+  "description": "Example screening PlanDefinition run in Samarqand and Navoiy regions only.",
+  "useContext": [
+    {
+      "code": { "system": "http://terminology.hl7.org/CodeSystem/usage-context-type", "code": "focus" },
+      "valueCodeableConcept": {
+        "coding": [ { "system": "http://snomed.info/sct", "code": "360156006", "display": "Screening intent" } ]
+      }
+    },
+    {
+      "code": { "system": "http://terminology.hl7.org/CodeSystem/usage-context-type", "code": "jurisdiction" },
+      "valueCodeableConcept": {
+        "coding": [ { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/states-cs", "code": "1718" } ]
+      }
+    },
+    {
+      "code": { "system": "http://terminology.hl7.org/CodeSystem/usage-context-type", "code": "jurisdiction" },
+      "valueCodeableConcept": {
+        "coding": [ { "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/states-cs", "code": "1712" } ]
+      }
+    }
+  ]
+}
+```
+
+For a national schedule, the jurisdiction entry is `{ "system": "urn:iso:std:iso:3166", "code": "UZ" }` instead. Use this use context rather than the `jurisdiction` element: FHIR R5 deprecates that element, and R6 redefines it as the jurisdiction of the authority that issued the schedule, not where it applies. The schedules that apply in a region are found with `GET [base]/PlanDefinition?context-type-value=jurisdiction$https://terminology.dhp.uz/fhir/core/CodeSystem/states-cs|1718`. See the [regional screening example](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) for a complete instance.
 
 `name` is the machine-processable name (no spaces); add a human-readable `title` when you have one. See [Metadata](general-guidance.html#metadata) for the publisher, date and version fields a published schedule should also carry.
 

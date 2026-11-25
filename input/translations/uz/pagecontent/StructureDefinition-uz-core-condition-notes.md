@@ -1,4 +1,4 @@
-### Tezkor boshlash
+### Tezkor boshlash {#quick-start}
 
 Ushbu profil uchun odatiy API amallari. So'rovlar uchun JWT kirish tokeni talab qilinadi - [Xavfsizlik va autentifikatsiya](api-access.html#security) bo'limiga qarang. `[base]` - [FHIR-serverning bazaviy URL manzili](api-access.html#endpoints); `|` belgisi kodlash tizimini qiymatdan ajratadi va `%7C` ko'rinishida URL-kodlanishi kerak.
 
@@ -41,7 +41,7 @@ PUT [base]/Condition/[id]
 If-Match: W/"3"   # oxirgi javobdagi ETag; resurs shu vaqtdan beri o'zgargan bo'lsa, 412
 ```
 
-Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) da keltirilgan.
+Qo'llab-quvvatlanadigan qidiruv parametrlarining to'liq ro'yxati [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Condition1-5) da keltirilgan.
 
 ### Bog'liq materiallar
 

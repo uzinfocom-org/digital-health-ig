@@ -1,4 +1,4 @@
-### Быстрый старт
+### Быстрый старт {#quick-start}
 
 Типовые операции API для этого профиля. Для запросов требуется JWT-токен доступа - см. раздел [Безопасность и аутентификация](api-access.html#security). `[base]` - это [базовый URL FHIR-сервера](api-access.html#endpoints); `|` разделяет систему и значение и должен быть URL-кодирован как `%7C`.
 
@@ -40,7 +40,7 @@ PUT [base]/EpisodeOfCare/[id]
 If-Match: W/"3"   # ETag из последнего чтения; 412, если ресурс с тех пор изменился
 ```
 
-Все поддерживаемые параметры поиска приведены в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#EpisodeOfCare1-8).
 
 ### Связанные материалы
 

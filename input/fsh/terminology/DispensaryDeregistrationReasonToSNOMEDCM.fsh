@@ -1,7 +1,7 @@
 Instance: dispensary-deregistration-reason-to-dhp-sct-cm
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "DHP dispensary deregistration reasons To SNOMED CT"
+Title: "DHP dispensary deregistration reasons to SNOMED CT"
 Description: "ConceptMap for mapping DHP dispensary deregistration reason codes to SNOMED CT."
 * name = "DispensaryDeregistrationReasonToSNOMEDCM"
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/dispensary-deregistration-reason-to-dhp-sct-cm"

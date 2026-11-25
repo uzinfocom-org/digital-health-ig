@@ -36,13 +36,30 @@ Description: "Uzbekistan Core profile for EpisodeOfCare, representing a patient'
 * reason.value MS
   * ^short = "Medical reason requiring consideration"
 * reason.value only CodeableReference(UZCoreCondition or UZCoreProcedure or UZCoreObservation or UZCoreHealthcareService)
-* reason.value from $icd-10-vs
+* reason.value from $icd-10-vs (preferred)
+* reason.value ^slicing.discriminator.type = #value
+* reason.value ^slicing.discriminator.path = "concept.coding.system"
+* reason.value ^slicing.rules = #open
+* reason.value ^slicing.description = "Reasons coded in ICD-10; codes from other systems are allowed alongside them"
+* reason.value ^slicing.ordered = false
+* reason.value contains icd10 0..* MS
+* reason.value[icd10] from $icd-10-vs (required)
+* reason.value[icd10].concept.coding.system = "http://hl7.org/fhir/sid/icd-10"
+* reason.value[icd10] ^short = "Medical reason coded in ICD-10"
 * diagnosis.use MS
   * ^short = "Role of the diagnosis in the episode of care"
 * diagnosis.condition MS
 * diagnosis.condition only CodeableReference(UZCoreCondition)
-* diagnosis.condition from $icd-10-vs
-  * ^short = "ICD-10 diagnosis related to the encounter"
+* diagnosis.condition from $icd-10-vs (preferred)
+* diagnosis.condition ^slicing.discriminator.type = #value
+* diagnosis.condition ^slicing.discriminator.path = "concept.coding.system"
+* diagnosis.condition ^slicing.rules = #open
+* diagnosis.condition ^slicing.description = "Diagnoses coded in ICD-10; codes from other systems are allowed alongside them"
+* diagnosis.condition ^slicing.ordered = false
+* diagnosis.condition contains icd10 0..* MS
+* diagnosis.condition[icd10] from $icd-10-vs (required)
+* diagnosis.condition[icd10].concept.coding.system = "http://hl7.org/fhir/sid/icd-10"
+* diagnosis.condition[icd10] ^short = "ICD-10 diagnosis related to the encounter"
 * patient MS
   * ^short = "Patient associated with this episode of care"
 * patient only Reference(UZCorePatient)

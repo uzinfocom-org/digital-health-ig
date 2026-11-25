@@ -1,6 +1,6 @@
 This example demonstrates translating an organization from Hepatitis JSON format into a FHIR Organization conforming to the [UZ Core Organization](StructureDefinition-uz-core-organization.html) profile. See the [resulting FHIR JSON](Organization-xonobod-medical-association.json.html).
 
-#### Source Hepatitis JSON
+### Source Hepatitis JSON
 
 ```json
 {
@@ -27,7 +27,7 @@ This example demonstrates translating an organization from Hepatitis JSON format
 }
 ```
 
-#### Mapping notes
+### Mapping notes
 
 | Source field | FHIR path | ConceptMap used |
 |---|---|---|

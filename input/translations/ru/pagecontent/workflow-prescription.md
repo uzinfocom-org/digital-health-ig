@@ -1,6 +1,4 @@
-Этот процесс показывает, как лекарственное средство назначается в электронном виде, отпускается в аптеке и сведения о нём передаются в Государственный фонд медицинского страхования (SHIF) для возмещения стоимости. Процесс представлен двумя ресурсами: `MedicationRequest` - это рецепт, то есть сведения о том, *что* было назначено; `MedicationDispense` - это факт отпуска, то есть сведения о том, *что* было фактически выдано и *в каком количестве*.
-
-> Статус профилей: профили MedicationRequest и MedicationDispense находятся в разработке. На этой странице описана предполагаемая модель, чтобы системы могли реализовывать её уже сейчас; до публикации профилей используйте базовые ресурсы FHIR R5, не указывая `meta.profile`. Ресурсы [Condition](StructureDefinition-uz-core-condition.html) (показание) и [Patient](StructureDefinition-uz-core-patient.html) профилированы.
+Этот процесс показывает, как лекарственное средство назначается в электронном виде, отпускается в аптеке и сведения о нём передаются в Государственный фонд медицинского страхования (SHIF) для возмещения стоимости. Процесс представлен двумя ресурсами: [`MedicationRequest`](StructureDefinition-uz-core-medicationrequest.html) - это рецепт, то есть сведения о том, *что* было назначено; [`MedicationDispense`](StructureDefinition-uz-core-medication-dispense.html) - это факт отпуска, то есть сведения о том, *что* было фактически выдано и *в каком количестве*.
 
 Участники: клиницист, выписывающий рецепт; фармацевт; DHP (Digital Health Platform - Цифровая платформа здравоохранения); Государственный фонд медицинского страхования (SHIF).
 
@@ -59,5 +57,5 @@ GET [base]/MedicationDispense?prescription=MedicationRequest/[id]
 ### Связанные материалы
 
 - Профили: [Condition](StructureDefinition-uz-core-condition.html) &middot; [Patient](StructureDefinition-uz-core-patient.html) &middot; [PractitionerRole](StructureDefinition-uz-core-practitioner-role.html)
-- Компонент: [Рецепты](components.html#рецепты)
+- Компонент: [Рецепты](components.html#prescription)
 - [Обзор процессов](workflows.html) &middot; [Общие рекомендации](general-guidance.html)

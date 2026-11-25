@@ -1,6 +1,6 @@
 > **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
 
-### Быстрый старт
+### Быстрый старт {#quick-start}
 
 Типовые взаимодействия с API для данного профиля. Запросы требуют JWT-токена доступа - см. [Безопасность и аутентификация](api-access.html#security). `[base]` - это [базовый URL FHIR-сервера](api-access.html#endpoints); `|` отделяет систему от значения и должен быть закодирован в URL как `%7C`.
 
@@ -46,7 +46,7 @@ PUT [base]/QuestionnaireResponse/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-См. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) для всех поддерживаемых параметров поиска.
+См. Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#QuestionnaireResponse1-11).
 
 ### Связанные материалы
 

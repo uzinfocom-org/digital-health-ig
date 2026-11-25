@@ -12,7 +12,7 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 * basedOn MS
 * partOf MS
 * status MS
-* category MS 
+* category MS
 * code MS
 * subject MS
 * encounter MS
@@ -29,16 +29,34 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 * used MS
 
 * status from ProcedureEventStatusVS (required)
-* code from ProcedureCodeVS (required)
-* bodySite from $bodysite (required)
+* code from ProcedureCodeVS (extensible)
+* bodySite from $bodysite (preferred)
+* bodySite ^slicing.discriminator.type = #value
+* bodySite ^slicing.discriminator.path = "$this"
+* bodySite ^slicing.rules = #open
+* bodySite ^slicing.description = "Body sites coded in SNOMED CT; codes from other systems are allowed alongside them"
+* bodySite ^slicing.ordered = false
+* bodySite contains snomedBodySite 0..* MS
+* bodySite[snomedBodySite] from $bodysite (required)
+* bodySite[snomedBodySite] ^short = "Body site coded in SNOMED CT"
 * outcome from ProcedureOutcomeVS (extensible)
+* complication MS
+* complication ^binding.additional[+].purpose = #preferred
+* complication ^binding.additional[=].valueSet = Canonical(ProcedureComplicationVS)
+* complication ^binding.additional[=].usage.code = $uz-core-procedure#Procedure.code
+* complication ^binding.additional[=].usage.valueCodeableConcept = $sct#25179006 "Whole blood unit collection"
+* complication ^binding.additional[+].purpose = #preferred
+* complication ^binding.additional[=].valueSet = Canonical(BloodTransfusionComplicationVS)
+* complication ^binding.additional[=].usage.code = $uz-core-procedure#Procedure.code
+* complication ^binding.additional[=].usage.valueCodeableConcept = $sct#116859006 "Transfusion of blood product"
+* complication only CodeableReference(UZCoreCondition)
 
-* basedOn only Reference(CarePlan or ServiceRequest)
+* basedOn only Reference(UZCoreCarePlan or ServiceRequest)
 * partOf only Reference(UZCoreProcedure or UZCoreObservation or MedicationAdministration)
-* subject only Reference(UZCorePatient or Group or Device or UZCorePractitioner or UZCoreOrganization or UZCoreLocation)
+* subject only Reference(UZCorePatient or Group or UZCoreDevice or UZCorePractitioner or UZCoreOrganization or UZCoreLocation)
 * encounter only Reference(UZCoreEncounter)
 * recorder only Reference(UZCorePatient or UZCoreRelatedPerson or UZCorePractitioner or UZCorePractitionerRole)
-* performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson or Device or CareTeam or UZCoreHealthcareService)
+* performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreRelatedPerson or UZCoreDevice or CareTeam or UZCoreHealthcareService)
 * location only Reference(UZCoreLocation)
 * reason only CodeableReference(UZCoreCondition or UZCoreObservation or UZCoreProcedure or UZCoreDiagnosticReport or DocumentReference)
 
@@ -47,28 +65,75 @@ Description: "Uzbekistan Core Procedure Profile, used for documenting an action 
 Instance: example-procedure
 InstanceOf: UZCoreProcedure
 Usage: #example
-Title: "Example of a Therapeutic Leg Massage Procedure"
-Description: "An example instance of a UZ Core Procedure profile for a therapeutic massage of the left leg."
+Title: "Example of a Therapeutic Foot Massage Procedure"
+Description: "An example instance of a UZ Core Procedure profile for a therapeutic massage of the right foot."
 
 * identifier[0].system = $mis-dmed-uz
 * identifier[0].value = "proc-0001"
-* basedOn[0] = Reference(example-careplan) "CarePlan #1"
+* basedOn[0] = Reference(example-massage-careplan) "Therapeutic massage course"
 * status = $event-status#completed "Completed"
 * category[0].text = "Physical therapy procedure"
 * code[0].coding = $sct#386438000 "Simple massage"
 * code[0].text = "Therapeutic massage of right foot"
 * subject = Reference(example-david) "David Davidov"
-* encounter = Reference(example-encounter) "Outpatient Visit"
+* encounter = Reference(example-physiotherapy-encounter) "Outpatient physiotherapy visit"
 * occurrencePeriod[0]
   * start = "2025-05-15T08:00:00Z"
   * end = "2025-05-15T10:00:00Z"
 * recorded = "2025-05-19T09:30:00Z"
-* recorder = Reference(example-practitionerrole) 
+* recorder = Reference(example-physiotherapist-role)
 * performer[0]
-  * actor = Reference(example-practitioner) "Paul Ivanov, PT"
+  * actor = Reference(example-physiotherapist) "Ivanov Pavel Sergeyevich"
 * location = Reference(example-location) "Toshkent shahar 1-sonli shifoxona"
 * bodySite = $sct#7769000 "Right foot"
-* reason = Reference(example-disability) "Aching right foot"
+* reason = Reference(example-foot-pain) "Right foot pain"
 * outcome = $sct#385669000 "Successful"
 * note[0].text = "Therapeutic massage of the right foot completed according to the care plan. No adverse reactions noted."
 * used = Reference(example-medication)
+
+Instance: example-blood-donation-procedure
+InstanceOf: UZCoreProcedure
+Usage: #example
+Title: "Example UZ Core Procedure - Blood Donation with Fainting"
+Description: "A whole blood donation after which the donor fainted; the fainting is recorded as a complication."
+* status = $event-status#completed
+* code = $sct#25179006 "Whole blood unit collection"
+* subject = Reference(example-salim)
+* occurrenceDateTime = "2026-09-15T08:00:00+05:00"
+* recorded = "2026-09-15T08:40:00+05:00"
+* performer[0].actor = Reference(example-practitioner)
+* location = Reference(example-location)
+* outcome = $sct#385669000 "Successful"
+* complication[0].concept = $sct#271594007 "Syncope"
+* note[0].text = "450 mL collected. The donor fainted a few minutes after the needle was removed and recovered lying down within 5 minutes."
+
+Instance: example-physiotherapy-encounter
+InstanceOf: UZCoreEncounter
+Title: "Example UZ Core Encounter - Outpatient Physiotherapy Visit"
+Description: "An outpatient visit in which the doctor assessed David's right foot pain, planned a therapeutic massage course and the first session was carried out."
+Usage: #example
+* language = #uz
+* status = #completed
+* class[dhpClass] = $v3-ActCode#AMB
+* type[nationalType] = encounter-type-cs#mserv-0001-00004 "Davolash"
+* subject = Reference(example-david) "David Davidov"
+* participant.actor = Reference(Practitioner/example-physiotherapist)
+* actualPeriod.start = "2025-05-15T07:00:00Z"
+* actualPeriod.end = "2025-05-15T10:30:00Z"
+* reason[0].use = encounter-reason-use-cs#mserv-0002-00001 "Kasallik"
+* reason[0].value = Reference(Condition/example-foot-pain)
+* diagnosis[0].condition = Reference(Condition/example-foot-pain)
+* location[0].location = Reference(example-location)
+
+Instance: example-foot-pain
+InstanceOf: UZCoreCondition
+Title: "Example UZ Core Condition - Right Foot Pain"
+Description: "Pain in David's right foot, diagnosed at the outpatient physiotherapy visit and treated with a therapeutic massage course."
+Usage: #example
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#confirmed
+* code = $sct#47933007 "Foot pain"
+* bodySite = $sct#7769000 "Right foot"
+* subject = Reference(example-david) "David Davidov"
+* encounter = Reference(example-physiotherapy-encounter)
+* recordedDate = "2025-05-15"

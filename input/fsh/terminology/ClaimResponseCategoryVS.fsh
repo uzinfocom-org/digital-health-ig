@@ -1,7 +1,7 @@
 ValueSet: ClaimResponseCategoryVS
 Id: claim-response-category-vs
-Title: "Claim Response Category VS"
-Description: "Defines claim response category codes in Uzbek and Russian"
+Title: "ClaimResponse category"
+Description: "ClaimResponse categories"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/claim-response-category-vs"
 * ^experimental = true

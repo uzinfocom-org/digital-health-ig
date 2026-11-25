@@ -4,7 +4,7 @@
   "content": "complete",
   "name": "LocationTypesCS",
   "id": "location-types-cs",
-  "title": "Defines the possible location types",
+  "title": "Location types",
   "description": "Defines the possible location types in Uzbek and Russian",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/location-types-cs",
   "concept": [

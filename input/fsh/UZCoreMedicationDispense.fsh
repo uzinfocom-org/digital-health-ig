@@ -37,7 +37,7 @@ Description: "Uzbekistan Core MedicationDispense profile, used to record the pro
 * notPerformedReason only CodeableReference(DetectedIssue)
 * medication only CodeableReference(UZCoreMedication)
 * subject only Reference(UZCorePatient or Group)
-* performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or Device or UZCoreRelatedPerson or CareTeam)
+* performer.actor only Reference(UZCorePractitioner or UZCorePractitionerRole or UZCoreOrganization or UZCorePatient or UZCoreDevice or UZCoreRelatedPerson or CareTeam)
 * authorizingPrescription only Reference(UZCoreMedicationRequest)
 * receiver only Reference(UZCorePatient or UZCorePractitioner or UZCoreRelatedPerson or UZCoreLocation or UZCorePractitionerRole)
 

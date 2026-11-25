@@ -1,7 +1,7 @@
 CodeSystem: ClaimResponseCategoryCS
 Id: claim-response-category-cs
-Title: "Claim Response Category CS"
-Description: "Claim response adjudication category supplement with translations in Uzbek and Russian"
+Title: "ClaimResponse category translations"
+Description: "ClaimResponse category supplement with translations in Uzbek and Russian"
 
 * insert SupplementCodeSystemDraft(claim-response-category-cs, $claim-response-category,  1.0.1)
 

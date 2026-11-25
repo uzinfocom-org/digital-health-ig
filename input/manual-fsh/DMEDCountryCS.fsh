@@ -1,6 +1,6 @@
 CodeSystem: DMEDCountryCS
 Id: dmed-country-cs
-Title: "DMED Country (UZ/RU)"
+Title: "DMED country"
 Description: "Uzbek and Russian designations for DMED Country codes"
 * insert OriginalCodeSystemDraft(dmed-country-cs)
 

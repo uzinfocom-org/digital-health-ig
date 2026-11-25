@@ -1,7 +1,7 @@
 CodeSystem: ImmunizationSiteCS
 Id: immunization-site-cs
-Title: "Immunization Site translations"
-Description: "Immunization Site supplement with translations in Uzbek and Russian"
+Title: "Immunization site translations"
+Description: "Immunization site supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystem(immunization-site-cs, $v3-ActSite,4.0.0) 
 
 * #LA "Left arm"

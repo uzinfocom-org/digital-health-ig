@@ -1,7 +1,7 @@
 ValueSet: ActionCodeVS
 Id: action-code-vs
-Title: "Action code translations"
-Description: "Action code codes with Uzbek and Russian translations"
+Title: "Action code"
+Description: "Action codes"
 
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/action-code-vs"
 * ^experimental = true

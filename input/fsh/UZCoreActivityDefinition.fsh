@@ -62,7 +62,7 @@ Description: "Uzbekistan Core ActivityDefinition Profile, used for the definitio
   * function MS
 
 * product[x] MS
-* product[x] from VaccineCodeVS (extensible) 
+* productCodeableConcept from VaccineCodeVS (extensible)
 * productCodeableConcept ^binding.additional[0].purpose = #required
 * productCodeableConcept ^binding.additional[=].valueSet = Canonical(VaccineCodeVS)
 * productCodeableConcept ^binding.additional[=].usage.code = $general-activity-definition#ActivityDefinition.code

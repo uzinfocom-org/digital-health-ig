@@ -1,7 +1,7 @@
 CodeSystem: RelevantClinicalInformationCS
 Id: relevant-clinical-information-cs
 Title: "Relevant clinical information translations"
-Description: "Relevant clinical information (v2-0916), supplemented with translations in Uzbek and Russian"
+Description: "Relevant clinical information supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(relevant-clinical-information-cs, $v2-0916, 2.9.0)
 
 * #F

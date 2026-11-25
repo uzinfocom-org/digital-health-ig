@@ -1,7 +1,7 @@
 CodeSystem: EpisodeOfCareStatusCS
 Id: episode-of-care-status-cs
 Title: "EpisodeOfCare status translations"
-Description: "EpisodeOfCare status supplement with translation in Uzbek and Russian."
+Description: "EpisodeOfCare status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(episode-of-care-status-cs, $episode-of-care-status, 5.0.0)
 
 * #planned

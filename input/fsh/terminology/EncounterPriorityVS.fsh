@@ -1,7 +1,7 @@
 ValueSet: EncounterPriorityVS
 Id: encounter-priority-vs
-Title: "Encounter priority translations"
-Description: "Encounter priority codes with English and Russian translations"
+Title: "Encounter priority"
+Description: "Encounter priorities"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/encounter-priority-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
@@ -11,6 +11,8 @@ Description: "Encounter priority codes with English and Russian translations"
 * include $v3ActPriority#P
 * include $v3ActPriority#PRN
 * include $v3ActPriority#R
+* include $v3ActPriority#UR
+* include $v3ActPriority#EL
 * include encounter-priority-home-cs#gencl-0002-00001
 * include encounter-priority-home-cs#gencl-0002-00002
 * include encounter-priority-home-cs#gencl-0002-00003

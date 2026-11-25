@@ -1,6 +1,6 @@
 > **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
 
-### Быстрый старт
+### Быстрый старт {#quick-start}
 
 Типичные взаимодействия с API для данного профиля. Запросы требуют JWT-токена доступа - см. [Безопасность и аутентификация](api-access.html#security). `[base]` - это [базовый URL FHIR-сервера](api-access.html#endpoints); `|` отделяет систему идентификатора от его значения и должен быть закодирован в URL как `%7C`.
 
@@ -14,7 +14,7 @@ GET [base]/Patient/[id]
 
 ```
 # by national identifier (PINFL) - the reliable match
-GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|30211975910033
+GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|12345678912345
 
 # by name + birth date when no identifier is to hand
 GET [base]/Patient?family=Usmanov&birthdate=1994-01-27
@@ -49,7 +49,7 @@ GET [base]/Patient?organization=Organization/[id]
 GET [base]/Patient?address-city=22070013
 ```
 
-См. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html) для полного списка поддерживаемых поисковых параметров и [Системы идентификаторов](identifiers.html) для всех URI систем идентификаторов пациента.
+См. [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Patient1-1) для полного списка поддерживаемых поисковых параметров и [Системы идентификаторов](identifiers.html) для всех URI систем идентификаторов пациента.
 
 ### Прикрепление к обслуживающей организации
 

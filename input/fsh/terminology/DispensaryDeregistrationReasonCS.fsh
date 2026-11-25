@@ -1,6 +1,6 @@
 CodeSystem: DispensaryDeregistrationReasonCS
 Id: dispensary-deregistration-reason-cs
-Title: "Dispensary Deregistration Reason CodeSystem"
+Title: "Dispensary deregistration reason"
 Description: "Reasons a patient is taken off dispensary observation, recorded on the encounter that closes the observation period. Carried in `Encounter.admission.dischargeDisposition` and therefore included in [encounter-discharge-disposition-vs](ValueSet-encounter-discharge-disposition-vs.html)."
 * insert OriginalCodeSystemDraft(dispensary-deregistration-reason-cs)
 

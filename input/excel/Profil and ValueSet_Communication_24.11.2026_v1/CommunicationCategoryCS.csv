@@ -1,0 +1,5 @@
+CODE,UZ,RU,EN,Definition,http://terminology.hl7.org/CodeSystem/communication-category
+alert,Ogohlantirish,Оповещение,Alert,https://terminology.hl7.org/CodeSystem-communication-category.html,
+notification,Xabarnoma,Уведомление,Notification,,
+reminder,Eslatma,Напоминание,Reminder,,
+instruction,Ko'rsatma,Инструкция,Instruction,,

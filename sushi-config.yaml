@@ -9,7 +9,7 @@ name: DHP
 title: Uzbekistan Digital Health Platform
 description: National implementation guide for Uzbekistan using FHIR R5.
 status: draft # draft | active | retired | unknown
-version: 0.9.0
+version: 0.13.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build
@@ -22,14 +22,14 @@ publisher:
 
 dependencies:
   # HL7 Terminology — v3-RoleCode, v3-RoleClass va boshqa THO terminologiyalari
-  hl7.terminology.r5: 7.3.0
+  hl7.terminology.r5: 7.5.0
   # while we don't strictly needs this, this helps resolve the DICOM supplement correctly until tx.fhir.org can do this
   fhir.dicom:
     id: fhir_dicom
     uri: http://fhir.org/packages/fhir.dicom/ImplementationGuide/fhir.dicom
     version: 2025.2.20250411
   # https://chat.fhir.org/#narrow/channel/215610-shorthand/topic/R5.20Questionnaires.20inheriting.20structuredefinition-implements
-  hl7.fhir.uv.extensions.r5: 5.3.0
+  hl7.fhir.uv.extensions.r5: 5.4.0
 
 
 # the following are for offline use only
@@ -92,12 +92,16 @@ pages:
       title: e-Prescription and dispensing
   forms.md:
     title: Questionnaires
+  search.md:
+    title: Search
   api-access.md:
     title: API access
   components.md:
     title: Components
   changelog.md:
     title: Changelog
+  translationinfo.md:
+    title: Translation information
 
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -115,10 +119,13 @@ parameters:
   special-url:
     - http://terminology.hl7.org/CodeSystem/iccc-3
     - http://terminology.hl7.org/CodeSystem/icd-o-3
+    # ICHI keeps WHO's own canonical: it is a linearization of the ICD-11 Foundation
+    # Component, so it shares the icd/release/11 namespace with ICD-11 MMS and ICF.
+    - http://id.who.int/icd/release/11/ichi
   excludettl: true
   excludexml: true
   usage-stats-opt-out: true # times out often
-  # language-translations-mode: preserve
+  language-translations-mode: preserve # per-language JSON copies keep the other languages as translation extensions
   shownav: true # show next/previous page navigation tabs in header and footer
 
   pin-canonicals: pin-all
@@ -126,6 +133,8 @@ parameters:
   default-version: true
 
   show-inherited-invariants: false # hide invariants inherited from the base resource in profile tables
+
+  produce-jekyll-data: true # resources in _data feed search-index.json for search.html
 
   # openehr: true
 
@@ -140,31 +149,6 @@ parameters:
 
 #   validation: [allow-any-extensions, no-broken-links]
 #
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
-# │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
-# │ The IG publisher currently only supports one level deep on sub-menus. To provide a             │
-# │ custom menu.xml file, do not include this property and include a `menu.xml` file in            │
-# │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
-# │ property below.                                                                                │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  Guidance:
-    FHIR basics: fhir-basics.html
-    How to read this guide: how-to-read.html
-    General guidance: general-guidance.html
-    Must Support: must-support.html
-    Identifiers: identifiers.html
-    Payors: payor-identification.html
-    Vital signs: vital-signs.html
-  Workflows: workflows.html
-  Questionnaires: forms.html
-  API access: api-access.html
-  Artifacts: artifacts.html
-  Components: components.html
-  Changelog: changelog.html
-
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │

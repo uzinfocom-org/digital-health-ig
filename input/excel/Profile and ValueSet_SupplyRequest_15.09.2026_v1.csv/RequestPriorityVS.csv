@@ -1,0 +1,5 @@
+CODE,UZ,RU,EN,,http://hl7.org/fhir/ValueSet/request-priority
+routine,Oddiy,Обычный,Routine,,
+urgent,Shoshilinch,Срочный,Urgent,,
+asap,Iloji boricha tezroq,Как можно быстрее,ASAP,,
+stat,Zudlik bilan,Немедленно,Stat,,

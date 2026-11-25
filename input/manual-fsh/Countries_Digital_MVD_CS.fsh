@@ -1,6 +1,6 @@
 CodeSystem: CountriesDigitalMVDCS
 Id: countries-digital-mvd-cs
-Title: "Countries digital MVD translations"
+Title: "MVD digital country codes"
 Description: "Countries digital MVD codes with translations in Russian and English"
 * insert OriginalCodeSystemDraft(countries-digital-mvd-cs)
 

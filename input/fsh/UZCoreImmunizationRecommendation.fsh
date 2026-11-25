@@ -37,7 +37,15 @@ Description: "Uzbekistan Core ImmunizationRecommendation profile, used to repres
 * recommendation obeys uzcore-imrec-1
 
 * recommendation.vaccineCode 0..* MS
-* recommendation.vaccineCode from VaccineCodeVS (extensible)
+* recommendation.vaccineCode from VaccineCodeVS (preferred)
+* recommendation.vaccineCode ^slicing.discriminator.type = #value
+* recommendation.vaccineCode ^slicing.discriminator.path = "$this"
+* recommendation.vaccineCode ^slicing.rules = #open
+* recommendation.vaccineCode ^slicing.description = "Vaccine codes from the national value set; codes from other systems are allowed alongside them"
+* recommendation.vaccineCode ^slicing.ordered = false
+* recommendation.vaccineCode contains dhpVaccineCode 0..* MS
+* recommendation.vaccineCode[dhpVaccineCode] from VaccineCodeVS (required)
+* recommendation.vaccineCode[dhpVaccineCode] ^short = "Vaccine code from the national value set"
 * recommendation.vaccineCode ^short = "Recommended vaccine or vaccine group"
 
 * recommendation.targetDisease 0..* MS

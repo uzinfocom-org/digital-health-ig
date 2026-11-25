@@ -4,7 +4,7 @@
   "content": "complete",
   "name": "MahallaCS",
   "id": "mahalla-cs",
-  "title": "Mahalla Codes and Names",
+  "title": "Mahalla codes and names",
   "description": "Mahalla codes and names with translations in Russian and English",
   "url": "https://terminology.dhp.uz/fhir/core/CodeSystem/mahalla-cs",
   "concept": [

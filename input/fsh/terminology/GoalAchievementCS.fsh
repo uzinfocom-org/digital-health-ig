@@ -1,6 +1,6 @@
 CodeSystem: GoalAchievementCS
 Id: goal-achievement-cs
-Title: "Goal Achievement CS"
+Title: "Goal achievement translations"
 Description: "Goal achievement supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(goal-achievement-cs, $goal-achievement, 0.1.0)
 * ^experimental = true

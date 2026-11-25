@@ -10,9 +10,9 @@ Description: "Maps local UZ laboratory method (technique of measurement) codes t
 * publisher = "Uzinfocom"
 
 * group.source = Canonical(LabMethodsCS)
-* sourceScopeCanonical = Canonical(LabMethodsVS)
+// * sourceScopeCanonical = Canonical(LabMethodsVS)
 * group.target = $sct
-* targetScopeCanonical = $sct
+* targetScopeCanonical = $sct-vs
 
 * group.element[+].code = #lab-method-1
 * group.element[=].display = "PZR (Polimeraza zanjir reaksiyasi)"
@@ -70,18 +70,18 @@ Description: "Maps local UZ laboratory method (technique of measurement) codes t
 
 * group.element[+].code = #lab-method-10
 * group.element[=].display = "Mass-spektrometriya"
-* group.element[=].target[+].code = #LP95062-3
-* group.element[=].target[=].display = "LC/MS/MS"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #lab-method-11
-* group.element[=].display = "Sekvensiyalash"
 * group.element[=].target[+].code = #1306402001
 * group.element[=].target[=].display = "Mass spectrometry technique"
 * group.element[=].target[=].relationship = #equivalent
 
-* group.element[+].code = #lab-method-12
-* group.element[=].display = "Tezkor immunoanaliz"
+* group.element[+].code = #lab-method-11
+* group.element[=].display = "Sekvensiyalash"
 * group.element[=].target[+].code = #1304162005
 * group.element[=].target[=].display = "Nucleic acid sequencing technique"
+* group.element[=].target[=].relationship = #equivalent
+
+* group.element[+].code = #lab-method-12
+* group.element[=].display = "Tezkor immunoanaliz"
+* group.element[=].target[+].code = #708099001
+* group.element[=].target[=].display = "Rapid immunoassay technique"
 * group.element[=].target[=].relationship = #equivalent

@@ -1,0 +1,51 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="menu.html" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="fhir-basics.html">FHIR basics</a>
+      </li>
+      <li>
+        <a href="how-to-read.html">How to read this guide</a>
+      </li>
+      <li>
+        <a href="general-guidance.html">General guidance</a>
+      </li>
+      <li>
+        <a href="must-support.html">Must Support</a>
+      </li>
+      <li>
+        <a href="identifiers.html">Identifiers</a>
+      </li>
+      <li>
+        <a href="payor-identification.html">Payors</a>
+      </li>
+      <li>
+        <a href="vital-signs.html">Vital signs</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="workflows.html">Workflows</a>
+  </li>
+  <li>
+    <a href="forms.html">Questionnaires</a>
+  </li>
+  <li>
+    <a href="api-access.html">API access</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="components.html">Components</a>
+  </li>
+  <li>
+    <a href="changelog.html">Changelog</a>
+  </li>
+</ul>

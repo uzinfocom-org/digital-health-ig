@@ -22,3 +22,9 @@ Description: "Action code supplement with translations in Uzbek and Russian"
   * ^designation[=].value = "Ma’lumotlarni yig‘ish"
   * ^designation[+].language = #ru
   * ^designation[=].value = "Cбор информации"
+
+* #order-service
+  * ^designation[0].language = #uz
+  * ^designation[=].value = "Tibbiy xizmatni tayinlash"
+  * ^designation[+].language = #ru
+  * ^designation[=].value = "Назначить медицинскую услугу"

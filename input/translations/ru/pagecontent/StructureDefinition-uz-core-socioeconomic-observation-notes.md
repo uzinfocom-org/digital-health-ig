@@ -1,6 +1,6 @@
 > **Машинный перевод, требуется проверка человеком.** Эта страница автоматически переведена с английского языка с помощью искусственного интеллекта и пока не проверена редактором. При любых расхождениях приоритет имеет оригинальная англоязычная версия.
 
-### Быстрый старт
+### Быстрый старт {#quick-start}
 
 Этот профиль основан на Observation, поэтому используйте конечную точку Observation. `[base]` — это [базовый URL FHIR-сервера](api-access.html#endpoints); `|` разделяет систему и значение и должен быть закодирован в URL как `%7C`.
 
@@ -51,7 +51,7 @@ PUT [base]/Observation/[id]
 If-Match: W/"3"   # the ETag from your last read; 412 if it changed since
 ```
 
-Все поддерживаемые поисковые параметры см. в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html).
+Полный список поддерживаемых параметров поиска приведён в [CapabilityStatement](CapabilityStatement-DHPCapabilityStatement.html#Observation1-9).
 
 ### Связанные материалы
 

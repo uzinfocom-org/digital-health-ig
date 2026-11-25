@@ -1,7 +1,7 @@
 Instance: dmed-dispensary-deregistration-reason-to-dhp-cm
 InstanceOf: ConceptMap
 Usage: #definition
-Title: "DMED dispensary deregistration reasons To DHP dispensary deregistration reasons"
+Title: "DMED dispensary deregistration reasons to DHP"
 Description: "ConceptMap for mapping DMED `deregistration_reason` values to DHP dispensary deregistration reason codes. DMED populates `Encounter.admission.dischargeDisposition` with the target code of this map."
 * name = "DMEDDispensaryDeregistrationReasonCM"
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/dmed-dispensary-deregistration-reason-to-dhp-cm"

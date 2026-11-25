@@ -1,7 +1,7 @@
 ValueSet: ReactionTypeVS
 Id: reaction-type-vs
-Title: "Reaction Type ValueSet"
-Description: "Reaction type codes"
+Title: "Reaction type"
+Description: "Reaction types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/reaction-type-vs"
 * ^experimental = true
 * ^publisher = "Uzinfocom"

@@ -1,7 +1,7 @@
 CodeSystem: ConditionVerificationStatusCS
 Id: condition-verification-status-cs
-Title: "Verification status types"
-Description: "Verification status supplement with translations in Uzbek and Russian"
+Title: "Condition verification status translations"
+Description: "Condition verification status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(condition-verification-status-cs, $condition-verification-status, 5.0.0)
 
 * #unconfirmed 

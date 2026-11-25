@@ -1,7 +1,7 @@
 ValueSet: AddressUseVS
 Id: address-use-vs
-Title: "Types of address registration"
-Description: "Defines type of address registration in Uzbek and Russian"
+Title: "Address registration type"
+Description: "Address registration types"
 * ^url = "https://terminology.dhp.uz/fhir/core/ValueSet/address-use-vs"
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement

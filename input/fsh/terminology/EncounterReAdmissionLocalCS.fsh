@@ -1,6 +1,6 @@
 CodeSystem: ReAdmissionLocalCS
 Id: re-admission-local-cs
-Title: "Readmission Local CodeSystem"
+Title: "Local readmission"
 Description: "Codes describing whether the admission is first-time or repeated within the current year."
 * insert OriginalCodeSystemDraft(re-admission-local-cs)
 

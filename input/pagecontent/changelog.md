@@ -1,6 +1,289 @@
 ### In development
 
-(No changes yet)
+#### Added
+
+[Dispensary deregistration reasons](CodeSystem-dispensary-deregistration-reason-cs.html) distinguish seven reasons for ending observation (`chr-0129-0001`–`chr-0129-0007`). They are included in [Encounter discharge disposition](ValueSet-encounter-discharge-disposition-vs.html), with the DMED source values, value sets and ConceptMaps to DHP and SNOMED CT. The DMED mappings for residence change and imprisonment have broader source meanings than their DHP targets; the SNOMED CT mappings also retain their stated relationships rather than treating every pair as equivalent.
+
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) records information conveyed to patients, practitioners or organizations, such as a public health alert that patients see in the Patient Portal: an alert to the residents of a risk zone, which carries the zone's alert level I-IV under the national alert regulation, or an alert from a manager to an organization employee group. Its `category` is the HL7 [communication category](ValueSet-communication-category-vs.html) `alert`, with Uzbek and Russian names in its [supplement](CodeSystem-communication-category-cs.html), and the alert level comes from the new local [Alert level](CodeSystem-alert-level-cs.html) code system, with Uzbek, Russian and English names.
+
+[UZ Core Device](StructureDefinition-uz-core-device.html) takes the registered model from the Pharmaceutical Committee registry, its [device item ID](NamingSystem-uz-pharm-device-item-id.html) and [device ID](NamingSystem-uz-pharm-device-id.html), in `type` slices, and the [registration certificate number](NamingSystem-registration-certificate-id.html) with its issue and expiry dates in an `identifier` slice. `identifier.use` and `identifier.type` have Uzbek and Russian names.
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) links to the [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) it fulfils with the [Based On Device Request](StructureDefinition-deviceusage-based-on.html) extension, as in the [copper IUD](DeviceUsage-example-deviceusage-iud.html) example.
+
+#### Changed
+
+[Composition types](CodeSystem-composition-type-cs.html) `emdoc-0010-0106` is now the extract from a patient's medical record, inpatient or outpatient, as its Uzbek name already said: the Russian and English names no longer say inpatient. Form 027 uses it for both settings, and `Encounter.class` (`AMB` or `IMP`) tells them apart.
+
+[Event status](ValueSet-procedure-event-status-vs.html), formerly Procedure event status, is now shared by UZ Core Procedure and UZ Core Communication.
+
+[Group kind](ValueSet-group-kind-vs.html) adds the organization employee group.
+
+The [cross-component resource architecture](components.html#cross-component-resource-architecture) diagram adds Prescription, with MedicationRequest, MedicationDispense, Medication, MedicationKnowledge and MedicationAdministration, and Supplies, with SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport and Device. It shows the newer profiles where they are used: DeviceRequest and DeviceUsage in Clinical Health Records, ChargeItem in Reimbursement, BiologicallyDerivedProductDispense and Flag in Blood Management, and CarePlan in Nursing. CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport and BiologicallyDerivedProduct now have UZ Core profiles, so they are marked as defined in this IG rather than named, not yet defined. Buttons in the top right corner of the diagram open or close every component at once and fit the diagram back into view.
+
+The guide's pages use the look of the [DHP developer documentation](https://docs.dhp.uz/): Onest and JetBrains Mono fonts, DHP green colours and logo, and a restyled header, menu, tables, notes and code blocks, which now have a copy button. A theme menu in the header switches between light, dark and the system setting.
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` can also reference a [UZ Core Device](StructureDefinition-uz-core-device.html) or a [UZ Core Organization](StructureDefinition-uz-core-organization.html), for events with no person behind them, such as a scheduled job or a system logging in.
+
+[UZ Core Location](StructureDefinition-uz-core-location.html) now also covers areas, such as a mahalla set as a public health risk zone.
+
+#### Breaking changes
+
+[Registration certificate number](NamingSystem-registration-certificate-id.html) and [UzPharm box group ID](NamingSystem-uz-pharm-box-id.html) change their URIs to `https://uzpharminfo.uz/registrationNumber` and `https://uzpharminfo.uz/boxGroupId`, the ones the Pharmaceutical Committee registry loader already sends. A [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifier with the old `registration_number` or `box_group_id` URI no longer falls into its slice, and searches by identifier must use the new URIs.
+
+### Version 0.13.0
+
+#### Added
+
+[Blood product type](ValueSet-blood-product-type-snomed-vs.html) adds SNOMED CT `789265003` albumin human only product, with Uzbek and Russian names in its [supplement](CodeSystem-blood-product-type-snomed-cs.html).
+
+[Composition types](CodeSystem-composition-type-cs.html) add `emdoc-0010-0471` for Order No. 399 form 112, a laboratory analysis of folic acid, 25-OH vitamin D and vitamin B12.
+
+[Encounter admit source](ValueSet-encounter-admit-source-vs.html), [Encounter reason use](ValueSet-encounter-reason-use-vs.html) and [Encounter discharge disposition](ValueSet-encounter-discharge-disposition-vs.html) add ambulance call codes: 18 pick-up places, 27 local and 33 SNOMED CT call reasons, and `emer200` patient refused hospitalisation. [Encounter type](ValueSet-encounter-type-vs.html) adds five ambulance encounter types and SNOMED CT `715537001` transportation by ambulance, which [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) accepts in `type`. All have Uzbek and Russian names.
+
+Every profile page now has a narrative intro and a Quick Start. New ones were added for [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html), [UZ Core Claim](StructureDefinition-uz-core-claim.html), [UZ Core ClaimResponse](StructureDefinition-uz-core-claim-response.html), [UZ Core Composition](StructureDefinition-uz-core-composition.html), [UZ Core DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html), [UZ Core Group](StructureDefinition-uz-core-group.html), [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html), [UZ Core Laboratory ObservationDefinition](StructureDefinition-uz-core-laboratory-observation-definition.html), [UZ Core MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), [UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html), [UZ Core Task Referral Approval](StructureDefinition-uz-core-referral-approval-task.html), [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html), [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) and [UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html).
+
+[Medication dose form](CodeSystem-medication-doseform-cs.html) adds nine codes for DMED e-prescription and Pharmaceutical Committee registry dose forms that had none, such as `CTP101` poultice, `KIT101` kit and `TEA101` herbal tea, with Uzbek, Russian and English names.
+
+[MedicationRequest status reason](ValueSet-medicationrequest-status-reason-vs.html) adds SNOMED CT `438833006` administration of medication contraindicated, with Uzbek and Russian names, for cancelling a DMED e-prescription.
+
+[Physiotherapy procedure codes](CodeSystem-physiotherapy-procedure-cs.html) list 73 procedures, mapped to SNOMED CT in the [physiotherapy procedure map](ConceptMap-physiotherapy-procedure-to-snomed.html). [UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) orders 23 of them by their SNOMED CT code and the other 50 by local code, which [procedure codes](ValueSet-procedure-code-vs.html) also include. ServiceRequest adds Must Support `orderDetail` for the [route](ValueSet-route-code-vs.html) and `location` for a [UZ Core Location](StructureDefinition-uz-core-location.html) or a [kind of place](ValueSet-service-request-location-vs.html), such as the patient's home, as in the [drug electrophoresis order](ServiceRequest-example-electrophoresis-request.html).
+
+[Search](search.html), opened from the page header, finds resources by title, name, URL or description, and codes, terms and mappings, in English, Russian and Uzbek, narrowed by resource type.
+
+[Unit of measurement codes](CodeSystem-unit-of-measurement-cs.html) add nine Pharmaceutical Committee registry units, mapped to UCUM in the [unit of measurement map](ConceptMap-unit-of-measurement-cm.html).
+
+[UZ Core BiologicallyDerivedProductDispense](StructureDefinition-uz-core-biologicallyderivedproductdispense.html) records the issue of a biologically derived product to a patient's care team: the [dispense number](NamingSystem-uzb-bdp-dispense-number.html), order, recipient, product, practitioners and handover time. Its HL7 status, match status, origin relationship and performer function codes have Uzbek and Russian translations, and minimal, issued and returned examples show it.
+
+[UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) is a plan of care for a patient over time, such as nursing patronage visits, a course of treatment or a sick leave case. It groups the requests for planned activities and links the events that record performed ones, as in the [newborn patronage plan](CarePlan-example-newborn-patronage-careplan.html) and [massage course](CarePlan-example-massage-careplan.html) examples.
+
+[UZ Core ChargeItem](StructureDefinition-uz-core-chargeitem.html) records a billable service, product or medication with its quantity and price, and links it to the event that provided it, such as a [MedicationDispense](StructureDefinition-uz-core-medication-dispense.html), procedure or laboratory test. It is identified by a new [ChargeItem identifier](NamingSystem-uzb-charge-item-identifier.html), and its status and code have Uzbek and Russian translations.
+
+[UZ Core Device](StructureDefinition-uz-core-device.html) describes a physical medical device, such as a CT scanner or an intrauterine device: its SNOMED CT type, category, manufacturer, model, serial and lot numbers, status, and the organization and location it belongs to. HL7 device codes and SNOMED CT contraceptive device types have Uzbek and Russian translations.
+
+[UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) orders a device for a patient, by reference to a [UZ Core Device](StructureDefinition-uz-core-device.html) or by kind, with quantity, characteristics such as size, requester, performer, timing and reason, as in the [copper IUD](DeviceRequest-example-devicerequest-iud.html) and [wheelchair](DeviceRequest-example-devicerequest-wheelchair.html) orders. CarePlan activities can reference it.
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) records that a patient uses, used or will use a device, such as a wheelchair or an implanted port, as a SNOMED CT concept or a reference to a [UZ Core Device](StructureDefinition-uz-core-device.html), with who reported it, when, the setting, how regularly it is used and why.
+
+[UZ Core Flag](StructureDefinition-uz-core-flag.html) records a warning about a patient, first for blood donor eligibility and temporary or permanent medical deferral from donation, coded in a local code system: a temporary deferral ends at `period.end`, a permanent one has none. The new [Flag code](SearchParameter-uz-core-flag-code.html) search parameter finds a patient's active deferrals.
+
+[UZ Core InventoryReport](StructureDefinition-uz-core-inventoryreport.html) reports a stock count at a location: the count type, each item's quantity and unit, and whether stock was added or removed and why, coded with the new [Inventory operation type](CodeSystem-inventory-operation-type-cs.html) and [Inventory operation reason](CodeSystem-inventory-operation-reason-cs.html), such as a scheduled count or a transfer.
+
+[UZ Core MedicationKnowledge](StructureDefinition-uz-core-medicationknowledge.html) holds the approved prices of a [UZ Core Medication](StructureDefinition-uz-core-medication.html) - price ceiling, wholesale, retail and [SHIF](https://ig.shif.uz/build/core/en/index.html) price - each with its period, typed by the new [MedicationKnowledge cost type](CodeSystem-medicationknowledge-cost-type-cs.html) code system. The [associated medication](SearchParameter-uz-core-medicationknowledge-associated-medication.html) search parameter finds the prices of a Medication, also by registration number or GTIN.
+
+[UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) records where items were dispatched from, such as the sending warehouse, in the new [Deliver from](StructureDefinition-supplydelivery-deliver-from.html) extension, as in the [warehouse transfer example](SupplyDelivery-example-warehouse-transfer-supply-delivery.html). The profile page has a narrative intro and a Quick Start.
+
+[UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) adds a [group identifier](StructureDefinition-supplyrequest-group-identifier.html) extension, pre-adopted from the HL7 Orders and Observations incubator, so the supplier handles requests placed together as one order. The [group identifier search parameter](SearchParameter-uz-core-supplyrequest-group-identifier.html) finds all requests in a group.
+
+[Uzbekistan national medical services classifier (TXMK)](CodeSystem-txmk-cs.html) holds 10,699 medical services in 29 groups, with Uzbek, Russian and English names, and value sets for [service categories](ValueSet-txmk-service-categories-vs.html), [service names](ValueSet-txmk-service-names-vs.html) and [diagnostic imaging services](ValueSet-txmk-radiology-vs.html). Procedure, ActivityDefinition and ServiceRequest codes now include the imaging services, as in the [brain CT order](ServiceRequest-example-servicerequest-txmk-brain-ct.html).
+
+#### Changed
+
+[Allergen codes](ValueSet-allergen-codes-vs.html) now include [INN medicine names](CodeSystem-inn-medication-name-cs.html), so a drug allergy can name the active substance, as the [analgesic allergy example](AllergyIntolerance-example-analgesic-allergy.html) now does for paracetamol.
+
+ConceptMap fixes found by IG Publisher 3.0.1 checks: 24 positions in the [DMED position map](ConceptMap-dmed-position-to-dhp-position-cm.html) move, including two nurse positions off physician codes. The [laboratory code map](ConceptMap-lab-pan-codes-to-loinc.html) corrects urine microscopy, plateletcrit, syphilis and spermatozoa codes, and the manual differential, ESR and Ureaplasma IgG are no longer equivalent. The [allergy substance map](ConceptMap-substance-to-snomed.html) maps hazelnut and walnut components to the food and corrects the wasp codes.
+
+Each language's JSON copy of a resource now keeps the other languages as `translation` extensions, as the package does; before, they were removed.
+
+Examples no longer set a display on HL7 codes where it differed from the HL7 display or was in Uzbek or Russian, such as the Organization identifier type and Patient marital status. The [health card number](NamingSystem-patient-id-uzb-health-card.html) and [pension number](NamingSystem-patient-id-uzb-pension-number.html) naming systems now use the HL7 displays.
+
+[How resources relate](workflows.html#how-resources-relate) now covers CarePlan, Flag and AllergyIntolerance, shows `encounter` as optional, and says a Provenance signs the document Bundle.
+
+ICCC-3 and WHO ICHI now require a code system version when their codes are exchanged, reflecting their version-dependent classification hierarchies.
+
+[Inventory status](CodeSystem-inventoryitem-inventory-status-cs.html) now gives `in-fractionation` the Russian name «На фракционировании» instead of «В фракционировании».
+
+[Laboratory method map](ConceptMap-lab-methods-to-loinc.html) maps mass spectrometry to SNOMED CT `1306402001` instead of a LOINC part, and fixes the sequencing and rapid immunoassay rows, which pointed at the neighbouring row's code.
+
+[MedicationRequest status translations](CodeSystem-medicationrequest-status-cs.html) now give `ended` the Russian name «Окончено» instead of «Завершено», which duplicated `completed`.
+
+Patient, Practitioner and RelatedPerson examples and the [identifier systems](identifiers.html) page now use made-up PINFLs that cannot belong to a real person, and the specialist certificate examples a made-up number and dates.
+
+References in UZ Core profiles now target UZ Core profiles: every Device reference targets [UZ Core Device](StructureDefinition-uz-core-device.html), `basedOn` in Observation, Immunization and Procedure targets [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html), and `Procedure.complication` targets [UZ Core Condition](StructureDefinition-uz-core-condition.html).
+
+The [allergy substance code system](CodeSystem-allergy-reaction-substance-cs.html) links each component allergen to its whole extract through `parent`, so is-a filters find components under their extract.
+
+The [FHIR types supplement](CodeSystem-fhir-types-cs.html) now gives each resource type an Uzbek and a Russian name, such as "Bemor" and "Пациент" for `Patient`, marked `preferredForLanguage`, instead of a translated definition.
+
+The [Procedure example](Procedure-example-procedure.html) now points at an [outpatient physiotherapy visit](Encounter-example-physiotherapy-encounter.html) and a [right foot pain](Condition-example-foot-pain.html) condition of its own patient, in place of another patient's.
+
+Titles and descriptions of code systems and value sets follow the [modelling guidelines](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.en.md) naming pattern: a supplement is `[Concept] translations`, a value set `[Concept]`. Canonical URLs, ids and codes are unchanged.
+
+[Unit of measurement codes](CodeSystem-unit-of-measurement-cs.html) rename `360` to LE (lipasemic unit), correct the names of `570` to millilitre per dose, and link 11 specific units to their generic unit through `parent`.
+
+[Unit of measurement map](ConceptMap-unit-of-measurement-cm.html) adds UCUM targets for 30 units that had none, such as `[iU]`, `mg/{dose}` and `[CFU]`, maps `270` to `U/mL` instead of `[arb'U]/mL`, and makes `275` broader than `[CCID_50]`.
+
+[UZ Core HealthcareService](StructureDefinition-uz-core-healthcareservice.html) adds Must Support slices for the TXMK service category and service. [Service categories](ValueSet-service-categories-vs.html), formerly cancer-related only, now include the laboratory categories.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) no longer requires an `identifier`: it needs one with a system and value, or a code (`uzcore-med-1`), so a medicine prescribed by INN can be sent with only its INN or ATC code, as in the [INN medication example](Medication-example-inn-medication.html).
+
+[UZ Core MedicationRequest](StructureDefinition-uz-core-medicationrequest.html) binds `statusReason` as extensible instead of required.
+
+[UZ Core Organization](StructureDefinition-uz-core-organization.html) and [UZ Core RelatedPerson](StructureDefinition-uz-core-relatedperson.html) no longer fix the identifier type display, which did not match HL7 and raised a terminology warning on every conforming instance: the slices fix only the system and code `XX` or `HC`.
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) accepts more than one birth certificate and no longer fixes its `use`, so a superseded certificate can be sent with `use = old` next to the current one with `use = official`.
+
+[UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) allows translations of the specialist certificate text in `qualification.code.text`.
+
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) makes `complication` Must Support and recommends [blood donation complication codes](ValueSet-procedure-complication-vs.html), such as fainting, when `code` is SNOMED CT `25179006` Whole blood unit collection, as in the [blood donation example](Procedure-example-blood-donation-procedure.html). When `code` is SNOMED CT `116859006` Transfusion of blood product, it recommends [blood transfusion complication codes](ValueSet-blood-transfusion-complication-vs.html), such as febrile or hemolytic reactions.
+
+#### Breaking changes
+
+The request and participant resource type supplements, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` and `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, are removed: they duplicated the [FHIR types supplement](CodeSystem-fhir-types-cs.html), which [Request resource types](ValueSet-request-resource-types-vs.html) and [Resource types](ValueSet-resource-type-vs.html) now use. Load `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs` instead.
+
+The `uzpharmBoxGroupID` identifier slice of [UZ Core Medication](StructureDefinition-uz-core-medication.html) now holds the Pharmaceutical Committee registry identifier of the registered product, not a box-level track-and-trace identifier. Senders that put box identifiers there must stop doing so.
+
+### Version 0.12.0
+
+#### Added
+
+Added [UZ Core MedicationAdministration](StructureDefinition-uz-core-medicationadministration.html) for a medication given to a patient, such as a dose on a ward. It points to the MedicationRequest it fulfils and records who gave the dose and how. A funding source extension records whether the stock came from a tender, humanitarian aid or another national financing source, which can differ from the patient's coverage.
+
+Added [UZ Core InventoryItem](StructureDefinition-uz-core-inventoryitem.html) for stock of an item such as a blood component, medication or device. Each item carries a national inventory status, such as quarantine, awaiting tests or available, and points to the product it holds, with the lot number, expiry date and storage location of each physical unit.
+
+Nursing visit purposes now include national codes for [population enumeration and home medication delivery](CodeSystem-nursing-visit-purpose-cs.html).
+
+Nursing visit requests are categorised as SNOMED CT `439708006` Home visit, and [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html) lists `440068009` for the newborn patronage on days 3, 15 and 30 and `410620009` for preventive child visits from 3 to 60 months. The Encounter of a home visit uses the encounter type `mserv-0001-00009` Patronaj with `Encounter.class` = `HH`.
+
+[Patient/$attach](OperationDefinition-patient-attach.html) attaches a patient to a polyclinic, a family doctor or both in one call, checking them against the master data registry. At type level it finds or creates the patient by PINFL, so it replaces the `$populate` + `$attach` pair.
+
+[Patient/$relate](OperationDefinition-patient-relate.html) records a parent-child relationship confirmed against the Ministry of Justice child registry. It finds or creates the child by PINFL and creates a RelatedPerson for the parent.
+
+[Patient/$detach](OperationDefinition-patient-detach.html) reverses `$attach`: it clears the polyclinic, the family doctor and the attachment date in one call, and requires a `reason`.
+
+[UZ Core Medication](StructureDefinition-uz-core-medication.html) now has a narrative intro and Quick Start, like the other profiles. It shows how to find an existing medication by a registry identifier or by INN or ATC code before registering a new one.
+
+#### Changed
+
+[UZ Core AllergyIntolerance](StructureDefinition-uz-core-allergy-intolerance.html) `reaction` can reference the MedicationAdministration that caused it, through the standard `openEHR-administration` extension. The analgesic allergy example links a skin rash to a paracetamol dose.
+
+In the [ServiceRequest categories](ValueSet-service-request-categories-vs.html), SNOMED CT `20135006` now has its official display "Screening procedure" instead of "Screening and home visits", and its Uzbek and Russian translations no longer mention home visits, which have their own category `439708006` "Home visit".
+
+[UZ Core Patient](StructureDefinition-uz-core-patient.html) and [UZ Core Practitioner](StructureDefinition-uz-core-practitioner.html) declare the `translation` extension on `name.text`, `family`, `given` and `suffix`: the name is in Uzbek, and its Russian and Karakalpak forms travel in one `HumanName` instead of a second name. The [Nodira](Patient-example-nodira.html) and [practitioner](Practitioner-example-practitioner.html) examples carry Russian forms, and both profile pages describe the pattern.
+
+The [action code supplement](CodeSystem-action-code-cs.html) gives Uzbek and Russian designations to `order-service`, which the [regional screening PlanDefinition example](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) uses.
+
+#### Breaking changes
+
+The [specialist certificate](NamingSystem-uzb-specialist-certificate.html) identifier system has moved from the document namespace to the healthcare professional namespace, since a certificate identifies a qualification of a professional rather than a document: `https://dhp.uz/fhir/core/sid/doc/uz/specialist-certificate` is now `https://dhp.uz/fhir/core/sid/pro/uz/specialist-certificate`. Senders of `Practitioner.qualification.identifier` switch to the new system; the value format (series followed by number, e.g. `CA123456`) is unchanged.
+
+### Version 0.11.1
+
+#### Added
+
+[Screening and home visit program types](ValueSet-screening-program-type-vs.html) lists the values of a screening program identifier: eight SNOMED CT screening concepts and the national [screening and home visit codes](CodeSystem-screening-code-cs.html). It brings back `mserv-0007-00007` and `mserv-0007-00009`, removed in 0.11.0, as the DMED breast and cervical cancer screening programs, so they stay distinct from the HPV screening programs `268547008` and `171149006`. The screening service itself is still coded in SNOMED CT.
+
+[Diagnosis types](CodeSystem-diagnosis-type-cs.html) add `gencl-0001-00013` "Diagnosis of a combined disease" (сочетанное заболевание), with Uzbek and Russian designations, so screening applications can send every diagnosis type their forms offer.
+
+The [body site supplement](CodeSystem-body-site-cs.html) gives Uzbek and Russian designations to 1,001 SNOMED CT body structures instead of 4, and a new [laboratory method supplement](CodeSystem-lab-methods-sct-cs.html) gives them to 1,865 SNOMED CT methods.
+
+#### Changed
+
+Value sets on repeating coded elements now apply through an open slice instead of to the whole element, so codes from other systems can sit beside the national ones; the element keeps the national value set as a preferred binding. This covers AllergyIntolerance `reaction.manifestation`; AuditEvent `agent.role`, `agent.authorization` and `entity.securityLabel`; Composition `category`; Consent `regulatoryBasis` and `provision.action`; DiagnosticReport `category`; Encounter `class`; EpisodeOfCare `reason.value` and `diagnosis.condition`; Immunization `protocolApplied.targetDisease`; ImmunizationRecommendation `recommendation.vaccineCode`; Observation `category`; ObservationDefinition `permittedUnit`; Procedure `bodySite`; RelatedPerson `relationship`; and ServiceRequest `reason`. [UZ Core Observation](StructureDefinition-uz-core-observation.html) `interpretation` is bound extensible instead of required, as in base FHIR. Existing resources remain valid.
+
+Four value sets that kept only part of the base FHIR value set they replace now include all of it. [Encounter status](ValueSet-encounter-status-vs.html) adds `on-hold`, `discharged` and `discontinued`; [request resource types](ValueSet-request-resource-types-vs.html), used by ActivityDefinition `kind`, lists all 17 request resource types instead of only ImmunizationRecommendation and MedicationRequest; [consent purpose of use](ValueSet-consent-purpose-of-use-vs.html) includes every purpose of use instead of only `RECORDMGT`, and Consent `provision.purpose` binds it extensible instead of required, as in base FHIR; and [condition participation roles](ValueSet-condition-participation-role-vs.html) adds `transmitter`. The new encounter statuses and resource types have Uzbek and Russian designations.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) `bodySite` binds [body sites](ValueSet-body-site-vs.html), every SNOMED CT body structure, instead of the base FHIR body site value set, which it contains. [Laboratory methods](ValueSet-lab-method-vs.html), bound to `method`, add the SNOMED CT techniques, actions and evaluation procedures of the base FHIR observation methods to the national codes. Existing resources remain valid.
+
+#### Documentation
+
+[UZ Core ActivityDefinition](StructureDefinition-uz-core-activitydefinition.html) describes a screening invitation template: `kind` is `ServiceRequest`, `intent` is `plan`, and `profile` names UZ Core ServiceRequest. The screening examples and the application contract are in the integration guide.
+
+### Version 0.11.0
+
+#### Added
+
+Added [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) for a unit of blood or a blood component in [Blood Management](components.html#blood-management). A unit carries the [unit number](NamingSystem-uzb-blood-unit-number.html) its blood service assigned and, in `biologicalSourceEvent`, the [number of the donation](NamingSystem-uzb-blood-donation-number.html) it came from, which every component processed from that donation keeps. A processed or pooled component references its source units in `parent`, and `property` slices record the ABO group, RhD type, volume and hematocrit. It comes with SNOMED CT [blood product type](ValueSet-blood-product-type-snomed-vs.html), [blood group](ValueSet-blood-group-vs.html) and [RhD type](ValueSet-blood-rh-vs.html) value sets and [product category](ValueSet-product-category-vs.html) and [product status](ValueSet-product-status-vs.html) value sets, all with Uzbek and Russian designations.
+
+Added [UZ Core SupplyRequest](StructureDefinition-uz-core-supply-request.html) for a request for supplies, such as a hospital ordering blood components from the blood service. It carries the hospital's [request number](NamingSystem-uzb-supply-request-number.html) and the [supply agreement number](NamingSystem-uzb-supply-contract-number.html) as identifiers, and a national [request type](ValueSet-request-type-vs.html) in `category`: stock replenishment, named (for a patient) or between institutions. `item` is bound (extensible) to the blood product types, `parameter` slices carry the blood group and RhD type the components must have, and `deliverFor` names the patient a named request is for. Its [status](ValueSet-supply-request-status-vs.html) value set has Uzbek and Russian designations.
+
+Added [UZ Core SupplyDelivery](StructureDefinition-uz-core-supply-delivery.html) for a delivery made against a SupplyRequest, such as the blood service issuing a blood component to a hospital. It records the supplier's [delivery number](NamingSystem-uzb-supply-delivery-number.html), the supplier, receiver and destination, and the item delivered, which can reference a UZ Core BiologicallyDerivedProduct. Its [status](ValueSet-supply-delivery-status-vs.html) and [type](ValueSet-supply-delivery-type-vs.html) value sets have Uzbek and Russian designations.
+
+A [SNOMED CT supplement for screening and home visits](CodeSystem-screening-sct-cs.html) gives Uzbek and Russian designations to the 15 SNOMED CT concepts that now code screening and patronage services in [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), which lists them by name.
+
+[ServiceRequest categories](ValueSet-service-request-categories-vs.html) include SNOMED CT `310422005` "Prevention/screening invitation", with Uzbek and Russian designations in the [category supplement](CodeSystem-sr-sct-category-cs.html). A screening program's invitation or plan ServiceRequest carries it in `category`, so a dedicated invitation code in `code` is not needed.
+
+#### Changed
+
+[UZ Core ServiceRequest](StructureDefinition-uz-core-servicerequest.html) `supportingInfo` can reference any resource, rather than only another ServiceRequest. `category` is now sliced: at most one category comes from [ServiceRequestCategoriesVS](ValueSet-service-request-categories-vs.html), with a required binding, and any other categories can sit alongside it from any code system.
+
+[UZ Core Observation](StructureDefinition-uz-core-observation.html) allows more than one `basedOn` (0..* instead of 0..1), so an observation can point to both the order it answers and the plan that order belongs to. For example, a screening result can reference its referral and the screening program's plan ServiceRequest. Existing observations remain valid.
+
+`suspectEntity.instance` on [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) now references [UZ Core BiologicallyDerivedProduct](StructureDefinition-uz-core-biologically-derived-product.html) rather than any BiologicallyDerivedProduct.
+
+#### Breaking changes
+
+16 of the 20 [screening and home visit codes](CodeSystem-screening-code-cs.html) have been removed in favour of SNOMED CT. [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html) already accepted these SNOMED CT concepts through its procedure filter. Four codes stay because SNOMED CT has no suitable concept for them: `mserv-0007-00003` (cerebrovascular disease questionnaire), `mserv-0007-00011` (vaccination invitation), `mserv-0007-00012` (post-vaccination patronage) and `mserv-0007-00017` (patronage of women of reproductive age). Senders of a removed code switch to its SNOMED CT concept:
+
+| Removed code | Service | SNOMED CT |
+|---|---|---|
+| `mserv-0007-00001` | Ischemic heart disease pre-test probability questionnaire | `171223006` Ischemic heart disease screening |
+| `mserv-0007-00002` | Fertility questionnaire | `408961002` Fertility care assessment |
+| `mserv-0007-00004` | Helminthic disease questionnaire | `171147008` Screening for intestinal helminthiasis |
+| `mserv-0007-00005` | Cardiovascular disease risk questionnaire | `300007000` Screening for cardiovascular system disease |
+| `mserv-0007-00006` | Diabetes questionnaire | `171183004` Diabetes mellitus screening |
+| `mserv-0007-00007` | Breast cancer questionnaire | `268547008` Screening for malignant neoplasm of breast |
+| `mserv-0007-00008` | Oncohematological disease questionnaire | `762445000` Screening for hematological disorder |
+| `mserv-0007-00009` | Cervical cancer screening | `171149006` Screening for malignant neoplasm of cervix |
+| `mserv-0007-00010` | Chronic diseases | `170549007` Chronic disease monitoring |
+| `mserv-0007-00013` | Home-based inpatient care | `60689008` Home care of patient |
+| `mserv-0007-00014` | Preventive medical examination | `103740001` Periodic physical examination |
+| `mserv-0007-00015` | Pregnant women (12-31 weeks) | `424525001` Antenatal care |
+| `mserv-0007-00016` | Postpartum follow-up (3-15-30 days) | `133906008` Postpartum care |
+| `mserv-0007-00018` | Children (3-15-30 days) | `408987002` Newborn care assessment |
+| `mserv-0007-00019` | Children (3-60 months) | `409027005` Infant care assessment |
+| `mserv-0007-00020` | Breast cancer screening | `268547008` Screening for malignant neoplasm of breast |
+
+The breast cancer questionnaire and breast cancer screening codes both map to `268547008`. The week, day and month ranges in the old names are not part of the SNOMED CT concepts.
+
+#### Documentation
+
+The [identifiers](identifiers.html) page adds a `prd` namespace for product identifiers, such as blood unit numbers, for numbers that no external registry already publishes a system for.
+
+The [FHIR basics](fhir-basics.html) page no longer says applications must exchange local codes only. DHP uses a code from an international standard such as ICD-10, SNOMED CT or LOINC wherever one fits, and defines a local code only for a concept no standard covers, with ConceptMaps from those local codes to international terminologies.
+
+A new [translation information](translationinfo.html) page explains that the Russian and Uzbek versions are machine translations that editors are reviewing, that the English text takes precedence where they differ, and how to report a translation problem.
+
+### Version 0.10.0
+
+#### Added
+
+Added [ICHI](CodeSystem-who-ichi.html) in full - the WHO International Classification of Health Interventions, 21,747 concepts from the 2026-09-17 tabulation - under its own WHO canonical `http://id.who.int/icd/release/11/ichi`, with an [ICHI Codes](ValueSet-ichi-vs.html) value set.
+
+677 of those concepts are marked `inactive` with `status` of `retired`. They are codes DMED still carries that WHO has withdrawn, kept so records already in DMED stay valid; `ichi-vs` leaves them out: they should not be used for new records.
+
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) now states where a schedule applies, through a `jurisdiction` use context slice bound (required) to a new [Uzbekistan Jurisdictions value set](ValueSet-jurisdiction-vs.html). A national schedule carries one entry with the country code `UZ`; a regional one carries an entry per region, using the same region codes as `Address.state`, so a patient's region can be matched against the schedules that apply to them.
+
+At the Ministry of Health's request, the [immunization status reason value set](ValueSet-immunization-status-reason-vs.html) has grown from 4 to 8 codes, adding `PHILISOP` (philosophical objection), `RELIG` (religious objection), `VACEFF` (vaccine efficacy concerns) and `VACSAF` (vaccine safety concerns), so a vaccination that did not happen can say why beyond a patient objection. Their Uzbek and Russian designations are in the [act reason supplement](CodeSystem-actreason-cs.html).
+
+Added `organizational-specialization-cs#176.0` for adult geriatrics, `coverage-type-cs#covtp-0001-00014` for the Vaqf charitable fund, `admit-source-local-cs#mserv-0006-00007` for a polyclinic referral, and `benefits-cs#regis0004.00024` for people with haematological diseases, an entitlement to state-funded high-tech specialized care under Presidential Decree UP-88 - gaps found auditing Form 066 against the live DMED system. The [encounter priority value set](ValueSet-encounter-priority-vs.html) now also includes `UR` (urgent) and `EL` (elective), and the [Provenance Participation Role Type value set](ValueSet-provenance-participation-role-type-vs.html) includes `attester`.
+
+#### Changed
+
+[Procedure Codes](ValueSet-procedure-code-vs.html) now includes ICHI alongside SNOMED CT, because DMED codes an operation in ICHI only, so `Procedure.code` can carry the statistical code a procedure is reported under as well as its clinical meaning - both as two codings on the same element where a procedure is recorded and reported. The binding is now extensible rather than required, so a guide can narrow `Procedure.code` to a national subset that includes codes WHO has withdrawn.
+
+The ICHI canonical drops `beta`: the [ICHI NamingSystem](NamingSystem-who-ichi.html) moved from `http://id.who.int/icd/release/11/beta/ichi` to `http://id.who.int/icd/release/11/ichi`. The NamingSystem published the `beta` URI in 0.9.0 and 0.9.2, so anything that took the ICHI system URI from there has to move.
+
+The example SNOMED CT to ICHI ConceptMap, published since 0.9.0, has been removed. WHO licenses ICHI under CC BY-ND 3.0 IGO, which makes a map or crosswalk between ICHI and another terminology subject to a separate written agreement with WHO; the guide cannot publish one until that agreement is in place.
+
+`target` on [UZ Core Provenance](StructureDefinition-uz-core-provenance.html) now also accepts `Bundle`, since signing a whole FHIR document (as Form 066 does) previously had no valid target type.
+
+#### Documentation
+
+[UZ Core PlanDefinition](StructureDefinition-uz-core-plan-definition.html) has a National or regional section showing both shapes of the jurisdiction use context.
+
+[UZ Core Procedure](StructureDefinition-uz-core-procedure.html) now names both code systems its `code` accepts, and says to carry SNOMED CT and ICHI as two codings where a procedure is reported as well as recorded.
+
+### Version 0.9.2
+
+#### Changed
+
+The package is now built as a publication build. Since 0.2.0 its `package.json` carried `notForPublication` and a `file://` url, so [packages2.fhir.org](https://packages2.fhir.org/packages/uz.dhp.core) rejected every version from 0.6.0 on, and guides depending on UZ Core linked to its artifacts through `file://` paths. The package now declares `https://dhp.uz/fhir/core`. Content is unchanged from 0.9.1.
+
+### Version 0.9.1
+
+#### Changed
+
+[ICD-O-3.2](CodeSystem-icd-o-3.html) declared its version as `3.2`; it now declares `3.2.0`, which is the release identifier validators expect. Codings that pin the version have to move from `http://terminology.hl7.org/CodeSystem/icd-o-3|3.2` to `|3.2.0`.
 
 ### Version 0.9.0
 
@@ -190,7 +473,7 @@ Added [UZ Core AdverseEvent](StructureDefinition-uz-core-adverse-event.html) pro
 
 Added [UZ Core Medication](StructureDefinition-uz-core-medication.html) profile with Uzbekistan-specific medication identifiers (marking ID, registration certificate, GTIN, box aggregation ID, national product/service classification code) and ATC-based [classification](ValueSet-medication-classification-vs.html) and [dose form](ValueSet-medication-doseform-vs.html) terminology.
 
-Added [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) profile, with [procedure status](ValueSet-procedure-event-status-vs.html), SNOMED CT-based [procedure codes](ValueSet-procedure-code-vs.html) and [outcome](ValueSet-procedure-outcome-vs.html) terminology, plus an example [SNOMED CT to ICHI](ConceptMap-snomed-to-ichi-procedures.html) ConceptMap for reimbursement reporting.
+Added [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) profile, with [procedure status](ValueSet-procedure-event-status-vs.html), SNOMED CT-based [procedure codes](ValueSet-procedure-code-vs.html) and [outcome](ValueSet-procedure-outcome-vs.html) terminology, plus an example SNOMED CT to ICHI ConceptMap for reimbursement reporting.
 
 Added [laboratory method codes](CodeSystem-lab-methods-cs.html), with ConceptMaps mapping the laboratory [panel and analyte codes](ConceptMap-lab-pan-codes-to-loinc.html) to LOINC and [method codes](ConceptMap-lab-methods-to-loinc.html) to SNOMED CT. The method codes are surfaced as the [laboratory methods value set](ValueSet-lab-method-vs.html), bound to `method` on [UZ Core Observation](StructureDefinition-uz-core-observation.html).
 

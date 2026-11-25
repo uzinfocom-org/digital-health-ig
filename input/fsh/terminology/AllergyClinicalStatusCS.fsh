@@ -1,7 +1,7 @@
 CodeSystem: AllergyClinicalStatusCS
 Id: allergy-clinical-status-cs
-Title: "Allergy clinical status"
-Description: "Allergy clinical status supplement with translations in uzbek and russian"
+Title: "Allergy clinical status translations"
+Description: "Allergy clinical status supplement with translations in Uzbek and Russian"
 * insert SupplementCodeSystemDraft(allergy-clinical-status-cs, $allergy-clinical, 1.0.1)
 
 * #active
