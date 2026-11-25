@@ -8,23 +8,36 @@ Actors: the referring clinician; approval commissions (for state-funded referral
 
 ### 1. Create the referral
 
-The clinician creates a `ServiceRequest` (`intent = order`) carrying the referral classification: the service requested in `code`, urgency in `priority` (`routine` \| `urgent` \| `stat`), the target service via `HealthcareService`, the clinical justification in `reason`, and the financing type in the [PaymentType](StructureDefinition-payment-type.html) extension (`Free` \| `Paid` \| `Insurance` \| `State-funded`).
+The clinician creates a `ServiceRequest` (`intent = order`) carrying the referral classification: the service requested in `code`, urgency in `priority` (`routine` \| `urgent` \| `asap` \| `stat`), the target [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) in `performer`, the clinical justification in `reason`, and the financing type in the [PaymentType](StructureDefinition-payment-type.html) extension, coded from the [payment types](CodeSystem-payment-type-cs.html) (`paytype-0001-0001` Free \| `paytype-0001-0002` Paid \| `paytype-0001-0003` Insurance \| `paytype-0001-0004` State tariff \| `paytype-0001-0005` Other).
 
 ```
 POST [base]/ServiceRequest
-{ "resourceType": "ServiceRequest", "status": "active", "intent": "order",
-  "priority": "routine",
-  "code": { "coding": [{ "system": "http://snomed.info/sct", "code": "..." }] },
+{ "resourceType": "ServiceRequest",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest"] },
+  "language": "uz",
+  "extension": [{ "url": "https://dhp.uz/fhir/core/StructureDefinition/payment-type",
+    "valueCodeableConcept": { "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/payment-type-cs",
+      "code": "paytype-0001-0004", "display": "Davlat tarifi" }] } }],
+  "status": "active", "intent": "order", "priority": "routine",
+  "code": { "concept": { "coding": [{ "system": "http://snomed.info/sct", "code": "306206005", "display": "Referral to service" }] } },
   "subject": { "reference": "Patient/[id]" },
   "requester": { "reference": "PractitionerRole/[id]" },
+  "performer": [{ "reference": "HealthcareService/[id]" }],
   "reason": [{ "reference": { "reference": "Condition/[id]" } }] }
+```
+
+`code` is a `CodeableReference`, so the coding sits under `concept`. It takes a service from [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html). Radiology and nuclear medicine services are coded with the national [TXMK classifier](CodeSystem-txmk-cs.html), for example `5204488` Computed tomography of brain:
+
+```
+"code": { "concept": { "coding": [{ "system": "https://terminology.dhp.uz/fhir/core/CodeSystem/txmk-cs",
+  "code": "5204488", "display": "Bosh miyaning kompyuter tomografiyasi" }] } }
 ```
 
 ### 2. The approval chain (state-funded only)
 
 This is the central decision rule:
 
-> If the ServiceRequest's PaymentType is `State-funded`, the platform creates a chain of approval `Task`s; otherwise no Task is created and the referral proceeds directly.
+> If the ServiceRequest's PaymentType is `paytype-0001-0004` State tariff, the platform creates a chain of approval `Task`s; otherwise no Task is created and the referral proceeds directly.
 
 Each approval stage is a `Task` referencing the ServiceRequest (`Task.focus`/`basedOn`) with a `Task.code` from the approval category set:
 
@@ -34,6 +47,8 @@ A Task carries two status axes: the FHIR `Task.status` (the lifecycle: `requeste
 
 > Tasks have no user-facing UI. Managers act on process events; they never close a Task directly. This prevents a stage being marked done without the underlying work.
 
+Referrals exchanged through the Orders integration use its own ServiceRequest and approval Task profiles, which add the referral purpose, specialty, treatment basis and further business statuses: see [Orders](https://dhp.uz/fhir/integrations/en/orders.html) in the DHP Integrations IG.
+
 ### 3. Synchronisation rules
 
 The ServiceRequest and its Tasks stay consistent by these rules:
@@ -41,10 +56,10 @@ The ServiceRequest and its Tasks stay consistent by these rules:
 | Event | Effect |
 |-------|--------|
 | ServiceRequest becomes `active` (state-funded) | first approval Task created with `status=requested` |
-| ServiceRequest set `revoked` | all open Tasks set `revoked` |
+| ServiceRequest set `revoked` | all open Tasks set `cancelled` |
 | ServiceRequest set `entered-in-error` | all Tasks set `entered-in-error` |
 | Final approval Task `completed` | ServiceRequest set `completed` |
-| A commission Task `failed`/rejected | ServiceRequest set `revoked` |
+| A commission Task `failed`/`rejected` | ServiceRequest set `revoked` |
 | Returned for revision | Task &rarr; `on-hold` / `in-review`; ServiceRequest &rarr; `on-hold`, then back to `active` with a new approval Task |
 | SLA breach | only `Task.businessStatus = overdue` - the ServiceRequest status does not change |
 
@@ -54,10 +69,10 @@ The user-facing label is derived from the Task state - e.g. `businessStatus=over
 
 ### 4. Fulfilment
 
-When the service is delivered, the performing facility records the result against the referral: a [Procedure](StructureDefinition-uz-core-procedure.html) and/or [Observation](StructureDefinition-uz-core-observation.html) (and an [Encounter](StructureDefinition-uz-core-encounter.html) for the visit), each linking back to the ServiceRequest via `basedOn`. Imaging results use `ImagingStudy`/`DocumentReference`; a narrative conclusion uses `DiagnosticReport`. On completion the final Task is `completed` and the ServiceRequest is `completed`.
+When the service is delivered, the performing facility records the result against the referral: a [Procedure](StructureDefinition-uz-core-procedure.html) and/or [Observation](StructureDefinition-uz-core-observation.html) (and an [Encounter](StructureDefinition-uz-core-encounter.html) for the visit), each linking back to the ServiceRequest via `basedOn`. Imaging results use `ImagingStudy`; a narrative conclusion uses a [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html). On completion the final Task is `completed` and the ServiceRequest is `completed`.
 
 ```
-GET [base]/Task?based-on=ServiceRequest/[id]&_sort=-modified
+GET [base]/Task?based-on=ServiceRequest/[id]
 GET [base]/ServiceRequest?patient=Patient/[id]&status=active
 GET [base]/Procedure?based-on=ServiceRequest/[id]
 ```

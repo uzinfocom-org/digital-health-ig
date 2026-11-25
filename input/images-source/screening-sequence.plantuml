@@ -1,0 +1,37 @@
+@startuml screening-sequence
+title Screening program to follow-up
+autonumber
+
+actor "Program\nmanager" as PM
+participant "DHP" as DHP
+participant "Clinic MIS" as MIS
+actor "Clinician" as Clin
+
+PM -> DHP : publish [[StructureDefinition-uz-core-plan-definition.html PlanDefinition]]\n(focus = 360156006 Screening intent;\nprogram identifier; target [[StructureDefinition-uz-core-group.html Group]])
+
+opt national invitation
+  DHP -> DHP : create [[StructureDefinition-uz-core-servicerequest.html ServiceRequest]] plan\n(intent = plan, status = draft,\ninstantiatesCanonical = PlanDefinition)
+end
+
+MIS -> DHP : Patient $screening-evaluate
+DHP --> MIS : screening eligibility\n(parameters to be documented)
+
+MIS -> DHP : GET ServiceRequest?intent=plan\n&category=310422005&identifier=[program]
+alt one open plan
+  MIS -> DHP : PUT ServiceRequest (draft -> active)
+else no open plan
+  MIS -> DHP : POST ServiceRequest (intent = plan, status = active)
+end
+
+Clin -> MIS : screening visit
+MIS -> DHP : POST [[StructureDefinition-uz-core-encounter.html Encounter]]
+MIS -> DHP : POST [[StructureDefinition-uz-core-questionnaire-response.html QuestionnaireResponse]]\n(basedOn -> plan)
+MIS -> DHP : POST [[StructureDefinition-uz-core-observation.html Observation]] / [[StructureDefinition-uz-core-diagnostic-report.html DiagnosticReport]]\n(basedOn -> order + plan)
+
+opt positive finding
+  Clin -> MIS : diagnosis, follow-up order
+  MIS -> DHP : POST ServiceRequest\n(intent = order; basedOn -> plan;\nreason -> Observation)
+end
+
+MIS -> DHP : PUT plan ServiceRequest\n(status per program rule)
+@enduml

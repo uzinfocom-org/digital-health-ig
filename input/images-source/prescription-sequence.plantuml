@@ -7,11 +7,13 @@ participant "DHP\nFHIR server" as DHP
 actor "Pharmacist" as Pharm
 participant "SHIF" as SHIF
 
-Doc -> DHP : POST [[StructureDefinition-uz-core-medicationrequest.html MedicationRequest]]\n(subject -> [[StructureDefinition-uz-core-patient.html Patient]], reason -> [[StructureDefinition-uz-core-condition.html Condition]])
+Doc -> DHP : GET [[StructureDefinition-uz-core-medication.html Medication]]?code=INN\n(find, or create, the Medication\nfor the INN code)
+Doc -> DHP : POST [[StructureDefinition-uz-core-medicationrequest.html MedicationRequest]]\n(medication -> Medication, subject -> [[StructureDefinition-uz-core-patient.html Patient]], reason -> [[StructureDefinition-uz-core-condition.html Condition]])
 note over Doc : prescription printed with a QR code
 
 Pharm -> DHP : scan QR -> GET MedicationRequest
-Pharm -> DHP : POST [[StructureDefinition-uz-core-medication-dispense.html MedicationDispense]]\n(authorizingPrescription -> MedicationRequest)
+Pharm -> DHP : GET Medication?identifier=registrationNumber|...\n(the registered product handed over)
+Pharm -> DHP : POST [[StructureDefinition-uz-core-medication-dispense.html MedicationDispense]]\n(authorizingPrescription -> MedicationRequest,\nmedication -> registered Medication)
 
 DHP -> SHIF : MedicationRequest + MedicationDispense\n(async, for reimbursement)
 note over SHIF : SHIF adjudicates and pays\nin its own system

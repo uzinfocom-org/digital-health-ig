@@ -1,0 +1,41 @@
+@startuml patient-registration-sequence
+title Patient registration and attachment
+autonumber
+
+actor "MIS\n(registration)" as MIS
+participant "DHP" as DHP
+participant "State\nregistries" as Reg
+
+MIS -> DHP : POST [[OperationDefinition-patient-populate.html Patient/$populate]]\n(system, code = NI, value = PINFL)
+activate DHP
+alt no Patient with this PINFL yet
+  DHP -> Reg : look up the citizen by PINFL
+  DHP -> DHP : create [[StructureDefinition-uz-core-patient.html Patient]]
+end
+DHP --> MIS : Patient (new or existing)
+deactivate DHP
+
+MIS -> DHP : GET Organization/[id]/[[OperationDefinition-organization-practitioners.html $practitioners]]
+MIS -> DHP : GET Practitioner/[id]/[[OperationDefinition-practitioner-specializations.html $specializations]]
+note over MIS : choose the polyclinic\nand the family doctor
+
+MIS -> DHP : POST Patient/[id]/[[OperationDefinition-patient-attach.html $attach]]\n(organization, practitioner, attachmentDate)
+activate DHP
+DHP -> DHP : check both in the master data registry
+DHP --> MIS : updated Patient\n(managingOrganization, generalPractitioner,\nattachment date)
+deactivate DHP
+
+opt relate a parent to a child
+  MIS -> DHP : POST Patient/[parent-id]/[[OperationDefinition-patient-relate.html $relate]]\n(childIdentifier = child's PINFL)
+  activate DHP
+  DHP -> Reg : confirm kinship\n(Ministry of Justice child registry)
+  DHP -> DHP : find or create the child Patient,\ncreate [[StructureDefinition-uz-core-relatedperson.html RelatedPerson]]
+  DHP --> MIS : Bundle (RelatedPerson, child Patient,\nOperationOutcome)
+  deactivate DHP
+end
+
+opt patient leaves the polyclinic
+  MIS -> DHP : POST Patient/[id]/[[OperationDefinition-patient-detach.html $detach]]\n(reason)
+  DHP --> MIS : Patient without attachment
+end
+@enduml

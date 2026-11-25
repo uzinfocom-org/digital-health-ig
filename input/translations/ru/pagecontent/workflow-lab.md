@@ -12,14 +12,14 @@
 
 ### 1. Назначение исследования
 
-Клиницист создаёт [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), указывая `intent = order`, исследование или панель в `code`, пациента в `subject`, инициатора запроса и `reasonCode`/`reasonReference` (состояние Condition, по поводу которого проводится исследование). Доступные для назначения исследования публикуются как записи [HealthcareService](StructureDefinition-uz-core-healthcareservice.html); в `priority` указывается `routine`, `urgent` или `asap`.
+Клиницист создаёт [ServiceRequest](StructureDefinition-uz-core-servicerequest.html), указывая `intent = order`, исследование или панель в `code`, пациента в `subject`, инициатора запроса и `reason` (код ICD-10 или SNOMED CT либо reference на состояние Condition, по поводу которого проводится исследование). Исследование берётся из набора [процедур и исследований ServiceRequest](ValueSet-service-request-code-vs.html), например тест LOINC или национальная лабораторная панель. Доступные для назначения исследования публикуются как записи [HealthcareService](StructureDefinition-uz-core-healthcareservice.html); в `priority` указывается `routine`, `urgent`, `asap` или `stat`.
 
 ```
 POST [base]/ServiceRequest
 { "resourceType": "ServiceRequest",
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest"] },
   "status": "active", "intent": "order",
-  "code": { "coding": [{ "system": "http://loinc.org", "code": "58410-2" }] },
+  "code": { "concept": { "coding": [{ "system": "http://loinc.org", "code": "58410-2", "display": "CBC panel - Blood by Automated count" }] } },
   "subject": { "reference": "Patient/[id]" },
   "requester": { "reference": "PractitionerRole/[id]" },
   "priority": "routine" }
@@ -46,7 +46,7 @@ POST [base]/Specimen
 
 ```
 GET [base]/DiagnosticReport?based-on=ServiceRequest/[id]&_include=DiagnosticReport:result
-GET [base]/Observation?patient=Patient/[id]&category=laboratory&_sort=-date
+GET [base]/Observation?patient=Patient/[id]&category=laboratory
 ```
 
 Весь набор рекомендуется возвращать в одном транзакционном Bundle, чтобы назначение, образец, ресурсы Observation и отчёт передавались атомарно. Завершённый и подписанный отчёт формируется как документный Bundle (`Composition` используется в качестве заголовка и содержит references на результаты, а подписание выполняется с помощью [Provenance](StructureDefinition-uz-core-provenance.html)) - `Composition` содержит references на ресурсы, а не дублирует их. См. [Общие рекомендации &rarr; Bundle](general-guidance.html#bundles-document-vs-transaction-vs-searchset).

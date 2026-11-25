@@ -12,14 +12,14 @@ The chain and its references:
 
 ### 1. Order the test
 
-The clinician creates a [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) with `intent = order`, the test or panel in `code`, the patient in `subject`, the requester, and a `reasonCode`/`reasonReference` (the Condition being investigated). The orderable tests are published as [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) entries; `priority` is `routine`, `urgent` or `asap`.
+The clinician creates a [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) with `intent = order`, the test or panel in `code`, the patient in `subject`, the requester, and a `reason` (an ICD-10 or SNOMED CT code, or a reference to the Condition being investigated). The test comes from [ServiceRequest procedures and investigations](ValueSet-service-request-code-vs.html), such as a LOINC orderable test or a national laboratory panel. The orderable tests are published as [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) entries; `priority` is `routine`, `urgent`, `asap` or `stat`.
 
 ```
 POST [base]/ServiceRequest
 { "resourceType": "ServiceRequest",
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest"] },
   "status": "active", "intent": "order",
-  "code": { "coding": [{ "system": "http://loinc.org", "code": "58410-2" }] },
+  "code": { "concept": { "coding": [{ "system": "http://loinc.org", "code": "58410-2", "display": "CBC panel - Blood by Automated count" }] } },
   "subject": { "reference": "Patient/[id]" },
   "requester": { "reference": "PractitionerRole/[id]" },
   "priority": "routine" }
@@ -46,7 +46,7 @@ Each analyte is an [Observation](StructureDefinition-uz-core-observation.html) w
 
 ```
 GET [base]/DiagnosticReport?based-on=ServiceRequest/[id]&_include=DiagnosticReport:result
-GET [base]/Observation?patient=Patient/[id]&category=laboratory&_sort=-date
+GET [base]/Observation?patient=Patient/[id]&category=laboratory
 ```
 
 The whole set is best returned as one transaction Bundle so the order, specimen, observations and report arrive atomically. A finalized, signed report is assembled as a document Bundle (`Composition` header referencing the results, signed via [Provenance](StructureDefinition-uz-core-provenance.html)) - the `Composition` references the resources rather than duplicating them. See [General guidance &rarr; Bundles](general-guidance.html#bundles-document-vs-transaction-vs-searchset).
