@@ -4,6 +4,8 @@
 
 [UZ Core Communication](StructureDefinition-uz-core-communication.html) bemorlar, tibbiyot xodimlari yoki tashkilotlarga yetkaziladigan ma'lumotni, masalan bemorlar Bemor portalida ko'radigan jamoat salomatligi ogohlantirishini qayd etadi: milliy ogohlantirishlar reglamenti bo'yicha hududning I-IV darajasi bilan xavfli hudud aholisiga ogohlantirish yoki menejerning tashkilot xodimlari guruhiga ogohlantirishi. Uning `category` si - HL7 [xabar toifasi](ValueSet-communication-category-vs.html) `alert`, o'zbekcha va ruscha nomlari [supplement](CodeSystem-communication-category-cs.html) da, ogohlantirish darajasi esa o'zbek, rus va ingliz tilidagi nomlari bilan yangi mahalliy [Alert level](CodeSystem-alert-level-cs.html) kod tizimidan olinadi.
 
+[UZ Core Device](StructureDefinition-uz-core-device.html) Farmatsevtika qo'mitasi reyestridagi ro'yxatdan o'tgan modelni, uning [buyum yozuvi identifikatori](NamingSystem-uz-pharm-device-item-id.html) va [buyum identifikatori](NamingSystem-uz-pharm-device-id.html) ni `type` slice'larida, [ro'yxatga olish guvohnomasi raqami](NamingSystem-registration-certificate-id.html) ni esa berilgan va amal qilish muddati tugaydigan sanalari bilan `identifier` slice'ida qabul qiladi. `identifier.use` va `identifier.type` ning o'zbekcha va ruscha nomlari bor.
+
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) o'zi bajaradigan [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) ga [Asos - buyum so'rovi](StructureDefinition-deviceusage-based-on.html) kengaytmasi orqali havola qiladi, masalan [mis BIV](DeviceUsage-example-deviceusage-iud.html) misolida.
 
 #### O'zgartirildi
@@ -18,15 +20,13 @@
 
 Qo'llanma sahifalari [DHP dasturchilar hujjatlari](https://docs.dhp.uz/uz/) uslubida bezatilgan: Onest va JetBrains Mono shriftlari, DHP yashil ranglari va logotipi, yangilangan sarlavha, menyu, jadvallar, eslatmalar va nusxa olish tugmasi bilan kod bloklari. Sarlavhadagi mavzu menyusi yorug', qorong'i yoki tizimdagidek mavzuni tanlaydi.
 
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` endi [UZ Core Device](StructureDefinition-uz-core-device.html) yoki [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga ham havola qilishi mumkin, inson ishtirokisiz hodisalar uchun, masalan, rejalashtirilgan vazifa yoki tizimning kirishi.
+
 [UZ Core Location](StructureDefinition-uz-core-location.html) endi hududlarni ham qamrab oladi, masalan jamoat salomatligi uchun xavfli hudud deb belgilangan mahalla.
 
 #### Buzuvchi o'zgarishlar
 
 [Ro'yxatga olish guvohnomasi raqami](NamingSystem-registration-certificate-id.html) va [UzPharm guruh qadog'i identifikatori](NamingSystem-uz-pharm-box-id.html) URI'lari `https://uzpharminfo.uz/registrationNumber` va `https://uzpharminfo.uz/boxGroupId` ga o'zgaradi — Farmatsevtika qo'mitasi reyestri yuklagichi allaqachon yuboradiganlari. Eski `registration_number` yoki `box_group_id` URI'li [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifikatori endi o'z slice'iga tushmaydi, identifikator bo'yicha qidiruv yangi URI'lardan foydalanishi kerak.
-
-#### O'zgartirildi
-
-[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` endi [UZ Core Device](StructureDefinition-uz-core-device.html) yoki [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga ham havola qilishi mumkin, inson ishtirokisiz hodisalar uchun, masalan, rejalashtirilgan vazifa yoki tizimning kirishi.
 
 ### Versiya 0.13.0
 
