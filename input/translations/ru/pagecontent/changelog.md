@@ -4,9 +4,13 @@
 
 [UZ Core Communication](StructureDefinition-uz-core-communication.html) фиксирует информацию, передаваемую пациентам, медицинским работникам или организациям, например оповещение в области общественного здравоохранения, которое пациенты видят в Портале пациента: оповещение жителей зоны риска с уровнем зоны I-IV по национальному регламенту оповещений или оповещение менеджера группе работников организации. Его `category` - [категория сообщения](ValueSet-communication-category-vs.html) HL7 `alert` с узбекскими и русскими названиями в [дополнении](CodeSystem-communication-category-cs.html), а уровень оповещения берётся из новой локальной системы кодов [Alert level](CodeSystem-alert-level-cs.html) с названиями на узбекском, русском и английском языках.
 
+[UZ Core Device](StructureDefinition-uz-core-device.html) принимает зарегистрированную модель из реестра Фармкомитета, её [ID записи изделия](NamingSystem-uz-pharm-device-item-id.html) и [ID изделия](NamingSystem-uz-pharm-device-id.html), в срезах `type`, а [номер регистрационного удостоверения](NamingSystem-registration-certificate-id.html) с датами выдачи и окончания срока действия - в срезе `identifier`. У `identifier.use` и `identifier.type` есть узбекские и русские названия.
+
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
 
 #### Изменено
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html): `agent.who` может также ссылаться на [UZ Core Device](StructureDefinition-uz-core-device.html) или [UZ Core Organization](StructureDefinition-uz-core-organization.html), для событий без участия человека, например задания по расписанию или входа системы.
 
 [UZ Core Location](StructureDefinition-uz-core-location.html) теперь охватывает и территории, например махаллю, объявленную зоной риска для общественного здоровья.
 
@@ -23,10 +27,6 @@
 #### Несовместимые изменения
 
 [Номер регистрационного удостоверения](NamingSystem-registration-certificate-id.html) и [ID групповой упаковки UzPharm](NamingSystem-uz-pharm-box-id.html) меняют URI на `https://uzpharminfo.uz/registrationNumber` и `https://uzpharminfo.uz/boxGroupId` — те, что уже передаёт загрузчик реестра Фармкомитета. Идентификатор [UZ Core Medication](StructureDefinition-uz-core-medication.html) со старым URI `registration_number` или `box_group_id` больше не попадает в свой срез, а поиск по идентификатору должен использовать новые URI.
-
-#### Изменено
-
-[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html): `agent.who` может также ссылаться на [UZ Core Device](StructureDefinition-uz-core-device.html) или [UZ Core Organization](StructureDefinition-uz-core-organization.html), для событий без участия человека, например задания по расписанию или входа системы.
 
 ### Версия 0.13.0
 
