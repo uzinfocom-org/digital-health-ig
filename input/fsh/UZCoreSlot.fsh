@@ -5,6 +5,9 @@ Title: "UZ Core Slot"
 Description: "Uzbekistan Core Slot profile, used to represent a period of time in a schedule that can be booked for an appointment or is busy or blocked, such as a 30-minute visit to a general practitioner offered for online booking"
 * ^experimental = true
 * ^status = #active
+* ^date = "2026-11-25"
+* ^publisher = "Uzinfocom"
+
 * obeys uzcore-slot-1
 
 * serviceCategory MS
