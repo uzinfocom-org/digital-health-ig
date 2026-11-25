@@ -69,6 +69,7 @@ The Binding on the type slicer Questionnaire.item.answerOption.value[x] applies 
 # publisher bug (already suppressed the same way in uz.dhp.integrations). Appears
 # once per language (en/ru/uz); the leading % matches all three by prefix.
 The <script> containing the javascript 'document.addEventLis%
+
 # IG Publisher 3.0.0 generates the narrative of a canonical resource example once per IG language
 # (en, ru, uz) and gives each copy the same "metadata" anchor, then flags its own output.
 The XHTML  the resource contains more than one node for each of the following node ids and anchor names: metadata (3x)
