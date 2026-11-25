@@ -4,6 +4,8 @@
 
 [UZ Core Communication](StructureDefinition-uz-core-communication.html) records information conveyed to patients, practitioners or organizations, such as a public health alert that patients see in the Patient Portal: an alert to the residents of a risk zone, which carries the zone's alert level I-IV under the national alert regulation, or an alert from a manager to an organization employee group. Its `category` is the HL7 [communication category](ValueSet-communication-category-vs.html) `alert`, with Uzbek and Russian names in its [supplement](CodeSystem-communication-category-cs.html), and the alert level comes from the new local [Alert level](CodeSystem-alert-level-cs.html) code system, with Uzbek, Russian and English names.
 
+[UZ Core Device](StructureDefinition-uz-core-device.html) takes the registered model from the Pharmaceutical Committee registry, its [device item ID](NamingSystem-uz-pharm-device-item-id.html) and [device ID](NamingSystem-uz-pharm-device-id.html), in `type` slices, and the [registration certificate number](NamingSystem-registration-certificate-id.html) with its issue and expiry dates in an `identifier` slice. `identifier.use` and `identifier.type` have Uzbek and Russian names.
+
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) links to the [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) it fulfils with the [Based On Device Request](StructureDefinition-deviceusage-based-on.html) extension, as in the [copper IUD](DeviceUsage-example-deviceusage-iud.html) example.
 
 [UZ Core Slot](StructureDefinition-uz-core-slot.html) represents a period of time in a schedule that can be booked for an appointment or is busy or blocked, such as a 30-minute visit to a general practitioner offered for online booking. Its `serviceCategory` comes from the new local [Appointment service category](CodeSystem-appointment-service-category-cs.html) code system, with Uzbek, Russian and English names, its `specialty` from [Profession specializations](ValueSet-profession-specialization-vs.html), and its `appointmentType` and `status` from the HL7 [appointment type](ValueSet-appointment-type-vs.html) and [slot status](ValueSet-slot-status-vs.html), with Uzbek and Russian names in their supplements.
@@ -20,15 +22,13 @@ The [cross-component resource architecture](components.html#cross-component-reso
 
 The guide's pages use the look of the [DHP developer documentation](https://docs.dhp.uz/): Onest and JetBrains Mono fonts, DHP green colours and logo, and a restyled header, menu, tables, notes and code blocks, which now have a copy button. A theme menu in the header switches between light, dark and the system setting.
 
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` can also reference a [UZ Core Device](StructureDefinition-uz-core-device.html) or a [UZ Core Organization](StructureDefinition-uz-core-organization.html), for events with no person behind them, such as a scheduled job or a system logging in.
+
 [UZ Core Location](StructureDefinition-uz-core-location.html) now also covers areas, such as a mahalla set as a public health risk zone.
 
 #### Breaking changes
 
 [Registration certificate number](NamingSystem-registration-certificate-id.html) and [UzPharm box group ID](NamingSystem-uz-pharm-box-id.html) change their URIs to `https://uzpharminfo.uz/registrationNumber` and `https://uzpharminfo.uz/boxGroupId`, the ones the Pharmaceutical Committee registry loader already sends. A [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifier with the old `registration_number` or `box_group_id` URI no longer falls into its slice, and searches by identifier must use the new URIs.
-
-#### Changed
-
-[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` can also reference a [UZ Core Device](StructureDefinition-uz-core-device.html) or a [UZ Core Organization](StructureDefinition-uz-core-organization.html), for events with no person behind them, such as a scheduled job or a system logging in.
 
 ### Version 0.13.0
 

@@ -10,10 +10,10 @@ The base Device resource has no mandatory elements, and this profile adds none. 
 
 #### Each UZ Core Device Must Support
 
-- an identifier, always sent with its `system` (see [Identifiers](identifiers.html));
+- an identifier, always sent with its `system` (see [Identifiers](identifiers.html)), such as the registration certificate number with its issue and expiry dates in `period`;
 - the `status` of the record (active / inactive / entered-in-error), and whether the device can be used (`availabilityStatus`: available / lost / damaged / destroyed);
 - the `displayName`, and each `name` with its `value`, its `type` (registered, user-friendly or patient-reported name), and the `display` flag;
-- the kind of device (`type`, a SNOMED CT concept) and its broader `category`;
+- the kind of device (`type`, a SNOMED CT concept, and the registered model from the Pharmaceutical Committee registry, see [the table below](#registry-codes)) and its broader `category`;
 - the `manufacturer`, `modelNumber` and `partNumber`;
 - the `serialNumber`, `lotNumber`, `manufactureDate` and `expirationDate`;
 - the `owner`, a reference to an [Organization](StructureDefinition-uz-core-organization.html), and the `location`, a reference to a [Location](StructureDefinition-uz-core-location.html);
@@ -29,6 +29,9 @@ GET [base]/Device?serial-number=SN-2023-001456
 
 # by type, within one organization
 GET [base]/Device?type=http://snomed.info/sct|54953005&organization=Organization/[id]
+
+# by registered model in the Pharmaceutical Committee registry
+GET [base]/Device?type=https://uzpharminfo.uz/deviceItemId|10452
 
 # by manufacturer and model, or by batch
 GET [base]/Device?manufacturer=Siemens Healthineers&model=SOMATOM Edge
@@ -151,5 +154,47 @@ An implant or a single-use item is tracked by its batch rather than as a long-li
 ```
 
 `expirationDate` and `manufactureDate` are `dateTime`s, so a plain date is enough. The UZ Core [device type value set](ValueSet-device-type-vs.html) carries Uzbek and Russian names for the contraceptive device types: intrauterine contraceptive device, condom, drug-eluting contraceptive implant and contraceptive device.
+
+#### A device from the Pharmaceutical Committee registry {#registry-codes}
+
+The Pharmaceutical Committee medical device registry identifies a registered model, not one unit: every CT scanner of the same registered variant has the same `device_item_id`. The registry codes therefore go in `type`, next to the SNOMED CT concept, and `serialNumber` still tells the unit apart. Each `type` slice holds one coding, selected by its `system` URI:
+
+| Registry field | `type.coding.system` | Meaning |
+|---|---|---|
+| `device_item_id` | `https://uzpharminfo.uz/deviceItemId` | the registered device variant in a registration certificate |
+| `device_id` | `https://uzpharminfo.uz/deviceId` | the registered device, shared by all its variants |
+
+```json
+{
+  "resourceType": "Device",
+  "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-device"] },
+  "language": "en",
+  "status": "active",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "54953005",
+          "display": "Computed tomography scanner"
+        }
+      ]
+    },
+    { "coding": [ { "system": "https://uzpharminfo.uz/deviceItemId", "code": "10452" } ] },
+    { "coding": [ { "system": "https://uzpharminfo.uz/deviceId", "code": "3871" } ] }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://uzpharminfo.uz/registrationNumber",
+      "value": "TB/M 00024/09/15",
+      "period": { "start": "2015-09-24", "end": "2030-09-24" }
+    }
+  ],
+  "serialNumber": "SN-2023-001456"
+}
+```
+
+The registration certificate number goes in `identifier`, with the certificate issue date in `period.start` and its expiry date in `period.end`; leave `end` out when the certificate is valid indefinitely. The registry publishes no FHIR CodeSystem, so the server does not validate the `type` codes. All devices of one model are found with `GET [base]/Device?type=https://uzpharminfo.uz/deviceItemId%7C10452`.
 
 For example API calls, see the [Quick Start](#quick-start) at the bottom of this page.

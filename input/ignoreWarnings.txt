@@ -43,6 +43,10 @@ No definition could be found for URL value 'Observation/body-temperature-example
 # Fictional external code system in the external-lab-report example, unresolvable by design
 A definition for CodeSystem 'http://example.org/fhir/CodeSystem/lab-report-type' could not be found, so the code cannot be validated
 
+# Pharmaceutical Committee device registry codes in UZ Core Device.type: the registry publishes no FHIR CodeSystem, so the codes cannot be validated
+A definition for CodeSystem 'https://uzpharminfo.uz/deviceItemId' could not be found, so the code cannot be validated
+A definition for CodeSystem 'https://uzpharminfo.uz/deviceId' could not be found, so the code cannot be validated
+
 
 # IG Publisher 2.2.10 emits an OID-assignment recommendation for every CodeSystem/ValueSet. We don't use OID-based terminology (e.g. CDA), so assigning OIDs IG-wide adds no value here.
 %should have an OID assigned to cater for possible use with OID based terminology systems%
