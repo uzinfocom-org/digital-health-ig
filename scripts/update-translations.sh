@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd "$(dirname "$0")/.." || exit 1
-
 # Copy selected .po files from translations/{lang}/po to input/translations/{lang}
 
 LANGUAGES="ru uz"

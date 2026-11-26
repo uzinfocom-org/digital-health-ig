@@ -26,8 +26,6 @@ Qo'llanma sahifalari [DHP dasturchilar hujjatlari](https://docs.dhp.uz/uz/) uslu
 
 [UZ Core Location](StructureDefinition-uz-core-location.html) endi hududlarni ham qamrab oladi, masalan jamoat salomatligi uchun xavfli hudud deb belgilangan mahalla.
 
-Yig'ish skriptlari joriy IG Publisher talabiga muvofiq repozitoriy ildizidan olib tashlandi. Standart Publisher skriptlari o'chirildi; matn va tarjima yordamchilari `scripts/` ga ko'chirildi. Reliz va muharrir vazifalari Publisher ni bevosita ishga tushiradi. Saqlangan ichki papka skriptlari ro'yxatiga aniq QA istisnosi qo'shildi; ro'yxat o'zgarsa, ogohlantirish yana chiqadi. Tibbiy Composition misolining bo'lim matni o'zbek, ingliz va rus tillarida berilgan.
-
 #### Buzuvchi o'zgarishlar
 
 [Ro'yxatga olish guvohnomasi raqami](NamingSystem-registration-certificate-id.html) va [UzPharm guruh qadog'i identifikatori](NamingSystem-uz-pharm-box-id.html) URI'lari `https://uzpharminfo.uz/registrationNumber` va `https://uzpharminfo.uz/boxGroupId` ga o'zgaradi — Farmatsevtika qo'mitasi reyestri yuklagichi allaqachon yuboradiganlari. Eski `registration_number` yoki `box_group_id` URI'li [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifikatori endi o'z slice'iga tushmaydi, identifikator bo'yicha qidiruv yangi URI'lardan foydalanishi kerak.

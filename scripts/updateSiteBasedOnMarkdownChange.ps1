@@ -1,5 +1,4 @@
 # Credit to Bas van den Heuvel, original script from https://github.com/HL7/fhircast-docs/blob/master/updateSiteBasedOnMarkdownChange.sh
-Set-Location -LiteralPath (Split-Path -Parent $PSScriptRoot)
 
 # Change to the temp/pages directory
 Set-Location "temp/pages"
