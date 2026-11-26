@@ -26,7 +26,7 @@ Qo'llanma sahifalari [DHP dasturchilar hujjatlari](https://docs.dhp.uz/uz/) uslu
 
 [UZ Core Location](StructureDefinition-uz-core-location.html) endi hududlarni ham qamrab oladi, masalan jamoat salomatligi uchun xavfli hudud deb belgilangan mahalla.
 
-Yig‘ish skriptlari joriy IG Publisher talabiga muvofiq repozitoriy ildizidan olib tashlandi. Standart Publisher skriptlari o‘chirildi; matn va tarjima yordamchilari `scripts/` ga ko‘chirildi. Reliz va muharrir vazifalari Publisher ni bevosita ishga tushiradi.
+Yig‘ish skriptlari joriy IG Publisher talabiga muvofiq repozitoriy ildizidan olib tashlandi. Standart Publisher skriptlari o‘chirildi; matn va tarjima yordamchilari `scripts/` ga ko‘chirildi. Reliz va muharrir vazifalari Publisher ni bevosita ishga tushiradi. Saqlangan ichki papka skriptlari ro‘yxatiga aniq QA istisnosi qo‘shildi; ro‘yxat o‘zgarsa, ogohlantirish yana chiqadi. Tibbiy Composition misolining bo‘lim matni o‘zbek, ingliz va rus tillarida berilgan.
 
 #### Buzuvchi o'zgarishlar
 

@@ -1,5 +1,11 @@
 == Suppressed Messages ==
 
+# Repository automation intentionally retained after removing the root wrappers:
+# CI checks and package-feed updates, optional local narrative/translation helpers,
+# and legacy conversion/deployment helpers. Publisher does not execute these files.
+# Match this exact inventory; adding or removing a script produces a different warning.
+The IG's repository has 10 scripts or programs in sub-folders: .github/scripts/check_artifact_versions.py, .github/scripts/check_terminology_titles.py, .github/scripts/update_package_feed.py, .github/scripts/wait-for-deployment.sh, input/convert.sh, scripts/fast-narrative-rebuild.sh, scripts/lint-changelog-links.sh, scripts/update-translations.sh, scripts/updateSiteBasedOnMarkdownChange.ps1, scripts/updateSiteBasedOnMarkdownChange.sh. The IG Publisher doesn't run them, but they arrive with every pull: don't run them unless you know what they do. Scripts and programs don't belong in an IG's repository
+
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
