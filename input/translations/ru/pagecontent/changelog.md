@@ -8,7 +8,7 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
 
-[Причины снятия с диспансерного учёта](ValueSet-dispensary-deregistration-reason-vs.html) переиспользуют существующие коды исхода для смерти, смены места жительства, лишения свободы и прочих причин. Добавлены только три кода: причина не указана (`chr-0129-0001`), выздоровление или стойкое улучшение (`chr-0129-0002`), отказ от диспансерного наблюдения (`chr-0129-0006`). ConceptMap DMED сопоставляет все семь исходных значений; [исход Encounter](ValueSet-encounter-discharge-disposition-vs.html) допускает три новых кода.
+[Причины снятия с диспансерного учёта](ValueSet-dispensary-deregistration-reason-vs.html) переиспользуют существующие коды исхода для смерти, смены места жительства, лишения свободы и прочих причин. Добавлены только три кода: причина не указана (`chr-0129-0001`), выздоровление или стойкое улучшение (`chr-0129-0002`), отказ от диспансерного наблюдения (`chr-0129-0003`). ConceptMap DMED сопоставляет все семь исходных значений; [исход Encounter](ValueSet-encounter-discharge-disposition-vs.html) допускает три новых кода.
 
 #### Изменено
 

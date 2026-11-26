@@ -30,7 +30,7 @@ Description: "ConceptMap for mapping DHP dispensary deregistration reason codes 
 
 // SNOMED says only that something was declined; the DHP code names dispensary
 // observation as what was declined.
-* group[=].element[+].code = #chr-0129-0006
+* group[=].element[+].code = #chr-0129-0003
 * group[=].element[=].display = "Bemorning dispanser kuzatuvidan bosh tortishi"
 * group[=].element[=].target[+].code = #443390004
 * group[=].element[=].target[=].display = "Declined (qualifier value)"

@@ -16,7 +16,7 @@ Description: "Additional reasons for ending dispensary observation that are not 
   * ^designation[+].language = #en
   * ^designation[=].value = "Confirmed recovery or sustained improvement"
 
-* #chr-0129-0006 "Bemorning dispanser kuzatuvidan bosh tortishi"
+* #chr-0129-0003 "Bemorning dispanser kuzatuvidan bosh tortishi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Отказ пациента от диспансерного наблюдения"
   * ^designation[+].language = #en

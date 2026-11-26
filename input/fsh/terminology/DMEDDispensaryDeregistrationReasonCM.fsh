@@ -21,7 +21,7 @@ Description: "Maps DMED deregistration reasons to Encounter.admission.dischargeD
 * group[=].element[=].target[0].code = #chr-0129-0002
 * group[=].element[=].target[=].relationship = #equivalent
 * group[=].element[+].code = #patitient_decline
-* group[=].element[=].target[0].code = #chr-0129-0006
+* group[=].element[=].target[0].code = #chr-0129-0003
 * group[=].element[=].target[=].relationship = #equivalent
 
 * group[+].source = Canonical(DMEDDispensaryDeregistrationReasonCS)
