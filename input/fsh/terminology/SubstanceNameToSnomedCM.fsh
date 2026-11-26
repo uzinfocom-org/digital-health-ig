@@ -267,13 +267,13 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0003-00011
-* group.element[=].display = "Tayyor birinchi taomlar (Sho'rva)"
+* group.element[=].display = "Tayyor birinchi taomlar (Suyuq taomlar)"
 * group.element[=].target[+].code = #227566009
 * group.element[=].target[=].display = "Soup"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0003-00012
-* group.element[=].display = "Tayyor birinchi taomlar (sho'rva)"
+* group.element[=].display = "Tayyor birinchi taomlar (Sho'rva)"
 * group.element[=].target[+].code = #227566009
 * group.element[=].target[=].display = "Soup"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
