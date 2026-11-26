@@ -285,90 +285,89 @@ sbnam-0006-00029,Dukkakli un (no'xat),Мука гороховая,,
 ,Dukkakli un (nut),Мука Нутовая,229934002,Chick pea flour
 sbnam-0006-00030,Dukkakli un (yasmiq),Мука Чечевичная (бобовая),,
 sbnam-0006-00031,Grechka uni,Мука гречневая,,
-sbnam-0006-00032,Makkajo'xori uni,Мука кукурузная,229948002,Cornmeal
-sbnam-0006-00033,Suli uni,Мука овсяная,,
-sbnam-0006-00034,Makaron uchun bug'doy uni (krupka),Мука пшеничная макаронная (крупка),226732008,Semolina
-sbnam-0006-00035,Non pishirish uchun bug'doy uni oliy nav,Мука пшеничная хлебопекарная высший сорт,229944000,Wheat flour
-sbnam-0006-00036,Non pishirish uchun bug'doy uni 1-nav,Мука пшеничная хлебопекарная 1-й сорт,229944000,Wheat flour
-sbnam-0006-00037,Non pishirish uchun bug'doy uni 2-nav,Мука пшеничная хлебопекарная 2-й сорт,229944000,Wheat flour
-sbnam-0006-00038,Javdar uni (Saralangan),Мука ржаная (Сеяная),229940009,Rye flour
-sbnam-0006-00039,Javdar uni (Qipiqli),Мука ржаная (Обдирная),229940009,Rye flour
-sbnam-0006-00040,Javdar uni (Butun),Мука ржаная (Обойная),229940009,Rye flour
-sbnam-0006-00041,Guruch uni,Мука рисовая,,
+sbnam-0006-00032,Suli uni,Мука овсяная,,
+sbnam-0006-00033,Makaron uchun bug'doy uni (krupka),Мука пшеничная макаронная (крупка),226732008,Semolina
+sbnam-0006-00034,Non pishirish uchun bug'doy uni oliy nav,Мука пшеничная хлебопекарная высший сорт,229944000,Wheat flour
+sbnam-0006-00035,Non pishirish uchun bug'doy uni 1-nav,Мука пшеничная хлебопекарная 1-й сорт,229944000,Wheat flour
+sbnam-0006-00036,Non pishirish uchun bug'doy uni 2-nav,Мука пшеничная хлебопекарная 2-й сорт,229944000,Wheat flour
+sbnam-0006-00037,Javdar uni (Saralangan),Мука ржаная (Сеяная),229940009,Rye flour
+sbnam-0006-00038,Javdar uni (Qipiqli),Мука ржаная (Обдирная),229940009,Rye flour
+sbnam-0006-00039,Javdar uni (Butun),Мука ржаная (Обойная),229940009,Rye flour
+sbnam-0006-00040,Guruch uni,Мука рисовая,,
 ,Soya uni,Мука соевая,229941008,Soybean flour
-sbnam-0006-00042,Arpa uni,Мука ячменная,,
-sbnam-0006-00043,To'ldirgichli un qandolat mahsulotlari,Мучные кондитерские изделия с начинкой,,
+sbnam-0006-00041,Arpa uni,Мука ячменная,,
+sbnam-0006-00042,To'ldirgichli un qandolat mahsulotlari,Мучные кондитерские изделия с начинкой,,
 ,Myusli va granola,Мюсли и гранола,226611009,Muesli
-sbnam-0006-00044,Iste'mol sulisi,Овёс продовольственный,418504009,Oat
-sbnam-0006-00045,Suli kepagi,Отруби овсяные,391858005,Bran
+sbnam-0006-00043,Iste'mol sulisi,Овёс продовольственный,418504009,Oat
+sbnam-0006-00044,Suli kepagi,Отруби овсяные,391858005,Bran
 ,Bug'doy kepagi,Отруби пшеничные,412533000,Wheat bran
-sbnam-0006-00046,Javdar kepagi,Отруби ржаные,391858005,Bran
-sbnam-0006-00047,Guruch kepagi,Отруби рисовые,391858005,Bran
+sbnam-0006-00045,Javdar kepagi,Отруби ржаные,391858005,Bran
+sbnam-0006-00046,Guruch kepagi,Отруби рисовые,391858005,Bran
 ,Shakarli pechenye,Печенье сахарное,226555008,Short-sweet biscuit
 ,Cho'zilgan va shirin pechenye,Печенье затяжное,226554007,Semi-sweet biscuit
-sbnam-0006-00048,Sdobali pechenye,Сдобное,,
-sbnam-0006-00049,Polba,Полба,,
-sbnam-0006-00050,Spelta,Спельта,,
-sbnam-0006-00051,Emmer,Эммер,,
+sbnam-0006-00047,Sdobali pechenye,Сдобное,,
+sbnam-0006-00048,Polba,Полба,,
+sbnam-0006-00049,Spelta,Спельта,,
+sbnam-0006-00050,Emmer,Эммер,,
 ,Tariq (don),Просо (зерно),1411501003,Common millet seed
-sbnam-0006-00053,Pryaniklar,Пряники,226658001,Gingerbread
-sbnam-0006-00054,Kovrijkalar,Коврижки,226658001,Gingerbread
+sbnam-0006-00052,Pryaniklar,Пряники,226658001,Gingerbread
+sbnam-0006-00053,Kovrijkalar,Коврижки,226658001,Gingerbread
 ,Soxta donlar: amarant,Псевдозлаки: амарант,420963005,Amaranth
-sbnam-0006-00055,Soxta donlar: kannixua,Псевдозлаки: каниуа,,
+sbnam-0006-00054,Soxta donlar: kannixua,Псевдозлаки: каниуа,,
 ,Soxta donlar: kinoa,Псевдозлаки: киноа,227515004,Quinoa
-sbnam-0006-00056,Iste'mol bug'doyi (yumshoq),Пшеница продовольственная (мягкая),412071004,Wheat
-sbnam-0006-00057,Qattiq bug'doy (durum),Пшеница твёрдая (durum),412071004,Wheat
-sbnam-0006-00058,Tozalanmagan sholi (paddi),Рис нешелушёный (падди),67324005,Rice
+sbnam-0006-00055,Iste'mol bug'doyi (yumshoq),Пшеница продовольственная (мягкая),412071004,Wheat
+sbnam-0006-00056,Qattiq bug'doy (durum),Пшеница твёрдая (durum),412071004,Wheat
+sbnam-0006-00057,Tozalanmagan sholi (paddi),Рис нешелушёный (падди),67324005,Rice
 ,Jigarrang (sayqallanmagan) guruch,Рис нешлифованный (коричневый),226756007,Brown rice
-sbnam-0006-00059,Bug'lab qayta ishlangan guruch,Рис пропаренный,67324005,Rice
+sbnam-0006-00058,Bug'lab qayta ishlangan guruch,Рис пропаренный,67324005,Rice
 ,Sayqal berilgan guruch,Рис шлифованный,226759000,White rice
-sbnam-0006-00060,Iste'mol javdari,Рожь продовольственная,412068007,Rye
-sbnam-0006-00061,Shirin bulochkalar (Pushki),Сдобные булочные изделия (Плюшки),,
-sbnam-0006-00062,Shirin bulochkalar (Keks),Сдобные булочные изделия (Кексы),226639005,Cake
-sbnam-0006-00063,Tayyor pirogi va sloyka,Слойки и пироги (готовые),,
-sbnam-0006-00064,Tayoqcha non mahsulotlari,Хлебные палочки (Соломка),,
-sbnam-0006-00065,Jo'xori (don),Сорго (зерно),,
-sbnam-0006-00066,Suxari va grenkalar,Сухари и гренки,226531003,Rusk
+sbnam-0006-00059,Iste'mol javdari,Рожь продовольственная,412068007,Rye
+sbnam-0006-00060,Shirin bulochkalar (Pushki),Сдобные булочные изделия (Плюшки),,
+sbnam-0006-00061,Shirin bulochkalar (Keks),Сдобные булочные изделия (Кексы),226639005,Cake
+sbnam-0006-00062,Tayyor pirogi va sloyka,Слойки и пироги (готовые),,
+sbnam-0006-00063,Tayoqcha non mahsulotlari,Хлебные палочки (Соломка),,
+sbnam-0006-00064,Jo'xori (don),Сорго (зерно),,
+sbnam-0006-00065,Suxari va grenkalar,Сухари и гренки,226531003,Rusk
 ,Panirovka suxarilari,Сухари панировочные,226562004,Breadcrumbs
-sbnam-0006-00067,Tritikale,Тритикале,,
-sbnam-0006-00068,Parhez non (Diabetik),Хлеб диетический (Диабетический),226559002,Bread
-sbnam-0006-00069,Parhez non (Glyutensiz),Хлеб диетический (Безглютеновый),226559002,Bread
-sbnam-0006-00070,Parhez non (Oqsilsiz),Хлеб диетический (Безбелковый),226559002,Bread
-sbnam-0006-00071,O'zbek obi noni,Хлеб лепёшечный (Узбекские лепёшки),226559002,Bread
-sbnam-0006-00072,Lavash,Хлеб лепёшечный (Лаваш),226559002,Bread
-sbnam-0006-00073,Sandiq noni,Хлеб подовый,226559002,Bread
-sbnam-0006-00074,1-nav undan bug'doy noni,Хлеб пшеничный из муки 1-го сорта,226559002,Bread
-sbnam-0006-00075,2-nav undan bug'doy noni,Хлеб пшеничный из муки 2-го сорта,226559002,Bread
+sbnam-0006-00066,Tritikale,Тритикале,,
+sbnam-0006-00067,Parhez non (Diabetik),Хлеб диетический (Диабетический),226559002,Bread
+sbnam-0006-00068,Parhez non (Glyutensiz),Хлеб диетический (Безглютеновый),226559002,Bread
+sbnam-0006-00069,Parhez non (Oqsilsiz),Хлеб диетический (Безбелковый),226559002,Bread
+sbnam-0006-00070,O'zbek obi noni,Хлеб лепёшечный (Узбекские лепёшки),226559002,Bread
+sbnam-0006-00071,Lavash,Хлеб лепёшечный (Лаваш),226559002,Bread
+sbnam-0006-00072,Sandiq noni,Хлеб подовый,226559002,Bread
+sbnam-0006-00073,1-nav undan bug'doy noni,Хлеб пшеничный из муки 1-го сорта,226559002,Bread
+sbnam-0006-00074,2-nav undan bug'doy noni,Хлеб пшеничный из муки 2-го сорта,226559002,Bread
 ,Oliy nav undan bug'doy noni,Хлеб пшеничный из муки высшего сорта,226590000,White bread
-sbnam-0006-00076,Javdar-bug'doy noni,Хлеб ржано-пшеничный,226559002,Bread
+sbnam-0006-00075,Javdar-bug'doy noni,Хлеб ржано-пшеничный,226559002,Bread
 ,Javdar noni,Хлеб ржаной,226584004,Rye bread
-sbnam-0006-00077,Qoliplangan non,Хлеб формовой,226559002,Bread
+sbnam-0006-00076,Qoliplangan non,Хлеб формовой,226559002,Bread
 ,Xrustyash xlebsalari,Хлебцы хрустящие,226547001,Crispbread
-sbnam-0006-00078,Ekstrudirovkalangan non,Хлеб экструдированные,,
-sbnam-0006-00079,Iste'mol arpasi,Ячмень продовольственный,735124003,Barley
-sbnam-0006-00080,Qayta ishlanmagan makkajo'xori doni,Необработанные зерна кукурузы,1290190002,Corn kernels
+sbnam-0006-00077,Ekstrudirovkalangan non,Хлеб экструдированные,,
+sbnam-0006-00078,Iste'mol arpasi,Ячмень продовольственный,735124003,Barley
+sbnam-0006-00079,Qayta ishlanmagan makkajo'xori doni,Необработанные зерна кукурузы,1290190002,Corn kernels
 ,Makkajo'xori,Кукуруза,412357001,Corn
 ,Guruch,Рис,67324005,Rice
 ,Bug'doy,Пшеница,412071004,Wheat
-sbnam-0006-00084,Don va don ekinlari,Зерно и зерновые культуры,264331002,Grain
-sbnam-0006-00085,Makkajo'xori shrot,Кукурузный шрот,,
-sbnam-0006-00086,Makkajo'xori doni,Кукурузное зерно,1290190002,Corn kernels
+sbnam-0006-00083,Don va don ekinlari,Зерно и зерновые культуры,264331002,Grain
+sbnam-0006-00084,Makkajo'xori shrot,Кукурузный шрот,,
+sbnam-0006-00085,Makkajo'xori doni,Кукурузное зерно,1290190002,Corn kernels
 ,Don va don ekinlari asosida un,Мука из зерновых культур,63766005,Flour
-sbnam-0006-00088,Makkajo'xori iste'mol uchun,Кукуруза для употребления,412357001,Corn
-sbnam-0006-00089,Makkajo'xori asosida oziq-ovqat mahsuloti,Продукты питания на основе кукурузы,,
-sbnam-0006-00090,Makkajo'xori asosida tayyor nonushta,Готовый завтрак из кукурузы,226604005,Cornflakes
+sbnam-0006-00087,Makkajo'xori iste'mol uchun,Кукуруза для употребления,412357001,Corn
+sbnam-0006-00088,Makkajo'xori asosida oziq-ovqat mahsuloti,Продукты питания на основе кукурузы,,
+sbnam-0006-00089,Makkajo'xori asosida tayyor nonushta,Готовый завтрак из кукурузы,226604005,Cornflakes
 ,Makkajo'xoridan tayyorlangan gazaklar,Закуски из кукурузы,227587004,Corn snacks
-sbnam-0006-00091,Faqat makkajo'xoridan tayyorlangan qo'shimcha oziq-ovqat mahsulotlari,Дополнительные продукты питания только из кукурузы,,
-sbnam-0006-00092,Don va don ekinlari iste'mol uchun,Зерно и зерновые культуры для употребления,264331002,Grain
-sbnam-0006-00093,Don va don ekinlari asosida manniy yormasi,Манная крупа из зерновых,226732008,Semolina
-sbnam-0006-00094,Don va don ekinlari asosida kepak,Отруби из зерновых,391858005,Bran
-sbnam-0006-00095,Maydalangan javdar,Дроблёная рожь,412068007,Rye
-sbnam-0006-00096,Bug'doy doni,Пшеничное зерно,412071004,Wheat
-sbnam-0006-00097,Guruchli vaflilar,Рисовые вафли,,
-sbnam-0006-00098,Guruchli krekerlar,Рисовые крекеры,,
-sbnam-0006-00099,Guruchli nonlar,Рисовый хлеб,,
-sbnam-0006-00100,Guruchli pag'alar,Рисовые палочки,,
-sbnam-0006-00101,Nonushta uchun guruch,Рис для завтрака,,
+sbnam-0006-00090,Faqat makkajo'xoridan tayyorlangan qo'shimcha oziq-ovqat mahsulotlari,Дополнительные продукты питания только из кукурузы,,
+sbnam-0006-00091,Don va don ekinlari iste'mol uchun,Зерно и зерновые культуры для употребления,264331002,Grain
+sbnam-0006-00092,Don va don ekinlari asosida manniy yormasi,Манная крупа из зерновых,226732008,Semolina
+sbnam-0006-00093,Don va don ekinlari asosida kepak,Отруби из зерновых,391858005,Bran
+sbnam-0006-00094,Maydalangan javdar,Дроблёная рожь,412068007,Rye
+sbnam-0006-00095,Bug'doy doni,Пшеничное зерно,412071004,Wheat
+sbnam-0006-00096,Guruchli vaflilar,Рисовые вафли,,
+sbnam-0006-00097,Guruchli krekerlar,Рисовые крекеры,,
+sbnam-0006-00098,Guruchli nonlar,Рисовый хлеб,,
+sbnam-0006-00099,Guruchli pag'alar,Рисовые палочки,,
+sbnam-0006-00100,Nonushta uchun guruch,Рис для завтрака,,
 ,Jenshen va uning ekstraktlari,Женьшень и его экстракты,412395006,Ginseng extract
 sbnam-0007-00001,Iste'mol uchun po'stloq (Dub),Кора (Дуб) пищевого назначения,,
 sbnam-0007-00002,Iste'mol uchun po'stloq (Krushina),Кора (Крушина) пищевого назначения,,

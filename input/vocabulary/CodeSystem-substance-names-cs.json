@@ -2838,20 +2838,6 @@
     },
     {
       "code": "sbnam-0006-00032",
-      "display": "Makkajo'xori uni",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Мука кукурузная"
-        },
-        {
-          "language": "en",
-          "value": "Corn flour"
-        }
-      ]
-    },
-    {
-      "code": "sbnam-0006-00033",
       "display": "Suli uni",
       "designation": [
         {
@@ -2865,7 +2851,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00034",
+      "code": "sbnam-0006-00033",
       "display": "Makaron uchun bug'doy uni (krupka)",
       "designation": [
         {
@@ -2879,7 +2865,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00035",
+      "code": "sbnam-0006-00034",
       "display": "Non pishirish uchun bug'doy uni oliy nav",
       "designation": [
         {
@@ -2893,7 +2879,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00036",
+      "code": "sbnam-0006-00035",
       "display": "Non pishirish uchun bug'doy uni 1-nav",
       "designation": [
         {
@@ -2907,7 +2893,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00037",
+      "code": "sbnam-0006-00036",
       "display": "Non pishirish uchun bug'doy uni 2-nav",
       "designation": [
         {
@@ -2921,7 +2907,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00038",
+      "code": "sbnam-0006-00037",
       "display": "Javdar uni (Saralangan)",
       "designation": [
         {
@@ -2935,7 +2921,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00039",
+      "code": "sbnam-0006-00038",
       "display": "Javdar uni (Qipiqli)",
       "designation": [
         {
@@ -2949,7 +2935,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00040",
+      "code": "sbnam-0006-00039",
       "display": "Javdar uni (Butun)",
       "designation": [
         {
@@ -2963,7 +2949,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00041",
+      "code": "sbnam-0006-00040",
       "display": "Guruch uni",
       "designation": [
         {
@@ -2977,7 +2963,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00042",
+      "code": "sbnam-0006-00041",
       "display": "Arpa uni",
       "designation": [
         {
@@ -2991,7 +2977,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00043",
+      "code": "sbnam-0006-00042",
       "display": "To'ldirgichli un qandolat mahsulotlari",
       "designation": [
         {
@@ -3005,7 +2991,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00044",
+      "code": "sbnam-0006-00043",
       "display": "Iste'mol sulisi",
       "designation": [
         {
@@ -3019,7 +3005,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00045",
+      "code": "sbnam-0006-00044",
       "display": "Suli kepagi",
       "designation": [
         {
@@ -3033,7 +3019,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00046",
+      "code": "sbnam-0006-00045",
       "display": "Javdar kepagi",
       "designation": [
         {
@@ -3047,7 +3033,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00047",
+      "code": "sbnam-0006-00046",
       "display": "Guruch kepagi",
       "designation": [
         {
@@ -3061,7 +3047,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00048",
+      "code": "sbnam-0006-00047",
       "display": "Sdobali pechenye",
       "designation": [
         {
@@ -3075,7 +3061,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00049",
+      "code": "sbnam-0006-00048",
       "display": "Polba",
       "designation": [
         {
@@ -3089,7 +3075,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00050",
+      "code": "sbnam-0006-00049",
       "display": "Spelta",
       "designation": [
         {
@@ -3103,7 +3089,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00051",
+      "code": "sbnam-0006-00050",
       "display": "Emmer",
       "designation": [
         {
@@ -3117,7 +3103,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00053",
+      "code": "sbnam-0006-00052",
       "display": "Pryaniklar",
       "designation": [
         {
@@ -3131,7 +3117,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00054",
+      "code": "sbnam-0006-00053",
       "display": "Kovrijkalar",
       "designation": [
         {
@@ -3145,7 +3131,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00055",
+      "code": "sbnam-0006-00054",
       "display": "Soxta donlar: kannixua",
       "designation": [
         {
@@ -3159,7 +3145,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00056",
+      "code": "sbnam-0006-00055",
       "display": "Iste'mol bug'doyi (yumshoq)",
       "designation": [
         {
@@ -3173,7 +3159,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00057",
+      "code": "sbnam-0006-00056",
       "display": "Qattiq bug'doy (durum)",
       "designation": [
         {
@@ -3187,7 +3173,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00058",
+      "code": "sbnam-0006-00057",
       "display": "Tozalanmagan sholi (paddi)",
       "designation": [
         {
@@ -3201,7 +3187,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00059",
+      "code": "sbnam-0006-00058",
       "display": "Bug'lab qayta ishlangan guruch",
       "designation": [
         {
@@ -3215,7 +3201,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00060",
+      "code": "sbnam-0006-00059",
       "display": "Iste'mol javdari",
       "designation": [
         {
@@ -3229,7 +3215,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00061",
+      "code": "sbnam-0006-00060",
       "display": "Shirin bulochkalar (Pushki)",
       "designation": [
         {
@@ -3243,7 +3229,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00062",
+      "code": "sbnam-0006-00061",
       "display": "Shirin bulochkalar (Keks)",
       "designation": [
         {
@@ -3257,7 +3243,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00063",
+      "code": "sbnam-0006-00062",
       "display": "Tayyor pirogi va sloyka",
       "designation": [
         {
@@ -3271,7 +3257,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00064",
+      "code": "sbnam-0006-00063",
       "display": "Tayoqcha non mahsulotlari",
       "designation": [
         {
@@ -3285,7 +3271,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00065",
+      "code": "sbnam-0006-00064",
       "display": "Jo'xori (don)",
       "designation": [
         {
@@ -3299,7 +3285,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00066",
+      "code": "sbnam-0006-00065",
       "display": "Suxari va grenkalar",
       "designation": [
         {
@@ -3313,7 +3299,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00067",
+      "code": "sbnam-0006-00066",
       "display": "Tritikale",
       "designation": [
         {
@@ -3327,7 +3313,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00068",
+      "code": "sbnam-0006-00067",
       "display": "Parhez non (Diabetik)",
       "designation": [
         {
@@ -3341,7 +3327,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00069",
+      "code": "sbnam-0006-00068",
       "display": "Parhez non (Glyutensiz)",
       "designation": [
         {
@@ -3355,7 +3341,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00070",
+      "code": "sbnam-0006-00069",
       "display": "Parhez non (Oqsilsiz)",
       "designation": [
         {
@@ -3369,7 +3355,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00071",
+      "code": "sbnam-0006-00070",
       "display": "O'zbek obi noni",
       "designation": [
         {
@@ -3383,7 +3369,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00072",
+      "code": "sbnam-0006-00071",
       "display": "Lavash",
       "designation": [
         {
@@ -3397,7 +3383,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00073",
+      "code": "sbnam-0006-00072",
       "display": "Sandiq noni",
       "designation": [
         {
@@ -3411,7 +3397,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00074",
+      "code": "sbnam-0006-00073",
       "display": "1-nav undan bug'doy noni",
       "designation": [
         {
@@ -3425,7 +3411,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00075",
+      "code": "sbnam-0006-00074",
       "display": "2-nav undan bug'doy noni",
       "designation": [
         {
@@ -3439,7 +3425,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00076",
+      "code": "sbnam-0006-00075",
       "display": "Javdar-bug'doy noni",
       "designation": [
         {
@@ -3453,7 +3439,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00077",
+      "code": "sbnam-0006-00076",
       "display": "Qoliplangan non",
       "designation": [
         {
@@ -3467,7 +3453,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00078",
+      "code": "sbnam-0006-00077",
       "display": "Ekstrudirovkalangan non",
       "designation": [
         {
@@ -3481,7 +3467,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00079",
+      "code": "sbnam-0006-00078",
       "display": "Iste'mol arpasi",
       "designation": [
         {
@@ -3495,7 +3481,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00080",
+      "code": "sbnam-0006-00079",
       "display": "Qayta ishlanmagan makkajo'xori doni",
       "designation": [
         {
@@ -3509,7 +3495,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00084",
+      "code": "sbnam-0006-00083",
       "display": "Don va don ekinlari",
       "designation": [
         {
@@ -3523,7 +3509,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00085",
+      "code": "sbnam-0006-00084",
       "display": "Makkajo'xori shrot",
       "designation": [
         {
@@ -3537,7 +3523,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00086",
+      "code": "sbnam-0006-00085",
       "display": "Makkajo'xori doni",
       "designation": [
         {
@@ -3551,7 +3537,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00088",
+      "code": "sbnam-0006-00087",
       "display": "Makkajo'xori iste'mol uchun",
       "designation": [
         {
@@ -3565,7 +3551,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00089",
+      "code": "sbnam-0006-00088",
       "display": "Makkajo'xori asosida oziq-ovqat mahsuloti",
       "designation": [
         {
@@ -3579,7 +3565,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00090",
+      "code": "sbnam-0006-00089",
       "display": "Makkajo'xori asosida tayyor nonushta",
       "designation": [
         {
@@ -3593,7 +3579,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00091",
+      "code": "sbnam-0006-00090",
       "display": "Faqat makkajo'xoridan tayyorlangan qo'shimcha oziq-ovqat mahsulotlari",
       "designation": [
         {
@@ -3607,7 +3593,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00092",
+      "code": "sbnam-0006-00091",
       "display": "Don va don ekinlari iste'mol uchun",
       "designation": [
         {
@@ -3621,7 +3607,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00093",
+      "code": "sbnam-0006-00092",
       "display": "Don va don ekinlari asosida manniy yormasi",
       "designation": [
         {
@@ -3635,7 +3621,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00094",
+      "code": "sbnam-0006-00093",
       "display": "Don va don ekinlari asosida kepak",
       "designation": [
         {
@@ -3649,7 +3635,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00095",
+      "code": "sbnam-0006-00094",
       "display": "Maydalangan javdar",
       "designation": [
         {
@@ -3663,7 +3649,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00096",
+      "code": "sbnam-0006-00095",
       "display": "Bug'doy doni",
       "designation": [
         {
@@ -3677,7 +3663,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00097",
+      "code": "sbnam-0006-00096",
       "display": "Guruchli vaflilar",
       "designation": [
         {
@@ -3691,7 +3677,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00098",
+      "code": "sbnam-0006-00097",
       "display": "Guruchli krekerlar",
       "designation": [
         {
@@ -3705,7 +3691,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00099",
+      "code": "sbnam-0006-00098",
       "display": "Guruchli nonlar",
       "designation": [
         {
@@ -3719,7 +3705,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00100",
+      "code": "sbnam-0006-00099",
       "display": "Guruchli pag'alar",
       "designation": [
         {
@@ -3733,7 +3719,7 @@
       ]
     },
     {
-      "code": "sbnam-0006-00101",
+      "code": "sbnam-0006-00100",
       "display": "Nonushta uchun guruch",
       "designation": [
         {

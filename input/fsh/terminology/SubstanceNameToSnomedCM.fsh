@@ -776,253 +776,247 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Noodles"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00032
-* group.element[=].display = "Makkajo'xori uni"
-* group.element[=].target[+].code = #229948002
-* group.element[=].target[=].display = "Cornmeal"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0006-00034
+* group.element[+].code = #sbnam-0006-00033
 * group.element[=].display = "Makaron uchun bug'doy uni (krupka)"
 * group.element[=].target[+].code = #226732008
 * group.element[=].target[=].display = "Semolina"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00035
+* group.element[+].code = #sbnam-0006-00034
 * group.element[=].display = "Non pishirish uchun bug'doy uni oliy nav"
 * group.element[=].target[+].code = #229944000
 * group.element[=].target[=].display = "Wheat flour"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00036
+* group.element[+].code = #sbnam-0006-00035
 * group.element[=].display = "Non pishirish uchun bug'doy uni 1-nav"
 * group.element[=].target[+].code = #229944000
 * group.element[=].target[=].display = "Wheat flour"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00037
+* group.element[+].code = #sbnam-0006-00036
 * group.element[=].display = "Non pishirish uchun bug'doy uni 2-nav"
 * group.element[=].target[+].code = #229944000
 * group.element[=].target[=].display = "Wheat flour"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00038
+* group.element[+].code = #sbnam-0006-00037
 * group.element[=].display = "Javdar uni (Saralangan)"
 * group.element[=].target[+].code = #229940009
 * group.element[=].target[=].display = "Rye flour"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00039
+* group.element[+].code = #sbnam-0006-00038
 * group.element[=].display = "Javdar uni (Qipiqli)"
 * group.element[=].target[+].code = #229940009
 * group.element[=].target[=].display = "Rye flour"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00040
+* group.element[+].code = #sbnam-0006-00039
 * group.element[=].display = "Javdar uni (Butun)"
 * group.element[=].target[+].code = #229940009
 * group.element[=].target[=].display = "Rye flour"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00044
+* group.element[+].code = #sbnam-0006-00043
 * group.element[=].display = "Iste'mol sulisi"
 * group.element[=].target[+].code = #418504009
 * group.element[=].target[=].display = "Oat"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00045
+* group.element[+].code = #sbnam-0006-00044
 * group.element[=].display = "Suli kepagi"
 * group.element[=].target[+].code = #391858005
 * group.element[=].target[=].display = "Bran"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00046
+* group.element[+].code = #sbnam-0006-00045
 * group.element[=].display = "Javdar kepagi"
 * group.element[=].target[+].code = #391858005
 * group.element[=].target[=].display = "Bran"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00047
+* group.element[+].code = #sbnam-0006-00046
 * group.element[=].display = "Guruch kepagi"
 * group.element[=].target[+].code = #391858005
 * group.element[=].target[=].display = "Bran"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00053
+* group.element[+].code = #sbnam-0006-00052
 * group.element[=].display = "Pryaniklar"
 * group.element[=].target[+].code = #226658001
 * group.element[=].target[=].display = "Gingerbread"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00054
+* group.element[+].code = #sbnam-0006-00053
 * group.element[=].display = "Kovrijkalar"
 * group.element[=].target[+].code = #226658001
 * group.element[=].target[=].display = "Gingerbread"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00056
+* group.element[+].code = #sbnam-0006-00055
 * group.element[=].display = "Iste'mol bug'doyi (yumshoq)"
 * group.element[=].target[+].code = #412071004
 * group.element[=].target[=].display = "Wheat"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00057
+* group.element[+].code = #sbnam-0006-00056
 * group.element[=].display = "Qattiq bug'doy (durum)"
 * group.element[=].target[+].code = #412071004
 * group.element[=].target[=].display = "Wheat"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00058
+* group.element[+].code = #sbnam-0006-00057
 * group.element[=].display = "Tozalanmagan sholi (paddi)"
 * group.element[=].target[+].code = #67324005
 * group.element[=].target[=].display = "Rice"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00059
+* group.element[+].code = #sbnam-0006-00058
 * group.element[=].display = "Bug'lab qayta ishlangan guruch"
 * group.element[=].target[+].code = #67324005
 * group.element[=].target[=].display = "Rice"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00060
+* group.element[+].code = #sbnam-0006-00059
 * group.element[=].display = "Iste'mol javdari"
 * group.element[=].target[+].code = #412068007
 * group.element[=].target[=].display = "Rye"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00062
+* group.element[+].code = #sbnam-0006-00061
 * group.element[=].display = "Shirin bulochkalar (Keks)"
 * group.element[=].target[+].code = #226639005
 * group.element[=].target[=].display = "Cake"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00066
+* group.element[+].code = #sbnam-0006-00065
 * group.element[=].display = "Suxari va grenkalar"
 * group.element[=].target[+].code = #226531003
 * group.element[=].target[=].display = "Rusk"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00068
+* group.element[+].code = #sbnam-0006-00067
 * group.element[=].display = "Parhez non (Diabetik)"
 * group.element[=].target[+].code = #226559002
 * group.element[=].target[=].display = "Bread"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00069
+* group.element[+].code = #sbnam-0006-00068
 * group.element[=].display = "Parhez non (Glyutensiz)"
 * group.element[=].target[+].code = #226559002
 * group.element[=].target[=].display = "Bread"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00070
+* group.element[+].code = #sbnam-0006-00069
 * group.element[=].display = "Parhez non (Oqsilsiz)"
 * group.element[=].target[+].code = #226559002
 * group.element[=].target[=].display = "Bread"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00071
+* group.element[+].code = #sbnam-0006-00070
 * group.element[=].display = "O'zbek obi noni"
 * group.element[=].target[+].code = #226559002
 * group.element[=].target[=].display = "Bread"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00072
+* group.element[+].code = #sbnam-0006-00071
 * group.element[=].display = "Lavash"
 * group.element[=].target[+].code = #226559002
 * group.element[=].target[=].display = "Bread"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00073
+* group.element[+].code = #sbnam-0006-00072
 * group.element[=].display = "Sandiq noni"
 * group.element[=].target[+].code = #226559002
 * group.element[=].target[=].display = "Bread"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00074
+* group.element[+].code = #sbnam-0006-00073
 * group.element[=].display = "1-nav undan bug'doy noni"
 * group.element[=].target[+].code = #226559002
 * group.element[=].target[=].display = "Bread"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00075
+* group.element[+].code = #sbnam-0006-00074
 * group.element[=].display = "2-nav undan bug'doy noni"
 * group.element[=].target[+].code = #226559002
 * group.element[=].target[=].display = "Bread"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00076
+* group.element[+].code = #sbnam-0006-00075
 * group.element[=].display = "Javdar-bug'doy noni"
 * group.element[=].target[+].code = #226559002
 * group.element[=].target[=].display = "Bread"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00077
+* group.element[+].code = #sbnam-0006-00076
 * group.element[=].display = "Qoliplangan non"
 * group.element[=].target[+].code = #226559002
 * group.element[=].target[=].display = "Bread"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00079
+* group.element[+].code = #sbnam-0006-00078
 * group.element[=].display = "Iste'mol arpasi"
 * group.element[=].target[+].code = #735124003
 * group.element[=].target[=].display = "Barley"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00080
+* group.element[+].code = #sbnam-0006-00079
 * group.element[=].display = "Qayta ishlanmagan makkajo'xori doni"
 * group.element[=].target[+].code = #1290190002
 * group.element[=].target[=].display = "Corn kernels"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00084
+* group.element[+].code = #sbnam-0006-00083
 * group.element[=].display = "Don va don ekinlari"
 * group.element[=].target[+].code = #264331002
 * group.element[=].target[=].display = "Grain"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00086
+* group.element[+].code = #sbnam-0006-00085
 * group.element[=].display = "Makkajo'xori doni"
 * group.element[=].target[+].code = #1290190002
 * group.element[=].target[=].display = "Corn kernels"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00088
+* group.element[+].code = #sbnam-0006-00087
 * group.element[=].display = "Makkajo'xori iste'mol uchun"
 * group.element[=].target[+].code = #412357001
 * group.element[=].target[=].display = "Corn"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00090
+* group.element[+].code = #sbnam-0006-00089
 * group.element[=].display = "Makkajo'xori asosida tayyor nonushta"
 * group.element[=].target[+].code = #226604005
 * group.element[=].target[=].display = "Cornflakes"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00092
+* group.element[+].code = #sbnam-0006-00091
 * group.element[=].display = "Don va don ekinlari iste'mol uchun"
 * group.element[=].target[+].code = #264331002
 * group.element[=].target[=].display = "Grain"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00093
+* group.element[+].code = #sbnam-0006-00092
 * group.element[=].display = "Don va don ekinlari asosida manniy yormasi"
 * group.element[=].target[+].code = #226732008
 * group.element[=].target[=].display = "Semolina"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00094
+* group.element[+].code = #sbnam-0006-00093
 * group.element[=].display = "Don va don ekinlari asosida kepak"
 * group.element[=].target[+].code = #391858005
 * group.element[=].target[=].display = "Bran"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00095
+* group.element[+].code = #sbnam-0006-00094
 * group.element[=].display = "Maydalangan javdar"
 * group.element[=].target[+].code = #412068007
 * group.element[=].target[=].display = "Rye"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00096
+* group.element[+].code = #sbnam-0006-00095
 * group.element[=].display = "Bug'doy doni"
 * group.element[=].target[+].code = #412071004
 * group.element[=].target[=].display = "Wheat"

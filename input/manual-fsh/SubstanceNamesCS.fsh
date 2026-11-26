@@ -1216,391 +1216,385 @@ Description: "National codes for the water, air, soil and food products that sam
   * ^designation[+].language = #en
   * ^designation[=].value = "Buckwheat flour"
 
-* #sbnam-0006-00032 "Makkajo'xori uni"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Мука кукурузная"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Corn flour"
-
-* #sbnam-0006-00033 "Suli uni"
+* #sbnam-0006-00032 "Suli uni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука овсяная"
   * ^designation[+].language = #en
   * ^designation[=].value = "Oat flour"
 
-* #sbnam-0006-00034 "Makaron uchun bug'doy uni (krupka)"
+* #sbnam-0006-00033 "Makaron uchun bug'doy uni (krupka)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука пшеничная макаронная (крупка)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Wheat flour for pasta (semolina)"
 
-* #sbnam-0006-00035 "Non pishirish uchun bug'doy uni oliy nav"
+* #sbnam-0006-00034 "Non pishirish uchun bug'doy uni oliy nav"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука пшеничная хлебопекарная высший сорт"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bread-making wheat flour, premium grade"
 
-* #sbnam-0006-00036 "Non pishirish uchun bug'doy uni 1-nav"
+* #sbnam-0006-00035 "Non pishirish uchun bug'doy uni 1-nav"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука пшеничная хлебопекарная 1-й сорт"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bread-making wheat flour, first grade"
 
-* #sbnam-0006-00037 "Non pishirish uchun bug'doy uni 2-nav"
+* #sbnam-0006-00036 "Non pishirish uchun bug'doy uni 2-nav"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука пшеничная хлебопекарная 2-й сорт"
   * ^designation[+].language = #en
   * ^designation[=].value = "Bread-making wheat flour, second grade"
 
-* #sbnam-0006-00038 "Javdar uni (Saralangan)"
+* #sbnam-0006-00037 "Javdar uni (Saralangan)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука ржаная (Сеяная)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rye flour (sifted)"
 
-* #sbnam-0006-00039 "Javdar uni (Qipiqli)"
+* #sbnam-0006-00038 "Javdar uni (Qipiqli)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука ржаная (Обдирная)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rye flour (peeled)"
 
-* #sbnam-0006-00040 "Javdar uni (Butun)"
+* #sbnam-0006-00039 "Javdar uni (Butun)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука ржаная (Обойная)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rye flour (wholemeal)"
 
-* #sbnam-0006-00041 "Guruch uni"
+* #sbnam-0006-00040 "Guruch uni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука рисовая"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rice flour"
 
-* #sbnam-0006-00042 "Arpa uni"
+* #sbnam-0006-00041 "Arpa uni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мука ячменная"
   * ^designation[+].language = #en
   * ^designation[=].value = "Barley flour"
 
-* #sbnam-0006-00043 "To'ldirgichli un qandolat mahsulotlari"
+* #sbnam-0006-00042 "To'ldirgichli un qandolat mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мучные кондитерские изделия с начинкой"
   * ^designation[+].language = #en
   * ^designation[=].value = "Filled flour confectionery"
 
-* #sbnam-0006-00044 "Iste'mol sulisi"
+* #sbnam-0006-00043 "Iste'mol sulisi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Овёс продовольственный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Food oats"
 
-* #sbnam-0006-00045 "Suli kepagi"
+* #sbnam-0006-00044 "Suli kepagi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Отруби овсяные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Oat bran"
 
-* #sbnam-0006-00046 "Javdar kepagi"
+* #sbnam-0006-00045 "Javdar kepagi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Отруби ржаные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rye bran"
 
-* #sbnam-0006-00047 "Guruch kepagi"
+* #sbnam-0006-00046 "Guruch kepagi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Отруби рисовые"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rice bran"
 
-* #sbnam-0006-00048 "Sdobali pechenye"
+* #sbnam-0006-00047 "Sdobali pechenye"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сдобное"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rich biscuits"
 
-* #sbnam-0006-00049 "Polba"
+* #sbnam-0006-00048 "Polba"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Полба"
   * ^designation[+].language = #en
   * ^designation[=].value = "Farro"
 
-* #sbnam-0006-00050 "Spelta"
+* #sbnam-0006-00049 "Spelta"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Спельта"
   * ^designation[+].language = #en
   * ^designation[=].value = "Spelt"
 
-* #sbnam-0006-00051 "Emmer"
+* #sbnam-0006-00050 "Emmer"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Эммер"
   * ^designation[+].language = #en
   * ^designation[=].value = "Emmer"
 
-* #sbnam-0006-00053 "Pryaniklar"
+* #sbnam-0006-00052 "Pryaniklar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пряники"
   * ^designation[+].language = #en
   * ^designation[=].value = "Pryaniki (spice cakes)"
 
-* #sbnam-0006-00054 "Kovrijkalar"
+* #sbnam-0006-00053 "Kovrijkalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Коврижки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Kovrizhki (honey cakes)"
 
-* #sbnam-0006-00055 "Soxta donlar: kannixua"
+* #sbnam-0006-00054 "Soxta donlar: kannixua"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Псевдозлаки: каниуа"
   * ^designation[+].language = #en
   * ^designation[=].value = "Pseudocereals: canihua"
 
-* #sbnam-0006-00056 "Iste'mol bug'doyi (yumshoq)"
+* #sbnam-0006-00055 "Iste'mol bug'doyi (yumshoq)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пшеница продовольственная (мягкая)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Food wheat (soft)"
 
-* #sbnam-0006-00057 "Qattiq bug'doy (durum)"
+* #sbnam-0006-00056 "Qattiq bug'doy (durum)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пшеница твёрдая (durum)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Durum wheat"
 
-* #sbnam-0006-00058 "Tozalanmagan sholi (paddi)"
+* #sbnam-0006-00057 "Tozalanmagan sholi (paddi)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рис нешелушёный (падди)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Paddy rice"
 
-* #sbnam-0006-00059 "Bug'lab qayta ishlangan guruch"
+* #sbnam-0006-00058 "Bug'lab qayta ishlangan guruch"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рис пропаренный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Parboiled rice"
 
-* #sbnam-0006-00060 "Iste'mol javdari"
+* #sbnam-0006-00059 "Iste'mol javdari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рожь продовольственная"
   * ^designation[+].language = #en
   * ^designation[=].value = "Food rye"
 
-* #sbnam-0006-00061 "Shirin bulochkalar (Pushki)"
+* #sbnam-0006-00060 "Shirin bulochkalar (Pushki)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сдобные булочные изделия (Плюшки)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rich buns (plyushki)"
 
-* #sbnam-0006-00062 "Shirin bulochkalar (Keks)"
+* #sbnam-0006-00061 "Shirin bulochkalar (Keks)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сдобные булочные изделия (Кексы)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sweet buns (keks)"
 
-* #sbnam-0006-00063 "Tayyor pirogi va sloyka"
+* #sbnam-0006-00062 "Tayyor pirogi va sloyka"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Слойки и пироги (готовые)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Puff pastries and pies (ready)"
 
-* #sbnam-0006-00064 "Tayoqcha non mahsulotlari"
+* #sbnam-0006-00063 "Tayoqcha non mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлебные палочки (Соломка)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Breadsticks"
 
-* #sbnam-0006-00065 "Jo'xori (don)"
+* #sbnam-0006-00064 "Jo'xori (don)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сорго (зерно)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sorghum (grain)"
 
-* #sbnam-0006-00066 "Suxari va grenkalar"
+* #sbnam-0006-00065 "Suxari va grenkalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сухари и гренки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rusks and croutons"
 
-* #sbnam-0006-00067 "Tritikale"
+* #sbnam-0006-00066 "Tritikale"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Тритикале"
   * ^designation[+].language = #en
   * ^designation[=].value = "Triticale"
 
-* #sbnam-0006-00068 "Parhez non (Diabetik)"
+* #sbnam-0006-00067 "Parhez non (Diabetik)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлеб диетический (Диабетический)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dietary bread (for diabetics)"
 
-* #sbnam-0006-00069 "Parhez non (Glyutensiz)"
+* #sbnam-0006-00068 "Parhez non (Glyutensiz)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлеб диетический (Безглютеновый)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dietary bread (gluten-free)"
 
-* #sbnam-0006-00070 "Parhez non (Oqsilsiz)"
+* #sbnam-0006-00069 "Parhez non (Oqsilsiz)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлеб диетический (Безбелковый)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dietary bread (protein-free)"
 
-* #sbnam-0006-00071 "O'zbek obi noni"
+* #sbnam-0006-00070 "O'zbek obi noni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлеб лепёшечный (Узбекские лепёшки)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Flatbread (Uzbek non)"
 
-* #sbnam-0006-00072 "Lavash"
+* #sbnam-0006-00071 "Lavash"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлеб лепёшечный (Лаваш)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Flatbread (lavash)"
 
-* #sbnam-0006-00073 "Sandiq noni"
+* #sbnam-0006-00072 "Sandiq noni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлеб подовый"
   * ^designation[+].language = #en
   * ^designation[=].value = "Hearth bread"
 
-* #sbnam-0006-00074 "1-nav undan bug'doy noni"
+* #sbnam-0006-00073 "1-nav undan bug'doy noni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлеб пшеничный из муки 1-го сорта"
   * ^designation[+].language = #en
   * ^designation[=].value = "Wheat bread from first-grade flour"
 
-* #sbnam-0006-00075 "2-nav undan bug'doy noni"
+* #sbnam-0006-00074 "2-nav undan bug'doy noni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлеб пшеничный из муки 2-го сорта"
   * ^designation[+].language = #en
   * ^designation[=].value = "Wheat bread from second-grade flour"
 
-* #sbnam-0006-00076 "Javdar-bug'doy noni"
+* #sbnam-0006-00075 "Javdar-bug'doy noni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлеб ржано-пшеничный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rye-wheat bread"
 
-* #sbnam-0006-00077 "Qoliplangan non"
+* #sbnam-0006-00076 "Qoliplangan non"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлеб формовой"
   * ^designation[+].language = #en
   * ^designation[=].value = "Tin bread"
 
-* #sbnam-0006-00078 "Ekstrudirovkalangan non"
+* #sbnam-0006-00077 "Ekstrudirovkalangan non"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Хлеб экструдированные"
   * ^designation[+].language = #en
   * ^designation[=].value = "Extruded bread"
 
-* #sbnam-0006-00079 "Iste'mol arpasi"
+* #sbnam-0006-00078 "Iste'mol arpasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ячмень продовольственный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Food barley"
 
-* #sbnam-0006-00080 "Qayta ishlanmagan makkajo'xori doni"
+* #sbnam-0006-00079 "Qayta ishlanmagan makkajo'xori doni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Необработанные зерна кукурузы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Unprocessed corn kernels"
 
-* #sbnam-0006-00084 "Don va don ekinlari"
+* #sbnam-0006-00083 "Don va don ekinlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Зерно и зерновые культуры"
   * ^designation[+].language = #en
   * ^designation[=].value = "Grain and cereal crops"
 
-* #sbnam-0006-00085 "Makkajo'xori shrot"
+* #sbnam-0006-00084 "Makkajo'xori shrot"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кукурузный шрот"
   * ^designation[+].language = #en
   * ^designation[=].value = "Corn meal"
 
-* #sbnam-0006-00086 "Makkajo'xori doni"
+* #sbnam-0006-00085 "Makkajo'xori doni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кукурузное зерно"
   * ^designation[+].language = #en
   * ^designation[=].value = "Corn grain"
 
-* #sbnam-0006-00088 "Makkajo'xori iste'mol uchun"
+* #sbnam-0006-00087 "Makkajo'xori iste'mol uchun"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кукуруза для употребления"
   * ^designation[+].language = #en
   * ^designation[=].value = "Corn for consumption"
 
-* #sbnam-0006-00089 "Makkajo'xori asosida oziq-ovqat mahsuloti"
+* #sbnam-0006-00088 "Makkajo'xori asosida oziq-ovqat mahsuloti"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Продукты питания на основе кукурузы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Corn-based foods"
 
-* #sbnam-0006-00090 "Makkajo'xori asosida tayyor nonushta"
+* #sbnam-0006-00089 "Makkajo'xori asosida tayyor nonushta"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Готовый завтрак из кукурузы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready-to-eat corn breakfast"
 
-* #sbnam-0006-00091 "Faqat makkajo'xoridan tayyorlangan qo'shimcha oziq-ovqat mahsulotlari"
+* #sbnam-0006-00090 "Faqat makkajo'xoridan tayyorlangan qo'shimcha oziq-ovqat mahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дополнительные продукты питания только из кукурузы"
   * ^designation[+].language = #en
   * ^designation[=].value = "Complementary foods made only from corn"
 
-* #sbnam-0006-00092 "Don va don ekinlari iste'mol uchun"
+* #sbnam-0006-00091 "Don va don ekinlari iste'mol uchun"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Зерно и зерновые культуры для употребления"
   * ^designation[+].language = #en
   * ^designation[=].value = "Grain and cereal crops for consumption"
 
-* #sbnam-0006-00093 "Don va don ekinlari asosida manniy yormasi"
+* #sbnam-0006-00092 "Don va don ekinlari asosida manniy yormasi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Манная крупа из зерновых"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cereal semolina"
 
-* #sbnam-0006-00094 "Don va don ekinlari asosida kepak"
+* #sbnam-0006-00093 "Don va don ekinlari asosida kepak"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Отруби из зерновых"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cereal bran"
 
-* #sbnam-0006-00095 "Maydalangan javdar"
+* #sbnam-0006-00094 "Maydalangan javdar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дроблёная рожь"
   * ^designation[+].language = #en
   * ^designation[=].value = "Crushed rye"
 
-* #sbnam-0006-00096 "Bug'doy doni"
+* #sbnam-0006-00095 "Bug'doy doni"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Пшеничное зерно"
   * ^designation[+].language = #en
   * ^designation[=].value = "Wheat grain"
 
-* #sbnam-0006-00097 "Guruchli vaflilar"
+* #sbnam-0006-00096 "Guruchli vaflilar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рисовые вафли"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rice wafers"
 
-* #sbnam-0006-00098 "Guruchli krekerlar"
+* #sbnam-0006-00097 "Guruchli krekerlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рисовые крекеры"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rice crackers"
 
-* #sbnam-0006-00099 "Guruchli nonlar"
+* #sbnam-0006-00098 "Guruchli nonlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рисовый хлеб"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rice bread"
 
-* #sbnam-0006-00100 "Guruchli pag'alar"
+* #sbnam-0006-00099 "Guruchli pag'alar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рисовые палочки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Rice sticks"
 
-* #sbnam-0006-00101 "Nonushta uchun guruch"
+* #sbnam-0006-00100 "Nonushta uchun guruch"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рис для завтрака"
   * ^designation[+].language = #en
@@ -5452,8 +5446,8 @@ Description: "National codes for the water, air, soil and food products that sam
   * ^designation[+].language = #en
   * ^designation[=].value = "Sanitary protection zone of a water intake"
 
-* #sbnam-0068-00001 "10.5. Sof moddalar (vitaminlar, mineral moddalar, organik moddalar va boshqalar) yoki konsentratlar (o'simlik ekstraktlari va boshqalar) asosida turli to'ldiruvchilar qo'shilgan holda tayyorlangan biologik faol qo'shimchalar, shu jumladan ichimliklar uchun quruq konsentratlar."
+* #sbnam-0068-00001 "Sof moddalar (vitaminlar, mineral moddalar, organik moddalar va boshqalar) yoki konsentratlar (o'simlik ekstraktlari va boshqalar) asosida turli to'ldiruvchilar qo'shilgan holda tayyorlangan biologik faol qo'shimchalar, shu jumladan ichimliklar uchun quruq konsentratlar."
   * ^designation[0].language = #ru
-  * ^designation[=].value = "10.5. БАД на основе чистых субстанций (витамины, минеральные вещества, органические и др.) или концентратов (экстракты растений и др.) с использованием различных наполнителей, в т.ч. сухие концентраты для напитков."
+  * ^designation[=].value = "БАД на основе чистых субстанций (витамины, минеральные вещества, органические и др.) или концентратов (экстракты растений и др.) с использованием различных наполнителей, в т.ч. сухие концентраты для напитков."
   * ^designation[+].language = #en
-  * ^designation[=].value = "10.5. Dietary supplements based on pure substances (vitamins, minerals, organic and other substances) or concentrates (plant extracts and other) with various fillers, including dry concentrates for drinks"
+  * ^designation[=].value = "Dietary supplements based on pure substances (vitamins, minerals, organic and other substances) or concentrates (plant extracts and other) with various fillers, including dry concentrates for drinks"
