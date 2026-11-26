@@ -1,0 +1,595 @@
+{
+  "title": "UZ Core clinical views",
+  "guideName": "UZ Core guide",
+  "titlePrefix": "UZ Core ",
+  "intro": "The data that UZ Core systems exchange, shown the way the openEHR Clinical Knowledge Manager shows archetypes and templates: an overview, a data table, a mind map and a form preview.",
+  "languages": [
+    "Uzbek",
+    "Russian",
+    "English"
+  ],
+  "igUrl": "",
+  "profiles": {
+    "uz-core-organization": {
+      "labels": {
+        "Organization.identifier:mohId": "Ministry of Health ID",
+        "Organization.identifier:taxId": "Tax ID (Soliq)",
+        "Organization.identifier:argosId": "ARGOS ID"
+      }
+    },
+    "uz-core-practitioner": {
+      "labels": {
+        "Practitioner.address:uzAddress": "Uzbek address",
+        "Practitioner.address:i18nAddress": "International address",
+        "Practitioner.identifier:nationalId": "PINFL"
+      }
+    },
+    "uz-core-relatedperson": {
+      "labels": {
+        "RelatedPerson.address:uzAddress": "Uzbek address",
+        "RelatedPerson.address:i18nAddress": "International address",
+        "RelatedPerson.identifier:nationalId": "PINFL",
+        "RelatedPerson.identifier:passportLocal": "Passport / ID card",
+        "RelatedPerson.identifier:driversLicense": "Driver's licence",
+        "RelatedPerson.gender.extension:gender-other-2": "Gender other"
+      }
+    },
+    "uz-core-medication": {
+      "labels": {
+        "Medication.code": "Medicine name",
+        "Medication.ingredient": "Active ingredient",
+        "Medication.ingredient.item": "Substance",
+        "Medication.ingredient.strength[x]": "Strength",
+        "Medication.totalVolume": "Package size",
+        "Medication.identifier:registrationCertificateID": "Registration certificate",
+        "Medication.identifier:globalTradeItemID": "GTIN",
+        "Medication.identifier:markingID": "Asl Belgisi marking code",
+        "Medication.identifier:uzpharmBoxGroupID": "Pharmaceutical registry ID",
+        "Medication.identifier:productServiceID": "Product and service code"
+      },
+      "descriptions": {
+        "Medication.ingredient.strength[x]": "Amount of active ingredient per unit.",
+        "Medication.identifier:globalTradeItemID": "Global trade item number on the package barcode.",
+        "Medication.identifier:markingID": "National track-and-trace marking."
+      }
+    }
+  },
+  "views": [
+    {
+      "id": "patient",
+      "title": "Patient",
+      "sub": "Demographics",
+      "icon": "P",
+      "kind": "archetype",
+      "profile": "uz-core-patient",
+      "concept": "Patient",
+      "description": "The administrative and demographic details that identify a person receiving care anywhere on the Digital Health Platform.",
+      "purpose": "To identify a patient once, nationally, so that every visit, diagnosis, test result and prescription recorded for that person points to the same record.",
+      "use": [
+        "Look the patient up by PINFL (or another identity document) before registering them. Patient identity is mastered centrally, so the same person must not be registered twice.",
+        "Every clinical record - an encounter, a condition, a prescription - refers to this record rather than repeating the name and identifiers.",
+        "For an unconscious or unidentified patient, register a temporary record number issued by your organisation and link the real identity later."
+      ],
+      "misuse": [
+        "Not for clinical facts such as diagnoses, allergies or medicines. Those are separate records that refer to the patient.",
+        "Not for relatives, guardians or trustees. Record them as a Related person.",
+        "Not for health workers. Doctors, nurses and pharmacists are Practitioners."
+      ],
+      "keywords": [
+        "patient",
+        "PINFL",
+        "demographics",
+        "identity",
+        "address",
+        "mahalla",
+        "registration"
+      ],
+      "profiles": {
+        "uz-core-patient": {
+          "example": "Patient/example-salim",
+          "labels": {
+            "Patient.identifier": "Identification",
+            "Patient.identifier:nationalId": "PINFL",
+            "Patient.identifier:passportLocal": "Passport / ID card",
+            "Patient.identifier:passportInternational": "International passport",
+            "Patient.identifier:passportForeign": "Foreign passport",
+            "Patient.identifier:pensionNumber": "Pension number",
+            "Patient.identifier:birthCertificate": "Birth certificate",
+            "Patient.identifier:driversLicense": "Driver's licence",
+            "Patient.identifier:driversLicenseForeign": "Foreign driver's licence",
+            "Patient.identifier:diplomaticPassport": "Diplomatic passport",
+            "Patient.identifier:healthCardId": "Health card",
+            "Patient.identifier:militaryId": "Military ID",
+            "Patient.identifier:penitentiaryInstitution": "Penitentiary ID",
+            "Patient.identifier:medicalRecordTemp": "Temporary record number",
+            "Patient.identifier:unknownPatient": "Unknown patient code",
+            "Patient.identifier.value.extension:data-absent-reason": "Reason no identifier",
+            "Patient.name.family": "Family name",
+            "Patient.name.given": "Given name",
+            "Patient.name.suffix": "Patronymic",
+            "Patient.name.text": "Full name",
+            "Patient.name.text.extension:translation": "Russian / Karakalpak form",
+            "Patient.name.use": "Name use",
+            "Patient.name.period": "Valid period",
+            "Patient.gender.extension:gender-other": "Other gender detail",
+            "Patient.birthDate": "Date of birth",
+            "Patient.extension:nationality": "Nationality",
+            "Patient.extension:citizenship": "Citizenship",
+            "Patient.address:uzAddress": "Uzbek address",
+            "Patient.address:uzAddress.state": "Region",
+            "Patient.address:uzAddress.district": "District or city",
+            "Patient.address:uzAddress.city": "Mahalla",
+            "Patient.address:uzAddress.line": "Street",
+            "Patient.address:uzAddress.text": "Full address text",
+            "Patient.address:uzAddress.use": "Address use",
+            "Patient.address:uzAddress.type": "Address type",
+            "Patient.address:uzAddress.period": "Lived here",
+            "Patient.address:i18nAddress": "International address",
+            "Patient.address:i18nAddress.state": "State or province",
+            "Patient.address:i18nAddress.line": "Address line",
+            "Patient.address:i18nAddress.text": "Full address",
+            "Patient.address:i18nAddress.use": "Address use",
+            "Patient.address:i18nAddress.type": "Address type",
+            "Patient.address:i18nAddress.period": "Lived here",
+            "Patient.telecom": "Phone or e-mail",
+            "Patient.contact": "Contact person",
+            "Patient.active": "Record in use",
+            "Patient.managingOrganization": "Primary care organisation",
+            "Patient.extension:managingOrganizationAttachment": "Attached since"
+          },
+          "descriptions": {
+            "Patient.identifier": "At least one identifier is required. Send the PINFL whenever it is known; other documents supplement it or stand in for it.",
+            "Patient.identifier:nationalId": "Personal identification number of an individual: 14 digits printed on the passport or ID card. The main way a patient is found on the platform - send it whenever it is known.",
+            "Patient.identifier:passportLocal": "Number of the ID card or the older book-form passport. A superseded paper passport is kept with use \"old\".",
+            "Patient.identifier:passportInternational": "Number of the passport used for travel abroad.",
+            "Patient.identifier:birthCertificate": "For children who do not yet have a passport or ID card.",
+            "Patient.identifier:medicalRecordTemp": "Issued by the receiving organisation, under its tax ID, for a patient who cannot be identified (for example brought in unconscious). Preferred, because it shows who issued it.",
+            "Patient.identifier:unknownPatient": "Fallback when the receiving organisation's tax ID is not available.",
+            "Patient.identifier.value.extension:data-absent-reason": "When no identifier exists at all, the reason is sent instead of inventing a number.",
+            "Patient.name": "Name in Uzbek, with Russian and Karakalpak forms.",
+            "Patient.name.text.extension:translation": "The Uzbek name is authoritative. Russian and Karakalpak spellings of each part (family, given, patronymic, full name) travel alongside it, so one name carries every script.",
+            "Patient.gender.extension:gender-other": "Only when gender is \"other\".",
+            "Patient.address:uzAddress": "Coded with the national administrative divisions: region, district, mahalla.",
+            "Patient.address:i18nAddress": "Free-text address outside Uzbekistan.",
+            "Patient.contact": "Next of kin or emergency contact.",
+            "Patient.managingOrganization": "The polyclinic or family doctor point the patient is attached to.",
+            "Patient.extension:managingOrganizationAttachment": "Date the patient was attached to that organisation.",
+            "Patient.name.text": "The name as it should be displayed."
+          },
+          "values": {
+            "Patient.identifier:nationalId": [
+              "14 digits, last digit is a check digit"
+            ]
+          },
+          "attach": {
+            "Patient.name": [
+              "Patient.name.text.extension:translation"
+            ]
+          },
+          "hide": [
+            "Patient.name.text.extension:translation"
+          ],
+          "show": [
+            "Patient.contact.relationship",
+            "Patient.contact.name",
+            "Patient.contact.gender",
+            "Patient.contact.telecom"
+          ],
+          "collapsed": [
+            "Patient.address:i18nAddress",
+            "Patient.contact"
+          ]
+        }
+      },
+      "sections": [
+        {
+          "label": "Identification",
+          "include": [
+            "Patient.identifier"
+          ],
+          "hoist": true,
+          "subgroups": [
+            {
+              "label": "Other documents",
+              "desc": "Other identity documents. Use them when the patient has no PINFL, or in addition to it.",
+              "collapsed": true,
+              "ids": [
+                "Patient.identifier:passportForeign",
+                "Patient.identifier:driversLicense",
+                "Patient.identifier:driversLicenseForeign",
+                "Patient.identifier:diplomaticPassport",
+                "Patient.identifier:militaryId",
+                "Patient.identifier:penitentiaryInstitution"
+              ]
+            },
+            {
+              "label": "Unidentified patient",
+              "desc": "For emergencies, when the patient cannot be identified yet.",
+              "collapsed": true,
+              "ids": [
+                "Patient.identifier:medicalRecordTemp",
+                "Patient.identifier:unknownPatient",
+                "Patient.identifier.value.extension:data-absent-reason"
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Personal details",
+          "include": [
+            "Patient.name",
+            "Patient.gender",
+            "Patient.gender.extension:gender-other",
+            "Patient.birthDate",
+            "Patient.maritalStatus",
+            "Patient.extension:nationality",
+            "Patient.extension:citizenship"
+          ]
+        },
+        {
+          "label": "Address and contacts",
+          "include": [
+            "Patient.address:uzAddress",
+            "Patient.address:i18nAddress",
+            "Patient.telecom",
+            "Patient.contact"
+          ]
+        },
+        {
+          "label": "Registration",
+          "include": [
+            "Patient.active",
+            "Patient.managingOrganization",
+            "Patient.extension:managingOrganizationAttachment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prescription",
+      "title": "Electronic prescription",
+      "sub": "Prescribing use case",
+      "icon": "Rx",
+      "kind": "template",
+      "profile": "uz-core-medicationrequest",
+      "resource": "MedicationRequest + MedicationDispense",
+      "igPage": "workflow-prescription.html",
+      "concept": "Electronic prescription",
+      "description": "A prescription written by a doctor, the medicine and dosing it asks for, and the record of what the pharmacy handed over.",
+      "purpose": "To send a prescription from the doctor's system to any pharmacy, let the pharmacy record what it dispensed against it, and pass both to the State Health Insurance Fund (SHIF) for reimbursed medicines.",
+      "use": [
+        "The doctor issues the prescription in the clinic system or DMED. It is printed with a QR code that identifies it.",
+        "The pharmacist scans the QR code, reads the prescription and records what was handed over. A prescription can be dispensed at once or in parts; it stays open until fully supplied.",
+        "For reimbursed medicines the platform forwards the prescription and its dispensing records to SHIF."
+      ],
+      "misuse": [
+        "Not for giving a medicine to an inpatient on the ward. That is a medication administration record.",
+        "Not for a patient's own report of the medicines they take. That is a medication statement."
+      ],
+      "keywords": [
+        "prescription",
+        "e-prescription",
+        "Rx",
+        "dosage",
+        "pharmacy",
+        "dispensing",
+        "reimbursement",
+        "SHIF",
+        "QR code"
+      ],
+      "coverage": [
+        "uz-core-medication-dispense"
+      ],
+      "profiles": {
+        "uz-core-medicationrequest": {
+          "example": "MedicationRequest/example-medication-request",
+          "labels": {
+            "MedicationRequest.identifier": "Prescription number",
+            "MedicationRequest.statusChanged": "Status changed",
+            "MedicationRequest.intent": "Request type",
+            "MedicationRequest.category": "Category",
+            "MedicationRequest.authoredOn": "Date written",
+            "MedicationRequest.effectiveDosePeriod": "Treatment period",
+            "MedicationRequest.note": "Note to pharmacist or patient",
+            "MedicationRequest.reason": "Diagnosis",
+            "MedicationRequest.encounter": "Visit",
+            "MedicationRequest.informationSource": "Reported by",
+            "MedicationRequest.dosageInstruction.doseAndRate.dose[x]": "Dose",
+            "MedicationRequest.dosageInstruction.route": "Route",
+            "MedicationRequest.dosageInstruction.timing.repeat.frequency": "Times per period",
+            "MedicationRequest.dosageInstruction.timing.repeat.period": "Period",
+            "MedicationRequest.dosageInstruction.timing.repeat.periodUnit": "Period unit",
+            "MedicationRequest.dosageInstruction.timing.repeat.timeOfDay": "Times of day",
+            "MedicationRequest.dosageInstruction.timing.repeat.dayOfWeek": "Days of week",
+            "MedicationRequest.dosageInstruction.timing.repeat.when": "Time of day, meals or sleep",
+            "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]": "Course",
+            "MedicationRequest.dosageInstruction.timing.repeat.count": "Number of doses",
+            "MedicationRequest.dosageInstruction.timing.repeat.countMax": "Maximum number of doses",
+            "MedicationRequest.dosageInstruction.timing.repeat.duration": "Duration of each dose",
+            "MedicationRequest.dosageInstruction.timing.repeat.durationUnit": "Duration unit",
+            "MedicationRequest.dosageInstruction.timing.code": "Standard schedule",
+            "MedicationRequest.dosageInstruction.patientInstruction": "Instructions for the patient",
+            "MedicationRequest.dispenseRequest.quantity": "Quantity to dispense",
+            "MedicationRequest.dispenseRequest.validityPeriod.start": "Valid from",
+            "MedicationRequest.dispenseRequest.validityPeriod.end": "Valid until",
+            "MedicationRequest.dispenseRequest.dispenser": "Pharmacy",
+            "MedicationRequest.extension:trustee": "Who may collect"
+          },
+          "descriptions": {
+            "MedicationRequest.identifier": "Number of the prescription in DMED or the clinic system. Printed on the prescription and in its QR code.",
+            "MedicationRequest.statusReason": "Why the status changed, entered by the doctor or pharmacist.",
+            "MedicationRequest.reason": "Why the medicine is prescribed: a diagnosis code, or a link to the recorded Condition or Observation.",
+            "MedicationRequest.encounter": "The visit during which the prescription was written.",
+            "MedicationRequest.insurance": "Insurance coverage, or the SHIF approval, that pays for the medicine.",
+            "MedicationRequest.informationSource": "Who supplied the information, when it is not the prescriber.",
+            "MedicationRequest.dosageInstruction": "How the medicine is to be taken. Repeats when the dosing changes during the course.",
+            "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]": "Start and end of the course, or its length.",
+            "MedicationRequest.dosageInstruction.timing.repeat.duration": "For example the length of an infusion.",
+            "MedicationRequest.dispenseRequest.dispenser": "Pharmacy where the prescription may be dispensed, when it is restricted to one.",
+            "MedicationRequest.extension:trustee": "A relative or patronage nurse allowed to collect the medicine on the patient's behalf.",
+            "MedicationRequest.subject": "The patient the prescription is written for. The prescription refers to the patient record; it does not copy it.",
+            "MedicationRequest.requester": "The doctor (in their role at a clinic) or organisation issuing the prescription.",
+            "MedicationRequest.medication": "The prescription may carry the medicine as a code only, or link to a full medicine record."
+          },
+          "expand": [
+            "MedicationRequest.dispenseRequest.validityPeriod"
+          ],
+          "flatten": [
+            "MedicationRequest.dosageInstruction.timing",
+            "MedicationRequest.dosageInstruction.timing.repeat",
+            "MedicationRequest.dosageInstruction.doseAndRate",
+            "MedicationRequest.dispenseRequest.validityPeriod"
+          ],
+          "types": {
+            "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]": "period",
+            "MedicationRequest.dispenseRequest.validityPeriod.start": "date",
+            "MedicationRequest.dispenseRequest.validityPeriod.end": "date"
+          }
+        },
+        "uz-core-patient": {
+          "labels": {
+            "Patient.name.text": "Full name",
+            "Patient.identifier:nationalId": "PINFL",
+            "Patient.birthDate": "Date of birth"
+          }
+        },
+        "uz-core-practitioner-role": {
+          "labels": {
+            "PractitionerRole.practitioner": "Doctor",
+            "PractitionerRole.organization": "Clinic",
+            "PractitionerRole.code": "Role"
+          }
+        },
+        "uz-core-medication-dispense": {
+          "example": "MedicationDispense/example-medication-dispense-outpatient",
+          "labels": {
+            "MedicationDispense.identifier": "Dispense number",
+            "MedicationDispense.status": "Dispense status",
+            "MedicationDispense.statusChanged": "Status changed",
+            "MedicationDispense.notPerformedReason": "Reason not dispensed",
+            "MedicationDispense.authorizingPrescription": "Prescription",
+            "MedicationDispense.medication": "Medicine handed over",
+            "MedicationDispense.quantity": "Quantity handed over",
+            "MedicationDispense.performer.actor": "Dispensed by",
+            "MedicationDispense.recorded": "Recorded",
+            "MedicationDispense.whenPrepared": "Prepared",
+            "MedicationDispense.whenHandedOver": "Handed over",
+            "MedicationDispense.receiver": "Received by",
+            "MedicationDispense.subject": "Patient"
+          },
+          "descriptions": {
+            "MedicationDispense.notPerformedReason": "When the pharmacy declines: the detected issue (for example an interaction).",
+            "MedicationDispense.authorizingPrescription": "Points back to the prescription. This link lets SHIF match what was ordered against what was supplied."
+          }
+        }
+      },
+      "sections": [
+        {
+          "label": "Prescription",
+          "card": "1..1",
+          "include": [
+            "MedicationRequest.identifier",
+            "MedicationRequest.status",
+            "MedicationRequest.statusReason",
+            "MedicationRequest.statusChanged",
+            "MedicationRequest.intent",
+            "MedicationRequest.category",
+            "MedicationRequest.authoredOn",
+            "MedicationRequest.effectiveDosePeriod",
+            "MedicationRequest.note"
+          ]
+        },
+        {
+          "label": "Patient",
+          "element": "MedicationRequest.subject",
+          "link": true,
+          "from": "uz-core-patient",
+          "include": [
+            "Patient.name.text",
+            "Patient.identifier:nationalId",
+            "Patient.birthDate",
+            "Patient.gender"
+          ],
+          "collapsed": true
+        },
+        {
+          "label": "Prescriber",
+          "element": "MedicationRequest.requester",
+          "link": true,
+          "from": "uz-core-practitioner-role",
+          "include": [
+            "PractitionerRole.practitioner",
+            "PractitionerRole.code",
+            "PractitionerRole.specialty",
+            "PractitionerRole.organization"
+          ],
+          "collapsed": true
+        },
+        {
+          "label": "Clinical context",
+          "include": [
+            "MedicationRequest.reason",
+            "MedicationRequest.encounter",
+            "MedicationRequest.insurance",
+            "MedicationRequest.informationSource"
+          ]
+        },
+        {
+          "label": "Medicine",
+          "element": "MedicationRequest.medication",
+          "from": "uz-core-medication",
+          "include": [
+            "Medication.code",
+            "Medication.doseForm",
+            "Medication.ingredient",
+            "Medication.totalVolume",
+            "Medication.identifier:registrationCertificateID",
+            "Medication.identifier:globalTradeItemID",
+            "Medication.identifier:markingID"
+          ]
+        },
+        {
+          "label": "Dosage",
+          "element": "MedicationRequest.dosageInstruction",
+          "include": [
+            "MedicationRequest.dosageInstruction"
+          ],
+          "hoist": true
+        },
+        {
+          "label": "Supply",
+          "element": "MedicationRequest.dispenseRequest",
+          "include": [
+            "MedicationRequest.dispenseRequest",
+            "MedicationRequest.extension:trustee"
+          ],
+          "hoist": true
+        },
+        {
+          "label": "Dispensing record",
+          "card": "0..*",
+          "from": "uz-core-medication-dispense",
+          "desc": "Recorded by the pharmacy, once per supply. Several records mean the prescription was dispensed in parts.",
+          "include": [
+            "MedicationDispense.status",
+            "MedicationDispense.notPerformedReason",
+            "MedicationDispense.authorizingPrescription",
+            "MedicationDispense.medication",
+            "MedicationDispense.quantity",
+            "MedicationDispense.performer.actor",
+            "MedicationDispense.whenPrepared",
+            "MedicationDispense.whenHandedOver",
+            "MedicationDispense.receiver",
+            "MedicationDispense.identifier",
+            "MedicationDispense.statusChanged",
+            "MedicationDispense.category",
+            "MedicationDispense.subject",
+            "MedicationDispense.recorded"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "n": "Step 1",
+          "title": "Prescribe",
+          "who": "Doctor - clinic system or DMED",
+          "from": "Doctor",
+          "to": "Platform",
+          "sends": [
+            "Prescription",
+            "Medicine",
+            "Dosage",
+            "Supply",
+            "Clinical context"
+          ],
+          "refs": [
+            "Patient",
+            "Prescriber"
+          ],
+          "text": "The doctor writes the prescription. It names the medicine and how to take it, the diagnosis it treats and how much may be dispensed, and refers to the patient and the prescriber already registered on the platform. It is printed with a QR code.",
+          "status": [
+            [
+              "Prescription",
+              "active"
+            ]
+          ]
+        },
+        {
+          "n": "Step 2",
+          "title": "Dispense",
+          "who": "Pharmacist - pharmacy system",
+          "from": "Pharmacy",
+          "to": "Platform",
+          "sends": [
+            "Dispensing record"
+          ],
+          "refs": [
+            "Prescription",
+            "Patient"
+          ],
+          "reads": [
+            "Prescription",
+            "Medicine",
+            "Dosage",
+            "Supply"
+          ],
+          "text": "The pharmacist scans the QR code, reads the prescription from the platform, and records what was handed over. The dispensing record points back to the prescription. A partial supply is one record; the prescription stays open for the rest.",
+          "status": [
+            [
+              "Dispensing record",
+              "in progress -> completed, or declined"
+            ],
+            [
+              "Prescription",
+              "active -> completed when fully supplied"
+            ]
+          ],
+          "callout": "The link from the dispensing record back to the prescription is what makes the chain traceable for the doctor, the patient and SHIF."
+        },
+        {
+          "n": "Step 3",
+          "title": "Report to SHIF",
+          "who": "Platform - State Health Insurance Fund",
+          "from": "Platform",
+          "to": "SHIF",
+          "sends": [
+            "Prescription",
+            "Medicine",
+            "Dosage",
+            "Supply",
+            "Clinical context",
+            "Dispensing record"
+          ],
+          "refs": [
+            "Patient",
+            "Prescriber"
+          ],
+          "text": "For reimbursed medicines, the platform forwards the prescription and its dispensing records to SHIF. SHIF matches what was ordered against what was supplied. The reimbursement decision and payment happen in SHIF's own system.",
+          "status": [],
+          "callout": "The platform carries the medical data SHIF needs. Only validated records are forwarded."
+        },
+        {
+          "n": "Step 4",
+          "title": "Read it back",
+          "who": "Doctor, patient, SHIF",
+          "from": "Platform",
+          "to": "Doctor / patient",
+          "sends": [
+            "Prescription",
+            "Medicine",
+            "Dosage",
+            "Supply",
+            "Clinical context",
+            "Dispensing record"
+          ],
+          "refs": [
+            "Patient",
+            "Prescriber"
+          ],
+          "text": "Anyone with access sees the active prescriptions for a patient and, for each one, every supply made against it. This is how the doctor knows whether the patient actually collected the medicine.",
+          "status": []
+        }
+      ]
+    }
+  ]
+}
