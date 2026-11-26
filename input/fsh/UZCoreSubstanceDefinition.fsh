@@ -2,7 +2,7 @@ Profile: UZCoreSubstanceDefinition
 Parent: SubstanceDefinition
 Id: uz-core-substancedefinition
 Title: "UZ Core SubstanceDefinition"
-Description: "Uzbekistan Core SubstanceDefinition profile, used to represent an entry of the reference list of substances and sampling objects - such as a food product, a water source or a swabbed surface - with its code, names in Uzbek and Russian, category and manufacturer"
+Description: "Uzbekistan Core SubstanceDefinition profile, used to represent an entry of the reference list of substances sampled for sanitary and epidemiological examination - water, air, soil or a food product - with its code, names in Uzbek and Russian, category and manufacturer"
 
 * ^status = #active
 * ^experimental = true

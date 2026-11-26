@@ -464,6 +464,19 @@
       ]
     },
     {
+      "code": "444051000124101",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Энергетический напиток"
+        },
+        {
+          "language": "uz",
+          "value": "Energetik ichimlik"
+        }
+      ]
+    },
+    {
       "code": "227279001",
       "designation": [
         {
@@ -694,19 +707,6 @@
         {
           "language": "uz",
           "value": "Tort"
-        }
-      ]
-    },
-    {
-      "code": "226704004",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Кексы"
-        },
-        {
-          "language": "uz",
-          "value": "Keks"
         }
       ]
     },
@@ -1006,6 +1006,19 @@
         {
           "language": "uz",
           "value": "Eritilgan cho'chqa yog'i (smalets)"
+        }
+      ]
+    },
+    {
+      "code": "436831000124108",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Трансжиры"
+        },
+        {
+          "language": "uz",
+          "value": "Trans yog'lar"
         }
       ]
     },
@@ -1539,6 +1552,19 @@
         {
           "language": "uz",
           "value": "Bug'doy yormasi (Bulgur)"
+        }
+      ]
+    },
+    {
+      "code": "1411501003",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Просо обыкновенное (зерно)"
+        },
+        {
+          "language": "uz",
+          "value": "Oddiy tariq doni"
         }
       ]
     },
@@ -3038,6 +3064,19 @@
       ]
     },
     {
+      "code": "999486261000087101",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Руккола"
+        },
+        {
+          "language": "uz",
+          "value": "Rukkola"
+        }
+      ]
+    },
+    {
       "code": "256329006",
       "designation": [
         {
@@ -3194,6 +3233,19 @@
       ]
     },
     {
+      "code": "442601000124101",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Капуста листовая коллард"
+        },
+        {
+          "language": "uz",
+          "value": "Kollard bargli karami"
+        }
+      ]
+    },
+    {
       "code": "227230009",
       "designation": [
         {
@@ -3242,6 +3294,19 @@
         {
           "language": "uz",
           "value": "Kartoshka"
+        }
+      ]
+    },
+    {
+      "code": "442891000124107",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Томатный кетчуп"
+        },
+        {
+          "language": "uz",
+          "value": "Pomidor ketchupi"
         }
       ]
     },
@@ -4065,6 +4130,19 @@
       ]
     },
     {
+      "code": "442571000124108",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Древесные орехи"
+        },
+        {
+          "language": "uz",
+          "value": "Daraxt yong'oqlari"
+        }
+      ]
+    },
+    {
       "code": "260204008",
       "designation": [
         {
@@ -4156,15 +4234,15 @@
       ]
     },
     {
-      "code": "58296003",
+      "code": "412534006",
       "designation": [
         {
           "language": "ru",
-          "value": "Дрожжи Saccharomyces cerevisiae"
+          "value": "Дрожжи"
         },
         {
           "language": "uz",
-          "value": "Saccharomyces cerevisiae achitqisi"
+          "value": "Achitqi"
         }
       ]
     },
@@ -4464,6 +4542,19 @@
         {
           "language": "uz",
           "value": "Lesitin"
+        }
+      ]
+    },
+    {
+      "code": "567981000202107",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Красный дрожжевой рис"
+        },
+        {
+          "language": "uz",
+          "value": "Qizil xamirturushli guruch"
         }
       ]
     },
@@ -4806,6 +4897,19 @@
       ]
     },
     {
+      "code": "30994311000001106",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Яблочный уксус"
+        },
+        {
+          "language": "uz",
+          "value": "Olma sirkasi"
+        }
+      ]
+    },
+    {
       "code": "1259873006",
       "designation": [
         {
@@ -5062,6 +5166,19 @@
         {
           "language": "uz",
           "value": "Spirulina"
+        }
+      ]
+    },
+    {
+      "code": "900053541000179104",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Экстракт хлореллы"
+        },
+        {
+          "language": "uz",
+          "value": "Xlorella ekstrakti"
         }
       ]
     },
@@ -5352,6 +5469,19 @@
       ]
     },
     {
+      "code": "901000161107",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Какао"
+        },
+        {
+          "language": "uz",
+          "value": "Kakao"
+        }
+      ]
+    },
+    {
       "code": "227621009",
       "designation": [
         {
@@ -5452,6 +5582,19 @@
         {
           "language": "uz",
           "value": "Asalari changi"
+        }
+      ]
+    },
+    {
+      "code": "444471000124101",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Эритрит"
+        },
+        {
+          "language": "uz",
+          "value": "Eritrit"
         }
       ]
     },
@@ -5985,6 +6128,32 @@
         {
           "language": "uz",
           "value": "Guava"
+        }
+      ]
+    },
+    {
+      "code": "999486921000087103",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Питахайя"
+        },
+        {
+          "language": "uz",
+          "value": "Pitaxaya"
+        }
+      ]
+    },
+    {
+      "code": "999486551000087101",
+      "designation": [
+        {
+          "language": "ru",
+          "value": "Дуриан"
+        },
+        {
+          "language": "uz",
+          "value": "Duriyan"
         }
       ]
     },
@@ -6847,201 +7016,6 @@
       ]
     },
     {
-      "code": "37759000",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Хирургический инструментарий"
-        },
-        {
-          "language": "uz",
-          "value": "Jarrohlik asboblari"
-        }
-      ]
-    },
-    {
-      "code": "303607000",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Медицинское оборудование"
-        },
-        {
-          "language": "uz",
-          "value": "Tibbiy uskuna"
-        }
-      ]
-    },
-    {
-      "code": "33712006",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Кожа кисти"
-        },
-        {
-          "language": "uz",
-          "value": "Qo'l terisi"
-        }
-      ]
-    },
-    {
-      "code": "6919005",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Материал защитной одежды"
-        },
-        {
-          "language": "uz",
-          "value": "Himoya kiyimi materiali"
-        }
-      ]
-    },
-    {
-      "code": "91032009",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Игрушки"
-        },
-        {
-          "language": "uz",
-          "value": "O'yinchoqlar"
-        }
-      ]
-    },
-    {
-      "code": "706699008",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Стулья"
-        },
-        {
-          "language": "uz",
-          "value": "Stullar"
-        }
-      ]
-    },
-    {
-      "code": "54638004",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Полотенца"
-        },
-        {
-          "language": "uz",
-          "value": "Sochiqlar"
-        }
-      ]
-    },
-    {
-      "code": "71463006",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Полиэтилен"
-        },
-        {
-          "language": "uz",
-          "value": "Polietilen"
-        }
-      ]
-    },
-    {
-      "code": "47358009",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Полистирол"
-        },
-        {
-          "language": "uz",
-          "value": "Polistirol"
-        }
-      ]
-    },
-    {
-      "code": "35233000",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Поливинилхлорид"
-        },
-        {
-          "language": "uz",
-          "value": "Polivinilxlorid"
-        }
-      ]
-    },
-    {
-      "code": "32039001",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Стекло"
-        },
-        {
-          "language": "uz",
-          "value": "Shisha"
-        }
-      ]
-    },
-    {
-      "code": "261253002",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Керамика"
-        },
-        {
-          "language": "uz",
-          "value": "Keramika"
-        }
-      ]
-    },
-    {
-      "code": "425620007",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Металл"
-        },
-        {
-          "language": "uz",
-          "value": "Metall"
-        }
-      ]
-    },
-    {
-      "code": "25307002",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Вазелин"
-        },
-        {
-          "language": "uz",
-          "value": "Vazelin"
-        }
-      ]
-    },
-    {
-      "code": "25780000",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Мыло"
-        },
-        {
-          "language": "uz",
-          "value": "Sovun"
-        }
-      ]
-    },
-    {
       "code": "28647000",
       "designation": [
         {
@@ -7090,45 +7064,6 @@
         {
           "language": "uz",
           "value": "Oziq-ovqat qo'shimchasi"
-        }
-      ]
-    },
-    {
-      "code": "708547008",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Постельные принадлежности"
-        },
-        {
-          "language": "uz",
-          "value": "Yotoq jihozlari"
-        }
-      ]
-    },
-    {
-      "code": "86407004",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Стол"
-        },
-        {
-          "language": "uz",
-          "value": "Stol"
-        }
-      ]
-    },
-    {
-      "code": "708660005",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Подоконник"
-        },
-        {
-          "language": "uz",
-          "value": "Deraza tokchasi"
         }
       ]
     },

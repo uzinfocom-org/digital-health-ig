@@ -32,12 +32,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Fortified wine"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0001-00007
-* group.element[=].display = "Aroq (vodka)"
-* group.element[=].target[+].code = #226064009
-* group.element[=].target[=].display = "Vodka"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0001-00008
 * group.element[=].display = "Maxsus vodka (Damlangan)"
 * group.element[=].target[+].code = #226064009
@@ -80,12 +74,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Cocktail"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0001-00017
-* group.element[=].display = "Likyorlar"
-* group.element[=].target[+].code = #226038003
-* group.element[=].target[=].display = "Liqueur"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0001-00023
 * group.element[=].display = "Filtrlanmagan pivo"
 * group.element[=].target[+].code = #53410008
@@ -96,12 +84,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "To'q rangli filtrlangan pivo"
 * group.element[=].target[+].code = #53410008
 * group.element[=].target[=].display = "Beer"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0001-00025
-* group.element[=].display = "Rom"
-* group.element[=].target[+].code = #226054000
-* group.element[=].target[=].display = "Rum"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0001-00026
@@ -120,12 +102,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Arpabodiyon spirtli ichimliklar"
 * group.element[=].target[+].code = #6524003
 * group.element[=].target[=].display = "Distilled spirits"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0001-00029
-* group.element[=].display = "Sidr (olmali)"
-* group.element[=].target[+].code = #226025006
-* group.element[=].target[=].display = "Hard cider"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0001-00030
@@ -370,8 +346,8 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 
 * group.element[+].code = #sbnam-0003-00029
 * group.element[=].display = "Keks"
-* group.element[=].target[+].code = #226704004
-* group.element[=].target[=].display = "Muffin"
+* group.element[=].target[+].code = #226639005
+* group.element[=].target[=].display = "Cake"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0003-00030
@@ -414,12 +390,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Tayyor souslar (Sabzavotli)"
 * group.element[=].target[+].code = #227519005
 * group.element[=].target[=].display = "Sauce"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0003-00040
-* group.element[=].display = "Sendvich"
-* group.element[=].target[+].code = #735008002
-* group.element[=].target[=].display = "Sandwich"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0003-00041
@@ -542,12 +512,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Dripping"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0005-00002
-* group.element[=].display = "Eritilgan mol yog'i"
-* group.element[=].target[+].code = #229852001
-* group.element[=].target[=].display = "Beef dripping"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0005-00003
 * group.element[=].display = "Eritilgan echki yog'i"
 * group.element[=].target[+].code = #226898001
@@ -558,24 +522,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Eritilgan ot yog'i"
 * group.element[=].target[+].code = #226898001
 * group.element[=].target[=].display = "Dripping"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0005-00008
-* group.element[=].display = "Baliq yog'i (Baliq)"
-* group.element[=].target[+].code = #735341005
-* group.element[=].target[=].display = "Fish oil"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0005-00010
-* group.element[=].display = "Eritilgan cho'chqa yog'i (smalets)"
-* group.element[=].target[+].code = #226899009
-* group.element[=].target[=].display = "Lard"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0005-00014
-* group.element[=].display = "Mayonez"
-* group.element[=].target[+].code = #227549007
-* group.element[=].target[=].display = "Mayonnaise"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0005-00015
@@ -606,12 +552,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Stol margarini"
 * group.element[=].target[+].code = #226890008
 * group.element[=].target[=].display = "Margarine"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0005-00020
-* group.element[=].display = "Uzum danagi moyi"
-* group.element[=].target[+].code = #229932003
-* group.element[=].target[=].display = "Grapeseed oil"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0005-00022
@@ -692,12 +632,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Cottonseed oil"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0005-00038
-* group.element[=].display = "Bolalar oziq-ovqati uchun o'simlik moy va yog'lari"
-* group.element[=].target[+].code = #412552006
-* group.element[=].target[=].display = "Vegetable oil"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0005-00039
 * group.element[=].display = "Mayonez sousi"
 * group.element[=].target[+].code = #227549007
@@ -746,12 +680,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Vermicelli"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00009
-* group.element[=].display = "Grechka (don)"
-* group.element[=].target[+].code = #226723006
-* group.element[=].target[=].display = "Buckwheat - cereal"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0006-00012
 * group.element[=].display = "Grechka yormasi (Yadritsa)"
 * group.element[=].target[+].code = #226723006
@@ -786,6 +714,12 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Bug'doy yormasi (Artek)"
 * group.element[=].target[+].code = #412071004
 * group.element[=].target[=].display = "Wheat"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
+
+* group.element[+].code = #sbnam-0006-00018
+* group.element[=].display = "Tariq yormasi"
+* group.element[=].target[+].code = #1411501003
+* group.element[=].target[=].display = "Common millet seed"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0006-00019
@@ -840,12 +774,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Makaron mahsulotlari (Lag'mon)"
 * group.element[=].target[+].code = #226735005
 * group.element[=].target[=].display = "Noodles"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0006-00028
-* group.element[=].display = "Manniy yormasi"
-* group.element[=].target[+].code = #226732008
-* group.element[=].target[=].display = "Semolina"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0006-00032
@@ -964,8 +892,8 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 
 * group.element[+].code = #sbnam-0006-00062
 * group.element[=].display = "Shirin bulochkalar (Keks)"
-* group.element[=].target[+].code = #226704004
-* group.element[=].target[=].display = "Muffin"
+* group.element[=].target[+].code = #226639005
+* group.element[=].target[=].display = "Cake"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0006-00066
@@ -1046,24 +974,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Corn kernels"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0006-00081
-* group.element[=].display = "Makkajo'xori"
-* group.element[=].target[+].code = #412357001
-* group.element[=].target[=].display = "Corn"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0006-00082
-* group.element[=].display = "Guruch"
-* group.element[=].target[+].code = #67324005
-* group.element[=].target[=].display = "Rice"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0006-00083
-* group.element[=].display = "Bug'doy"
-* group.element[=].target[+].code = #412071004
-* group.element[=].target[=].display = "Wheat"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0006-00084
 * group.element[=].display = "Don va don ekinlari"
 * group.element[=].target[+].code = #264331002
@@ -1074,12 +984,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Makkajo'xori doni"
 * group.element[=].target[+].code = #1290190002
 * group.element[=].target[=].display = "Corn kernels"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0006-00087
-* group.element[=].display = "Makkajo'xori uni"
-* group.element[=].target[+].code = #229948002
-* group.element[=].target[=].display = "Cornmeal"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0006-00088
@@ -1146,7 +1050,7 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Meva va urug'lar (Do'lana)"
 * group.element[=].target[+].code = #763200007
 * group.element[=].target[=].display = "Common hawthorn"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #source-is-broader-than-target
 
 * group.element[+].code = #sbnam-0007-00018
 * group.element[=].display = "Quruq dorivor o'tlar (Chabrets)"
@@ -1208,12 +1112,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Ice cream"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0008-00027
-* group.element[=].display = "Sariyog'"
-* group.element[=].target[+].code = #226888007
-* group.element[=].target[=].display = "Butter"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0008-00028
 * group.element[=].display = "Sariyog'-o'simlik spredi"
 * group.element[=].target[+].code = #226889004
@@ -1272,12 +1170,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Pasterlangan sutdan tayyorlangan yangi pishmagan pishloq"
 * group.element[=].target[+].code = #102264005
 * group.element[=].target[=].display = "Cheese"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0008-00040
-* group.element[=].display = "Tvorog (suzma)"
-* group.element[=].target[+].code = #226862009
-* group.element[=].target[=].display = "Quark"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0009-00004
@@ -1526,40 +1418,10 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Meat samosa"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0009-00070
-* group.element[=].display = "Qoramol go'shti"
-* group.element[=].target[+].code = #226916002
-* group.element[=].target[=].display = "Beef"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0009-00071
-* group.element[=].display = "Qo'y go'shti"
-* group.element[=].target[+].code = #710184005
-* group.element[=].target[=].display = "Mutton"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0009-00072
-* group.element[=].display = "Cho'chqa go'shti"
-* group.element[=].target[+].code = #226934003
-* group.element[=].target[=].display = "Pork"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0009-00073
-* group.element[=].display = "Parranda go'shti"
-* group.element[=].target[+].code = #28230009
-* group.element[=].target[=].display = "Poultry"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0009-00074
 * group.element[=].display = "Qoramol qo'shimcha submahsulotlari"
 * group.element[=].target[+].code = #226982009
 * group.element[=].target[=].display = "Offal"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0009-00075
-* group.element[=].display = "Qoramol jigari"
-* group.element[=].target[+].code = #226991008
-* group.element[=].target[=].display = "Liver - meat"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0009-00076
@@ -1584,12 +1446,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Otlarning jigari"
 * group.element[=].target[+].code = #226991008
 * group.element[=].target[=].display = "Liver - meat"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0009-00080
-* group.element[=].display = "Qoramol buyragi"
-* group.element[=].target[+].code = #226987003
-* group.element[=].target[=].display = "Kidney - meat"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0009-00081
@@ -1620,19 +1476,7 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Cho'chqa yog'i"
 * group.element[=].target[+].code = #226899009
 * group.element[=].target[=].display = "Lard"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0009-00090
-* group.element[=].display = "Ovlanadigan hayvonlar go'shti"
-* group.element[=].target[+].code = #226971001
-* group.element[=].target[=].display = "Game - meat"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0010-00002
-* group.element[=].display = "Yashil loviya"
-* group.element[=].target[+].code = #256318007
-* group.element[=].target[=].display = "Green bean"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #source-is-broader-than-target
 
 * group.element[+].code = #sbnam-0010-00004
 * group.element[=].display = "Madaniylashtirilgan veshenka"
@@ -1682,16 +1526,22 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Basil"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0010-00013
-* group.element[=].display = "Ko'kat: yalpiz"
-* group.element[=].target[+].code = #230037009
-* group.element[=].target[=].display = "Mint - herb"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0010-00015
 * group.element[=].display = "Ko'kat: rozmarin"
 * group.element[=].target[+].code = #227410007
 * group.element[=].target[=].display = "Rosemary"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
+
+* group.element[+].code = #sbnam-0010-00016
+* group.element[=].display = "Ko'kat: rukkola (himoyalangan tuproq)"
+* group.element[=].target[+].code = #999486261000087101
+* group.element[=].target[=].display = "Arugula"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
+
+* group.element[+].code = #sbnam-0010-00017
+* group.element[=].display = "Ko'kat: rukkola (ochiq tuproq)"
+* group.element[=].target[+].code = #999486261000087101
+* group.element[=].target[=].display = "Arugula"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0010-00018
@@ -1730,11 +1580,11 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Chinese cabbage"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0010-00027
-* group.element[=].display = "Pekin karami"
-* group.element[=].target[+].code = #227225005
-* group.element[=].target[=].display = "Chinese cabbage"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[+].code = #sbnam-0010-00026
+* group.element[=].display = "Bargli karam"
+* group.element[=].target[+].code = #442601000124101
+* group.element[=].target[=].display = "Collard greens"
+* group.element[=].target[=].relationship = #source-is-broader-than-target
 
 * group.element[+].code = #sbnam-0010-00028
 * group.element[=].display = "Kechki kartoshka"
@@ -1784,12 +1634,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Spring onion"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0010-00042
-* group.element[=].display = "Manioka"
-* group.element[=].target[+].code = #227234000
-* group.element[=].target[=].display = "Cassava"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0010-00043
 * group.element[=].display = "Kassava (yangi)"
 * group.element[=].target[+].code = #227234000
@@ -1818,12 +1662,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Himoyalangan tuproq bodringi"
 * group.element[=].target[+].code = #735213008
 * group.element[=].target[=].display = "Cucumber"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0010-00058
-* group.element[=].display = "Konsentrlangan pomidor pastasi"
-* group.element[=].target[+].code = #227274006
-* group.element[=].target[=].display = "Tomato puree"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0010-00059
@@ -1866,12 +1704,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Cherri pomidor"
 * group.element[=].target[+].code = #734881000
 * group.element[=].target[=].display = "Tomato"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0010-00069
-* group.element[=].display = "Rediska"
-* group.element[=].target[+].code = #256325000
-* group.element[=].target[=].display = "Radish"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0010-00070
@@ -2042,12 +1874,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Mushroom"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0010-00105
-* group.element[=].display = "Veshenka qo'ziqorini"
-* group.element[=].target[+].code = #1268404004
-* group.element[=].target[=].display = "Oyster mushroom"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0010-00109
 * group.element[=].display = "Xo'raki (oshxona) zaytunlari"
 * group.element[=].target[+].code = #227436000
@@ -2156,34 +1982,28 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Hazelnut"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0012-00001
-* group.element[=].display = "Agar-agar"
-* group.element[=].target[+].code = #10249006
-* group.element[=].target[=].display = "Agar"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0012-00007
 * group.element[=].display = "Quruq pivo achitqilari"
-* group.element[=].target[+].code = #58296003
-* group.element[=].target[=].display = "Saccharomyces cerevisiae"
+* group.element[=].target[+].code = #412534006
+* group.element[=].target[=].display = "Yeast"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0012-00008
 * group.element[=].display = "Presslangan non achitqilari"
-* group.element[=].target[+].code = #58296003
-* group.element[=].target[=].display = "Saccharomyces cerevisiae"
+* group.element[=].target[+].code = #412534006
+* group.element[=].target[=].display = "Yeast"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0012-00009
 * group.element[=].display = "Quruq non achitqilari"
-* group.element[=].target[+].code = #58296003
-* group.element[=].target[=].display = "Saccharomyces cerevisiae"
+* group.element[=].target[+].code = #412534006
+* group.element[=].target[=].display = "Yeast"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0012-00010
 * group.element[=].display = "Instant non achitqilari"
-* group.element[=].target[+].code = #58296003
-* group.element[=].target[=].display = "Saccharomyces cerevisiae"
+* group.element[=].target[+].code = #412534006
+* group.element[=].target[=].display = "Yeast"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0012-00011
@@ -2199,13 +2019,13 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0012-00014
-* group.element[=].display = "Kartoshka"
+* group.element[=].display = "Kartoshka kraxmali"
 * group.element[=].target[+].code = #74242007
 * group.element[=].target[=].display = "Food starch"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0012-00015
-* group.element[=].display = "Guruch"
+* group.element[=].display = "Guruch kraxmali"
 * group.element[=].target[+].code = #74242007
 * group.element[=].target[=].display = "Food starch"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
@@ -2238,6 +2058,12 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Kislotalik regulyatorlari (Limon)"
 * group.element[=].target[+].code = #75399008
 * group.element[=].target[=].display = "Citric acid"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
+
+* group.element[+].code = #sbnam-0012-00029
+* group.element[=].display = "Qizil xamirturush bilan fermentlangan guruchga asoslangan parhez qo'shimchalari"
+* group.element[=].target[+].code = #567981000202107
+* group.element[=].target[=].display = "Red yeast rice"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0012-00034
@@ -2361,28 +2187,10 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Basil"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0013-00033
-* group.element[=].display = "Timyan"
-* group.element[=].target[+].code = #227413009
-* group.element[=].target[=].display = "Thyme"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0013-00034
-* group.element[=].display = "Rozmarin"
-* group.element[=].target[+].code = #227410007
-* group.element[=].target[=].display = "Rosemary"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0013-00035
 * group.element[=].display = "Quritilgan o'tlar: ukrop"
 * group.element[=].target[+].code = #256331002
 * group.element[=].target[=].display = "Dill"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0013-00036
-* group.element[=].display = "Yalpiz"
-* group.element[=].target[+].code = #230037009
-* group.element[=].target[=].display = "Mint - herb"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0013-00040
@@ -2577,12 +2385,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Anchovy"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0014-00043
-* group.element[=].display = "Tunyets turlari (Tunyets)"
-* group.element[=].target[+].code = #227144008
-* group.element[=].target[=].display = "Tuna fish"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0014-00048
 * group.element[=].display = "Iste'mol uchun baliq moyi"
 * group.element[=].target[+].code = #735341005
@@ -2613,12 +2415,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Tuna fish"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0014-00057
-* group.element[=].display = "Anchoz baliq"
-* group.element[=].target[+].code = #735337006
-* group.element[=].target[=].display = "Anchovy"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0015-00005
 * group.element[=].display = "Iste'mol glyukozasi"
 * group.element[=].target[+].code = #67079006
@@ -2631,22 +2427,22 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Glucose"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0015-00011
-* group.element[=].display = "Iris"
-* group.element[=].target[+].code = #227626004
-* group.element[=].target[=].display = "Toffee"
+* group.element[+].code = #sbnam-0015-00013
+* group.element[=].display = "Maydalangan kakao"
+* group.element[=].target[+].code = #901000161107
+* group.element[=].target[=].display = "Cocoa"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0015-00012
-* group.element[=].display = "Toffi"
-* group.element[=].target[+].code = #227626004
-* group.element[=].target[=].display = "Toffee"
+* group.element[+].code = #sbnam-0015-00014
+* group.element[=].display = "Kakao donalari"
+* group.element[=].target[+].code = #901000161107
+* group.element[=].target[=].display = "Cocoa"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0015-00017
-* group.element[=].display = "Ona suti"
-* group.element[=].target[+].code = #722195007
-* group.element[=].target[=].display = "Royal jelly"
+* group.element[+].code = #sbnam-0015-00015
+* group.element[=].display = "Kakao kukuni"
+* group.element[=].target[+].code = #901000161107
+* group.element[=].target[=].display = "Cocoa"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0015-00018
@@ -2689,18 +2485,12 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Kraxmal patokasi"
 * group.element[=].target[+].code = #412064009
 * group.element[=].target[=].display = "Corn syrup"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #source-is-broader-than-target
 
 * group.element[+].code = #sbnam-0015-00027
 * group.element[=].display = "Gul changi"
 * group.element[=].target[+].code = #412583005
 * group.element[=].target[=].display = "Bee pollen"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0015-00032
-* group.element[=].display = "Propolis"
-* group.element[=].target[+].code = #255970007
-* group.element[=].target[=].display = "Propolis"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0015-00033
@@ -2745,34 +2535,16 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Syrup"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0015-00040
-* group.element[=].display = "Makkajo'xori qiyomi"
-* group.element[=].target[+].code = #412064009
-* group.element[=].target[=].display = "Corn syrup"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0015-00041
 * group.element[=].display = "Shakarli o'rik qoqisi"
 * group.element[=].target[+].code = #227452002
 * group.element[=].target[=].display = "Dried apricot"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0015-00043
-* group.element[=].display = "Achchiq shokolad"
-* group.element[=].target[+].code = #227611001
-* group.element[=].target[=].display = "Plain chocolate"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0015-00044
 * group.element[=].display = "Qora shokolad"
 * group.element[=].target[+].code = #227611001
 * group.element[=].target[=].display = "Plain chocolate"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0015-00045
-* group.element[=].display = "Sutli shokolad"
-* group.element[=].target[+].code = #227610000
-* group.element[=].target[=].display = "Milk chocolate"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0015-00046
@@ -2793,12 +2565,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Plain chocolate"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0015-00050
-* group.element[=].display = "Qand"
-* group.element[=].target[+].code = #264322002
-* group.element[=].target[=].display = "Sugar - food"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0015-00051
 * group.element[=].display = "Kakao miqdori kamida o'ttiz foiz bo'lgan sutli shokolad"
 * group.element[=].target[+].code = #227610000
@@ -2809,6 +2575,12 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Suvo'tlar asosidagi BAQ (Spirulina)"
 * group.element[=].target[+].code = #715178005
 * group.element[=].target[=].display = "Spirulina"
+* group.element[=].target[=].relationship = #source-is-narrower-than-target
+
+* group.element[+].code = #sbnam-0016-00004
+* group.element[=].display = "Suvo'tlar asosidagi BAQ (Xlorella)"
+* group.element[=].target[+].code = #900053541000179104
+* group.element[=].target[=].display = "Chlorella extract"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0016-00006
@@ -2846,16 +2618,10 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Do'lana"
 * group.element[=].target[+].code = #763200007
 * group.element[=].target[=].display = "Common hawthorn"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #source-is-broader-than-target
 
 * group.element[+].code = #sbnam-0017-00007
 * group.element[=].display = "Murabbo"
-* group.element[=].target[+].code = #227601008
-* group.element[=].target[=].display = "Jam"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0017-00008
-* group.element[=].display = "Jem"
 * group.element[=].target[+].code = #227601008
 * group.element[=].target[=].display = "Jam"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
@@ -2896,12 +2662,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Tinned fruit"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0017-00030
-* group.element[=].display = "Mors"
-* group.element[=].target[+].code = #1335777002
-* group.element[=].target[=].display = "Fresh fruit drink"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0017-00036
 * group.element[=].display = "Meva qiyomlari"
 * group.element[=].target[+].code = #229862008
@@ -2939,22 +2699,16 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0017-00044
-* group.element[=].display = "O'rik"
+* group.element[=].display = "O'rik qoqisi (danakli)"
 * group.element[=].target[+].code = #227452002
 * group.element[=].target[=].display = "Dried apricot"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0017-00046
-* group.element[=].display = "Unobi (Xitoy xurmosi)"
-* group.element[=].target[+].code = #1264515001
-* group.element[=].target[=].display = "Common jujube"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0017-00047
 * group.element[=].display = "Unobi (Zizifus)"
 * group.element[=].target[+].code = #1264515001
 * group.element[=].target[=].display = "Common jujube"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
+* group.element[=].target[=].relationship = #source-is-broader-than-target
 
 * group.element[+].code = #sbnam-0017-00052
 * group.element[=].display = "Xurmo (Yapon)"
@@ -2986,12 +2740,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Cherry"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0017-00058
-* group.element[=].display = "Namatak mevalari"
-* group.element[=].target[+].code = #710226003
-* group.element[=].target[=].display = "Rose hip"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0017-00059
 * group.element[=].display = "Yangi olma"
 * group.element[=].target[+].code = #735215001
@@ -3010,22 +2758,10 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Fruit juice"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0017-00062
-* group.element[=].display = "Konservalangan mevalar"
-* group.element[=].target[+].code = #227465006
-* group.element[=].target[=].display = "Tinned fruit"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0017-00064
 * group.element[=].display = "Quritilgan mevalar va ularni qayta ishlash mahsulotlari"
 * group.element[=].target[+].code = #227449005
 * group.element[=].target[=].display = "Dried fruit"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0018-00001
-* group.element[=].display = "Kakaoli ichimliklar"
-* group.element[=].target[+].code = #226026007
-* group.element[=].target[=].display = "Cocoa drink"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0018-00002
@@ -3104,12 +2840,6 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Pu-er choyi"
 * group.element[=].target[+].code = #16313001
 * group.element[=].target[=].display = "Tea"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0018-00016
-* group.element[=].display = "O'simlik (fito) choylari"
-* group.element[=].target[+].code = #226478004
-* group.element[=].target[=].display = "Herbal tea"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0018-00017
@@ -3202,28 +2932,10 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].target[=].display = "Eggs (edible)"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
-* group.element[+].code = #sbnam-0020-00002
-* group.element[=].display = "Loviya"
-* group.element[=].target[+].code = #256354006
-* group.element[=].target[=].display = "Bean"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
 * group.element[+].code = #sbnam-0020-00003
 * group.element[=].display = "Zig'ir"
 * group.element[=].target[+].code = #710178007
 * group.element[=].target[=].display = "Linseed"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0020-00004
-* group.element[=].display = "Olxo'ri"
-* group.element[=].target[+].code = #735051003
-* group.element[=].target[=].display = "Plum"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0020-00005
-* group.element[=].display = "Olmalar"
-* group.element[=].target[+].code = #735215001
-* group.element[=].target[=].display = "Apple"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0020-00006
@@ -3542,64 +3254,4 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 * group.element[=].display = "Suv olish inshooti SHZ (sanitariya-himoya zonasi)"
 * group.element[=].target[+].code = #415555003
 * group.element[=].target[=].display = "Soil"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0048-00002
-* group.element[=].display = "Xodimlar qo'li"
-* group.element[=].target[+].code = #33712006
-* group.element[=].target[=].display = "Skin structure of hand"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0049-00004
-* group.element[=].display = "Oshxona xodimlari qo'li"
-* group.element[=].target[+].code = #33712006
-* group.element[=].target[=].display = "Skin structure of hand"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0052-00005
-* group.element[=].display = "Oshpaz qo'li"
-* group.element[=].target[+].code = #33712006
-* group.element[=].target[=].display = "Skin structure of hand"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0053-00003
-* group.element[=].display = "Tarbiyachi qo'li: (F.I.Sh.)"
-* group.element[=].target[+].code = #33712006
-* group.element[=].target[=].display = "Skin structure of hand"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0062-00002
-* group.element[=].display = "Shisha va shishadan tayyorlangan buyumlar"
-* group.element[=].target[+].code = #32039001
-* group.element[=].target[=].display = "Glass"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0062-00003
-* group.element[=].display = "Dekorativ qoplamali shisha buyumlar"
-* group.element[=].target[+].code = #32039001
-* group.element[=].target[=].display = "Glass"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0062-00004
-* group.element[=].display = "Keramik buyumlar"
-* group.element[=].target[+].code = #261253002
-* group.element[=].target[=].display = "Ceramic"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0062-00005
-* group.element[=].display = "Chinni va fayans buyumlar"
-* group.element[=].target[+].code = #261253002
-* group.element[=].target[=].display = "Ceramic"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0063-00008
-* group.element[=].display = "Sovun (hojatxona sovuni, dezodoratsiyalovchi va boshqalar)"
-* group.element[=].target[+].code = #25780000
-* group.element[=].target[=].display = "Soap"
-* group.element[=].target[=].relationship = #source-is-narrower-than-target
-
-* group.element[+].code = #sbnam-0063-00009
-* group.element[=].display = "Suyuq hojatxona sovuni (yog' asosidagi)"
-* group.element[=].target[+].code = #25780000
-* group.element[=].target[=].display = "Soap"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target

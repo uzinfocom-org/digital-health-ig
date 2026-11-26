@@ -1,7 +1,7 @@
 CodeSystem: SubstanceNamesCS
 Id: substance-names-cs
 Title: "Substance name"
-Description: "National codes for the substances and sampling objects that samples are taken from for sanitary and epidemiological laboratory examination and that have no SNOMED CT concept of the same meaning, from the LIS SES reference list of sample names. A name that is narrower than a SNOMED CT concept, such as raw or pasteurised cow's milk, has a national code here and is mapped to the broader concept in the [substance name to SNOMED CT map](ConceptMap-substance-name-to-snomed.html). The first number part of each code is the LIS SES sample category, the second numbers the national codes within that category in the order of the LIS SES list"
+Description: "National codes for the water, air, soil and food products that samples are taken from for sanitary and epidemiological laboratory examination and that have no SNOMED CT concept of the same meaning, from the LIS SES reference list of sample names. A name that is narrower than a SNOMED CT concept, such as raw or pasteurised cow's milk, has a national code here and is mapped to the broader concept in the [substance name to SNOMED CT map](ConceptMap-substance-name-to-snomed.html). The first number part of each code is the LIS SES sample category, the second numbers the national codes within that category in the order of the LIS SES list"
 * insert OriginalCodeSystemDraft(substance-names-cs)
 
 * #sbnam-0001-00001 "Vinoli kokteyllar"
@@ -39,12 +39,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Виноматериалы и сусло"
   * ^designation[+].language = #en
   * ^designation[=].value = "Wine materials and must"
-
-* #sbnam-0001-00007 "Aroq (vodka)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Водка"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Vodka"
 
 * #sbnam-0001-00008 "Maxsus vodka (Damlangan)"
   * ^designation[0].language = #ru
@@ -100,12 +94,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready-to-drink low-alcohol cocktails"
 
-* #sbnam-0001-00017 "Likyorlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Ликёры"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Liqueurs"
-
 * #sbnam-0001-00018 "Nalivkalar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Наливки"
@@ -148,12 +136,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Filtered dark beer"
 
-* #sbnam-0001-00025 "Rom"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Ром"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Rum"
-
 * #sbnam-0001-00026 "Rom distillyatlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ромовые дистилляты"
@@ -171,12 +153,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Анисовые спиртные напитки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Aniseed spirits"
-
-* #sbnam-0001-00029 "Sidr (olmali)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Сидр (яблочный)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Cider (apple)"
 
 * #sbnam-0001-00030 "Tekila"
   * ^designation[0].language = #ru
@@ -357,12 +333,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Холодный чай готовый"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready-to-drink cold tea"
-
-* #sbnam-0002-00022 "Alkogolsiz energetik ichimliklar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Энергетические напитки безалкогольные"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Non-alcoholic energy drinks"
 
 * #sbnam-0003-00001 "Tayyor garnirlar (Guruch)"
   * ^designation[0].language = #ru
@@ -597,12 +567,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Соусы готовые (Овощные)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready sauces (vegetable)"
-
-* #sbnam-0003-00040 "Sendvich"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Сэндвичи"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Sandwiches"
 
 * #sbnam-0003-00041 "Buterbrod"
   * ^designation[0].language = #ru
@@ -856,12 +820,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Rendered mutton fat"
 
-* #sbnam-0005-00002 "Eritilgan mol yog'i"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Жир говяжий топлёный"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Rendered beef fat"
-
 * #sbnam-0005-00003 "Eritilgan echki yog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Жир козий топлёный"
@@ -892,23 +850,11 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Duck fat"
 
-* #sbnam-0005-00008 "Baliq yog'i (Baliq)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Жир рыбий (Рыбий)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Fish oil"
-
 * #sbnam-0005-00009 "Baliq yog'i"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Жир рыбий (Прочих морских животных)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fish oil (from other marine animals)"
-
-* #sbnam-0005-00010 "Eritilgan cho'chqa yog'i (smalets)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Жир свиной топлёный (смалец)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Rendered pork fat (lard)"
 
 * #sbnam-0005-00011 "Frityur yog'i"
   * ^designation[0].language = #ru
@@ -921,18 +867,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Жиры из других сухопутных млекопитающих (кроме молочных)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fats from other land mammals (except milk fats)"
-
-* #sbnam-0005-00013 "Trans-yog'-kislotali yog'lar (yog'-moy mahsulotlarida trans izomerlar)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Жиры с трансизомерами жирных кислот"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Fats containing trans fatty acid isomers"
-
-* #sbnam-0005-00014 "Mayonez"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Майонез"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Mayonnaise"
 
 * #sbnam-0005-00015 "Buterbrod margarinlar"
   * ^designation[0].language = #ru
@@ -963,12 +897,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Маргарин столовый"
   * ^designation[+].language = #en
   * ^designation[=].value = "Table margarine"
-
-* #sbnam-0005-00020 "Uzum danagi moyi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Масло виноградных косточек"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Grape seed oil"
 
 * #sbnam-0005-00021 "Xantal moyi"
   * ^designation[0].language = #ru
@@ -1072,12 +1000,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Shea butter (karite)"
 
-* #sbnam-0005-00038 "Bolalar oziq-ovqati uchun o'simlik moy va yog'lari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Растительные масла и жиры для производства детского питания"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Vegetable oils and fats for the production of baby food"
-
 * #sbnam-0005-00039 "Mayonez sousi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Соус майонезный"
@@ -1113,12 +1035,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Камелиновое масло"
   * ^designation[+].language = #en
   * ^designation[=].value = "Camelina oil"
-
-* #sbnam-0005-00045 "Xantal yog'i"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Горчичное масло"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Mustard seed oil"
 
 * #sbnam-0005-00046 "Yog'li va yog'-moyli spredlar"
   * ^designation[0].language = #ru
@@ -1173,12 +1089,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Экструзионные снеки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Extruded snacks"
-
-* #sbnam-0006-00009 "Grechka (don)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Гречиха (зерно)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Buckwheat (grain)"
 
 * #sbnam-0006-00010 "O'sgan don (kurtaklar)"
   * ^designation[0].language = #ru
@@ -1287,12 +1197,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Макаронные изделия (Лапша)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Pasta (noodles)"
-
-* #sbnam-0006-00028 "Manniy yormasi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Манная крупа"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Semolina"
 
 * #sbnam-0006-00029 "Dukkakli un (no'xat)"
   * ^designation[0].language = #ru
@@ -1408,7 +1312,7 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Rice bran"
 
-* #sbnam-0006-00048 "Shakar"
+* #sbnam-0006-00048 "Sdobali pechenye"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сдобное"
   * ^designation[+].language = #en
@@ -1431,12 +1335,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Эммер"
   * ^designation[+].language = #en
   * ^designation[=].value = "Emmer"
-
-* #sbnam-0006-00052 "Tariq (don)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Просо (зерно)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Millet (grain)"
 
 * #sbnam-0006-00053 "Pryaniklar"
   * ^designation[0].language = #ru
@@ -1606,24 +1504,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Unprocessed corn kernels"
 
-* #sbnam-0006-00081 "Makkajo'xori"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Кукуруза"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Corn"
-
-* #sbnam-0006-00082 "Guruch"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Рис"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Rice"
-
-* #sbnam-0006-00083 "Bug'doy"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Пшеница"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Wheat"
-
 * #sbnam-0006-00084 "Don va don ekinlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Зерно и зерновые культуры"
@@ -1641,12 +1521,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Кукурузное зерно"
   * ^designation[+].language = #en
   * ^designation[=].value = "Corn grain"
-
-* #sbnam-0006-00087 "Makkajo'xori uni"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Кукурузная мука"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Cornmeal"
 
 * #sbnam-0006-00088 "Makkajo'xori iste'mol uchun"
   * ^designation[0].language = #ru
@@ -2014,12 +1888,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Dry cream"
 
-* #sbnam-0008-00027 "Sariyog'"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Сливочное масло"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Butter"
-
 * #sbnam-0008-00028 "Sariyog'-o'simlik spredi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Спред сливочно-растительный"
@@ -2091,12 +1959,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Сыр свежий незрелый из пастеризованного молока"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fresh unripened cheese made from pasteurised milk"
-
-* #sbnam-0008-00040 "Tvorog (suzma)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Творог"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Tvorog (curd cheese)"
 
 * #sbnam-0008-00041 "Tvorog massasi va sirniklar"
   * ^designation[0].language = #ru
@@ -2518,41 +2380,11 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Marinated shashlik (semi-finished)"
 
-* #sbnam-0009-00070 "Qoramol go'shti"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Мясо говядины"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Beef meat"
-
-* #sbnam-0009-00071 "Qo'y go'shti"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Мясо баранины"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Mutton meat"
-
-* #sbnam-0009-00072 "Cho'chqa go'shti"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Мясо свинины"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Pork meat"
-
-* #sbnam-0009-00073 "Parranda go'shti"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Мясо птицы"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Poultry meat"
-
 * #sbnam-0009-00074 "Qoramol qo'shimcha submahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Дополнительные субпродукты говядины"
   * ^designation[+].language = #en
   * ^designation[=].value = "Additional beef offal"
-
-* #sbnam-0009-00075 "Qoramol jigari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Говяжья печень"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Beef liver"
 
 * #sbnam-0009-00076 "Qo'y jigari"
   * ^designation[0].language = #ru
@@ -2577,12 +2409,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Лошадиная печень"
   * ^designation[+].language = #en
   * ^designation[=].value = "Horse liver"
-
-* #sbnam-0009-00080 "Qoramol buyragi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Говяжьи почки"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Beef kidneys"
 
 * #sbnam-0009-00081 "Qo'y buyragi"
   * ^designation[0].language = #ru
@@ -2638,12 +2464,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Mixed animal fat"
 
-* #sbnam-0009-00090 "Ovlanadigan hayvonlar go'shti"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Мясо диких животных"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Meat of wild animals"
-
 * #sbnam-0009-00091 "Ovlanadigan hayvonlarning submahsulotlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Субпродукты диких животных"
@@ -2655,12 +2475,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Аджика"
   * ^designation[+].language = #en
   * ^designation[=].value = "Adjika"
-
-* #sbnam-0010-00002 "Yashil loviya"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Бобы зелёные"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Green beans"
 
 * #sbnam-0010-00003 "Yetilmagan loviya"
   * ^designation[0].language = #ru
@@ -2721,12 +2535,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Зелень: базилик (рейхон)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Herbs: basil (reyhan)"
-
-* #sbnam-0010-00013 "Ko'kat: yalpiz"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Зелень: мята"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Herbs: mint"
 
 * #sbnam-0010-00014 "Melissa"
   * ^designation[0].language = #ru
@@ -2806,12 +2614,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Leaf cabbage"
 
-* #sbnam-0010-00027 "Pekin karami"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Капуста пекинская"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Napa cabbage"
-
 * #sbnam-0010-00028 "Kechki kartoshka"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Картофель поздний"
@@ -2829,12 +2631,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Картофель свежий продовольственный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fresh food potatoes"
-
-* #sbnam-0010-00031 "Pomidor ketchupi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Кетчуп томатный"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Tomato ketchup"
 
 * #sbnam-0010-00032 "Tabiiy sabzavot konservalari"
   * ^designation[0].language = #ru
@@ -2895,12 +2691,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Лук-шалот"
   * ^designation[+].language = #en
   * ^designation[=].value = "Shallots"
-
-* #sbnam-0010-00042 "Manioka"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Маниока"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Manioc"
 
 * #sbnam-0010-00043 "Kassava (yangi)"
   * ^designation[0].language = #ru
@@ -2992,12 +2782,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Greenhouse cucumbers (protected ground)"
 
-* #sbnam-0010-00058 "Konsentrlangan pomidor pastasi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Паста томатная концентрированная"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Concentrated tomato paste"
-
 * #sbnam-0010-00059 "Yangi achchiq qalampir (chili)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Перец острый свежий (чили)"
@@ -3057,12 +2841,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Пюре овощное для общего употребления"
   * ^designation[+].language = #en
   * ^designation[=].value = "Vegetable puree for general consumption"
-
-* #sbnam-0010-00069 "Rediska"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Редис"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Radish"
 
 * #sbnam-0010-00070 "Turp"
   * ^designation[0].language = #ru
@@ -3273,12 +3051,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Плодовые овощи"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fruiting vegetables"
-
-* #sbnam-0010-00105 "Veshenka qo'ziqorini"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Вешенка грибы"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Oyster mushrooms"
 
 * #sbnam-0010-00106 "Piyozli sabzavotlari"
   * ^designation[0].language = #ru
@@ -3526,23 +3298,11 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Other oilseeds"
 
-* #sbnam-0011-00033 "Daraxt yong'oqlari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Орехи деревьев"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Tree nuts"
-
 * #sbnam-0011-00034 "Daraxt yong'oqlaridan qayta ishlash orqali olinadigan mahsulotlar"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Продукты из орехов деревьев"
   * ^designation[+].language = #en
   * ^designation[=].value = "Tree nut products"
-
-* #sbnam-0012-00001 "Agar-agar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Агар-агар"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Agar-agar"
 
 * #sbnam-0012-00002 "Quyqalashga qarshi vositalar"
   * ^designation[0].language = #ru
@@ -3616,13 +3376,13 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Dairy and fermented milk starter cultures"
 
-* #sbnam-0012-00014 "Kartoshka"
+* #sbnam-0012-00014 "Kartoshka kraxmali"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Крахмал картофельный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Potato starch"
 
-* #sbnam-0012-00015 "Guruch"
+* #sbnam-0012-00015 "Guruch kraxmali"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Крахмал рисовый"
   * ^designation[+].language = #en
@@ -3964,29 +3724,11 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried herbs: basil"
 
-* #sbnam-0013-00033 "Timyan"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Тимьян"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Thyme"
-
-* #sbnam-0013-00034 "Rozmarin"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Розмарин"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Rosemary"
-
 * #sbnam-0013-00035 "Quritilgan o'tlar: ukrop"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Сушёные травы: укроп"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried herbs: dill"
-
-* #sbnam-0013-00036 "Yalpiz"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Мята"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Mint"
 
 * #sbnam-0013-00037 "Ziravor sifatida quritilgan rezavor va mevalar (Mojjevelnik)"
   * ^designation[0].language = #ru
@@ -4017,12 +3759,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Уксус столовый (синтетический)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Table vinegar (synthetic)"
-
-* #sbnam-0013-00042 "Olma uksusi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Уксус яблочный"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Apple cider vinegar"
 
 * #sbnam-0013-00043 "Balzamik uksusi"
   * ^designation[0].language = #ru
@@ -4354,12 +4090,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried fish"
 
-* #sbnam-0014-00043 "Tunyets turlari (Tunyets)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Рыба тунцовая (Тунец)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Tuna fish (tuna)"
-
 * #sbnam-0014-00044 "Tunyets turlari (Bonito)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Рыба тунцовая (Бонито)"
@@ -4438,12 +4168,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Frigate tuna"
 
-* #sbnam-0014-00057 "Anchoz baliq"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Анчоус рыба"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Anchovy fish"
-
 * #sbnam-0015-00001 "Sharqona shirinliklar (Navvot)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Восточные сладости (Нават)"
@@ -4504,18 +4228,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Roasted chicory and its products"
 
-* #sbnam-0015-00011 "Iris"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Ирис"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Iris toffee"
-
-* #sbnam-0015-00012 "Toffi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Тоффи"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Toffee"
-
 * #sbnam-0015-00013 "Maydalangan kakao"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Какао тёртое"
@@ -4539,12 +4251,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Какаовелла"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cocoa shells"
-
-* #sbnam-0015-00017 "Ona suti"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Маточное молочко"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Royal jelly"
 
 * #sbnam-0015-00018 "Monoflyor asal"
   * ^designation[0].language = #ru
@@ -4612,12 +4318,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Natural sweeteners (stevia)"
 
-* #sbnam-0015-00029 "Tabiiy shirinlashtirgichlar (Eritrit)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Подсластители натуральные (Эритрит)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Natural sweeteners (erythritol)"
-
 * #sbnam-0015-00030 "Sintetik shirinlashtirgichlar (Tsiklamat)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Подсластители синтетические (Цикламат)"
@@ -4629,12 +4329,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Помадные массы и начинки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Fondant masses and fillings"
-
-* #sbnam-0015-00032 "Propolis"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Прополис"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Propolis"
 
 * #sbnam-0015-00033 "Lavlagidan olingan shakar"
   * ^designation[0].language = #ru
@@ -4678,12 +4372,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Invert syrup"
 
-* #sbnam-0015-00040 "Makkajo'xori qiyomi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Сироп кукурузный"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Corn syrup"
-
 * #sbnam-0015-00041 "Shakarli o'rik qoqisi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Урюк сахарный"
@@ -4696,23 +4384,11 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Candied fruit peel (sukaty)"
 
-* #sbnam-0015-00043 "Achchiq shokolad"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Шоколад горький"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Bitter chocolate"
-
 * #sbnam-0015-00044 "Qora shokolad"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Шоколад тёмный"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dark chocolate"
-
-* #sbnam-0015-00045 "Sutli shokolad"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Шоколад молочный"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Milk chocolate"
 
 * #sbnam-0015-00046 "Rafinirlangan shakar"
   * ^designation[0].language = #ru
@@ -4737,12 +4413,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Шоколад с содержанием какао не менее семидесяти процентов"
   * ^designation[+].language = #en
   * ^designation[=].value = "Chocolate with at least seventy percent cocoa"
-
-* #sbnam-0015-00050 "Qand"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Сахар"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Sugar"
 
 * #sbnam-0015-00051 "Kakao miqdori kamida o'ttiz foiz bo'lgan sutli shokolad"
   * ^designation[0].language = #ru
@@ -4978,12 +4648,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Varenye (fruit preserve)"
 
-* #sbnam-0017-00008 "Jem"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Джем"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Jam"
-
 * #sbnam-0017-00009 "Povidlo"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Повидло"
@@ -5025,18 +4689,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Годжи"
   * ^designation[+].language = #en
   * ^designation[=].value = "Goji"
-
-* #sbnam-0017-00016 "Drakon mevasi (pitaxaya)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Драконий фрукт (питахайя)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Dragon fruit (pitahaya)"
-
-* #sbnam-0017-00017 "Duriyan"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Дуриан"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Durian"
 
 * #sbnam-0017-00018 "Meva jelesi"
   * ^designation[0].language = #ru
@@ -5109,12 +4761,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Мангостан"
   * ^designation[+].language = #en
   * ^designation[=].value = "Mangosteen"
-
-* #sbnam-0017-00030 "Mors"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Морсы"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Mors"
 
 * #sbnam-0017-00031 "Meva nektarlari"
   * ^designation[0].language = #ru
@@ -5194,7 +4840,7 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried fruits: dried apricots (kuraga)"
 
-* #sbnam-0017-00044 "O'rik"
+* #sbnam-0017-00044 "O'rik qoqisi (danakli)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Урюк"
   * ^designation[+].language = #en
@@ -5205,12 +4851,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Алыча"
   * ^designation[+].language = #en
   * ^designation[=].value = "Cherry plum (alycha)"
-
-* #sbnam-0017-00046 "Unobi (Xitoy xurmosi)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Унаби (Китайский финик)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Jujube (Chinese date)"
 
 * #sbnam-0017-00047 "Unobi (Zizifus)"
   * ^designation[0].language = #ru
@@ -5278,12 +4918,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Red sweet cherries"
 
-* #sbnam-0017-00058 "Namatak mevalari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Шиповник (плоды)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Rose hip (fruits)"
-
 * #sbnam-0017-00059 "Yangi olma"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Яблоки свежие"
@@ -5302,12 +4936,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Juices from berries and small fruits"
 
-* #sbnam-0017-00062 "Konservalangan mevalar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Консервированные фрукты"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Canned fruit"
-
 * #sbnam-0017-00063 "Tunuka idishdagi ichimliklar, shu jumladan meva va sabzavot sharbatlari"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Напитки в жестяной банке, включая фруктовые и овощные соки"
@@ -5319,12 +4947,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Сушёные фрукты и продукты их переработки"
   * ^designation[+].language = #en
   * ^designation[=].value = "Dried fruits and their processed products"
-
-* #sbnam-0018-00001 "Kakaoli ichimliklar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Какао-напитки"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Cocoa drinks"
 
 * #sbnam-0018-00002 "Erish kakao"
   * ^designation[0].language = #ru
@@ -5409,12 +5031,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "Чай пуэр"
   * ^designation[+].language = #en
   * ^designation[=].value = "Pu-erh tea"
-
-* #sbnam-0018-00016 "O'simlik (fito) choylari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Чай травяной (фиточай)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Herbal tea"
 
 * #sbnam-0018-00017 "Yig'malar"
   * ^designation[0].language = #ru
@@ -5512,35 +5128,11 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[+].language = #en
   * ^designation[=].value = "Duck eggs"
 
-* #sbnam-0020-00001 "QandLavlagi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "САХАРНАЯ СВЕКЛА"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Sugar beet (raw crop)"
-
-* #sbnam-0020-00002 "Loviya"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Фасоль"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Beans"
-
 * #sbnam-0020-00003 "Zig'ir"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Лен"
   * ^designation[+].language = #en
   * ^designation[=].value = "Flax"
-
-* #sbnam-0020-00004 "Olxo'ri"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Сливы"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Plums"
-
-* #sbnam-0020-00005 "Olmalar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Яблоки"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Apples"
 
 * #sbnam-0020-00006 "Qizil shirin butun garimdori"
   * ^designation[0].language = #ru
@@ -5859,360 +5451,6 @@ Description: "National codes for the substances and sampling objects that sample
   * ^designation[=].value = "СЗЗ водозабора"
   * ^designation[+].language = #en
   * ^designation[=].value = "Sanitary protection zone of a water intake"
-
-* #sbnam-0048-00001 "Ish sirtlari / Stollar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Рабочие поверхности / Столы"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Work surfaces / tables"
-
-* #sbnam-0048-00002 "Xodimlar qo'li"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Руки персонала"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hands of staff"
-
-* #sbnam-0048-00003 "DPM oshxonasidagi sirtlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Поверхности в пищеблоке ЛПУ"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Surfaces in a healthcare facility kitchen"
-
-* #sbnam-0049-00001 "Kesish anjomlari (taxtalar, pichoqlar)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Разделочный инвентарь (доски, ножи)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Cutting equipment (boards, knives)"
-
-* #sbnam-0049-00002 "Texnologik uskunalar (go'sht maydalagich, mikser)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Технологическое оборудование (мясорубки, миксеры)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Processing equipment (meat grinders, mixers)"
-
-* #sbnam-0049-00003 "Oshxona idish-tovoqlari va asboblari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Столовая посуда и приборы"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Tableware and cutlery"
-
-* #sbnam-0049-00004 "Oshxona xodimlari qo'li"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Руки работников пищеблока"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hands of catering staff"
-
-* #sbnam-0050-00001 "Mebel (partalar, stollar)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Мебель (парты, столы)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Furniture (desks, tables)"
-
-* #sbnam-0050-00002 "Oshxonadagi sirtlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Поверхности в пищеблоке"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Kitchen surfaces"
-
-* #sbnam-0051-00001 "Sartaroshlik / manikyur asboblari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Парикмахерский / Маникюрный инструментарий"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hairdressing / manicure instruments"
-
-* #sbnam-0051-00002 "Mehmonxona / hammom / havzalardagi sirtlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Поверхности в гостиницах / банях / бассейнах"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Surfaces in hotels / bathhouses / swimming pools"
-
-* #sbnam-0052-00001 "Non uchun pichoq"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Нож для хлеба"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Bread knife"
-
-* #sbnam-0052-00002 "Meva kesish taxtasi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Разделочная доска для фруктов"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Fruit cutting board"
-
-* #sbnam-0052-00003 "Tarqatish stoli"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Раздаточный стол"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Serving table"
-
-* #sbnam-0052-00004 "Tayyor mahsulotlar uchin idish"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Посуда для готовой продукции"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Containers for finished products"
-
-* #sbnam-0052-00005 "Oshpaz qo'li"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Рука повара"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Cook's hand"
-
-* #sbnam-0052-00006 "Oshpaz ish kiyimi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Рабочая одежда повара"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Cook's workwear"
-
-* #sbnam-0053-00001 "1-ovqat idishi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Посуда для 1-го блюда"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Dishes for the first course"
-
-* #sbnam-0053-00002 "2-ovqat idishi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Посуда для 2-го блюда"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Dishes for the second course"
-
-* #sbnam-0053-00003 "Tarbiyachi qo'li: (F.I.Sh.)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Руки воспитателя: (Ф.И.О.)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Hands of a childcare worker (full name)"
-
-* #sbnam-0053-00004 "Eshiklar tutqichi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Ручки дверей"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Door handles"
-
-* #sbnam-0053-00005 "O'yinchoqlar javoni"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Шкаф для игрушек"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Toy cabinet"
-
-* #sbnam-0053-00006 "Gilamlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Ковры"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Carpets"
-
-* #sbnam-0053-00007 "Kiyim javoni"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Шкаф для одежды"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Wardrobe"
-
-* #sbnam-0053-00008 "O'rin oqliklari-1 (F.I.Sh.)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Постельное бельё-1 (Ф.И.О.)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Bed linen 1 (full name)"
-
-* #sbnam-0053-00009 "O'rin oqliklari-2 (F.I.Sh.)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Постельное бельё-2 (Ф.И.О.)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Bed linen 2 (full name)"
-
-* #sbnam-0053-00010 "Yuvinish xonasi devori"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Стены моечной комнаты"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Washroom walls"
-
-* #sbnam-0053-00011 "Sochiqlar javoni"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Шкаф для полотенец"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Towel cabinet"
-
-* #sbnam-0053-00012 "Suv krani jo'mragi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Водопроводный кран"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Water tap"
-
-* #sbnam-0053-00013 "Tuvak (unitaz)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Горшок (унитаз)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Potty (toilet)"
-
-* #sbnam-0061-00001 "Turar joy obyektlari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Объекты жилого назначения"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Residential facilities"
-
-* #sbnam-0062-00001 "Qog'oz, karton, pergament, podpergament"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Бумага, картон, пергамент, подпергамент"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Paper, cardboard, parchment, greaseproof paper"
-
-* #sbnam-0062-00002 "Shisha va shishadan tayyorlangan buyumlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Стекло и изделия из стекла"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Glass and glass products"
-
-* #sbnam-0062-00003 "Dekorativ qoplamali shisha buyumlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Изделия из стекла с декоративным покритием"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Glass products with decorative coating"
-
-* #sbnam-0062-00004 "Keramik buyumlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Керамические изделия"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Ceramic products"
-
-* #sbnam-0062-00005 "Chinni va fayans buyumlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Изделия из форфора и фаянса"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Porcelain and faience products"
-
-* #sbnam-0062-00006 "Po'latdan tayyorlangan emallangan idishlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "стальная эмалированная посуда"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Enamelled steel cookware"
-
-* #sbnam-0062-00007 "Yopishmaydigan qoplamali idishlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "посуда с антипригарным покрытием"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Non-stick cookware"
-
-* #sbnam-0062-00008 "Laklangan konserva idishlari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Лакированная консервная тара"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Lacquered cans"
-
-* #sbnam-0063-00001 "Yuz va tana terisini parvarish qilish vositalari: kremlar, emulsiyalar, qaymoqlar, sutlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Средство для ухода за кожей лица и тела: кремы, эмульсии, сливки, молочко"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Face and body skin care products: creams, emulsions, creams, lotions (milks)"
-
-* #sbnam-0063-00002 "Yuz va tana terisini parvarish qilish vositalari: Gellar, jelelar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Средство для ухода за кожей лица и тела: Гели,желе"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Face and body skin care products: gels, jellies"
-
-* #sbnam-0063-00003 "Yuz va tana terisini parvarish qilish vositalari: Losyonlar, toniklar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Средство для ухода за кожей лица и тела: Лосьон, тоники"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Face and body skin care products: lotions, toners"
-
-* #sbnam-0063-00004 "Yuz va tana terisini parvarish qilish vositalari: Kosmetik moylar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Средство для ухода за кожей лица и тела: Масло косметические"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Face and body skin care products: cosmetic oils"
-
-* #sbnam-0063-00005 "Yuz va tana terisini parvarish qilish vositalari: oziqlantiruvchi, namlantiruvchi, tozalovchi va boshqa niqoblar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Средство для ухода за кожей лица и тела: маски питательные, очищающие и т. д"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Face and body skin care products: nourishing, cleansing and other masks"
-
-* #sbnam-0063-00006 "Vanna va dush qabul qilish vositalari (tuzlar, ko'piklar, moylar, gellar va boshqalar): Vanna tuzi.."
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "средства для принятия ванн и душа (соли, пена, масла,гели и т.д): Соль для купания"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Bath and shower products (salts, foams, oils, gels and other): bath salt"
-
-* #sbnam-0063-00007 "Vanna va dush qabul qilish vositalari (tuzlar, ko'piklar, moylar, gellar va boshqalar): Ko'pik hosil qiluvchi yuvish vositalari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "средства для принятия ванн и душа (соли, пена, масла,гели и т.д): Средство пеномоющие"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Bath and shower products (salts, foams, oils, gels and other): foaming cleansers"
-
-* #sbnam-0063-00008 "Sovun (hojatxona sovuni, dezodoratsiyalovchi va boshqalar)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Мыло (туалетное, дезодорирующее и т.д)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Soap (toilet, deodorant and other)"
-
-* #sbnam-0063-00009 "Suyuq hojatxona sovuni (yog' asosidagi)"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Мыло жидкое туалетное (на жировой основе)"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Liquid toilet soap (fat-based)"
-
-* #sbnam-0063-00010 "Dezodorantlar va terlashga qarshi vositalar: dezodorant qalam"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Дезодаранты и средства от пота: дезодарант карандаш"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Deodorants and antiperspirants: deodorant stick"
-
-* #sbnam-0063-00011 "Dezodorantlar va terlashga qarshi vositalar: Aerozol qadoqdagi dezodorant"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Дезодаранты и средства от пота: дезодаранты в аэрозольной упаковке"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Deodorants and antiperspirants: aerosol deodorants"
-
-* #sbnam-0063-00012 "Dezodorantlar va terlashga qarshi vositalar: Gelsimon, kremsimon va boshqa dezodorantlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Дезодаранты и средства от пота: дезодаранты гелеобразные, кремообразные и другие"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Deodorants and antiperspirants: gel, cream and other deodorants"
-
-* #sbnam-0065-00001 "Statsionar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Стационар"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Inpatient facility"
-
-* #sbnam-0065-00002 "Ambulatoriya"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Амбулатория"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Outpatient clinic"
-
-* #sbnam-0066-00001 "Maktab"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Школа"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "School"
-
-* #sbnam-0066-00002 "Maktabgacha ta'lim tashkiloti"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Детский сад"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Kindergarten"
-
-* #sbnam-0066-00003 "Oliy va o'rta maxsus ta'lim muassasalari"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Учреждения высшего и среднего специального образования"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Higher and secondary specialised education institutions"
-
-* #sbnam-0067-00001 "Oziq-ovqat mahsulotlarini ishlab chiqarish va savdosi bilan shug'ullanuvchi tashkilotlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Организации, занимающиеся производством и торговлей пищевыми продуктами"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Organisations producing and trading in food products"
-
-* #sbnam-0067-00002 "Aholiga maishiy xizmat ko'rsatuvchi tashkilotlar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Организации, оказывающие бытовые услуги населению"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Organisations providing consumer services to the public"
-
-* #sbnam-0067-00003 "Boshqalar"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Другие"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Other"
 
 * #sbnam-0068-00001 "10.5. Sof moddalar (vitaminlar, mineral moddalar, organik moddalar va boshqalar) yoki konsentratlar (o'simlik ekstraktlari va boshqalar) asosida turli to'ldiruvchilar qo'shilgan holda tayyorlangan biologik faol qo'shimchalar, shu jumladan ichimliklar uchun quruq konsentratlar."
   * ^designation[0].language = #ru

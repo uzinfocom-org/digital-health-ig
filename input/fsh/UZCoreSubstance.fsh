@@ -2,7 +2,7 @@ Profile: UZCoreSubstance
 Parent: Substance
 Id: uz-core-substance
 Title: "UZ Core Substance"
-Description: "Uzbekistan Core Substance profile, used to represent a specific portion of a substance sampled for sanitary and epidemiological examination - such as a food product, water or a swabbed surface - with its sample and batch numbers, expiry date and the amount taken"
+Description: "Uzbekistan Core Substance profile, used to represent a specific portion of a substance sampled for sanitary and epidemiological examination - water, air, soil or a food product - with its sample and batch numbers, expiry date and the amount taken"
 
 * ^status = #active
 * ^experimental = true

@@ -7,7 +7,7 @@ sbnam-0001-00003,Likyor vinosi (Desert),Вино ликёрное (Десерт�
 sbnam-0001-00004,Likyor vinosi (Mustahkamlangan),Вино ликёрное (Креплёное),228982004,Fortified wine
 sbnam-0001-00005,Meva-rezavor vinosi,Вино плодово-ягодное (фруктовое),,
 sbnam-0001-00006,Vinomateriallar va susle,Виноматериалы и сусло,,
-sbnam-0001-00007,Aroq (vodka),Водка,226064009,Vodka
+,Aroq (vodka),Водка,226064009,Vodka
 sbnam-0001-00008,Maxsus vodka (Damlangan),Водка особая (С настоями),226064009,Vodka
 sbnam-0001-00009,Maxsus vodka (Xushbo'y),Водка особая (Ароматизированная),226064009,Vodka
 ,Djin,Джин,226031009,Gin
@@ -20,7 +20,7 @@ sbnam-0001-00013,Kalvados,Кальвадос,226019007,Brandy
 sbnam-0001-00014,Grappa,Граппа,,
 sbnam-0001-00015,Raqi va boshqa meva distillyatlari,Ракия и иные фруктовые дистилляты,6524003,Distilled spirits
 sbnam-0001-00016,Tayyor past gradusli alkogolli kokteyllar,Коктейли алкогольные слабоалкогольные (готовые),608772009,Cocktail
-sbnam-0001-00017,Likyorlar,Ликёры,226038003,Liqueur
+,Likyorlar,Ликёры,226038003,Liqueur
 sbnam-0001-00018,Nalivkalar,Наливки,,
 sbnam-0001-00019,Shirin nastoykalar,Настойки сладкие,,
 sbnam-0001-00020,Achchiq nastoykalar,Настойки горькие,,
@@ -30,12 +30,12 @@ sbnam-0001-00022,Perri (nokli),Перри (грушевый),,
 sbnam-0001-00023,Filtrlanmagan pivo,Пиво нефильтрованное,53410008,Beer
 ,Och rangli pivo,Пиво светлое,226036004,Lager
 sbnam-0001-00024,To'q rangli filtrlangan pivo,Пиво тёмное фильтрованное,53410008,Beer
-sbnam-0001-00025,Rom,Ром,226054000,Rum
+,Rom,Ром,226054000,Rum
 sbnam-0001-00026,Rom distillyatlari,Ромовые дистилляты,226054000,Rum
 sbnam-0001-00027,Sambuka,Самбука,226038003,Liqueur
 ,Absent,Абсент,311455009,Absinthe
 sbnam-0001-00028,Arpabodiyon spirtli ichimliklar,Анисовые спиртные напитки,6524003,Distilled spirits
-sbnam-0001-00029,Sidr (olmali),Сидр (яблочный),226025006,Hard cider
+,Sidr (olmali),Сидр (яблочный),226025006,Hard cider
 ,Pivo solodi,Солод пивоваренный,710180001,Malt
 ,Iste'mol uchun rektifikatsiyalangan etil spirti,Спирт этиловый ректификованный пищевой,419442005,Ethanol
 sbnam-0001-00030,Tekila,Текила,6524003,Distilled spirits
@@ -76,7 +76,7 @@ sbnam-0002-00018,Ichimlik tayyorlash uchun qiyomlar,Сиропы для приг
 sbnam-0002-00019,Quruq (kukunsimon) ichimlik aralashmalari,Сухие смеси для напитков (порошкообразные),,
 sbnam-0002-00020,Tayyor sovuq kofe,Холодный кофе готовый,29263009,Coffee
 sbnam-0002-00021,Tayyor sovuq choy,Холодный чай готовый,16313001,Tea
-sbnam-0002-00022,Alkogolsiz energetik ichimliklar,Энергетические напитки безалкогольные,4.44051E+14,Energy drink
+,Alkogolsiz energetik ichimliklar,Энергетические напитки безалкогольные,444051000124101,Energy drink
 ,Tayyor garnirlar (Qaynatilgan kartoshka),Гарниры готовые (Картофель отварной),227279001,Boiled potato
 ,Tayyor garnirlar (Pyure),Гарниры готовые (Пюре),227294002,Mashed potato
 sbnam-0003-00001,Tayyor garnirlar (Guruch),Гарниры готовые (Рис),67324005,Rice
@@ -116,7 +116,7 @@ sbnam-0003-00027,Muzlatilgan to'ldirgichli mahsulotlar (Chuchvara),Издели�
 sbnam-0003-00028,Hamirdan tayyorlangan kulinariya mahsulotlari,Кулинарные изделия из теста,,
 ,Pirojnoe,Пирожные,226675007,Individual cakes and pastries
 ,Tort,Торты,226639005,Cake
-sbnam-0003-00029,Keks,Кексы,226704004,Muffin
+sbnam-0003-00029,Keks,Кексы,226639005,Cake
 sbnam-0003-00030,Muzlatilgan pitsa,Пицца замороженная,227757007,Pizza
 sbnam-0003-00031,Sovutilgan pitsa,Пицца охлаждённая,227757007,Pizza
 sbnam-0003-00032,Tayyor pitsa,Пицца готовая,227757007,Pizza
@@ -128,7 +128,7 @@ sbnam-0003-00036,Xamir yarim tayyor mahsulotlari (Pitssa zagotovkalari),Полу
 sbnam-0003-00037,Tayyor souslar (Go'shtli),Соусы готовые (Мясные),227519005,Sauce
 sbnam-0003-00038,Tayyor souslar (Baliqli),Соусы готовые (Рыбные),227519005,Sauce
 sbnam-0003-00039,Tayyor souslar (Sabzavotli),Соусы готовые (Овощные),227519005,Sauce
-sbnam-0003-00040,Sendvich,Сэндвичи,735008002,Sandwich
+,Sendvich,Сэндвичи,735008002,Sandwich
 sbnam-0003-00041,Buterbrod,Бутерброды,735008002,Sandwich
 sbnam-0003-00042,Shavurma,Шаурма,,
 ,Burger,Бургеры,227004004,Burger
@@ -175,29 +175,29 @@ sbnam-0004-00033,Bolalar suxariklari,Сухарики детские,226531003,R
 sbnam-0004-00034,Bolalar sushki va galetlari,Сушки и галеты детские,,
 sbnam-0004-00035,Echki suti asosidagi quruq sut aralashmalari,Сухие молочные смеси на основе козьего молока,386127005,Formula milk
 sbnam-0005-00001,Eritilgan qo'y yog'i,Жир бараний топлёный,226898001,Dripping
-sbnam-0005-00002,Eritilgan mol yog'i,Жир говяжий топлёный,229852001,Beef dripping
+,Eritilgan mol yog'i,Жир говяжий топлёный,229852001,Beef dripping
 sbnam-0005-00003,Eritilgan echki yog'i,Жир козий топлёный,226898001,Dripping
 sbnam-0005-00004,Eritilgan ot yog'i,Жир конский топлёный,226898001,Dripping
 sbnam-0005-00005,Tovuq yog'i,Жир куриный,,
 sbnam-0005-00006,G'oz yog'i,Жир гусиный,,
 sbnam-0005-00007,O'rdak yog'i,Жир утиный,,
 ,Sut yog'i,Жир молочный (молочный жир),229850009,Butteroil
-sbnam-0005-00008,Baliq yog'i (Baliq),Жир рыбий (Рыбий),735341005,Fish oil
+,Baliq yog'i (Baliq),Жир рыбий (Рыбий),735341005,Fish oil
 ,Baliq yog'i (Jigar va boshqa dengiz hayvonlari),Жир рыбий (Из печени рыб),126076005,Fish liver oil
 sbnam-0005-00009,Baliq yog'i,Жир рыбий (Прочих морских животных),,
-sbnam-0005-00010,Eritilgan cho'chqa yog'i (smalets),Жир свиной топлёный (смалец),226899009,Lard
+,Eritilgan cho'chqa yog'i (smalets),Жир свиной топлёный (смалец),226899009,Lard
 sbnam-0005-00011,Frityur yog'i,Жир фритюрный,,
 sbnam-0005-00012,Sutdan tashqari quruqlikdagi sut emizuvchilar yog'lari,Жиры из других сухопутных млекопитающих (кроме молочных),,
-sbnam-0005-00013,Trans-yog'-kislotali yog'lar (yog'-moy mahsulotlarida trans izomerlar),Жиры с трансизомерами жирных кислот,4.36831E+14,Trans fat
+,Trans-yog'-kislotali yog'lar (yog'-moy mahsulotlarida trans izomerlar),Жиры с трансизомерами жирных кислот,436831000124108,Trans fat
 ,Pazandachilik yog'i,Кулинарный жир,229854000,Compound cooking fat
-sbnam-0005-00014,Mayonez,Майонез,227549007,Mayonnaise
+,Mayonez,Майонез,227549007,Mayonnaise
 sbnam-0005-00015,Buterbrod margarinlar,Маргарин бутербродный,226890008,Margarine
 sbnam-0005-00016,Yumshoq margarinlar,Маргарин мягкий,226890008,Margarine
 sbnam-0005-00017,Sanoat margarini (Non pishirish),Маргарин промышленный (Для выпечки),226890008,Margarine
 sbnam-0005-00018,Sanoat margarini (Qandolatchilik uchun),Маргарин промышленный (Кондитерский),226890008,Margarine
 sbnam-0005-00019,Stol margarini,Маргарин столовый,226890008,Margarine
 ,Iste'mol uchun yeryong'oq moyi,Масло арахисовое пищевое,417889008,Arachis oil
-sbnam-0005-00020,Uzum danagi moyi,Масло виноградных косточек,229932003,Grapeseed oil
+,Uzum danagi moyi,Масло виноградных косточек,229932003,Grapeseed oil
 sbnam-0005-00021,Xantal moyi,Масло горчичное,,
 ,Yong'oq moyi,Масло грецкого ореха,229929001,Walnut oil
 ,Iste'mol kakao moyi,Масло какао пищевое,80237000,Cocoa butter
@@ -226,14 +226,12 @@ sbnam-0005-00035,Rafinatlanmagan paxta yog'i,Масло хлопковое не�
 sbnam-0005-00036,Rafinatlangan paxta yog'i,Масло хлопковое рафинированное,82450006,Cottonseed oil
 sbnam-0005-00037,Shi moyi (karite),Масло ши (карите),,
 ,O'simlik-yog' aralashmalari (kupaj),Растительно-жировые смеси (купажные),226913005,Blended vegetable oil
-sbnam-0005-00038,Bolalar oziq-ovqati uchun o'simlik moy va yog'lari,Растительные масла и жиры для производства детского питания,412552006,Vegetable oil
 sbnam-0005-00039,Mayonez sousi,Соус майонезный,227549007,Mayonnaise
 sbnam-0005-00040,O'simlik-yog' spredi,Спред растительно-жировой,226889004,Blended spread
 sbnam-0005-00041,O'simlik-qaymoq spredi,Спред растительно-сливочный,226889004,Blended spread
 sbnam-0005-00042,Kanop urug'i moyi,Масло семян конопли,,
 sbnam-0005-00043,O'simlik moylari va yog'lari,Растительные масла и жиры,412552006,Vegetable oil
 sbnam-0005-00044,Kamelina yog'i,Камелиновое масло,,
-sbnam-0005-00045,Xantal yog'i,Горчичное масло,,
 ,Borago yog'i,Масло бурачника,420053004,Starflower oil
 sbnam-0005-00046,Yog'li va yog'-moyli spredlar,Жировые и масляные спреды,226889004,Blended spread
 sbnam-0006-00001,Boranka va suxari mahsulotlari,Бараночные и сухарные изделия,,
@@ -252,7 +250,7 @@ sbnam-0006-00007,Havo guruchi,Воздушный рис,,
 ,Popkorn,Попкорн,226726003,Popcorn
 sbnam-0006-00008,Ekstruziya yengil gazaklar,Экструзионные снеки,,
 ,Don asosidagi quruq tayyor nonushtalar,Готовые сухие завтраки на зерновой основе,226598007,Breakfast cereal
-sbnam-0006-00009,Grechka (don),Гречиха (зерно),226723006,Buckwheat - cereal
+,Grechka (don),Гречиха (зерно),226723006,Buckwheat - cereal
 ,Bug'doy kurtagi,Зародыши пшеницы,226734009,Wheatgerm
 sbnam-0006-00010,O'sgan don (kurtaklar),Зерно проращённое (проростки),,
 ,Qatlamali xamir mahsulotlari (sloyka),Изделия слоёные (слойка),226753004,Puff pastry
@@ -281,7 +279,7 @@ sbnam-0006-00026,Osiyo lag'moni,Лапша азиатская,226735005,Noodles
 sbnam-0006-00027,Makaron mahsulotlari (Lag'mon),Макаронные изделия (Лапша),226735005,Noodles
 ,Makaron mahsulotlari (Rojki),Макаронные изделия (Рожки),226742005,Macaroni
 ,Figura makaron mahsulotlari,Макаронные изделия фигурные,226740002,Pasta
-sbnam-0006-00028,Manniy yormasi,Манная крупа,226732008,Semolina
+,Manniy yormasi,Манная крупа,226732008,Semolina
 ,Iste'mol uchun bug'doy kleykovinasi (glyuten),Мука глютеновая / клейковина пшеничная (для пищ. применения),89811004,Gluten
 sbnam-0006-00029,Dukkakli un (no'xat),Мука гороховая,,
 ,Dukkakli un (nut),Мука Нутовая,229934002,Chick pea flour
@@ -308,11 +306,11 @@ sbnam-0006-00046,Javdar kepagi,Отруби ржаные,391858005,Bran
 sbnam-0006-00047,Guruch kepagi,Отруби рисовые,391858005,Bran
 ,Shakarli pechenye,Печенье сахарное,226555008,Short-sweet biscuit
 ,Cho'zilgan va shirin pechenye,Печенье затяжное,226554007,Semi-sweet biscuit
-sbnam-0006-00048,Shakar,Сдобное,,
+sbnam-0006-00048,Sdobali pechenye,Сдобное,,
 sbnam-0006-00049,Polba,Полба,,
 sbnam-0006-00050,Spelta,Спельта,,
 sbnam-0006-00051,Emmer,Эммер,,
-sbnam-0006-00052,Tariq (don),Просо (зерно),1411501003,Common millet seed
+,Tariq (don),Просо (зерно),1411501003,Common millet seed
 sbnam-0006-00053,Pryaniklar,Пряники,226658001,Gingerbread
 sbnam-0006-00054,Kovrijkalar,Коврижки,226658001,Gingerbread
 ,Soxta donlar: amarant,Псевдозлаки: амарант,420963005,Amaranth
@@ -326,7 +324,7 @@ sbnam-0006-00059,Bug'lab qayta ishlangan guruch,Рис пропаренный,67
 ,Sayqal berilgan guruch,Рис шлифованный,226759000,White rice
 sbnam-0006-00060,Iste'mol javdari,Рожь продовольственная,412068007,Rye
 sbnam-0006-00061,Shirin bulochkalar (Pushki),Сдобные булочные изделия (Плюшки),,
-sbnam-0006-00062,Shirin bulochkalar (Keks),Сдобные булочные изделия (Кексы),226704004,Muffin
+sbnam-0006-00062,Shirin bulochkalar (Keks),Сдобные булочные изделия (Кексы),226639005,Cake
 sbnam-0006-00063,Tayyor pirogi va sloyka,Слойки и пироги (готовые),,
 sbnam-0006-00064,Tayoqcha non mahsulotlari,Хлебные палочки (Соломка),,
 sbnam-0006-00065,Jo'xori (don),Сорго (зерно),,
@@ -349,13 +347,12 @@ sbnam-0006-00077,Qoliplangan non,Хлеб формовой,226559002,Bread
 sbnam-0006-00078,Ekstrudirovkalangan non,Хлеб экструдированные,,
 sbnam-0006-00079,Iste'mol arpasi,Ячмень продовольственный,735124003,Barley
 sbnam-0006-00080,Qayta ishlanmagan makkajo'xori doni,Необработанные зерна кукурузы,1290190002,Corn kernels
-sbnam-0006-00081,Makkajo'xori,Кукуруза,412357001,Corn
-sbnam-0006-00082,Guruch,Рис,67324005,Rice
-sbnam-0006-00083,Bug'doy,Пшеница,412071004,Wheat
+,Makkajo'xori,Кукуруза,412357001,Corn
+,Guruch,Рис,67324005,Rice
+,Bug'doy,Пшеница,412071004,Wheat
 sbnam-0006-00084,Don va don ekinlari,Зерно и зерновые культуры,264331002,Grain
 sbnam-0006-00085,Makkajo'xori shrot,Кукурузный шрот,,
 sbnam-0006-00086,Makkajo'xori doni,Кукурузное зерно,1290190002,Corn kernels
-sbnam-0006-00087,Makkajo'xori uni,Кукурузная мука,229948002,Cornmeal
 ,Don va don ekinlari asosida un,Мука из зерновых культур,63766005,Flour
 sbnam-0006-00088,Makkajo'xori iste'mol uchun,Кукуруза для употребления,412357001,Corn
 sbnam-0006-00089,Makkajo'xori asosida oziq-ovqat mahsuloti,Продукты питания на основе кукурузы,,
@@ -442,7 +439,7 @@ sbnam-0008-00025,Varenets,Варенец,,
 ,Pasterlangan ichimlik qaymog'i,Сливки питьевые пастеризованные,226796009,Fresh cream
 ,Sterillangan / UYUT qaymoq,Сливки стерилизованные / УВТ,415768008,Ultra pasteurized cream
 sbnam-0008-00026,Quruq qaymoq,Сливки сухие,,
-sbnam-0008-00027,Sariyog',Сливочное масло,226888007,Butter
+,Sariyog',Сливочное масло,226888007,Butter
 ,Smetana,Сметана,226808005,Smatana
 sbnam-0008-00028,Sariyog'-o'simlik spredi,Спред сливочно-растительный,226889004,Blended spread
 sbnam-0008-00029,Bolalar uchun maxsus tibbiy maqsadlarda quruq parhez aralashmalari,Сухие диетические смеси для специального медицинского питания детей,,
@@ -461,7 +458,7 @@ sbnam-0008-00038,Tuzlama pishloq (Motal),Сыр рассольный (Мотал
 ,Mog'orli pishloq,Сыр с плесенью,1259878002,Blue cheese
 sbnam-0008-00039,Pasterlangan sutdan tayyorlangan yangi pishmagan pishloq,Сыр свежий незрелый из пастеризованного молока,102264005,Cheese
 ,Qattiq pishloq,Сыр твёрдый,226818000,Hard cheese
-sbnam-0008-00040,Tvorog (suzma),Творог,226862009,Quark
+,Tvorog (suzma),Творог,226862009,Quark
 ,Donador tvorog,Творог зернёный,226814003,Cottage cheese
 sbnam-0008-00041,Tvorog massasi va sirniklar,Творожная масса и сырки глазированные,,
 ,Eritilgan sariyog' (giy),Топлёное масло (гхи),226902007,Butter ghee
@@ -546,17 +543,15 @@ sbnam-0009-00066,Quruq go'sht mahsulotlari (Sublimirovkalangan go'sht),Сухи�
 sbnam-0009-00067,Broyler tushkalari,Тушки бройлеров,226955001,Chicken - meat
 sbnam-0009-00068,Go'shtli somsa va chebureklar,Чебуреки и самса с мясом,227666000,Meat samosa
 sbnam-0009-00069,Marinovkalangan shashlik (yarim tayyor mahsulot),Шашлык маринованный (полуфабрикат),,
-sbnam-0009-00070,Qoramol go'shti,Мясо говядины,226916002,Beef
-sbnam-0009-00071,Qo'y go'shti,Мясо баранины,710184005,Mutton
-sbnam-0009-00072,Cho'chqa go'shti,Мясо свинины,226934003,Pork
-sbnam-0009-00073,Parranda go'shti,Мясо птицы,28230009,Poultry
+,Qoramol go'shti,Мясо говядины,226916002,Beef
+,Qo'y go'shti,Мясо баранины,710184005,Mutton
+,Cho'chqa go'shti,Мясо свинины,226934003,Pork
+,Parranda go'shti,Мясо птицы,28230009,Poultry
 sbnam-0009-00074,Qoramol qo'shimcha submahsulotlari,Дополнительные субпродукты говядины,226982009,Offal
-sbnam-0009-00075,Qoramol jigari,Говяжья печень,226991008,Liver - meat
 sbnam-0009-00076,Qo'y jigari,Баранья печень,226991008,Liver - meat
 sbnam-0009-00077,Cho'chqa jigari,Свиная печень,226991008,Liver - meat
 sbnam-0009-00078,Parranda jigari,Птичья печень,226991008,Liver - meat
 sbnam-0009-00079,Otlarning jigari,Лошадиная печень,226991008,Liver - meat
-sbnam-0009-00080,Qoramol buyragi,Говяжьи почки,226987003,Kidney - meat
 sbnam-0009-00081,Qo'y buyragi,Бараньи почки,226987003,Kidney - meat
 sbnam-0009-00082,Cho'chqa buyragi,Свиные почки,226987003,Kidney - meat
 sbnam-0009-00083,Parranda buyragi,Птичьи почки,226987003,Kidney - meat
@@ -567,14 +562,13 @@ sbnam-0009-00086,Cho'chqa yog'i,Свиной жир / Сало,226899009,Lard
 sbnam-0009-00087,Parranda yog'i,Птичий жир,,
 sbnam-0009-00088,Ot yog'i,Конский жир,,
 sbnam-0009-00089,Aralash hayvon yog'lari,Смешанный животный жир,,
-sbnam-0009-00090,Ovlanadigan hayvonlar go'shti,Мясо диких животных,226971001,Game - meat
 sbnam-0009-00091,Ovlanadigan hayvonlarning submahsulotlari,Субпродукты диких животных,,
 sbnam-0010-00001,Ajika,Аджика,,
 ,Artishok,Артишок,227215000,Artichoke
 ,Baqlajon,Баклажаны,227219006,Eggplant
 ,Bamiya (okra),Бамия (окра),227254004,Okra
 ,Shirin kartoshka (batat),Батат (сладкий картофель),735004000,Sweet potato
-sbnam-0010-00002,Yashil loviya,Бобы зелёные,256318007,Green bean
+,Yashil loviya,Бобы зелёные,256318007,Green bean
 sbnam-0010-00003,Yetilmagan loviya,Бобы недозрелые,,
 ,Yangi yashil no'xat,Горошек зелёный свежий,227369001,Fresh peas
 sbnam-0010-00004,Madaniylashtirilgan veshenka,Грибы вешенки культивируемые,1268404004,Oyster mushroom
@@ -592,11 +586,11 @@ sbnam-0010-00012,Ko'kat: rayhon,Зелень: базилик (рейхон),7351
 ,Ko'kat: kress-salat,Зелень: кресс-салат,256320005,Cress
 ,Ko'kat: shnitt-piyoz,Зелень: лук-резанец (шнитт-лук),227387003,Chive - herb
 ,Ko'kat: mangold,Зелень: мангольд,227236003,Chard
-sbnam-0010-00013,Ko'kat: yalpiz,Зелень: мята,230037009,Mint - herb
+,Ko'kat: yalpiz,Зелень: мята,230037009,Mint - herb
 sbnam-0010-00014,Melissa,Мелисса,,
 sbnam-0010-00015,Ko'kat: rozmarin,Зелень: розмарин,227410007,Rosemary
-sbnam-0010-00016,Ko'kat: rukkola (himoyalangan tuproq),Зелень: руккола (защищённый грунт),9.99486E+17,Arugula
-sbnam-0010-00017,Ko'kat: rukkola (ochiq tuproq),Зелень: руккола (открытый грунт),9.99486E+17,Arugula
+sbnam-0010-00016,Ko'kat: rukkola (himoyalangan tuproq),Зелень: руккола (защищённый грунт),999486261000087101,Arugula
+sbnam-0010-00017,Ko'kat: rukkola (ochiq tuproq),Зелень: руккола (открытый грунт),999486261000087101,Arugula
 sbnam-0010-00018,Ko'kat: timyan,Зелень: тимьян,227413009,Thyme
 sbnam-0010-00019,Chabrets,Чабрец,227413009,Thyme
 sbnam-0010-00020,Ko'kat: ismaloq,Зелень: шпинат,256329006,Spinach
@@ -614,15 +608,15 @@ sbnam-0010-00024,Tuzlangan karam,Капуста квашеная,,
 sbnam-0010-00025,Xitoy karami (pak-choy),Капуста китайская (пак-чой),227225005,Chinese cabbage
 ,Kolrabi karami,Капуста кольраби,227231008,Kohl rabi
 ,Qizil karam,Капуста краснокочанная,227226006,Red cabbage
-sbnam-0010-00026,Bargli karam,Капуста листовая,4.42601E+14,Collard greens
+sbnam-0010-00026,Bargli karam,Капуста листовая,442601000124101,Collard greens
 ,"Shotland bargli karami (keyl, jingalak karam)","Шотландская (кейл, кудрявая)",227230009,Curly kale
-sbnam-0010-00027,Pekin karami,Капуста пекинская,227225005,Chinese cabbage
+,Pekin karami,Капуста пекинская,227225005,Chinese cabbage
 ,Savoy karami,Капуста савойская,227227002,Savoy cabbage
 ,Gul karam,Капуста цветная,735336002,Cauliflower
 sbnam-0010-00028,Kechki kartoshka,Картофель поздний,735053000,Potato
 sbnam-0010-00029,Erta kartoshka,Картофель ранний,735053000,Potato
 sbnam-0010-00030,Iste'mol yangi kartoshka,Картофель свежий продовольственный,735053000,Potato
-sbnam-0010-00031,Pomidor ketchupi,Кетчуп томатный,4.42891E+14,Tomato ketchup
+,Pomidor ketchupi,Кетчуп томатный,442891000124107,Tomato ketchup
 sbnam-0010-00032,Tabiiy sabzavot konservalari,Консервы овощные натуральные,,
 ,So'tali shirin makkajo'xori,Кукуруза сахарная (в початках),227270002,Sweet corn on-the-cob
 ,Shirin makkajo'xori doni,Кукуруза сахарная (зерно),227269003,Sweet corn kernels
@@ -636,7 +630,7 @@ sbnam-0010-00039,Bosh piyoz (Qizil),Лук репчатый (Красный),735
 ,Pyorey-piyoz,Лук-порей,726755004,Leek
 sbnam-0010-00040,Ko'k piyoz,Лук-севок и зелёный лук перо,227255003,Spring onion
 sbnam-0010-00041,Shalot piyozi,Лук-шалот,,
-sbnam-0010-00042,Manioka,Маниока,227234000,Cassava
+,Manioka,Маниока,227234000,Cassava
 sbnam-0010-00043,Kassava (yangi),Кассава (свежая),227234000,Cassava
 sbnam-0010-00044,Marinovkalangan sabzavotlar,Маринады овощные,,
 sbnam-0010-00045,"Konservalangan stol zaytunlari (oliva, maslin)",Маслины и оливки столовые (консервированные),227436000,Olives
@@ -653,7 +647,7 @@ sbnam-0010-00055,Muzlatilgan sabzavot aralashmalari,Овощные смеси з
 sbnam-0010-00056,Ochiq tuproq bodringi,Огурцы грунтовые (открытый грунт),735213008,Cucumber
 ,Kornishon va pikullar,Огурцы корнишоны и пикули,227245002,Gherkin
 sbnam-0010-00057,Himoyalangan tuproq bodringi,Огурцы тепличные (защищённый грунт),735213008,Cucumber
-sbnam-0010-00058,Konsentrlangan pomidor pastasi,Паста томатная концентрированная,227274006,Tomato puree
+,Konsentrlangan pomidor pastasi,Паста томатная концентрированная,227274006,Tomato puree
 ,Pasternak,Пастернак,726753006,Parsnip
 sbnam-0010-00059,Yangi achchiq qalampir (chili),Перец острый свежий (чили),710040007,Chili pepper
 sbnam-0010-00060,Quritilgan achchiq qalampir,Перец острый сушёный,710040007,Chili pepper
@@ -666,7 +660,7 @@ sbnam-0010-00066,Iste'mol kurtaklar va mikroko'kat,Проростки и мик�
 sbnam-0010-00067,Bolalar oziq-ovqati uchun sabzavot pyuresi,Пюре овощное для детского питания,,
 sbnam-0010-00068,Umumiy iste'mol uchun sabzavot pyuresi,Пюре овощное для общего употребления,,
 ,Rovoch,Ревень,726750009,Rhubarb
-sbnam-0010-00069,Rediska,Редис,256325000,Radish
+,Rediska,Редис,256325000,Radish
 sbnam-0010-00070,Turp,Редька,256325000,Radish
 ,Sholg'om,Репа,227275007,Turnip
 ,Brukva,Брюква,227266005,Swede
@@ -717,7 +711,7 @@ sbnam-0010-00101,Madaniylashtiriladigan qo'ziqorinlar,Культивируемы
 sbnam-0010-00102,Poyali sabzavotlar,Стеблевые овощи,,
 sbnam-0010-00103,Bargli sabzavotlar,Листовые овощи,,
 sbnam-0010-00104,Mevali sabzavotlar,Плодовые овощи,,
-sbnam-0010-00105,Veshenka qo'ziqorini,Вешенка грибы,1268404004,Oyster mushroom
+,Veshenka qo'ziqorini,Вешенка грибы,1268404004,Oyster mushroom
 sbnam-0010-00106,Piyozli sabzavotlari,Луковые овощи,,
 sbnam-0010-00107,Tropik ildiz,Тропические корнеплоды,,
 sbnam-0010-00108,Tuganaklar,Клубни,,
@@ -776,10 +770,10 @@ sbnam-0011-00029,Maydalangan kanop urug'i,Измельчённые семена 
 sbnam-0011-00030,Qisman yog'sizlantirilgan kanop urug'i,Частично обезжиренные семена конопли,,
 sbnam-0011-00031,Kanop urug'larini qayta ishlashning boshqa mahsulotlari,Другие продукты переработки семян конопли,,
 sbnam-0011-00032,Boshqa moyli o'simliklarning urug'lari,Другие масличные семена,,
-sbnam-0011-00033,Daraxt yong'oqlari,Орехи деревьев,4.42571E+14,Tree nut
+,Daraxt yong'oqlari,Орехи деревьев,442571000124108,Tree nut
 sbnam-0011-00034,Daraxt yong'oqlaridan qayta ishlash orqali olinadigan mahsulotlar,Продукты из орехов деревьев,,
 ,Chigit,Хлопчатник,260204008,Cotton seed
-sbnam-0012-00001,Agar-agar,Агар-агар,10249006,Agar
+,Agar-agar,Агар-агар,10249006,Agar
 ,Antioksidantlar (Askorbin kislotasi),Антиоксиданты (Аскорбиновая кислота),43706004,Ascorbic acid
 ,Antioksidantlar (Tokoferollar),Антиоксиданты (Токоферолы),37237003,Vitamin E and/or vitamin E derivative
 ,Antioksidantlar (BHA),Антиоксиданты (BHA),228104004,Butylated hydroxyanisole
@@ -790,10 +784,10 @@ sbnam-0012-00004,sintetik aromatlashtirgichlar,Ароматизаторы Син
 sbnam-0012-00005,Tabiiy aromatlashtirgichlar,Ароматизаторы натуральные,,
 sbnam-0012-00006,Yaltiratuvchi vositalar (Vosk),Глазирующие агенты (Воска),,
 ,Yaltiratuvchi vositalar (Shellak),Глазирующие агенты (Шеллак),7330008,Shellac
-sbnam-0012-00007,Quruq pivo achitqilari,Дрожжи пивные сухие,58296003,Saccharomyces cerevisiae
-sbnam-0012-00008,Presslangan non achitqilari,Дрожжи хлебопекарные прессованные,58296003,Saccharomyces cerevisiae
-sbnam-0012-00009,Quruq non achitqilari,Дрожжи хлебопекарные сухие,58296003,Saccharomyces cerevisiae
-sbnam-0012-00010,Instant non achitqilari,Дрожжи инстантные,58296003,Saccharomyces cerevisiae
+sbnam-0012-00007,Quruq pivo achitqilari,Дрожжи пивные сухие,412534006,Yeast
+sbnam-0012-00008,Presslangan non achitqilari,Дрожжи хлебопекарные прессованные,412534006,Yeast
+sbnam-0012-00009,Quruq non achitqilari,Дрожжи хлебопекарные сухие,412534006,Yeast
+sbnam-0012-00010,Instant non achitqilari,Дрожжи инстантные,412534006,Yeast
 ,Iste'mol jelatini,Желатин пищевой,373531009,Gelatin
 sbnam-0012-00011,Quyultiruvchi va stabilizatorlar (Pektin),Загустители и стабилизаторы (Пектин),55946005,Pectin
 sbnam-0012-00012,Quyultiruvchi va stabilizatorlar (Agar),Загустители и стабилизаторы (Агар),10249006,Agar
@@ -804,9 +798,9 @@ sbnam-0012-00013,Sutli va qatiq mahsulotlari uchun zakvaskalar,Закваски 
 ,Konservantlar (Sorbat),Консерванты (Сорбаты),28421003,Sorbic acid
 ,Konservantlar (Nitrit),Консерванты (Нитриты),31528005,Nitrite salt
 ,Konservantlar (Nitrat),Консерванты (Нитраты),89119000,Nitrate salt
-sbnam-0012-00014,Kartoshka,Крахмал картофельный,74242007,Food starch
-,Makkajo'xori,Крахмал кукурузный,229936000,Corn starch
-sbnam-0012-00015,Guruch,Крахмал рисовый,74242007,Food starch
+sbnam-0012-00014,Kartoshka kraxmali,Крахмал картофельный,74242007,Food starch
+,Makkajo'xori kraxmali,Крахмал кукурузный,229936000,Corn starch
+sbnam-0012-00015,Guruch kraxmali,Крахмал рисовый,74242007,Food starch
 sbnam-0012-00016,Bug'doy kraxmali,Крахмал пшеничный,74242007,Food starch
 sbnam-0012-00017,Iste'mol limon kislotasi,Лимонная кислота пищевая,75399008,Citric acid
 sbnam-0012-00018,Modifikatsiyalangan kraxmal,Модифицированные крахмалы,,
@@ -832,7 +826,7 @@ sbnam-0012-00027,Ta'm va xushbo'ylik kuchaytirgichlari (E600-E699),Усилит�
 ,Ferment preparatlari (Lipaza),Ферментные препараты (Липазы),72993008,Triacylglycerol lipase
 ,Emulgatorlar (Lesitin),Эмульгаторы (Лецитин),26312007,Lecithin
 sbnam-0012-00028,Emulgatorlar (Mono- va digliseridlar),Эмульгаторы (Моно- и диглицериды),,
-sbnam-0012-00029,Qizil xamirturush bilan fermentlangan guruchga asoslangan parhez qo'shimchalari,Диетические добавки на основе ферментированного риса с красными дрожжами,5.67981E+14,Red yeast rice
+sbnam-0012-00029,Qizil xamirturush bilan fermentlangan guruchga asoslangan parhez qo'shimchalari,Диетические добавки на основе ферментированного риса с красными дрожжами,567981000202107,Red yeast rice
 sbnam-0012-00030,Kukun shaklidagi oziq-ovqat mahsuloti,Пищевой продукт в порошкообразной форме,,
 sbnam-0012-00031,Suyuq shakldagi oziq-ovqat mahsuloti,Пищевой продукт в жидкой форме,,
 sbnam-0012-00032,Kukun shaklidagi oziq-ovqat mahsuloti sotuvga qo'yilganda,Пищевой продукт в порошкообразной форме при продаже,,
@@ -892,18 +886,18 @@ sbnam-0013-00030,Salat souslari,Соусы салатные,227545001,Salad dres
 sbnam-0013-00031,Dressinglar,Дрессинги,227545001,Salad dressing
 sbnam-0013-00032,Quritilgan o'tlar: rayhon,Сушёные травы: базилик,735106000,Basil
 ,Oregano,Орегано,227407000,Oregano
-sbnam-0013-00033,Timyan,Тимьян,227413009,Thyme
-sbnam-0013-00034,Rozmarin,Розмарин,227410007,Rosemary
+,Timyan,Тимьян,227413009,Thyme
+,Rozmarin,Розмарин,227410007,Rosemary
 ,Mayoran,Майоран,227405008,Marjoram
 sbnam-0013-00035,Quritilgan o'tlar: ukrop,Сушёные травы: укроп,256331002,Dill
 ,Petrushka,Петрушка,735048005,Parsley
-sbnam-0013-00036,Yalpiz,Мята,230037009,Mint - herb
+,Yalpiz,Мята,230037009,Mint - herb
 sbnam-0013-00037,Ziravor sifatida quritilgan rezavor va mevalar (Mojjevelnik),Сушёные ягоды и фрукты как пряности (Можжевельник),,
 sbnam-0013-00038,Ziravor sifatida quritilgan rezavor va mevalar (Zirk),Сушёные ягоды и фрукты как пряности (Барбарис),,
 sbnam-0013-00039,Ziravor sifatida quritilgan rezavor va mevalar (Sumax),Сушёные ягоды и фрукты как пряности (Сумах),,
 sbnam-0013-00040,Sedana (zira) urug'i,Тмин (зира) семена,227392001,Cumin seed
 sbnam-0013-00041,Stol uksusi (sintetik),Уксус столовый (синтетический),227565008,Vinegar
-sbnam-0013-00042,Olma uksusi,Уксус яблочный,3.09943E+16,Apple cider vinegar
+,Olma uksusi,Уксус яблочный,30994311000001106,Apple cider vinegar
 ,Vino uksusi,Уксус винный,1259873006,Wine vinegar
 sbnam-0013-00043,Balzamik uksusi,Уксус бальзамический,227565008,Vinegar
 sbnam-0013-00044,Guruch uksusi,Уксус рисовый,227565008,Vinegar
@@ -981,7 +975,7 @@ sbnam-0014-00040,Seld turlari (Anchous),Рыба сельдевая (Анчоу�
 ,Seld turlari (Kilka),Рыба сельдевая (Килька),227139001,Sprats
 sbnam-0014-00041,Tuzlangan baliq,Рыба солёная,,
 sbnam-0014-00042,Quritilgan (suvsiz) baliq,Рыба сушёная,,
-sbnam-0014-00043,Tunyets turlari (Tunyets),Рыба тунцовая (Тунец),227144008,Tuna fish
+,Tunyets turlari (Tunyets),Рыба тунцовая (Тунец),227144008,Tuna fish
 ,Tunyets turlari (Skumbriya),Рыба тунцовая (Скумбрия),735043001,Mackerel
 sbnam-0014-00044,Tunyets turlari (Bonito),Рыба тунцовая (Бонито),,
 sbnam-0014-00045,Yirtqich baliq (Cho'rtan),Рыба хищная (Щука),,
@@ -1000,7 +994,6 @@ sbnam-0014-00054,Sovutilgan baliq filesi,Филе рыбное охлаждён�
 sbnam-0014-00055,Baliq go'shti,Рыбное мясо,735971005,Fish
 sbnam-0014-00056,O'q tunets,Фрегатовый тунец,227144008,Tuna fish
 ,Qilich baliq,рыба-меч,726731009,Swordfish
-sbnam-0014-00057,Anchoz baliq,Анчоус рыба,735337006,Anchovy
 ,Iste'mol uchun mum,Воск пчелиный пищевой,15017001,Beeswax
 sbnam-0015-00001,Sharqona shirinliklar (Navvot),Восточные сладости (Нават),,
 sbnam-0015-00002,Sharqona shirinliklar (Parvarda),Восточные сладости (Парварда),,
@@ -1014,17 +1007,17 @@ sbnam-0015-00007,Draje,Драже,,
 sbnam-0015-00008,Marmelad,Мармелад,,
 sbnam-0015-00009,Saqich,Жевательная резинка,,
 sbnam-0015-00010,Qovurilgan tsikoriy va undan tayyorlangan mahsulotlar,Зерно цикория обжаренное и продукты из него,,
-sbnam-0015-00011,Iris,Ирис,227626004,Toffee
-sbnam-0015-00012,Toffi,Тоффи,227626004,Toffee
-sbnam-0015-00013,Maydalangan kakao,Какао тёртое,9.01E+11,Cocoa
-sbnam-0015-00014,Kakao donalari,Какао-бобы,9.01E+11,Cocoa
+,Iris,Ирис,227626004,Toffee
+,Toffi,Тоффи,227626004,Toffee
+sbnam-0015-00013,Maydalangan kakao,Какао тёртое,901000161107,Cocoa
+sbnam-0015-00014,Kakao donalari,Какао-бобы,901000161107,Cocoa
 ,Iste'mol kakao moyi,Какао-масло пищевое,80237000,Cocoa butter
-sbnam-0015-00015,Kakao kukuni,Какао-порошок,9.01E+11,Cocoa
+sbnam-0015-00015,Kakao kukuni,Какао-порошок,901000161107,Cocoa
 sbnam-0015-00016,Kakao qobig'i,Какаовелла,,
 ,Karamel konfetlari (Mursaklilar),Конфеты карамельные (Леденцовые),227621009,Hard candy
 ,Karamel konfetlari (To'ldirgichli),Конфеты карамельные (С начинкой),227607007,Candy
 ,Shokoladli konfetlar,Конфеты шоколадные,227608002,Chocolate candy
-sbnam-0015-00017,Ona suti,Маточное молочко,722195007,Royal jelly
+,Ona suti,Маточное молочко,722195007,Royal jelly
 sbnam-0015-00018,Monoflyor asal,Мёд монофлёрный,227598003,Honey
 sbnam-0015-00019,Poliflyor asal,Мёд полифлёрный,227598003,Honey
 sbnam-0015-00020,Tabiiy asal (Gul),Мёд натуральный пчелиный (Цветочный),227598003,Honey
@@ -1037,14 +1030,14 @@ sbnam-0015-00025,Kraxmal patokasi,Патока крахмальная,412064009,
 sbnam-0015-00026,Perga,Перга,,
 sbnam-0015-00027,Gul changi,Пыльца цветочная,412583005,Bee pollen
 sbnam-0015-00028,Tabiiy shirinlashtirgichlar (Steviya),Подсластители натуральные (Стевия),,
-sbnam-0015-00029,Tabiiy shirinlashtirgichlar (Eritrit),Подсластители натуральные (Эритрит),4.44471E+14,Erythritol
+,Tabiiy shirinlashtirgichlar (Eritrit),Подсластители натуральные (Эритрит),444471000124101,Erythritol
 ,Tabiiy shirinlashtirgichlar (Ksilit),Подсластители натуральные (Ксилит),395951005,Xylitol
 ,Sintetik shirinlashtirgichlar (Aspartam),Подсластители синтетические (Аспартам),11526002,Aspartame
 ,Sintetik shirinlashtirgichlar (Saxarin),Подсластители синтетические (Сахарин),27138006,Saccharin
 ,Sintetik shirinlashtirgichlar (Sukraloza),Подсластители синтетические (Сукралоза),418992009,Sucralose
 sbnam-0015-00030,Sintetik shirinlashtirgichlar (Tsiklamat),Подсластители синтетические (Цикламат),,
 sbnam-0015-00031,Pomadkalar va to'ldirgichlar,Помадные массы и начинки,,
-sbnam-0015-00032,Propolis,Прополис,255970007,Propolis
+,Propolis,Прополис,255970007,Propolis
 sbnam-0015-00033,Lavlagidan olingan shakar,Сахар свекловичный,264322002,Sugar - food
 sbnam-0015-00034,Rafinatlanmagan shakar (xom),Сахар сырец (нерафинированный),264322002,Sugar - food
 ,Jigarrang shakar qamish shakari,Сахар тростниковый коричневый,230055000,Brown sugar
@@ -1055,27 +1048,27 @@ sbnam-0015-00037,Shakar-rafinad (Presslangan),Сахар-рафинад (Пре�
 sbnam-0015-00038,Agava qiyomi,Сироп агавы,229862008,Syrup
 sbnam-0015-00039,Invert qiyomi,Сироп инвертный,229862008,Syrup
 ,Zarang qiyomi,Сироп кленовый,229865005,Maple syrup
-sbnam-0015-00040,Makkajo'xori qiyomi,Сироп кукурузный,412064009,Corn syrup
+,Makkajo'xori qiyomi,Сироп кукурузный,412064009,Corn syrup
 sbnam-0015-00041,Shakarli o'rik qoqisi,Урюк сахарный,227452002,Dried apricot
 sbnam-0015-00042,Sukatlar,Цукаты,,
 ,Fruktoza,Фруктоза,58202007,Fructose
 ,Halva,Халва,229893009,Halva
 ,Oq shokolad,Шоколад белый,227612008,White chocolate
-sbnam-0015-00043,Achchiq shokolad,Шоколад горький,227611001,Plain chocolate
+,Achchiq shokolad,Шоколад горький,227611001,Plain chocolate
 sbnam-0015-00044,Qora shokolad,Шоколад тёмный,227611001,Plain chocolate
-sbnam-0015-00045,Sutli shokolad,Шоколад молочный,227610000,Milk chocolate
+,Sutli shokolad,Шоколад молочный,227610000,Milk chocolate
 ,To'ldirgichli shokolad,Шоколад с начинкой,229878005,Chocolate with filled center
 sbnam-0015-00046,Rafinirlangan shakar,Рафинированный сахар,230053007,White sugar
 sbnam-0015-00047,Kakao tolasi,Какао волокно,,
 sbnam-0015-00048,Kakao miqdori kamida ellik foiz bo'lgan shokolad,Шоколад с содержанием какао не менее пятидесяти процентов,227611001,Plain chocolate
 sbnam-0015-00049,Kakao miqdori kamida yetmish foiz bo'lgan shokolad,Шоколад с содержанием какао не менее семидесяти процентов,227611001,Plain chocolate
 ,Kakao miqdori ellik foizdan kam,Шоколад с содержанием какао менее пятидесяти процентов,102262009,Chocolate
-sbnam-0015-00050,Qand,Сахар,264322002,Sugar - food
+,Qand,Сахар,264322002,Sugar - food
 sbnam-0015-00051,Kakao miqdori kamida o'ttiz foiz bo'lgan sutli shokolad,Молочный шоколад с содержанием какао не менее тридцати процентов,227610000,Milk chocolate
 sbnam-0016-00001,Aminokislotali kompleksli BAQ,БАД к пище аминокислотные комплексы,,
 sbnam-0016-00002,Vitamin-mineral kompleksli BAQ,БАД к пище витаминно-минеральные комплексы,,
 sbnam-0016-00003,Suvo'tlar asosidagi BAQ (Spirulina),БАД к пище на основе водорослей (Спирулина),715178005,Spirulina
-sbnam-0016-00004,Suvo'tlar asosidagi BAQ (Xlorella),БАД к пище на основе водорослей (Хлорелла),9.00054E+17,Chlorella extract
+sbnam-0016-00004,Suvo'tlar asosidagi BAQ (Xlorella),БАД к пище на основе водорослей (Хлорелла),900053541000179104,Chlorella extract
 sbnam-0016-00005,Suvo'tlar asosidagi BAQ (Laminariya),БАД к пище на основе водорослей (Ламинария),,
 sbnam-0016-00006,Asalarichilik mahsulotlari asosidagi BAQ (Propolis),БАД к пище на основе пчелопродуктов (Прополис),255970007,Propolis
 sbnam-0016-00007,Asalarichilik mahsulotlari asosidagi BAQ (Ona suti),БАД к пище на основе пчелопродуктов (Маточное молочко),722195007,Royal jelly
@@ -1125,7 +1118,7 @@ sbnam-0017-00005,Do'lana,Боярышник,763200007,Common hawthorn
 sbnam-0017-00006,Brusnika,Брусника,,
 ,Buzina rezavorlari,Бузина (ягоды),227424006,Elderberries
 sbnam-0017-00007,Murabbo,Варенье,227601008,Jam
-sbnam-0017-00008,Jem,Джем,227601008,Jam
+,Jem,Джем,227601008,Jam
 sbnam-0017-00009,Povidlo,Повидло,227601008,Jam
 sbnam-0017-00010,Konfityur,Конфитюр,227601008,Jam
 sbnam-0017-00011,Meva marmeladi,Мармелад фруктовый,,
@@ -1139,8 +1132,8 @@ sbnam-0017-00015,Godji,Годжи,,
 ,Greypfrut,Грейпфруты,256315005,Grapefruit
 ,Yangi nok,Груши свежие,735050002,Pear
 ,Guava,Гуава,227429001,Guava
-sbnam-0017-00016,Drakon mevasi (pitaxaya),Драконий фрукт (питахайя),9.99487E+17,Dragon fruit
-sbnam-0017-00017,Duriyan,Дуриан,9.99487E+17,Durian
+,Drakon mevasi (pitaxaya),Драконий фрукт (питахайя),999486921000087103,Dragon fruit
+,Duriyan,Дуриан,999486551000087101,Durian
 ,Qovun,Дыня,260177005,Melon
 ,Maymunjon (yejevika),Ежевика,227418000,Blackberries
 sbnam-0017-00018,Meva jelesi,Желе фруктовое,,
@@ -1172,7 +1165,6 @@ sbnam-0017-00028,Longan,Лонган,,
 sbnam-0017-00029,Mangostan,Мангостан,,
 ,Mandarin (va duragaylari),Мандарины (и их гибриды),256316006,Tangerine
 ,Marakuya,Маракуйя,227438004,Passion fruit
-sbnam-0017-00030,Mors,Морсы,1335777002,Fresh fruit drink
 ,Yangi nektarin,Нектарин свежий,227435001,Nectarine
 sbnam-0017-00031,Meva nektarlari,Нектары фруктовые,,
 sbnam-0017-00032,Chakanda (oblepixa),Облепиха,,
@@ -1193,14 +1185,14 @@ sbnam-0017-00042,Quritilgan mevalar: bo'lakchalar (yoki tilimlar),Сухофру
 ,Mayiz,Сухофрукты: изюм,227463004,Raisins
 ,Quritilgan anjir,Сухофрукты: инжир сушёный,227455000,Dried fig
 sbnam-0017-00043,Quritilgan mevalar: kuraga,Сухофрукты: курага,227452002,Dried apricot
-sbnam-0017-00044,O'rik,Урюк,227452002,Dried apricot
+sbnam-0017-00044,O'rik qoqisi (danakli),Урюк,227452002,Dried apricot
 ,Quritilgan meva aralashmalari,Сухофрукты: смесь сухофруктов,227456004,Dried mixed fruit
 ,Quritilgan xurmo,Сухофрукты: финики сушёные,227454001,Dried date
 ,Quruq olxo'ri,Сухофрукты: чернослив,227462009,Prunes
 ,Quritilgan olma (qoqi),Сухофрукты: яблоко сушёное (qoqi),227451009,Dried apple
 ,Olxo'ri (tarn),Тёрн,771582007,Sloe
 sbnam-0017-00045,Olcha (alycha),Алыча,,
-sbnam-0017-00046,Unobi (Xitoy xurmosi),Унаби (Китайский финик),1264515001,Common jujube
+,Unobi (Xitoy xurmosi),Унаби (Китайский финик),1264515001,Common jujube
 sbnam-0017-00047,Unobi (Zizifus),Унаби (Зизифус),1264515001,Common jujube
 ,Yangi xurmo,Финики свежие,227423000,Date
 sbnam-0017-00048,Iste'molga tayyor meva tilimlari,Фруктовая нарезка готовая к употреблению,,
@@ -1215,18 +1207,18 @@ sbnam-0017-00056,Qora gilos,Черешня Чёрная,735248001,Cherry
 sbnam-0017-00057,Qizil gilos,Черешня Красная,735248001,Cherry
 ,Oq qorag'at,Белая смородина,227448002,White currant
 ,Tut (shoxtut),Шелковица (Тут),227434002,Mulberries
-sbnam-0017-00058,Namatak mevalari,Шиповник (плоды),710226003,Rose hip
+,Namatak mevalari,Шиповник (плоды),710226003,Rose hip
 sbnam-0017-00059,Yangi olma,Яблоки свежие,735215001,Apple
 sbnam-0017-00060,"Meva sharbatlari, konsentrlangan o'z holatiga keltirilgan meva sharbatlari va nektarlari","Фруктовые соки, восстановленные концентрированные фруктовые соки и нектары",129560007,Fruit juice
 ,Olma pyuresi va kompoti,Яблочное пюре и компот,420823005,Applesauce
 ,Rezavor va mayda mevalar,Ягоды и мелкие фрукты,63045006,Berry
 ,Uzum sharbati,Виноградный сок,226492005,Grape juice
 sbnam-0017-00061,Rezavor va mayda meva sharbatlari,Соки из ягод и мелких фруктов,129560007,Fruit juice
-sbnam-0017-00062,Konservalangan mevalar,Консервированные фрукты,227465006,Tinned fruit
+,Konservalangan mevalar,Консервированные фрукты,227465006,Tinned fruit
 ,Mevalar,Фрукты,72511004,Fruit
 sbnam-0017-00063,"Tunuka idishdagi ichimliklar, shu jumladan meva va sabzavot sharbatlari","Напитки в жестяной банке, включая фруктовые и овощные соки",,
 sbnam-0017-00064,Quritilgan mevalar va ularni qayta ishlash mahsulotlari,Сушёные фрукты и продукты их переработки,227449005,Dried fruit
-sbnam-0018-00001,Kakaoli ichimliklar,Какао-напитки,226026007,Cocoa drink
+,Kakaoli ichimliklar,Какао-напитки,226026007,Cocoa drink
 sbnam-0018-00002,Erish kakao,Какао растворимое,226026007,Cocoa drink
 sbnam-0018-00003,Kofe kapsulalari va chaldlari,Капсулы и чалды кофейные,29263009,Coffee
 sbnam-0018-00004,Qovurilgan kofe doni,Кофе в зёрнах обжаренный,29263009,Coffee
@@ -1244,7 +1236,7 @@ sbnam-0018-00013,Bir martalik idishlarda tayyor iste'mol choyi,Чай в одн�
 ,Yashil bargli choy,Чай зелёный байховый,412194001,Green tea
 sbnam-0018-00014,Paket choy,Чай пакетированный,16313001,Tea
 sbnam-0018-00015,Pu-er choyi,Чай пуэр,16313001,Tea
-sbnam-0018-00016,O'simlik (fito) choylari,Чай травяной (фиточай),226478004,Herbal tea
+,O'simlik (fito) choylari,Чай травяной (фиточай),226478004,Herbal tea
 sbnam-0018-00017,Yig'malar,Сборы,226478004,Herbal tea
 sbnam-0018-00018,Yosh bolalar uchun o'simlik choyi,Чай травяной для детей раннего возраста,226478004,Herbal tea
 sbnam-0018-00019,Ulun choyi,Чай улун,16313001,Tea
@@ -1267,12 +1259,11 @@ sbnam-0019-00007,Iste'mol tovuq tuxumi,Яйца куриные пищевые,28
 sbnam-0019-00008,Bedana tuxumi,Яйца перепелиные,102263004,Eggs (edible)
 sbnam-0019-00009,Tuyaqush tuxumi,Яйца страусиные,102263004,Eggs (edible)
 sbnam-0019-00010,O'rdak tuxumi,Яйца утиные,102263004,Eggs (edible)
-sbnam-0020-00001,QandLavlagi,САХАРНАЯ СВЕКЛА,,
-sbnam-0020-00002,Loviya,Фасоль,256354006,Bean
+,Loviya,Фасоль,256354006,Bean
 ,Qovun,дыня,260177005,Melon
 sbnam-0020-00003,Zig'ir,Лен,710178007,Linseed
-sbnam-0020-00004,Olxo'ri,Сливы,735051003,Plum
-sbnam-0020-00005,Olmalar,Яблоки,735215001,Apple
+,Olxo'ri,Сливы,735051003,Plum
+,Olmalar,Яблоки,735215001,Apple
 sbnam-0020-00006,Qizil shirin butun garimdori,Красный сладкий цельный гаримдори,1137359008,Bell pepper
 ,Ananas,АНАНАС,256313003,Pineapple
 sbnam-0020-00007,Oddiy qovoq,Обыкновенная тыква,227260004,Pumpkin
@@ -1331,79 +1322,5 @@ sbnam-0046-00002,Qattiq maishiy chiqindilar poligoni (QMCH),Полигон тв�
 sbnam-0046-00003,Avtomoy yoqilg'i quyish shaxobchasi (AYQSH) hududi,Территория автозаправочной станции (АЗС),415555003,Soil
 sbnam-0047-00001,Sanoat obyekti SHZ,СЗЗ промышленного объекта,415555003,Soil
 sbnam-0047-00002,Suv olish inshooti SHZ (sanitariya-himoya zonasi),СЗЗ водозабора,415555003,Soil
-,Jarrohlik asboblari,Хирургический инструментарий,37759000,Surgical instrument
-sbnam-0048-00001,Ish sirtlari / Stollar,Рабочие поверхности / Столы,,
-,Tibbiy uskunalar / apparatura,Медицинское оборудование / Аппаратура,303607000,Biomedical equipment
-sbnam-0048-00002,Xodimlar qo'li,Руки персонала,33712006,Skin structure of hand
-,Xodimlar maxsus kiyimi,Спецодежда персонала,6919005,Protective clothing material
-sbnam-0048-00003,DPM oshxonasidagi sirtlar,Поверхности в пищеблоке ЛПУ,,
-sbnam-0049-00001,"Kesish anjomlari (taxtalar, pichoqlar)","Разделочный инвентарь (доски, ножи)",,
-sbnam-0049-00002,"Texnologik uskunalar (go'sht maydalagich, mikser)","Технологическое оборудование (мясорубки, миксеры)",,
-sbnam-0049-00003,Oshxona idish-tovoqlari va asboblari,Столовая посуда и приборы,,
-sbnam-0049-00004,Oshxona xodimlari qo'li,Руки работников пищеблока,33712006,Skin structure of hand
-,O'yinchoqlar,Игрушки,91032009,Toy
-sbnam-0050-00001,"Mebel (partalar, stollar)","Мебель (парты, столы)",,
-,Yotoq jihozlari,Постельные принадлежности,708547008,Bedding
-sbnam-0050-00002,Oshxonadagi sirtlar,Поверхности в пищеблоке,,
-sbnam-0051-00001,Sartaroshlik / manikyur asboblari,Парикмахерский / Маникюрный инструментарий,,
-sbnam-0051-00002,Mehmonxona / hammom / havzalardagi sirtlar,Поверхности в гостиницах / банях / бассейнах,,
-sbnam-0052-00001,Non uchun pichoq,Нож для хлеба,,
-sbnam-0052-00002,Meva kesish taxtasi,Разделочная доска для фруктов,,
-sbnam-0052-00003,Tarqatish stoli,Раздаточный стол,,
-sbnam-0052-00004,Tayyor mahsulotlar uchin idish,Посуда для готовой продукции,,
-sbnam-0052-00005,Oshpaz qo'li,Рука повара,33712006,Skin structure of hand
-sbnam-0052-00006,Oshpaz ish kiyimi,Рабочая одежда повара,,
-sbnam-0053-00001,1-ovqat idishi,Посуда для 1-го блюда,,
-sbnam-0053-00002,2-ovqat idishi,Посуда для 2-го блюда,,
-sbnam-0053-00003,Tarbiyachi qo'li: (F.I.Sh.),Руки воспитателя: (Ф.И.О.),33712006,Skin structure of hand
-,Stollar,Столы,86407004,Table
-,Stullar,Стулья,706699008,Chair
-,Oynalar tokchasi,Подоконники,708660005,Window sill
-sbnam-0053-00004,Eshiklar tutqichi,Ручки дверей,,
-,O'yinchoqlar,Игрушки,91032009,Toy
-sbnam-0053-00005,O'yinchoqlar javoni,Шкаф для игрушек,,
-sbnam-0053-00006,Gilamlar,Ковры,,
-sbnam-0053-00007,Kiyim javoni,Шкаф для одежды,,
-sbnam-0053-00008,O'rin oqliklari-1 (F.I.Sh.),Постельное бельё-1 (Ф.И.О.),,
-sbnam-0053-00009,O'rin oqliklari-2 (F.I.Sh.),Постельное бельё-2 (Ф.И.О.),,
-sbnam-0053-00010,Yuvinish xonasi devori,Стены моечной комнаты,,
-,Sochiqlar,Полотенца,54638004,Towel
-sbnam-0053-00011,Sochiqlar javoni,Шкаф для полотенец,,
-sbnam-0053-00012,Suv krani jo'mragi,Водопроводный кран,,
-sbnam-0053-00013,Tuvak (unitaz),Горшок (унитаз),,
-sbnam-0061-00001,Turar joy obyektlari,Объекты жилого назначения,,
-,"Polimer materiallar va ular asosidagi plastik massalar: polietilen (YUZPE, YUQPE), polipropilen, propilenning etilen bilan sopolimerlari, polibutilen, poliizobutilen, poliolefinlar asosidagi kombinatsiyalangan materiallar","Полимерные  материалы и пластические массы на их основе полиэтилен (ПЭВД, ПЭНД), пропилен, сополимеры пропилена с этиленом, полибутилен, полиизобутилен, комбинированные материалы на основе полиолефинов",71463006,Polyethylene
-,"Polimer materiallar va ular asosidagi plastik massalar: polistirol (blokli, suspenzion, zarbaga chidamli)","Полимерные  материалы и пластические массы на их основе полистирол (блочный, суспензионный, ударопрочный)",47358009,Polystyrene
-,"Qattiq PVX, plastifikatsiyalangan PVX; qattiq PVX uchun ko'rsatilgan ko'rsatkichlarga qo'shimcha ravishda quyidagilarni aniqlash lozim","поливинилхлоридные пластики жесткий ПВХ пластифицированный ПВХ, дополнительно к покозателем, указанным следует определят",35233000,Polyvinyl chloride
-sbnam-0062-00001,"Qog'oz, karton, pergament, podpergament","Бумага, картон, пергамент, подпергамент",,
-sbnam-0062-00002,Shisha va shishadan tayyorlangan buyumlar,Стекло и изделия из стекла,32039001,Glass
-sbnam-0062-00003,Dekorativ qoplamali shisha buyumlar,Изделия из стекла с декоративным покритием,32039001,Glass
-sbnam-0062-00004,Keramik buyumlar,Керамические изделия,261253002,Ceramic
-sbnam-0062-00005,Chinni va fayans buyumlar,Изделия из форфора и фаянса,261253002,Ceramic
-sbnam-0062-00006,Po'latdan tayyorlangan emallangan idishlar,стальная эмалированная посуда,,
-sbnam-0062-00007,Yopishmaydigan qoplamali idishlar,посуда с антипригарным покрытием,,
-sbnam-0062-00008,Laklangan konserva idishlari,Лакированная консервная тара,,
-,"Metallar, qotishmalar","Металлы,  сплавы",425620007,Metal
-sbnam-0063-00001,"Yuz va tana terisini parvarish qilish vositalari: kremlar, emulsiyalar, qaymoqlar, sutlar","Средство для ухода за кожей лица и тела: кремы, эмульсии, сливки, молочко",,
-sbnam-0063-00002,"Yuz va tana terisini parvarish qilish vositalari: Gellar, jelelar","Средство для ухода за кожей лица и тела: Гели,желе",,
-sbnam-0063-00003,"Yuz va tana terisini parvarish qilish vositalari: Losyonlar, toniklar","Средство для ухода за кожей лица и тела: Лосьон, тоники",,
-sbnam-0063-00004,Yuz va tana terisini parvarish qilish vositalari: Kosmetik moylar,Средство для ухода за кожей лица и тела: Масло косметические,,
-,Yuz va tana terisini parvarish qilish vositalari:  kosmetik vazelin,Средство для ухода за кожей лица и тела: вазелин косметический,25307002,Petrolatum
-sbnam-0063-00005,"Yuz va tana terisini parvarish qilish vositalari: oziqlantiruvchi, namlantiruvchi, tozalovchi va boshqa niqoblar","Средство для ухода за кожей лица и тела: маски питательные, очищающие и т. д",,
-sbnam-0063-00006,"Vanna va dush qabul qilish vositalari (tuzlar, ko'piklar, moylar, gellar va boshqalar): Vanna tuzi..","средства для принятия ванн и душа (соли, пена, масла,гели и т.д): Соль для купания",,
-sbnam-0063-00007,"Vanna va dush qabul qilish vositalari (tuzlar, ko'piklar, moylar, gellar va boshqalar): Ko'pik hosil qiluvchi yuvish vositalari","средства для принятия ванн и душа (соли, пена, масла,гели и т.д): Средство пеномоющие",,
-sbnam-0063-00008,"Sovun (hojatxona sovuni, dezodoratsiyalovchi va boshqalar)","Мыло (туалетное, дезодорирующее и т.д)",25780000,Soap
-sbnam-0063-00009,Suyuq hojatxona sovuni (yog' asosidagi),Мыло жидкое туалетное (на жировой основе),25780000,Soap
-sbnam-0063-00010,Dezodorantlar va terlashga qarshi vositalar: dezodorant qalam,Дезодаранты и средства от пота: дезодарант карандаш,,
-sbnam-0063-00011,Dezodorantlar va terlashga qarshi vositalar: Aerozol qadoqdagi dezodorant,Дезодаранты и средства от пота: дезодаранты в аэрозольной упаковке,,
-sbnam-0063-00012,"Dezodorantlar va terlashga qarshi vositalar: Gelsimon, kremsimon va boshqa dezodorantlar","Дезодаранты и средства от пота: дезодаранты гелеобразные, кремообразные и другие",,
-sbnam-0065-00001,Statsionar,Стационар,,
-sbnam-0065-00002,Ambulatoriya,Амбулатория,,
-sbnam-0066-00001,Maktab,Школа,,
-sbnam-0066-00002,Maktabgacha ta'lim tashkiloti,Детский сад,,
-sbnam-0066-00003,Oliy va o'rta maxsus ta'lim muassasalari,Учреждения высшего и среднего специального образования,,
-sbnam-0067-00001,Oziq-ovqat mahsulotlarini ishlab chiqarish va savdosi bilan shug'ullanuvchi tashkilotlar,"Организации, занимающиеся производством и торговлей пищевыми продуктами",,
-sbnam-0067-00002,Aholiga maishiy xizmat ko'rsatuvchi tashkilotlar,"Организации, оказывающие бытовые услуги населению",,
-sbnam-0067-00003,Boshqalar,Другие,,
 sbnam-0068-00001,"10.5. Sof moddalar (vitaminlar, mineral moddalar, organik moddalar va boshqalar) yoki konsentratlar (o'simlik ekstraktlari va boshqalar) asosida turli to'ldiruvchilar qo'shilgan holda tayyorlangan biologik faol qo'shimchalar, shu jumladan ichimliklar uchun quruq konsentratlar.","10.5. БАД на основе чистых субстанций (витамины, минеральные вещества, органические и др.) или концентратов (экстракты растений и др.) с использованием различных наполнителей, в т.ч. сухие концентраты для напитков.",,
 ,"1.1 Go'sht, sh.j. yarim tayyor go'sht mahsulotlari, yangi so'yilgan, sovutilgan, muzlatilgan, yaxlatilgan (barcha turdagi so'yiladigan, ovlanadigan va yovvoyi hayvonlar), shu jumladan.","1.1. Мясо, в.т.ч. полу фабрикаты, парные,  охлажденные, подморо женные, замороженные  (все виды убойных, про мысловых и диких жи вотных), в т.ч.:",28647000,Meat

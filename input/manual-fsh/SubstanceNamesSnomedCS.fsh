@@ -214,6 +214,12 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[+].language = #uz
   * ^designation[=].value = "Choy"
 
+* #444051000124101
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Энергетический напиток"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Energetik ichimlik"
+
 * #227279001
   * ^designation[0].language = #ru
   * ^designation[=].value = "Отварной картофель"
@@ -321,12 +327,6 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[=].value = "Торты"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Tort"
-
-* #226704004
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Кексы"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Keks"
 
 * #227757007
   * ^designation[0].language = #ru
@@ -465,6 +465,12 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[=].value = "Жир свиной топлёный (смалец)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Eritilgan cho'chqa yog'i (smalets)"
+
+* #436831000124108
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Трансжиры"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Trans yog'lar"
 
 * #229854000
   * ^designation[0].language = #ru
@@ -711,6 +717,12 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[=].value = "Крупа пшеничная (Булгур)"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bug'doy yormasi (Bulgur)"
+
+* #1411501003
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Просо обыкновенное (зерно)"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Oddiy tariq doni"
 
 * #735124003
   * ^designation[0].language = #ru
@@ -1402,6 +1414,12 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[+].language = #uz
   * ^designation[=].value = "Rozmarin"
 
+* #999486261000087101
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Руккола"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Rukkola"
+
 * #256329006
   * ^designation[0].language = #ru
   * ^designation[=].value = "Шпинат"
@@ -1474,6 +1492,12 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[+].language = #uz
   * ^designation[=].value = "Qizil karam"
 
+* #442601000124101
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Капуста листовая коллард"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Kollard bargli karami"
+
 * #227230009
   * ^designation[0].language = #ru
   * ^designation[=].value = "Кудрявая капуста (кейл)"
@@ -1497,6 +1521,12 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[=].value = "Картофель"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Kartoshka"
+
+* #442891000124107
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Томатный кетчуп"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Pomidor ketchupi"
 
 * #227270002
   * ^designation[0].language = #ru
@@ -1876,6 +1906,12 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[+].language = #uz
   * ^designation[=].value = "Funduk"
 
+* #442571000124108
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Древесные орехи"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Daraxt yong'oqlari"
+
 * #260204008
   * ^designation[0].language = #ru
   * ^designation[=].value = "Семена хлопчатника"
@@ -1918,11 +1954,11 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[+].language = #uz
   * ^designation[=].value = "Shellak"
 
-* #58296003
+* #412534006
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Дрожжи Saccharomyces cerevisiae"
+  * ^designation[=].value = "Дрожжи"
   * ^designation[+].language = #uz
-  * ^designation[=].value = "Saccharomyces cerevisiae achitqisi"
+  * ^designation[=].value = "Achitqi"
 
 * #373531009
   * ^designation[0].language = #ru
@@ -2061,6 +2097,12 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[=].value = "Лецитин"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Lesitin"
+
+* #567981000202107
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Красный дрожжевой рис"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Qizil xamirturushli guruch"
 
 * #227376006
   * ^designation[0].language = #ru
@@ -2218,6 +2260,12 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[+].language = #uz
   * ^designation[=].value = "Sirka"
 
+* #30994311000001106
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Яблочный уксус"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Olma sirkasi"
+
 * #1259873006
   * ^designation[0].language = #ru
   * ^designation[=].value = "Уксус винный"
@@ -2337,6 +2385,12 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[=].value = "Спирулина"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Spirulina"
+
+* #900053541000179104
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Экстракт хлореллы"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Xlorella ekstrakti"
 
 * #736027000
   * ^designation[0].language = #ru
@@ -2470,6 +2524,12 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[+].language = #uz
   * ^designation[=].value = "Iris"
 
+* #901000161107
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Какао"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Kakao"
+
 * #227621009
   * ^designation[0].language = #ru
   * ^designation[=].value = "Леденцовая карамель"
@@ -2517,6 +2577,12 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[=].value = "Пчелиная пыльца"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Asalari changi"
+
+* #444471000124101
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Эритрит"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Eritrit"
 
 * #395951005
   * ^designation[0].language = #ru
@@ -2763,6 +2829,18 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[=].value = "Гуава"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Guava"
+
+* #999486921000087103
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Питахайя"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Pitaxaya"
+
+* #999486551000087101
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Дуриан"
+  * ^designation[+].language = #uz
+  * ^designation[=].value = "Duriyan"
 
 * #260177005
   * ^designation[0].language = #ru
@@ -3160,96 +3238,6 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[+].language = #uz
   * ^designation[=].value = "Tuproq"
 
-* #37759000
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Хирургический инструментарий"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Jarrohlik asboblari"
-
-* #303607000
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Медицинское оборудование"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Tibbiy uskuna"
-
-* #33712006
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Кожа кисти"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Qo'l terisi"
-
-* #6919005
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Материал защитной одежды"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Himoya kiyimi materiali"
-
-* #91032009
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Игрушки"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "O'yinchoqlar"
-
-* #706699008
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Стулья"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Stullar"
-
-* #54638004
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Полотенца"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Sochiqlar"
-
-* #71463006
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Полиэтилен"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Polietilen"
-
-* #47358009
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Полистирол"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Polistirol"
-
-* #35233000
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Поливинилхлорид"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Polivinilxlorid"
-
-* #32039001
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Стекло"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Shisha"
-
-* #261253002
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Керамика"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Keramika"
-
-* #425620007
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Металл"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Metall"
-
-* #25307002
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Вазелин"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Vazelin"
-
-* #25780000
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Мыло"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Sovun"
-
 * #28647000
   * ^designation[0].language = #ru
   * ^designation[=].value = "Мясо"
@@ -3273,24 +3261,6 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[=].value = "Пищевая добавка"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Oziq-ovqat qo'shimchasi"
-
-* #708547008
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Постельные принадлежности"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Yotoq jihozlari"
-
-* #86407004
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Стол"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Stol"
-
-* #708660005
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Подоконник"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Deraza tokchasi"
 
 * #823054000
   * ^designation[0].language = #ru
