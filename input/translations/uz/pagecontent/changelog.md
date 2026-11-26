@@ -24,6 +24,8 @@ Qo'llanma sahifalari [DHP dasturchilar hujjatlari](https://docs.dhp.uz/uz/) uslu
 
 [UZ Core Location](StructureDefinition-uz-core-location.html) endi hududlarni ham qamrab oladi, masalan jamoat salomatligi uchun xavfli hudud deb belgilangan mahalla.
 
+[UzPharm guruh qadog'i identifikatori](NamingSystem-uz-pharm-box-id.html) endi [UZ Core Medication](StructureDefinition-uz-core-medication.html) da aytilganidek Farmatsevtika qo'mitasi reyestridagi ro'yxatdan o'tgan mahsulot identifikatori sifatida tavsiflanadi, kuzatuv tizimidagi quti identifikatori sifatida emas; Medication identifikatorlar jadvali ham shuni aytadi.
+
 #### Buzuvchi o'zgarishlar
 
 [Ro'yxatga olish guvohnomasi raqami](NamingSystem-registration-certificate-id.html) va [UzPharm guruh qadog'i identifikatori](NamingSystem-uz-pharm-box-id.html) URI'lari `https://uzpharminfo.uz/registrationNumber` va `https://uzpharminfo.uz/boxGroupId` ga o'zgaradi — Farmatsevtika qo'mitasi reyestri yuklagichi allaqachon yuboradiganlari. Eski `registration_number` yoki `box_group_id` URI'li [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifikatori endi o'z slice'iga tushmaydi, identifikator bo'yicha qidiruv yangi URI'lardan foydalanishi kerak.

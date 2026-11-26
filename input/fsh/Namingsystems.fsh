@@ -385,8 +385,7 @@ Description: "Identifier system used for EpisodeOfCare resources within the Uzbe
 
 Instance: uz-pharm-box-id
 InstanceOf: NamingSystem
-Description: "Naming system for the box-level aggregation identifier used to group serialized pharmaceutical 
-packs into a shipping/carton unit within Uzbekistan's national track-and-trace program "
+Description: "NamingSystem for the Pharmaceutical Committee registry identifier of a registered medicinal product."
 Usage: #definition
 * url = "https://terminology.dhp.uz/fhir/core/NamingSystem/uz-pharm-box-id"
 * name = "UzbekistanPharmBoxGroupID"
@@ -395,13 +394,13 @@ Usage: #definition
 * date = "2025-10-06"
 * publisher = "Uzinfocom"
 * responsible = "Ministry of Health of the Republic of Uzbekistan."
-* description = "Box-level aggregate identifier for serialized pharmaceutical packaging in Uzbekistan's track-and-trace system."
+* description = "Pharmaceutical Committee medicine registry identifier (box_group_id) of a registered product: its trade name, dosage form, strength and pack."
 * jurisdiction = urn:iso:std:iso:3166#UZ "Uzbekistan"
-* usage = "Use as Identifier.system for box-level aggregation (pharm box group ID) in Uzbekistan's pharma track-and-trace."
+* usage = "Use as Identifier.system in Medication.identifier for the box_group_id of a Pharmaceutical Committee registry record: it names the registered product, not one pack or carton."
 * uniqueId[0].type = #uri
 * uniqueId[=].value = $uzpharmBoxGroupID
 * uniqueId[=].preferred = true
-* uniqueId[=].comment = "Canonical URI to populate Identifier.system when recording a pharm box group ID."
+* uniqueId[=].comment = "Canonical URI to populate Identifier.system when recording a registry box_group_id."
 
 Instance: uz-pharm-device-item-id
 InstanceOf: NamingSystem

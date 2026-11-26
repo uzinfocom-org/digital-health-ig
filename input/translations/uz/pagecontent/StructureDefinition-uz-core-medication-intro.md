@@ -166,9 +166,9 @@ Mahsulot beshtagacha identifikatorga ega bo'lishi mumkin; faqat o'zingizda borla
 | [GTIN](NamingSystem-global-trade-item-id.html) | `https://mobile-api.aslbelgisi.uz/gtin` | GS1, qadoqdagi global savdo birligi raqami |
 | [Asl Belgisi markirovka identifikatori](NamingSystem-uz-marking-id.html) | `https://mobile-api.aslbelgisi.uz/marking` | Milliy kuzatuv tizimi, har bir seriyalashtirilgan qadoq uchun |
 | [IKPU mahsulot/xizmat kodi](NamingSystem-product-service-id.html) | `https://uzpharminfo.uz/icps` | Milliy mahsulot va xizmatlar tasniflagichi |
-| [UzPharm guruh qadog'i identifikatori](NamingSystem-uz-pharm-box-id.html) | `https://uzpharminfo.uz/boxGroupId` | Kuzatuv tizimi, seriyalashtirilgan qadoqlarni karton qutiga birlashtiradi |
+| [UzPharm guruh qadog'i identifikatori](NamingSystem-uz-pharm-box-id.html) | `https://uzpharminfo.uz/boxGroupId` | Farmatsevtika qo'mitasi reyestri, ro'yxatdan o'tgan mahsulot uchun (savdo nomi, dori shakli, dozasi va qadog'i) |
 
-Ro'yxatga olish guvohnomasi, GTIN va IKPU kodi *mahsulotni* tavsiflaydi va har bir qadoqda bir xil; markirovka identifikatori va guruh qadog'i identifikatori *jismoniy qadoq yoki qutini* tavsiflaydi va har bir birlik uchun farq qiladi. Sizga faqat katalog yozuvi kerak bo'lsa, mahsulot darajasidagi identifikatorlarni yuboring.
+Ro'yxatga olish guvohnomasi, GTIN, IKPU kodi va guruh qadog'i identifikatori *mahsulotni* tavsiflaydi va har bir qadoqda bir xil; markirovka identifikatori *jismoniy qadoqni* tavsiflaydi va har bir birlik uchun farq qiladi. Sizga faqat katalog yozuvi kerak bo'lsa, mahsulot darajasidagi identifikatorlarni yuboring.
 
 #### Tarkibiy qismlarni qo'shish
 

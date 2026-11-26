@@ -164,9 +164,9 @@ A product may carry up to five identifiers; populate only the ones you have. Eac
 | [GTIN](NamingSystem-global-trade-item-id.html) | `https://mobile-api.aslbelgisi.uz/gtin` | GS1, the global trade item number on the pack |
 | [Asl Belgisi marking ID](NamingSystem-uz-marking-id.html) | `https://mobile-api.aslbelgisi.uz/marking` | The national track-and-trace system, per serialized pack |
 | [ICPS product/service code](NamingSystem-product-service-id.html) | `https://uzpharminfo.uz/icps` | The national product and service classification |
-| [UzPharm box group ID](NamingSystem-uz-pharm-box-id.html) | `https://uzpharminfo.uz/boxGroupId` | The track-and-trace system, grouping serialized packs into a carton |
+| [UzPharm box group ID](NamingSystem-uz-pharm-box-id.html) | `https://uzpharminfo.uz/boxGroupId` | Pharmaceutical Committee registry, for the registered product (trade name, dosage form, strength and pack) |
 
-The registration certificate, GTIN and ICPS code describe the *product* and are the same on every pack; the marking ID and box group ID describe a *physical pack or carton* and differ per unit. When you only need the catalogue entry, send the product-level identifiers.
+The registration certificate, GTIN, ICPS code and box group ID describe the *product* and are the same on every pack; the marking ID describes a *physical pack* and differs per unit. When you only need the catalogue entry, send the product-level identifiers.
 
 #### Adding the ingredients
 

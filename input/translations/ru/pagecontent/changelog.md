@@ -10,6 +10,8 @@
 
 #### Изменено
 
+[ID групповой упаковки UzPharm](NamingSystem-uz-pharm-box-id.html) теперь описан как идентификатор зарегистрированного препарата в реестре Фармацевтического комитета, как уже сказано в [UZ Core Medication](StructureDefinition-uz-core-medication.html), а не как ID короба в системе прослеживаемости; таблица идентификаторов Medication говорит то же самое.
+
 [UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html): `agent.who` может также ссылаться на [UZ Core Device](StructureDefinition-uz-core-device.html) или [UZ Core Organization](StructureDefinition-uz-core-organization.html), для событий без участия человека, например задания по расписанию или входа системы.
 
 [UZ Core Location](StructureDefinition-uz-core-location.html) теперь охватывает и территории, например махаллю, объявленную зоной риска для общественного здоровья.
