@@ -12,6 +12,8 @@
 
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): `emdoc-0010-0106` endi bemorning tibbiy kartasidan ko'chirma - statsionar yoki ambulator, o'zbekcha nomida bo'lgani kabi; ruscha va inglizcha nomlari endi statsionar haqida gapirmaydi. 027-shakl bu kodni ikkala holatda ham ishlatadi, ularni `Encounter.class` (`AMB` yoki `IMP`) farqlaydi.
 
+[Dori vositasi umumiy hajmining mahalliy birliklari](CodeSystem-medication-total-volume-local-units-cs.html) inglizcha nomlarini qaytarib oldi: har bir kodning ruscha nomi inglizcha nomini almashtirib yuborgan edi. [Kasalxonadan chiqish natijasi](CodeSystem-encounter-discharge-disposition-home-cs.html) dagi `mserv-0004-00002` (Vafot etdi) kodi ham inglizcha nomini qaytarib oldi.
+
 [Guruh turi](ValueSet-group-kind-vs.html) tashkilot xodimlari guruhi bilan to'ldirildi.
 
 [Hodisa holati](ValueSet-procedure-event-status-vs.html), avval Procedure hodisasi holati, endi UZ Core Procedure va UZ Core Communication da ishlatiladi.

@@ -10,9 +10,9 @@ Description: "Encounter discharge disposition home codes with English and Russia
   * ^designation[+].language = #ru
   * ^designation[=].value = "Госпитализирован"
 * #mserv-0004-00002 "Vafot etdi"
-  * ^designation[+].language = #en
+  * ^designation[0].language = #en
   * ^designation[=].value = "Died"
-  * ^designation[0].language = #ru
+  * ^designation[+].language = #ru
   * ^designation[=].value = "Умер"
 * #mserv-0004-00003 "O'zi chiqib ketdi"
   * ^designation[0].language = #en
