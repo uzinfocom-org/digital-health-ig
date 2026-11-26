@@ -20,6 +20,8 @@ The [cross-component resource architecture](components.html#cross-component-reso
 
 The guide's pages use the look of the [DHP developer documentation](https://docs.dhp.uz/): Onest and JetBrains Mono fonts, DHP green colours and logo, and a restyled header, menu, tables, notes and code blocks, which now have a copy button. A theme menu in the header switches between light, dark and the system setting.
 
+The [immunization](PlanDefinition-example-uz-core-immunization-plan-definition.html) and [regional screening](PlanDefinition-example-uz-core-regional-screening-plan-definition.html) PlanDefinition examples define the `actor` that their `action.participant.actorId` points to.
+
 [UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` can also reference a [UZ Core Device](StructureDefinition-uz-core-device.html) or a [UZ Core Organization](StructureDefinition-uz-core-organization.html), for events with no person behind them, such as a scheduled job or a system logging in.
 
 [UZ Core Location](StructureDefinition-uz-core-location.html) now also covers areas, such as a mahalla set as a public health risk zone.

@@ -200,6 +200,11 @@ Description: "Example age-based national immunization schedule, showing the focu
 * extension[statusHistory].extension[changedBy].valueReference = Reference(example-practitioner) 
 
 
+* actor[0].id = "vaccinator"
+* actor[0].title = "Vaccinator"
+* actor[0].description = "Nurse or doctor who gives the vaccine."
+* actor[0].option[0].type = $action-participant-type#practitioner
+
 * action[0].id = "action-1"
 * action[0].linkId = "action-1"
 * action[0].title = "Initial vaccination"
@@ -261,6 +266,11 @@ Description: "Example type 2 diabetes screening schedule that applies in two reg
 
 * effectivePeriod.start = "2026-10-01"
 * effectivePeriod.end = "2027-09-30"
+
+* actor[0].id = "general-practitioner"
+* actor[0].title = "General practitioner"
+* actor[0].description = "Family doctor at the patient's polyclinic who orders the test."
+* actor[0].option[0].type = $action-participant-type#practitioner
 
 * action[0].id = "action-1"
 * action[0].linkId = "action-1"
