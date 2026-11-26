@@ -718,12 +718,6 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[+].language = #uz
   * ^designation[=].value = "Bug'doy yormasi (Bulgur)"
 
-* #1411501003
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Просо обыкновенное (зерно)"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Oddiy tariq doni"
-
 * #735124003
   * ^designation[0].language = #ru
   * ^designation[=].value = "Ячмень"
@@ -2098,12 +2092,6 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[+].language = #uz
   * ^designation[=].value = "Lesitin"
 
-* #567981000202107
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Красный дрожжевой рис"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Qizil xamirturushli guruch"
-
 * #227376006
   * ^designation[0].language = #ru
   * ^designation[=].value = "Семена аниса"
@@ -2259,12 +2247,6 @@ Description: "Substance name SNOMED CT supplement with translations in Uzbek and
   * ^designation[=].value = "Уксус"
   * ^designation[+].language = #uz
   * ^designation[=].value = "Sirka"
-
-* #30994311000001106
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Яблочный уксус"
-  * ^designation[+].language = #uz
-  * ^designation[=].value = "Olma sirkasi"
 
 * #1259873006
   * ^designation[0].language = #ru

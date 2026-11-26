@@ -1556,19 +1556,6 @@
       ]
     },
     {
-      "code": "1411501003",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Просо обыкновенное (зерно)"
-        },
-        {
-          "language": "uz",
-          "value": "Oddiy tariq doni"
-        }
-      ]
-    },
-    {
       "code": "735124003",
       "designation": [
         {
@@ -4546,19 +4533,6 @@
       ]
     },
     {
-      "code": "567981000202107",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Красный дрожжевой рис"
-        },
-        {
-          "language": "uz",
-          "value": "Qizil xamirturushli guruch"
-        }
-      ]
-    },
-    {
       "code": "227376006",
       "designation": [
         {
@@ -4893,19 +4867,6 @@
         {
           "language": "uz",
           "value": "Sirka"
-        }
-      ]
-    },
-    {
-      "code": "30994311000001106",
-      "designation": [
-        {
-          "language": "ru",
-          "value": "Яблочный уксус"
-        },
-        {
-          "language": "uz",
-          "value": "Olma sirkasi"
         }
       ]
     },

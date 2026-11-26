@@ -718,8 +718,8 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 
 * group.element[+].code = #sbnam-0006-00018
 * group.element[=].display = "Tariq yormasi"
-* group.element[=].target[+].code = #1411501003
-* group.element[=].target[=].display = "Common millet seed"
+* group.element[=].target[+].code = #264337003
+* group.element[=].target[=].display = "Seed"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0006-00019
@@ -2062,8 +2062,8 @@ Description: "Maps national substance name codes to related SNOMED CT concepts. 
 
 * group.element[+].code = #sbnam-0012-00029
 * group.element[=].display = "Qizil xamirturush bilan fermentlangan guruchga asoslangan parhez qo'shimchalari"
-* group.element[=].target[+].code = #567981000202107
-* group.element[=].target[=].display = "Red yeast rice"
+* group.element[=].target[+].code = #67324005
+* group.element[=].target[=].display = "Rice"
 * group.element[=].target[=].relationship = #source-is-narrower-than-target
 
 * group.element[+].code = #sbnam-0012-00034
