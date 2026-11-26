@@ -60,3 +60,16 @@ Description: "Encounter discharge disposition home codes with English and Russia
   * ^designation[=].value = "Пациент отказался от госпитализации"
   * ^designation[+].language = #en
   * ^designation[=].value = "The patient refused hospitalization"
+
+// dispensary deregistration reasons
+* #chr-0129-0002 "Tasdiqlangan sog'ayish yoki barqaror yaxshilanish"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Подтверждённое выздоровление или стойкое улучшение"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Confirmed recovery or sustained improvement"
+
+* #chr-0129-0003 "Bemorning dispanser kuzatuvidan bosh tortishi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Отказ пациента от диспансерного наблюдения"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Patient's refusal of dispensary observation"

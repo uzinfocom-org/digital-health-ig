@@ -8,6 +8,8 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
 
+[Причины снятия с диспансерного учёта](ValueSet-dispensary-deregistration-reason-vs.html) переиспользуют существующие коды исхода для смерти, смены места жительства, лишения свободы и прочих причин. В [локальные коды исхода](CodeSystem-encounter-discharge-disposition-home-cs.html) добавлены только два кода: выздоровление или стойкое улучшение (`chr-0129-0002`) и отказ от диспансерного наблюдения (`chr-0129-0003`). ConceptMap DMED охватывает все семь исходных значений и оставляет `unspecified` без соответствия; [исход Encounter](ValueSet-encounter-discharge-disposition-vs.html) допускает два новых кода.
+
 #### Изменено
 
 [UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html): `agent.who` может также ссылаться на [UZ Core Device](StructureDefinition-uz-core-device.html) или [UZ Core Organization](StructureDefinition-uz-core-organization.html), для событий без участия человека, например задания по расписанию или входа системы.
