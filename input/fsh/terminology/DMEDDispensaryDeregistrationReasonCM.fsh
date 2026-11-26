@@ -33,20 +33,20 @@ Description: "ConceptMap for mapping DMED `deregistration_reason` values to DHP 
 * group[=].element[=].target[=].display = "Bemorning vafoti"
 * group[=].element[=].target[=].relationship = #equivalent
 
-// DMED states only that residence changed; the DHP code additionally requires the
-// move to leave the served territory, which is what the registry rule intends.
+// The full DMED UI label explicitly says the move is outside the served territory.
+// Source: the supplied dispensary DMED-to-DHP test plan, "Reasons for deregistration".
 * group[=].element[+].code = #residence_change
-* group[=].element[=].display = "Изменение постоянного места жительства"
+* group[=].element[=].display = "Изменение пациентом постоянного места жительства с выездом за пределы обслуживаемой медицинской организацией территории"
 * group[=].element[=].target[+].code = #chr-0129-0004
 * group[=].element[=].target[=].display = "Doimiy yashash joyining xizmat ko'rsatiladigan hudud tashqarisiga o'zgarishi"
-* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+* group[=].element[=].target[=].relationship = #equivalent
 
-// DMED does not qualify the sentence length; the DHP code requires more than a year.
+// The full DMED UI label explicitly requires imprisonment for more than one year.
 * group[=].element[+].code = #prison
-* group[=].element[=].display = "Лишение свободы"
+* group[=].element[=].display = "Осуждение пациента с назначением наказания в виде лишения свободы на срок свыше одного года"
 * group[=].element[=].target[+].code = #chr-0129-0005
 * group[=].element[=].target[=].display = "Bir yildan ortiq muddatga ozodlikdan mahrum qilish"
-* group[=].element[=].target[=].relationship = #source-is-broader-than-target
+* group[=].element[=].target[=].relationship = #equivalent
 
 // Source code is misspelled in the DMED API contract.
 * group[=].element[+].code = #patitient_decline

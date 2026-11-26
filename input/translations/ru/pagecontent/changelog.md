@@ -8,7 +8,7 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
 
-[Причины снятия с диспансерного учёта](CodeSystem-dispensary-deregistration-reason-cs.html) различают семь причин завершения наблюдения (`chr-0129-0001`–`chr-0129-0007`). Они включены в [исход Encounter](ValueSet-encounter-discharge-disposition-vs.html); добавлены исходные значения DMED, наборы значений и ConceptMap в DHP и SNOMED CT. В маппингах смены места жительства и лишения свободы исходные значения DMED шире целевых кодов DHP; маппинги в SNOMED CT также сохраняют указанные отношения, не объявляя все пары эквивалентными.
+[Причины снятия с диспансерного учёта](CodeSystem-dispensary-deregistration-reason-cs.html) различают семь причин завершения наблюдения (`chr-0129-0001`–`chr-0129-0007`). Они включены в [исход Encounter](ValueSet-encounter-discharge-disposition-vs.html); добавлены исходные значения DMED, наборы значений и ConceptMap в DHP и SNOMED CT. Маппинги смены места жительства и лишения свободы учитывают полные подписи UI DMED: выезд за обслуживаемую территорию и заключение свыше одного года. Целевые коды DHP эквивалентны этим значениям; маппинг в SNOMED CT сохраняет собственные указанные отношения.
 
 #### Изменено
 

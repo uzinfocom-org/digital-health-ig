@@ -22,17 +22,17 @@ Description: "Deregistration reasons exactly as DMED sends them in the `deregist
   * ^designation[+].language = #en
   * ^designation[=].value = "Death of the patient"
 
-* #residence_change "Doimiy yashash joyining o'zgarishi"
+* #residence_change "Doimiy yashash joyining xizmat ko'rsatiladigan hudud tashqarisiga o'zgarishi"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Изменение постоянного места жительства"
+  * ^designation[=].value = "Изменение пациентом постоянного места жительства с выездом за пределы обслуживаемой медицинской организацией территории"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Change of permanent residence"
+  * ^designation[=].value = "Change of permanent residence outside the served territory"
 
-* #prison "Ozodlikdan mahrum qilish"
+* #prison "Bir yildan ortiq muddatga ozodlikdan mahrum qilish"
   * ^designation[0].language = #ru
-  * ^designation[=].value = "Лишение свободы"
+  * ^designation[=].value = "Осуждение пациента с назначением наказания в виде лишения свободы на срок свыше одного года"
   * ^designation[+].language = #en
-  * ^designation[=].value = "Imprisonment"
+  * ^designation[=].value = "Imprisonment for a term exceeding one year"
 
 // Misspelled in the DMED API contract; kept verbatim so the wire value can be represented.
 * #patitient_decline "Bemorning bosh tortishi"
