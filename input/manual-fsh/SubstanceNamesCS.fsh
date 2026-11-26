@@ -394,13 +394,13 @@ Description: "National codes for the water, air, soil and food products that sam
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready main courses (side dishes)"
 
-* #sbnam-0003-00011 "Tayyor birinchi taomlar (Sho'rva)"
+* #sbnam-0003-00011 "Tayyor birinchi taomlar (Suyuq taomlar)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Готовые первые блюда (Супы)"
   * ^designation[+].language = #en
   * ^designation[=].value = "Ready first courses (soups)"
 
-* #sbnam-0003-00012 "Tayyor birinchi taomlar (sho'rva)"
+* #sbnam-0003-00012 "Tayyor birinchi taomlar (Sho'rva)"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Готовые первые блюда (Шурпы)"
   * ^designation[+].language = #en
