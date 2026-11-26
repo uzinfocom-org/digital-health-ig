@@ -20,6 +20,8 @@
 
 Диаграмма [межкомпонентной архитектуры ресурсов](components.html#межкомпонентная-архитектура-ресурсов) добавляет компоненты "Рецепты" с MedicationRequest, MedicationDispense, Medication, MedicationKnowledge и MedicationAdministration и "Поставки" с SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport и Device. Новые профили показаны там, где они используются: DeviceRequest и DeviceUsage - в электронных медицинских записях (CHR), ChargeItem - в реимбурсации, BiologicallyDerivedProductDispense и Flag - в управлении кровью, CarePlan - в сестринском деле. У CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport и BiologicallyDerivedProduct теперь есть профили UZ Core, поэтому они отмечены как определённые в этом руководстве, а не как упомянутые, но ещё не определённые. Кнопки в правом верхнем углу диаграммы раскрывают или сворачивают все компоненты сразу и вписывают диаграмму в область просмотра.
 
+Сборочные скрипты убраны из корня репозитория по требованию текущего IG Publisher. Стандартные оболочки Publisher удалены; вспомогательные скрипты текста и переводов перенесены в `scripts/`. Релиз и задачи редактора вызывают Publisher напрямую.
+
 [Статус события](ValueSet-procedure-event-status-vs.html), ранее Статус события Procedure, теперь используется в UZ Core Procedure и UZ Core Communication.
 
 Страницы руководства оформлены в стиле [документации DHP для разработчиков](https://docs.dhp.uz/ru/): шрифты Onest и JetBrains Mono, зелёные цвета и логотип DHP, обновлённые шапка, меню, таблицы, примечания и блоки кода с кнопкой копирования. Меню темы в шапке переключает светлую, тёмную тему или тему как в системе.

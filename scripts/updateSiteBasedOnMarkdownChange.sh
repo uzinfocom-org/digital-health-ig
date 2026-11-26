@@ -1,4 +1,5 @@
 # credit to Bas van den Heuvel, original script from https://github.com/HL7/fhircast-docs/blob/master/updateSiteBasedOnMarkdownChange.sh
+cd "$(dirname "$0")/.." || exit 1
 
 cd temp/pages
 cp ../../input/pagecontent/* _includes/; jekyll b

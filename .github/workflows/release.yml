@@ -55,16 +55,17 @@ jobs:
 
       - name: Install IG publisher
         run: |
-          chmod +x ./_updatePublisher.sh
-          ./_updatePublisher.sh -y
+          mkdir -p input-cache
+          curl -fL --retry 3 --max-time 300 \
+            https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar \
+            -o input-cache/publisher.jar
 
       - name: Build IG
         run: |
-          chmod +x ./_genonce.sh
           # -publish makes this a publication build. Without it the publisher marks
           # the package notForPublication with a file:// url, which packages2.fhir.org
           # rejects and which turns links from dependent guides into file:// links.
-          ./_genonce.sh -publish https://dhp.uz/fhir/core
+          java -Dfile.encoding=UTF-8 -Xmx10g -jar input-cache/publisher.jar -ig . -publish https://dhp.uz/fhir/core
 
       - name: Verify built package
         run: |

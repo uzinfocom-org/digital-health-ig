@@ -7,11 +7,10 @@ Before creating or modifying any FHIR profile, extension, value set, code system
 Keep `modelling-guidelines.md` (Russian) and `modelling-guidelines.en.md` (English) in sync: change both in the same commit.
 
 ## Build Commands
-- **Full build**: `./_build.sh` or `./_genonce.sh` (main build command)
-- **Offline build**: `./_build.sh notx` (build without terminology server)
-- **Update publisher**: `./_build.sh update` (download latest IG publisher)
-- **Jekyll build**: `./_build.sh jekyll` (build static site only)
-- **Clean**: `./_build.sh clean` (remove temp directories)
+- **Full build**: `java -Dfile.encoding=UTF-8 -jar input-cache/publisher.jar -ig .`
+- **Offline build**: add `-tx n/a` to the Publisher command (build without terminology server)
+- **Update publisher**: download `publisher.jar` from the latest [IG Publisher release](https://github.com/HL7/fhir-ig-publisher/releases/latest) into `input-cache/`
+- **Jekyll build**: `bash scripts/fast-narrative-rebuild.sh` (rebuild narratives after a full build)
 - **Test**: No specific test framework - validation happens during build
 
 ## Code Style & Conventions
