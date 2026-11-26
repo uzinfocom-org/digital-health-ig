@@ -9,7 +9,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 ```
 
 Where:
-- `namespace`: `pid` (personal), `pro` (professional), `org` (organization), `doc` (document), or `prd` (product)
+- `namespace`: `pid` (personal), `pro` (professional), `org` (organization), `doc` (document), `prd` (product), or `prg` (program)
 - `country`: ISO 3166-1 two-letter country code (e.g., `uz` for Uzbekistan)
 - `type`: Identifier type (e.g., `ppn` for passport, `ni` for national ID)
 - `subtype`: Optional further classification (e.g., `local`, `intl` for passport types)
@@ -318,6 +318,32 @@ Products are identified using the `prd` namespace. It is for numbers whose names
 
 **System URI pattern**: `https://dhp.uz/fhir/core/sid/prd/{country}/{type}[/subtype]`
 
+### Program identifiers
+
+The `prg` namespace records which national health program a resource was created under - a screening program, a vaccination campaign, dispensary follow-up of a chronic condition, and so on. There is one [system](NamingSystem-uzb-health-program.html) for every program: the program is the identifier value, so a new program needs a new value, not a new identifier system.
+
+**System URI**: `https://dhp.uz/fhir/core/sid/prg/uz/program`
+
+The value is the program's SNOMED CT concept id where SNOMED CT has a suitable concept - for example `171183004` (Diabetes mellitus screening) or `300007000` (Screening for cardiovascular system disease). Where it has none, use the program's code from a DHP code system, such as `mserv-0007-00007` (DMED breast cancer screening program) from [ScreeningCodeCS](CodeSystem-screening-code-cs.html). [Screening and home visit program types](ValueSet-screening-program-type-vs.html) lists the values for screening programs.
+
+- Put it on the PlanDefinition and ActivityDefinition of the program and on the clinical and workflow resources recorded under it: Observation, DiagnosticReport, ServiceRequest, Condition, Procedure, Immunization, Consent, Specimen, Composition, Questionnaire and QuestionnaireResponse.
+- Leave it off Patient, Practitioner, PractitionerRole and Organization, which are shared across programs. A patient's participation in a program is recorded by the resources created under it.
+- Repeat the identifier when a resource belongs to more than one program.
+- Programs that screen for the same condition but are run by different systems are different programs with different values: the DMED breast cancer screening program is `mserv-0007-00007`, while the HPV screening system's is `268547008`.
+- It does not replace the resource's own business identifier. Unlike other identifiers, every resource in a program carries the same value, so it neither identifies a single resource nor says which system produced it.
+
+```json
+{
+  "resourceType": "Observation",
+  "identifier": [
+    {
+      "system": "https://dhp.uz/fhir/core/sid/prg/uz/program",
+      "value": "171183004"
+    }
+  ]
+}
+```
+
 ### Complete example: patient with multiple identifiers
 
 A patient may have multiple identifiers. Here's a complete example showing proper usage:
@@ -424,6 +450,7 @@ To search for resources by identifier, use the standard FHIR search parameters:
 GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|12345678912345
 GET [base]/Practitioner?identifier=https://dhp.uz/fhir/core/sid/pro/uz/argos|9876543210
 GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200935935
+GET [base]/Observation?identifier=https://dhp.uz/fhir/core/sid/prg/uz/program|171183004
 ```
 
 ### Related resources

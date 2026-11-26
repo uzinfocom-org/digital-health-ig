@@ -11,7 +11,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 ```
 
 Где:
-- `namespace`: `pid` (персональный), `pro` (профессиональный), `org` (организация), `doc` (документ) или `prd` (продукт)
+- `namespace`: `pid` (персональный), `pro` (профессиональный), `org` (организация), `doc` (документ), `prd` (продукт) или `prg` (программа)
 - `country`: двухбуквенный код страны ISO 3166-1 (например, `uz` для Узбекистана)
 - `type`: тип идентификатора (например, `ppn` для паспорта, `ni` для национального ID)
 - `subtype`: дополнительная классификация (например, `local` или `intl` для типов паспортов)
@@ -320,6 +320,32 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 
 **Шаблон System URI**: `https://dhp.uz/fhir/core/sid/prd/{country}/{type}[/subtype]`
 
+### Идентификаторы программ {#program-identifiers}
+
+Пространство имён `prg` указывает, в рамках какой национальной программы здравоохранения создан ресурс, - программы скрининга, кампании вакцинации, диспансерного наблюдения при хроническом заболевании и т. д. Для всех программ используется одна [система](NamingSystem-uzb-health-program.html): программа является значением идентификатора, поэтому новой программе нужно новое значение, а не новая система идентификаторов.
+
+**System URI**: `https://dhp.uz/fhir/core/sid/prg/uz/program`
+
+Значение - идентификатор концепта SNOMED CT программы, если в SNOMED CT есть подходящий концепт, - например, `171183004` (скрининг сахарного диабета) или `300007000` (скрининг заболеваний сердечно-сосудистой системы). Если подходящего концепта нет, используйте код программы из кодовой системы DHP, например `mserv-0007-00007` (программа DMED по скринингу рака молочной железы) из [ScreeningCodeCS](CodeSystem-screening-code-cs.html). Значения для программ скрининга перечислены в [типах программ скрининга и патронажа](ValueSet-screening-program-type-vs.html).
+
+- Указывается в PlanDefinition и ActivityDefinition программы и в клинических и рабочих ресурсах, созданных в её рамках: Observation, DiagnosticReport, ServiceRequest, Condition, Procedure, Immunization, Consent, Specimen, Composition, Questionnaire и QuestionnaireResponse.
+- Не указывается в Patient, Practitioner, PractitionerRole и Organization, которые являются общими для всех программ. Участие пациента в программе отражают ресурсы, созданные в её рамках.
+- Если ресурс относится к нескольким программам, идентификатор повторяется.
+- Программы, которые проводят скрининг одного и того же заболевания, но ведутся разными системами, - это разные программы с разными значениями: программа DMED по скринингу рака молочной железы - `mserv-0007-00007`, а программа системы скрининга HPV - `268547008`.
+- Не заменяет собственный бизнес-идентификатор ресурса. В отличие от других идентификаторов, все ресурсы программы несут одно и то же значение, поэтому он не идентифицирует отдельный ресурс и не указывает, какая система его создала.
+
+```json
+{
+  "resourceType": "Observation",
+  "identifier": [
+    {
+      "system": "https://dhp.uz/fhir/core/sid/prg/uz/program",
+      "value": "171183004"
+    }
+  ]
+}
+```
+
 ### Полный пример: пациент с несколькими идентификаторами
 
 Пациент может иметь несколько идентификаторов. Ниже приведён полный пример корректного использования:
@@ -426,6 +452,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|12345678912345
 GET [base]/Practitioner?identifier=https://dhp.uz/fhir/core/sid/pro/uz/argos|9876543210
 GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200935935
+GET [base]/Observation?identifier=https://dhp.uz/fhir/core/sid/prg/uz/program|171183004
 ```
 
 ### Связанные ресурсы

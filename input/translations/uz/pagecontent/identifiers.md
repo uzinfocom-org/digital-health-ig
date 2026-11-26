@@ -11,7 +11,7 @@ https://dhp.uz/fhir/core/sid/{namespace}/{country}/{type}[/subtype]
 ```
 
 Bu yerda:
-- `namespace`: `pid` (shaxsiy), `pro` (kasbiy), `org` (tashkiliy), `doc` (hujjat) yoki `prd` (mahsulot);
+- `namespace`: `pid` (shaxsiy), `pro` (kasbiy), `org` (tashkiliy), `doc` (hujjat), `prd` (mahsulot) yoki `prg` (dastur);
 - `country`: ISO 3166-1 bo'yicha mamlakatning ikki harfli kodi (masalan, O'zbekiston uchun `uz`);
 - `type`: identifikator turi (masalan, pasport uchun `ppn`, milliy ID uchun `ni`);
 - `subtype`: ixtiyoriy qo'shimcha tasnif (masalan, pasport turlari uchun `local`, `intl`).
@@ -320,6 +320,32 @@ Mahsulotlar `prd` nom maydoni orqali identifikatsiya qilinadi. U nom maydonini p
 
 **System URI namunasi**: `https://dhp.uz/fhir/core/sid/prd/{country}/{type}[/subtype]`
 
+### Dastur identifikatorlari {#program-identifiers}
+
+`prg` nom maydoni resurs qaysi milliy sog'liqni saqlash dasturi doirasida yaratilganini bildiradi - skrining dasturi, emlash kampaniyasi, surunkali kasallikda dispanser kuzatuvi va hokazo. Barcha dasturlar uchun bitta [tizim](NamingSystem-uzb-health-program.html) ishlatiladi: dastur identifikator qiymatidir, shuning uchun yangi dasturga yangi identifikator tizimi emas, yangi qiymat kerak bo'ladi.
+
+**System URI**: `https://dhp.uz/fhir/core/sid/prg/uz/program`
+
+Qiymat - SNOMED CT da mos konsept mavjud bo'lsa, dasturning SNOMED CT konsept identifikatori, masalan `171183004` (qandli diabet skriningi) yoki `300007000` (yurak-qon tomir tizimi kasalliklari skriningi). Mos konsept bo'lmasa, dasturning DHP kod tizimidagi kodidan foydalaning, masalan [ScreeningCodeCS](CodeSystem-screening-code-cs.html) dagi `mserv-0007-00007` (DMED ko'krak bezi saratoni skrining dasturi). Skrining dasturlari qiymatlari [skrining va patronaj dasturlari turlari](ValueSet-screening-program-type-vs.html) ro'yxatida keltirilgan.
+
+- Dasturning PlanDefinition va ActivityDefinition resurslarida hamda dastur doirasida yaratilgan klinik va ish jarayoni resurslarida ko'rsatiladi: Observation, DiagnosticReport, ServiceRequest, Condition, Procedure, Immunization, Consent, Specimen, Composition, Questionnaire va QuestionnaireResponse.
+- Barcha dasturlar uchun umumiy bo'lgan Patient, Practitioner, PractitionerRole va Organization da ko'rsatilmaydi. Bemorning dasturdagi ishtiroki uning doirasida yaratilgan resurslar orqali aks etadi.
+- Resurs bir nechta dasturga tegishli bo'lsa, identifikator takrorlanadi.
+- Bir xil kasallik bo'yicha skrining o'tkazadigan, lekin turli tizimlar yuritadigan dasturlar turli dasturlar hisoblanadi va turli qiymatlarga ega: DMED ko'krak bezi saratoni skrining dasturi - `mserv-0007-00007`, HPV skrining tizimining dasturi esa `268547008`.
+- Resursning o'z biznes identifikatori o'rnini bosmaydi. Boshqa identifikatorlardan farqli o'laroq, dasturning barcha resurslari bir xil qiymatga ega, shuning uchun u alohida resursni identifikatsiya qilmaydi va uni qaysi tizim yaratganini ko'rsatmaydi.
+
+```json
+{
+  "resourceType": "Observation",
+  "identifier": [
+    {
+      "system": "https://dhp.uz/fhir/core/sid/prg/uz/program",
+      "value": "171183004"
+    }
+  ]
+}
+```
+
 ### To'liq misol: bir nechta identifikatorga ega bemor
 
 Bemorning bir nechta identifikatori bo'lishi mumkin. Quyida to'g'ri foydalanishni ko'rsatuvchi to'liq misol keltirilgan:
@@ -426,6 +452,7 @@ Resurslarni identifikator bo'yicha qidirish uchun FHIR standart qidiruv parametr
 GET [base]/Patient?identifier=https://dhp.uz/fhir/core/sid/pid/uz/ni|12345678912345
 GET [base]/Practitioner?identifier=https://dhp.uz/fhir/core/sid/pro/uz/argos|9876543210
 GET [base]/Organization?identifier=https://dhp.uz/fhir/core/sid/org/uz/soliq|200935935
+GET [base]/Observation?identifier=https://dhp.uz/fhir/core/sid/prg/uz/program|171183004
 ```
 
 ### Bog'liq resurslar

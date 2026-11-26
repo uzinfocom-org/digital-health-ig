@@ -8,6 +8,8 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
 
+Идентификаторы [программы здравоохранения](NamingSystem-uzb-health-program.html) в системе `https://dhp.uz/fhir/core/sid/prg/uz/program` указывают, в рамках какой национальной программы здравоохранения - скрининга, вакцинации, диспансерного наблюдения - создан ресурс. Это одна система для всех программ, значение которой - код программы SNOMED CT или её код DHP, если в SNOMED CT подходящего кода нет, поэтому новой программе не нужна новая система идентификаторов. На странице [идентификаторов](identifiers.html) описано новое пространство имён `prg`, а [IdentifierDomainCS CodeSystem](CodeSystem-identifier-domain-cs.html) включает его.
+
 #### Изменено
 
 [UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html): `agent.who` может также ссылаться на [UZ Core Device](StructureDefinition-uz-core-device.html) или [UZ Core Organization](StructureDefinition-uz-core-organization.html), для событий без участия человека, например задания по расписанию или входа системы.

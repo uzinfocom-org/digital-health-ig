@@ -188,6 +188,21 @@ Description: """
         * ^property[=].valueString = Canonical(uzb-blood-donation-number)
         * ^property[+].code = #notSelectable
         * ^property[=].valueBoolean = false
+* #https://dhp.uz/fhir/core/sid/prg "Root of identifiers for health programs"
+  * ^property[0].code = #notSelectable
+  * ^property[=].valueBoolean = true
+  * #https://dhp.uz/fhir/core/sid/prg/uz "Root of Uzbekistan identifiers for health programs"
+    * ^property[0].code = #notSelectable
+    * ^property[=].valueBoolean = true
+    * ^property[+].code = #country
+    * ^property[=].valueCoding = $iso-3166#UZ
+    * #https://dhp.uz/fhir/core/sid/prg/uz/program "National health program a resource was created under in Uzbekistan"
+      * ^property[0].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-health-program)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
 * #https://dhp.uz/fhir/core/sid/pid "Root of identifiers for personal identification"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true
