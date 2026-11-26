@@ -28,10 +28,10 @@ Description: "ConceptMap for mapping DHP dispensary deregistration reason codes 
 * group[=].element[=].target[=].display = "Resolved (qualifier value)"
 * group[=].element[=].target[=].relationship = #source-is-broader-than-target
 
-// SNOMED says only that something was declined; the DHP code names dispensary
+// SNOMED says follow-up was declined; the DHP code names dispensary
 // observation as what was declined.
 * group[=].element[+].code = #chr-0129-0003
 * group[=].element[=].display = "Bemorning dispanser kuzatuvidan bosh tortishi"
-* group[=].element[=].target[+].code = #443390004
-* group[=].element[=].target[=].display = "Declined (qualifier value)"
+* group[=].element[=].target[+].code = #763079000
+* group[=].element[=].target[=].display = "Follow-up encounter declined (situation)"
 * group[=].element[=].target[=].relationship = #source-is-narrower-than-target
