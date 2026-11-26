@@ -12,8 +12,6 @@
 
 #### Changed
 
-Build scripts no longer live in the repository root, as required by the current IG Publisher. Standard Publisher wrappers are removed; narrative and translation helpers move to `scripts/`. Release and editor tasks invoke Publisher directly. The retained subfolder-script inventory has an exact QA exception; a changed inventory is still reported. The medical Composition example includes its section narrative in Uzbek, English and Russian.
-
 [Composition types](CodeSystem-composition-type-cs.html) `emdoc-0010-0106` is now the extract from a patient's medical record, inpatient or outpatient, as its Uzbek name already said: the Russian and English names no longer say inpatient. Form 027 uses it for both settings, and `Encounter.class` (`AMB` or `IMP`) tells them apart.
 
 [Event status](ValueSet-procedure-event-status-vs.html), formerly Procedure event status, is now shared by UZ Core Procedure and UZ Core Communication.

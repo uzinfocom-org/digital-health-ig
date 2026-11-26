@@ -4,7 +4,7 @@
         {
             "label": "Generate IG",
             "type": "shell",
-            "command": "java -Dfile.encoding=UTF-8 -jar input-cache/publisher.jar -ig . && notify-send -u normal -i info 'IG generation complete.'",
+            "command": "scripts/_genonce.sh && notify-send -u normal -i info 'IG generation complete.'",
             "group": "build",
             "presentation": {
                 "echo": true,
@@ -17,10 +17,10 @@
             "problemMatcher": [],
             "detail": "Generate IG and notify when complete",
             "windows": {
-                "command": "java -Dfile.encoding=UTF-8 -jar input-cache/publisher.jar -ig . && powershell -Command \"Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('IG generation complete.', 'Build Complete', 'OK', 'Information')\""
+                "command": "scripts\\_genonce.bat && powershell -Command \"Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('IG generation complete.', 'Build Complete', 'OK', 'Information')\""
             },
             "osx": {
-                "command": "java -Dfile.encoding=UTF-8 -jar input-cache/publisher.jar -ig . && osascript -e 'display notification \"IG generation complete.\" with title \"Build Complete\"'"
+                "command": "scripts/_genonce.sh && osascript -e 'display notification \"IG generation complete.\" with title \"Build Complete\"'"
             }
         }
     ]

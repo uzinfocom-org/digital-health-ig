@@ -1,11 +1,5 @@
 == Suppressed Messages ==
 
-# Repository automation intentionally retained after removing the root wrappers:
-# CI checks and package-feed updates, optional local narrative/translation helpers,
-# and legacy conversion/deployment helpers. Publisher does not execute these files.
-# Match this exact inventory; adding or removing a script produces a different warning.
-The IG's repository has 10 scripts or programs in sub-folders: .github/scripts/check_artifact_versions.py, .github/scripts/check_terminology_titles.py, .github/scripts/update_package_feed.py, .github/scripts/wait-for-deployment.sh, input/convert.sh, scripts/fast-narrative-rebuild.sh, scripts/lint-changelog-links.sh, scripts/update-translations.sh, scripts/updateSiteBasedOnMarkdownChange.ps1, scripts/updateSiteBasedOnMarkdownChange.sh. The IG Publisher doesn't run them, but they arrive with every pull: don't run them unless you know what they do. Scripts and programs don't belong in an IG's repository
-
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
@@ -69,12 +63,6 @@ The Binding on the type slicer ActivityDefinition.subject[x] applies to all its 
 The Binding on the type slicer Medication.ingredient.strength[x] applies to all its slices, but it only makes sense for some of its types, so it has no effect on the slices for Ratio
 The Binding on the type slicer PlanDefinition.subject[x] applies to all its slices, but it only makes sense for some of its types, so it has no effect on the slices for Reference
 The Binding on the type slicer Questionnaire.item.answerOption.value[x] applies to all its slices, but it only makes sense for some of its types, so it has no effect on the slices for integer, date, time, Reference
-
-# IG Publisher generates an inline <script> for the artifacts-table page's column
-# filters, then flags that same script as illegal on the HL7 ci-build - a known
-# publisher bug (already suppressed the same way in uz.dhp.integrations). Appears
-# once per language (en/ru/uz); the leading % matches all three by prefix.
-The <script> containing the javascript 'document.addEventLis%
 
 # IG Publisher 3.0.0 generates the narrative of a canonical resource example once per IG language
 # (en, ru, uz) and gives each copy the same "metadata" anchor, then flags its own output.
@@ -272,3 +260,6 @@ ValueSet 'http://hl7.org/fhir/ValueSet/concept-property-type|5.0.0' not found
 # IG Publisher 3.0.4 warns about any SNOMED CT finding in Observation.code, ignoring the value; R5 allows a finding
 # there with a yes/no value or none. Reported in https://github.com/hapifhir/org.hl7.fhir.core/issues/2870 - remove once resolved.
 The SNOMED CT code 1303306008 ('Eligible for benefit') is a finding%
+
+# CI workflows and editors use the helper scripts in scripts/ and .github/scripts/; the IG Publisher never runs them. Root-folder scripts stay an error and aren't covered by this
+% in sub-folders: %
