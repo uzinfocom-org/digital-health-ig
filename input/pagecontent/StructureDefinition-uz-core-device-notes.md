@@ -13,6 +13,7 @@ GET [base]/Device/[id]
 ```
 GET [base]/Device?serial-number=SN-2023-001456
 GET [base]/Device?type=http://snomed.info/sct%7C54953005&organization=Organization/[id]
+GET [base]/Device?type=https://uzpharminfo.uz/deviceItemId%7C10452
 ```
 
 **Other useful searches**
