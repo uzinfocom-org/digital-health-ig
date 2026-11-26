@@ -34,7 +34,7 @@ jobs:
         run: sudo npm install -g fsh-sushi
 
       # Download the publisher directly and invoke it without the wrapper scripts:
-      # _updatePublisher.sh and _genonce.sh both probe the tx.fhir.org landing page
+      # scripts/_updatePublisher.sh and scripts/_genonce.sh both probe the tx.fhir.org landing page
       # and abort (or silently fall back to -tx n/a, skipping terminology validation)
       # when that page is down even though the terminology API itself is up.
       - name: Install IG publisher
