@@ -2,61 +2,42 @@ Instance: dmed-dispensary-deregistration-reason-to-dhp-cm
 InstanceOf: ConceptMap
 Usage: #definition
 Title: "DMED dispensary deregistration reasons to DHP"
-Description: "ConceptMap for mapping DMED `deregistration_reason` values to DHP dispensary deregistration reason codes. DMED populates `Encounter.admission.dischargeDisposition` with the target code of this map."
+Description: "Maps DMED deregistration reasons to Encounter.admission.dischargeDisposition, reusing existing codes and adding only missing reasons."
 * name = "DMEDDispensaryDeregistrationReasonCM"
 * url = "https://terminology.dhp.uz/fhir/core/ConceptMap/dmed-dispensary-deregistration-reason-to-dhp-cm"
 * status = #draft
 * experimental = false
 * publisher = "Uzinfocom"
 
-* group.source = Canonical(DMEDDispensaryDeregistrationReasonCS)
-* group.target = Canonical(DispensaryDeregistrationReasonCS)
-
 * sourceScopeCanonical = Canonical(DMEDDispensaryDeregistrationReasonVS)
 * targetScopeCanonical = Canonical(DispensaryDeregistrationReasonVS)
 
+* group[+].source = Canonical(DMEDDispensaryDeregistrationReasonCS)
+* group[=].target = Canonical(DispensaryDeregistrationReasonCS)
 * group[=].element[+].code = #unspecified
-* group[=].element[=].display = "Не указано"
-* group[=].element[=].target[+].code = #chr-0129-0001
-* group[=].element[=].target[=].display = "Ko'rsatilmagan"
+* group[=].element[=].target[0].code = #chr-0129-0001
 * group[=].element[=].target[=].relationship = #equivalent
-
 * group[=].element[+].code = #recovery_improvement
-* group[=].element[=].display = "Подтверждённое выздоровление или стойкое улучшение"
-* group[=].element[=].target[+].code = #chr-0129-0002
-* group[=].element[=].target[=].display = "Tasdiqlangan sog'ayish yoki barqaror yaxshilanish"
+* group[=].element[=].target[0].code = #chr-0129-0002
 * group[=].element[=].target[=].relationship = #equivalent
-
-* group[=].element[+].code = #deceased
-* group[=].element[=].display = "Смерть пациента"
-* group[=].element[=].target[+].code = #chr-0129-0003
-* group[=].element[=].target[=].display = "Bemorning vafoti"
-* group[=].element[=].target[=].relationship = #equivalent
-
-// The full DMED UI label explicitly says the move is outside the served territory.
-// Source: the supplied dispensary DMED-to-DHP test plan, "Reasons for deregistration".
-* group[=].element[+].code = #residence_change
-* group[=].element[=].display = "Изменение пациентом постоянного места жительства с выездом за пределы обслуживаемой медицинской организацией территории"
-* group[=].element[=].target[+].code = #chr-0129-0004
-* group[=].element[=].target[=].display = "Doimiy yashash joyining xizmat ko'rsatiladigan hudud tashqarisiga o'zgarishi"
-* group[=].element[=].target[=].relationship = #equivalent
-
-// The full DMED UI label explicitly requires imprisonment for more than one year.
-* group[=].element[+].code = #prison
-* group[=].element[=].display = "Осуждение пациента с назначением наказания в виде лишения свободы на срок свыше одного года"
-* group[=].element[=].target[+].code = #chr-0129-0005
-* group[=].element[=].target[=].display = "Bir yildan ortiq muddatga ozodlikdan mahrum qilish"
-* group[=].element[=].target[=].relationship = #equivalent
-
-// Source code is misspelled in the DMED API contract.
 * group[=].element[+].code = #patitient_decline
-* group[=].element[=].display = "Отказ пациента"
-* group[=].element[=].target[+].code = #chr-0129-0006
-* group[=].element[=].target[=].display = "Bemorning dispanser kuzatuvidan bosh tortishi"
+* group[=].element[=].target[0].code = #chr-0129-0006
 * group[=].element[=].target[=].relationship = #equivalent
 
+* group[+].source = Canonical(DMEDDispensaryDeregistrationReasonCS)
+* group[=].target = $encounter-discharge-disposition
+* group[=].element[+].code = #deceased
+* group[=].element[=].target[0].code = #exp
+* group[=].element[=].target[=].relationship = #related-to
+* group[=].element[+].code = #residence_change
+* group[=].element[=].target[0].code = #other-hcf
+* group[=].element[=].target[=].relationship = #related-to
 * group[=].element[+].code = #other
-* group[=].element[=].display = "Другое"
-* group[=].element[=].target[+].code = #chr-0129-0007
-* group[=].element[=].target[=].display = "Boshqa"
+* group[=].element[=].target[0].code = #oth
 * group[=].element[=].target[=].relationship = #equivalent
+
+* group[+].source = Canonical(DMEDDispensaryDeregistrationReasonCS)
+* group[=].target = "https://terminology.dhp.uz/fhir/core/CodeSystem/encounter-discharge-disposition-home-cs"
+* group[=].element[+].code = #prison
+* group[=].element[=].target[0].code = #mserv-0004-00005
+* group[=].element[=].target[=].relationship = #related-to

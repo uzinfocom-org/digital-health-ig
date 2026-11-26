@@ -1,7 +1,7 @@
 CodeSystem: DispensaryDeregistrationReasonCS
 Id: dispensary-deregistration-reason-cs
 Title: "Dispensary deregistration reason"
-Description: "Reasons a patient is taken off dispensary observation, recorded on the encounter that closes the observation period. Carried in `Encounter.admission.dischargeDisposition` and therefore included in [encounter-discharge-disposition-vs](ValueSet-encounter-discharge-disposition-vs.html)."
+Description: "Additional reasons for ending dispensary observation that are not covered by existing discharge disposition codes. Carried in `Encounter.admission.dischargeDisposition`."
 * insert OriginalCodeSystemDraft(dispensary-deregistration-reason-cs)
 
 * #chr-0129-0001 "Ko'rsatilmagan"
@@ -16,32 +16,8 @@ Description: "Reasons a patient is taken off dispensary observation, recorded on
   * ^designation[+].language = #en
   * ^designation[=].value = "Confirmed recovery or sustained improvement"
 
-* #chr-0129-0003 "Bemorning vafoti"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Смерть пациента"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Death of the patient"
-
-* #chr-0129-0004 "Doimiy yashash joyining xizmat ko'rsatiladigan hudud tashqarisiga o'zgarishi"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Изменение постоянного места жительства с выездом за пределы обслуживаемой территории"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Change of permanent residence outside the served territory"
-
-* #chr-0129-0005 "Bir yildan ortiq muddatga ozodlikdan mahrum qilish"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Лишение свободы на срок свыше одного года"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Imprisonment for a term exceeding one year"
-
 * #chr-0129-0006 "Bemorning dispanser kuzatuvidan bosh tortishi"
   * ^designation[0].language = #ru
   * ^designation[=].value = "Отказ пациента от диспансерного наблюдения"
   * ^designation[+].language = #en
   * ^designation[=].value = "Patient's refusal of dispensary observation"
-
-* #chr-0129-0007 "Boshqa"
-  * ^designation[0].language = #ru
-  * ^designation[=].value = "Другое"
-  * ^designation[+].language = #en
-  * ^designation[=].value = "Other"
