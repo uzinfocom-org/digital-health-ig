@@ -8,6 +8,8 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
 
+[UZ Core Schedule](StructureDefinition-uz-core-schedule.html) представляет доступность медицинских работников, помещений, оборудования или услуг на горизонте планирования, например расписание кабинета врача общей практики, открытое для онлайн-записи; интервалы для записи внутри него - это Slot. Его `serviceCategory` берётся из [категорий услуг для записи](ValueSet-appointment-service-category-vs.html), а `specialty` - из [специализаций профессий](ValueSet-profession-specialization-vs.html).
+
 #### Изменено
 
 [UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html): `agent.who` может также ссылаться на [UZ Core Device](StructureDefinition-uz-core-device.html) или [UZ Core Organization](StructureDefinition-uz-core-organization.html), для событий без участия человека, например задания по расписанию или входа системы.
