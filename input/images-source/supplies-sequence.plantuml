@@ -1,0 +1,26 @@
+@startuml supplies-sequence
+title Requesting, delivering and stocking supplies
+autonumber
+
+participant "Requesting\nhospital" as Hosp
+participant "DHP\nFHIR server" as DHP
+participant "Supplier\n(blood service,\nwarehouse, distributor)" as Sup
+actor "Health\nadministration" as Admin
+
+Hosp -> DHP : POST [[StructureDefinition-uz-core-supply-request.html SupplyRequest]]\n(one item per request; a set shares a group number)
+Sup -> DHP : GET SupplyRequest?supplier=Organization/[id]&status=active
+activate DHP
+DHP --> Sup : Bundle - open requests
+deactivate DHP
+
+Sup -> DHP : POST [[StructureDefinition-uz-core-supply-delivery.html SupplyDelivery]] (status = in-progress)\n(basedOn -> SupplyRequest)
+Sup -> DHP : PUT SupplyDelivery (status = completed)
+
+Hosp -> DHP : PUT SupplyRequest (status = completed)
+Hosp -> DHP : POST / PUT [[StructureDefinition-uz-core-inventoryitem.html InventoryItem]]\n(inventoryStatus, instance.location)
+note right : after a delivery between organizations,\nwho writes the InventoryItem is not yet defined
+
+note over Hosp, DHP : [[StructureDefinition-uz-core-inventoryreport.html InventoryReport]] stock counts:\nprofiled, not yet accepted by the platform
+
+Admin -> DHP : GET InventoryItem / SupplyDelivery\n(availability by region and organization)
+@enduml

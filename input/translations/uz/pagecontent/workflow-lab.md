@@ -12,14 +12,14 @@ Resurslar zanjiri va uning references:
 
 ### 1. Tekshiruvni tayinlash
 
-Klinitsist [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) resursini yaratadi va unda `intent = order` qiymatini, tekshiruv yoki panelni `code` elementida, bemorni `subject` elementida, requester elementida so'rov yuboruvchini va `reasonCode`/`reasonReference` elementida tekshirilayotgan Condition resursini ko'rsatadi. Tayinlash mumkin bo'lgan tekshiruvlar [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) yozuvlari sifatida e'lon qilinadi; `priority` qiymati `routine`, `urgent` yoki `asap`.
+Klinitsist [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) resursini yaratadi va unda `intent = order` qiymatini, tekshiruv yoki panelni `code` elementida, bemorni `subject` elementida, requester elementida so'rov yuboruvchini va `reason` elementida ICD-10 yoki SNOMED CT kodini yoxud tekshirilayotgan Condition resursiga reference ni ko'rsatadi. Tekshiruv [ServiceRequest muolajalari va tekshiruvlari](ValueSet-service-request-code-vs.html) to'plamidan olinadi, masalan LOINC tahlili yoki milliy laboratoriya paneli. Tayinlash mumkin bo'lgan tekshiruvlar [HealthcareService](StructureDefinition-uz-core-healthcareservice.html) yozuvlari sifatida e'lon qilinadi; `priority` qiymati `routine`, `urgent`, `asap` yoki `stat`.
 
 ```
 POST [base]/ServiceRequest
 { "resourceType": "ServiceRequest",
   "meta": { "profile": ["https://dhp.uz/fhir/core/StructureDefinition/uz-core-servicerequest"] },
   "status": "active", "intent": "order",
-  "code": { "coding": [{ "system": "http://loinc.org", "code": "58410-2" }] },
+  "code": { "concept": { "coding": [{ "system": "http://loinc.org", "code": "58410-2", "display": "CBC panel - Blood by Automated count" }] } },
   "subject": { "reference": "Patient/[id]" },
   "requester": { "reference": "PractitionerRole/[id]" },
   "priority": "routine" }
@@ -46,7 +46,7 @@ Har bir aniqlanadigan ko'rsatkich [Observation](StructureDefinition-uz-core-obse
 
 ```
 GET [base]/DiagnosticReport?based-on=ServiceRequest/[id]&_include=DiagnosticReport:result
-GET [base]/Observation?patient=Patient/[id]&category=laboratory&_sort=-date
+GET [base]/Observation?patient=Patient/[id]&category=laboratory
 ```
 
 Butun to'plamni bitta tranzaksion Bundle sifatida qaytarish tavsiya etiladi, shunda tayinlash, namuna, Observation resurslari va hisobot birgalikda atomar tarzda qaytariladi. Yakunlangan va imzolangan hisobot hujjat Bundle sifatida shakllantiriladi (`Composition` natijalarga references saqlaydigan sarlavha vazifasini bajaradi va hisobot [Provenance](StructureDefinition-uz-core-provenance.html) orqali imzolanadi) - `Composition` resurslarni takrorlamaydi, balki ularga references saqlaydi. [Umumiy ko'rsatmalar &rarr; Bundle](general-guidance.html#bundles-document-vs-transaction-vs-searchset) bo'limiga qarang.

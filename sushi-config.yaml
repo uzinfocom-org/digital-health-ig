@@ -90,6 +90,12 @@ pages:
       title: Patient journey (Episode of Care)
     workflow-prescription.md:
       title: e-Prescription and dispensing
+    workflow-patient-registration.md:
+      title: Patient registration and attachment
+    workflow-supplies.md:
+      title: Supplies and stock
+    workflow-screening.md:
+      title: Population screening
   forms.md:
     title: Questionnaires
   search.md:
