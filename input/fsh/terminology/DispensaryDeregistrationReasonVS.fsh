@@ -6,8 +6,9 @@ Description: "Reasons for ending dispensary observation, reusing existing discha
 * ^experimental = true
 * ^extension[0].url = $valueset-supplement
 * ^extension[=].valueCanonical = Canonical(EncounterDischargeDispositionCS)
-* include codes from system dispensary-deregistration-reason-cs
 * include $encounter-discharge-disposition#exp
 * include $encounter-discharge-disposition#other-hcf
 * include $encounter-discharge-disposition#oth
 * include encounter-discharge-disposition-home-cs#mserv-0004-00005
+* include encounter-discharge-disposition-home-cs#chr-0129-0002
+* include encounter-discharge-disposition-home-cs#chr-0129-0003

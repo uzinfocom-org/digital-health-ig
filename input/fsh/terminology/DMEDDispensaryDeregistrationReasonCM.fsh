@@ -13,16 +13,19 @@ Description: "Maps DMED deregistration reasons to Encounter.admission.dischargeD
 * targetScopeCanonical = Canonical(DispensaryDeregistrationReasonVS)
 
 * group[+].source = Canonical(DMEDDispensaryDeregistrationReasonCS)
-* group[=].target = Canonical(DispensaryDeregistrationReasonCS)
+* group[=].target = Canonical(EncounterDischargeDispositionHomeCS)
+// No DHP code: dischargeDisposition is left empty when the reason is unknown.
 * group[=].element[+].code = #unspecified
-* group[=].element[=].target[0].code = #chr-0129-0001
-* group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[=].noMap = true
 * group[=].element[+].code = #recovery_improvement
 * group[=].element[=].target[0].code = #chr-0129-0002
 * group[=].element[=].target[=].relationship = #equivalent
 * group[=].element[+].code = #patitient_decline
 * group[=].element[=].target[0].code = #chr-0129-0003
 * group[=].element[=].target[=].relationship = #equivalent
+* group[=].element[+].code = #prison
+* group[=].element[=].target[0].code = #mserv-0004-00005
+* group[=].element[=].target[=].relationship = #related-to
 
 * group[+].source = Canonical(DMEDDispensaryDeregistrationReasonCS)
 * group[=].target = $encounter-discharge-disposition
@@ -35,9 +38,3 @@ Description: "Maps DMED deregistration reasons to Encounter.admission.dischargeD
 * group[=].element[+].code = #other
 * group[=].element[=].target[0].code = #oth
 * group[=].element[=].target[=].relationship = #equivalent
-
-* group[+].source = Canonical(DMEDDispensaryDeregistrationReasonCS)
-* group[=].target = "https://terminology.dhp.uz/fhir/core/CodeSystem/encounter-discharge-disposition-home-cs"
-* group[=].element[+].code = #prison
-* group[=].element[=].target[0].code = #mserv-0004-00005
-* group[=].element[=].target[=].relationship = #related-to

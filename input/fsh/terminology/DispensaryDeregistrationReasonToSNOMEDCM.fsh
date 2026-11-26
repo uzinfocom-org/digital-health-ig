@@ -9,17 +9,11 @@ Description: "ConceptMap for mapping DHP dispensary deregistration reason codes 
 * experimental = false
 * publisher = "Uzinfocom"
 
-* group.source = Canonical(DispensaryDeregistrationReasonCS)
+* group.source = Canonical(EncounterDischargeDispositionHomeCS)
 * group.target = $sct
 
 * sourceScopeCanonical = Canonical(DispensaryDeregistrationReasonVS)
 * targetScopeCanonical = $sct-vs
-
-// "Not stated" carries no clinical meaning of its own: leave the target unpopulated
-// rather than asserting an unknown-value code.
-* group[=].element[+].code = #chr-0129-0001
-* group[=].element[=].display = "Ko'rsatilmagan"
-* group[=].element[=].noMap = true
 
 // The DHP code covers recovery and sustained improvement alike, so it is the broader of the two.
 * group[=].element[+].code = #chr-0129-0002
