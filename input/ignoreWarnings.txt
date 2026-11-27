@@ -260,3 +260,6 @@ ValueSet 'http://hl7.org/fhir/ValueSet/concept-property-type|5.0.0' not found
 # IG Publisher 3.0.4 warns about any SNOMED CT finding in Observation.code, ignoring the value; R5 allows a finding
 # there with a yes/no value or none. Reported in https://github.com/hapifhir/org.hl7.fhir.core/issues/2870 - remove once resolved.
 The SNOMED CT code 1303306008 ('Eligible for benefit') is a finding%
+
+# CI workflows and editors use the helper scripts in scripts/ and .github/scripts/; the IG Publisher never runs them. Root-folder scripts stay an error and aren't covered by this
+% in sub-folders: %
