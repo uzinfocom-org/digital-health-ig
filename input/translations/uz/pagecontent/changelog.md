@@ -10,6 +10,8 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) o'zi bajaradigan [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) ga [Asos - buyum so'rovi](StructureDefinition-deviceusage-based-on.html) kengaytmasi orqali havola qiladi, masalan [mis BIV](DeviceUsage-example-deviceusage-iud.html) misolida.
 
+[UZ Core Schedule](StructureDefinition-uz-core-schedule.html) rejalashtirish ufqida tibbiyot xodimlari, xonalar, uskunalar yoki xizmatlarning mavjudligini ifodalaydi, masalan onlayn yozilish uchun ochilgan umumiy amaliyot shifokori kabinetining jadvali; uning ichidagi yozilish oraliqlari - Slot. Uning `serviceCategory` si [yozilish uchun xizmat toifalari](ValueSet-appointment-service-category-vs.html) dan, `specialty` si esa [kasb mutaxassisliklari](ValueSet-profession-specialization-vs.html) dan olinadi.
+
 #### O'zgartirildi
 
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): `emdoc-0010-0106` endi bemorning tibbiy kartasidan ko'chirma - statsionar yoki ambulator, o'zbekcha nomida bo'lgani kabi; ruscha va inglizcha nomlari endi statsionar haqida gapirmaydi. 027-shakl bu kodni ikkala holatda ham ishlatadi, ularni `Encounter.class` (`AMB` yoki `IMP`) farqlaydi.

@@ -8,6 +8,8 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
 
+[UZ Core Schedule](StructureDefinition-uz-core-schedule.html) представляет доступность медицинских работников, помещений, оборудования или услуг на горизонте планирования, например расписание кабинета врача общей практики, открытое для онлайн-записи; интервалы для записи внутри него - это Slot. Его `serviceCategory` берётся из [категорий услуг для записи](ValueSet-appointment-service-category-vs.html), а `specialty` - из [специализаций профессий](ValueSet-profession-specialization-vs.html).
+
 [Причины снятия с диспансерного учёта](ValueSet-dispensary-deregistration-reason-vs.html) переиспользуют существующие коды исхода для смерти, смены места жительства, лишения свободы и прочих причин. В [локальные коды исхода](CodeSystem-encounter-discharge-disposition-home-cs.html) добавлены только два кода: выздоровление или стойкое улучшение (`chr-0129-0002`) и отказ от диспансерного наблюдения (`chr-0129-0003`). ConceptMap DMED охватывает все семь исходных значений и оставляет `unspecified` без соответствия; [исход Encounter](ValueSet-encounter-discharge-disposition-vs.html) допускает два новых кода.
 
 #### Изменено

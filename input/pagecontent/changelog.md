@@ -10,6 +10,8 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) links to the [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) it fulfils with the [Based On Device Request](StructureDefinition-deviceusage-based-on.html) extension, as in the [copper IUD](DeviceUsage-example-deviceusage-iud.html) example.
 
+[UZ Core Schedule](StructureDefinition-uz-core-schedule.html) represents the availability of practitioners, rooms, devices or services over a planning horizon, such as the schedule of a general practitioner's office offered for online booking; the bookable periods within it are Slots. Its `serviceCategory` comes from [Appointment service category](ValueSet-appointment-service-category-vs.html) and its `specialty` from [Profession specializations](ValueSet-profession-specialization-vs.html).
+
 #### Changed
 
 [Composition types](CodeSystem-composition-type-cs.html) `emdoc-0010-0106` is now the extract from a patient's medical record, inpatient or outpatient, as its Uzbek name already said: the Russian and English names no longer say inpatient. Form 027 uses it for both settings, and `Encounter.class` (`AMB` or `IMP`) tells them apart.
