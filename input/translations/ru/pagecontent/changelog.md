@@ -66,6 +66,8 @@ JSON-копия ресурса на каждом языке теперь сох�
 
 [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) делает `complication` Must Support и рекомендует [коды осложнений донации крови](ValueSet-procedure-complication-vs.html), например обморок, при `code` SNOMED CT `25179006` (забор цельной крови), как в [примере донации крови](Procedure-example-blood-donation-procedure.html). При `code` SNOMED CT `116859006` (переливание продукта крови) рекомендует [коды осложнений переливания крови](ValueSet-blood-transfusion-complication-vs.html), например фебрильную или гемолитическую реакцию.
 
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) теперь допускает ImagingStudy в `target`, а также UZ Core Organization и Device в `agent.who` для записи происхождения метаданных визуализации. Новый пример показывает этот сценарий.
+
 Заголовки и описания систем кодов и наборов значений следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`. Канонические URL, идентификаторы и коды не изменились.
 
 Исправления сопоставлений, найденные проверками ConceptMap в IG Publisher 3.0.1: в [карте должностей DMED](ConceptMap-dmed-position-to-dhp-position-cm.html) изменены 24 должности, в том числе две должности медсестёр, ранее сопоставленные с кодами врачей. [Карта лабораторных кодов](ConceptMap-lab-pan-codes-to-loinc.html) исправляет коды микроскопии мочи, тромбокрита, сифилиса и сперматозоидов, а ручная лейкоцитарная формула, СОЭ и IgG к Ureaplasma больше не эквивалентны своим кодам. [Карта аллергенов](ConceptMap-substance-to-snomed.html) сопоставляет компоненты фундука и грецкого ореха с самим продуктом и исправляет коды ос.
@@ -95,6 +97,8 @@ JSON-копия ресурса на каждом языке теперь сох�
 [Статусы запасов](CodeSystem-inventoryitem-inventory-status-cs.html) теперь называют `in-fractionation` по-русски «На фракционировании» вместо «В фракционировании».
 
 #### Несовместимые изменения
+
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) ограничивает `agent.onBehalfOf` ссылками на UZ Core Organization, Practitioner, PractitionerRole или Patient. Отправителям, использующим другие типы ссылок, необходимо изменить данные.
 
 Срез идентификатора `uzpharmBoxGroupID` в [UZ Core Medication](StructureDefinition-uz-core-medication.html) теперь содержит идентификатор зарегистрированного препарата в реестре Фармкомитета, а не идентификатор отслеживания на уровне коробки. Отправители, передававшие там идентификаторы коробок, должны прекратить это.
 
