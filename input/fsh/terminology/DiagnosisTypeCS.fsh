@@ -130,3 +130,46 @@ Description: "Diagnosis types in Uzbekistan"
   * ^designation[=].value = "Выписка из истории болезни (амб.карты) частного медицинского учреждения"
   * ^designation[+].language = #en
   * ^designation[=].value = "Extract from the medical record (outpatient card) of a private medical institution"
+
+//ambulance diagnosis type codesystems
+* #genc1-0001-00012 "Sud-tibbiy tashxis"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Судебно-медицинский диагноз"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Forensic medical diagnosis"
+
+* #genc1-0001-00013 "Kollaps"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Коллапс"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Circulatory collapse"
+
+* #genc1-0001-00014 "Aspiratsiya"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Аспирация"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Aspiration"
+
+* #genc1-0001-00015 "Shok"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Шок"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Shock"
+
+* #genc1-0001-00016 "Poliorgan yetishmovchiligi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Полиорганная недостаточность"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Multiple organ failure"
+
+* #genc1-0001-00017 "Yurak ritmining buzilishi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Нарушение сердечного ритма"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Cardiac arrhythmia"
+
+* #genc1-0001-00018 "Qon ketishi"
+  * ^designation[0].language = #ru
+  * ^designation[=].value = "Кровотечение"
+  * ^designation[+].language = #en
+  * ^designation[=].value = "Bleeding"
