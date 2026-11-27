@@ -1,6 +1,6 @@
 > **Mashina tarjimasi, inson tomonidan tekshirilishi zarur.** Ushbu sahifa ingliz tilidan sun'iy intellekt yordamida avtomatik tarjima qilingan va hali muharrir tomonidan tekshirilmagan. Har qanday nomuvofiqlikda asl inglizcha versiya ustuvor hisoblanadi.
 
-UZ Core DeviceUsage bemor tibbiy buyumdan foydalanayotgani, foydalangani yoki foydalanishini qayd etadi - insulin pompasi, eshitish apparati, nogironlik aravachasi, bachadon ichi spirali. Bu bayonot: foydalanish haqida kim xabar bergani, qachon, buyum amalda qanchalik muntazam ishlatilishi va nima uchun ishlatilishi. Resurs buyumning o'zini tavsiflamaydi; buyum SNOMED CT konsepti yoki [UZ Core Device](StructureDefinition-uz-core-device.html) yoki DeviceDefinition ga havola sifatida ko'rsatiladi. DeviceUsage buyumni buyurgan [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ni bajarishi mumkin, uning sababi esa [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) yoki [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) ga ishora qilishi mumkin. Foydalanish haqida [bemor](StructureDefinition-uz-core-patient.html), [tibbiyot xodimi](StructureDefinition-uz-core-practitioner.html) yoki uning [roli](StructureDefinition-uz-core-practitioner-role.html), [aloqador shaxs](StructureDefinition-uz-core-relatedperson.html) yoki [tashkilot](StructureDefinition-uz-core-organization.html) xabar beradi.
+UZ Core DeviceUsage bemor tibbiy buyumdan foydalanayotgani, foydalangani yoki foydalanishini qayd etadi - insulin pompasi, eshitish apparati, nogironlik aravachasi, bachadon ichi spirali. Bu bayonot: foydalanish haqida kim xabar bergani, qachon, buyum amalda qanchalik muntazam ishlatilishi va nima uchun ishlatilishi. Resurs buyumning o'zini tavsiflamaydi; buyum SNOMED CT konsepti yoki [UZ Core Device](StructureDefinition-uz-core-device.html) yoki DeviceDefinition ga havola sifatida ko'rsatiladi. DeviceUsage buyumni buyurgan [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ni yoki [Asos - buyum so'rovi](StructureDefinition-deviceusage-based-on.html) kengaytmasi orqali bog'langan [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) ni bajarishi mumkin, uning sababi esa [Condition](StructureDefinition-uz-core-condition.html), [Observation](StructureDefinition-uz-core-observation.html) yoki [DiagnosticReport](StructureDefinition-uz-core-diagnostic-report.html) ga ishora qilishi mumkin. Foydalanish haqida [bemor](StructureDefinition-uz-core-patient.html), [tibbiyot xodimi](StructureDefinition-uz-core-practitioner.html) yoki uning [roli](StructureDefinition-uz-core-practitioner-role.html), [aloqador shaxs](StructureDefinition-uz-core-relatedperson.html) yoki [tashkilot](StructureDefinition-uz-core-organization.html) xabar beradi.
 
 ### Majburiy va Must Support ma'lumot elementlari
 
@@ -18,6 +18,7 @@ Ushbu profil o'zining majburiy elementlarini qo'shmaydi. Bazaviy DeviceUsage res
 
 - bayonot identifikatori, har doim o'zining `system` i bilan yuboriladi;
 - `basedOn` - buyumni buyurgan [ServiceRequest](StructureDefinition-uz-core-servicerequest.html);
+- [Asos - buyum so'rovi](StructureDefinition-deviceusage-based-on.html) kengaytmasi - buyumni buyurgan [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html);
 - `category` - foydalanish sharoiti (inpatient / outpatient / community);
 - `timing[x]` - buyum qachon ishlatiladi: `dateTime`, `Period` yoki `Timing`;
 - `dateAsserted` - bayonot qachon qilingani;
@@ -86,7 +87,7 @@ Amalda shifokor foydalanish qachon boshlanganini, buyum nima uchun ishlatilishin
 }
 ```
 
-`reason` va `bodySite` ham `CodeableReference`. Bu yerda ko'rsatma kodlangan konsept; agar tashxis allaqachon qayd etilgan bo'lsa, unga havola qiling: `{ "reference": { "reference": "Condition/id" } }`. Buyum buyurilgan bo'lsa, [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ga havola bilan `basedOn` ni, foydalanish sharoiti uchun esa `category` ni qo'shing.
+`reason` va `bodySite` ham `CodeableReference`. Bu yerda ko'rsatma kodlangan konsept; agar tashxis allaqachon qayd etilgan bo'lsa, unga havola qiling: `{ "reference": { "reference": "Condition/id" } }`. Buyum buyurilgan bo'lsa, [ServiceRequest](StructureDefinition-uz-core-servicerequest.html) ga havola bilan `basedOn` ni yoki [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) uchun [Asos - buyum so'rovi](StructureDefinition-deviceusage-based-on.html) kengaytmasini, foydalanish sharoiti uchun esa `category` ni qo'shing.
 
 #### Rioya qilishni qayd etish
 

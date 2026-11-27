@@ -12,7 +12,7 @@
 # pages from input/translations/<lang>/pagecontent overlaid on top.
 #
 # It does NOT regenerate structure tables, validation, terminology, examples
-# listings or any artifact - those need the full ./_genonce.sh build.
+# listings or any artifact - those need the full scripts/_genonce.sh build.
 #
 # Prereq: a full build must have run at least once so temp/pages/ exists.
 #
@@ -21,12 +21,12 @@
 
 set -euo pipefail
 
-IG_ROOT="$(cd "$(dirname "$0")" && pwd)"
+IG_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 PAGES="$IG_ROOT/temp/pages"
 SRC="$IG_ROOT/input/pagecontent"
 
 if [ ! -d "$PAGES/_includes/en" ]; then
-  echo "No $PAGES/_includes/en - run a full build (./_genonce.sh) at least once first." >&2
+  echo "No $PAGES/_includes/en - run a full build (scripts/_genonce.sh) at least once first." >&2
   exit 1
 fi
 

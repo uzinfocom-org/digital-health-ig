@@ -2,6 +2,38 @@
 
 #### Added
 
+[Dispensary deregistration reasons](ValueSet-dispensary-deregistration-reason-vs.html) reuse existing discharge codes for death, relocation, imprisonment and other reasons. Two codes added to the [local discharge disposition codes](CodeSystem-encounter-discharge-disposition-home-cs.html) cover recovery or sustained improvement (`chr-0129-0002`) and refusal of dispensary observation (`chr-0129-0003`). The DMED ConceptMap covers all seven source values and leaves `unspecified` unmapped; the [Encounter discharge disposition](ValueSet-encounter-discharge-disposition-vs.html) value set includes the two new codes.
+
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) records information conveyed to patients, practitioners or organizations, such as a public health alert that patients see in the Patient Portal: an alert to the residents of a risk zone, which carries the zone's alert level I-IV under the national alert regulation, or an alert from a manager to an organization employee group. Its `category` is the HL7 [communication category](ValueSet-communication-category-vs.html) `alert`, with Uzbek and Russian names in its [supplement](CodeSystem-communication-category-cs.html), and the alert level comes from the new local [Alert level](CodeSystem-alert-level-cs.html) code system, with Uzbek, Russian and English names.
+
+[UZ Core Device](StructureDefinition-uz-core-device.html) takes the registered model from the Pharmaceutical Committee registry, its [device item ID](NamingSystem-uz-pharm-device-item-id.html) and [device ID](NamingSystem-uz-pharm-device-id.html), in `type` slices, and the [registration certificate number](NamingSystem-registration-certificate-id.html) with its issue and expiry dates in an `identifier` slice. `identifier.use` and `identifier.type` have Uzbek and Russian names.
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) links to the [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) it fulfils with the [Based On Device Request](StructureDefinition-deviceusage-based-on.html) extension, as in the [copper IUD](DeviceUsage-example-deviceusage-iud.html) example.
+
+#### Changed
+
+[Composition types](CodeSystem-composition-type-cs.html) `emdoc-0010-0106` is now the extract from a patient's medical record, inpatient or outpatient, as its Uzbek name already said: the Russian and English names no longer say inpatient. Form 027 uses it for both settings, and `Encounter.class` (`AMB` or `IMP`) tells them apart.
+
+[Event status](ValueSet-procedure-event-status-vs.html), formerly Procedure event status, is now shared by UZ Core Procedure and UZ Core Communication.
+
+[Group kind](ValueSet-group-kind-vs.html) adds the organization employee group.
+
+The [cross-component resource architecture](components.html#cross-component-resource-architecture) diagram adds Prescription, with MedicationRequest, MedicationDispense, Medication, MedicationKnowledge and MedicationAdministration, and Supplies, with SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport and Device. It shows the newer profiles where they are used: DeviceRequest and DeviceUsage in Clinical Health Records, ChargeItem in Reimbursement, BiologicallyDerivedProductDispense and Flag in Blood Management, and CarePlan in Nursing. CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport and BiologicallyDerivedProduct now have UZ Core profiles, so they are marked as defined in this IG rather than named, not yet defined. Buttons in the top right corner of the diagram open or close every component at once and fit the diagram back into view.
+
+The guide's pages use the look of the [DHP developer documentation](https://docs.dhp.uz/): Onest and JetBrains Mono fonts, DHP green colours and logo, and a restyled header, menu, tables, notes and code blocks, which now have a copy button. A theme menu in the header switches between light, dark and the system setting.
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` can also reference a [UZ Core Device](StructureDefinition-uz-core-device.html) or a [UZ Core Organization](StructureDefinition-uz-core-organization.html), for events with no person behind them, such as a scheduled job or a system logging in.
+
+[UZ Core Location](StructureDefinition-uz-core-location.html) now also covers areas, such as a mahalla set as a public health risk zone.
+
+#### Breaking changes
+
+[Registration certificate number](NamingSystem-registration-certificate-id.html) and [UzPharm box group ID](NamingSystem-uz-pharm-box-id.html) change their URIs to `https://uzpharminfo.uz/registrationNumber` and `https://uzpharminfo.uz/boxGroupId`, the ones the Pharmaceutical Committee registry loader already sends. A [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifier with the old `registration_number` or `box_group_id` URI no longer falls into its slice, and searches by identifier must use the new URIs.
+
+### Version 0.13.0
+
+#### Added
+
 [Blood product type](ValueSet-blood-product-type-snomed-vs.html) adds SNOMED CT `789265003` albumin human only product, with Uzbek and Russian names in its [supplement](CodeSystem-blood-product-type-snomed-cs.html).
 
 [Composition types](CodeSystem-composition-type-cs.html) add `emdoc-0010-0471` for Order No. 399 form 112, a laboratory analysis of folic acid, 25-OH vitamin D and vitamin B12.

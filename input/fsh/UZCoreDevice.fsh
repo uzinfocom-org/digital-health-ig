@@ -6,6 +6,23 @@ Description: "Uzbekistan Core Device profile, used to record the identity, statu
 * ^experimental = true
 
 * identifier MS
+* identifier.use from IdentifierUseVS (required)
+* identifier.type from IdentifierTypeVS (required)
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Identifiers for device (national registry)"
+* identifier ^slicing.ordered = false
+* identifier contains registrationCertificateID 0..1 MS
+
+* identifier[registrationCertificateID]
+  * ^short = "Registration certificate number of the device"
+  * system 1..1 MS
+  * system = $registrationCertificateID
+  * use = #official
+  * value 1..1 MS
+  * period MS
+  * period ^short = "Registration certificate issue date (start) and expiry date (end); no end when the certificate is valid indefinitely"
 
 * displayName MS
 
@@ -41,6 +58,27 @@ Description: "Uzbekistan Core Device profile, used to record the identity, statu
 
 * type MS
 * type from DeviceTypeVS (preferred)
+* type ^slicing.discriminator.type = #value
+* type ^slicing.discriminator.path = "coding.system"
+* type ^slicing.rules = #open
+* type ^slicing.description = "Registered device model in the Pharmaceutical Committee registry; other type codings, such as SNOMED CT, are allowed"
+* type ^slicing.ordered = false
+* type contains uzpharmDeviceItemID 0..1 MS and
+    uzpharmDeviceID 0..1 MS
+
+* type[uzpharmDeviceItemID]
+  * ^short = "Pharmaceutical Committee registry device_item_id of the registered device variant"
+  * coding 1..1 MS
+  * coding.system 1..1 MS
+  * coding.system = $uzpharmDeviceItemID
+  * coding.code 1..1 MS
+
+* type[uzpharmDeviceID]
+  * ^short = "Pharmaceutical Committee registry device_id of the registered device"
+  * coding 1..1 MS
+  * coding.system 1..1 MS
+  * coding.system = $uzpharmDeviceID
+  * coding.code 1..1 MS
 
 * owner MS
 * owner only Reference(UZCoreOrganization)
@@ -66,6 +104,9 @@ Description: "Example of a CT scanner installed at a hospital"
 * manufacturer = "Siemens Healthineers"
 * manufactureDate = "2023-05-15"
 * serialNumber = "SN-2023-001456"
+* identifier[registrationCertificateID].value = "TB/M 00024/09/15"
+* identifier[registrationCertificateID].period.start = "2015-09-24"
+* identifier[registrationCertificateID].period.end = "2030-09-24"
 
 * name.value = "SOMATOM Edge"
 * name.type = $device-name-type#registered-name "Ro'yxatdan o'tgan nomi"
@@ -76,7 +117,9 @@ Description: "Example of a CT scanner installed at a hospital"
 
 * category = $device-category#dme "Durable Medical Equipment"
 
-* type = $sct#54953005 "Computed tomography scanner"
+* type[0] = $sct#54953005 "Computed tomography scanner"
+* type[uzpharmDeviceItemID].coding = $uzpharmDeviceItemID#10452
+* type[uzpharmDeviceID].coding = $uzpharmDeviceID#3871
 
 * owner = Reference(tashkent-diseases-hospital)
 * location = Reference(example-location)

@@ -2,6 +2,38 @@
 
 #### Qo'shildi
 
+[Dispanser hisobidan chiqarish sabablari](ValueSet-dispensary-deregistration-reason-vs.html) o'lim, yashash joyini o'zgartirish, ozodlikdan mahrum qilish va boshqa sabablar uchun mavjud kodlardan foydalanadi. [Mahalliy yakun kodlari](CodeSystem-encounter-discharge-disposition-home-cs.html) ga faqat ikkita kod qo'shildi: sog'ayish yoki barqaror yaxshilanish (`chr-0129-0002`) va dispanser kuzatuvidan bosh tortish (`chr-0129-0003`). DMED ConceptMap barcha yetti manba qiymatini qamrab oladi va `unspecified` ni moslashtirmaydi; [Encounter yakuni](ValueSet-encounter-discharge-disposition-vs.html) ikkita yangi kodni qabul qiladi.
+
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) bemorlar, tibbiyot xodimlari yoki tashkilotlarga yetkaziladigan ma'lumotni, masalan bemorlar Bemor portalida ko'radigan jamoat salomatligi ogohlantirishini qayd etadi: milliy ogohlantirishlar reglamenti bo'yicha hududning I-IV darajasi bilan xavfli hudud aholisiga ogohlantirish yoki menejerning tashkilot xodimlari guruhiga ogohlantirishi. Uning `category` si - HL7 [xabar toifasi](ValueSet-communication-category-vs.html) `alert`, o'zbekcha va ruscha nomlari [supplement](CodeSystem-communication-category-cs.html) da, ogohlantirish darajasi esa o'zbek, rus va ingliz tilidagi nomlari bilan yangi mahalliy [Alert level](CodeSystem-alert-level-cs.html) kod tizimidan olinadi.
+
+[UZ Core Device](StructureDefinition-uz-core-device.html) Farmatsevtika qo'mitasi reyestridagi ro'yxatdan o'tgan modelni, uning [buyum yozuvi identifikatori](NamingSystem-uz-pharm-device-item-id.html) va [buyum identifikatori](NamingSystem-uz-pharm-device-id.html) ni `type` slice'larida, [ro'yxatga olish guvohnomasi raqami](NamingSystem-registration-certificate-id.html) ni esa berilgan va amal qilish muddati tugaydigan sanalari bilan `identifier` slice'ida qabul qiladi. `identifier.use` va `identifier.type` ning o'zbekcha va ruscha nomlari bor.
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) o'zi bajaradigan [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) ga [Asos - buyum so'rovi](StructureDefinition-deviceusage-based-on.html) kengaytmasi orqali havola qiladi, masalan [mis BIV](DeviceUsage-example-deviceusage-iud.html) misolida.
+
+#### O'zgartirildi
+
+[Composition hujjat turlari](CodeSystem-composition-type-cs.html): `emdoc-0010-0106` endi bemorning tibbiy kartasidan ko'chirma - statsionar yoki ambulator, o'zbekcha nomida bo'lgani kabi; ruscha va inglizcha nomlari endi statsionar haqida gapirmaydi. 027-shakl bu kodni ikkala holatda ham ishlatadi, ularni `Encounter.class` (`AMB` yoki `IMP`) farqlaydi.
+
+[Guruh turi](ValueSet-group-kind-vs.html) tashkilot xodimlari guruhi bilan to'ldirildi.
+
+[Hodisa holati](ValueSet-procedure-event-status-vs.html), avval Procedure hodisasi holati, endi UZ Core Procedure va UZ Core Communication da ishlatiladi.
+
+[Komponentlararo resurs arxitekturasi](components.html#komponentlararo-resurs-arxitekturasi) diagrammasiga MedicationRequest, MedicationDispense, Medication, MedicationKnowledge va MedicationAdministration bilan "Retseptlar" hamda SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport va Device bilan "Ta'minot" komponentlari qo'shildi. Yangi profillar ular ishlatiladigan joyda ko'rsatiladi: DeviceRequest va DeviceUsage - elektron tibbiy yozuvlarda (CHR), ChargeItem - reimbursatsiyada, BiologicallyDerivedProductDispense va Flag - qon resurslarini boshqarishda, CarePlan - hamshiralik ishida. CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport va BiologicallyDerivedProduct endi UZ Core profillariga ega, shuning uchun ular "nomlangan, lekin hali belgilanmagan" emas, balki ushbu qo'llanmada belgilangan deb belgilanadi. Diagrammaning yuqori o'ng burchagidagi tugmalar barcha komponentlarni birdaniga ochadi yoki yopadi va diagrammani ko'rinishga qaytadan moslaydi.
+
+Qo'llanma sahifalari [DHP dasturchilar hujjatlari](https://docs.dhp.uz/uz/) uslubida bezatilgan: Onest va JetBrains Mono shriftlari, DHP yashil ranglari va logotipi, yangilangan sarlavha, menyu, jadvallar, eslatmalar va nusxa olish tugmasi bilan kod bloklari. Sarlavhadagi mavzu menyusi yorug', qorong'i yoki tizimdagidek mavzuni tanlaydi.
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html) `agent.who` endi [UZ Core Device](StructureDefinition-uz-core-device.html) yoki [UZ Core Organization](StructureDefinition-uz-core-organization.html) ga ham havola qilishi mumkin, inson ishtirokisiz hodisalar uchun, masalan, rejalashtirilgan vazifa yoki tizimning kirishi.
+
+[UZ Core Location](StructureDefinition-uz-core-location.html) endi hududlarni ham qamrab oladi, masalan jamoat salomatligi uchun xavfli hudud deb belgilangan mahalla.
+
+#### Buzuvchi o'zgarishlar
+
+[Ro'yxatga olish guvohnomasi raqami](NamingSystem-registration-certificate-id.html) va [UzPharm guruh qadog'i identifikatori](NamingSystem-uz-pharm-box-id.html) URI'lari `https://uzpharminfo.uz/registrationNumber` va `https://uzpharminfo.uz/boxGroupId` ga o'zgaradi — Farmatsevtika qo'mitasi reyestri yuklagichi allaqachon yuboradiganlari. Eski `registration_number` yoki `box_group_id` URI'li [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifikatori endi o'z slice'iga tushmaydi, identifikator bo'yicha qidiruv yangi URI'lardan foydalanishi kerak.
+
+### Versiya 0.13.0
+
+#### Qo'shildi
+
 [Composition hujjat turlari](CodeSystem-composition-type-cs.html): 399-son buyruqning 112-shakli - foliy kislotasi, 25-OH D vitamini va B12 vitaminiga laboratoriya tahlili uchun `emdoc-0010-0471` kodi qo'shildi.
 
 [Dori shakllari](CodeSystem-medication-doseform-cs.html): DMED elektron retsepti va Farmatsevtika qo'mitasi dori vositalari reyestrining kodi bo'lmagan dori shakllari uchun to'qqizta kod o'zbek, rus va ingliz tilidagi nomlari bilan qo'shildi, masalan `CTP101` kataplazma, `KIT101` to'plam va `TEA101` dorivor o'simliklar yig'masi.

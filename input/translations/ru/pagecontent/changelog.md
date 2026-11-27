@@ -2,6 +2,38 @@
 
 #### Добавлено
 
+[UZ Core Communication](StructureDefinition-uz-core-communication.html) фиксирует информацию, передаваемую пациентам, медицинским работникам или организациям, например оповещение в области общественного здравоохранения, которое пациенты видят в Портале пациента: оповещение жителей зоны риска с уровнем зоны I-IV по национальному регламенту оповещений или оповещение менеджера группе работников организации. Его `category` - [категория сообщения](ValueSet-communication-category-vs.html) HL7 `alert` с узбекскими и русскими названиями в [дополнении](CodeSystem-communication-category-cs.html), а уровень оповещения берётся из новой локальной системы кодов [Alert level](CodeSystem-alert-level-cs.html) с названиями на узбекском, русском и английском языках.
+
+[UZ Core Device](StructureDefinition-uz-core-device.html) принимает зарегистрированную модель из реестра Фармкомитета, её [ID записи изделия](NamingSystem-uz-pharm-device-item-id.html) и [ID изделия](NamingSystem-uz-pharm-device-id.html), в срезах `type`, а [номер регистрационного удостоверения](NamingSystem-registration-certificate-id.html) с датами выдачи и окончания срока действия - в срезе `identifier`. У `identifier.use` и `identifier.type` есть узбекские и русские названия.
+
+[UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
+
+[Причины снятия с диспансерного учёта](ValueSet-dispensary-deregistration-reason-vs.html) переиспользуют существующие коды исхода для смерти, смены места жительства, лишения свободы и прочих причин. В [локальные коды исхода](CodeSystem-encounter-discharge-disposition-home-cs.html) добавлены только два кода: выздоровление или стойкое улучшение (`chr-0129-0002`) и отказ от диспансерного наблюдения (`chr-0129-0003`). ConceptMap DMED охватывает все семь исходных значений и оставляет `unspecified` без соответствия; [исход Encounter](ValueSet-encounter-discharge-disposition-vs.html) допускает два новых кода.
+
+#### Изменено
+
+[UZ Core AuditEvent](StructureDefinition-uz-core-auditevent.html): `agent.who` может также ссылаться на [UZ Core Device](StructureDefinition-uz-core-device.html) или [UZ Core Organization](StructureDefinition-uz-core-organization.html), для событий без участия человека, например задания по расписанию или входа системы.
+
+[UZ Core Location](StructureDefinition-uz-core-location.html) теперь охватывает и территории, например махаллю, объявленную зоной риска для общественного здоровья.
+
+[Вид группы](ValueSet-group-kind-vs.html) дополнен группой работников организации.
+
+Диаграмма [межкомпонентной архитектуры ресурсов](components.html#межкомпонентная-архитектура-ресурсов) добавляет компоненты "Рецепты" с MedicationRequest, MedicationDispense, Medication, MedicationKnowledge и MedicationAdministration и "Поставки" с SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport и Device. Новые профили показаны там, где они используются: DeviceRequest и DeviceUsage - в электронных медицинских записях (CHR), ChargeItem - в реимбурсации, BiologicallyDerivedProductDispense и Flag - в управлении кровью, CarePlan - в сестринском деле. У CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport и BiologicallyDerivedProduct теперь есть профили UZ Core, поэтому они отмечены как определённые в этом руководстве, а не как упомянутые, но ещё не определённые. Кнопки в правом верхнем углу диаграммы раскрывают или сворачивают все компоненты сразу и вписывают диаграмму в область просмотра.
+
+[Статус события](ValueSet-procedure-event-status-vs.html), ранее Статус события Procedure, теперь используется в UZ Core Procedure и UZ Core Communication.
+
+Страницы руководства оформлены в стиле [документации DHP для разработчиков](https://docs.dhp.uz/ru/): шрифты Onest и JetBrains Mono, зелёные цвета и логотип DHP, обновлённые шапка, меню, таблицы, примечания и блоки кода с кнопкой копирования. Меню темы в шапке переключает светлую, тёмную тему или тему как в системе.
+
+[Типы документов Composition](CodeSystem-composition-type-cs.html): `emdoc-0010-0106` теперь выписка из медицинской карты пациента - стационарного или амбулаторного, как уже было в узбекском названии; русское и английское названия больше не говорят о стационаре. Форма 027 использует этот код в обоих случаях, а различает их `Encounter.class` (`AMB` или `IMP`).
+
+#### Несовместимые изменения
+
+[Номер регистрационного удостоверения](NamingSystem-registration-certificate-id.html) и [ID групповой упаковки UzPharm](NamingSystem-uz-pharm-box-id.html) меняют URI на `https://uzpharminfo.uz/registrationNumber` и `https://uzpharminfo.uz/boxGroupId` — те, что уже передаёт загрузчик реестра Фармкомитета. Идентификатор [UZ Core Medication](StructureDefinition-uz-core-medication.html) со старым URI `registration_number` или `box_group_id` больше не попадает в свой срез, а поиск по идентификатору должен использовать новые URI.
+
+### Версия 0.13.0
+
+#### Добавлено
+
 [Encounter admit source](ValueSet-encounter-admit-source-vs.html), [Использование причины Encounter](ValueSet-encounter-reason-use-vs.html) и [Encounter discharge disposition](ValueSet-encounter-discharge-disposition-vs.html) дополнены кодами вызовов скорой помощи: 18 мест вызова, 27 локальных и 33 SNOMED CT причины вызова и `emer200` - отказ пациента от госпитализации. [Тип Encounter](ValueSet-encounter-type-vs.html) дополнен пятью типами выезда скорой помощи и SNOMED CT `715537001` - транспортировка машиной скорой помощи, которые [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) принимает в `type`. У всех кодов есть узбекские и русские названия.
 
 [UZ Core BiologicallyDerivedProductDispense](StructureDefinition-uz-core-biologicallyderivedproductdispense.html) фиксирует выдачу биологического продукта клинической команде пациента: [номер выдачи](NamingSystem-uzb-bdp-dispense-number.html), назначение, реципиента, продукт, исполнителей и время передачи. Добавлены узбекские и русские переводы статусов, типов совместимости, отношений происхождения и функций исполнителя HL7, а примеры показывают минимальную запись, выдачу и возврат.

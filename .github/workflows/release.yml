@@ -22,7 +22,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     env:
-      JAVA_TOOL_OPTIONS: "-Xmx8g"
+      JAVA_TOOL_OPTIONS: "-Xmx10g"
       # Falls back to GITHUB_TOKEN; if a RELEASE_TOKEN PAT is added later the
       # feed PR's checks run and it can auto-merge. Otherwise merge it manually.
       GH_TOKEN: ${{ secrets.RELEASE_TOKEN || github.token }}
@@ -55,16 +55,16 @@ jobs:
 
       - name: Install IG publisher
         run: |
-          chmod +x ./_updatePublisher.sh
-          ./_updatePublisher.sh -y
+          chmod +x scripts/_updatePublisher.sh
+          scripts/_updatePublisher.sh -y
 
       - name: Build IG
         run: |
-          chmod +x ./_genonce.sh
+          chmod +x scripts/_genonce.sh
           # -publish makes this a publication build. Without it the publisher marks
           # the package notForPublication with a file:// url, which packages2.fhir.org
           # rejects and which turns links from dependent guides into file:// links.
-          ./_genonce.sh -publish https://dhp.uz/fhir/core
+          scripts/_genonce.sh -publish https://dhp.uz/fhir/core
 
       - name: Verify built package
         run: |

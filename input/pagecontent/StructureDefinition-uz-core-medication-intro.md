@@ -27,7 +27,7 @@ Medications are shared catalogue entries, not per-patient records, so look one u
 
 ```
 # by national identifier - the reliable match
-GET [base]/Medication?identifier=https://uzpharminfo.uz/registration_number|UZ/MED/2024/00123
+GET [base]/Medication?identifier=https://uzpharminfo.uz/registrationNumber|UZ/MED/2024/00123
 GET [base]/Medication?identifier=https://mobile-api.aslbelgisi.uz/gtin|04780123456789
 GET [base]/Medication?identifier=https://mobile-api.aslbelgisi.uz/marking|010478012345678921AbC9xQ
 
@@ -79,7 +79,7 @@ A registered product also carries at least one `identifier`, with both its `syst
   "identifier": [
     {
       "use": "official",
-      "system": "https://uzpharminfo.uz/registration_number",
+      "system": "https://uzpharminfo.uz/registrationNumber",
       "value": "UZ/MED/2024/00123"
     }
   ],
@@ -96,7 +96,7 @@ A registered product also carries at least one `identifier`, with both its `syst
 }
 ```
 
-What makes that identifier the registration certificate number is its `system` URI - the one ending in `registration_number`. `use` is fixed to `official` in every slice. `code` is bound `required` to the [medication classification value set](ValueSet-medication-classification-vs.html): an INN code names the substance, an ATC code (`http://www.whocc.no/atc`) places the product in the WHO classification, and you may send both as separate codings. `status` is `active` / `inactive` / `entered-in-error`.
+What makes that identifier the registration certificate number is its `system` URI - the one ending in `registrationNumber`. `use` is fixed to `official` in every slice. `code` is bound `required` to the [medication classification value set](ValueSet-medication-classification-vs.html): an INN code names the substance, an ATC code (`http://www.whocc.no/atc`) places the product in the WHO classification, and you may send both as separate codings. `status` is `active` / `inactive` / `entered-in-error`.
 
 #### A registered product
 
@@ -110,7 +110,7 @@ In practice you describe the product the way the registry does: its `doseForm`, 
   "identifier": [
     {
       "use": "official",
-      "system": "https://uzpharminfo.uz/registration_number",
+      "system": "https://uzpharminfo.uz/registrationNumber",
       "value": "UZ/MED/2024/00123"
     },
     {
@@ -160,11 +160,11 @@ A product may carry up to five identifiers; populate only the ones you have. Eac
 
 | Identifier | `system` | Issued by |
 |---|---|---|
-| [Registration certificate number](NamingSystem-registration-certificate-id.html) | `https://uzpharminfo.uz/registration_number` | Ministry of Health, on registering the medicine |
+| [Registration certificate number](NamingSystem-registration-certificate-id.html) | `https://uzpharminfo.uz/registrationNumber` | Ministry of Health, on registering the medicine |
 | [GTIN](NamingSystem-global-trade-item-id.html) | `https://mobile-api.aslbelgisi.uz/gtin` | GS1, the global trade item number on the pack |
 | [Asl Belgisi marking ID](NamingSystem-uz-marking-id.html) | `https://mobile-api.aslbelgisi.uz/marking` | The national track-and-trace system, per serialized pack |
 | [ICPS product/service code](NamingSystem-product-service-id.html) | `https://uzpharminfo.uz/icps` | The national product and service classification |
-| [UzPharm box group ID](NamingSystem-uz-pharm-box-id.html) | `https://uzpharminfo.uz/box_group_id` | The track-and-trace system, grouping serialized packs into a carton |
+| [UzPharm box group ID](NamingSystem-uz-pharm-box-id.html) | `https://uzpharminfo.uz/boxGroupId` | The track-and-trace system, grouping serialized packs into a carton |
 
 The registration certificate, GTIN and ICPS code describe the *product* and are the same on every pack; the marking ID and box group ID describe a *physical pack or carton* and differ per unit. When you only need the catalogue entry, send the product-level identifiers.
 
@@ -180,7 +180,7 @@ When the composition matters - a combination product, or a dispense that must ma
   "identifier": [
     {
       "use": "official",
-      "system": "https://uzpharminfo.uz/registration_number",
+      "system": "https://uzpharminfo.uz/registrationNumber",
       "value": "UZ/MED/2024/00123"
     }
   ],

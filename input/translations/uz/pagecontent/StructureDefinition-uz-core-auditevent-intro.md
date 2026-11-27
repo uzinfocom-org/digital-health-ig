@@ -18,7 +18,7 @@ Ushbu profil yuqori darajaga o'zining majburiy karralilik talablarini qo'shmaydi
 - `occurredDateTime` va `recorded` vaqt belgisi;
 - `outcome`, uning `code` elementi majburiy natija bog'lanishidan foydalanadi (muvaffaqiyatli bajarilish yoki HTTP 401 / 403 bilan kirish rad etilgandagi xato);
 - ma'lumotlari hodisaga aloqador bo'lgan `patient`;
-- `type`, `role`, `who` va `authorization` elementlariga ega `agent` (`authorization` - ma'lumotlardan foydalanish maqsadi, majburiy bog'lanish); `who` PractitionerRole, Practitioner, Patient yoki RelatedPerson resursiga ko'rsatishi mumkin;
+- `type`, `role`, `who` va `authorization` elementlariga ega `agent` (`authorization` - ma'lumotlardan foydalanish maqsadi, majburiy bog'lanish); `who` PractitionerRole, Practitioner, Patient, RelatedPerson, Device yoki Organization resursiga ko'rsatishi mumkin;
 - `role`, `what`, `securityLabel` va `query` elementlariga ega `entity` (qo'llanilganda base64 formatida kodlangan qidiruv so'rovi).
 
 > Favqulodda kirish (break-glass) `agent.authorization` elementida favqulodda ma'lumotlardan foydalanish maqsadi ko'rsatilgan AuditEvent sifatida qayd etiladi.
@@ -29,7 +29,7 @@ AuditEvent resurslari mijozlar tomonidan emas, platforma tomonidan yaratiladi, s
 
 #### Namunaviy hodisa (tizimga kirish)
 
-Mustaqil hodisada nima sodir bo'lgani (`code`), uning guruhi (`category`), bajarilgan amal (`action`, `E` = execute), amal qachon bajarilgani (`occurredDateTime`) va qachon qayd etilgani (`recorded`), `outcome.code`, amalni bajargan `agent` hamda hodisani qayd etgan `source` ko'rsatiladi. `agent.who` oddiy `Reference` bo'lib, PractitionerRole, Practitioner, Patient yoki RelatedPerson resursiga ko'rsatishi mumkin:
+Mustaqil hodisada nima sodir bo'lgani (`code`), uning guruhi (`category`), bajarilgan amal (`action`, `E` = execute), amal qachon bajarilgani (`occurredDateTime`) va qachon qayd etilgani (`recorded`), `outcome.code`, amalni bajargan `agent` hamda hodisani qayd etgan `source` ko'rsatiladi. `agent.who` oddiy `Reference` bo'lib, PractitionerRole, Practitioner, Patient, RelatedPerson, Device yoki Organization resursiga ko'rsatishi mumkin:
 
 ```json
 {

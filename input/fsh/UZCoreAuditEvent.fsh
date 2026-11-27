@@ -52,7 +52,7 @@ Description: "Uzbekistan Core AuditEvent profile, used to track user and applica
   * authorization contains dhpAuthorization 0..* MS
   * authorization[dhpAuthorization] from AuditPurposeOfUseVS (required)
   * authorization[dhpAuthorization] ^short = "Purpose of use from the national value set"
-  * who only Reference (UZCorePractitionerRole or UZCorePractitioner or UZCorePatient or UZCoreRelatedPerson) 
+  * who only Reference (UZCorePractitionerRole or UZCorePractitioner or UZCorePatient or UZCoreRelatedPerson or UZCoreDevice or UZCoreOrganization)
 
 * entity
   * role and what and securityLabel and query MS
