@@ -94,7 +94,7 @@ Titles and descriptions of code systems and value sets follow the [modelling gui
 
 [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) makes `complication` Must Support and recommends [blood donation complication codes](ValueSet-procedure-complication-vs.html), such as fainting, when `code` is SNOMED CT `25179006` Whole blood unit collection, as in the [blood donation example](Procedure-example-blood-donation-procedure.html). When `code` is SNOMED CT `116859006` Transfusion of blood product, it recommends [blood transfusion complication codes](ValueSet-blood-transfusion-complication-vs.html), such as febrile or hemolytic reactions.
 
-[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) now accepts ImagingStudy in `target` and UZ Core Organization and Device in `agent.who`, supporting provenance for imaging metadata. A new example illustrates the scenario.
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) now accepts ImagingStudy in `target` and UZ Core Organization and Device in `agent.who`, supporting provenance for imaging metadata. The example links a [mammography imaging study](ImagingStudy-example-imaging-study.html) to its order, procedure and PACS endpoint, with PACS and RIS represented as UZ Core Device examples.
 
 #### Breaking changes
 

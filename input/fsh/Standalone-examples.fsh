@@ -1,6 +1,58 @@
 // This file contains only example instances to help enforce referential integrity within the profiles
 // As soon as a profile for an instance is created, the instance should be removed from this file
 
+Instance: example-imaging-study
+InstanceOf: ImagingStudy
+Usage: #example
+Title: "Example ImagingStudy - Bilateral Breast Mammography"
+Description: "Bilateral mammography registered in the DHP by the RIS after image acquisition."
+* language = #en
+* identifier.system = "urn:dicom:uid"
+* identifier.value = "urn:oid:2.25.123456789012345678901"
+* status = #available
+* modality = http://dicom.nema.org/resources/ontology/DCM#MG
+* subject = Reference(example-nodira)
+* encounter = Reference(example-mammography-encounter)
+* started = "2026-11-27T09:00:00+05:00"
+* basedOn = Reference(example-mammography-order)
+* partOf = Reference(example-mammography-procedure)
+* endpoint = Reference(example-pacs-endpoint)
+* numberOfSeries = 4
+* numberOfInstances = 4
+* description = "Bilateral breast mammography"
+* series[0].uid = "2.25.123456789012345678902"
+* series[0].number = 1
+* series[0].modality = http://dicom.nema.org/resources/ontology/DCM#MG
+* series[0].description = "Right breast craniocaudal view (R-CC)"
+* series[0].numberOfInstances = 1
+* series[1].uid = "2.25.123456789012345678903"
+* series[1].number = 2
+* series[1].modality = http://dicom.nema.org/resources/ontology/DCM#MG
+* series[1].description = "Left breast craniocaudal view (L-CC)"
+* series[1].numberOfInstances = 1
+* series[2].uid = "2.25.123456789012345678904"
+* series[2].number = 3
+* series[2].modality = http://dicom.nema.org/resources/ontology/DCM#MG
+* series[2].description = "Right breast mediolateral oblique view (R-MLO)"
+* series[2].numberOfInstances = 1
+* series[3].uid = "2.25.123456789012345678905"
+* series[3].number = 4
+* series[3].modality = http://dicom.nema.org/resources/ontology/DCM#MG
+* series[3].description = "Left breast mediolateral oblique view (L-MLO)"
+* series[3].numberOfInstances = 1
+
+Instance: example-pacs-endpoint
+InstanceOf: Endpoint
+Usage: #example
+Title: "Example Endpoint - PACS DICOMweb"
+Description: "A PACS endpoint providing access to acquired medical images."
+* language = #en
+* status = #active
+* connectionType = http://terminology.hl7.org/CodeSystem/endpoint-connection-type#dicom-wado-rs
+* name = "PACS DICOMweb Service"
+* managingOrganization = Reference(example-organization)
+* address = "https://pacs.example.org/dicomweb"
+
 Instance: example-patient
 InstanceOf: Patient
 Usage: #example

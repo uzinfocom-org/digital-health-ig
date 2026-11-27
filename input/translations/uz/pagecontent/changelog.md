@@ -90,7 +90,7 @@ Patient, Practitioner va RelatedPerson namunalari hamda [identifikator tizimlari
 
 [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) `complication` ni Must Support qiladi va `code` SNOMED CT `25179006` (butun qon olish) bo'lganda [qon donorligi asoratlari kodlarini](ValueSet-procedure-complication-vs.html), masalan hushdan ketishni, tavsiya qiladi, buni [qon donorligi namunasi](Procedure-example-blood-donation-procedure.html) ko'rsatadi. `code` SNOMED CT `116859006` (qon mahsulotini quyish) bo'lganda esa [qon quyish asoratlari kodlarini](ValueSet-blood-transfusion-complication-vs.html), masalan febril yoki gemolitik reaksiyani, tavsiya qiladi.
 
-[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) endi tasvirlash metama'lumotlarining kelib chiqishini qayd etish uchun `target` da ImagingStudy ni, `agent.who` da esa UZ Core Organization va Device ni qabul qiladi. Yangi namuna ushbu holatni ko'rsatadi.
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) endi tasvirlash metama'lumotlarining kelib chiqishini qayd etish uchun `target` da ImagingStudy ni, `agent.who` da esa UZ Core Organization va Device ni qabul qiladi. Namuna [mammografiya tekshiruvini](ImagingStudy-example-imaging-study.html) yo'llanma, muolaja va PACS Endpoint bilan bog'laydi; PACS va RIS UZ Core Device namunalari sifatida ko'rsatilgan.
 
 UZ Core profillaridagi havolalar endi UZ Core profillariga yo'naltirilgan: barcha Device havolalari [UZ Core Device](StructureDefinition-uz-core-device.html) ga, Observation, Immunization va Procedure dagi `basedOn` [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) ga, `Procedure.complication` esa [UZ Core Condition](StructureDefinition-uz-core-condition.html) ga.
 

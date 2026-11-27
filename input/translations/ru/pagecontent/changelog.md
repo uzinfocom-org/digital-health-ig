@@ -66,7 +66,7 @@ JSON-копия ресурса на каждом языке теперь сох�
 
 [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) делает `complication` Must Support и рекомендует [коды осложнений донации крови](ValueSet-procedure-complication-vs.html), например обморок, при `code` SNOMED CT `25179006` (забор цельной крови), как в [примере донации крови](Procedure-example-blood-donation-procedure.html). При `code` SNOMED CT `116859006` (переливание продукта крови) рекомендует [коды осложнений переливания крови](ValueSet-blood-transfusion-complication-vs.html), например фебрильную или гемолитическую реакцию.
 
-[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) теперь допускает ImagingStudy в `target`, а также UZ Core Organization и Device в `agent.who` для записи происхождения метаданных визуализации. Новый пример показывает этот сценарий.
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) теперь допускает ImagingStudy в `target`, а также UZ Core Organization и Device в `agent.who` для записи происхождения метаданных визуализации. Пример связывает [маммографическое исследование](ImagingStudy-example-imaging-study.html) с направлением, процедурой и PACS Endpoint; PACS и RIS представлены примерами UZ Core Device.
 
 Заголовки и описания систем кодов и наборов значений следуют шаблону именования из [руководства по моделированию](https://github.com/uzinfocom-org/digital-health-ig/blob/main/modelling-guidelines.md): supplement называется `[Concept] translations`, набор значений - `[Concept]`. Канонические URL, идентификаторы и коды не изменились.
 
