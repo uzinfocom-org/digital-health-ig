@@ -26,9 +26,13 @@ The guide's pages use the look of the [DHP developer documentation](https://docs
 
 [UZ Core Location](StructureDefinition-uz-core-location.html) now also covers areas, such as a mahalla set as a public health risk zone.
 
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) now accepts ImagingStudy in `target` and UZ Core Organization and Device in `agent.who`, supporting provenance for imaging metadata. The example links a [mammography imaging study](ImagingStudy-example-imaging-study.html) to its order, procedure and PACS endpoint, with PACS and RIS represented as UZ Core Device examples. The activity and participant role value sets include `CREATE` and `enterer` for this scenario. The activity and participant role value sets include `CREATE` and `enterer` for this scenario.
+
 #### Breaking changes
 
 [Registration certificate number](NamingSystem-registration-certificate-id.html) and [UzPharm box group ID](NamingSystem-uz-pharm-box-id.html) change their URIs to `https://uzpharminfo.uz/registrationNumber` and `https://uzpharminfo.uz/boxGroupId`, the ones the Pharmaceutical Committee registry loader already sends. A [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifier with the old `registration_number` or `box_group_id` URI no longer falls into its slice, and searches by identifier must use the new URIs.
+
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) restricts `agent.onBehalfOf` to UZ Core Organization, Practitioner, PractitionerRole or Patient. Senders using another reference type must adjust their data.
 
 ### Version 0.13.0
 
@@ -126,15 +130,11 @@ Titles and descriptions of code systems and value sets follow the [modelling gui
 
 [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) makes `complication` Must Support and recommends [blood donation complication codes](ValueSet-procedure-complication-vs.html), such as fainting, when `code` is SNOMED CT `25179006` Whole blood unit collection, as in the [blood donation example](Procedure-example-blood-donation-procedure.html). When `code` is SNOMED CT `116859006` Transfusion of blood product, it recommends [blood transfusion complication codes](ValueSet-blood-transfusion-complication-vs.html), such as febrile or hemolytic reactions.
 
-[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) now accepts ImagingStudy in `target` and UZ Core Organization and Device in `agent.who`, supporting provenance for imaging metadata. The example links a [mammography imaging study](ImagingStudy-example-imaging-study.html) to its order, procedure and PACS endpoint, with PACS and RIS represented as UZ Core Device examples.
-
 #### Breaking changes
 
 The request and participant resource type supplements, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` and `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, are removed: they duplicated the [FHIR types supplement](CodeSystem-fhir-types-cs.html), which [Request resource types](ValueSet-request-resource-types-vs.html) and [Resource types](ValueSet-resource-type-vs.html) now use. Load `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs` instead.
 
 The `uzpharmBoxGroupID` identifier slice of [UZ Core Medication](StructureDefinition-uz-core-medication.html) now holds the Pharmaceutical Committee registry identifier of the registered product, not a box-level track-and-trace identifier. Senders that put box identifiers there must stop doing so.
-
-[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) restricts `agent.onBehalfOf` to UZ Core Organization, Practitioner, PractitionerRole or Patient. Senders using another reference type must adjust their data.
 
 ### Version 0.12.0
 

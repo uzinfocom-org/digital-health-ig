@@ -8,3 +8,4 @@ Description: "Provenance activity types"
 * ^extension[=].valueCanonical = Canonical(ProvenanceActivityTypesCS)
 
 * include $v3-DocumentCompletion#LA
+* include http://terminology.hl7.org/CodeSystem/v3-DataOperation#CREATE

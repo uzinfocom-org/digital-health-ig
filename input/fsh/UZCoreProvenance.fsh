@@ -2,7 +2,7 @@ Profile: UZCoreProvenance
 Parent: Provenance
 Id: uz-core-provenance
 Title: "UZ Core Provenance"
-Description: "Uzbekistan Core Provenance profile, used to digitally sign documents via oneID"
+Description: "Uzbekistan Core Provenance profile, used to record the origin and history of resources, such as document signatures and imaging study metadata"
 * ^experimental = true
 * ^status = #active
 * ^date = "2025-03-13"
@@ -71,13 +71,13 @@ Description: "An example of recording the source of imaging study metadata regis
 * occurredDateTime = "2026-11-27T09:30:00+05:00"
 * recorded = "2026-11-27T09:30:05+05:00"
 
-* activity = http://terminology.hl7.org/CodeSystem/v3-DataOperation#CREATE "create"
+* activity = http://terminology.hl7.org/CodeSystem/v3-DataOperation#CREATE
 
-* agent[0].type = http://terminology.hl7.org/CodeSystem/provenance-participant-type#author "Author"
+* agent[0].type = $provenance-participant-type#author
 * agent[0].who = Reference(Device/example-pacs)
 * agent[0].who.display = "Picture Archiving and Communication System"
 
-* agent[1].type = http://terminology.hl7.org/CodeSystem/provenance-participant-type#enterer "Enterer"
+* agent[1].type = $provenance-participant-type#enterer
 * agent[1].who = Reference(Device/example-ris)
 * agent[1].who.display = "Radiology Information System"
 * agent[1].onBehalfOf = Reference(Organization/example-organization)

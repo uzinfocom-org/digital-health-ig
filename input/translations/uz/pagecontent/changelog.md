@@ -26,9 +26,13 @@ Qo'llanma sahifalari [DHP dasturchilar hujjatlari](https://docs.dhp.uz/uz/) uslu
 
 [UZ Core Location](StructureDefinition-uz-core-location.html) endi hududlarni ham qamrab oladi, masalan jamoat salomatligi uchun xavfli hudud deb belgilangan mahalla.
 
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) endi tasvirlash metama'lumotlarining kelib chiqishini qayd etish uchun `target` da ImagingStudy ni, `agent.who` da esa UZ Core Organization va Device ni qabul qiladi. Namuna [mammografiya tekshiruvini](ImagingStudy-example-imaging-study.html) yo'llanma, muolaja va PACS Endpoint bilan bog'laydi; PACS va RIS UZ Core Device namunalari sifatida ko'rsatilgan. Ushbu holat uchun faoliyat va ishtirokchi roli qiymatlar to'plamlariga `CREATE` va `enterer` kodlari qo'shildi.
+
 #### Buzuvchi o'zgarishlar
 
 [Ro'yxatga olish guvohnomasi raqami](NamingSystem-registration-certificate-id.html) va [UzPharm guruh qadog'i identifikatori](NamingSystem-uz-pharm-box-id.html) URI'lari `https://uzpharminfo.uz/registrationNumber` va `https://uzpharminfo.uz/boxGroupId` ga o'zgaradi — Farmatsevtika qo'mitasi reyestri yuklagichi allaqachon yuboradiganlari. Eski `registration_number` yoki `box_group_id` URI'li [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifikatori endi o'z slice'iga tushmaydi, identifikator bo'yicha qidiruv yangi URI'lardan foydalanishi kerak.
+
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) `agent.onBehalfOf` ni UZ Core Organization, Practitioner, PractitionerRole yoki Patient havolalari bilan cheklaydi. Boshqa havola turlaridan foydalanuvchi jo'natuvchilar ma'lumotlarini moslashtirishi kerak.
 
 ### Versiya 0.13.0
 
@@ -122,8 +126,6 @@ Patient, Practitioner va RelatedPerson namunalari hamda [identifikator tizimlari
 
 [UZ Core Procedure](StructureDefinition-uz-core-procedure.html) `complication` ni Must Support qiladi va `code` SNOMED CT `25179006` (butun qon olish) bo'lganda [qon donorligi asoratlari kodlarini](ValueSet-procedure-complication-vs.html), masalan hushdan ketishni, tavsiya qiladi, buni [qon donorligi namunasi](Procedure-example-blood-donation-procedure.html) ko'rsatadi. `code` SNOMED CT `116859006` (qon mahsulotini quyish) bo'lganda esa [qon quyish asoratlari kodlarini](ValueSet-blood-transfusion-complication-vs.html), masalan febril yoki gemolitik reaksiyani, tavsiya qiladi.
 
-[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) endi tasvirlash metama'lumotlarining kelib chiqishini qayd etish uchun `target` da ImagingStudy ni, `agent.who` da esa UZ Core Organization va Device ni qabul qiladi. Namuna [mammografiya tekshiruvini](ImagingStudy-example-imaging-study.html) yo'llanma, muolaja va PACS Endpoint bilan bog'laydi; PACS va RIS UZ Core Device namunalari sifatida ko'rsatilgan.
-
 UZ Core profillaridagi havolalar endi UZ Core profillariga yo'naltirilgan: barcha Device havolalari [UZ Core Device](StructureDefinition-uz-core-device.html) ga, Observation, Immunization va Procedure dagi `basedOn` [UZ Core CarePlan](StructureDefinition-uz-core-careplan.html) ga, `Procedure.complication` esa [UZ Core Condition](StructureDefinition-uz-core-condition.html) ga.
 
 [Zaxira holati](CodeSystem-inventoryitem-inventory-status-cs.html) endi `in-fractionation` ni ruschada «В фракционировании» o'rniga «На фракционировании» deb ataydi.
@@ -133,8 +135,6 @@ UZ Core profillaridagi havolalar endi UZ Core profillariga yo'naltirilgan: barch
 So'rov resurs turlari va ishtirokchi resurs turi supplementlari, `https://terminology.dhp.uz/fhir/core/CodeSystem/request-resource-types-cs` va `https://terminology.dhp.uz/fhir/core/CodeSystem/participant-resource-type-cs`, olib tashlandi: ular [FHIR turlari supplementi](CodeSystem-fhir-types-cs.html) ni takrorlardi, endi [So'rov resurs turlari](ValueSet-request-resource-types-vs.html) va [Resurs turlari](ValueSet-resource-type-vs.html) undan foydalanadi. Ularning o'rniga `https://terminology.dhp.uz/fhir/core/CodeSystem/fhir-types-cs` ni yuklang.
 
 [UZ Core Medication](StructureDefinition-uz-core-medication.html) ning `uzpharmBoxGroupID` identifikator bo'lagi endi qadoq darajasidagi kuzatuv identifikatorini emas, ro'yxatdan o'tgan mahsulotning Farmatsevtika qo'mitasi reyestri identifikatorini saqlaydi. U yerga qadoq identifikatorlarini yozgan yuboruvchilar buni to'xtatishi kerak.
-
-[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) `agent.onBehalfOf` ni UZ Core Organization, Practitioner, PractitionerRole yoki Patient havolalari bilan cheklaydi. Boshqa havola turlaridan foydalanuvchi jo'natuvchilar ma'lumotlarini moslashtirishi kerak.
 
 ### Versiya 0.12.0
 
