@@ -686,6 +686,9 @@ td pre { border-radius: 8px; box-shadow: none; margin: 4px 0; padding: 8px 10px;
 :root[data-theme="dark"] .modified-content, :root[data-theme="dark"] div.informative-content, :root[data-theme="dark"] div.trial-content, :root[data-theme="dark"] .bg-warning { color: var(--dhp-warning-text); background-color: var(--dhp-warning-16); border-color: rgba(255, 171, 0, 0.32); }
 :root[data-theme="dark"] .changes-disabled .new-content, :root[data-theme="dark"] .changes-disabled .modified-content { color: revert; background-color: revert; border-color: revert; }
 :root[data-theme="dark"] a.normative-flag, :root[data-theme="dark"] a.informative-flag, :root[data-theme="dark"] a.draft-flag, :root[data-theme="dark"] a.trial-use-flag, :root[data-theme="dark"] a.deprecated-flag { color: var(--dhp-fg); background-color: var(--dhp-muted); border-color: var(--dhp-border); }
+:root[data-theme="dark"] #segment-content td[style*="#efefef" i] { color: var(--dhp-muted-fg); background-color: var(--dhp-muted) !important; }
+:root[data-theme="dark"] #segment-content tr[style*="#ffeeee" i] { background-color: rgba(255, 86, 48, 0.08) !important; }
+:root[data-theme="dark"] #segment-content p[style*="#ffcccc" i] { color: #ffac82; background-color: rgba(255, 86, 48, 0.16) !important; border-color: rgba(255, 86, 48, 0.32) !important; }
 
 /* Forms and search pages */
 :root[data-theme="dark"] #form-langs, :root[data-theme="dark"] #form-langs button { border-color: var(--dhp-input-border); }

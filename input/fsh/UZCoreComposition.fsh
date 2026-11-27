@@ -69,5 +69,5 @@ Usage: #example
   * code = http://loinc.org#10164-2 "History of Present illness Narrative"
   * text
     * status = #generated
-    * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Bemorning umumiy holati qoniqarli, shikoyatlar mavjud emas.</div>"
+    * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div lang=\"uz\" xml:lang=\"uz\">Bemorning umumiy holati qoniqarli, shikoyatlar mavjud emas.</div><div lang=\"ru\" xml:lang=\"ru\">Общее состояние пациента удовлетворительное, жалоб нет.</div><div lang=\"en\" xml:lang=\"en\">The patient's general condition is satisfactory, with no complaints.</div></div>"
   * orderedBy = $composition-list-order#event-date
