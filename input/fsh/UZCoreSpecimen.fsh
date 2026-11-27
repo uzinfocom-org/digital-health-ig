@@ -17,7 +17,7 @@ Description: "Uzbekistan Core profile for representing laboratory and other clin
 * type from SpecimenTypesVS (preferred) 
 * type ^short = "Type of specimen (e.g., venous blood, urine, swab) used to interpret tests and processing requirements."
 * subject MS
-* subject only Reference(UZCorePatient or UZCoreLocation or Substance)
+* subject only Reference(UZCorePatient or UZCoreLocation or UZCoreSubstance)
 * subject ^short = "Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance."
 * receivedTime MS
 * receivedTime ^short = "Date/time the specimen was received by the laboratory/performing organization. Supports turnaround-time and traceability."

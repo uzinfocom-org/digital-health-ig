@@ -1,0 +1,4 @@
+CODE,EN,RU,UZ,Definition,,http://hl7.org/fhir/substance-status
+active,Active,Активный,Faol,The substance is considered for use or reference.,,
+inactive,Inactive,Неактивный,Faol emas,"The substance is considered for reference, but not for use.",,
+entered-in-error,Entered in Error,Введено по ошибке,Xato kiritilgan,The substance was entered in error.,,

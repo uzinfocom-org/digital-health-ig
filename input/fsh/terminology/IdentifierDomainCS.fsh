@@ -161,6 +161,13 @@ Description: """
       * ^property[=].valueString = Canonical(uzb-medication-knowledge-number)
       * ^property[+].code = #notSelectable
       * ^property[=].valueBoolean = false
+    * #https://dhp.uz/fhir/core/sid/doc/uz/substance-definition "Entry numbers of the LIS SES reference list of substance and sample names in Uzbekistan"
+      * ^property[0].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-substance-definition-number)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
 * #https://dhp.uz/fhir/core/sid/prd "Root of identifiers for products"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true
@@ -188,6 +195,20 @@ Description: """
         * ^property[=].valueString = Canonical(uzb-blood-donation-number)
         * ^property[+].code = #notSelectable
         * ^property[=].valueBoolean = false
+    * #https://dhp.uz/fhir/core/sid/prd/uz/substance-sample "Identifiers of substance samples assigned by LIS SES in Uzbekistan"
+      * ^property[0].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-substance-sample-number)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
+    * #https://dhp.uz/fhir/core/sid/prd/uz/substance-lot "Batch (lot) numbers of sampled substances and products in Uzbekistan"
+      * ^property[0].code = #country
+      * ^property[=].valueCoding = $iso-3166#UZ
+      * ^property[+].code = #naming-system
+      * ^property[=].valueString = Canonical(uzb-substance-lot-number)
+      * ^property[+].code = #notSelectable
+      * ^property[=].valueBoolean = false
 * #https://dhp.uz/fhir/core/sid/pid "Root of identifiers for personal identification"
   * ^property[0].code = #notSelectable
   * ^property[=].valueBoolean = true

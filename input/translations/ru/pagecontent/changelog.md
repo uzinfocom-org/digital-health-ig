@@ -8,6 +8,8 @@
 
 [UZ Core DeviceUsage](StructureDefinition-uz-core-deviceusage.html) ссылается на исполняемый [UZ Core DeviceRequest](StructureDefinition-uz-core-devicerequest.html) расширением [Основание - запрос на изделие](StructureDefinition-deviceusage-based-on.html), как в примере [медной ВМС](DeviceUsage-example-deviceusage-iud.html).
 
+[UZ Core Substance](StructureDefinition-uz-core-substance.html) представляет порцию вещества, отобранную для санитарно-эпидемиологического исследования, - воду, воздух, почву или пищевой продукт - с [номером образца](NamingSystem-uzb-substance-sample-number.html) и [номером партии](NamingSystem-uzb-substance-lot-number.html), сроком годности, отобранным количеством и заявленным составом. Он ссылается на [UZ Core SubstanceDefinition](StructureDefinition-uz-core-substancedefinition.html) - запись справочника веществ с кодом SNOMED CT или национальным кодом, узбекским и русским наименованиями, категорией и производителем, которая идентифицируется новым [идентификатором определения вещества](NamingSystem-uzb-substance-definition-number.html). Набор значений [наименований веществ](ValueSet-substance-names-vs.html) кодирует справочник наименований образцов ЛИС СЭС 542 концептами SNOMED CT с узбекскими и русскими наименованиями в новом [дополнении SNOMED CT](CodeSystem-substance-names-snomed-cs.html) и 908 национальными кодами, сгруппированными по категориям образцов ЛИС СЭС, с узбекскими, русскими и английскими наименованиями в новой системе кодов [наименований веществ](CodeSystem-substance-names-cs.html) для наименований без концепта SNOMED CT того же значения. 532 национальных кода для наименований, более узких, чем концепт SNOMED CT, - например, сырое и пастеризованное коровье молоко, которые проверяются по разным санитарным нормам, - передаются вместе с этим более широким концептом согласно новой [карте наименований веществ в SNOMED CT](ConceptMap-substance-name-to-snomed.html). Вместе с ними добавлены узбекские и русские переводы кодов HL7 [статуса вещества](ValueSet-substance-status-vs.html), а набор значений [категорий образцов веществ](ValueSet-substance-sample-category-vs.html) кодирует вид образца - вода, воздух, почва или пищевые продукты - концептами SNOMED CT с узбекскими и русскими наименованиями в том же [дополнении SNOMED CT](CodeSystem-substance-names-snomed-cs.html). Страницы обоих профилей содержат вводное описание и раздел «Быстрый старт».
+
 [Причины снятия с диспансерного учёта](ValueSet-dispensary-deregistration-reason-vs.html) переиспользуют существующие коды исхода для смерти, смены места жительства, лишения свободы и прочих причин. В [локальные коды исхода](CodeSystem-encounter-discharge-disposition-home-cs.html) добавлены только два кода: выздоровление или стойкое улучшение (`chr-0129-0002`) и отказ от диспансерного наблюдения (`chr-0129-0003`). ConceptMap DMED охватывает все семь исходных значений и оставляет `unspecified` без соответствия; [исход Encounter](ValueSet-encounter-discharge-disposition-vs.html) допускает два новых кода.
 
 #### Изменено
@@ -17,6 +19,8 @@
 [UZ Core Location](StructureDefinition-uz-core-location.html) теперь охватывает и территории, например махаллю, объявленную зоной риска для общественного здоровья.
 
 [Вид группы](ValueSet-group-kind-vs.html) дополнен группой работников организации.
+
+Все ссылки на Substance и SubstanceDefinition в профилях UZ Core теперь указывают на [UZ Core Substance](StructureDefinition-uz-core-substance.html) или [UZ Core SubstanceDefinition](StructureDefinition-uz-core-substancedefinition.html): Specimen, SupplyDelivery, AdverseEvent и PlanDefinition.
 
 Диаграмма [межкомпонентной архитектуры ресурсов](components.html#межкомпонентная-архитектура-ресурсов) добавляет компоненты "Рецепты" с MedicationRequest, MedicationDispense, Medication, MedicationKnowledge и MedicationAdministration и "Поставки" с SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport и Device. Новые профили показаны там, где они используются: DeviceRequest и DeviceUsage - в электронных медицинских записях (CHR), ChargeItem - в реимбурсации, BiologicallyDerivedProductDispense и Flag - в управлении кровью, CarePlan - в сестринском деле. У CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport и BiologicallyDerivedProduct теперь есть профили UZ Core, поэтому они отмечены как определённые в этом руководстве, а не как упомянутые, но ещё не определённые. Кнопки в правом верхнем углу диаграммы раскрывают или сворачивают все компоненты сразу и вписывают диаграмму в область просмотра.
 
@@ -541,6 +545,7 @@ ConceptMap типов организаций переименованы с пр�
 - `#regis0011.00005` "Инвалидность не установлена"
 
 Для [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) создана новая система кодов [AdmitSourceLocalCS](CodeSystem-admit-source-local-cs.html) со следующими кодами:
+
 - `#mserv-0006-00001` "Без направления"
 - `#mserv-0006-00002` "Диспансер"
 - `#mserv-0006-00003` "Районная психиатрия"
@@ -555,12 +560,14 @@ ConceptMap типов организаций переименованы с пр�
 Для [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) создана новая система кодов [ReAdmissionLocalCS](CodeSystem-re-admission-local-cs.html) для случаев повторной госпитализации (например, `#first-time`, `#repeat-current-year`).
 
 Для [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) [EncounterDischargeDispositionHomeCS](CodeSystem-encounter-discharge-disposition-home-cs.html) была расширена новыми кодами:
+
 - `#mserv-0004-00004` "Выписан"
 - `#mserv-0004-00002` "Умер"
 - `#mserv-0004-00005` "Переведен в учреждение МВД"
 - `#mserv-0004-00006` "Переведён(а) в дом милосердия"
 
 Для [UZ Core Encounter](StructureDefinition-uz-core-encounter.html) создана новая система кодов [EncounterLocalSubjectStatusCS](CodeSystem-encounter-local-subject-status-cs.html), отражающая состояние пациента:
+
 - `#loc-cs-001` "Выздоровел"
 - `#loc-cs-002` "С положительной динамикой"
 - `#loc-cs-003` "Без изменений"
