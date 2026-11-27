@@ -26,9 +26,13 @@ Qo'llanma sahifalari [DHP dasturchilar hujjatlari](https://docs.dhp.uz/uz/) uslu
 
 [UZ Core Location](StructureDefinition-uz-core-location.html) endi hududlarni ham qamrab oladi, masalan jamoat salomatligi uchun xavfli hudud deb belgilangan mahalla.
 
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) endi tasvirlash metama'lumotlarining kelib chiqishini qayd etish uchun `target` da ImagingStudy ni, `agent.who` da esa UZ Core Organization va Device ni qabul qiladi. Namuna [mammografiya tekshiruvini](ImagingStudy-example-imaging-study.html) yo'llanma, muolaja va PACS Endpoint bilan bog'laydi; PACS va RIS UZ Core Device namunalari sifatida ko'rsatilgan. Ushbu holat uchun faoliyat va ishtirokchi roli qiymatlar to'plamlariga `CREATE` va `enterer` kodlari qo'shildi.
+
 #### Buzuvchi o'zgarishlar
 
 [Ro'yxatga olish guvohnomasi raqami](NamingSystem-registration-certificate-id.html) va [UzPharm guruh qadog'i identifikatori](NamingSystem-uz-pharm-box-id.html) URI'lari `https://uzpharminfo.uz/registrationNumber` va `https://uzpharminfo.uz/boxGroupId` ga o'zgaradi — Farmatsevtika qo'mitasi reyestri yuklagichi allaqachon yuboradiganlari. Eski `registration_number` yoki `box_group_id` URI'li [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifikatori endi o'z slice'iga tushmaydi, identifikator bo'yicha qidiruv yangi URI'lardan foydalanishi kerak.
+
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) `agent.onBehalfOf` ni UZ Core Organization, Practitioner, PractitionerRole yoki Patient havolalari bilan cheklaydi. Boshqa havola turlaridan foydalanuvchi jo'natuvchilar ma'lumotlarini moslashtirishi kerak.
 
 ### Versiya 0.13.0
 

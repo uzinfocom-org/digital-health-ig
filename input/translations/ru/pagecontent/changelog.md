@@ -16,6 +16,8 @@
 
 [UZ Core Location](StructureDefinition-uz-core-location.html) теперь охватывает и территории, например махаллю, объявленную зоной риска для общественного здоровья.
 
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) теперь допускает ImagingStudy в `target`, а также UZ Core Organization и Device в `agent.who` для записи происхождения метаданных визуализации. Пример связывает [маммографическое исследование](ImagingStudy-example-imaging-study.html) с направлением, процедурой и PACS Endpoint; PACS и RIS представлены примерами UZ Core Device. Наборы типов действия и ролей участника дополнены кодами `CREATE` и `enterer` для этого сценария.
+
 [Вид группы](ValueSet-group-kind-vs.html) дополнен группой работников организации.
 
 Диаграмма [межкомпонентной архитектуры ресурсов](components.html#межкомпонентная-архитектура-ресурсов) добавляет компоненты "Рецепты" с MedicationRequest, MedicationDispense, Medication, MedicationKnowledge и MedicationAdministration и "Поставки" с SupplyRequest, SupplyDelivery, InventoryItem, InventoryReport и Device. Новые профили показаны там, где они используются: DeviceRequest и DeviceUsage - в электронных медицинских записях (CHR), ChargeItem - в реимбурсации, BiologicallyDerivedProductDispense и Flag - в управлении кровью, CarePlan - в сестринском деле. У CarePlan, MedicationRequest, SupplyRequest, InventoryItem, InventoryReport и BiologicallyDerivedProduct теперь есть профили UZ Core, поэтому они отмечены как определённые в этом руководстве, а не как упомянутые, но ещё не определённые. Кнопки в правом верхнем углу диаграммы раскрывают или сворачивают все компоненты сразу и вписывают диаграмму в область просмотра.
@@ -27,6 +29,8 @@
 [Типы документов Composition](CodeSystem-composition-type-cs.html): `emdoc-0010-0106` теперь выписка из медицинской карты пациента - стационарного или амбулаторного, как уже было в узбекском названии; русское и английское названия больше не говорят о стационаре. Форма 027 использует этот код в обоих случаях, а различает их `Encounter.class` (`AMB` или `IMP`).
 
 #### Несовместимые изменения
+
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) ограничивает `agent.onBehalfOf` ссылками на UZ Core Organization, Practitioner, PractitionerRole или Patient. Отправителям, использующим другие типы ссылок, необходимо изменить данные.
 
 [Номер регистрационного удостоверения](NamingSystem-registration-certificate-id.html) и [ID групповой упаковки UzPharm](NamingSystem-uz-pharm-box-id.html) меняют URI на `https://uzpharminfo.uz/registrationNumber` и `https://uzpharminfo.uz/boxGroupId` — те, что уже передаёт загрузчик реестра Фармкомитета. Идентификатор [UZ Core Medication](StructureDefinition-uz-core-medication.html) со старым URI `registration_number` или `box_group_id` больше не попадает в свой срез, а поиск по идентификатору должен использовать новые URI.
 

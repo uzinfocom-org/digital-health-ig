@@ -2,7 +2,7 @@ Profile: UZCoreProvenance
 Parent: Provenance
 Id: uz-core-provenance
 Title: "UZ Core Provenance"
-Description: "Uzbekistan Core Provenance profile, used to digitally sign documents via oneID"
+Description: "Uzbekistan Core Provenance profile, used to record the origin and history of resources, such as document signatures and imaging study metadata"
 * ^experimental = true
 * ^status = #active
 * ^date = "2025-03-13"
@@ -10,12 +10,13 @@ Description: "Uzbekistan Core Provenance profile, used to digitally sign documen
 
 * target and occurredDateTime and activity and patient and agent and entity and signature MS
 
-* target only Reference(UZCoreMedication or DocumentReference or Bundle)
+* target only Reference(UZCoreMedication or DocumentReference or Bundle or ImagingStudy)
 * activity from ProvenanceActivityTypesVS (required)
 * agent
   * type and who MS
   * type from ProvenanceParticipationRoleTypeVS (required)
-  * who only Reference(UZCorePractitionerRole)
+  * who only Reference(UZCorePractitionerRole or UZCoreOrganization or UZCoreDevice)
+  * onBehalfOf only Reference(UZCoreOrganization or UZCorePractitioner or UZCorePractitionerRole or UZCorePatient)
 * entity
   * role and what MS
   * role from ProvenanceEntityRoleVS (required)
@@ -58,3 +59,25 @@ Usage: #example
   * who = Reference(PractitionerRole/example-practitionerrole)
   * sigFormat = #application/signature+xml
   * data = "dGhpcyBibG9iIGlzIHNuaXBwZWQ="
+
+Instance: example-imaging-study-provenance
+InstanceOf: UZCoreProvenance
+Usage: #example
+Title: "Imaging Study Metadata Provenance"
+Description: "An example of recording the source of imaging study metadata registered in the DHP by the RIS."
+
+* target[0] = Reference(ImagingStudy/example-imaging-study)
+
+* occurredDateTime = "2026-11-27T09:30:00+05:00"
+* recorded = "2026-11-27T09:30:05+05:00"
+
+* activity = http://terminology.hl7.org/CodeSystem/v3-DataOperation#CREATE
+
+* agent[0].type = $provenance-participant-type#author
+* agent[0].who = Reference(Device/example-pacs)
+* agent[0].who.display = "Picture Archiving and Communication System"
+
+* agent[1].type = $provenance-participant-type#enterer
+* agent[1].who = Reference(Device/example-ris)
+* agent[1].who.display = "Radiology Information System"
+* agent[1].onBehalfOf = Reference(Organization/example-organization)

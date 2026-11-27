@@ -10,3 +10,4 @@ Description: "Provenance participation role types"
 * include $provenance-participant-type#legal
 * include $provenance-participant-type#author
 * include $provenance-participant-type#attester
+* include $provenance-participant-type#enterer

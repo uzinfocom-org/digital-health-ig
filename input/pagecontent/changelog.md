@@ -26,9 +26,13 @@ The guide's pages use the look of the [DHP developer documentation](https://docs
 
 [UZ Core Location](StructureDefinition-uz-core-location.html) now also covers areas, such as a mahalla set as a public health risk zone.
 
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) now accepts ImagingStudy in `target` and UZ Core Organization and Device in `agent.who`, supporting provenance for imaging metadata. The example links a [mammography imaging study](ImagingStudy-example-imaging-study.html) to its order, procedure and PACS endpoint, with PACS and RIS represented as UZ Core Device examples. The activity and participant role value sets include `CREATE` and `enterer` for this scenario. The activity and participant role value sets include `CREATE` and `enterer` for this scenario.
+
 #### Breaking changes
 
 [Registration certificate number](NamingSystem-registration-certificate-id.html) and [UzPharm box group ID](NamingSystem-uz-pharm-box-id.html) change their URIs to `https://uzpharminfo.uz/registrationNumber` and `https://uzpharminfo.uz/boxGroupId`, the ones the Pharmaceutical Committee registry loader already sends. A [UZ Core Medication](StructureDefinition-uz-core-medication.html) identifier with the old `registration_number` or `box_group_id` URI no longer falls into its slice, and searches by identifier must use the new URIs.
+
+[UZ Core Provenance](StructureDefinition-uz-core-provenance.html) restricts `agent.onBehalfOf` to UZ Core Organization, Practitioner, PractitionerRole or Patient. Senders using another reference type must adjust their data.
 
 ### Version 0.13.0
 

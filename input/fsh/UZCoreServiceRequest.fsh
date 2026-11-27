@@ -162,3 +162,17 @@ Usage: #example
 * authoredOn = "2024-01-01T15:15:00+05:00"
 * requester = Reference(example-practitioner)
 * reason[0].reference = Reference(example-headache)
+
+Instance: example-mammography-order
+InstanceOf: UZCoreServiceRequest
+Usage: #example
+Title: "Example UZ Core ServiceRequest - Mammography Order"
+Description: "An order for bilateral mammography."
+* language = #uz
+* status = #completed
+* intent = #order
+* code = TXMKCS#4037885 "Mammografiya"
+* subject = Reference(example-nodira)
+* encounter = Reference(example-mammography-encounter)
+* authoredOn = "2026-11-27T08:40:00+05:00"
+* requester = Reference(example-practitioner)

@@ -194,3 +194,16 @@ Usage: #example
 * participant.actor = Reference(example-practitionerrole)
 * actualPeriod.start = "2026-03-14T21:05:00+05:00"
 * actualPeriod.end = "2026-03-14T21:50:00+05:00"
+
+Instance: example-mammography-encounter
+InstanceOf: UZCoreEncounter
+Usage: #example
+Title: "Example UZ Core Encounter - Mammography Visit"
+Description: "An outpatient visit for bilateral mammography."
+* language = #uz
+* status = #completed
+* class[dhpClass] = $v3-ActCode#AMB
+* type[nationalType] = encounter-type-cs#mserv-0001-00004
+* subject = Reference(example-nodira)
+* actualPeriod.start = "2026-11-27T08:30:00+05:00"
+* actualPeriod.end = "2026-11-27T10:00:00+05:00"

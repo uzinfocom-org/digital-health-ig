@@ -137,3 +137,16 @@ Usage: #example
 * subject = Reference(example-david) "David Davidov"
 * encounter = Reference(example-physiotherapy-encounter)
 * recordedDate = "2025-05-15"
+
+Instance: example-mammography-procedure
+InstanceOf: UZCoreProcedure
+Usage: #example
+Title: "Example UZ Core Procedure - Bilateral Mammography"
+Description: "Bilateral mammography performed in response to an imaging order."
+* language = #uz
+* status = #completed
+* code = TXMKCS#4037885 "Mammografiya"
+* subject = Reference(example-nodira)
+* encounter = Reference(example-mammography-encounter)
+* basedOn = Reference(example-mammography-order)
+* occurrenceDateTime = "2026-11-27T09:00:00+05:00"

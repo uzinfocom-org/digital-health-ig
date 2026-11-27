@@ -152,6 +152,30 @@ Description: "Example of a single copper intrauterine contraceptive device track
 
 * owner = Reference(xonobod-medical-association)
 
+Instance: example-pacs
+InstanceOf: UZCoreDevice
+Usage: #example
+Title: "Example UZ Core Device - PACS"
+Description: "A picture archiving and communication system providing imaging study metadata."
+* language = #en
+* status = #active
+* name.value = "Picture Archiving and Communication System"
+* name.type = #user-friendly-name
+* type.text = "Picture Archiving and Communication System (PACS)"
+* owner = Reference(example-organization)
+
+Instance: example-ris
+InstanceOf: UZCoreDevice
+Usage: #example
+Title: "Example UZ Core Device - RIS"
+Description: "A radiology information system registering imaging study metadata in the DHP."
+* language = #en
+* status = #active
+* name.value = "Radiology Information System"
+* name.type = #user-friendly-name
+* type.text = "Radiology Information System (RIS)"
+* owner = Reference(example-organization)
+
 Instance: example-contraceptive-implant
 InstanceOf: UZCoreDevice
 Usage: #example
